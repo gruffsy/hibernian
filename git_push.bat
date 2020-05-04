@@ -1,6 +1,4 @@
 #!/bin/sh
-git add .
+git add --all
 git commit -am "made changes"
 git push
-echo Press Enter...
-read
