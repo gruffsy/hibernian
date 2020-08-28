@@ -16,7 +16,12 @@
     <div id="q-app">{{ jsonfil }} <br>
         {{ results }}
 
-
+<ul>
+  <li v-for="(result, index) in results" ::key="result.index">
+  {{selger.butikk}}
+  
+  </li>
+</ul>
 
 
     </div>
