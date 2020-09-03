@@ -9,7 +9,7 @@ SET inputpath=S:\Salgstall\publish\quasar\input\
 rem @ECHO %%~nxI
 
 FOR %%I IN (%inputpath%*) DO (
-sqlcmd -S %server% -U %user% -P %password% -i "%inputpath%%%~nxI" -y0 -o "%outputpath%%%~nxI.json" -f i:65001 
+sqlcmd -S %server% -U %user% -P %password% -i "%inputpath%%%~nxI" -y0 -o "%outputpath%%%~nxI.json" -f i:65001 -f o:65001
 )
 
 pause
