@@ -93,6 +93,9 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.dayBeforYesterday = data));
     },
+    hideTodayf(){
+      this
+    },
   },
   mounted() {
     this.getToday();
