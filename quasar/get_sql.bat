@@ -1,7 +1,7 @@
 SET server=DB-HIB
 SET user=sa
 SET password=VismaVudAdmin123@
-SET outputpath=S:\Salgstall\publish\quasar\
+SET outputpath=S:\Salgstall\publish\quasar\json\
 SET inputpath=S:\Salgstall\publish\quasar\input\
 
 

@@ -74,7 +74,7 @@ new Vue({
   },
   methods: {
     getToday() {
-      fetch("idag.sql.json")
+      fetch("./json/idag.sql.json")
         .then((response) => response.json())
         .then((data) => (this.today = data));
     },
