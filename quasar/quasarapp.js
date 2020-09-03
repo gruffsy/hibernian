@@ -92,7 +92,7 @@
         },
         methods: {
             getWeatherData() {
-                fetch("idag.json")
+                fetch("idag.sql.json")
                   .then(response => response.json())
                   .then(data => (this.results = data));
               }
