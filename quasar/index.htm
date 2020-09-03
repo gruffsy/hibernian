@@ -19,7 +19,7 @@
    <div class="q-pa-md"><q-btn color="white" text-color="black" label="i går" /></div>
    <div class="q-pa-md"><q-btn color="white" text-color="black" label="i forgårs" /></div>
    </div>
-   <div>
+   <div :hidden="hideToday">
      <q-table
       title="Salg i dag"
       :data="today"
@@ -30,7 +30,7 @@
      
     />
     </div>
-    <div>
+    <div :hidden="hideYesterday">
 
 <q-table
       title="Salg i går"
@@ -42,7 +42,7 @@
      
     />
 </div>
-<div>
+<div :hidden="hideDayBeforeYesterday">
 
 <q-table
       title="Salg i forgårs"
