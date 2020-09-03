@@ -19,42 +19,56 @@ new Vue({
           align: "left",
           field: (row) => row.butikk,
           format: (val) => `${val}`,
+          style: "max-width: 50px",
+          headerStyle: 'max-width: 50px'
         },
         {
           label: "Beløp m/moms",
           align: "right",
           field: (row) => row.mmoms,
           format: (val) => `${val}`,
+          style: "max-width: 50px",
+          headerStyle: 'max-width: 50px'
         },
         {
           label: "Beløp u/moms",
           align: "right",
           field: (row) => row.umoms,
           format: (val) => `${val}`,
+          style: "max-width: 50px",
+          headerStyle: 'max-width: 50px'
         },
         {
           label: "DB",
           align: "right",
           field: (row) => row.db,
           format: (val) => `${val}`,
+          style: "max-width: 50px",
+          headerStyle: 'max-width: 50px'
         },
         {
           label: "DG",
           align: "right",
           field: (row) => row.dg,
           format: (val) => `${val}`,
+          style: "max-width: 50px",
+          headerStyle: 'max-width: 50px'
         },
         {
           label: "Antall kunder",
           align: "right",
           field: (row) => row.antord,
           format: (val) => `${val}`,
+          style: "max-width: 50px",
+          headerStyle: 'max-width: 50px'
         },
         {
           label: "Per kunde",
           align: "right",
           field: (row) => row.prord,
           format: (val) => `${val}`,
+          style: "max-width: 50px",
+          headerStyle: 'max-width: 50px'
         },
       ],
     };

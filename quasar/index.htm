@@ -14,9 +14,11 @@
 
   <body>
      <div id="q-app">
-    
-<div class="q-px-md">
-    <q-table
+   <q-layout>
+  ...
+  <q-page-container>
+    <q-page class="q-pa-xl">
+     <q-table
       title="Salg i dag"
       :data="today"
       dense
@@ -25,8 +27,11 @@
      :columns="columns"
      
     />
-    
-  </div>
+    </q-page>
+  </q-page-container>
+  ...
+</q-layout>
+
 
     </div>
 
