@@ -14,9 +14,9 @@
 
   <body>
      <div id="q-app">
-   <q-layout>
-   <q-page-container>
-    <q-page class="q-pa-xl">
+   
+   <q-btn color="white" text-color="black" label="Standard" />
+   <div>
      <q-table
       title="Salg i dag"
       :data="today"
@@ -26,12 +26,31 @@
      :columns="columns"
      
     />
-    </q-page>
-  </q-page-container>
-  ...
-</q-layout>
+    </div>
+    <div>
 
+<q-table
+      title="Salg i går"
+      :data="yesterday"
+      dense
+     :pagination.sync="pagination"
+     hide-pagination
+     :columns="columns"
+     
+    />
+</div>
+<div>
 
+<q-table
+      title="Salg i forgårs"
+      :data="dayBeforYesterday"
+      dense
+     :pagination.sync="pagination"
+     hide-pagination
+     :columns="columns"
+     
+    />
+</div>
     </div>
 
 

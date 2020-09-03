@@ -9,6 +9,8 @@ new Vue({
   data: function () {
     return {
       today: [],
+      yesterday: [],
+      dayBeforYesterday: [],
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
       },
@@ -78,9 +80,21 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.today = data));
     },
+    getYesterday() {
+      fetch("./json/igar.sql.json")
+        .then((response) => response.json())
+        .then((data) => (this.yesterday = data));
+    },
+    getDayBeforeYesterday() {
+      fetch("./json/iforgar.sql.json")
+        .then((response) => response.json())
+        .then((data) => (this.dayBeforYesterday = data));
+    },
   },
   mounted() {
     this.getToday();
+    this.getYesterday();
+    this.getDayBeforeYesterday();
   },
   // ...etc
 });
