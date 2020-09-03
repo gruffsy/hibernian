@@ -6,139 +6,98 @@
   -->
 
   <head>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.min.css" rel="stylesheet" type="text/css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="https://unpkg.com/vue-axios@2.1.4/dist/vue-axios.min.js"></script>
+    <script src="https://unpkg.com/vue-axios@2.1.4/dist/vue-axios.min.js"></script>
   </head>
 
   <body>
-     <div id="q-app">
-
-
-<div class="q-pa-md">
-    <div >
-      <q-card>
-        <q-tabs
-          v-model="tab"
-          class="text-grey"
-          active-color="primary"
-          indicator-color="primary"
+    <div id="q-app">
+      <div class="q-pa-md">
+        <div>
+          <q-card>
+            <q-tabs
+              v-model="tab"
+              class="text-grey"
+              active-color="primary"
+              indicator-color="primary"
+            >
           
-         
-        >
-        <div class="row q-pa-md">
-   <div class="q-pa-md">
-          <div class="q-pa-md"><q-tab name="mails" label="Mails" />
-          <div class="q-pa-md"><q-tab name="alarms" label="Alarms" />
-          <div class="q-pa-md"><q-tab name="movies" label="Movies" />
-        </q-tabs>
+                <div class="q-pa-md"><q-tab name="mails" label="I dag" /></div>
+                <div class="q-pa-md">
+                  <q-tab name="alarms" label="I går" />
+                </div>
+                <div class="q-pa-md">
+                  <q-tab name="movies" label="I forgårs" />
+                </div>
+             
+            </q-tabs>
 
-        <q-separator />
+            <q-separator />
+          </q-card>
 
-        <q-tab-panels v-model="tab" animated>
-          <q-tab-panel name="mails">
-            <div class="text-h6">Mails</div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </q-tab-panel>
+          <q-card>
+            <q-tab-panels v-model="tab" animated>
+              <q-tab-panel name="mails">
+            
+                  <q-table
+                    title="Salg i dag"
+                    :data="today"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                  />
+               
+              </q-tab-panel>
 
-          <q-tab-panel name="alarms">
-            <div class="text-h6">Alarms</div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </q-tab-panel>
+              <q-tab-panel name="alarms">
+               
+                  <q-table
+                    title="Salg i går"
+                    :data="yesterday"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                  />
+                
+              </q-tab-panel>
 
-          <q-tab-panel name="movies">
-            <div class="text-h6">Movies</div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </q-tab-panel>
-        </q-tab-panels>
-      </q-card>
+              <q-tab-panel name="movies">
+                
+                  <q-table
+                    title="Salg i forgårs"
+                    :data="dayBeforYesterday"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                  />
+              
+              </q-tab-panel>
+            </q-tab-panels>
 
-      <q-card>
-        <q-tab-panels v-model="tab" animated>
-          <q-tab-panel name="mails">
-            <div class="text-h6">Mails</div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </q-tab-panel>
-
-          <q-tab-panel name="alarms">
-            <div class="text-h6">Alarms</div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </q-tab-panel>
-
-          <q-tab-panel name="movies">
-            <div class="text-h6">Movies</div>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </q-tab-panel>
-        </q-tab-panels>
-
-        <q-separator />
-
-        <q-tabs
-          v-model="tab"
-          dense
-          class="bg-grey-3"
-          align="justify"
-          narrow-indicator
-        >
-          <q-tab name="mails" label="Mails" />
-          <q-tab name="alarms" label="Alarms" />
-          <q-tab name="movies" label="Movies" />
-        </q-tabs>
-      </q-card>
+            <q-separator />
+          </q-card>
+        </div>
+      </div>
     </div>
-  </div>
-
-
-
-   <div class="row q-pa-md">
-   <div class="q-pa-md"><q-btn color="white" text-color="black" label="i dag" /></div>
-   <div class="q-pa-md"><q-btn color="white" text-color="black" label="i går" /></div>
-   <div class="q-pa-md"><q-btn color="white" text-color="black" label="i forgårs" /></div>
-   </div>
-   <div class="q-pa-md">
-     <q-table
-      title="Salg i dag"
-      :data="today"
-      dense
-     :pagination.sync="pagination"
-     hide-pagination
-     :columns="columns"
-     
-    />
-    </div>
-    <div  class="q-pa-md">
-
-<q-table
-      title="Salg i går"
-      :data="yesterday"
-      dense
-     :pagination.sync="pagination"
-     hide-pagination
-     :columns="columns"
-     
-    />
-</div>
-<div  class="q-pa-md">
-
-<q-table
-      title="Salg i forgårs"
-      :data="dayBeforYesterday"
-      dense
-     :pagination.sync="pagination"
-     hide-pagination
-     :columns="columns"
-     
-    />
-</div>
-    </div>
-
 
     <!-- Add the following at the end of your body tag -->
-    
+
     <script src="https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.umd.min.js"></script>
-    
+
     <script src="quasarapp.js"></script>
   </body>
 </html>
