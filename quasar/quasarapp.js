@@ -11,7 +11,7 @@ new Vue({
       today: [],
       yesterday: [],
       dayBeforYesterday: [],
-      tab: 'mails',
+      tab: 'idag',
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
       },

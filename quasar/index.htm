@@ -32,12 +32,12 @@
               indicator-color="primary"
             >
           
-                <div class="q-pa-md"><q-tab name="mails" label="I dag" /></div>
+                <div class="q-pa-md"><q-tab name="idag" label="I dag" /></div>
                 <div class="q-pa-md">
-                  <q-tab name="alarms" label="I går" />
+                  <q-tab name="igar" label="I går" />
                 </div>
                 <div class="q-pa-md">
-                  <q-tab name="movies" label="I forgårs" />
+                  <q-tab name="iforgar" label="I forgårs" />
                 </div>
              
             </q-tabs>
@@ -47,7 +47,7 @@
 
           <q-card>
             <q-tab-panels v-model="tab" animated>
-              <q-tab-panel name="mails">
+              <q-tab-panel name="idag">
             
                   <q-table
                     title="Salg i dag"
@@ -60,7 +60,7 @@
                
               </q-tab-panel>
 
-              <q-tab-panel name="alarms">
+              <q-tab-panel name="igar">
                
                   <q-table
                     title="Salg i går"
@@ -73,7 +73,7 @@
                 
               </q-tab-panel>
 
-              <q-tab-panel name="movies">
+              <q-tab-panel name="iforgar">
                 
                   <q-table
                     title="Salg i forgårs"
