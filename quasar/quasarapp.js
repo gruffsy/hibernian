@@ -17,7 +17,7 @@ new Vue({
         {
           label: "Butikk",
           align: "left",
-          field: (row) => row.name,
+          field: (row) => row.butikk,
           format: (val) => `${val}`,
           style: "max-width: 50px",
         },
