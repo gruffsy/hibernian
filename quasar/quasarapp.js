@@ -10,7 +10,7 @@
         data: function () {
           return {
               today: [],
-              todayTot: [],
+              todayTot: [{"Totalt":"Totalt","Beløp m\/mva":" 170 415 kr","Beløp u\/mva":" 136 332 kr","DB":" 39 586 kr","DG":"29.04%","Antall ordre":"  169","per kunde":" 1 008 kr"}],
               pagination: {
                 rowsPerPage: 30 // current rows per page being displayed
               },
@@ -32,7 +32,6 @@
         },
         mounted() {
             this.getToday();
-            this.getTodayTotal();
             
           }
         // ...etc

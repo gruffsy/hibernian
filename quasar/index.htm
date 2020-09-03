@@ -16,7 +16,7 @@
   
     <div id="q-app">
     Totalt{{ todayTot }}
-<div class="q-pa-md">
+
     <q-table
       title="Salg i dag"
       :data="today"
@@ -25,7 +25,8 @@
      hide-pagination
     />
     
-  </div>
+ 
+
 <q-table
       title="Totalt"
       :data="todayTot"
@@ -33,6 +34,7 @@
      :pagination.sync="pagination"
      hide-pagination
     />
+
     </div>
 
 
