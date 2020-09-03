@@ -16,8 +16,15 @@
     <div id="q-app">
 <div class="q-pa-md">
     <q-table
-      title="Treats"
-      :data="results"
+      title="Salg i dag"
+      :data="today"
+      dense
+     :pagination.sync="pagination"
+     hide-pagination
+    />
+    <q-table
+      title="Totalt"
+      :data="todayTot"
       dense
      :pagination.sync="pagination"
      hide-pagination
