@@ -5,9 +5,8 @@ set
 
 set
     noexec off
-SET
-    LANGUAGE 'Norwegian';
-SELECT FORMAT (getdate(), 'dddd MMMM yyyy - HH:mm') as "oppdatert"
+
+SELECT FORMAT (getdate(), 'HH:mm - dddd dd. MMMM yyyy', 'no-NO') as "oppdatert"
 for json path;
 
 
