@@ -13,24 +13,12 @@
   </head>
 
   <body>
-    <div id="q-app">{{ jsonfil }} <br>
-        {{ results }}
-
-<ul>
-  <li v-for="(result, index) in results" ::key="result.index">
-  
-  Butikk:
-  {{result.Butikk}}  DB:
-  {{result.DB}}
-  
-  </li>
- 
-</ul>
+    <div id="q-app">
 <div class="q-pa-md">
     <q-table
       title="Treats"
-      :data="results"
-      
+      :data="data"
+      dense
      
     />
   </div>

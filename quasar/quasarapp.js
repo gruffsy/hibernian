@@ -10,7 +10,81 @@
         data: function () {
           return {
               jsonfil: "test",
-              results: []
+              results: [],
+              data: [
+                {
+                  "Butikk": "Brødr. Berg Stenindustri AS avd. Skien",
+                  "Beløp m/mva": " 211 414 kr",
+                  "Beløp u/mva": " 169 131 kr",
+                  "DB": " 34 161 kr",
+                  "DG": "20,20 %",
+                  "Antall ordre": "  102",
+                  "per kunde": " 2 073 kr"
+               },
+               {
+                  "Butikk": "Brødr. Berg Stenindustri AS avd. Porsgrunn",
+                  "Beløp m/mva": " 66 994 kr",
+                  "Beløp u/mva": " 53 596 kr",
+                  "DB": " 11 900 kr",
+                  "DG": "22,20 %",
+                  "Antall ordre": "  40",
+                  "per kunde": " 1 675 kr"
+               },
+               {
+                  "Butikk": "Megaflis Sørlandsparken AS",
+                  "Beløp m/mva": " 62 751 kr",
+                  "Beløp u/mva": " 50 201 kr",
+                  "DB": " 10 898 kr",
+                  "DG": "21,71 %",
+                  "Antall ordre": "  60",
+                  "per kunde": " 1 046 kr"
+               },
+               {
+                  "Butikk": "Megaflis Tønsberg AS",
+                  "Beløp m/mva": " 132 573 kr",
+                  "Beløp u/mva": " 106 058 kr",
+                  "DB": " 24 165 kr",
+                  "DG": "22,78 %",
+                  "Antall ordre": "  132",
+                  "per kunde": " 1 004 kr"
+               },
+               {
+                  "Butikk": "Megaflis Agderparken AS",
+                  "Beløp m/mva": " 149 629 kr",
+                  "Beløp u/mva": " 119 703 kr",
+                  "DB": " 26 813 kr",
+                  "DG": "22,40 %",
+                  "Antall ordre": "  104",
+                  "per kunde": " 1 439 kr"
+               },
+               {
+                  "Butikk": "Megaflis Sandefjord AS",
+                  "Beløp m/mva": " 136 050 kr",
+                  "Beløp u/mva": " 108 840 kr",
+                  "DB": " 24 380 kr",
+                  "DG": "22,40 %",
+                  "Antall ordre": "  96",
+                  "per kunde": " 1 417 kr"
+               },
+               {
+                  "Butikk": "Megaflis Larvik AS",
+                  "Beløp m/mva": " 47 420 kr",
+                  "Beløp u/mva": " 37 936 kr",
+                  "DB": " 8 938 kr",
+                  "DG": "23,56 %",
+                  "Antall ordre": "  51",
+                  "per kunde": "  930 kr"
+               },
+               {
+                  "Butikk": "Totalt",
+                  "Beløp m/mva": " 806 831 kr",
+                  "Beløp u/mva": " 645 465 kr",
+                  "DB": " 141 256 kr",
+                  "DG": "21,88 %",
+                  "Antall ordre": "  585",
+                  "per kunde": " 1 379 kr"
+               }
+              ]
           }
         },
         methods: {
