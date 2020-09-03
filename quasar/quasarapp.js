@@ -14,8 +14,23 @@
               pagination: {
                 rowsPerPage: 30 // current rows per page being displayed
               },
-              
-          }
+              columns: [
+               {
+                 label: "Butikk",
+                 align: 'left',
+                 field: row => row.name,
+                 format: val => `${val}`,
+                 style: 'max-width: 50px',
+                 },
+                 {
+                  label: "Beløp m/MV",
+                  align: 'left',
+                  field: row => row.name,
+                  format: val => `${val}`,
+                  style: 'max-width: 50px',
+                  },
+               ]    
+          
         },
         methods: {
             getToday() {
