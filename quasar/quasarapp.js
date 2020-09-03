@@ -11,6 +11,9 @@
           return {
               jsonfil: "test",
               results: [],
+              pagination: {
+                rowsPerPage: 30 // current rows per page being displayed
+              },
               data: [
                 {
                   "Butikk": "Brødr. Berg Stenindustri AS avd. Skien",
