@@ -24,14 +24,14 @@ new Vue({
         {
           label: "Beløp m/moms",
           align: "left",
-          field: (row) => row.name,
+          field: (row) => row.mmoms,
           format: (val) => `${val}`,
           style: "max-width: 50px",
         },
         {
           label: "Beløp u/moms",
           align: "left",
-          field: (row) => row.name,
+          field: (row) => row.umoms,
           format: (val) => `${val}`,
           style: "max-width: 50px",
         },
@@ -39,7 +39,7 @@ new Vue({
         {
           label: "DB",
           align: "left",
-          field: (row) => row.name,
+          field: (row) => row.db,
           format: (val) => `${val}`,
           style: "max-width: 50px",
         },
@@ -47,14 +47,14 @@ new Vue({
         {
           label: "DG",
           align: "left",
-          field: (row) => row.name,
+          field: (row) => row.dg,
           format: (val) => `${val}`,
           style: "max-width: 50px",
         },
         {
           label: "Antall kunder",
           align: "left",
-          field: (row) => row.name,
+          field: (row) => row.antord,
           format: (val) => `${val}`,
           style: "max-width: 50px",
         },
@@ -62,7 +62,7 @@ new Vue({
         {
           label: "Per kunde",
           align: "left",
-          field: (row) => row.name,
+          field: (row) => row.prord,
           format: (val) => `${val}`,
           style: "max-width: 50px",
         },

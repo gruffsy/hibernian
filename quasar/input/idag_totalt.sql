@@ -8,13 +8,13 @@ set
     noexec off
 
 select
-	'Totalt' As Totalt,
-	FORMAT(sum(tl.extendedprice),'### ### ##0 kr') AS 'Beløp m/mva',
-	FORMAT(sum((tl.extendedprice) / 1.25),'### ### ##0 kr') AS 'Beløp u/mva',
-	FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity)),'### ### ##0 kr') AS 'DB',
-	FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity))/sum(tl.extendedprice / 1.25), 'P') as 'DG',
-	FORMAT(count(distinct tr.PosTransactionNo), '### ### ##0') as 'Antall ordre',
-	FORMAT(sum(tl.extendedprice)/count(distinct tr.PosTransactionNo), '### ### ##0 kr') as 'per kunde'
+	'Totalt' As 'butikk',
+	FORMAT(sum(tl.extendedprice),'### ### ##0 kr') AS 'mmoms',
+	FORMAT(sum((tl.extendedprice) / 1.25),'### ### ##0 kr') AS 'umoms',
+	FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity)),'### ### ##0 kr') AS 'db',
+	FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity))/sum(tl.extendedprice / 1.25), 'P') as 'dg',
+	FORMAT(count(distinct tr.PosTransactionNo), '### ### ##0') as 'antord',
+	FORMAT(sum(tl.extendedprice)/count(distinct tr.PosTransactionNo), '### ### ##0 kr') as 'prord'
 	
 from
 	ErpPosDb.dbo.vcrPosTransactionLine tl,
