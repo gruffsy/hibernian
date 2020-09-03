@@ -19,7 +19,7 @@ new Vue({
           align: "left",
           field: (row) => row.butikk,
           format: (val) => `${val}`,
-          style: "max-width: 80px",
+          style: "max-width: 150px",
         },
         {
           label: "Beløp m/moms",
