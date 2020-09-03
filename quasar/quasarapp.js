@@ -11,6 +11,7 @@ new Vue({
       today: [],
       yesterday: [],
       dayBeforYesterday: [],
+      
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
       },
