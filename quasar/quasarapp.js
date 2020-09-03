@@ -11,9 +11,7 @@ new Vue({
       today: [],
       yesterday: [],
       dayBeforYesterday: [],
-      hideToday: false,
-      hideYesterday: true,
-      hideDayBeforeYesterday: true,
+      tab: 'mails',
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
       },
@@ -93,9 +91,7 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.dayBeforYesterday = data));
     },
-    hideTodayf(){
-      this
-    },
+    
   },
   mounted() {
     this.getToday();

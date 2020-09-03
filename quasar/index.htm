@@ -14,12 +14,89 @@
 
   <body>
      <div id="q-app">
+
+
+<div class="q-pa-md">
+    <div >
+      <q-card>
+        <q-tabs
+          v-model="tab"
+          class="text-grey"
+          active-color="primary"
+          indicator-color="primary"
+          
+         
+        >
+        <div class="row q-pa-md">
+   <div class="q-pa-md">
+          <div class="q-pa-md"><q-tab name="mails" label="Mails" />
+          <div class="q-pa-md"><q-tab name="alarms" label="Alarms" />
+          <div class="q-pa-md"><q-tab name="movies" label="Movies" />
+        </q-tabs>
+
+        <q-separator />
+
+        <q-tab-panels v-model="tab" animated>
+          <q-tab-panel name="mails">
+            <div class="text-h6">Mails</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </q-tab-panel>
+
+          <q-tab-panel name="alarms">
+            <div class="text-h6">Alarms</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </q-tab-panel>
+
+          <q-tab-panel name="movies">
+            <div class="text-h6">Movies</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </q-tab-panel>
+        </q-tab-panels>
+      </q-card>
+
+      <q-card>
+        <q-tab-panels v-model="tab" animated>
+          <q-tab-panel name="mails">
+            <div class="text-h6">Mails</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </q-tab-panel>
+
+          <q-tab-panel name="alarms">
+            <div class="text-h6">Alarms</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </q-tab-panel>
+
+          <q-tab-panel name="movies">
+            <div class="text-h6">Movies</div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </q-tab-panel>
+        </q-tab-panels>
+
+        <q-separator />
+
+        <q-tabs
+          v-model="tab"
+          dense
+          class="bg-grey-3"
+          align="justify"
+          narrow-indicator
+        >
+          <q-tab name="mails" label="Mails" />
+          <q-tab name="alarms" label="Alarms" />
+          <q-tab name="movies" label="Movies" />
+        </q-tabs>
+      </q-card>
+    </div>
+  </div>
+
+
+
    <div class="row q-pa-md">
-   <div class="q-pa-md"><q-btn color="white" text-color="black" label="i dag" v-on:click="hideToday=false" /></div>
+   <div class="q-pa-md"><q-btn color="white" text-color="black" label="i dag" /></div>
    <div class="q-pa-md"><q-btn color="white" text-color="black" label="i går" /></div>
    <div class="q-pa-md"><q-btn color="white" text-color="black" label="i forgårs" /></div>
    </div>
-   <div :hidden="hideToday">
+   <div class="q-pa-md">
      <q-table
       title="Salg i dag"
       :data="today"
@@ -30,7 +107,7 @@
      
     />
     </div>
-    <div :hidden="hideYesterday">
+    <div  class="q-pa-md">
 
 <q-table
       title="Salg i går"
@@ -42,7 +119,7 @@
      
     />
 </div>
-<div :hidden="hideDayBeforeYesterday">
+<div  class="q-pa-md">
 
 <q-table
       title="Salg i forgårs"
