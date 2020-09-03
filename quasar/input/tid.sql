@@ -2,10 +2,13 @@ set
     nocount on
 set
     noexec on
-SET
-    LANGUAGE Norwegian
+
 set
     noexec off
+SET
+    LANGUAGE 'Norwegian';
+SELECT FORMAT (getdate(), 'dddd MMMM yyyy - HH:mm') as "oppdatert"
+for json path;
 
-SELECT FORMAT (getdate(), 'dddd MMMM yyyy - HH:mm') as "Oppdatert"
-for json path
+
+

@@ -22,6 +22,8 @@
 
   <body>
     <div id="q-app">
+    <p v-for="(u,index) in updated" :key="index">
+    {{ u.oppdatert }}</p>
       <div class="q-pa-md">
         <div>
           <q-card>

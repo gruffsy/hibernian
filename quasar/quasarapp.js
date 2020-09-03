@@ -103,6 +103,7 @@ new Vue({
     this.getToday();
     this.getYesterday();
     this.getDayBeforeYesterday();
+    this.getTime();
   },
   // ...etc
 });
