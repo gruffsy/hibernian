@@ -9,7 +9,6 @@ new Vue({
   data: function () {
     return {
       today: [],
-      todayTot: [],
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
       },
@@ -20,7 +19,7 @@ new Vue({
           field: (row) => row.butikk,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: 'max-width: 50px'
+          headerStyle: "max-width: 50px",
         },
         {
           label: "Beløp m/moms",
@@ -28,7 +27,7 @@ new Vue({
           field: (row) => row.mmoms,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: 'max-width: 50px'
+          headerStyle: "max-width: 50px",
         },
         {
           label: "Beløp u/moms",
@@ -36,7 +35,7 @@ new Vue({
           field: (row) => row.umoms,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: 'max-width: 50px'
+          headerStyle: "max-width: 50px",
         },
         {
           label: "DB",
@@ -44,7 +43,7 @@ new Vue({
           field: (row) => row.db,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: 'max-width: 50px'
+          headerStyle: "max-width: 50px",
         },
         {
           label: "DG",
@@ -52,7 +51,7 @@ new Vue({
           field: (row) => row.dg,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: 'max-width: 50px'
+          headerStyle: "max-width: 50px",
         },
         {
           label: "Antall kunder",
@@ -60,7 +59,7 @@ new Vue({
           field: (row) => row.antord,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: 'max-width: 50px'
+          headerStyle: "max-width: 50px",
         },
         {
           label: "Per kunde",
@@ -68,7 +67,7 @@ new Vue({
           field: (row) => row.prord,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: 'max-width: 50px'
+          headerStyle: "max-width: 50px",
         },
       ],
     };
@@ -79,15 +78,9 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.today = data));
     },
-    getTodayTotal() {
-      fetch("idag_totalt.sql.json")
-        .then((response) => response.json())
-        .then((data) => (this.todayTot = data));
-    },
   },
   mounted() {
     this.getToday();
-    this.getTodayTotal();
   },
   // ...etc
 });
