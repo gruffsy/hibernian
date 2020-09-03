@@ -11,6 +11,7 @@ new Vue({
       today: [],
       yesterday: [],
       dayBeforYesterday: [],
+      updated: [],
       tab: 'idag',
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
@@ -90,6 +91,11 @@ new Vue({
       fetch("./json/iforgar.sql.json")
         .then((response) => response.json())
         .then((data) => (this.dayBeforYesterday = data));
+    },
+    getTime() {
+      fetch("./json/tid.sql.json")
+        .then((response) => response.json())
+        .then((data) => (this.updated = data));
     },
     
   },
