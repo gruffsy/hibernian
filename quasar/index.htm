@@ -109,6 +109,26 @@
                <q-tab-panel name="selger">
                 <div class="q-pa-md">
                   <q-table
+                    title="Beste selgere i dag"
+                    :data="idagselger"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                   
+                  />
+                </div>
+                <div class="q-pa-md">
+                  <q-table
+                    title="Beste selgere i går"
+                    :data="igarselger"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                   
+                  />
+                </div>
+                <div class="q-pa-md">
+                  <q-table
                     title="Beste selgere lørdag"
                     :data="lordagselger"
                     dense

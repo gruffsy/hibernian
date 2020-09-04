@@ -14,6 +14,8 @@ new Vue({
       manedNaa: [],
       manedIfjor: [],
       lordagselger: [],
+      idagselger: [],
+      igarselger: [],
       updated: [],
       tab: 'dag',
       pagination: {
@@ -115,6 +117,16 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.lordagselger = data));
     },
+    getIdagSelger() {
+      fetch("./json/idagselger.sql.json")
+        .then((response) => response.json())
+        .then((data) => (this.idagselger = data));
+    },
+    getIgarSelger() {
+      fetch("./json/igarselger.sql.json")
+        .then((response) => response.json())
+        .then((data) => (this.igarselger = data));
+    },
     
   },
   mounted() {
@@ -125,6 +137,9 @@ new Vue({
     this.getMonthNow();
     this.getMonthLastYear();
     this.getLordagSelger();
+    this.getIdagSelger();
+    this.getIgarSelger();
+
   },
   // ...etc
 });
