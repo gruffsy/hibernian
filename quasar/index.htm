@@ -138,10 +138,22 @@
                   />
                 </div>
                 <div class="q-pa-md">
-                {{manednaaselger}}
+                
                   <q-table
                     title="Beste selgere denne måned"
-                    :data="lordagselger"
+                    :data="manednaaselger"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                   
+                  />
+                </div>
+
+                  <div class="q-pa-md">
+                
+                  <q-table
+                    title="Beste selgere i år"
+                    :data="iaarselger"
                     dense
                     :pagination.sync="pagination"
                     hide-pagination

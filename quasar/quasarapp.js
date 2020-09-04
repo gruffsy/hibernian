@@ -17,6 +17,7 @@ new Vue({
       idagselger: [],
       igarselger: [],
       manednaaselger: [],
+      iaarselger: [],
       updated: [],
       tab: 'dag',
       pagination: {
@@ -133,6 +134,11 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.manednaaselger = data));
     },
+    getIaarSelger() {
+      fetch("./json/iaarselgerselger.sql.json")
+        .then((response) => response.json())
+        .then((data) => (this.iaarselger = data));
+    },
   },
   mounted() {
     this.getToday();
@@ -145,6 +151,7 @@ new Vue({
     this.getIdagSelger();
     this.getIgarSelger();
     this.getManedNaaSelger();
+    this.getIaarSelger();
 
   },
   // ...etc
