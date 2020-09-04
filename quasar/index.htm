@@ -31,7 +31,7 @@
               active-color="primary"
               indicator-color="primary"
             >
-              <div class="q-pa-md"><q-tab name="idag" label="I dag" /></div>
+              <div class="q-pa-md"><q-tab name="dag" label="Dag" /></div>
               <div class="q-pa-md">
                 <q-tab name="igar" label="I går" />
               </div>
@@ -55,10 +55,26 @@
           >
           <q-card>
             <q-tab-panels v-model="tab" animated>
-              <q-tab-panel name="idag">
-                <q-table
+              <q-tab-panel name="dag">
+                <div class="q-pa-md"><q-table
                   title="Salg i dag"
                   :data="today"
+                  dense
+                  :pagination.sync="pagination"
+                  hide-pagination
+                  :columns="columns"
+                /></div> <div class="q-pa-md"><q-table
+                  title="Salg i går"
+                  :data="yesterday"
+                  dense
+                  :pagination.sync="pagination"
+                  hide-pagination
+                  :columns="columns"
+                /></div>
+
+                <q-table
+                  title="Salg i forgårs"
+                  :data="dayBeforYesterday"
                   dense
                   :pagination.sync="pagination"
                   hide-pagination
@@ -66,16 +82,7 @@
                 />
               </q-tab-panel>
 
-              <q-tab-panel name="igar">
-                <q-table
-                  title="Salg i går"
-                  :data="yesterday"
-                  dense
-                  :pagination.sync="pagination"
-                  hide-pagination
-                  :columns="columns"
-                />
-              </q-tab-panel>
+              
 
               <q-tab-panel name="iforgar">
                 <q-table

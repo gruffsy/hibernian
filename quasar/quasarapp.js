@@ -14,7 +14,7 @@ new Vue({
       manedNaa: [],
       manedIfjor: [],
       updated: [],
-      tab: 'idag',
+      tab: 'dag',
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
       },
