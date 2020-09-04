@@ -137,6 +137,16 @@
                    
                   />
                 </div>
+                <div class="q-pa-md">
+                  <q-table
+                    title="Beste selgere denne måned"
+                    :data="manednaaselger"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                   
+                  />
+                </div>
                 
               </q-tab-panel>
             </q-tab-panels>
