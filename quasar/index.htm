@@ -109,6 +109,20 @@
                 </div>
               </q-tab-panel>
 
+              <q-tab-panel name="aar">
+                <div class="q-pa-md">
+                  <q-table
+                    title="Hittil i år"
+                    :data="iaar"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                  />
+                </div>
+                
+              </q-tab-panel>
+
                <q-tab-panel name="selger">
                 <div class="q-pa-md">
                   <q-table
