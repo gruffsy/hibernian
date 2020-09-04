@@ -8,7 +8,7 @@ set
     noexec off
 
 select top (10) selger,
-cast(totalt as int) as belop,
+FORMAT(totalt,'### ### ##0 kr') AS 'Beløp',
 butikk
 from f0004.dbo.SALG_PR_SELGER
 where datepart(weekday, dato) = 7

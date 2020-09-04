@@ -111,9 +111,9 @@ new Vue({
         .then((data) => (this.manedIfjor = data));
     },
     getLordagSelger() {
-      fetch("./json/manedifjor.sql.json")
+      fetch("./json/lordagselger.sql.json")
         .then((response) => response.json())
-        .then((data) => (this. = data));
+        .then((data) => (this.lordagselger = data));
     },
     
   },
@@ -124,6 +124,7 @@ new Vue({
     this.getTime();
     this.getMonthNow();
     this.getMonthLastYear();
+    this.getLordagSelger();
   },
   // ...etc
 });
