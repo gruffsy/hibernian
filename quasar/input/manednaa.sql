@@ -27,7 +27,7 @@ where
 	s.StoreNo = tr.StoreNo and 
 	tl.PosTransactionNo = tr.PosTransactionNo 
 	and format(cast(tr.CompletedDate as DATE), 'MM') = format(cast(GETDATE() as DATE), 'MM')
-	and format(cast(tr.CompletedDate as DATE), 'yyyy') = format(cast(GETDATE() as DATE), 'YYYY')
+	and format(cast(tr.CompletedDate as DATE), 'yyyy') = format(cast(GETDATE() as DATE), 'yyyy')
 	and tr.Status = 4
 	
 	group by
@@ -56,7 +56,7 @@ where
 	s.StoreNo = tr.StoreNo and 
 	tl.PosTransactionNo = tr.PosTransactionNo 
 	and format(cast(tr.CompletedDate as DATE), 'MM') = format(cast(GETDATE() as DATE), 'MM')
-	and format(cast(tr.CompletedDate as DATE), 'yyyy') = format(cast(GETDATE() as DATE), 'YYYY')
+	and format(cast(tr.CompletedDate as DATE), 'yyyy') = format(cast(GETDATE() as DATE), 'yyyy')
 	and tr.Status = 4
 
 	
