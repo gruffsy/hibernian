@@ -13,6 +13,7 @@ new Vue({
       dayBeforYesterday: [],
       manedNaa: [],
       manedIfjor: [],
+      lordagselger: [],
       updated: [],
       tab: 'dag',
       pagination: {
@@ -108,6 +109,11 @@ new Vue({
       fetch("./json/manedifjor.sql.json")
         .then((response) => response.json())
         .then((data) => (this.manedIfjor = data));
+    },
+    getLordagSelger() {
+      fetch("./json/manedifjor.sql.json")
+        .then((response) => response.json())
+        .then((data) => (this. = data));
     },
     
   },
