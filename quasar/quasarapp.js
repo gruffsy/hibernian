@@ -11,6 +11,7 @@ new Vue({
       today: [],
       yesterday: [],
       dayBeforYesterday: [],
+      manedNaa: [],
       updated: [],
       tab: 'idag',
       pagination: {
@@ -97,6 +98,11 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.updated = data));
     },
+    getMonthNow() {
+      fetch("./json/manednaa.sql.json")
+        .then((response) => response.json())
+        .then((data) => (this.manedNaa = data));
+    },
     
   },
   mounted() {
@@ -104,6 +110,7 @@ new Vue({
     this.getYesterday();
     this.getDayBeforeYesterday();
     this.getTime();
+    this.getMonthNow();
   },
   // ...etc
 });

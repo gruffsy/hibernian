@@ -38,6 +38,9 @@
               <div class="q-pa-md">
                 <q-tab name="iforgar" label="I forgårs" />
               </div>
+              <div class="q-pa-md">
+                <q-tab name="manednaa" label="Denne måned" />
+              </div>
             </q-tabs>
 
             <q-separator />
@@ -75,6 +78,16 @@
                 <q-table
                   title="Salg i forgårs"
                   :data="dayBeforYesterday"
+                  dense
+                  :pagination.sync="pagination"
+                  hide-pagination
+                  :columns="columns"
+                />
+              </q-tab-panel>
+              <q-tab-panel name="manednaa">
+                <q-table
+                  title="Hittil i denne måned"
+                  :data="manedNaa"
                   dense
                   :pagination.sync="pagination"
                   hide-pagination
