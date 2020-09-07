@@ -117,7 +117,7 @@ new Vue({
         .then((data) => (this.manedIfjor = data));
     },
     getMonthCompare() {
-      fetch("./json/madesammen.sql.json")
+      fetch("./json/manedsammen.sql.json")
         .then((response) => response.json())
         .then((data) => (this.manedSammen = data));
     },
@@ -159,7 +159,7 @@ new Vue({
     this.getTime();
     this.getMonthNow();
     this.getMonthLastYear();
-    this. getMonthCompare();
+    this.getMonthCompare();
     this.getLordagSelger();
     this.getIdagSelger();
     this.getIgarSelger();
