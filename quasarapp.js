@@ -13,6 +13,7 @@ new Vue({
       dayBeforYesterday: [],
       manedNaa: [],
       manedIfjor: [],
+      manedSammen: [],
       lordagselger: [],
       idagselger: [],
       igarselger: [],
@@ -115,6 +116,11 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.manedIfjor = data));
     },
+    getMonthCompare() {
+      fetch("./json/madesammen.sql.json")
+        .then((response) => response.json())
+        .then((data) => (this.manedSammen = data));
+    },
     getLordagSelger() {
       fetch("./json/lordagselger.sql.json")
         .then((response) => response.json())
@@ -153,6 +159,7 @@ new Vue({
     this.getTime();
     this.getMonthNow();
     this.getMonthLastYear();
+    this. getMonthCompare();
     this.getLordagSelger();
     this.getIdagSelger();
     this.getIgarSelger();
