@@ -1,1 +1,0 @@
-[{"butikk":"Brødr. Berg Stenindustri AS avd. Skien","mmoms":" 609 389 kr","umoms":" 487 511 kr","db":" 62 637 kr","dg":"-4.74%","antord":"  318","prord":"  158 kr"},{"butikk":"Brødr. Berg Stenindustri AS avd. Porsgrunn","mmoms":" 270 997 kr","umoms":" 216 

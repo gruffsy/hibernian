@@ -1,1 +1,0 @@
-[{"selger":"Laila Skripeland","Beløp":" 26 847 kr","butikk":"Arendal"},{"selger":"Heidi Kihle Lindvig","Beløp":" 6 960 kr","butikk":"BrBerg"},{"selger":"Simon Andre Nilsen","Beløp":" 6 002 kr","butikk":"T�nsberg"},{"selger":"Silje Hansen R�ed","Beløp":

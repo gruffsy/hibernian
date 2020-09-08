@@ -1,1 +1,0 @@
-[{"butikk":"Totalt","ERPHostCompanyNo":9999,"WarehouseNo":9999,"antord":"  0"}]                                                                                                                                                                                 
