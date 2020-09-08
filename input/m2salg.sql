@@ -29,4 +29,3 @@ where
 	tl.ProductName
 	order by 
 	tl.ProductNo
-for json auto
