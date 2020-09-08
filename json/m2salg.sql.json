@@ -1,0 +1,2 @@
+﻿Msg 13605, Level 16, State 1, Server DB-HIB, Line 11
+Column expressions and data sources without names or aliases cannot be formatted as JSON text using FOR JSON clause. Add alias to the unnamed column or table.
