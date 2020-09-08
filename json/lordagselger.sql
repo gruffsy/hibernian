@@ -1,0 +1,1 @@
+[{"selger":"Jeanette Huse","BelÃ¸p":" 127 012 kr","butikk":"Arendal"},{"selger":"Pål Magnus Andersen","BelÃ¸p":" 117 793 kr","butikk":"Sandefjord"},{"selger":"Richard Sørensen","BelÃ¸p":" 89 463 kr","butikk":"Kristiansand"},{"selger":"Ståle Skjævestad","Be

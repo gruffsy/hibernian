@@ -1,0 +1,1 @@
+[{"selger":"Christoffer Fosstvedt","Beløp":"6 813 296 kr","butikk":"BrBerg"},{"selger":"Hans Kristian Nenset","Beløp":"6 807 686 kr","butikk":"BrBerg"},{"selger":"James Michael McGurty","Beløp":"6 785 936 kr","butikk":"BrBerg"},{"selger":"Fredrik Frost 

@@ -1,0 +1,1 @@
+[{"selger":"Fredrik Mølmen","BelÃ¸p":" 277 473 kr","butikk":"BrBerg"},{"selger":"Helen Rougnø","BelÃ¸p":" 268 804 kr","butikk":"Tønsberg"},{"selger":"Alexander Firing Hansen","BelÃ¸p":" 257 554 kr","butikk":"Tønsberg"},{"selger":"Jeanette Huse","BelÃ¸p":" 

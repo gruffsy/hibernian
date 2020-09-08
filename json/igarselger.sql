@@ -1,0 +1,1 @@
+[{"selger":"Christoffer Fosstvedt","Beløp":" 54 850 kr","butikk":"BrBerg"},{"selger":"Fredrik M�lmen","Beløp":" 52 092 kr","butikk":"BrBerg"},{"selger":"Laila Skripeland","Beløp":" 49 575 kr","butikk":"Arendal"},{"selger":"Bertil Tangen","Beløp":" 47 8

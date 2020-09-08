@@ -1,0 +1,1 @@
+[{"butikk":"Brødr. Berg Stenindustri AS avd. Skien","ERPHostCompanyNo":1,"WarehouseNo":1,"mmoms":"1 945 717 kr","umoms":"1 556 573 kr","db":" 361 725 kr","dg":"23.24%","antord":" 1 420","prord":" 1 370 kr"},{"butikk":"Brødr. Berg Stenindustri AS avd. Porsg
