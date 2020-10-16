@@ -14,5 +14,5 @@ sqlcmd -S %server% -U %user% -P %password% -i "%inputpath%%%~nxI" -y0 -o "%outpu
 )
 
 
-call sqlcmd -S %server% -U %user% -P %password% -s ";" -W -i %csvinputpath%lagersaldo.sql | findstr /v /c:"-" /b -y0 -o %csvoutputpath%lagersaldo.csv
+call sqlcmd -S %server% -U %user% -P %password% -s ";" -W -i %csvinputpath%lagersaldo.sql | findstr /v /c:"-" /b > %csvoutputpath%lagersaldo.csv -y0
 call git_push.bat
