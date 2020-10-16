@@ -58,6 +58,6 @@ FROM [F0015].[dbo].[StcBal] as stock
 where stcno = 1 and stock.prodno = p.prodno
 ) as 'Stock'
 from [F0001].[dbo].[prod] as p
-where prodpro <> 4 and eanitmNo <> 0
+where prodpro <> 4 and eanitmNo <> ""
 go
     quit
