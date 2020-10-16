@@ -1,4 +1,4 @@
-set
+﻿set
     nocount on
 set
     noexec on
@@ -33,7 +33,7 @@ where stcno = 1 and kris.prodno = p.prodno
       sum(bal + stcinc - shprsv - shprsvin)
 FROM [F0003].[dbo].[StcBal] as ton
 where stcno = 1 and ton.prodno = p.prodno
-) as 'Tønsberg'
+) as 'Tonsberg'
 ,
 ( SELECT 
       sum(bal + stcinc - shprsv - shprsvin)
