@@ -7,8 +7,6 @@ SET
 set
     noexec off
 
-	
- /****** Script for SelectTopNRows command from SSMS  ******/
 select 
 	prodno as 'Produktnummer',
 	trinf1 as 'Lev.prono',
