@@ -21,6 +21,7 @@ new Vue({
       iaarselger: [],
       iaar: [],
       ifjor: [],
+      aarSammen: [],
       updated: [],
       tab: 'dag',
       pagination: {
@@ -157,6 +158,11 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.ifjor = data));
     },
+    getYearCompare() {
+      fetch("./json/aarsammen.sql.json")
+        .then((response) => response.json())
+        .then((data) => (this.aarSammen = data));
+    },
   },
   mounted() {
     this.getToday();
@@ -172,7 +178,8 @@ new Vue({
     this.getManedNaaSelger();
     this.getIaarSelger();
     this.getIaar();
-    this.getIfjor()
+    this.getIfjor();
+    this.getYearCompare();
 
   },
   // ...etc

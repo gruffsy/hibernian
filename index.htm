@@ -141,6 +141,17 @@
                     :columns="columns"
                   />
                 </div>
+
+                <div class="q-pa-md">
+                  <q-table
+                    title="Sammenligning i år mot i fjor"
+                    :data="aarSammen"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                  />
+                </div>
                 
               </q-tab-panel>
 
