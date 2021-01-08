@@ -131,6 +131,16 @@
                     :columns="columns"
                   />
                 </div>
+                <div class="q-pa-md">
+                  <q-table
+                    title="Hittil i fjor"
+                    :data="ifjor"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                  />
+                </div>
                 
               </q-tab-panel>
 

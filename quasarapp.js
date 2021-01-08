@@ -20,6 +20,7 @@ new Vue({
       manednaaselger: [],
       iaarselger: [],
       iaar: [],
+      ifjor: [],
       updated: [],
       tab: 'dag',
       pagination: {
@@ -151,6 +152,11 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.iaar = data));
     },
+    getIfjor() {
+      fetch("./json/ifjor.sql.json")
+        .then((response) => response.json())
+        .then((data) => (this.ifjor = data));
+    },
   },
   mounted() {
     this.getToday();
@@ -166,6 +172,7 @@ new Vue({
     this.getManedNaaSelger();
     this.getIaarSelger();
     this.getIaar();
+    this.getIfjor()
 
   },
   // ...etc
