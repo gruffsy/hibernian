@@ -28,6 +28,7 @@ where
 	tl.PosTransactionNo = tr.PosTransactionNo 
 	and format(cast(tr.CompletedDate as DATE), 'MM') = format(cast(GETDATE() as DATE), 'MM')
 	and CAST(tr.CompletedDate as DATE) <= DATEADD(YEAR, -1, CAST(GETDATE() as DATE))
+	and format(cast(tr.CompletedDate as DATE), 'yyyy') = format(DATEADD(YEAR, -1, CAST(GETDATE() as DATE)), 'yyyy')
 	and tr.Status = 4
 	
 	group by
@@ -57,6 +58,7 @@ where
 	tl.PosTransactionNo = tr.PosTransactionNo 
 	and format(cast(tr.CompletedDate as DATE), 'MM') = format(cast(GETDATE() as DATE), 'MM')
 	and CAST(tr.CompletedDate as DATE) <= DATEADD(YEAR, -1, CAST(GETDATE() as DATE))
+	and format(cast(tr.CompletedDate as DATE), 'yyyy') = format(DATEADD(YEAR, -1, CAST(GETDATE() as DATE)), 'yyyy')
 	and tr.Status = 4
 
 	
