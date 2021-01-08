@@ -1,4 +1,13 @@
+set
+    nocount on
+set
+    noexec on
+SET
+    LANGUAGE Norwegian
+set
+    noexec off
 
+	
 	
 SELECT 
 m1.butikk as 'butikk',
