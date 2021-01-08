@@ -133,3 +133,5 @@ where
 	where m1.butikk = m2.butikk
 	order by
 	m1.ERPHostCompanyNo, m1.WarehouseNo
+
+for json auto
