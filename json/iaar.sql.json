@@ -1,2 +1,2 @@
 ﻿Msg 1205, Level 13, State 52, Server DB-HIB, Line 11
-Transaction (Process ID 166) was deadlocked on lock | communication buffer resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+Transaction (Process ID 151) was deadlocked on lock | communication buffer resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
