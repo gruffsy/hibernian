@@ -14,8 +14,8 @@ s.ERPHostCompanyNo,
 	s.WarehouseNo,
 	FORMAT(sum(tl.extendedprice),'### ### ##0 kr') AS 'mmoms',
 	FORMAT(sum((tl.extendedprice) / 1.25),'### ### ##0 kr') AS 'umoms',
-	FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity)),'### ### ##0 kr') AS 'db',
-	FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity))/sum(tl.extendedprice / 1.25), 'P') as 'dg',
+	-- FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity)),'### ### ##0 kr') AS 'db',
+	-- FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity))/sum(tl.extendedprice / 1.25), 'P') as 'dg',
 	FORMAT(count(distinct tr.PosTransactionNo), '### ### ##0') as 'antord',
 	FORMAT(sum(tl.extendedprice)/count(distinct tr.PosTransactionNo), '### ### ##0 kr') as 'prord'
 	
@@ -42,8 +42,8 @@ select
 9999,
 	FORMAT(sum(tl.extendedprice),'### ### ##0 kr') AS 'mmoms',
 	FORMAT(sum((tl.extendedprice) / 1.25),'### ### ##0 kr') AS 'umoms',
-	FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity)),'### ### ##0 kr') AS 'db',
-	FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity))/sum(tl.extendedprice / 1.25), 'P') as 'dg',
+	-- FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity)),'### ### ##0 kr') AS 'db',
+	-- FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity))/sum(tl.extendedprice / 1.25), 'P') as 'dg',
 	FORMAT(count(distinct tr.PosTransactionNo), '### ### ##0') as 'antord',
 	FORMAT(sum(tl.extendedprice)/count(distinct tr.PosTransactionNo), '### ### ##0 kr') as 'prord'
 	
