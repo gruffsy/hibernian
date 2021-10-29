@@ -31,7 +31,6 @@ AND
   GROUP BY
   FORMAT ( CONVERT(datetime, convert(varchar(10), Fakturadato)), 'MM'),
   FORMAT ( CONVERT(datetime, convert(varchar(10), Fakturadato)), 'yyyy'),
-datepart(week, CONVERT(datetime, convert(varchar(10), Ferdigmeldtdato))),
-	NAVnr
+NAVnr
 go
     quit
