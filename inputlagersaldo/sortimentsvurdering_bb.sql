@@ -30,7 +30,7 @@ AND
   
   
   GROUP BY
-  	Strekkode,
+  	FORMAT ( CONVERT(datetime, convert(varchar(10), Fakturadato)), 'yyyy') AS ar,
 	NAVnr
 go
     quit
