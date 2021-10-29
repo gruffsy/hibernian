@@ -16,4 +16,5 @@ sqlcmd -S %server% -U %user% -P %password% -i "%inputpath%%%~nxI" -y0 -o "%outpu
 
 call sqlcmd -S %server% -U %user% -P %password% -s ";" -W -i %csvinputpath%lagersaldo.sql | findstr /v /c:"-" /b > %csvoutputpath%lagersaldo.csv
 call sqlcmd -S %server% -U %user% -P %password% -s ";" -W -i %csvinputpath%lagersaldo_navnr.sql | findstr /v /c:"-" /b > %csvoutputpath%lagersaldo_navnr.csv
+call sqlcmd -S %server% -U %user% -P %password% -s ";" -W -i %csvinputpath%salgstall_antall_navnr_måned.sql | findstr /v /c:"-" /b > %csvoutputpath%salgstall_antall_navnr_måned.csv
 call git_push.bat
