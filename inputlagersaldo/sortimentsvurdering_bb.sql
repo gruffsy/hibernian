@@ -30,7 +30,7 @@ AND
   
   
   GROUP BY
-  	FORMAT ( CONVERT(datetime, convert(varchar(10), Fakturadato)), 'yyyy') AS ar,
+  	FORMAT ( CONVERT(datetime, convert(varchar(10), Fakturadato)), 'yyyy'),
 	NAVnr
 go
     quit
