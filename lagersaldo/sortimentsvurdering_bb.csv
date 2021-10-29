@@ -1,0 +1,2 @@
+Msg 8120, Level 16, State 1, Server DB-HIB, Line 12
+Column 'F0001.dbo.varmepumper_ALLE.Fakturadato' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
