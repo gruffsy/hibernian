@@ -22,12 +22,12 @@
 
   <body>
     <div id="q-app">
-      <div class="q-pa-md">
+      <div class="q-pa-md bg-grey-3">
         <div>
           <q-card>
             <q-tabs
               v-model="tab"
-              class="text-grey"
+              class="text-black"
               active-color="primary"
               indicator-color="primary"
             >
@@ -78,7 +78,7 @@
                     hide-pagination
                     :columns="columns"
                     row-key="name"
-                    class="bg-grey-3 text-body text-body"
+                    class="bg-grey-3 text-body"
                   >
                     <template v-slot:body="props">
                       <q-tr
