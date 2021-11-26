@@ -88,15 +88,15 @@ new Vue({
     };
   },
   methods: {
-    tableFormat(name) {
-      if (
-        name === "Totalt"
-      ) {
-        return "text-bold";
-      } else {
-        return "bg-white text-black text-subtitle2";
-      }
-    },
+    // tableFormat(name) {
+    //   if (
+    //     name === "Totalt"
+    //   ) {
+    //     return "text-bold";
+    //   } else {
+    //     return "bg-white text-black text-subtitle2";
+    //   }
+    // },
     getToday() {
       fetch("./json/idag.sql.json")
         .then((response) => response.json())
