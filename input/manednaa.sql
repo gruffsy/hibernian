@@ -22,7 +22,9 @@ FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 
 from f0001.dbo.PRODUKTRANSER_ALLE
 where 
-substring(   Cast(fakturadato as varchar(10)),5,2) =substring(Cast(datepart(year, cast(getdate() as Date)) as varchar(10)),5,2)
+substring(   Cast(fakturadato as varchar(10)),1,4) =substring(Cast(datepart(year, cast(getdate() as Date)) as varchar(10)),1,4)
+and
+substring(   Cast(fakturadato as varchar(10)),5,2) =substring(Cast(datepart(month, cast(getdate() as Date)) as varchar(10)),1,2)
 and transaksjonstype = 1
 and Ordretype = 3
 
@@ -44,13 +46,14 @@ FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 	FORMAT(sum(m_mva)/count(distinct Ordrenummer), '### ### ##0 kr') as 'prord'
 	from f0001.dbo.PRODUKTRANSER_ALLE
 where 
-substring(   Cast(fakturadato as varchar(10)),5,2) =substring(Cast(datepart(year, cast(getdate() as Date)) as varchar(10)),5,2) 
+substring(   Cast(fakturadato as varchar(10)),1,4) =substring(Cast(datepart(year, cast(getdate() as Date)) as varchar(10)),1,4)
+and
+substring(   Cast(fakturadato as varchar(10)),5,2) =substring(Cast(datepart(month, cast(getdate() as Date)) as varchar(10)),1,2) 
 and transaksjonstype = 1
 and Ordretype = 3
 
 order by
 klient
-	
 	
 	
 for json auto
