@@ -46,15 +46,16 @@
 
             <q-separator />
           </q-card>
-          <q-card class="q-pa-md"
+          <div class="q-px-xl q-py-md bg-grey-3">
+          <q-card 
             ><p v-for="(u,index) in updated" :key="index">
               Oppdatert sist: {{ u.oppdatert }}
             </p></q-card
-          >
+          ></div>
           <q-card>
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="dag">
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Salg i dag"
                     :data="today"
@@ -62,14 +63,25 @@
                     :pagination.sync="pagination"
                     hide-pagination
                     :columns="columns"
-                  />
-                  <!-- <template v-slot:body="props">
-                    <q-tr :props="props"  :class="tableFormat(props.row.butikk)">
-                      <q-td v-for="col in props.cols" :key="col.name" :props="props">{{ col.value }}</q-td>
-                    </q-tr></template></q-table> -->
-                  -->
+                  
+                    class="bg-grey-3 text-body"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
                 </div>
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Salg i går"
                     :data="yesterday"
@@ -95,7 +107,7 @@
                     </template>
                   </q-table>
                 </div>
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Salg i forgårs"
                     :data="dayBeforYesterday"
@@ -124,7 +136,7 @@
               </q-tab-panel>
 
               <q-tab-panel name="maned">
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Hittil i denne måned"
                     :data="manedNaa"
@@ -150,7 +162,7 @@
                     </template>
                   </q-table>
                 </div>
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Hittil ifjor måned"
                     :data="manedIfjor"
@@ -177,7 +189,7 @@
                   </q-table>
                 </div>
 
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Sammenligning måned i år og i fjor"
                     :data="manedSammen"
@@ -206,7 +218,7 @@
               </q-tab-panel>
 
               <q-tab-panel name="aar">
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Hittil i år"
                     :data="iaar"
@@ -232,7 +244,7 @@
                     </template>
                   </q-table>
                 </div>
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Hittil i fjor"
                     :data="ifjor"
@@ -259,7 +271,7 @@
                   </q-table>
                 </div>
 
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Sammenligning i år mot i fjor"
                     :data="aarSammen"
@@ -288,7 +300,7 @@
               </q-tab-panel>
 
               <q-tab-panel name="selger">
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Beste selgere i dag"
                     :data="idagselger"
@@ -297,7 +309,7 @@
                     hide-pagination
                   />
                 </div>
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Beste selgere i går"
                     :data="igarselger"
@@ -306,7 +318,7 @@
                     hide-pagination
                   />
                 </div>
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Beste selgere lørdag"
                     :data="lordagselger"
@@ -315,7 +327,7 @@
                     hide-pagination
                   />
                 </div>
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Beste selgere denne måned"
                     :data="manednaaselger"
@@ -325,7 +337,7 @@
                   />
                 </div>
 
-                <div class="q-pa-xl">
+                <div class="q-px-xl q-py-md">
                   <q-table
                     title="Beste selgere i år"
                     :data="iaarselger"

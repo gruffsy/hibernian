@@ -99,7 +99,7 @@ new Vue({
       if (
         name === "Totalt" 
       ) {
-        return "bg-grey-4 text-bold";
+        return "bg-grey-3 text-bold";
       } else {
         return "bg-grey-2 text-black text-body";
       }
