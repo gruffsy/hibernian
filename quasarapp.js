@@ -29,74 +29,81 @@ new Vue({
       },
       columns: [
         {
+          name: "butikk",
           label: "Butikk",
           align: "left",
           field: (row) => row.butikk,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px",
+          headerStyle: "max-width: 50px"
         },
         {
+          name: "mmoms",
           label: "Beløp m/moms",
           align: "right",
           field: (row) => row.mmoms,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px",
+          headerStyle: "max-width: 50px"
         },
         {
+          name: "ummoms",
           label: "Beløp u/moms",
           align: "right",
           field: (row) => row.umoms,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px",
+          headerStyle: "max-width: 50px"
         },
-       {
+        {
+          name: "db",
           label: "DB",
           align: "right",
           field: (row) => row.db,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px",
+          headerStyle: "max-width: 50px"
         },
         {
+          name: "dg",
           label: "DG",
           align: "right",
           field: (row) => row.dg,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px",
+          headerStyle: "max-width: 50px"
         },
         {
+          name: "antord",
           label: "Antall kunder",
           align: "right",
           field: (row) => row.antord,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px",
+          headerStyle: "max-width: 50px"
         },
         {
+          name: "prord",
           label: "Per kunde",
           align: "right",
           field: (row) => row.prord,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px",
-        },
+          headerStyle: "max-width: 50px"
+        }
       ],
     };
   },
   methods: {
-    // tableFormat(name) {
-    //   if (
-    //     name === "Totalt"
-    //   ) {
-    //     return "text-bold";
-    //   } else {
-    //     return "bg-white text-black text-subtitle2";
-    //   }
-    // },
+    tableFormat(name) {
+      if (
+        name === "Totalt" 
+      ) {
+        return "bg-grey-5 text-bold";
+      } else {
+        return "bg-grey-4 text-black text-body";
+      }
+    },
     getToday() {
       fetch("./json/idag.sql.json")
         .then((response) => response.json())

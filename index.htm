@@ -54,7 +54,7 @@
           <q-card>
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="dag">
-                <div class="q-pa-md">
+                <div class="q-pa-xl">
                   <q-table
                     title="Salg i dag"
                     :data="today"
@@ -62,14 +62,14 @@
                     :pagination.sync="pagination"
                     hide-pagination
                     :columns="columns"
-                    
-                 />
-                 <!-- <template v-slot:body="props">
+                  />
+                  <!-- <template v-slot:body="props">
                     <q-tr :props="props"  :class="tableFormat(props.row.butikk)">
                       <q-td v-for="col in props.cols" :key="col.name" :props="props">{{ col.value }}</q-td>
-                    </q-tr></template></q-table> --> -->
+                    </q-tr></template></q-table> -->
+                  -->
                 </div>
-                <div class="q-pa-md">
+                <div class="q-pa-xl">
                   <q-table
                     title="Salg i går"
                     :data="yesterday"
@@ -77,9 +77,25 @@
                     :pagination.sync="pagination"
                     hide-pagination
                     :columns="columns"
-                  />
+                    row-key="name"
+                    class="bg-grey-3 text-body text-body"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
                 </div>
-                <div class="q-pa-md">
+                <div class="q-pa-xl">
                   <q-table
                     title="Salg i forgårs"
                     :data="dayBeforYesterday"
@@ -92,7 +108,7 @@
               </q-tab-panel>
 
               <q-tab-panel name="maned">
-                <div class="q-pa-md">
+                <div class="q-pa-xl">
                   <q-table
                     title="Hittil i denne måned"
                     :data="manedNaa"
@@ -102,7 +118,7 @@
                     :columns="columns"
                   />
                 </div>
-                <div class="q-pa-md">
+                <div class="q-pa-xl">
                   <q-table
                     title="Hittil ifjor måned"
                     :data="manedIfjor"
@@ -113,7 +129,7 @@
                   />
                 </div>
 
-                <div class="q-pa-md">
+                <div class="q-pa-xl">
                   <q-table
                     title="Sammenligning måned i år og i fjor"
                     :data="manedSammen"
@@ -126,7 +142,7 @@
               </q-tab-panel>
 
               <q-tab-panel name="aar">
-                <div class="q-pa-md">
+                <div class="q-pa-xl">
                   <q-table
                     title="Hittil i år"
                     :data="iaar"
@@ -136,7 +152,7 @@
                     :columns="columns"
                   />
                 </div>
-                <div class="q-pa-md">
+                <div class="q-pa-xl">
                   <q-table
                     title="Hittil i fjor"
                     :data="ifjor"
@@ -147,7 +163,7 @@
                   />
                 </div>
 
-                <div class="q-pa-md">
+                <div class="q-pa-xl">
                   <q-table
                     title="Sammenligning i år mot i fjor"
                     :data="aarSammen"
@@ -157,64 +173,55 @@
                     :columns="columns"
                   />
                 </div>
-                
               </q-tab-panel>
 
-               <q-tab-panel name="selger">
-                <div class="q-pa-md">
+              <q-tab-panel name="selger">
+                <div class="q-pa-xl">
                   <q-table
                     title="Beste selgere i dag"
                     :data="idagselger"
                     dense
                     :pagination.sync="pagination"
                     hide-pagination
-                   
                   />
                 </div>
-                <div class="q-pa-md">
+                <div class="q-pa-xl">
                   <q-table
                     title="Beste selgere i går"
                     :data="igarselger"
                     dense
                     :pagination.sync="pagination"
                     hide-pagination
-                   
                   />
                 </div>
-                <div class="q-pa-md">
+                <div class="q-pa-xl">
                   <q-table
                     title="Beste selgere lørdag"
                     :data="lordagselger"
                     dense
                     :pagination.sync="pagination"
                     hide-pagination
-                   
                   />
                 </div>
-                <div class="q-pa-md">
-                
+                <div class="q-pa-xl">
                   <q-table
                     title="Beste selgere denne måned"
                     :data="manednaaselger"
                     dense
                     :pagination.sync="pagination"
                     hide-pagination
-                   
                   />
                 </div>
 
-                  <div class="q-pa-md">
-                
+                <div class="q-pa-xl">
                   <q-table
                     title="Beste selgere i år"
                     :data="iaarselger"
                     dense
                     :pagination.sync="pagination"
                     hide-pagination
-                   
                   />
                 </div>
-                
               </q-tab-panel>
             </q-tab-panels>
 
