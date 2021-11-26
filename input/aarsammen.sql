@@ -17,7 +17,7 @@ m1.butikk as 'butikk',
 FORMAT(m1.mmoms - m2.mmoms,'### ### ##0 kr') AS 'mmoms',
 	FORMAT(m1.umoms - m2.umoms ,'### ### ##0 kr') AS 'umoms',
 	FORMAT(m1.db - m2.db,'### ### ##0 kr') AS 'db',
-	FORMAT(m1.dg - m2.dg, 'P') as 'dg',
+	FORMAT(m1.dg - m2.dg, 'P1') as 'dg',
 	FORMAT(m1.antord - m2.antord, '### ### ##0') as 'antord',
 	FORMAT(m1.prord - m2.prord, '### ### ##0 kr') as 'prord'
 

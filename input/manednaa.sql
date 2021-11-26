@@ -15,7 +15,7 @@ Klient,
 FORMAT(sum(m_mva),'### ### ##0 kr') AS 'mmoms',
 FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 	FORMAT(sum(u_mva - kostnad),'### ### ##0 kr') AS 'db',
-	FORMAT(sum(u_mva - kostnad)/sum(u_mva), 'P') as 'dg',
+	FORMAT(sum(u_mva - kostnad)/sum(u_mva), 'P1') as 'dg',
 	FORMAT(count(distinct Ordrenummer), '### ### ##0') as 'antord',
 	FORMAT(sum(m_mva)/count(distinct Ordrenummer), '### ### ##0 kr') as 'prord'
 
@@ -42,7 +42,7 @@ select
 FORMAT(sum(m_mva),'### ### ##0 kr') AS 'mmoms',
 FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 	FORMAT(sum(u_mva - kostnad),'### ### ##0 kr') AS 'db',
-	FORMAT(sum(u_mva - kostnad)/sum(u_mva), 'P') as 'dg',
+	FORMAT(sum(u_mva - kostnad)/sum(u_mva), 'P1') as 'dg',
 	FORMAT(count(distinct Ordrenummer), '### ### ##0') as 'antord',
 	FORMAT(sum(m_mva)/count(distinct Ordrenummer), '### ### ##0 kr') as 'prord'
 	from f0001.dbo.PRODUKTRANSER_ALLE
