@@ -1,8 +1,1 @@
-﻿Msg 102, Level 15, State 1, Server DB-HIB, Line 11
-Incorrect syntax near 'ECLARE'.
-Msg 137, Level 15, State 2, Server DB-HIB, Line 42
-Must declare the scalar variable "@last_year".
-Msg 137, Level 15, State 2, Server DB-HIB, Line 68
-Must declare the scalar variable "@last_year".
-Msg 156, Level 15, State 1, Server DB-HIB, Line 129
-Incorrect syntax near the keyword 'as'.
+﻿[{"butikk":"Skien","mmoms":" 15 942 kr","umoms":" 12 753 kr","db":"- 189 753 kr","dg":"-2.64%","antord":"-  316","prord":"  79 kr"},{"butikk":"Porsgrunn","mmoms":"- 460 501 kr","umoms":"- 368 401 kr","db":"- 94 172 kr","dg":"-1.29%","antord":"-  466","prord":"-  54 kr"},{"butikk":"Kristiansand","mmoms":"- 158 849 kr","umoms":"- 127 079 kr","db":"- 128 353 kr","dg":"-2.35%","antord":"-  469","prord":"  137 kr"},{"butikk":"Tønsberg","mmoms":"- 329 321 kr","umoms":"- 263 457 kr","db":"- 261 372 kr","dg":"-3.49%","antord":"-  928","prord":"  152 kr"},{"butikk":"Arendal","mmoms":"1 085 377 kr","umoms":" 868 302 kr","db":" 81 902 kr","dg":"-1.53%","antord":"-  107","prord":"  200 kr"},{"butikk":"Sandefjord","mmoms":"- 400 450 kr","umoms":"- 320 360 kr","db":"- 194 609 kr","dg":"-3.03%","antord":"-  635","prord":"  83 kr"},{"butikk":"Larvik","mmoms":"- 225 355 kr","umoms":"- 180 284 kr","db":"- 161 241 kr","dg":"-3.93%","antord":"-  381","prord":"  80 kr"},{"butikk":"Totalt","mmoms":"- 473 171 kr","umoms":"- 378 537 kr","db":"- 947 644 kr","dg":"-2.67%","antord":"- 3 301","prord":"  126 kr"}]

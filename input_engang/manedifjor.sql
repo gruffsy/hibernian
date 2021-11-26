@@ -9,6 +9,8 @@ set
 
 	
 
+DECLARE @last_year AS VARCHAR(100)=convert(varchar, dateadd(year, -1, getdate()), 112)
+DECLARE @this_month AS VARCHAR(100)=convert(varchar, datepart(month, getdate()), 112)
 
 select 
 butikk,
