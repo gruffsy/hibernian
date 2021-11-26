@@ -35,6 +35,7 @@ new Vue({
           format: (val) => `${val}`,
           style: "max-width: 130px",
           headerStyle: "max-width: 130px",
+          sortable: true,
         },
         {
           label: "Beløp m/moms",
@@ -43,6 +44,7 @@ new Vue({
           format: (val) => `${val}`,
           style: "max-width: 50px",
           headerStyle: "max-width: 50px",
+          sortable: true
         },
         {
           label: "Beløp u/moms",
@@ -51,6 +53,7 @@ new Vue({
           format: (val) => `${val}`,
           style: "max-width: 50px",
           headerStyle: "max-width: 50px",
+          sortable: true
         },
        {
           label: "DB",
@@ -59,6 +62,7 @@ new Vue({
           format: (val) => `${val}`,
           style: "max-width: 50px",
           headerStyle: "max-width: 50px",
+          sortable: true
         },
         {
           label: "DG",
@@ -67,6 +71,7 @@ new Vue({
           format: (val) => `${val}`,
           style: "max-width: 50px",
           headerStyle: "max-width: 50px",
+          sortable: true
         },
         {
           label: "Antall kunder",
@@ -75,6 +80,7 @@ new Vue({
           format: (val) => `${val}`,
           style: "max-width: 50px",
           headerStyle: "max-width: 50px",
+          sortable: true
         },
         {
           label: "Per kunde",
@@ -83,6 +89,7 @@ new Vue({
           format: (val) => `${val}`,
           style: "max-width: 50px",
           headerStyle: "max-width: 50px",
+          sortable: true
         },
       ],
     };
