@@ -1,1 +1,8 @@
-﻿[{"butikk":"Brødr. Berg Stenindustri AS avd. Skien","mmoms":"- 40 865 kr","umoms":"- 32 692 kr","antord":"-  329","prord":"  72 kr"},{"butikk":"Brødr. Berg Stenindustri AS avd. Porsgrunn","mmoms":"- 452 481 kr","umoms":"- 361 985 kr","antord":"-  475","prord":"-  43 kr"},{"butikk":"Megaflis Sørlandsparken AS","mmoms":"- 159 846 kr","umoms":"- 127 877 kr","antord":"-  466","prord":"  135 kr"},{"butikk":"Megaflis Tønsberg AS","mmoms":"- 340 570 kr","umoms":"- 272 456 kr","antord":"-  935","prord":"  152 kr"},{"butikk":"Megaflis Agderparken AS","mmoms":"1 037 364 kr","umoms":" 829 891 kr","antord":"-  127","prord":"  197 kr"},{"butikk":"Megaflis Sandefjord AS","mmoms":"- 412 688 kr","umoms":"- 330 150 kr","antord":"-  647","prord":"  84 kr"},{"butikk":"Megaflis Larvik AS","mmoms":"- 286 881 kr","umoms":"- 229 505 kr","antord":"-  380","prord":"  59 kr"},{"butikk":"Totalt","mmoms":"- 652 302 kr","umoms":"- 521 842 kr","antord":"- 3 358","prord":"  122 kr"}]
+﻿Msg 102, Level 15, State 1, Server DB-HIB, Line 11
+Incorrect syntax near 'ECLARE'.
+Msg 137, Level 15, State 2, Server DB-HIB, Line 42
+Must declare the scalar variable "@last_year".
+Msg 137, Level 15, State 2, Server DB-HIB, Line 68
+Must declare the scalar variable "@last_year".
+Msg 156, Level 15, State 1, Server DB-HIB, Line 129
+Incorrect syntax near the keyword 'as'.
