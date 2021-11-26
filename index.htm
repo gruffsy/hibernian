@@ -46,8 +46,8 @@
 
             <q-separator />
           </q-card>
-          <div class="q-px-xl q-py-md bg-grey-3">
-          <q-card 
+          <div>
+          <q-card  class="q-px-xl q-py-md bg-grey-3 no-shadow" 
             ><p v-for="(u,index) in updated" :key="index">
               Oppdatert sist: {{ u.oppdatert }}
             </p></q-card
@@ -64,7 +64,7 @@
                     hide-pagination
                     :columns="columns"
                   
-                    class="bg-grey-3 text-body"
+                    class="bg-grey-3 text-body shadow-20"
                   >
                     <template v-slot:body="props">
                       <q-tr
@@ -90,7 +90,7 @@
                     hide-pagination
                     :columns="columns"
                     row-key="name"
-                    class="bg-grey-3 text-body"
+                    class="bg-grey-3 text-body shadow-20"
                   >
                     <template v-slot:body="props">
                       <q-tr
@@ -116,7 +116,7 @@
                     hide-pagination
                     :columns="columns"
                     row-key="name"
-                    class="bg-grey-3 text-body"
+                    class="bg-grey-3 text-body shadow-20"
                   >
                     <template v-slot:body="props">
                       <q-tr
@@ -145,7 +145,7 @@
                     hide-pagination
                     :columns="columns"
                     row-key="name"
-                    class="bg-grey-3 text-body"
+                    class="bg-grey-3 text-body shadow-20"
                   >
                     <template v-slot:body="props">
                       <q-tr
@@ -171,7 +171,7 @@
                     hide-pagination
                     :columns="columns"
                     row-key="name"
-                    class="bg-grey-3 text-body"
+                    class="bg-grey-3 text-body shadow-20"
                   >
                     <template v-slot:body="props">
                       <q-tr
@@ -198,7 +198,7 @@
                     hide-pagination
                     :columns="columns"
                     row-key="name"
-                    class="bg-grey-3 text-body"
+                    class="bg-grey-3 text-body shadow-20"
                   >
                     <template v-slot:body="props">
                       <q-tr
@@ -227,7 +227,7 @@
                     hide-pagination
                     :columns="columns"
                     row-key="name"
-                    class="bg-grey-3 text-body"
+                    class="bg-grey-3 text-body shadow-20"
                   >
                     <template v-slot:body="props">
                       <q-tr
@@ -253,7 +253,7 @@
                     hide-pagination
                     :columns="columns"
                     row-key="name"
-                    class="bg-grey-3 text-body"
+                    class="bg-grey-3 text-body shadow-20"
                   >
                     <template v-slot:body="props">
                       <q-tr
@@ -280,7 +280,7 @@
                     hide-pagination
                     :columns="columns"
                     row-key="name"
-                    class="bg-grey-3 text-body"
+                    class="bg-grey-3 text-body shadow-20"
                   >
                     <template v-slot:body="props">
                       <q-tr
@@ -307,6 +307,7 @@
                     dense
                     :pagination.sync="pagination"
                     hide-pagination
+                    class="q-px-xl q-py-md"
                   />
                 </div>
                 <div class="q-px-xl q-py-md">
@@ -316,6 +317,7 @@
                     dense
                     :pagination.sync="pagination"
                     hide-pagination
+                    class="q-px-xl q-py-md"
                   />
                 </div>
                 <div class="q-px-xl q-py-md">
@@ -325,6 +327,7 @@
                     dense
                     :pagination.sync="pagination"
                     hide-pagination
+                    class="q-px-xl q-py-md"
                   />
                 </div>
                 <div class="q-px-xl q-py-md">
@@ -344,6 +347,7 @@
                     dense
                     :pagination.sync="pagination"
                     hide-pagination
+                    class="q-px-xl q-py-md"
                   />
                 </div>
               </q-tab-panel>
