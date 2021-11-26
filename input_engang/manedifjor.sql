@@ -16,18 +16,19 @@ select
 butikk,
 Klient,
 
-sum(m_mva) AS 'mmoms',
-sum(u_mva) AS 'umoms',
-	sum(u_mva - kostnad)AS 'db',
-	sum(u_mva - kostnad)/sum(u_mva) as 'dg',
-	count(distinct Ordrenummer) as 'antord',
-	sum(m_mva)/count(distinct Ordrenummer) as 'prord'
+FORMAT(sum(m_mva),'### ### ##0 kr') AS 'mmoms',
+FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
+	FORMAT(sum(u_mva - kostnad),'### ### ##0 kr') AS 'db',
+	FORMAT(sum(u_mva - kostnad)/sum(u_mva), 'P') as 'dg',
+	FORMAT(count(distinct Ordrenummer), '### ### ##0') as 'antord',
+	FORMAT(sum(m_mva)/count(distinct Ordrenummer), '### ### ##0 kr') as 'prord'
 
 
 from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 
 fakturadato <= cast(@last_year as int)
+and Fakturadato <> 0
 and 
 --FORMAT ( CONVERT(datetime, convert(varchar(10), Fakturadato)), 'MM') = datepart(month, getdate())
 substring(   Cast(fakturadato as varchar(10)),5,2) = @this_month
@@ -45,15 +46,16 @@ select
 	'Totalt' As 'butikk',
 9999,
 
-sum(m_mva) AS 'mmoms',
-sum(u_mva) AS 'umoms',
-	sum(u_mva - kostnad)AS 'db',
-	sum(u_mva - kostnad)/sum(u_mva) as 'dg',
-	count(distinct Ordrenummer) as 'antord',
-	sum(m_mva)/count(distinct Ordrenummer) as 'prord'
+FORMAT(sum(m_mva),'### ### ##0 kr') AS 'mmoms',
+FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
+	FORMAT(sum(u_mva - kostnad),'### ### ##0 kr') AS 'db',
+	FORMAT(sum(u_mva - kostnad)/sum(u_mva), 'P') as 'dg',
+	FORMAT(count(distinct Ordrenummer), '### ### ##0') as 'antord',
+	FORMAT(sum(m_mva)/count(distinct Ordrenummer), '### ### ##0 kr') as 'prord'
 	from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 fakturadato <= cast(@last_year as int)
+and Fakturadato <> 0
 and 
 substring(   Cast(fakturadato as varchar(10)),5,2) =substring(Cast(datepart(month, cast(getdate() as Date)) as varchar(10)),1,2) 
 and transaksjonstype = 1

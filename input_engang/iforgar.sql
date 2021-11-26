@@ -23,6 +23,7 @@ FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 fakturadato = convert(varchar, getdate()-2, 112)
+and Fakturadato <> 0
 and transaksjonstype = 1
 and Ordretype = 3
 
@@ -45,6 +46,7 @@ FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 	from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 fakturadato = convert(varchar, getdate()-2, 112)
+and Fakturadato <> 0
 and transaksjonstype = 1
 and Ordretype = 3
 --and u_mva <> 0

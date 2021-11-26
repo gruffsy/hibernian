@@ -41,6 +41,7 @@ from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 
 fakturadato <= cast(@last_year as int)
+and Fakturadato <> 0
 and 
 --FORMAT ( CONVERT(datetime, convert(varchar(10), Fakturadato)), 'MM') = datepart(month, getdate())
 substring(   Cast(fakturadato as varchar(10)),5,2) = @this_month
@@ -67,6 +68,7 @@ sum(u_mva) AS 'umoms',
 	from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 fakturadato <= cast(@last_year as int)
+and Fakturadato <> 0
 and 
 substring(   Cast(fakturadato as varchar(10)),5,2) =substring(Cast(datepart(month, cast(getdate() as Date)) as varchar(10)),1,2) 
 and transaksjonstype = 1
@@ -99,7 +101,7 @@ where
 substring(   Cast(fakturadato as varchar(10)),1,4) =substring(Cast(datepart(year, cast(getdate() as Date)) as varchar(10)),1,4)
 and
 substring(   Cast(fakturadato as varchar(10)),5,2) =substring(Cast(datepart(month, cast(getdate() as Date)) as varchar(10)),1,2)
-
+and Fakturadato <> 0
 and transaksjonstype = 1
 and Ordretype = 3
 
@@ -124,6 +126,7 @@ where
 substring(   Cast(fakturadato as varchar(10)),1,4) =substring(Cast(datepart(year, cast(getdate() as Date)) as varchar(10)),1,4)
 and
 substring(   Cast(fakturadato as varchar(10)),5,2) =substring(Cast(datepart(month, cast(getdate() as Date)) as varchar(10)),1,2) 
+and Fakturadato <> 0
 and transaksjonstype = 1
 and Ordretype = 3
 

@@ -41,6 +41,7 @@ from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 
 fakturadato <= cast(@last_year as int)
+and Fakturadato <> 0
 
 
 and transaksjonstype = 1
@@ -65,6 +66,7 @@ sum(u_mva) AS 'umoms',
 	from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 fakturadato <= cast(@last_year as int)
+and Fakturadato <> 0
 
 and transaksjonstype = 1
 and Ordretype = 3
@@ -94,7 +96,7 @@ from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 
 substring(   Cast(fakturadato as varchar(10)),1,4) =substring(Cast(datepart(year, cast(getdate() as Date)) as varchar(10)),1,4)
-
+and Fakturadato <> 0
 
 and transaksjonstype = 1
 and Ordretype = 3
@@ -118,7 +120,7 @@ sum(u_mva) AS 'umoms',
 	from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 substring(   Cast(fakturadato as varchar(10)),1,4) =substring(Cast(datepart(year, cast(getdate() as Date)) as varchar(10)),1,4)
-
+and Fakturadato <> 0
 and transaksjonstype = 1
 and Ordretype = 3
 

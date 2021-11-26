@@ -25,6 +25,7 @@ where
 substring(   Cast(fakturadato as varchar(10)),1,4) =substring(Cast(datepart(year, cast(getdate() as Date)) as varchar(10)),1,4)
 and
 substring(   Cast(fakturadato as varchar(10)),5,2) =substring(Cast(datepart(month, cast(getdate() as Date)) as varchar(10)),1,2)
+and Fakturadato <> 0
 and transaksjonstype = 1
 and Ordretype = 3
 
@@ -49,6 +50,7 @@ where
 substring(   Cast(fakturadato as varchar(10)),1,4) =substring(Cast(datepart(year, cast(getdate() as Date)) as varchar(10)),1,4)
 and
 substring(   Cast(fakturadato as varchar(10)),5,2) =substring(Cast(datepart(month, cast(getdate() as Date)) as varchar(10)),1,2) 
+and Fakturadato <> 0
 and transaksjonstype = 1
 and Ordretype = 3
 
