@@ -90,7 +90,7 @@ new Vue({
   methods: {
     tableFormat(name) {
       if (
-        name === "Total"
+        name === "Totalt"
       ) {
         return "text-bold";
       } else {
