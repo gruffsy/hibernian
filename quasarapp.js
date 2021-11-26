@@ -52,7 +52,7 @@ new Vue({
           style: "max-width: 50px",
           headerStyle: "max-width: 50px",
         },
-  /*      {
+       {
           label: "DB",
           align: "right",
           field: (row) => row.db,
@@ -67,7 +67,7 @@ new Vue({
           format: (val) => `${val}`,
           style: "max-width: 50px",
           headerStyle: "max-width: 50px",
-        },*/
+        },
         {
           label: "Antall kunder",
           align: "right",
