@@ -22,7 +22,7 @@
 
   <body>
     <div id="q-app">
-      <div class="q-pa-md bg-grey-3">
+      <div class="q-pa-md">
         <div>
           <q-card>
             <q-tabs
@@ -103,7 +103,23 @@
                     :pagination.sync="pagination"
                     hide-pagination
                     :columns="columns"
-                  />
+                    row-key="name"
+                    class="bg-grey-3 text-body"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
                 </div>
               </q-tab-panel>
 
@@ -116,7 +132,23 @@
                     :pagination.sync="pagination"
                     hide-pagination
                     :columns="columns"
-                  />
+                    row-key="name"
+                    class="bg-grey-3 text-body"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
                 </div>
                 <div class="q-pa-xl">
                   <q-table
@@ -126,7 +158,23 @@
                     :pagination.sync="pagination"
                     hide-pagination
                     :columns="columns"
-                  />
+                    row-key="name"
+                    class="bg-grey-3 text-body"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
                 </div>
 
                 <div class="q-pa-xl">
@@ -137,7 +185,23 @@
                     :pagination.sync="pagination"
                     hide-pagination
                     :columns="columns"
-                  />
+                    row-key="name"
+                    class="bg-grey-3 text-body"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
                 </div>
               </q-tab-panel>
 
@@ -150,7 +214,23 @@
                     :pagination.sync="pagination"
                     hide-pagination
                     :columns="columns"
-                  />
+                    row-key="name"
+                    class="bg-grey-3 text-body"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
                 </div>
                 <div class="q-pa-xl">
                   <q-table
@@ -160,7 +240,23 @@
                     :pagination.sync="pagination"
                     hide-pagination
                     :columns="columns"
-                  />
+                    row-key="name"
+                    class="bg-grey-3 text-body"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
                 </div>
 
                 <div class="q-pa-xl">
@@ -171,7 +267,23 @@
                     :pagination.sync="pagination"
                     hide-pagination
                     :columns="columns"
-                  />
+                    row-key="name"
+                    class="bg-grey-3 text-body"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
                 </div>
               </q-tab-panel>
 
