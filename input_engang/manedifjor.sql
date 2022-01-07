@@ -9,15 +9,13 @@ set
 
 	
 
-DECLARE @last_year AS VARCHAR(100)=convert(varchar, dateadd(year, -1, getdate()), 112)
-DECLARE @this_month AS VARCHAR(100)=substring(Cast(format(getdate(), 'MM')as varchar(10)),1,2) 
-DECLARE @today as VARCHAR(100) = format(getdate(), 'dd')
+DECLARE @last_year AS VARCHAR(100)=concat(left(convert(varchar, dateadd(year, -1, getdate()), 112),4), '0101')
+DECLARE @today as VARCHAR(100) = convert(varchar, dateadd(year, -1, getdate()), 112)
 
 
 select 
 butikk,
 Klient,
-
 FORMAT(sum(m_mva),'### ### ##0 kr') AS 'mmoms',
 FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 	FORMAT(sum(u_mva - kostnad),'### ### ##0 kr') AS 'db',
@@ -29,13 +27,11 @@ FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 
-fakturadato <= cast(@last_year as int)
-and Fakturadato <> 0
-and 
-substring(   Cast(fakturadato as varchar(10)),5,2) = @this_month
+fakturadato >= cast(@last_year as int)
+and  fakturadato <= cast(@today as int)
+
 and
-substring(Cast(fakturadato as varchar(10)),7,2) <= @today
-and transaksjonstype = 1
+transaksjonstype = 1
 and Ordretype = 3
 
 
@@ -56,16 +52,13 @@ FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 	FORMAT(sum(m_mva)/count(distinct Ordrenummer), '### ### ##0 kr') as 'prord'
 	from f0001.dbo.PRODUKTRANSER_ALLE
 where 
-fakturadato <= cast(@last_year as int)
-and Fakturadato <> 0
-and 
-substring(   Cast(fakturadato as varchar(10)),5,2) = @this_month 
+
+fakturadato >= cast(@last_year as int)
+and  fakturadato <= cast(@today as int)
+
 and
-substring(Cast(fakturadato as varchar(10)),7,2) <= @today
-and transaksjonstype = 1
+transaksjonstype = 1
 and Ordretype = 3
 
 order by klient
-	
-	
 for json auto
