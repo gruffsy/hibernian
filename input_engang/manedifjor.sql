@@ -11,8 +11,8 @@ set
 
 DECLARE @last_year AS VARCHAR(100)=convert(varchar, dateadd(year, -1, getdate()), 112)
 DECLARE @this_month AS VARCHAR(100)=substring(Cast(format(getdate(), 'MM')as varchar(10)),1,2) 
+DECLARE @today as VARCHAR(100) = format(getdate(), 'dd')
 
---convert(varchar, datepart(month, getdate()), 112)
 
 select 
 butikk,
@@ -32,9 +32,9 @@ where
 fakturadato <= cast(@last_year as int)
 and Fakturadato <> 0
 and 
---FORMAT ( CONVERT(datetime, convert(varchar(10), Fakturadato)), 'MM') = datepart(month, getdate())
 substring(   Cast(fakturadato as varchar(10)),5,2) = @this_month
-
+and
+substring(Cast(fakturadato as varchar(10)),7,2) <= @today
 and transaksjonstype = 1
 and Ordretype = 3
 
@@ -60,6 +60,8 @@ fakturadato <= cast(@last_year as int)
 and Fakturadato <> 0
 and 
 substring(   Cast(fakturadato as varchar(10)),5,2) = @this_month 
+and
+substring(Cast(fakturadato as varchar(10)),7,2) <= @today
 and transaksjonstype = 1
 and Ordretype = 3
 

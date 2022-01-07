@@ -7,7 +7,9 @@ SET
 set
     noexec off
 
-DECLARE @last_year AS VARCHAR(100)=convert(varchar, dateadd(year, -1, getdate()), 112)	
+DECLARE @last_year AS VARCHAR(100)=convert(varchar, dateadd(year, -1, getdate()), 112)
+DECLARE @this_month AS VARCHAR(100)=substring(Cast(format(getdate(), 'MM')as varchar(10)),1,2) 
+DECLARE @today as VARCHAR(100) = format(getdate(), 'dd')	
 
 select 
 butikk,
@@ -26,7 +28,10 @@ where
 
 fakturadato <= cast(@last_year as int)
 and Fakturadato <> 0
-
+and 
+substring(   Cast(fakturadato as varchar(10)),5,2) = @this_month
+and
+substring(Cast(fakturadato as varchar(10)),7,2) <= @today
 and transaksjonstype = 1
 and Ordretype = 3
 
@@ -49,6 +54,10 @@ FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 	from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 fakturadato <= cast(@last_year as int)
+and 
+substring(   Cast(fakturadato as varchar(10)),5,2) = @this_month
+and
+substring(Cast(fakturadato as varchar(10)),7,2) <= @today
 and Fakturadato <> 0
 and transaksjonstype = 1
 and Ordretype = 3
