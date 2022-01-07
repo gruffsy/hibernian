@@ -59,7 +59,7 @@ where
 fakturadato <= cast(@last_year as int)
 and Fakturadato <> 0
 and 
-substring(   Cast(fakturadato as varchar(10)),5,2) =substring(Cast(datepart(month, cast(getdate() as Date)) as varchar(10)),1,2) 
+substring(   Cast(fakturadato as varchar(10)),5,2) = @this_month 
 and transaksjonstype = 1
 and Ordretype = 3
 
