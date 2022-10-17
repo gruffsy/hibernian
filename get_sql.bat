@@ -25,7 +25,7 @@ SET sqlpath=S:\Unified_SQL\
 %vpnpath%swgvc /E "Billingstad" /U "per" /P "MegaPass###"
 timeout /t 10
 
-call sqlcmd -S %server% -U %user% -P %password% -i salg.sql -y0 -s ";" -o salg.json
+call sqlcmd -S %server% -U %user% -P %password% -i salg.sql -y0 -s ";" -o salg.json -f i:65001 -f o:65001
 
 Powershell.exe -executionpolicy remotesigned -File .\merge.ps1
 
