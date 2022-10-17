@@ -8,14 +8,14 @@ set
     noexec off
 
 select
-	'Bamble' as Butikk, 
+	'Bamble' as butikk, 
 	7 as Klient,
       	FORMAT(sum([Total Rounded Amt_])*-1, '### ### ##0 kr') as mmoms,
     	FORMAT(sum(se.[Net Amount])*-1, '### ### ##0 kr') as umoms,
     	FORMAT(sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1, '### ### ##0 kr') as db,
 	FORMAT(sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]), 'P1') as dg,
-	FORMAT(sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]), 'P1') as antord,
-    FORMAT(sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]), 'P1') as prord
+	--FORMAT(sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]), 'P1') as antord,
+    --FORMAT(sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]), 'P1') as prord
 
 
 
