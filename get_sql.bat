@@ -27,7 +27,7 @@ timeout /t 10
 
 call sqlcmd -S %server% -U %user% -P %password% -i salg.sql -y0 -s ";" -o salg.json -f i:65001 -f o:65001
 
-rem Powershell.exe -executionpolicy remotesigned -File .\merge.ps1
+Powershell.exe -executionpolicy remotesigned -File .\merge.ps1
 
 
 rem %vpnpath%swgvc /D "Billingstad"
