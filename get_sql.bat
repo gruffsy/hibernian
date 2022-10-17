@@ -32,3 +32,4 @@ Powershell.exe -executionpolicy remotesigned -File .\merge.ps1
 
 %vpnpath%swgvc /D "Billingstad"
 
+call git_push.bat
