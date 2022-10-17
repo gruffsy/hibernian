@@ -9,6 +9,7 @@ new Vue({
   data: function () {
     return {
       today: [],
+      bamble: [],
       yesterday: [],
       dayBeforYesterday: [],
       manedNaa: [],
@@ -109,6 +110,11 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.today = data));
     },
+    getBamble() {
+      fetch("./salg.json")
+        .then((response) => response.json())
+        .then((data) => (this.bamble = data));
+    },
     getYesterday() {
       fetch("./json/igar.sql.json")
         .then((response) => response.json())
@@ -182,6 +188,7 @@ new Vue({
   },
   mounted() {
     this.getToday();
+    this.getBamble();
     this.getYesterday();
     this.getDayBeforeYesterday();
     this.getTime();
