@@ -22,8 +22,8 @@ SET user=intranett
 SET password=Megareader18
 SET vpnpath="c:\program files\SonicWall\Global VPN Client\"
 SET sqlpath=S:\Unified_SQL\
-rem %vpnpath%swgvc /E "Billingstad" /U "per" /P "MegaPass###"
-rem timeout /t 10
+%vpnpath%swgvc /E "Billingstad" /U "per" /P "MegaPass###"
+timeout /t 10
 
 call sqlcmd -S %server% -U %user% -P %password% -i salg.sql -y0 -s ";" -o salg.json -f i:65001 -f o:65001
 
