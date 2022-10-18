@@ -1,1 +1,2 @@
-﻿[{"butikk":"Bamble","Klient":7,"mmoms":" 165 261 kr","umoms":" 132 209 kr","db":" 9 052 kr","dg":"6.8 %","antord":"6.8 %","prord":"6.8 %"}]
+﻿Msg 8120, Level 16, State 1, Server NAV-SQL01, Line 11
+Column 'Megaflis Bamble AS$Transaction Header.Date' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
