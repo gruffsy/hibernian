@@ -8,7 +8,7 @@ set
     noexec off
 
 select
-	'Bamble' as butikk, 
+	th.[Date] as butikk, 
 	7 as Klient,
       	FORMAT(sum([Total Rounded Amt_])*-1, '### ### ##0 kr') as mmoms,
     	FORMAT(sum(se.[Net Amount])*-1, '### ### ##0 kr') as umoms,
@@ -31,8 +31,9 @@ on
 	s.No_=th.[Store No_]
 where 	th.[Transaction Type]=2 
        	and [Entry Status] in (0,2)
-	and th.[Date] = convert(varchar, getdate(), 112)
-
+	and th.[Date] >= convert(varchar, getdate()-3, 112)
+order by
+th.[Date]
 for json auto
 go
 quit
