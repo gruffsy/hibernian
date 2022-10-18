@@ -3,7 +3,7 @@ set
 set
     noexec on
 SET
-    LANGUAGE Norwegian
+    LANGUAGE Norwegian;
 set
     noexec off
 
@@ -31,7 +31,7 @@ on
 	s.No_=th.[Store No_]
 where 	th.[Transaction Type]=2 
        	and [Entry Status] in (0,2)
-	and th.[Date] >= convert(varchar, getdate()-3, 112)
+	and th.[Date] >= convert(varchar, getdate()-5, 112)
 group by
 th.[Date]
 order by
