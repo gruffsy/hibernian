@@ -1,2 +1,1 @@
-﻿Msg 8120, Level 16, State 1, Server NAV-SQL01, Line 11
-Column 'Megaflis Bamble AS$Transaction Header.Date' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+﻿[{"butikk":"2022-10-15T00:00:00","Klient":7,"mmoms":" 388 441 kr","umoms":" 310 753 kr","db":" 56 525 kr","dg":"18.2 %","antord":"18.2 %","prord":"18.2 %"},{"butikk":"2022-10-17T00:00:00","Klient":7,"mmoms":" 501 589 kr","umoms":" 401 271 kr","db":" 42 057 kr","dg":"10.5 %","antord":"10.5 %","prord":"10.5 %"},{"butikk":"2022-10-18T00:00:00","Klient":7,"mmoms":" 168 047 kr","umoms":" 134 438 kr","db":" 9 900 kr","dg":"7.4 %","antord":"7.4 %","prord":"7.4 %"}]
