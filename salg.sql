@@ -32,6 +32,8 @@ on
 where 	th.[Transaction Type]=2 
        	and [Entry Status] in (0,2)
 	and th.[Date] >= convert(varchar, getdate()-3, 112)
+group by
+th.[Date]
 order by
 th.[Date]
 for json auto
