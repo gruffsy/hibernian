@@ -60,7 +60,7 @@
                 </q-table>
               </div>
               <div class="q-px-md q-py-md">
-                <q-table title="Bamble i dag" :data="bamble" dense :pagination.sync="pagination" hide-pagination
+                <q-table title="Bamble siste dager" :data="bamble" dense :pagination.sync="pagination" hide-pagination
                   :columns="columns" row-key="name" class="bg-blue-6 text-body shadow-5">
                   <template v-slot:body="props">
                     <q-tr :props="props" :class="tableFormat(props.row.butikk)">

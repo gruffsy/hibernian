@@ -8,7 +8,7 @@ set
     noexec off
 
 select
-	th.[Date] as butikk, 
+	datepart(WEEKDAY, th.[Date]) as butikk, 
 	7 as Klient,
       	FORMAT(sum([Total Rounded Amt_])*-1, '### ### ##0 kr') as mmoms,
     	FORMAT(sum(se.[Net Amount])*-1, '### ### ##0 kr') as umoms,
