@@ -24,6 +24,7 @@ new Vue({
       ifjor: [],
       aarSammen: [],
       updated: [],
+      test: [],
       tab: 'dag',
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
@@ -184,6 +185,11 @@ new Vue({
       fetch("./json/aarsammen.sql.json")
         .then((response) => response.json())
         .then((data) => (this.aarSammen = data));
+    },
+    getTest() {
+      fetch("./combinedfiles.json")
+        .then((response) => response.json())
+        .then((data) => (this.test = data));
     },
   },
   mounted() {
