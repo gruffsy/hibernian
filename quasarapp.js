@@ -209,6 +209,7 @@ new Vue({
     this.getIaar();
     this.getIfjor();
     this.getYearCompare();
+    this.getTest();
 
   },
   // ...etc
