@@ -15,7 +15,7 @@ select
     	FORMAT(sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1, '### ### ##0 kr') as db,
 	FORMAT(sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]), 'P1') as dg,
 	count(distinct th.[Receipt No_]) as antord,
-    sum(-[Total Rounded Amt_])/count(distinct th.[Receipt No_]) as prord
+    FORMAT(sum(-[Total Rounded Amt_])/count(distinct th.[Receipt No_]), '### ### ##0 kr') as prord
 	
 
 
