@@ -32,6 +32,7 @@ on
 where 	th.[Transaction Type]=2 
        	and [Entry Status] in (0,2)
 	and th.[Date] >= convert(varchar, getdate()-5, 112)
+	and nullif(th.[Receipt No_],'') is not null
 group by
 th.[Date]
 order by
