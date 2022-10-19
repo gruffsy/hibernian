@@ -8,7 +8,8 @@ set
     noexec off
 
 
-DECLARE @last_year AS VARCHAR(100)=concat(left(convert(varchar, dateadd(year, -1, getdate()), 112),4), '0101')
+
+DECLARE @last_year AS VARCHAR(100)=concat(left(convert(varchar, dateadd(year, -1, getdate()), 112),6), '01')
 DECLARE @today as VARCHAR(100) = convert(varchar, dateadd(year, -1, getdate()), 112)
 
 
@@ -134,6 +135,5 @@ substring(   Cast(fakturadato as varchar(10)),1,4) =substring(Cast(datepart(year
 where m1.butikk = m2.butikk
 order by
 	m1.klient
-
 
 for json auto
