@@ -14,7 +14,7 @@ select
     	FORMAT(sum(se.[Net Amount])*-1, '### ### ##0 kr') as umoms,
     	FORMAT(sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1, '### ### ##0 kr') as db,
 	FORMAT(sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]), 'P1') as dg,
-	FORMAT(sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]), 'P1') as antord,
+	count(th.[Receipt No_]) as antord,
     FORMAT(sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]), 'P1') as prord
 
 
