@@ -24,14 +24,16 @@ FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 
 
 from f0001.dbo.PRODUKTRANSER_ALLE
-where 
+ 
 
-fakturadato <= cast(@last_year as int)
+where 
+		fakturadato <= cast(@last_year as int)
+		and fakturadato >=20210101
 and Fakturadato <> 0
-and 
-substring(   Cast(fakturadato as varchar(10)),5,2) = @this_month
-and
-substring(Cast(fakturadato as varchar(10)),7,2) <= @today
+--and 
+--substring(Cast(fakturadato as varchar(10)),5,2) = @this_month
+--and
+--substring(Cast(fakturadato as varchar(10)),7,2) <= @today
 and transaksjonstype = 1
 and Ordretype = 3
 
@@ -53,12 +55,14 @@ FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 	FORMAT(sum(m_mva)/count(distinct Ordrenummer), '### ### ##0 kr') as 'prord'
 	from f0001.dbo.PRODUKTRANSER_ALLE
 where 
-fakturadato <= cast(@last_year as int)
-and 
-substring(   Cast(fakturadato as varchar(10)),5,2) = @this_month
-and
-substring(Cast(fakturadato as varchar(10)),7,2) <= @today
+		fakturadato <= cast(@last_year as int)
+		and fakturadato >=20210101
 and Fakturadato <> 0
+--and 
+--substring(   Cast(fakturadato as varchar(10)),5,2) = @this_month
+--and
+--substring(Cast(fakturadato as varchar(10)),7,2) <= @today
+--and Fakturadato <> 0
 and transaksjonstype = 1
 and Ordretype = 3
 
