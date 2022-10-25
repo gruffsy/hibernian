@@ -28,7 +28,7 @@ on
 	s.No_=th.[Store No_]
 where 	th.[Transaction Type]=2 
 	and th.[Entry Status] in (0,2)
-	and th.[Date] >= convert(varchar, getdate()-5, 112)
+	and th.[Date] >= convert(varchar, getdate()-6, 112)
 	and nullif(th.[Receipt No_],'') is not null
 	and [Customer Account] = 0
 group by
