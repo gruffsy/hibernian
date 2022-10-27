@@ -26,11 +26,21 @@ on
 INNER JOIN [Megaflis Bamble AS$Store] s 
 on
 	s.No_=th.[Store No_]
+
+LEFT JOIN [Megaflis Bamble AS$Customer] c
+on 
+       th.[Customer No_] = c.No_ 
 where 	th.[Transaction Type]=2 
 	and th.[Entry Status] in (0,2)
 	and th.[Date] >= convert(varchar, getdate()-6, 112)
 	and nullif(th.[Receipt No_],'') is not null
-	and [Customer Account] = 0
+
+and (
+        c.[Customer Price Group] is null 
+        or 
+        c.[Customer Price Group] <> 'INTERNT'
+        )
+	--and [Customer Account] = 0
 group by
 	th.[Date]
 order by
