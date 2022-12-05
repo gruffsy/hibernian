@@ -201,6 +201,7 @@ new Vue({
   mounted() {
     this.getToday();
     this.getBamble();
+    this.getStock();
     this.getYesterday();
     this.getDayBeforeYesterday();
     this.getTime();

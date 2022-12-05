@@ -33,7 +33,7 @@
               <q-tab name="selger" label="Selgere" />
             </div>
             <div class="q-pa-md">
-              <q-tab name="test" label="Testing" />
+              <q-tab name="stock" label="Stock Supply" />
             </div>
           </q-tabs>
 
@@ -184,8 +184,15 @@
               </div>
             </q-tab-panel>
 
-            <q-tab-panel name="STOCK SUPPLY">
+            <q-tab-panel name="stock">
                  {{ stock }} 
+
+                 <div class="q-px-md q-py-md">
+                  <q-table title="Lagerbehldning Stock Supply" :data="stock" dense :pagination.sync="pagination" hide-pagination
+                    class="bg-grey-4 text-body shadow-5">
+                    
+                  </q-table>
+                </div>
             </q-tab-panel>
           </q-tab-panels>
 
