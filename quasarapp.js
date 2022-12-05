@@ -25,6 +25,7 @@ new Vue({
       aarSammen: [],
       updated: [],
       test: [],
+      stock: [],
       tab: 'dag',
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
@@ -115,6 +116,11 @@ new Vue({
       fetch("./salg.json")
         .then((response) => response.json())
         .then((data) => (this.bamble = data));
+    },
+    getStock() {
+      fetch("./lager_stock.sql.json")
+        .then((response) => response.json())
+        .then((data) => (this.stock = data));
     },
     getYesterday() {
       fetch("./json/igar.sql.json")
