@@ -26,6 +26,7 @@ new Vue({
       updated: [],
       test: [],
       stock: [],
+      filter: '',
       tab: 'dag',
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
