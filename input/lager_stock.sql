@@ -6,7 +6,7 @@ SET
     LANGUAGE Norwegian
 set
     noexec off
-
+select (
 SELECT 
 	p.ProdNo as 'Prodno'
 	,p.descr as 'Beskrivelse'
@@ -27,3 +27,4 @@ SELECT
    
 	order by p.Descr, p.ProdNo
 	for json auto
+)
