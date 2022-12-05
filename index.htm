@@ -185,12 +185,14 @@
             </q-tab-panel>
 
             <q-tab-panel name="stock">
-              <q-input borderless dense debounce="300" v-model="filter" placeholder="Search"></q-input>
+              <q-input borderless dense debounce="300" v-model="filter" placeholder="Søk"><template v-slot:append>
+                <q-icon name="search" />
+              </template></q-input>
               <div class="q-px-md q-py-md">
                 <q-table title="Lagerbehldning Stock Supply" :data="stock" dense :pagination.sync="pagination"
                   :filter="filter" hide-pagination class="bg-grey-4 text-body shadow-5">
                   <template v-slot:top-right>
-                    <q-input borderless dense debounce="300" v-model="filter" placeholder="Search">
+                    <q-input borderless dense debounce="300" v-model="filter" placeholder="Søk">
                       <template v-slot:append>
                         <q-icon name="search" />
                       </template>
