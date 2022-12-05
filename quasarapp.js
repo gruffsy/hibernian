@@ -119,7 +119,7 @@ new Vue({
         .then((data) => (this.bamble = data));
     },
     getStock() {
-      fetch("./lager_stock.sql.json")
+      fetch("./json/lager_stock.sql.json")
         .then((response) => response.json())
         .then((data) => (this.stock = data));
     },
