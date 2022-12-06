@@ -24,7 +24,6 @@ new Vue({
       ifjor: [],
       aarSammen: [],
       updated: [],
-      test: [],
       stock: [],
       filter: '',
       tab: 'dag',
@@ -193,11 +192,7 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.aarSammen = data));
     },
-    getTest() {
-      fetch("./combinedfiles.json")
-        .then((response) => response.json())
-        .then((data) => (this.test = data));
-    },
+   
   },
   mounted() {
     this.getToday();
@@ -217,7 +212,7 @@ new Vue({
     this.getIaar();
     this.getIfjor();
     this.getYearCompare();
-    this.getTest();
+   
 
   },
   // ...etc
