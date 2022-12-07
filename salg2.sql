@@ -8,6 +8,7 @@ set
     noexec off
 
 select
+    'Bamble' as butikk,
 	convert(varchar, th.[Date], 112) as Dato, 
 	7 as Klient,
     FORMAT(sum([Total Rounded Amt_])*-1, '### ### ##0 kr') as mmoms,
