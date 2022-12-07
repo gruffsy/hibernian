@@ -8,7 +8,7 @@ set
     noexec off
 
 select
-	th.[Date] as Dato, 
+	convert(varchar, th.[Date], 112) as Dato, 
 	7 as Klient,
     FORMAT(sum([Total Rounded Amt_])*-1, '### ### ##0 kr') as mmoms,
     FORMAT(sum(se.[Net Amount])*-1, '### ### ##0 kr') as umoms,
