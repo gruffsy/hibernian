@@ -31,7 +31,7 @@ and Ordretype = 3
 
 group by
 butikk,
-fakturadato
+fakturadato,
 Klient
 
 order by
