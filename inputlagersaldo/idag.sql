@@ -23,7 +23,7 @@ FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
 
 from f0001.dbo.PRODUKTRANSER_ALLE
 where 
-fakturadato >= convert(varchar, getdate()-7, 112)
+substring(   Cast(fakturadato as varchar(10)),1,4) >='2020'
 and Fakturadato <> 0
 and transaksjonstype = 1
 and Ordretype = 3
