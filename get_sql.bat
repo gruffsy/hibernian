@@ -26,7 +26,7 @@ call %vpnpath%swgvc /E "Billingstad" /U "per" /P "MegaPass###"
 timeout /t 10
 
 call sqlcmd -S %server% -U %user% -P %password% -i salg.sql -y0 -s ";" -o salg.json
-call sqlcmd -S %server% -U %user% -P %password% -i salg.sql -y0 -s ";" -o salg.csv
+call sqlcmd -S %server% -U %user% -P %password% -i salg2.sql -y0 -s ";" -o salg2.csv
 Powershell.exe -executionpolicy remotesigned -File .\merge.ps1
 
 
