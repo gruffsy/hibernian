@@ -4,7 +4,7 @@ SET password=VismaVudAdmin123@
 SET outputpath=C:\Scripts\Salgstall\hibernian\json\
 SET inputpath=C:\Scripts\Salgstall\hibernian\input\
 SET csvoutputpath=C:\Scripts\Salgstall\hibernian\lagersaldo\
-SET csvinputpath=DC:\Scripts\Salgstall\hibernian\inputlagersaldo\
+SET csvinputpath=C:\Scripts\Salgstall\hibernian\inputlagersaldo\
 
 rem @ECHO %%~nxI
 
