@@ -14,7 +14,6 @@ select
     sum([Total Rounded Amt_])*-1 as mmoms,
     sum(se.[Net Amount])*-1 as umoms,
     sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as db,
-	sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]) as dg,
 	count(distinct th.[Receipt No_]) as antord,
     sum([Customer Account]) as kreditt
 from
