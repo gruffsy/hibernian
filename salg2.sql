@@ -16,8 +16,7 @@ select
     sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as db,
 	sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]) as dg,
 	count(distinct th.[Receipt No_]) as antord,
-    sum(-[Total Rounded Amt_])/count(distinct th.[Receipt No_]) as prord,
-	sum([Customer Account]) as kreditt
+    sum([Customer Account]) as kreditt
 from
       	[Megaflis Bamble AS$Trans_ Sales Entry] se 
 inner join [Megaflis Bamble AS$Transaction Header] th 
