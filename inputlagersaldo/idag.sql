@@ -30,7 +30,7 @@ where
 --Fakturadato <> 0
 transaksjonstype = 1
 --and Ordretype = 3
-and antall = 0
+and antall <> 0
 
 group by
 butikk,
