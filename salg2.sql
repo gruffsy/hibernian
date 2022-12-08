@@ -15,7 +15,7 @@ select
     sum(se.[Net Amount])*-1 as umoms,
     sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as db,
 	count(distinct th.[Receipt No_]) as antord,
-    sum([Customer Account]) as kreditt
+    [Customer Account] as kreditt
 from
       	[Megaflis Bamble AS$Trans_ Sales Entry] se 
 inner join [Megaflis Bamble AS$Transaction Header] th 
@@ -40,7 +40,8 @@ and (
         c.[Customer Price Group] <> 'INTERNT'
         )
 group by
-	th.[Date]
+	th.[Date],
+    [Customer Account]
 order by
 	th.[Date]
 
