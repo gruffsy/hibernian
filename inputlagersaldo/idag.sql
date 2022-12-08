@@ -25,7 +25,7 @@ count(distinct Ordrenummer) as 'antord'
 from f0001.dbo.PRODUKTRANSER_ALLE
 where 
 --Fakturadato <> 0
-and transaksjonstype = 1
+transaksjonstype = 1
 --and Ordretype = 3
 and antall = 0
 
