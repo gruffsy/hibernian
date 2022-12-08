@@ -13,11 +13,14 @@ butikk,
 --fakturadato,
 ferdigmeldtdato,
 Klient,
-ordretype,
+--ordretype,
 sum(m_mva) AS 'mmoms',
 sum(u_mva) AS 'umoms',
 sum(u_mva - kostnad) AS 'db',
-count(distinct Ordrenummer) as 'antord'
+count(distinct Ordrenummer) as 'antord',
+CASE WHEN Ordretype = 1
+               THEN sum(u_mva)
+          END AS Assignee
 
 	
 
