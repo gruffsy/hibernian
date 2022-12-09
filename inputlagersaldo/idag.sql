@@ -31,6 +31,7 @@ where
 transaksjonstype = 1
 --and Ordretype = 3
 and antall <> 0
+and produktnr <> 'a1'
 
 group by
 butikk,
