@@ -32,6 +32,7 @@ transaksjonstype = 1
 --and Ordretype = 3
 and antall <> 0
 and produktnr <> 'a1'
+and Kundeprisgruppe <> 4
 
 group by
 butikk,
