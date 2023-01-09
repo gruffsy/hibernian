@@ -7,14 +7,14 @@ SET
 set
     noexec off
 
-   SELECT
+SELECT
     Item.No_ AS Nr,
     Item.GTIN AS EAN,
     Item.[Vendor Item No_] AS [Lev. varenr],
     Item.Description AS Beskrivelse,
     Item.[Unit Cost] AS Kostpris,
-    (Item.[Unit Price] - Item.[Unit Cost]) / Item.[Unit Price] AS 'Dg. %',
-    Item.[Indirect Cost _] AS 'Indirekte kost',
+    (Item.[Unit Price] - Item.[Unit Cost]) / Item.[Unit Price] AS [Dg. %],
+    Item.[Indirect Cost _] AS [Indirekte kost],
     Item.[Unit Price Including VAT] AS Normalpris,
     Item.[Sales Unit of Measure] AS Basisenhet,
     ItemCategory.Code AS Hovedgruppenr,
