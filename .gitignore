@@ -2,3 +2,5 @@
 utf.ps1
 *.bat
 *.csv
+lagersaldo/*.csv
+!lagersaldo/lagersaldo.csv
