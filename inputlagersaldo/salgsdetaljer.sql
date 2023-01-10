@@ -8,7 +8,7 @@ set
     noexec off
 
 	
-SELECT 
+SELECT TOP 1
 	
   butikk,
 	Navnr AS ItemNo,
