@@ -4,3 +4,4 @@ utf.ps1
 *.csv
 lagersaldo/*.csv
 !lagersaldo/lagersaldo.csv
+produkt/*.*
