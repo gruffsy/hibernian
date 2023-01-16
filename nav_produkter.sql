@@ -7,7 +7,7 @@ SET
 set
     noexec off
 
-SELECT top 1
+SELECT top 100
     Item.No_ AS Nr,
     Item.GTIN AS EAN,
     Item.[Vendor Item No_] AS [Lev. varenr],
