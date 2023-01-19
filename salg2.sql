@@ -40,7 +40,7 @@ and (
         c.[Customer Price Group] <> 'INTERNT'
         )
 group by
-	th.[Date],
+	th.[Date]
     --[Customer Account]
 order by
 	th.[Date]
