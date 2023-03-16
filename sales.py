@@ -30,7 +30,7 @@ if total_antord != 0:
     total_prord = total_mmoms / total_antord
 
 total_row = {
-    "butikk": "Total",
+    "butikk": "Totalt",
     "Klient": 999,
     "mmoms": total_mmoms,
     "umoms": total_umoms,
