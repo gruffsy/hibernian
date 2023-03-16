@@ -33,4 +33,4 @@ group by
 order by
     Klient
 	
-for json auto
+for json path
