@@ -1,10 +1,19 @@
+set
+    nocount on
+set
+    noexec on
+SET
+    LANGUAGE Norwegian
+set
+    noexec off
+
 SELECT 
   fakturadato,
   butikk,
   Klient,
-  sum(m_mva) AS 'mmoms',
-  sum(u_mva) AS 'umoms',
-  sum(u_mva - kostnad) AS 'db',
+  CAST(sum(m_mva) AS INT) AS 'mmoms',
+  CAST(sum(u_mva) AS INT) AS 'umoms',
+  CAST(sum(u_mva - kostnad) AS INT) AS 'db',
   CAST((sum(u_mva - kostnad)/sum(u_mva)) AS DECIMAL(5,2)) as 'dg',
   count(distinct Ordrenummer) as 'antord',
   CAST((sum(m_mva)/count(distinct Ordrenummer)) AS INT) as 'prord'
@@ -21,4 +30,5 @@ GROUP BY
 order by
 fakturadato,
 klient
-
+
+for json auto
