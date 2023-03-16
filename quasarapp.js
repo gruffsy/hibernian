@@ -108,7 +108,7 @@ new Vue({
       }
     },
     getToday() {
-      fetch("./json/idag.sql.json")
+      fetch("./json/kombinertSalg.json")
         .then((response) => response.json())
         .then((data) => (this.today = data));
     },
