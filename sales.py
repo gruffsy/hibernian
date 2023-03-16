@@ -55,5 +55,5 @@ for d in combined_data:
 
 
 # Write the updated JSON string to CombinedFile.json
-with open("json/kombinertSalg.json", "w") as f:
+with codecs.open("json/kombinertSalg.json", "w", encoding="utf-8" ) as f:
     json.dump(combined_data, f, indent=4, ensure_ascii=False)
