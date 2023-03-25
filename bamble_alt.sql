@@ -8,15 +8,15 @@ set
     noexec off
 
 select
-	th.[Date] as fakturadato,
-	'Bamble' as butikk, 
-	7 as Klient,
-    cast(sum([Total Rounded Amt_])*-1 as int) as mmoms,
-    cast(sum(se.[Net Amount])*-1 as int) as umoms,
-    cast(sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as int) as db,
-	cast(sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]) AS DECIMAL(5,2)) as dg,
-	count(distinct th.[Receipt No_]) as antord,
-    cast(sum(-[Total Rounded Amt_])/count(distinct th.[Receipt No_]) as int) as prord
+	th.[Date] as 'fakturadato',
+	'Bamble' as 'butikk', 
+	7 as 'Klient',
+    cast(sum([Total Rounded Amt_])*-1 as int) as 'mmoms',
+    cast(sum(se.[Net Amount])*-1 as int) as 'umoms',
+    cast(sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as int) as 'db',
+	cast(sum(se.[Net Amount]-se.[Cost Amount])/sum(se.[Net Amount]) AS DECIMAL(5,2)) as 'dg',
+	count(distinct th.[Receipt No_]) as 'antord',
+    cast(sum(-[Total Rounded Amt_])/count(distinct th.[Receipt No_]) as int) as 'prord'
 from
       	[Megaflis Bamble AS$Trans_ Sales Entry] se
 inner join [Megaflis Bamble AS$Transaction Header] th 
@@ -48,7 +48,6 @@ group by
 	th.[Date]
 order by
 	th.[Date]
-for json path
-go
-quit
+for json auto
+
 
