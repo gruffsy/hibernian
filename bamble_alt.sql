@@ -8,7 +8,7 @@ set
     noexec off
 
 select
-	th.date as fakturadato,
+	th.[Date] as fakturadato,
 	'Bamble' as butikk, 
 	7 as Klient,
     cast(sum([Total Rounded Amt_])*-1 as int) as mmoms,
