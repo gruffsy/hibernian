@@ -48,7 +48,7 @@ group by
 	th.[Date]
 order by
 	th.[Date]
-for json auto
+for json path
 go
 quit
 
