@@ -8,7 +8,7 @@ set
     noexec off
 
 select
-	th.[Date] as 'fakturadato',
+	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) as 'fakturadato',
 	'Bamble' as 'butikk', 
 	7 as 'Klient',
     cast(sum([Total Rounded Amt_])*-1 as int) as 'mmoms',
