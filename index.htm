@@ -66,11 +66,36 @@
                   <q-table
                     title="Treats"
                     dense
-                    :data="alldays"
+                    :data="groupedDataArray"
                     :columns="columns"
                     row-key="name"
                   ></q-table>
       
+              </div>
+
+              <div class="q-px-md q-py-md">
+                <q-virtual-scroll
+                  :items="groupedDataArray"
+                  :item-height="300"
+                  :items-rendered-size="10"
+                  :items-before="5"
+                  :items-after="5"
+                >
+                  <template v-slot="{ item }">
+                    <div :key="item.date">
+                      <br>
+                      <q-table
+                        :title="`${item.date}`"
+                        dense
+                        :pagination.sync="pagination"
+                            hide-pagination
+                        :data="item.rows"
+                        :columns="columns"
+                        class="bg-grey-4 text-body shadow-5"
+                      ></q-table>
+                    </div>
+                  </template>
+                </q-virtual-scroll>
               </div>
             
                 <div class="q-px-md q-py-md">
