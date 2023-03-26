@@ -65,7 +65,7 @@
                   <div v-for="item in displayedDataArray" :key="item.date">
                     <br />
                     <q-table
-                      :title="`Sales on ${item.date}`"
+                      :title="`${item.date}`"
                       dense
                       :pagination.sync="pagination"
                       hide-pagination
@@ -89,6 +89,7 @@
                       </template>
                     </q-table>
                   </div>
+                  <br>  
                   <q-btn
                     label="Vis flere dager"
                     class="full-width"
