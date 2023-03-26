@@ -58,30 +58,15 @@
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="dag">
 
-               
                 <div class="q-pa-md">
                   <q-table
                     title="Treats"
                     dense
-                    :data="groupedData"
+                    :rows="alldays"
                     :columns="columns"
-                    
-                  ></q-table>
+                    row-key="name"
+                  ></q-table></div>
                
-                <div>
-                  <div v-for="(rows, date) in groupedDataArray" :key="date">
-                    <h3>{{ date }}</h3>
-                    <q-table
-                      :title="`Sales on ${date}`"
-                      dense
-                      :rows="rows"
-                      :columns="columns"
-                      row-key="butikk"
-                    ></q-table>
-                  </div>
-                </div>
-
-                
                 <div class="q-px-md q-py-md">
                   <q-virtual-scroll
                     :items="groupedDataArray"
@@ -93,7 +78,6 @@
                     <template v-slot="{ item }">
                       <div :key="item.date">
                         <br>
-                        {{ item.rows }}
                         <q-table
                           :title="`${item.date}`"
                           dense
@@ -101,13 +85,22 @@
                               hide-pagination
                           :rows="item.rows"
                           :columns="columns"
-                          row-key="butikk"
                           class="bg-grey-4 text-body shadow-5"
                         ></q-table>
                       </div>
                     </template>
                   </q-virtual-scroll>
                 </div>
+          
+              
+                <div class="q-pa-md">
+                  <q-table
+                    title="Treats"
+                    dense
+                    :rows="rows"
+                    :columns="columns"
+                    row-key="name"
+                  ></q-table></div>
                 <div class="q-px-md q-py-md">
                   <q-table
                     title="Salg i dag"
@@ -476,9 +469,9 @@
 
     <!-- Add the following at the end of your body tag -->
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.umd.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quasar@2.11.9/dist/quasar.umd.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quasar@2.11.9/dist/lang/nb-NO.umd.prod.js"></script>
     <script src="quasarapp.js"></script>
   </body>
 </html>
