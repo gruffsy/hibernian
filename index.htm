@@ -73,7 +73,23 @@
                       :columns="columns"
                       row-key="butikk"
                       class="bg-grey-4 text-body shadow-5"
-                    ></q-table>
+                    >
+                  
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  
+                  </q-table>
                   </div>
                   <!--
                   <q-virtual-scroll
