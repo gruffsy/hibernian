@@ -62,7 +62,7 @@
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="dag">
                 <div class="q-px-md q-py-md">
-                  <div v-for="item in groupedDataArray" :key="item.date">
+                  <div v-for="item in displayedDataArray" :key="item.date">
                     <br />
                     <q-table
                       :title="`Sales on ${item.date}`"
@@ -91,6 +91,12 @@
                   
                   </q-table>
                   </div>
+                  <q-btn
+                  label="Show more"
+                  color="primary"
+                  v-if="displayedTables < groupedDataArray.length"
+                  @click="showMoreTables"
+                ></q-btn>
                   <!--
                   <q-virtual-scroll
                     :items="groupedDataArray"

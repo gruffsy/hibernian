@@ -28,6 +28,7 @@ new Vue({
       stock: [],
       filter: "",
       tab: "dag",
+      displayedTables: 3,
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
       },
@@ -99,6 +100,9 @@ new Vue({
     };
   },
   methods: {
+    showMoreTables() {
+      this.displayedTables += 7;
+    },
     tableFormat(name) {
       if (name === "Totalt") {
         return "bg-grey-4 text-bold";
@@ -198,6 +202,9 @@ new Vue({
     },
   },
   computed: {
+    displayedDataArray() {
+      return this.groupedDataArray.slice(0, this.displayedTables);
+    },
     groupedDataArray() {
         const groupedData = this.groupedData;
         return Object.keys(groupedData).map(date => {
