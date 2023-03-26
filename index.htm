@@ -61,6 +61,15 @@
           <q-card>
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="dag">
+
+                <div class="q-pa-md">
+                  <q-table
+                    title="Treats"
+                    dense
+                    :rows="alldays"
+                    :columns="columns"
+                    
+                  ></q-table>
                 <div class="q-px-md q-py-md">
                   <q-virtual-scroll
                     :items="groupedDataArray"
