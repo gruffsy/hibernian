@@ -59,7 +59,7 @@
               <q-tab-panel name="dag">
 
                 <div>
-                  <div v-for="(rows, date) in groupedData" :key="date">
+                  <div v-for="(rows, date) in alldays" :key="date">
                     <h3>{{ date }}</h3>
                     <q-table
                       :title="`Sales on ${date}`"
