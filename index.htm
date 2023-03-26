@@ -11,11 +11,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/quasar@2.11.9/dist/quasar.prod.css" rel="stylesheet" type="text/css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue-axios@2.1.4/dist/vue-axios.min.js"></script>
   </head>
@@ -86,7 +82,7 @@
                           dense
                           :pagination.sync="pagination"
                               hide-pagination
-                          :data="item.alldays"
+                          :rows="item.alldays"
                           :columns="columns"
                           row-key="name"
                           class="bg-grey-4 text-body shadow-5"
