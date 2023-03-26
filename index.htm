@@ -63,13 +63,14 @@
               <q-tab-panel name="dag">
                 <div class="q-px-md q-py-md">
                   <div v-for="item in groupedDataArray" :key="item.date">
-                    <h3>{{ item.date }}</h3>
+                    <br>
                     <q-table
                       :title="`Sales on ${item.date}`"
                       dense
                       :data="item.rows"
                       :columns="columns"
                       row-key="butikk"
+                      class="bg-grey-4 text-body shadow-5"
                     ></q-table>
                   </div>
 <!--
