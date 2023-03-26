@@ -57,6 +57,8 @@ for date, total in totals.items():
 # Sort the data by fakturadato ascending and Klient descending
 data.sort(key=lambda x: (-x["fakturadato"], int(x["Klient"])))
 
+with open("../jsons/salg_fra_22_pr_dag_med_total_no_format.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, indent=4, ensure_ascii=False)
 
 for d in data:
     # Convert values to a currency string
