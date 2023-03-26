@@ -61,6 +61,17 @@
           <q-card>
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="dag">
+
+                <div class="q-pa-md">
+                  <q-table
+                    title="Treats"
+                    dense
+                    :rows="alldays"
+                    :columns="columns"
+                    row-key="name"
+                  ></q-table>
+                <q-btn color="primary" icon="check" label="OK" @click="onClick" ></q-btn>
+              </div>
                 {{alldays}}
                 <div class="q-px-md q-py-md">
                   <q-table
