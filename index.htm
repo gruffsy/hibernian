@@ -63,17 +63,19 @@
               <q-tab-panel name="dag">
                 <div class="q-px-md q-py-md">
                   <div v-for="item in groupedDataArray" :key="item.date">
-                    <br>
+                    <br />
                     <q-table
                       :title="`Sales on ${item.date}`"
                       dense
+                      :pagination.sync="pagination"
+                      hide-pagination
                       :data="item.rows"
                       :columns="columns"
                       row-key="butikk"
                       class="bg-grey-4 text-body shadow-5"
                     ></q-table>
                   </div>
-<!--
+                  <!--
                   <q-virtual-scroll
                     :items="groupedDataArray"
                     :item-height="300"
