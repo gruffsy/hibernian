@@ -58,6 +58,19 @@
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="dag">
 
+                <div>
+                  <div v-for="(rows, date) in groupedData" :key="date">
+                    <h3>{{ date }}</h3>
+                    <q-table
+                      :title="`Sales on ${date}`"
+                      dense
+                      :rows="rows"
+                      :columns="columns"
+                      row-key="name"
+                    ></q-table>
+                  </div>
+                </div>
+
                 <div class="q-pa-md">
                   <q-table
                     title="Treats"
