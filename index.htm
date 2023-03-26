@@ -74,54 +74,29 @@
                       row-key="butikk"
                       class="bg-grey-4 text-body shadow-5"
                     >
-                  
-                    <template v-slot:body="props">
-                      <q-tr
-                        :props="props"
-                        :class="tableFormat(props.row.butikk)"
-                      >
-                        <q-td
-                          v-for="col in props.cols"
-                          :key="col.name"
+                      <template v-slot:body="props">
+                        <q-tr
                           :props="props"
-                          >{{ col.value }}</q-td
+                          :class="tableFormat(props.row.butikk)"
                         >
-                      </q-tr>
-                    </template>
-                  
-                  </q-table>
+                          <q-td
+                            v-for="col in props.cols"
+                            :key="col.name"
+                            :props="props"
+                            >{{ col.value }}</q-td
+                          >
+                        </q-tr>
+                      </template>
+                    </q-table>
                   </div>
                   <q-btn
-                  label="Vis flere dager"
-                  color="grey-4"
-                  v-if="displayedTables < groupedDataArray.length"
-                  @click="showMoreTables"
-                ></q-btn>
-                  <!--
-                  <q-virtual-scroll
-                    :items="groupedDataArray"
-                    :item-height="300"
-                    :items-rendered-size="10"
-                    :items-before="5"
-                    :items-after="5"
-                  >
-                    <template v-slot="{ item }">
-                      <div :key="item.date">
-                        <br />
-                        <q-table
-                          :title="`${item.date}`"
-                          dense
-                          :pagination.sync="pagination"
-                          hide-pagination
-                          :data="item.rows"
-                          :columns="columns"
-                          class="bg-grey-4 text-body shadow-5"
-                        ></q-table>
-                      </div>
-                    </template>
-                  </q-virtual-scroll> 
+                    label="Vis flere dager"
+                    color="grey-4"
+                    v-if="displayedTables < groupedDataArray.length"
+                    @click="showMoreTables"
+                  ></q-btn>
                 </div>
-
+                <!--
                 <div class="q-px-md q-py-md">
                   <q-table
                     title="Salg i dag"
@@ -225,7 +200,7 @@
                     </template>
                   </q-table>
                 </div>
--->                
+-->
               </q-tab-panel>
 
               <q-tab-panel name="maned">
