@@ -14,7 +14,7 @@ SELECT
   CAST(sum(m_mva) AS INT) AS 'mmoms',
   CAST(sum(u_mva) AS INT) AS 'umoms',
   CAST(sum(u_mva - kostnad) AS INT) AS 'db',
-  CAST((sum(u_mva - kostnad)/sum(u_mva)) AS DECIMAL(5,2)) as 'dg',
+  CAST(ROUND(sum(u_mva - kostnad)/sum(u_mva),2) AS FLOAT) as 'dg',
   count(distinct Ordrenummer) as 'antord',
   CAST((sum(m_mva)/count(distinct Ordrenummer)) AS INT) as 'prord'
 FROM f0001.dbo.PRODUKTRANSER_ALLE
