@@ -197,6 +197,41 @@ new Vue({
         .then((data) => (this.aarSammen = data));
     },
   },
+  computed: {
+    groupedDataArray() {
+        const groupedData = this.groupedData;
+        return Object.keys(groupedData).map(date => {
+          const year = parseInt(date.substring(0, 4));
+          const month = parseInt(date.substring(4, 6)) - 1;
+          const day = parseInt(date.substring(6, 8));
+          const dateObject = new Date(year, month, day);
+    
+          const formattedDate = new Intl.DateTimeFormat('nb-NO', {
+            weekday: 'long',
+            day: '2-digit',
+            month: '2-digit',
+            year: 'numeric',
+          }).format(dateObject);
+    
+          return {
+            date: formattedDate,
+            rows: groupedData[date],
+            originalDate: dateObject,
+          };
+        })   .sort((a, b) => b.originalDate - a.originalDate)
+        .map(({ date, rows }) => ({ date, rows }));
+      },
+    groupedData() {
+      return this.alldays.reduce((acc, row) => {
+        const date = row.fakturadato;
+        if (!acc[date]) {
+          acc[date] = [];
+        }
+        acc[date].push(row);
+        return acc;
+      }, {});
+    },
+  },
   mounted() {
     this.getAllDays();
     this.getToday();
