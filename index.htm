@@ -62,6 +62,17 @@
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="dag">
                 <div class="q-px-md q-py-md">
+                  <div v-for="item in groupedDataArray" :key="item.date">
+                    <h3>{{ item.date }}</h3>
+                    <q-table
+                      :title="`Sales on ${item.date}`"
+                      dense
+                      :data="item.rows"
+                      :columns="columns"
+                      row-key="butikk"
+                    ></q-table>
+                  </div>
+<!--
                   <q-virtual-scroll
                     :items="groupedDataArray"
                     :item-height="300"
@@ -83,7 +94,7 @@
                         ></q-table>
                       </div>
                     </template>
-                  </q-virtual-scroll>
+                  </q-virtual-scroll> -->
                 </div>
 
                 <div class="q-px-md q-py-md">
