@@ -11,7 +11,11 @@
       rel="stylesheet"
       type="text/css"
     />
-    <link href="https://cdn.jsdelivr.net/npm/quasar@2.11.9/dist/quasar.prod.css" rel="stylesheet" type="text/css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue-axios@2.1.4/dist/vue-axios.min.js"></script>
   </head>
@@ -57,50 +61,7 @@
           <q-card>
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="dag">
-
-                <div class="q-pa-md">
-                  <q-table
-                    title="Treats"
-                    dense
-                    :rows="alldays"
-                    :columns="columns"
-                    row-key="name"
-                  ></q-table></div>
-               
-                <div class="q-px-md q-py-md">
-                  <q-virtual-scroll
-                    :items="groupedDataArray"
-                    :item-height="300"
-                    :items-rendered-size="10"
-                    :items-before="5"
-                    :items-after="5"
-                  >
-                    <template v-slot="{ item }">
-                      <div :key="item.date">
-                        <br>
-                        <q-table
-                          :title="`${item.date}`"
-                          dense
-                          :pagination.sync="pagination"
-                              hide-pagination
-                          :rows="item.rows"
-                          :columns="columns"
-                          class="bg-grey-4 text-body shadow-5"
-                        ></q-table>
-                      </div>
-                    </template>
-                  </q-virtual-scroll>
-                </div>
-          
-              
-                <div class="q-pa-md">
-                  <q-table
-                    title="Treats"
-                    dense
-                    :rows="rows"
-                    :columns="columns"
-                    row-key="name"
-                  ></q-table></div>
+                {{alldays}}
                 <div class="q-px-md q-py-md">
                   <q-table
                     title="Salg i dag"
@@ -469,9 +430,9 @@
 
     <!-- Add the following at the end of your body tag -->
 
-    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/quasar@2.11.9/dist/quasar.umd.prod.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/quasar@2.11.9/dist/lang/nb-NO.umd.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.umd.min.js"></script>
+
     <script src="quasarapp.js"></script>
   </body>
 </html>
