@@ -8,6 +8,7 @@ new Vue({
 
   data: function () {
     return {
+      alldays: [],
       today: [],
       bamble: [],
       yesterday: [],
@@ -25,8 +26,8 @@ new Vue({
       aarSammen: [],
       updated: [],
       stock: [],
-      filter: '',
-      tab: 'dag',
+      filter: "",
+      tab: "dag",
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
       },
@@ -38,7 +39,7 @@ new Vue({
           field: (row) => row.butikk,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px"
+          headerStyle: "max-width: 50px",
         },
         {
           name: "mmoms",
@@ -47,7 +48,7 @@ new Vue({
           field: (row) => row.mmoms,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px"
+          headerStyle: "max-width: 50px",
         },
         {
           name: "ummoms",
@@ -56,7 +57,7 @@ new Vue({
           field: (row) => row.umoms,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px"
+          headerStyle: "max-width: 50px",
         },
         {
           name: "db",
@@ -65,7 +66,7 @@ new Vue({
           field: (row) => row.db,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px"
+          headerStyle: "max-width: 50px",
         },
         {
           name: "dg",
@@ -74,7 +75,7 @@ new Vue({
           field: (row) => row.dg,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px"
+          headerStyle: "max-width: 50px",
         },
         {
           name: "antord",
@@ -83,7 +84,7 @@ new Vue({
           field: (row) => row.antord,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px"
+          headerStyle: "max-width: 50px",
         },
         {
           name: "prord",
@@ -92,20 +93,23 @@ new Vue({
           field: (row) => row.prord,
           format: (val) => `${val}`,
           style: "max-width: 50px",
-          headerStyle: "max-width: 50px"
-        }
+          headerStyle: "max-width: 50px",
+        },
       ],
     };
   },
   methods: {
     tableFormat(name) {
-      if (
-        name === "Totalt" 
-      ) {
+      if (name === "Totalt") {
         return "bg-grey-4 text-bold";
       } else {
         return "bg-grey-3 text-black text-body";
       }
+    },
+    getAllDays() {
+      fetch("./revamp/publish/salg_fra_22_pr_dag_med_total.json")
+        .then((response) => response.json())
+        .then((data) => (this.alldays = data));
     },
     getToday() {
       fetch("./json/kombinertSalg.json")
@@ -192,9 +196,9 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.aarSammen = data));
     },
-   
   },
   mounted() {
+    this.getAllDays();
     this.getToday();
     this.getBamble();
     this.getStock();
@@ -212,8 +216,6 @@ new Vue({
     this.getIaar();
     this.getIfjor();
     this.getYearCompare();
-   
-
   },
   // ...etc
 });
