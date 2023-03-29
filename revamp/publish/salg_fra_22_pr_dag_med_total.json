@@ -1,5 +1,71 @@
 [
     {
+        "fakturadato": 20230329,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "684 kr",
+        "umoms": "547 kr",
+        "db": "161 kr",
+        "dg": "29.0%",
+        "antord": "2",
+        "prord": "342 kr"
+    },
+    {
+        "fakturadato": 20230329,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "2 445 kr",
+        "umoms": "1 956 kr",
+        "db": "141 kr",
+        "dg": "7.0%",
+        "antord": "2",
+        "prord": "1 222 kr"
+    },
+    {
+        "fakturadato": 20230329,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "10 933 kr",
+        "umoms": "8 746 kr",
+        "db": "1 904 kr",
+        "dg": "22.0%",
+        "antord": "4",
+        "prord": "2 733 kr"
+    },
+    {
+        "fakturadato": 20230329,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "16 590 kr",
+        "umoms": "13 272 kr",
+        "db": "2 980 kr",
+        "dg": "22.0%",
+        "antord": "1",
+        "prord": "16 590 kr"
+    },
+    {
+        "fakturadato": 20230329,
+        "butikk": "Bamble",
+        "Klient": 7,
+        "mmoms": "28 349 kr",
+        "umoms": "22 679 kr",
+        "db": "-13 kr",
+        "dg": "0.0%",
+        "antord": "1",
+        "prord": "28 349 kr"
+    },
+    {
+        "fakturadato": 20230329,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "59 001 kr",
+        "umoms": "47 200 kr",
+        "db": "5 173 kr",
+        "dg": "11.0%",
+        "antord": "10",
+        "prord": "5 900 kr"
+    },
+    {
         "fakturadato": 20230328,
         "butikk": "Skien",
         "Klient": "0",
