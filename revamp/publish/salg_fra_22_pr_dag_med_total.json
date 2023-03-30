@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20230330,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "3 864 kr",
+        "umoms": "3 091 kr",
+        "db": "-526 kr",
+        "dg": "-17.0%",
+        "antord": "1",
+        "prord": "3 864 kr"
+    },
+    {
+        "fakturadato": 20230330,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "3 864 kr",
+        "umoms": "3 091 kr",
+        "db": "-526 kr",
+        "dg": "-17.0%",
+        "antord": "1",
+        "prord": "3 864 kr"
+    },
+    {
         "fakturadato": 20230329,
         "butikk": "Skien",
         "Klient": "0",
