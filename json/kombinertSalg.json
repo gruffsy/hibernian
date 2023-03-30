@@ -2,81 +2,71 @@
     {
         "butikk": "Skien",
         "Klient": "0",
-        "mmoms": "253 059 kr",
-        "umoms": "202 447 kr",
-        "db": "52 983 kr",
-        "dg": "26.2%",
-        "antord": "197",
-        "prord": "1 284 kr"
+        "mmoms": "10 497 kr",
+        "umoms": "8 397 kr",
+        "db": "-162 kr",
+        "dg": "-1.9%",
+        "antord": "8",
+        "prord": "1 312 kr"
     },
     {
         "butikk": "Kristiansand",
         "Klient": "2",
-        "mmoms": "142 426 kr",
-        "umoms": "113 941 kr",
-        "db": "25 254 kr",
-        "dg": "22.2%",
-        "antord": "105",
-        "prord": "1 356 kr"
+        "mmoms": "999 kr",
+        "umoms": "799 kr",
+        "db": "-3 kr",
+        "dg": "-0.4%",
+        "antord": "1",
+        "prord": "999 kr"
     },
     {
         "butikk": "Tønsberg",
         "Klient": "3",
-        "mmoms": "184 720 kr",
-        "umoms": "147 776 kr",
-        "db": "42 700 kr",
-        "dg": "28.9%",
-        "antord": "178",
-        "prord": "1 037 kr"
+        "mmoms": "1 099 kr",
+        "umoms": "879 kr",
+        "db": "402 kr",
+        "dg": "45.8%",
+        "antord": "1",
+        "prord": "1 099 kr"
     },
     {
         "butikk": "Arendal",
         "Klient": "4",
-        "mmoms": "169 022 kr",
-        "umoms": "135 218 kr",
-        "db": "44 006 kr",
-        "dg": "32.5%",
-        "antord": "189",
-        "prord": "894 kr"
-    },
-    {
-        "butikk": "Sandefjord",
-        "Klient": "5",
-        "mmoms": "95 128 kr",
-        "umoms": "76 102 kr",
-        "db": "20 579 kr",
-        "dg": "27.0%",
-        "antord": "133",
-        "prord": "715 kr"
+        "mmoms": "2 797 kr",
+        "umoms": "2 237 kr",
+        "db": "152 kr",
+        "dg": "6.8%",
+        "antord": "3",
+        "prord": "932 kr"
     },
     {
         "butikk": "Larvik",
         "Klient": "6",
-        "mmoms": "184 483 kr",
-        "umoms": "147 586 kr",
-        "db": "35 544 kr",
-        "dg": "24.1%",
-        "antord": "96",
-        "prord": "1 921 kr"
+        "mmoms": "3 368 kr",
+        "umoms": "2 694 kr",
+        "db": "479 kr",
+        "dg": "17.8%",
+        "antord": "5",
+        "prord": "673 kr"
     },
     {
         "butikk": "Bamble",
         "Klient": 7,
-        "mmoms": "222 933 kr",
-        "umoms": "178 346 kr",
-        "db": "33 252 kr",
-        "dg": "18.6%",
-        "antord": "110",
-        "prord": "2 026 kr"
+        "mmoms": "313 kr",
+        "umoms": "250 kr",
+        "db": "123 kr",
+        "dg": "49.3%",
+        "antord": "1",
+        "prord": "313 kr"
     },
     {
         "butikk": "Totalt",
         "Klient": 999,
-        "mmoms": "1 251 775 kr",
-        "umoms": "1 001 420 kr",
-        "db": "254 322 kr",
-        "dg": "25.4%",
-        "antord": "1 008",
-        "prord": "1 241 kr"
+        "mmoms": "19 073 kr",
+        "umoms": "15 258 kr",
+        "db": "991 kr",
+        "dg": "6.5%",
+        "antord": "19",
+        "prord": "1 003 kr"
     }
 ]
