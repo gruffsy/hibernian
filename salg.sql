@@ -17,9 +17,9 @@ select
 	count(distinct th.[Receipt No_]) as antord,
     FORMAT(sum(-[Total Rounded Amt_])/count(distinct th.[Receipt No_]), '### ### ##0 kr') as prord
 from
-      	[Hibernian Retail$Trans_ Sales Entry] se 
+      	[Hibernian Retail$Trans_ Sales Entry] se
 inner join [Hibernian Retail$Transaction Header] th 
-on 
+on  
 	th.[Store No_]=se.[Store No_] and 
    	th.[POS Terminal No_]=se.[POS Terminal No_] and 
    	th.[Transaction No_]=se.[Transaction No_] 
