@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20230408,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "-4 969 kr",
+        "umoms": "-3 975 kr",
+        "db": "-847 kr",
+        "dg": "21.0%",
+        "antord": "7",
+        "prord": "-709 kr"
+    },
+    {
+        "fakturadato": 20230408,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "-4 969 kr",
+        "umoms": "-3 975 kr",
+        "db": "-847 kr",
+        "dg": "21.3%",
+        "antord": "7",
+        "prord": "-709 kr"
+    },
+    {
         "fakturadato": 20230405,
         "butikk": "Skien",
         "Klient": "0",
