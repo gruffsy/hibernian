@@ -1725,5 +1725,16 @@
         "dg": "0.17",
         "antord": 130,
         "prord": 1825
+    },
+    {
+        "fakturadato": 20230414,
+        "butikk": "Bamble",
+        "Klient": 7,
+        "mmoms": -545,
+        "umoms": -436,
+        "db": -68,
+        "dg": "0.16",
+        "antord": 5,
+        "prord": -109
     }
 ]
