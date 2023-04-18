@@ -45,14 +45,16 @@ with
         from 
             [MegaFlisMASTER$Product Group] pg 
             inner join [MegaFlisMASTER$Item Category] ic on pg.[Item Category Code] = ic.Code),
-            staff as (select Code, Namefrom [MegaFlisMASTER$Salesperson_Purchaser]),
-            brands as (select Code, Descriptionfrom [MegaFlisMASTER$Item Family]
+            staff as (select Code, Name
+            from [MegaFlisMASTER$Salesperson_Purchaser]),
+            brands as (select Code, Description
+            from [MegaFlisMASTER$Item Family]
     ),
     vendors as (
         select 
             No_, 
             Name
-            
+
         from 
             [MegaFlisMASTER$Vendor]
     )

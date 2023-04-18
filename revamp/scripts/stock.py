@@ -15,11 +15,14 @@ conn = pyodbc.connect(connection_string)
 
 # Run the SELECT clause
 query = """
-select
-    Code, 
-    Name
-from 
-    [MegaFlisMASTER$Location]
+ select
+        [Item No_] as No_,
+        [Location],
+        [Phys_ Inventory] as Inventory,
+        [Saleable Quantity] as [Saleable qty]
+    
+    from
+        [Hibernian Retail$Inventory Lookup Table]
 
 """
 
@@ -31,7 +34,7 @@ rows = cursor.fetchall()
 column_names = [column[0] for column in cursor.description]
 
 # Save the result as CSV
-with open("../csv/location.csv", "w", newline="") as output_file:
+with open("../csv/stock.csv", "w", newline="") as output_file:
     writer = csv.writer(output_file, delimiter=";")
     # Write the column headers
     writer.writerow(column_names)
