@@ -1,1 +1,2 @@
-﻿[{"butikk":"Tønsberg","mmoms":"- 265 479 kr","umoms":"- 212 383 kr","db":"- 53 783 kr","dg":"39.1%","antord":"-  256","prord":"-  975 kr"},{"butikk":"Totalt","mmoms":"-1 650 194 kr","umoms":"-1 320 155 kr","db":"- 294 020 kr","dg":"42.1%","antord":"- 1 367","prord":"- 1 148 kr"}]
+﻿Msg 1205, Level 13, State 52, Server DB-HIB, Line 16
+Transaction (Process ID 210) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
