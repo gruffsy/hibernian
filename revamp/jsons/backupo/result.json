@@ -1,0 +1,70 @@
+{
+    "monthly_comparison": {
+        "2022-03": {
+            "last_year_sales": 39719485,
+            "this_year_sales": 37194587
+        },
+        "2022-02": {
+            "last_year_sales": 30059961,
+            "this_year_sales": 28434768
+        },
+        "2022-01": {
+            "last_year_sales": 40299641,
+            "this_year_sales": 41272691
+        }
+    },
+    "current_month_comparison": {
+        "last_year_sales": 32156018,
+        "this_year_sales": 37194587
+    },
+    "uncompared_months": [
+        {
+            "month": "2022-12",
+            "sales": 24773571
+        },
+        {
+            "month": "2022-11",
+            "sales": 48593682
+        },
+        {
+            "month": "2022-10",
+            "sales": 47471572
+        },
+        {
+            "month": "2022-09",
+            "sales": 37329085
+        },
+        {
+            "month": "2022-08",
+            "sales": 35624319
+        },
+        {
+            "month": "2022-07",
+            "sales": 33749576
+        },
+        {
+            "month": "2022-06",
+            "sales": 35697317
+        },
+        {
+            "month": "2022-05",
+            "sales": 36728807
+        },
+        {
+            "month": "2022-04",
+            "sales": 35430826
+        },
+        {
+            "month": "2022-03",
+            "sales": 39719485
+        },
+        {
+            "month": "2022-02",
+            "sales": 30059961
+        },
+        {
+            "month": "2022-01",
+            "sales": 40299641
+        }
+    ]
+}
