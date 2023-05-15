@@ -50,6 +50,13 @@ for item in data:
     elif "incomplete" not in aggregated_data[key]:
         aggregated_data[key]["incomplete"] = False
 
+
+        # After the aggregation step, loop over the aggregated data to recalculate dg and prord, and set the incomplete key
+for key in aggregated_data:
+    aggregated_data[key]['dg'] = aggregated_data[key]['db'] / aggregated_data[key]['umoms'] if aggregated_data[key]['umoms'] != 0 else 0
+    aggregated_data[key]['prord'] = aggregated_data[key]['umoms'] / aggregated_data[key]['antord'] if aggregated_data[key]['umoms'] != 0 else 0
+  
+
 # Convert the aggregated data to a list
 result = []
 for key, value in aggregated_data.items():
