@@ -92,3 +92,40 @@ for key, value in aggregated_data.items():
 output_file = source_file.parent / "sales_months_no_format.json"
 with output_file.open("w") as f:
     json.dump(result, f, indent=4)
+
+# Define last year and this year
+last_year = 2022
+this_year = 2023
+
+# Split the data into last year and this year
+data_last_year = [item for item in result if item['year'] == last_year]
+data_this_year = [item for item in result if item['year'] == this_year]
+
+# Create a dictionary for easy access to last year's data
+data_last_year_dict = {(item['month'], item['Klient']): item for item in data_last_year}
+
+# Initialize the results list
+comparison_results = []
+
+# Loop over this year's data
+for item_this_year in data_this_year:
+    # Find the corresponding last year's data
+    key = (item_this_year['month'], item_this_year['Klient'])
+    if key in data_last_year_dict:
+        item_last_year = data_last_year_dict[key]
+        
+        # Initialize a new dictionary to hold the comparison results
+        comparison = {'year': this_year, 'month': item_this_year['month'], 'Klient': item_this_year['Klient'], 'butikk': item_this_year['butikk'], 'incomplete': item_this_year['incomplete']}
+        
+        # Calculate the difference for each key and store in the comparison dictionary
+        for k in aggregate_keys + ['dg', 'prord']:
+            comparison[k] = item_this_year[k] - item_last_year.get(k, 0)
+        
+        # Append the comparison to the results list
+        comparison_results.append(comparison)
+
+# Save the comparison results to a new JSON file
+comparison_file = source_file.parent / "sales_comparison_no_format.json"
+with comparison_file.open("w") as f:
+    json.dump(comparison_results, f, indent=4)
+
