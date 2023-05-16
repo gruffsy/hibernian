@@ -72,8 +72,8 @@ for key in aggregated_data:
         else 0
     )
     aggregated_data[key]["prord"] = (
-        aggregated_data[key]["umoms"] / aggregated_data[key]["antord"]
-        if aggregated_data[key]["umoms"] != 0
+        aggregated_data[key]["mmoms"] / aggregated_data[key]["antord"]
+        if aggregated_data[key]["mmoms"] != 0
         else 0
     )
 
