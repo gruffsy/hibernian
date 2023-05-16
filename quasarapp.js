@@ -128,17 +128,13 @@ new Vue({
             (entry) =>
               entry.month === currentMonth && entry.year === currentYear
           );
+          this.MonthLastYear = data.filter(
+            (entry) =>
+              entry.month === currentMonth && entry.year === currentYear - 1
+          );
         });
     },
-    getMonthLastYear() {
-      const currentMonth = new Date().getMonth() + 1; // getMonth() returns a 0-based month, so add 1
-      const currentYear = new Date().getFullYear();
-
-      this.MonthLastYear = data.filter(
-        (entry) =>
-          entry.month === currentMonth && entry.year === currentYear - 1
-      );
-    },
+   
     getToday() {
       fetch("./json/kombinertSalg.json")
         .then((response) => response.json())
@@ -268,7 +264,6 @@ new Vue({
   mounted() {
     this.getAllDays();
     this.getMonthCurrent();
-    this.getMonthLastYear();
     this.getToday();
     this.getBamble();
     this.getStock();
