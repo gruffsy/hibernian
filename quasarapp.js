@@ -10,6 +10,7 @@ new Vue({
     return {
       alldays: [],
       MonthCurrent: [],
+      MonthLastYear: [],
       today: [],
       bamble: [],
       yesterday: [],
@@ -129,7 +130,12 @@ new Vue({
           );
         });
     },
-
+    getMonthLastYear() {
+      this.MonthLastYear = data.filter(
+        (entry) =>
+          entry.month === currentMonth && entry.year === currentYear - 1
+      );
+    },
     getToday() {
       fetch("./json/kombinertSalg.json")
         .then((response) => response.json())
@@ -259,6 +265,7 @@ new Vue({
   mounted() {
     this.getAllDays();
     this.getMonthCurrent();
+    this.getMonthLastYear();
     this.getToday();
     this.getBamble();
     this.getStock();
