@@ -6,8 +6,9 @@ from calendar import monthrange
 
 # Load the JSON file
 source_file = Path("../jsons/salg_fra_22_pr_dag_med_total_no_format.json")
-with source_file.open() as f:
+with source_file.open(encoding="utf-8") as f:
     data = json.load(f)
+
 
 # Get today's date
 today = datetime.now()
