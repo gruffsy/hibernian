@@ -40,7 +40,7 @@ for item in data:
         item["incomplete"] = False
 
     # Write the intermediate data to a new JSON file
-intermediate_file = source_file.parent / "sales_days_months_no_format.json"
+intermediate_file = source_file.parent / "intermediate_sales_no_format.json"
 with intermediate_file.open("w") as f:
     json.dump(data, f, indent=4)
 
@@ -85,4 +85,3 @@ for key, value in aggregated_data.items():
 output_file = source_file.parent / "sales_months_no_format.json"
 with output_file.open("w") as f:
     json.dump(result, f, indent=4)
-
