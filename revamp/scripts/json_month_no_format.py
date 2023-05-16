@@ -22,6 +22,9 @@ aggregated_data = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
 # List of keys to aggregate
 aggregate_keys = ["mmoms", "umoms", "db", "antord"]
 
+# Create a new list to hold the data before aggregation
+before_aggregation = []
+
 # Loop over the data
 for item in data:
     # Convert fakturadato to a datetime object
@@ -39,10 +42,7 @@ for item in data:
     else:
         item["incomplete"] = False
 
-    # Write the intermediate data to a new JSON file
-intermediate_file = source_file.parent / "intermediate_sales_no_format.json"
-with intermediate_file.open("w") as f:
-    json.dump(data, f, indent=4)
+
 
     # Aggregate the sales by month, year, and klient
     key = (item["year"], item["month"], item["Klient"])
@@ -60,6 +60,9 @@ with intermediate_file.open("w") as f:
     elif "incomplete" not in aggregated_data[key]:
         aggregated_data[key]["incomplete"] = False
 
+    # Append the item to the list before aggregation
+    before_aggregation.append(item)
+
         # After the aggregation step, loop over the aggregated data to recalculate dg and prord, and set the incomplete key
 for key in aggregated_data:
     aggregated_data[key]["dg"] = (
@@ -73,6 +76,10 @@ for key in aggregated_data:
         else 0
     )
 
+# After the loop, write the list to the file
+before_aggregate_file = source_file.parent / "before_aggregation.json"
+with before_aggregate_file.open("w") as f:
+    json.dump(before_aggregation, f, indent=4)
 
 # Convert the aggregated data to a list
 result = []
