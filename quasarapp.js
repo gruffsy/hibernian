@@ -131,6 +131,9 @@ new Vue({
         });
     },
     getMonthLastYear() {
+      const currentMonth = new Date().getMonth() + 1; // getMonth() returns a 0-based month, so add 1
+      const currentYear = new Date().getFullYear();
+
       this.MonthLastYear = data.filter(
         (entry) =>
           entry.month === currentMonth && entry.year === currentYear - 1
