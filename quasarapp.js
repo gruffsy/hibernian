@@ -9,6 +9,7 @@ new Vue({
   data: function () {
     return {
       alldays: [],
+      MonthCurrent: [],
       today: [],
       bamble: [],
       yesterday: [],
@@ -115,6 +116,19 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.alldays = data));
     },
+    getMonthCurrent() {
+      const currentMonth = new Date().getMonth() + 1; // getMonth() returns a 0-based month, so add 1
+      const currentYear = new Date().getFullYear();
+    
+      fetch("./revamp/publish/salg_fra_22_pr_mnd_med_total.json")
+        .then((response) => response.json())
+        .then((data) => {
+          this.MonthCurrent = data.filter(entry => 
+            entry.month === currentMonth && entry.year === currentYear
+          );
+        });
+    },
+    
     getToday() {
       fetch("./json/kombinertSalg.json")
         .then((response) => response.json())
