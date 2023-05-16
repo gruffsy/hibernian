@@ -90,8 +90,8 @@ for key, value in aggregated_data.items():
 
 # Save the aggregated result to a new JSON file
 output_file = source_file.parent / "sales_months_no_format.json"
-with output_file.open("w") as f:
-    json.dump(result, f, indent=4)
+with output_file.open("w", encoding="utf-8") as f:
+    json.dump(result, f, indent=4, ensure_ascii=False)
 
 # Get the current year
 this_year = datetime.now().year

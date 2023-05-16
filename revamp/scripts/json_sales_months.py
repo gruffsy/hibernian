@@ -1,5 +1,6 @@
 import json
 from collections import defaultdict
+from pathlib import Path
 
 # Define a function to format a value as a currency string
 
@@ -11,15 +12,11 @@ def format_currency(value):
 def format_integer(value):
     return f"{int(value):,}".replace(",", " ")
 
-# Read sales.json
-with open("../jsons/sales_months_no_format.json", "r", encoding="utf-8") as f:
+
+# Load the JSON file
+source_file = Path("../jsons/sales_months_no_format.json")
+with source_file.open("r", encoding="utf-8") as f:
     data = json.load(f)
-
-# Sort the data by fakturadato ascending and Klient descending
-data.sort(key=lambda x: (-x["fakturadato"], int(x["Klient"])))
-
-with open("../jsons/salg_fra_22_pr_dag_med_total_no_format.json", "w", encoding="utf-8") as f:
-    json.dump(data, f, indent=4, ensure_ascii=False)
 
 for d in data:
     # Convert values to a currency string
@@ -31,5 +28,5 @@ for d in data:
     d["dg"] = "{:.1%}".format(d["dg"])
 
 # Write the result to a new JSON file
-with open("../publish/salg_fra_22_pr_dag_med_total.json", "w", encoding="utf-8") as f:
+with open("../publish/salg_fra_22_pr_mnd_med_total.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=4, ensure_ascii=False)
