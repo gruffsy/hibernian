@@ -77,7 +77,7 @@ for key in aggregated_data:
     )
 
 # After the loop, write the list to the file
-before_aggregate_file = source_file.parent / "before_aggregation.json"
+before_aggregate_file = source_file.parent / "sales_days_no format.json"
 with before_aggregate_file.open("w") as f:
     json.dump(before_aggregation, f, indent=4)
 
@@ -93,9 +93,10 @@ output_file = source_file.parent / "sales_months_no_format.json"
 with output_file.open("w") as f:
     json.dump(result, f, indent=4)
 
-# Define last year and this year
-last_year = 2022
-this_year = 2023
+# Get the current year
+this_year = datetime.now().year
+# Define last year as the current year minus 1
+last_year = this_year - 1
 
 # Split the data into last year and this year
 data_last_year = [item for item in result if item['year'] == last_year]
@@ -125,7 +126,7 @@ for item_this_year in data_this_year:
         comparison_results.append(comparison)
 
 # Save the comparison results to a new JSON file
-comparison_file = source_file.parent / "sales_comparison_no_format.json"
+comparison_file = source_file.parent / "sales_comparison_full_month_no_format.json"
 with comparison_file.open("w") as f:
     json.dump(comparison_results, f, indent=4)
 
