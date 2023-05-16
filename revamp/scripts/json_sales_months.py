@@ -27,6 +27,11 @@ for d in data:
     d["antord"] = format_integer(d["antord"])
     d["dg"] = "{:.1%}".format(d["dg"])
 
+
+# Sort the data
+data = sorted(data, key=lambda x: (-x['year'], -x['month'], int(x['Klient'])))
+
+
 # Write the result to a new JSON file
 with open("../publish/salg_fra_22_pr_mnd_med_total.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=4, ensure_ascii=False)
