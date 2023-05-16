@@ -53,7 +53,8 @@ and (
         )
 	--and [Customer Account] = 0
 group by
-	th.[Date]
+	th.[Date],
+    [Customer Account]
 order by
 	th.[Date]
 
