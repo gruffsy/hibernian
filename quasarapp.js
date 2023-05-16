@@ -119,16 +119,17 @@ new Vue({
     getMonthCurrent() {
       const currentMonth = new Date().getMonth() + 1; // getMonth() returns a 0-based month, so add 1
       const currentYear = new Date().getFullYear();
-    
+
       fetch("./revamp/publish/salg_fra_22_pr_mnd_med_total.json")
         .then((response) => response.json())
         .then((data) => {
-          this.MonthCurrent = data.filter(entry => 
-            entry.month === currentMonth && entry.year === currentYear
+          this.MonthCurrent = data.filter(
+            (entry) =>
+              entry.month === currentMonth && entry.year === currentYear
           );
         });
     },
-    
+
     getToday() {
       fetch("./json/kombinertSalg.json")
         .then((response) => response.json())
@@ -220,28 +221,30 @@ new Vue({
       return this.groupedDataArray.slice(0, this.displayedTables);
     },
     groupedDataArray() {
-        const groupedData = this.groupedData;
-        return Object.keys(groupedData).map(date => {
+      const groupedData = this.groupedData;
+      return Object.keys(groupedData)
+        .map((date) => {
           const year = parseInt(date.substring(0, 4));
           const month = parseInt(date.substring(4, 6)) - 1;
           const day = parseInt(date.substring(6, 8));
           const dateObject = new Date(year, month, day);
-    
-          const formattedDate = new Intl.DateTimeFormat('nb-NO', {
-            weekday: 'long',
-            day: '2-digit',
-            month: '2-digit',
-            year: 'numeric',
+
+          const formattedDate = new Intl.DateTimeFormat("nb-NO", {
+            weekday: "long",
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric",
           }).format(dateObject);
-    
+
           return {
             date: formattedDate,
             rows: groupedData[date],
             originalDate: dateObject,
           };
-        })   .sort((a, b) => b.originalDate - a.originalDate)
+        })
+        .sort((a, b) => b.originalDate - a.originalDate)
         .map(({ date, rows }) => ({ date, rows }));
-      },
+    },
     groupedData() {
       return this.alldays.reduce((acc, row) => {
         const date = row.fakturadato;
@@ -255,6 +258,7 @@ new Vue({
   },
   mounted() {
     this.getAllDays();
+    this.getMonthCurrent();
     this.getToday();
     this.getBamble();
     this.getStock();
