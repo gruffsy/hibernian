@@ -1,14 +1,47 @@
 [
     {
         "fakturadato": 20230523,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "1 367 kr",
+        "umoms": "1 093 kr",
+        "db": "430 kr",
+        "dg": "39.0%",
+        "antord": "6",
+        "prord": "227 kr"
+    },
+    {
+        "fakturadato": 20230523,
         "butikk": "Tønsberg",
         "Klient": "3",
-        "mmoms": "26 504 kr",
-        "umoms": "21 203 kr",
-        "db": "899 kr",
+        "mmoms": "28 002 kr",
+        "umoms": "22 401 kr",
+        "db": "883 kr",
         "dg": "4.0%",
+        "antord": "3",
+        "prord": "9 334 kr"
+    },
+    {
+        "fakturadato": 20230523,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "18 391 kr",
+        "umoms": "14 713 kr",
+        "db": "5 376 kr",
+        "dg": "37.0%",
+        "antord": "4",
+        "prord": "4 597 kr"
+    },
+    {
+        "fakturadato": 20230523,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "3 382 kr",
+        "umoms": "2 705 kr",
+        "db": "372 kr",
+        "dg": "14.0%",
         "antord": "2",
-        "prord": "13 252 kr"
+        "prord": "1 691 kr"
     },
     {
         "fakturadato": 20230523,
@@ -25,12 +58,12 @@
         "fakturadato": 20230523,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "26 539 kr",
-        "umoms": "21 231 kr",
-        "db": "909 kr",
-        "dg": "4.3%",
-        "antord": "3",
-        "prord": "8 846 kr"
+        "mmoms": "51 177 kr",
+        "umoms": "40 940 kr",
+        "db": "7 071 kr",
+        "dg": "17.3%",
+        "antord": "16",
+        "prord": "3 198 kr"
     },
     {
         "fakturadato": 20230522,
