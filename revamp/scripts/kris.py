@@ -18,7 +18,7 @@ query = """
 select
 	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) as 'fakturadato',
 	'Kristiansand' as 'butikk', 
-	8 as 'Klient',
+	7 as 'Klient',
     cast(sum([Total Rounded Amt_])*-1 as int) as 'mmoms',
     cast(sum(se.[Net Amount])*-1 as int) as 'umoms',
     cast(sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as int) as 'db',

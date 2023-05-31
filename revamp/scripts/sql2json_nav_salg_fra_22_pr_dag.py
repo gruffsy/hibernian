@@ -31,11 +31,11 @@ select
     	WHEN 
         	th.[Store No_] = 'S150'
         THEN 
-        	2 
+        	'2' 
         WHEN 
 			th.[Store No_] = 'S100' 
         THEN 
-        	7 
+        	'7' 
     END as 'Klient',
     cast(sum([Total Rounded Amt_])*-1 as int) as 'mmoms',
     cast(sum(se.[Net Amount])*-1 as int) as 'umoms',
