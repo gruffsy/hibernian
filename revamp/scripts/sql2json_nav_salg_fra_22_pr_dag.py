@@ -17,14 +17,38 @@ conn = pyodbc.connect(connection_string)
 query = '''
 select
 	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) as 'fakturadato',
-	'Bamble' as 'butikk', 
-	7 as 'Klient',
+	CASE 
+    	WHEN 
+        	th.[Store No_] = 'S150' 
+        THEN 
+        	'Kristiansand' 
+        WHEN 
+        	th.[Store No_] = 'S100' 
+        THEN 
+        	'Bamble' 
+	END as 'butikk',
+    CASE 
+    	WHEN 
+        	th.[Store No_] = 'S150'
+        THEN 
+        	2 
+        WHEN 
+			th.[Store No_] = 'S100' 
+        THEN 
+        	7 
+    END as 'Klient',
     cast(sum([Total Rounded Amt_])*-1 as int) as 'mmoms',
     cast(sum(se.[Net Amount])*-1 as int) as 'umoms',
     cast(sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as int) as 'db',
-	CAST(ROUND(sum(se.[Net Amount] - se.[Cost Amount]) / sum(se.[Net Amount]), 2) AS FLOAT) as 'dg',
+    CASE 
+        WHEN sum(se.[Net Amount]) = 0 THEN 0 
+        ELSE CAST(ROUND(sum(se.[Net Amount] - se.[Cost Amount]) / sum(se.[Net Amount]), 2) AS FLOAT) 
+    END as 'dg',
 	count(distinct th.[Receipt No_]) as 'antord',
-    cast(sum(-[Total Rounded Amt_])/count(distinct th.[Receipt No_]) as int) as 'prord'
+    CASE 
+        WHEN count(distinct th.[Receipt No_]) = 0 THEN 0 
+        ELSE cast(sum(-[Total Rounded Amt_])/count(distinct th.[Receipt No_]) as int)
+    END as 'prord'
 from
       	[Hibernian Retail$Trans_ Sales Entry] se
 inner join [Hibernian Retail$Transaction Header] th 
@@ -41,7 +65,7 @@ on
        th.[Customer No_] = c.No_ 
 where 	th.[Transaction Type]=2 
 	and th.[Entry Status] in (0,2)
-    and th.[Store No_] = 'S100'
+    -- and th.[Store No_] = 'S150'
 	-- and th.[Date] = convert(varchar, getdate(), 112)
 and 
 	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) BETWEEN 20220101 AND convert(varchar, getdate(), 112)
@@ -54,9 +78,11 @@ and (
         )
 	--and [Customer Account] = 0
 group by
-	th.[Date]
+	th.[Date], 
+    th.[Store No_]
 order by
 	th.[Date]
+
 
 '''
 
