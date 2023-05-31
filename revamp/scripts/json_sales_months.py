@@ -29,7 +29,9 @@ for d in data:
 
 
 # Sort the data
-data = sorted(data, key=lambda x: (-x['year'], -x['month'], int(x['Klient'])))
+# data = sorted(data, key=lambda x: (-x['year'], -x['month'], int(x['Klient'])))
+data = sorted(data, key=lambda x: (-x['year'], -x['month'], int(x['Klient']) if x['Klient'] is not None else 0))
+
 
 
 # Write the result to a new JSON file

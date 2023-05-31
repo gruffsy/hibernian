@@ -13,14 +13,14 @@
         "Klient": "0"
     },
     {
-        "mmoms": "1 681 071 kr",
-        "umoms": "1 344 856 kr",
-        "db": "4 637 kr",
-        "antord": "1 454",
+        "mmoms": "1 696 382 kr",
+        "umoms": "1 357 105 kr",
+        "db": "13 952 kr",
+        "antord": "1 492",
         "butikk": "Kristiansand",
         "incomplete": false,
-        "dg": "0.3%",
-        "prord": "1 156 kr",
+        "dg": "1.0%",
+        "prord": "1 136 kr",
         "year": 2023,
         "month": 5,
         "Klient": "2"
@@ -88,17 +88,17 @@
         "prord": "1 554 kr",
         "year": 2023,
         "month": 5,
-        "Klient": 7
+        "Klient": "7"
     },
     {
-        "mmoms": "36 016 930 kr",
-        "umoms": "28 813 528 kr",
-        "db": "5 091 849 kr",
-        "antord": "30 207",
+        "mmoms": "36 032 241 kr",
+        "umoms": "28 825 777 kr",
+        "db": "5 101 164 kr",
+        "antord": "30 245",
         "butikk": "Totalt",
         "incomplete": false,
         "dg": "17.7%",
-        "prord": "1 192 kr",
+        "prord": "1 191 kr",
         "year": 2023,
         "month": 5,
         "Klient": 99
@@ -115,6 +115,19 @@
         "year": 2023,
         "month": 4,
         "Klient": "0"
+    },
+    {
+        "mmoms": "7 948 kr",
+        "umoms": "6 358 kr",
+        "db": "725 kr",
+        "antord": "1",
+        "butikk": null,
+        "incomplete": false,
+        "dg": "11.4%",
+        "prord": "7 948 kr",
+        "year": 2023,
+        "month": 4,
+        "Klient": null
     },
     {
         "mmoms": "4 281 304 kr",
@@ -192,13 +205,13 @@
         "prord": "1 529 kr",
         "year": 2023,
         "month": 4,
-        "Klient": 7
+        "Klient": "7"
     },
     {
-        "mmoms": "35 041 099 kr",
-        "umoms": "28 032 864 kr",
-        "db": "5 347 189 kr",
-        "antord": "29 199",
+        "mmoms": "35 049 047 kr",
+        "umoms": "28 039 222 kr",
+        "db": "5 347 914 kr",
+        "antord": "29 200",
         "butikk": "Totalt",
         "incomplete": false,
         "dg": "19.1%",
@@ -219,6 +232,19 @@
         "year": 2023,
         "month": 3,
         "Klient": "0"
+    },
+    {
+        "mmoms": "2 251 kr",
+        "umoms": "1 800 kr",
+        "db": "819 kr",
+        "antord": "1",
+        "butikk": null,
+        "incomplete": false,
+        "dg": "45.5%",
+        "prord": "2 251 kr",
+        "year": 2023,
+        "month": 3,
+        "Klient": null
     },
     {
         "mmoms": "5 677 653 kr",
@@ -296,13 +322,13 @@
         "prord": "1 685 kr",
         "year": 2023,
         "month": 3,
-        "Klient": 7
+        "Klient": "7"
     },
     {
-        "mmoms": "43 858 830 kr",
-        "umoms": "35 087 048 kr",
-        "db": "6 091 354 kr",
-        "antord": "32 828",
+        "mmoms": "43 861 081 kr",
+        "umoms": "35 088 848 kr",
+        "db": "6 092 173 kr",
+        "antord": "32 829",
         "butikk": "Totalt",
         "incomplete": false,
         "dg": "17.4%",
@@ -323,6 +349,19 @@
         "year": 2023,
         "month": 2,
         "Klient": "0"
+    },
+    {
+        "mmoms": "366 kr",
+        "umoms": "292 kr",
+        "db": "121 kr",
+        "antord": "1",
+        "butikk": null,
+        "incomplete": false,
+        "dg": "41.4%",
+        "prord": "366 kr",
+        "year": 2023,
+        "month": 2,
+        "Klient": null
     },
     {
         "mmoms": "4 048 623 kr",
@@ -400,13 +439,13 @@
         "prord": "1 529 kr",
         "year": 2023,
         "month": 2,
-        "Klient": 7
+        "Klient": "7"
     },
     {
-        "mmoms": "28 434 402 kr",
-        "umoms": "22 747 503 kr",
-        "db": "5 467 990 kr",
-        "antord": "25 839",
+        "mmoms": "28 434 768 kr",
+        "umoms": "22 747 795 kr",
+        "db": "5 468 111 kr",
+        "antord": "25 840",
         "butikk": "Totalt",
         "incomplete": false,
         "dg": "24.0%",
@@ -504,7 +543,7 @@
         "prord": "2 212 kr",
         "year": 2023,
         "month": 1,
-        "Klient": 7
+        "Klient": "7"
     },
     {
         "mmoms": "41 272 691 kr",
@@ -608,7 +647,7 @@
         "prord": "1 158 kr",
         "year": 2022,
         "month": 12,
-        "Klient": 7
+        "Klient": "7"
     },
     {
         "mmoms": "24 773 571 kr",
@@ -712,7 +751,7 @@
         "prord": "1 824 kr",
         "year": 2022,
         "month": 11,
-        "Klient": 7
+        "Klient": "7"
     },
     {
         "mmoms": "48 593 682 kr",
@@ -816,7 +855,7 @@
         "prord": "1 960 kr",
         "year": 2022,
         "month": 10,
-        "Klient": 7
+        "Klient": "7"
     },
     {
         "mmoms": "47 471 572 kr",
