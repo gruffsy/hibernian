@@ -427,15 +427,12 @@
               <q-tab-panel name="selger">
                 <div class="q-px-md q-py-md">
                   <q-table
-                    title="Beste selgere i dag"
+                    title="Selgerstatistikk"
                     :data="idagselger"
                     dense
-                    :pagination.sync="pagination"
-                    hide-pagination
-                    class="q-px-md q-py-md"
                   />
                 </div>
-                <div class="q-px-md q-py-md">
+                <!-- <div class="q-px-md q-py-md">
                   <q-table
                     title="Beste selgere i går"
                     :data="igarselger"
@@ -474,7 +471,7 @@
                     hide-pagination
                     class="q-px-md q-py-md"
                   />
-                </div>
+                </div> -->
               </q-tab-panel>
 
               <q-tab-panel name="stock">
