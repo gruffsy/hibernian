@@ -186,7 +186,7 @@ new Vue({
         .then((data) => (this.lordagselger = data));
     },
     getIdagSelger() {
-      fetch("./json/idagselger.sql.json")
+      fetch("./revamp/publish/salg_fra_22_pr_mnd_med_total.json")
         .then((response) => response.json())
         .then((data) => (this.idagselger = data));
     },
