@@ -34,6 +34,9 @@ new Vue({
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
       },
+      paginationSalesPersons: {
+        rowsPerPage: 0, // current rows per page being displayed
+      },
       columns: [
         {
           name: "butikk",
