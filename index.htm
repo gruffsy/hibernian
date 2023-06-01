@@ -312,8 +312,7 @@
 
             <q-tab-panel name="selger">
               <div class="q-px-md q-py-md">
-                <q-table title="Selgerstatistikk" :data="idagselger" dense virtual-scroll :pagination.sync="paginationSalesPersons"
-                  :rows-per-page-options="[0]" />
+                <q-table title="Selgerstatistikk" :data="idagselger" dense :pagination.sync="pagination" />
               </div>
               <!-- <div class="q-px-md q-py-md">
                   <q-table

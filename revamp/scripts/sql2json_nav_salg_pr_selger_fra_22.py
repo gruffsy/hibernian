@@ -52,7 +52,7 @@ WITH Sales AS (
 )
 
 SELECT 
-    CONVERT(INT, CONVERT(VARCHAR, Dato, 112)) as 'fakturadato',
+    ukedag,
 	[Fornavn] + ' ' +[Etternavn] AS [navn],
     cast([Beløp inkl. mva] as int) as [umoms],
     cast([Db.kr] as int) as [db],
@@ -66,7 +66,7 @@ SELECT
         THEN 
         	'Bamble' 
 	END as 'butikk',
-    ukedag
+    CONVERT(INT, CONVERT(VARCHAR, Dato, 112)) as 'fakturadato'
     
     
 FROM Sales

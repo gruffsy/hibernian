@@ -17,11 +17,6 @@ query = '''
 SET DATEFIRST 1;
 
 select
-    CONVERT(INT, CONVERT(VARCHAR, dato, 112)) as 'fakturadato',
-    selger as navn,
-    cast(totalt as int) AS 'umoms',
-    cast(db as int) AS 'db',
-    butikk,
     CASE DATEPART(WEEKDAY,dato) 
             WHEN 1 THEN 'Mandag' 
             WHEN 2 THEN 'Tirsdag' 
@@ -30,7 +25,13 @@ select
             WHEN 5 THEN 'Fredag' 
             WHEN 6 THEN 'Lørdag' 
             WHEN 7 THEN 'Søndag' 
-        END 'ukedag'
+        END 'ukedag',
+    selger as navn,
+    cast(totalt as int) AS 'umoms',
+    cast(db as int) AS 'db',
+    butikk,
+    CONVERT(INT, CONVERT(VARCHAR, dato, 112)) as 'fakturadato'
+    
 from 
     f0004.dbo.SALG_PR_SELGER
 order by
