@@ -67,7 +67,8 @@ and (
         )
 group by
 	th.[Date],
-    [Customer Account]
+    [Customer Account],
+    th.[Store No_]
 order by
 	th.[Date]
 
