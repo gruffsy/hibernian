@@ -16,9 +16,27 @@ conn = pyodbc.connect(connection_string)
 # Run the SELECT clause
 query = '''
 select
-    'Bamble' as butikk,
+    CASE 
+    	WHEN 
+        	th.[Store No_] = 'S150' 
+        THEN 
+        	'Kristiansand' 
+        WHEN 
+        	th.[Store No_] = 'S100' 
+        THEN 
+        	'Bamble' 
+	END as 'butikk',
 	convert(varchar, th.[Date], 112) as Dato, 
-	7 as Klient,
+	CASE 
+    	WHEN 
+        	th.[Store No_] = 'S150'
+        THEN 
+        	'2' 
+        WHEN 
+			th.[Store No_] = 'S100' 
+        THEN 
+        	'7' 
+    END as 'Klient',
     sum([Total Rounded Amt_])*-1 as mmoms,
     sum(se.[Net Amount])*-1 as umoms,
     sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as db,
