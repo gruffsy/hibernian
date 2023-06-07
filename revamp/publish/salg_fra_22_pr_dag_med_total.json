@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20230607,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "1 593 kr",
+        "umoms": "1 274 kr",
+        "db": "108 kr",
+        "dg": "8.0%",
+        "antord": "3",
+        "prord": "531 kr"
+    },
+    {
+        "fakturadato": 20230607,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "1 593 kr",
+        "umoms": "1 274 kr",
+        "db": "108 kr",
+        "dg": "8.5%",
+        "antord": "3",
+        "prord": "531 kr"
+    },
+    {
         "fakturadato": 20230606,
         "butikk": "Skien",
         "Klient": "0",
