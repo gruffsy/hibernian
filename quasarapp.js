@@ -29,7 +29,7 @@ new Vue({
       updated: [],
       stock: [],
       filter: "",
-      filternavn:"",
+      filterselger:"",
       tab: "dag",
       displayedTables: 3,
       pagination: {
