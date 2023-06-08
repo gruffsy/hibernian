@@ -130,7 +130,13 @@
 
             <q-tab-panel name="selger">
               <div class="q-px-md q-py-md">
-                <q-table title="Selgerstatistikk" :data="idagselger" dense :pagination.sync="paginationSalesPersons" />
+                <q-table title="Selgerstatistikk" :data="idagselger" dense :pagination.sync="paginationSalesPersons">
+                  <template v-slot:top-right>
+                    <q-input borderless dense debounce="300" v-model="filternavn" placeholder="Søk">
+                      <template v-slot:append>
+                        <q-icon name="search" />
+                      </template>
+                </q-table>
               </div>
               
             </q-tab-panel>
