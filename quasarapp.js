@@ -29,10 +29,14 @@ new Vue({
       updated: [],
       stock: [],
       filter: "",
+      filterselger:"",
       tab: "dag",
       displayedTables: 3,
       pagination: {
         rowsPerPage: 30, // current rows per page being displayed
+      },
+      paginationSalesPersons: {
+        rowsPerPage: 50, // current rows per page being displayed
       },
       columns: [
         {
@@ -186,7 +190,7 @@ new Vue({
         .then((data) => (this.lordagselger = data));
     },
     getIdagSelger() {
-      fetch("./json/idagselger.sql.json")
+      fetch("./revamp/publish/salg_pr_selger_fra_22_pr_dag.json")
         .then((response) => response.json())
         .then((data) => (this.idagselger = data));
     },
