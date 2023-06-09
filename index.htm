@@ -311,14 +311,18 @@
             </q-tab-panel>
 
             <q-tab-panel name="selger">
+             
+             <q-btn color="primary" icon="date" label="Velg Dato" @click="showDatePicker = !showDatePicker" />
+              <q-date
+              v-model="filterselger"
+              v-if="showDatePicker"
+              minimal
+              mask="YYYYMMDD"
+              title="Velg dato"
+              
+            />
               <div class="q-px-md q-py-md">
-                <q-date
-                v-model="filterselger"
-                minimal
-                mask="YYYYMMDD"
-                title="Velg dato"
                 
-              />
                 <q-table title="Selgerstatistikk" :data="idagselger" :filter="filterselger" dense virtual-scroll :pagination.sync="pagination"
                   :rows-per-page-options="[0]" >
                   <template v-slot:top-left>

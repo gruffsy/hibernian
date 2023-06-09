@@ -30,6 +30,7 @@ new Vue({
       stock: [],
       filter: "",
       filterselger:"",
+      showDatePicker: false,
       tab: "dag",
       displayedTables: 3,
       pagination: {
