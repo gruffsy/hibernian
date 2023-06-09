@@ -1,71 +1,106 @@
 ﻿<!DOCTYPE html>
 <html>
-<!--
+  <!--
     WARNING! Make sure that you match all Quasar related
     tags to the same version! (Below it's "@1.12.8")
   -->
 
-<head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet"
-    type="text/css" />
-  <link href="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="https://unpkg.com/vue-axios@2.1.4/dist/vue-axios.min.js"></script>
-</head>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue-axios@2.1.4/dist/vue-axios.min.js"></script>
+  </head>
 
-<body>
-  <div id="q-app">
-    <div class="q-pa-md">
-      <div>
-        <q-card>
-          <q-tabs v-model="tab" class="text-black" active-color="primary" indicator-color="primary">
-            <div class="q-pa-md">
-              <q-tab name="dag" label="Dag" />
-            </div>
-
-            <div class="q-pa-md">
-              <q-tab name="maned" label="Måned" />
-            </div>
-            <div class="q-pa-md">
-              <q-tab name="aar" label="År" />
-            </div>
-            <div class="q-pa-md">
-              <q-tab name="selger" label="Selgere" />
-            </div>
-            <div class="q-pa-md">
-              <q-tab name="stock" label="Stock Supply" />
-            </div>
-          </q-tabs>
-
-          <q-separator />
-        </q-card>
+  <body>
+    <div id="q-app">
+      <div class="q-pa-md">
         <div>
           <q-card>
-            <p v-for="(u,index) in updated" :key="index">
-              Oppdatert sist: {{ u.oppdatert }}
-            </p>
-          </q-card>
-        </div>
-        <q-card>
-          <q-tab-panels v-model="tab" animated>
-            <q-tab-panel name="dag">
-              <div class="q-px-md q-py-md">
-                <div v-for="item in displayedDataArray" :key="item.date">
-                  <br />
-                  <q-table :title="`${item.date}`" dense :pagination.sync="pagination" hide-pagination :data="item.rows"
-                    :columns="columns" row-key="butikk" class="bg-grey-4 text-body shadow-5">
-                    <template v-slot:body="props">
-                      <q-tr :props="props" :class="tableFormat(props.row.butikk)">
-                        <q-td v-for="col in props.cols" :key="col.name" :props="props">{{ col.value }}</q-td>
-                      </q-tr>
-                    </template>
-                  </q-table>
-                </div>
-                <br>
-                <q-btn label="Vis flere dager" class="full-width" color="grey-4" text-color="grey-9" git_
-                  v-if="displayedTables < groupedDataArray.length" @click="showMoreTables"></q-btn>
+            <q-tabs
+              v-model="tab"
+              class="text-black"
+              active-color="primary"
+              indicator-color="primary"
+            >
+              <div class="q-pa-md">
+                <q-tab name="dag" label="Dag" />
               </div>
-              <!--
+
+              <div class="q-pa-md">
+                <q-tab name="maned" label="Måned" />
+              </div>
+              <div class="q-pa-md">
+                <q-tab name="aar" label="År" />
+              </div>
+              <div class="q-pa-md">
+                <q-tab name="selger" label="Selgere" />
+              </div>
+              <div class="q-pa-md">
+                <q-tab name="stock" label="Stock Supply" />
+              </div>
+            </q-tabs>
+
+            <q-separator />
+          </q-card>
+          <div>
+            <q-card>
+              <p v-for="(u,index) in updated" :key="index">
+                Oppdatert sist: {{ u.oppdatert }}
+              </p>
+            </q-card>
+          </div>
+          <q-card>
+            <q-tab-panels v-model="tab" animated>
+              <q-tab-panel name="dag">
+                <div class="q-px-md q-py-md">
+                  <div v-for="item in displayedDataArray" :key="item.date">
+                    <br />
+                    <q-table
+                      :title="`${item.date}`"
+                      dense
+                      :pagination.sync="pagination"
+                      hide-pagination
+                      :data="item.rows"
+                      :columns="columns"
+                      row-key="butikk"
+                      class="bg-grey-4 text-body shadow-5"
+                    >
+                      <template v-slot:body="props">
+                        <q-tr
+                          :props="props"
+                          :class="tableFormat(props.row.butikk)"
+                        >
+                          <q-td
+                            v-for="col in props.cols"
+                            :key="col.name"
+                            :props="props"
+                            >{{ col.value }}</q-td
+                          >
+                        </q-tr>
+                      </template>
+                    </q-table>
+                  </div>
+                  <br />
+                  <q-btn
+                    label="Vis flere dager"
+                    class="full-width"
+                    color="grey-4"
+                    text-color="grey-9"
+                    git_
+                    v-if="displayedTables < groupedDataArray.length"
+                    @click="showMoreTables"
+                  ></q-btn>
+                </div>
+                <!--
                 <div class="q-px-md q-py-md">
                   <q-table
                     title="Salg i dag"
@@ -170,32 +205,64 @@
                   </q-table>
                 </div>
 -->
-            </q-tab-panel>
+              </q-tab-panel>
 
-            <q-tab-panel name="maned">
-              <div class="q-px-md q-py-md">
-                <q-table title="Denne måned" :data="MonthCurrent" dense :pagination.sync="pagination" hide-pagination
-                  :columns="columns" row-key="name" class="bg-grey-4 text-body shadow-5">
-                  <template v-slot:body="props">
-                    <q-tr :props="props" :class="tableFormat(props.row.butikk)">
-                      <q-td v-for="col in props.cols" :key="col.name" :props="props">{{ col.value }}</q-td>
-                    </q-tr>
-                  </template>
-                </q-table>
-              </div>
+              <q-tab-panel name="maned">
+                <div class="q-px-md q-py-md">
+                  <q-table
+                    title="Denne måned"
+                    :data="MonthCurrent"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                    row-key="name"
+                    class="bg-grey-4 text-body shadow-5"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
+                </div>
 
-              <div class="q-px-md q-py-md">
-                <q-table title="Totalt måned i fjor" :data="MonthLastYear" dense :pagination.sync="pagination"
-                  hide-pagination :columns="columns" row-key="name" class="bg-grey-4 text-body shadow-5">
-                  <template v-slot:body="props">
-                    <q-tr :props="props" :class="tableFormat(props.row.butikk)">
-                      <q-td v-for="col in props.cols" :key="col.name" :props="props">{{ col.value }}</q-td>
-                    </q-tr>
-                  </template>
-                </q-table>
-              </div>
+                <div class="q-px-md q-py-md">
+                  <q-table
+                    title="Totalt måned i fjor"
+                    :data="MonthLastYear"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                    row-key="name"
+                    class="bg-grey-4 text-body shadow-5"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
+                </div>
 
-              <!-- <div class="q-px-md q-py-md">
+                <!-- <div class="q-px-md q-py-md">
                   <q-table
                     title="Hittil i denne måned"
                     :data="manedNaa"
@@ -274,102 +341,208 @@
                     </template>
                   </q-table>
                 </div>-->
-            </q-tab-panel>
+              </q-tab-panel>
 
-            <q-tab-panel name="aar">
-              <div class="q-px-md q-py-md">
-                <q-table title="Hittil i år" :data="iaar" dense :pagination.sync="pagination" hide-pagination
-                  :columns="columns" row-key="name" class="bg-grey-4 text-body shadow-5">
-                  <template v-slot:body="props">
-                    <q-tr :props="props" :class="tableFormat(props.row.butikk)">
-                      <q-td v-for="col in props.cols" :key="col.name" :props="props">{{ col.value }}</q-td>
-                    </q-tr>
-                  </template>
-                </q-table>
-              </div>
-              <div class="q-px-md q-py-md">
-                <q-table title="Hittil i fjor" :data="ifjor" dense :pagination.sync="pagination" hide-pagination
-                  :columns="columns" row-key="name" class="bg-grey-4 text-body shadow-5">
-                  <template v-slot:body="props">
-                    <q-tr :props="props" :class="tableFormat(props.row.butikk)">
-                      <q-td v-for="col in props.cols" :key="col.name" :props="props">{{ col.value }}</q-td>
-                    </q-tr>
-                  </template>
-                </q-table>
-              </div>
+              <q-tab-panel name="aar">
+                <div class="q-px-md q-py-md">
+                  <q-table
+                    title="Hittil i år"
+                    :data="iaar"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                    row-key="name"
+                    class="bg-grey-4 text-body shadow-5"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
+                </div>
+                <div class="q-px-md q-py-md">
+                  <q-table
+                    title="Hittil i fjor"
+                    :data="ifjor"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                    row-key="name"
+                    class="bg-grey-4 text-body shadow-5"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
+                </div>
 
-              <div class="q-px-md q-py-md">
-                <q-table title="Sammenligning i år mot i fjor" :data="aarSammen" dense :pagination.sync="pagination"
-                  hide-pagination :columns="columns" row-key="name" class="bg-grey-4 text-body shadow-5">
-                  <template v-slot:body="props">
-                    <q-tr :props="props" :class="tableFormat(props.row.butikk)">
-                      <q-td v-for="col in props.cols" :key="col.name" :props="props">{{ col.value }}</q-td>
-                    </q-tr>
-                  </template>
-                </q-table>
-              </div>
-            </q-tab-panel>
+                <div class="q-px-md q-py-md">
+                  <q-table
+                    title="Sammenligning i år mot i fjor"
+                    :data="aarSammen"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                    row-key="name"
+                    class="bg-grey-4 text-body shadow-5"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
+                </div>
+              </q-tab-panel>
 
-            <q-tab-panel name="selger">
-              <div class="fit column wrap justify-start items-start content-start">
-            <q-btn color="primary" icon="date" label="Velg Dato" @click="showDatePicker = !showDatePicker" /> 
-              
-            <div class="q-pa-md">
-            <q-date
-              v-model="filterselger"
-              v-if="showDatePicker"
-           
-              mask="YYYYMMDD"
-              title="Velg dato"
-              
-            /></div>
-              
-                
-                <!-- <q-table title="Selgerstatistikk" :data="idagselger" :filter="filterselger" dense virtual-scroll :pagination.sync="pagination"
-                  :rows-per-page-options="[0]" >
-                  <template v-slot:top-left>
-                    <q-input borderless dense debounce="300" v-model="filterselger" placeholder="Søk">
-                      <template v-slot:append>
-                        <q-icon name="search" />
-                      </template>
-                    </q-input>
-                  </template>
-                </q-table> -->
-             
-              </div>
-            </q-tab-panel>
+              <q-tab-panel name="selger">
+                <div class="flex flex-center column  q-px-md q-py-md">
+                  <div
+                    class="row"
+                   
+                  >
+                    <div
+                      id="parent"
+                      class="fit column wrap justify-start items-start content-start"
+                      style="overflow: hidden"
+                    >
+                      <div class="bg-grey-6" style="overflow: auto">
+                        <q-card class="no-border-radius">
+                          <q-card-section>
+                            <q-btn
+                              color="primary"
+                              icon="date"
+                              label="Velg Dato"
+                              @click="showDatePicker = !showDatePicker"
+                            />
+                          </q-card-section>
+                        </q-card>
+                      </div>
+                      <div class="bg-grey-6" style="overflow: auto">
+                        <q-card class="no-border-radius">
+                          <q-card-section>
+                            <q-date
+                              v-model="filterselger"
+                              v-if="!showDatePicker"
+                              mask="YYYYMMDD"
+                              minimal
+                            />
+                          </q-card-section>
+                        </q-card>
+                      </div>
+                      <div class="bg-grey-6" >
+                        <q-card class="no-border-radius">
+                          <q-card-section>
+                            <q-table
+                              title="Selgerstatistikk"
+                              :data="idagselger"
+                              :filter="filterselger"
+                              dense
+                              virtual-scroll
+                              :pagination.sync="pagination"
+                              :rows-per-page-options="[0]"
+                            >
+                              <template v-slot:top-left>
+                                <q-input
+                                  borderless
+                                  dense
+                                  debounce="300"
+                                  v-model="filterselger"
+                                  placeholder="Søk"
+                                >
+                                  <template v-slot:append>
+                                    <q-icon name="search" />
+                                  </template>
+                                </q-input>
+                              </template>
+                            </q-table>
+                          </q-card-section>
+                        </q-card>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </q-tab-panel>
 
-            <q-tab-panel name="stock">
-              <q-input borderless dense debounce="300" v-model="filter" placeholder="Søk"><template v-slot:append>
-                  <q-icon name="search" />
-                </template></q-input>
-              <div class="q-px-md q-py-md">
-                <q-table title="Lagerbehldning Stock Supply" :data="stock" dense :pagination.sync="pagination"
-                  :filter="filter" hide-pagination class="bg-grey-4 text-body shadow-5">
-                  <template v-slot:top-right>
-                    <q-input borderless dense debounce="300" v-model="filter" placeholder="Søk">
-                      <template v-slot:append>
-                        <q-icon name="search" />
-                      </template>
-                    </q-input>
-                  </template>
-                </q-table>
-              </div>
-            </q-tab-panel>
-          </q-tab-panels>
+              <q-tab-panel name="stock">
+                <q-input
+                  borderless
+                  dense
+                  debounce="300"
+                  v-model="filter"
+                  placeholder="Søk"
+                  ><template v-slot:append>
+                    <q-icon name="search" /> </template
+                ></q-input>
+                <div class="q-px-md q-py-md">
+                  <q-table
+                    title="Lagerbehldning Stock Supply"
+                    :data="stock"
+                    dense
+                    :pagination.sync="pagination"
+                    :filter="filter"
+                    hide-pagination
+                    class="bg-grey-4 text-body shadow-5"
+                  >
+                    <template v-slot:top-right>
+                      <q-input
+                        borderless
+                        dense
+                        debounce="300"
+                        v-model="filter"
+                        placeholder="Søk"
+                      >
+                        <template v-slot:append>
+                          <q-icon name="search" />
+                        </template>
+                      </q-input>
+                    </template>
+                  </q-table>
+                </div>
+              </q-tab-panel>
+            </q-tab-panels>
 
-          <q-separator />
-        </q-card>
+            <q-separator />
+          </q-card>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Add the following at the end of your body tag -->
+    <!-- Add the following at the end of your body tag -->
 
-  <script src="https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.umd.min.js"></script>
 
-  <script src="quasarapp.js"></script>
-</body>
-
+    <script src="quasarapp.js"></script>
+  </body>
 </html>
