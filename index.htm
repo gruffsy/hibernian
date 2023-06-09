@@ -62,10 +62,10 @@
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="dag">
                 <div class="q-px-md q-py-md">
-                  <div v-if="!showDatePicker">
-                  <p>Selected date: {{ selectedDate }}</p>
-                  <q-date v-model="selectedDate"  mask="YYYYMMDD"></q-date>
-                </div>
+                 
+                  
+                  
+                
                   <div v-for="item in displayedDataArray" :key="item.date">
                     <br />
                     <q-table
@@ -94,6 +94,8 @@
                     </q-table>
                   </div>
                   <br />
+                  <q-date v-model="selectedDate" title="Velg dato" mask="YYYYMMDD"></q-date>
+                  <q-btn v-if="selectedDate" git_ text-color="grey-9" color="grey-4" label="Reset date filter" class="full-width" @click="selectedDate = null"></q-btn>
                   <q-btn
                     label="Vis flere dager"
                     class="full-width"

@@ -244,11 +244,12 @@ new Vue({
   },
   computed: {
     displayedDataArray() {
-      return this.groupedDataArray.slice(0, this.displayedTables).filter(item => item.);
+      return this.groupedDataArray.slice(0, this.displayedTables)
     },
     groupedDataArray() {
       const groupedData = this.groupedData;
       return Object.keys(groupedData)
+      .filter((date) => this.selectedDate === null || date === this.selectedDate)
         .map((date) => {
           const year = parseInt(date.substring(0, 4));
           const month = parseInt(date.substring(4, 6)) - 1;
@@ -269,7 +270,8 @@ new Vue({
           };
         })
         .sort((a, b) => b.originalDate - a.originalDate)
-        .map(({ date, rows }) => ({ date, rows }));
+        .map(({ date, rows }) => ({ date, rows }))
+        
     },
     groupedData() {
       return this.alldays.reduce((acc, row) => {
