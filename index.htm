@@ -60,16 +60,11 @@
           </div>
           <q-card>
             <q-tab-panels v-model="tab" animated>
-              
               <q-tab-panel name="dag">
-                <div>
-                  {{ selectedDate }} <br>
-                  <q-date v-model="selectedDate"
-                  mask="YYYYMMDD"
-                  minimal
-                  :locale="myLocale" />
-                </div>
                 <div class="q-px-md q-py-md">
+                  <p>Selected date: {{ selectedDate }}</p>
+                  <q-date v-model="selectedDate" v-if="showDatePicker" mask="DD.MM.YYYY"></q-date>
+
                   <div v-for="item in displayedDataArray" :key="item.date">
                     <br />
                     <q-table
@@ -108,8 +103,6 @@
                     @click="showMoreTables"
                   ></q-btn>
                 </div>
-
-               
               </q-tab-panel>
 
               <q-tab-panel name="maned">
@@ -259,7 +252,6 @@
                           color="primary"
                           icon="date_range"
                           label="Velg Dato"
-                         
                           @click="showDatePicker = !showDatePicker"
                         />
                       </div>

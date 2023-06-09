@@ -114,7 +114,7 @@ new Vue({
         format24h: true,
         pluralDay: 'dager',
       },
-      
+      selectedDate: null
     };
   },
   methods: {
@@ -239,19 +239,7 @@ new Vue({
   },
   computed: {
     displayedDataArray() {
-      const filteredGroupedDataArray = this.groupedDataArray.filter((item) => {
-        if (!this.selectedDate) {
-          return true;
-        }
-  
-        // convert both dates to the same format (yyyy-mm-dd) for comparison
-        const selectedItemDate = item.originalDate.toISOString().slice(0, 10);
-        const selectedDate = this.selectedDate.toISOString().slice(0, 10);
-  
-        return selectedItemDate === selectedDate;
-      });
-  
-      return filteredGroupedDataArray.slice(0, this.displayedTables);
+      return this.groupedDataArray.slice(0, this.displayedTables);
     },
     groupedDataArray() {
       const groupedData = this.groupedData;
