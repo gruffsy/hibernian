@@ -312,6 +312,11 @@
 
             <q-tab-panel name="selger">
               <div class="q-px-md q-py-md">
+                <q-date
+                v-model="filterselger"
+                minimal
+                mask="YYYYMM-DD"
+              />
                 <q-table title="Selgerstatistikk" :data="idagselger" :filter="filterselger" dense virtual-scroll :pagination.sync="pagination"
                   :rows-per-page-options="[0]" >
                   <template v-slot:top-left>
