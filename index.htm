@@ -62,9 +62,10 @@
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="dag">
                 <div class="q-px-md q-py-md">
+                  <div v-if="showDatePicker">
                   <p>Selected date: {{ selectedDate }}</p>
-                  <q-date v-model="selectedDate" v-if="showDatePicker" mask="DD.MM.YYYY"></q-date>
-
+                  <q-date v-model="selectedDate"  mask="DD.MM.YYYY"></q-date>
+                </div>
                   <div v-for="item in displayedDataArray" :key="item.date">
                     <br />
                     <q-table
