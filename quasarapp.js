@@ -104,6 +104,16 @@ new Vue({
           headerStyle: "max-width: 50px",
         },
       ],
+      myLocale: {
+        /* starting with Sunday */
+        days: 'Søndag_Mandag_Tirsdag_Onsdag_Torsdag_Fredag_Lørdag'.split('_'),
+        daysShort: 'Søn_Man_Tir_Ons_Tor_Fre_Lør'.split('_'),
+        months: 'Januar_Februar_Mars_April_Mai_Juni_Juli_August_September_Oktober_November_December'.split('_'),
+        monthsShort: 'Jan_Feb_Mar_Apr_Mai_Jun_Jul_Aug_Sep_Okt_Nov_Des'.split('_'),
+        firstDayOfWeek: 1, // 0-6, 0 - Sunday, 1 Monday, ...
+        format24h: true,
+        pluralDay: 'dager'
+      }
     };
   },
   methods: {

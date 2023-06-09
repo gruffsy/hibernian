@@ -100,8 +100,8 @@
                     @click="showMoreTables"
                   ></q-btn>
                 </div>
-               
--->
+
+                -->
               </q-tab-panel>
 
               <q-tab-panel name="maned">
@@ -158,8 +158,6 @@
                     </template>
                   </q-table>
                 </div>
-
-               
               </q-tab-panel>
 
               <q-tab-panel name="aar">
@@ -245,66 +243,49 @@
               </q-tab-panel>
 
               <q-tab-panel name="selger">
-                <div class="column  q-px-md q-py-md">
-                  <div
-                    class="row"
-                   
-                  >
-                    <div
-                      id="parent"
-                      class="fit column wrap justify-start items-start content-start"
-                      
-                    >
-                      <div class="bg-grey-6" style="overflow: auto">
-                        <q-card class="no-border-radius">
-                          <q-card-section>
-                            <q-btn
-                              color="primary"
-                              icon="date"
-                              label="Velg Dato"
-                              @click="showDatePicker = !showDatePicker"
-                            />
-                          </q-card-section>
-                        </q-card>
+                <div class="column">
+                  <div class="row">
+                    <div>
+                      <div class="q-px-md q-py-md">
+                        <q-btn
+                          color="primary"
+                          icon="date_range"
+                          label="Velg Dato"
+                          @click="showDatePicker = !showDatePicker"
+                        />
                       </div>
-                      <div class="bg-grey-6" style="overflow: auto">
-                        <q-card class="no-border-radius">
-                          <q-card-section>
-                            <q-date
-                              v-model="filterselger"
-                              v-if="!showDatePicker"
-                              mask="YYYYMMDD"
-                              minimal
-                            />
-                          </q-card-section>
-                        </q-card>
+                      <div class="q-px-md q-py-md" v-if="showDatePicker">
+                        <q-date
+                          v-model="filterselger"
+                          mask="YYYYMMDD"
+                          minimal
+                          @click="showDatePicker = !showDatePicker"
+                        />
                       </div>
-                      <div class="bg-grey-6" >
-                       
-                            <q-table
-                              title="Selgerstatistikk"
-                              :data="idagselger"
-                              :filter="filterselger"
+                      <div class="q-px-md q-py-md">
+                        <q-table
+                          title="Selgerstatistikk"
+                          :data="idagselger"
+                          :filter="filterselger"
+                          dense
+                          virtual-scroll
+                          :pagination.sync="pagination"
+                          :rows-per-page-options="[0]"
+                        >
+                          <template v-slot:top-left>
+                            <q-input
+                              borderless
                               dense
-                              virtual-scroll
-                              :pagination.sync="pagination"
-                              :rows-per-page-options="[0]"
+                              debounce="300"
+                              v-model="filterselger"
+                              placeholder="Søk"
                             >
-                              <template v-slot:top-left>
-                                <q-input
-                                  borderless
-                                  dense
-                                  debounce="300"
-                                  v-model="filterselger"
-                                  placeholder="Søk"
-                                >
-                                  <template v-slot:append>
-                                    <q-icon name="search" />
-                                  </template>
-                                </q-input>
+                              <template v-slot:append>
+                                <q-icon name="search" />
                               </template>
-                            </q-table>
-                         
+                            </q-input>
+                          </template>
+                        </q-table>
                       </div>
                     </div>
                   </div>
@@ -318,8 +299,7 @@
                   debounce="300"
                   v-model="filter"
                   placeholder="Søk"
-                  ><template v-slot:append>
-                    <q-icon name="search" /> </template
+                  ><template v-slot:append> <q-icon name="search" /> </template
                 ></q-input>
                 <div class="q-px-md q-py-md">
                   <q-table
