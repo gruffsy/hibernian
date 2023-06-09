@@ -62,10 +62,6 @@
             <q-tab-panels v-model="tab" animated>
               <q-tab-panel name="dag">
                 <div class="q-px-md q-py-md">
-                 
-                  
-                  
-                
                   <div v-for="item in displayedDataArray" :key="item.date">
                     <br />
                     <q-table
@@ -94,17 +90,32 @@
                     </q-table>
                   </div>
                   <br />
-                  <q-date v-model="selectedDate" title="Velg dato" mask="YYYYMMDD"></q-date>
-                  <q-btn v-if="selectedDate" git_ text-color="grey-9" color="grey-4" label="Reset date filter" class="full-width" @click="selectedDate = null"></q-btn>
+                  <div>
+                    <q-btn
+                      label="Vis flere dager"
+                      class="full-width"
+                      color="grey-4"
+                      text-color="grey-9"
+                      git_
+                      v-if="displayedTables < groupedDataArray.length"
+                      @click="showMoreTables"
+                    ></q-btn></div>
+                  <br />
+                  <q-date
+                    v-model="selectedDate"
+                    title="Velg dato"
+                    mask="YYYYMMDD"
+                  />
                   <q-btn
-                    label="Vis flere dager"
-                    class="full-width"
-                    color="grey-4"
-                    text-color="grey-9"
+                    v-if="selectedDate"
                     git_
-                    v-if="displayedTables < groupedDataArray.length"
-                    @click="showMoreTables"
+                    text-color="grey-9"
+                    color="grey-4"
+                    label="Vis alle datoer"
+                    class="full-width"
+                    @click="selectedDate = null"
                   ></q-btn>
+               
                 </div>
               </q-tab-panel>
 
