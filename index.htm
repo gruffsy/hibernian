@@ -315,7 +315,9 @@
                 <q-date
                 v-model="filterselger"
                 minimal
-                mask="YYYYMM-DD"
+                mask="YYYYMMDD"
+                title="Velg dato"
+                
               />
                 <q-table title="Selgerstatistikk" :data="idagselger" :filter="filterselger" dense virtual-scroll :pagination.sync="pagination"
                   :rows-per-page-options="[0]" >
