@@ -63,7 +63,11 @@
               
               <q-tab-panel name="dag">
                 <div>
-                  <q-date v-model="selectedDate"></q-date>
+                  {{ selectedDate }} <br>
+                  <q-date v-model="selectedDate"
+                  mask="YYYYMMDD"
+                  minimal
+                  :locale="myLocale" />
                 </div>
                 <div class="q-px-md q-py-md">
                   <div v-for="item in displayedDataArray" :key="item.date">
