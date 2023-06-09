@@ -311,19 +311,21 @@
             </q-tab-panel>
 
             <q-tab-panel name="selger">
-             
-             <q-btn color="primary" icon="date" label="Velg Dato" @click="showDatePicker = !showDatePicker" />
-              <q-date
+              <div class="fit column wrap justify-start items-start content-start">
+            <q-btn color="primary" icon="date" label="Velg Dato" @click="showDatePicker = !showDatePicker" /> 
+              
+            <div class="q-pa-md">
+            <q-date
               v-model="filterselger"
               v-if="showDatePicker"
-              minimal
+           
               mask="YYYYMMDD"
               title="Velg dato"
               
-            />
-              <div class="q-px-md q-py-md">
+            /></div>
+              
                 
-                <q-table title="Selgerstatistikk" :data="idagselger" :filter="filterselger" dense virtual-scroll :pagination.sync="pagination"
+                <!-- <q-table title="Selgerstatistikk" :data="idagselger" :filter="filterselger" dense virtual-scroll :pagination.sync="pagination"
                   :rows-per-page-options="[0]" >
                   <template v-slot:top-left>
                     <q-input borderless dense debounce="300" v-model="filterselger" placeholder="Søk">
@@ -332,9 +334,9 @@
                       </template>
                     </q-input>
                   </template>
-                </q-table>
+                </q-table> -->
+             
               </div>
-              
             </q-tab-panel>
 
             <q-tab-panel name="stock">
