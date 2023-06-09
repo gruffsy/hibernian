@@ -251,7 +251,7 @@
                           color="primary"
                           icon="date_range"
                           label="Velg Dato"
-                          :locale="myLocale"
+                         
                           @click="showDatePicker = !showDatePicker"
                         />
                       </div>
@@ -260,7 +260,7 @@
                           v-model="filterselger"
                           mask="YYYYMMDD"
                           minimal
-                          @click="showDatePicker = !showDatePicker"
+                          :locale="myLocale"
                         />
                       </div>
                       <div class="q-px-md q-py-md">
