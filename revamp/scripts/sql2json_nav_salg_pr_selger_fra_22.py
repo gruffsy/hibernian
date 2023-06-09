@@ -53,8 +53,8 @@ WITH Sales AS (
 
 SELECT 
     ukedag,
-	-- [Fornavn] + ' ' +[Etternavn] AS [navn],
-    [Selger] as [navn],
+	[Selger] + ' ' + [Fornavn] + ' ' +[Etternavn] AS [navn],
+    -- [Selger] as [navn],
     cast([Beløp inkl. mva] as int) as [umoms],
     cast([Db.kr] as int) as [db],
     CASE 
