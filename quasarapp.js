@@ -126,6 +126,16 @@ new Vue({
     showMoreTables() {
       this.displayedTables += 7;
     },
+    dateOptions(date) {
+      const currentDate = new Date(date);
+      const startLimitDate = new Date(2022, 0, 1); // January 1, 2022
+      const endLimitDate = new Date(); // Today's date
+  
+      return currentDate.getDay() !== 0 // Disable Sundays
+        && currentDate.getFullYear() >= startLimitDate.getFullYear() // Disable years before 2022
+        && currentDate <= endLimitDate; // Disable future dates
+
+    },
     tableFormat(name) {
       if (name === "Totalt") {
         return "bg-grey-4 text-bold";
