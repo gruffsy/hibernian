@@ -60,7 +60,11 @@
           </div>
           <q-card>
             <q-tab-panels v-model="tab" animated>
+              
               <q-tab-panel name="dag">
+                <div>
+                  <q-date v-model="selectedDate"></q-date>
+                </div>
                 <div class="q-px-md q-py-md">
                   <div v-for="item in displayedDataArray" :key="item.date">
                     <br />
@@ -101,7 +105,7 @@
                   ></q-btn>
                 </div>
 
-                -->
+               
               </q-tab-panel>
 
               <q-tab-panel name="maned">
