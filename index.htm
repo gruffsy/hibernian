@@ -99,12 +99,17 @@
                       git_
                       v-if="displayedTables < groupedDataArray.length"
                       @click="showMoreTables"
-                    ></q-btn></div>
+                    ></q-btn>
+                  </div>
                   <br />
                   <q-date
                     v-model="selectedDate"
+                    color="grey-4"
+                    text-color="grey-9"
                     title="Velg dato"
                     mask="YYYYMMDD"
+                    minimal
+                    :locale="myLocale"
                   />
                   <q-btn
                     v-if="selectedDate"
@@ -115,7 +120,6 @@
                     class="full-width"
                     @click="selectedDate = null"
                   ></q-btn>
-               
                 </div>
               </q-tab-panel>
 
