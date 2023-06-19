@@ -268,7 +268,8 @@
                     <div>
                       <div class="q-px-md q-py-md">
                         <q-btn
-                          color="primary"
+                          color="grey-4"
+                          text-color="grey-9"
                           icon="date_range"
                           label="Velg Dato"
                           @click="showDatePicker = !showDatePicker"
@@ -277,9 +278,12 @@
                       <div class="q-px-md q-py-md" v-if="showDatePicker">
                         <q-date
                           v-model="filterselger"
+                          :options="dateOptions"
                           mask="YYYYMMDD"
                           minimal
                           :locale="myLocale"
+                          color="grey-4"
+                          text-color="grey-9"
                         />
                       </div>
                       <div class="q-px-md q-py-md">
