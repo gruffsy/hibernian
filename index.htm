@@ -178,6 +178,86 @@
                     </template>
                   </q-table>
                 </div>
+
+                <div class="q-px-md q-py-md">
+                  <q-table
+                    title="Differanse"
+                    :data="DiffLastYearMonth"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                    row-key="name"
+                    class="bg-grey-4 text-body shadow-5"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
+                </div>
+
+                <div class="q-px-md q-py-md">
+                  <q-table
+                    title="Diff tilsvarende dato i fjor"
+                    :data="CompareLastYearMonth"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                    row-key="name"
+                    class="bg-grey-4 text-body shadow-5"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
+                </div>
+                <div class="q-px-md q-py-md">
+                  <q-table
+                    title="Salgsprognose"
+                    :data="ProjectedLastYearMonth"
+                    dense
+                    :pagination.sync="pagination"
+                    hide-pagination
+                    :columns="columns"
+                    row-key="name"
+                    class="bg-grey-4 text-body shadow-5"
+                  >
+                    <template v-slot:body="props">
+                      <q-tr
+                        :props="props"
+                        :class="tableFormat(props.row.butikk)"
+                      >
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                          >{{ col.value }}</q-td
+                        >
+                      </q-tr>
+                    </template>
+                  </q-table>
+                </div>
               </q-tab-panel>
 
               <q-tab-panel name="aar">

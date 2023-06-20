@@ -12,6 +12,9 @@ new Vue({
       alldays: [],
       MonthCurrent: [],
       MonthLastYear: [],
+      CompareLastYearMonth: [],
+      DiffLastYearMonth: [],
+      ProjectedLastYearMonth: [],
       today: [],
       bamble: [],
       yesterday: [],
@@ -130,11 +133,12 @@ new Vue({
       const currentDate = new Date(date);
       const startLimitDate = new Date(2022, 0, 1); // January 1, 2022
       const endLimitDate = new Date(); // Today's date
-  
-      return currentDate.getDay() !== 0 // Disable Sundays
-        && currentDate.getFullYear() >= startLimitDate.getFullYear() // Disable years before 2022
-        && currentDate <= endLimitDate; // Disable future dates
- 
+
+      return (
+        currentDate.getDay() !== 0 && // Disable Sundays
+        currentDate.getFullYear() >= startLimitDate.getFullYear() && // Disable years before 2022
+        currentDate <= endLimitDate
+      ); // Disable future dates
     },
     tableFormat(name) {
       if (name === "Totalt") {
@@ -162,6 +166,35 @@ new Vue({
           this.MonthLastYear = data.filter(
             (entry) =>
               entry.month === currentMonth && entry.year === currentYear - 1
+          );
+        });
+    },
+    getCompareLastYearMonth() {
+      const currentMonth = new Date().getMonth() + 1; // getMonth() returns a 0-based month, so add 1
+      const currentYear = new Date().getFullYear();
+
+      fetch(
+        "./revamp/publish/salg_fra_22_pr_mnd_med_total_og_sammenligning.json"
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          this.CompareLastYearMonth = data.filter(
+            (entry) =>
+              entry.month === currentMonth &&
+              entry.incomplete === true &&
+              entry.this_year === currentYear
+          );
+          this.DiffLastYearMonth = data.filter(
+            (entry) =>
+              entry.month === currentMonth &&
+              entry.incomplete === false &&
+              entry.this_year === currentYear
+          );
+          this.ProjectedLastYearMonth = data.filter(
+            (entry) =>
+              entry.month === currentMonth &&
+              entry.incomplete === null &&
+              entry.this_year === currentYear
           );
         });
     },
@@ -211,31 +244,31 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.manedSammen = data));
     },
-    getLordagSelger() {
-      fetch("./json/lordagselger.sql.json")
-        .then((response) => response.json())
-        .then((data) => (this.lordagselger = data));
-    },
+    // getLordagSelger() {
+    //   fetch("./json/lordagselger.sql.json")
+    //     .then((response) => response.json())
+    //     .then((data) => (this.lordagselger = data));
+    // },
     getIdagSelger() {
       fetch("./revamp/publish/salg_pr_selger_fra_22_pr_dag.json")
         .then((response) => response.json())
         .then((data) => (this.idagselger = data));
     },
-    getIgarSelger() {
-      fetch("./json/igarselger.sql.json")
-        .then((response) => response.json())
-        .then((data) => (this.igarselger = data));
-    },
-    getManedNaaSelger() {
-      fetch("./json/manednaaselger.sql.json")
-        .then((response) => response.json())
-        .then((data) => (this.manednaaselger = data));
-    },
-    getIaarSelger() {
-      fetch("./json/iaarselger.sql.json")
-        .then((response) => response.json())
-        .then((data) => (this.iaarselger = data));
-    },
+    // getIgarSelger() {
+    //   fetch("./json/igarselger.sql.json")
+    //     .then((response) => response.json())
+    //     .then((data) => (this.igarselger = data));
+    // },
+    // getManedNaaSelger() {
+    //   fetch("./json/manednaaselger.sql.json")
+    //     .then((response) => response.json())
+    //     .then((data) => (this.manednaaselger = data));
+    // },
+    // getIaarSelger() {
+    //   fetch("./json/iaarselger.sql.json")
+    //     .then((response) => response.json())
+    //     .then((data) => (this.iaarselger = data));
+    // },
     getIaar() {
       fetch("./json/iaar.sql.json")
         .then((response) => response.json())
@@ -254,12 +287,14 @@ new Vue({
   },
   computed: {
     displayedDataArray() {
-      return this.groupedDataArray.slice(0, this.displayedTables)
+      return this.groupedDataArray.slice(0, this.displayedTables);
     },
     groupedDataArray() {
       const groupedData = this.groupedData;
       return Object.keys(groupedData)
-      .filter((date) => this.selectedDate === null || date === this.selectedDate)
+        .filter(
+          (date) => this.selectedDate === null || date === this.selectedDate
+        )
         .map((date) => {
           const year = parseInt(date.substring(0, 4));
           const month = parseInt(date.substring(4, 6)) - 1;
@@ -280,8 +315,7 @@ new Vue({
           };
         })
         .sort((a, b) => b.originalDate - a.originalDate)
-        .map(({ date, rows }) => ({ date, rows }))
-        
+        .map(({ date, rows }) => ({ date, rows }));
     },
     groupedData() {
       return this.alldays.reduce((acc, row) => {
@@ -297,20 +331,21 @@ new Vue({
   mounted() {
     this.getAllDays();
     this.getMonthCurrent();
-    this.getToday();
-    this.getBamble();
+    this.getCompareLastYearMonth();
+    // this.getToday();
+    // this.getBamble();
     this.getStock();
-    this.getYesterday();
-    this.getDayBeforeYesterday();
+    // this.getYesterday();
+    // this.getDayBeforeYesterday();
     this.getTime();
     this.getMonthNow();
     this.getMonthLastYear();
     this.getMonthCompare();
-    this.getLordagSelger();
+    // this.getLordagSelger();
     this.getIdagSelger();
-    this.getIgarSelger();
-    this.getManedNaaSelger();
-    this.getIaarSelger();
+    // this.getIgarSelger();
+    // this.getManedNaaSelger();
+    // this.getIaarSelger();
     this.getIaar();
     this.getIfjor();
     this.getYearCompare();
