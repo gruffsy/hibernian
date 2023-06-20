@@ -134,7 +134,7 @@ new Vue({
       return currentDate.getDay() !== 0 // Disable Sundays
         && currentDate.getFullYear() >= startLimitDate.getFullYear() // Disable years before 2022
         && currentDate <= endLimitDate; // Disable future dates
-
+ 
     },
     tableFormat(name) {
       if (name === "Totalt") {
