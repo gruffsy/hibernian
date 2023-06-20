@@ -33,13 +33,13 @@ for record in data:
 
     # Here we're considering the fields: 'mmoms', 'umoms', 'db', 'antord', 'prord'
     # If there are more fields, add them in the list
-    for field in ['mmoms', 'umoms', 'db', 'antord', 'prord']:
+    for field in ['mmoms', 'umoms', 'db', 'dg', 'antord', 'prord']:
         yearly_data[year][month][store][field] += record[field]
     
     # For fields 'dg', we take the average.
-    yearly_data[year][month][store]['dg'] = yearly_data[year][month][store].get('dg', 0) + \
-                                            (record['dg'] - yearly_data[year][month][store].get('dg', 0)) / \
-                                            (yearly_data[year][month][store]['antord'])
+    # yearly_data[year][month][store]['dg'] = yearly_data[year][month][store].get('dg', 0) + \
+    #                                         (record['dg'] - yearly_data[year][month][store].get('dg', 0)) / \
+    #                                         (yearly_data[year][month][store]['antord'])
 
 
 # Find the years present in the data
@@ -68,9 +68,21 @@ for i in range(1, len(years)):
                     "this_year": current_year,
                     "month": month
                 }
-                for field in ['mmoms', 'umoms', 'db', 'antord', 'prord', 'dg']:
+                # for field in ['mmoms', 'umoms', 'db', 'antord', 'prord', 'dg']:
+                #     comparison_record[field] = current_data[field] - prev_data[field]
+
+                
+                # Calculate the profit margin change and add it to the comparison record
+                for field in ['mmoms', 'umoms', 'db', 'antord', 'prord']:
                     comparison_record[field] = current_data[field] - prev_data[field]
 
+                # Calculate profit margin change in percentage
+                if prev_data['dg'] != 0:
+                    comparison_record['dg'] = ((current_data['dg'] - prev_data['dg']) / prev_data['dg']) * 100
+                else:
+                    comparison_record['dg'] = 0
+                
+                
                 comparison_data.append(comparison_record)
 
 # Save the comparison data to a new JSON file
