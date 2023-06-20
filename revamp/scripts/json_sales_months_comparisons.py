@@ -30,10 +30,10 @@ for d in data:
 
 # Sort the data
 # data = sorted(data, key=lambda x: (-x['year'], -x['month'], int(x['Klient'])))
-data = sorted(data, key=lambda x: (-x['year'], -x['month'], int(x['Klient']) if x['Klient'] is not None else 0))
+data = sorted(data, key=lambda x: (-x['this_year'], -x['month'], int(x['Klient']) if x['Klient'] is not None else 0))
 
 
 
 # Write the result to a new JSON file
-with open("../publish/salg_fra_22_pr_mnd_med_total.json", "w", encoding="utf-8") as f:
+with open("../publish/salg_fra_22_pr_mnd_med_total_og_sammenligning.json", "w", encoding="utf-8") as f:
     json.dump(data, f, indent=4, ensure_ascii=False)
