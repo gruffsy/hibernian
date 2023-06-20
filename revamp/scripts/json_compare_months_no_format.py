@@ -99,28 +99,30 @@ for i in range(1, len(years)):
                     comparison_record["dg"] = 0
 
                 comparison_data.append(comparison_record)
+                
 # Adding this right before saving data to the comparison JSON file
 projected_records = []
-for store, current_data in yearly_data[latest_year][latest_month].items():
-    if current_data['antord'] == 0:  # Skip stores with no sales records for the month
-        continue
-    projected_record = {
-        "butikk": store,
-        "Klient": current_data['Klient'],
-        "this_year": latest_year,
-        "month": latest_month,
-        "incomplete": True  # This is a projection, so it's technically incomplete
-    }
-    # Project each field value based on the average daily sales
-    for field in ['mmoms', 'umoms', 'db', 'antord', 'prord']:
-        daily_avg = current_data[field] / latest_day
-        projected_value = daily_avg * monthrange(latest_year, latest_month)[1]
-        projected_record[field] = projected_value - current_data[field]
-    
-    # Assume the 'dg' field stays constant throughout the month
-    projected_record['dg'] = 0
+if latest_day < monthrange(latest_year, latest_month)[1]:  # Only add a projection if the month is not yet complete
+    for store, current_data in yearly_data[latest_year][latest_month].items():
+        if current_data['antord'] == 0:  # Skip stores with no sales records for the month
+            continue
+        projected_record = {
+            "butikk": store,
+            "Klient": current_data['Klient'],
+            "this_year": latest_year,
+            "month": latest_month,
+            "incomplete": None  # This is a projection, so it's technically incomplete
+        }
+        # Project each field value based on the average daily sales
+        for field in ['mmoms', 'umoms', 'db', 'antord', 'prord']:
+            daily_avg = current_data[field] / latest_day
+            projected_value = daily_avg * monthrange(latest_year, latest_month)[1]
+            projected_record[field] = projected_value - current_data[field]
+        
+        # Assume the 'dg' field stays constant throughout the month
+        projected_record['dg'] = 0
 
-    projected_records.append(projected_record)
+        projected_records.append(projected_record)
 
 comparison_data.extend(projected_records)
 
