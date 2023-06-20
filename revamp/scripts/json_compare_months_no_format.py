@@ -5,51 +5,74 @@ from collections import defaultdict
 from calendar import monthrange
 
 # Load the JSON file
-file_path = Path('../jsons/sales_days_no format.json')
-with file_path.open() as f:
+source_file = Path("../jsons/salg_fra_22_pr_dag_med_total_no_format.json")
+with source_file.open(encoding="utf-8") as f:
     data = json.load(f)
 
+# Sort data by date to find the latest date
+data.sort(key=lambda x: x['fakturadato'])
+latest_date = str(data[-1]['fakturadato'])
+
+# Get the year, month and day of the latest date
+latest_year = int(latest_date[:4])
+latest_month = int(latest_date[4:6])
+latest_day = int(latest_date[6:])
+
 # Initialize the data structure to store aggregated data
-yearly_data = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+yearly_data = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(int))))
+
 
 # Aggregate data by year and month
 for record in data:
     date_str = str(record['fakturadato'])
     year = int(date_str[:4])
     month = int(date_str[4:6])
+    day = int(date_str[6:])
+    
     store = record['butikk']
 
     # Here we're considering the fields: 'mmoms', 'umoms', 'db', 'antord', 'prord'
     # If there are more fields, add them in the list
     for field in ['mmoms', 'umoms', 'db', 'antord', 'prord']:
         yearly_data[year][month][store][field] += record[field]
-        
+    
     # For fields 'dg', we take the average.
     yearly_data[year][month][store]['dg'] = yearly_data[year][month][store].get('dg', 0) + \
                                             (record['dg'] - yearly_data[year][month][store].get('dg', 0)) / \
                                             (yearly_data[year][month][store]['antord'])
 
+
 # Find the years present in the data
 years = sorted(yearly_data.keys())
 
 # Comparing the fields from each year to the previous year and creating a new record
-comparison_data = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
+comparison_data = []
 for i in range(1, len(years)):
     current_year = years[i]
     prev_year = years[i-1]
     
     for month in range(1, 13):
-        for store in yearly_data[current_year][month].keys():
-            comparison_record = {}
-            for field in ['mmoms', 'umoms', 'db', 'antord', 'prord', 'dg']:
-                # Check if the data for the same month of the previous year exists, else take the value as 0
-                prev_value = yearly_data[prev_year][month][store].get(field, 0)
-                comparison_record[field] = yearly_data[current_year][month][store][field] - prev_value
-            
-            comparison_data[current_year][month][store] = comparison_record
+        # For the latest month, compare the data up to the latest_day and for the full month
+        days_to_include = [latest_day] if month == latest_month and current_year == latest_year else [monthrange(current_year, month)[1]]
+        days_to_include.append(monthrange(current_year, month)[1])
+        
+        for day in set(days_to_include):
+            for store, current_data in yearly_data[current_year][month].items():
+                # Check if the data for the same month of the previous year exists, else assume as 0
+                prev_data = yearly_data[prev_year][month].get(store, {field: 0 for field in ['mmoms', 'umoms', 'db', 'antord', 'prord', 'dg']})
 
-# Print out the comparison data
-for year, months_data in comparison_data.items():
-    for month, stores_data in months_data.items():
-        for store, record in stores_data.items():
-            print(f'Year: {year}, Month: {month}, Store: {store}, Data: {record}')
+                comparison_record = {
+                    "fakturadato": int(f"{current_year}{month:02d}{day}"),
+                    "butikk": store,
+                    "last_year": prev_year,
+                    "this_year": current_year,
+                    "month": month
+                }
+                for field in ['mmoms', 'umoms', 'db', 'antord', 'prord', 'dg']:
+                    comparison_record[field] = current_data[field] - prev_data[field]
+
+                comparison_data.append(comparison_record)
+
+# Save the comparison data to a new JSON file
+with open(source_file.parent / 'sales_months_comparisons.json', 'w') as f:
+    json.dump(comparison_data, f, indent=4)
