@@ -18,34 +18,30 @@ latest_year = int(latest_date[:4])
 latest_month = int(latest_date[4:6])
 latest_day = int(latest_date[6:])
 
-# Initialize the data structure to store aggregated data
-yearly_data = defaultdict(
-    lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
-)
+# Initialize the data structure to store aggregated data and the days with sales
+yearly_data = defaultdict(lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(int))))
+sales_days = defaultdict(lambda: defaultdict(lambda: defaultdict(set)))
 
-# Aggregate data by year and month
+# Aggregate data by year and month and track sales days
 for record in data:
-    date_str = str(record["fakturadato"])
+    date_str = str(record['fakturadato'])
     year = int(date_str[:4])
     month = int(date_str[4:6])
     day = int(date_str[6:])
-
-    store = record["butikk"]
-    client = record["Klient"]  # <-- Add this line
+    
+    store = record['butikk']
 
     # Here we're considering the fields: 'mmoms', 'umoms', 'db', 'antord', 'prord'
     # If there are more fields, add them in the list
-    for field in ["mmoms", "umoms", "db", "antord", "prord"]:
+    for field in ['mmoms', 'umoms', 'db', 'antord', 'prord']:
         yearly_data[year][month][store][field] += record[field]
-
-    yearly_data[year][month][store]["Klient"] = client  # <-- Add this line
-
+    
     # For fields 'dg', we take the average.
-    yearly_data[year][month][store]["dg"] = yearly_data[year][month][store].get(
-        "dg", 0
-    ) + (record["dg"] - yearly_data[year][month][store].get("dg", 0)) / (
-        yearly_data[year][month][store]["antord"]
-    )
+    yearly_data[year][month][store]['dg'] = yearly_data[year][month][store].get('dg', 0) + \
+                                            (record['dg'] - yearly_data[year][month][store].get('dg', 0)) / \
+                                            (yearly_data[year][month][store]['antord'])
+                                            
+    sales_days[year][month][store].add(day)
 
 # Find the years present in the data
 years = sorted(yearly_data.keys())
@@ -54,52 +50,45 @@ years = sorted(yearly_data.keys())
 comparison_data = []
 for i in range(1, len(years)):
     current_year = years[i]
-    prev_year = years[i - 1]
+    prev_year = years[i-1]
 
     for month in range(1, 13):
-        # For the latest month, compare the data up to the latest_day and for the full month
-        days_to_include = (
-            [latest_day]
-            if month == latest_month and current_year == latest_year
-            else [monthrange(current_year, month)[1]]
-        )
-        days_to_include.append(monthrange(current_year, month)[1])
+        # For the latest month, generate two comparisons
+        if month == latest_month and current_year == latest_year:
+            days_to_include = [latest_day, monthrange(current_year, month)[1]]
+        else:
+            days_to_include = [monthrange(current_year, month)[1]]
 
-        for day in set(days_to_include):
+        for day in days_to_include:
             for store, current_data in yearly_data[current_year][month].items():
                 # Check if the data for the same month of the previous year exists, else assume as 0
-                prev_data = yearly_data[prev_year][month].get(
-                    store,
-                    {
-                        field: 0
-                        for field in ["mmoms", "umoms", "db", "antord", "prord", "dg"]
-                    },
-                )
+                prev_data_full_month = yearly_data[prev_year][month].get(store, {field: 0 for field in ['mmoms', 'umoms', 'db', 'antord', 'prord', 'dg']})
+                
+                # Scale down the data for the previous year based on the number of days included
+                prev_data = {field: value * day / monthrange(prev_year, month)[1] for field, value in prev_data_full_month.items()}
 
                 comparison_record = {
                     "butikk": store,
-                    "Klient": current_data["Klient"],  # <-- Add this line
+                    "Klient": current_data["Klient"],
                     "last_year": prev_year,
                     "this_year": current_year,
                     "month": month,
-                    "incomplete": month == latest_month
-                    and current_year == latest_year
-                    and day != monthrange(current_year, month)[1],
+                    "incomplete": day != monthrange(current_year, month)[1],
                 }
 
-                for field in ["mmoms", "umoms", "db", "antord", "prord"]:
+                for field in ['mmoms', 'umoms', 'db', 'antord', 'prord']:
                     comparison_record[field] = current_data[field] - prev_data[field]
 
                 # Calculate profit margin change in percentage
-                if prev_data["dg"] != 0:
-                    comparison_record["dg"] = (
-                        current_data["dg"] - prev_data["dg"]
-                    ) / prev_data["dg"]
+                if prev_data['dg'] != 0:
+                    comparison_record['dg'] = ((current_data['dg'] - prev_data['dg']) / prev_data['dg']) 
                 else:
-                    comparison_record["dg"] = 0
+                    comparison_record['dg'] = 0
 
                 comparison_data.append(comparison_record)
-                
+
+
+
 # Adding this right before saving data to the comparison JSON file
 projected_records = []
 if latest_day < monthrange(latest_year, latest_month)[1]:  # Only add a projection if the month is not yet complete
@@ -113,14 +102,23 @@ if latest_day < monthrange(latest_year, latest_month)[1]:  # Only add a projecti
             "month": latest_month,
             "incomplete": None  # This is a projection, so it's technically incomplete
         }
+        
+        # Get the total number of days with sales for the current month so far (excluding Sundays)
+        current_sales_days = len(sales_days[latest_year][latest_month][store])
+        # Get the total number of sales days for the current month (excluding Sundays)
+        projected_sales_days = sum(1 for day in range(1, monthrange(latest_year, latest_month)[1]+1) if datetime(latest_year, latest_month, day).weekday() < 6)
+        
         # Project each field value based on the average daily sales
-        for field in ['mmoms', 'umoms', 'db', 'antord', 'prord']:
-            daily_avg = current_data[field] / latest_day
-            projected_value = daily_avg * monthrange(latest_year, latest_month)[1]
-            projected_record[field] = projected_value - current_data[field]
+        for field in ['mmoms', 'umoms', 'db', 'antord']:
+            daily_avg = current_data[field] / current_sales_days
+            projected_value = daily_avg * projected_sales_days
+            projected_record[field] = projected_value 
+            
+            #- current_data[field]
         
         # Assume the 'dg' field stays constant throughout the month
-        projected_record['dg'] = 0
+        projected_record['dg'] = projected_record['db'] / projected_record['umoms']
+        projected_record['prord'] = projected_record['umoms'] / projected_record['antord']
 
         projected_records.append(projected_record)
 
