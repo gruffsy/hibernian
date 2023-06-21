@@ -12,14 +12,25 @@
     },
     {
         "fakturadato": 20230621,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "1 108 kr",
+        "umoms": "886 kr",
+        "db": "81 kr",
+        "dg": "9.0%",
+        "antord": "2",
+        "prord": "554 kr"
+    },
+    {
+        "fakturadato": 20230621,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "31 kr",
-        "umoms": "25 kr",
-        "db": "4 kr",
-        "dg": "16.0%",
-        "antord": "1",
-        "prord": "31 kr"
+        "mmoms": "1 139 kr",
+        "umoms": "911 kr",
+        "db": "85 kr",
+        "dg": "9.3%",
+        "antord": "3",
+        "prord": "379 kr"
     },
     {
         "fakturadato": 20230620,
