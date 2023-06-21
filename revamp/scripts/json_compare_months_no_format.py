@@ -3,6 +3,7 @@ from datetime import datetime
 from pathlib import Path
 from collections import defaultdict
 from calendar import monthrange
+import pytz
 
 # Load the JSON file
 source_file = Path("../jsons/salg_fra_22_pr_dag_med_total_no_format.json")
