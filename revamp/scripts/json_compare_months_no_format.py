@@ -88,6 +88,16 @@ for i in range(1, len(years)):
                 comparison_data.append(comparison_record)
 
 
+from datetime import datetime
+import pytz
+
+# Get current time in Norway
+now = datetime.now(pytz.timezone("Europe/Oslo"))
+
+# If the current time in Norway is before 20:00, exclude the current day from the calculation
+# unless it is the last day of the month or the last day is a Sunday
+if now.hour < 20 and latest_day != monthrange(latest_year, latest_month)[1] and datetime(latest_year, latest_month, monthrange(latest_year, latest_month)[1]).weekday() != 6:
+    latest_day -= 1
 
 # Adding this right before saving data to the comparison JSON file
 projected_records = []
