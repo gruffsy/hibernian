@@ -22,7 +22,7 @@ query = """
         [Saleable Quantity] as [Saleable qty]
     
     from
-        [Hibernian Retail$Inventory Lookup Table]
+        [Hibernian Retail$Inventory Lookup Table]
 
 """
 

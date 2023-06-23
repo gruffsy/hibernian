@@ -36,9 +36,9 @@ WITH Sales AS (
         Staff.[Last Name] AS 'Etternavn', 
         Staff.[Store No_] AS 'ButikkID',
         UPPER(Salesperson.[Job Title]) AS 'Stilling'
-    FROM MegaflisNAVLS2016.dbo.[Hibernian Retail$Staff] Staff, 
-        MegaflisNAVLS2016.dbo.[Hibernian Retail$Trans_ Sales Entry] SalesEntry, 
-        [MegaflisNAVLS2016].[dbo].[Hibernian Retail$Salesperson_Purchaser] Salesperson
+    FROM MegaflisNAVLS2016.dbo.[Hibernian Retail$Staff] Staff, 
+        MegaflisNAVLS2016.dbo.[Hibernian Retail$Trans_ Sales Entry] SalesEntry, 
+        [MegaflisNAVLS2016].[dbo].[Hibernian Retail$Salesperson_Purchaser] Salesperson
     WHERE 
         SalesEntry.[Created by Staff ID] = Staff.[Sales Person] AND 
         Salesperson.Code = Staff.[Sales Person]
