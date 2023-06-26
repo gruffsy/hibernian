@@ -14,38 +14,19 @@ conn = pyodbc.connect(connection_string)
 
 # Run the SELECT clause
 query = '''
-SELECT [Butikk]
-      ,[Klient]
-      ,[Butikknr]
+SELECT [Butikknr]
       ,[Fakturadato]
-      ,[Ferdigmeldtdato]
-      ,[Ordretype]
-      ,[Transaksjonstype]
-      ,[Ordrenummer]
-      ,[Produktnr]
       ,[NAVnr]
-      ,[Beskrivelse]
-      ,[Beskrivelse3]
-      ,[Endret av bruker]
-      ,[Kundeprisgruppe]
-      ,[Strekkode]
-      ,[Hovedgruppe]
-      ,[Leverandør]
-      ,[Kategori]
-      ,[Produktgruppe]
-      ,[Enhet]
       ,[Antall]
-      ,[Selger]
-      ,[POS Butikk]
       ,[u_mva]
       ,[m_mva]
       ,[kostnad]
       ,[DB]
-      ,[DG]
   FROM [F0001].[dbo].[PRODUKTRANSER_ALLE]
   where 
     Transaksjonstype = 1
     and Fakturadato <> 0
+    and NAVnr <> ''
 
 '''
 
