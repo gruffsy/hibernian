@@ -1,0 +1,44 @@
+import pyodbc
+import csv
+
+# Replace with your actual SQL Server details
+server = "10.0.10.41"
+# database = "<database>"
+username = "intranett"
+password = "Megareader18"
+# table = "<table>"
+
+
+# Connect to the SQL Server
+connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};UID={username};PWD={password}"
+conn = pyodbc.connect(connection_string)
+
+# Run the SELECT clause
+query = """
+select [Item No_] as ItemNo, se.[Store No_] as Store, datepart(year,th.[Date]) as Year, datepart(month,th.[Date]) as Month, SUM(Quantity)*-1 as SalesQty, sum(se.[Cost Amount])*-1 as CostAmount, sum([Total Rounded Amt_])*-1 as SalesAmountInclVat, sum(se.[Net Amount])*-1 as SalesAmountExclVat, sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as BF
+from [Hibernian Retail$Trans_ Sales Entry] se inner join [Hibernian Retail$Transaction Header] th on th.[Store No_]=se.[Store No_] and th.[POS Terminal No_]=se.[POS Terminal No_] and th.[Transaction No_]=se.[Transaction No_]
+where th.[Transaction Type] = 2
+and datepart(year,th.[Date]) >= datepart(year,getdate())-1
+group by [Item No_],se.[Store No_], datepart(year,th.[Date]), datepart(month,th.[Date]) 
+
+"""
+
+cursor = conn.cursor()
+cursor.execute(query)
+
+# Fetch all rows and column names
+rows = cursor.fetchall()
+column_names = [column[0] for column in cursor.description]
+
+# Save the result as CSV
+with open("../csv/pq_nav_transaksjoner.csv", "w", newline="") as output_file:
+    writer = csv.writer(output_file, delimiter=";")
+    # Write the column headers
+    writer.writerow(column_names)
+    # Write the rows
+    for row in rows:
+        writer.writerow(row)
+
+# Close the connection
+cursor.close()
+conn.close()
