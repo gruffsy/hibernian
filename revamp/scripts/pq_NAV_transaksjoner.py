@@ -15,11 +15,41 @@ conn = pyodbc.connect(connection_string)
 
 # Run the SELECT clause
 query = """
-select [Item No_] as ItemNo, se.[Store No_] as Store, datepart(year,th.[Date]) as Year, datepart(month,th.[Date]) as Month, SUM(Quantity)*-1 as SalesQty, sum(se.[Cost Amount])*-1 as CostAmount, sum([Total Rounded Amt_])*-1 as SalesAmountInclVat, sum(se.[Net Amount])*-1 as SalesAmountExclVat, sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as BF
-from [Hibernian Retail$Trans_ Sales Entry] se inner join [Hibernian Retail$Transaction Header] th on th.[Store No_]=se.[Store No_] and th.[POS Terminal No_]=se.[POS Terminal No_] and th.[Transaction No_]=se.[Transaction No_]
-where th.[Transaction Type] = 2
-and datepart(year,th.[Date]) >= datepart(year,getdate())-1
-group by [Item No_],se.[Store No_], datepart(year,th.[Date]), datepart(month,th.[Date]) 
+select 
+    [Item No_] as ItemNo,
+    se.[Store No_] as Store,
+    datepart(year,th.[Date]) as Year,
+    datepart(month,th.[Date]) as Month,
+    SUM(Quantity)*-1 as SalesQty,
+    sum(se.[Cost Amount])*-1 as CostAmount,
+    sum([Total Rounded Amt_])*-1 as SalesAmountInclVat,
+    sum(se.[Net Amount])*-1 as SalesAmountExclVat,
+    sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as BF
+from 
+    [Hibernian Retail$Trans_ Sales Entry] se 
+    inner join
+        [Hibernian Retail$Transaction Header] th on th.[Store No_]=se.[Store No_] 
+        and th.[POS Terminal No_]=se.[POS Terminal No_] 
+        and th.[Transaction No_]=se.[Transaction No_]
+    LEFT JOIN 
+        [Hibernian Retail$Customer] c on th.[Customer No_] = c.No_ 
+
+where 
+    th.[Transaction Type] = 2
+    and th.[Entry Status] in (0,2)
+    and datepart(year,th.[Date]) >= datepart(year,getdate())-1
+    and nullif(th.[Receipt No_],'') is not null
+
+and (
+        c.[Customer Price Group] is null 
+        or 
+        c.[Customer Price Group] <> 'INTERNT'
+        )
+group by
+    [Item No_],
+    se.[Store No_],
+    datepart(year,th.[Date]),
+    datepart(month,th.[Date]) 
 
 """
 

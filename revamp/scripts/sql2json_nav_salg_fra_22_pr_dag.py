@@ -65,8 +65,7 @@ on
        th.[Customer No_] = c.No_ 
 where 	th.[Transaction Type]=2 
 	and th.[Entry Status] in (0,2)
-    -- and th.[Store No_] = 'S150'
-	-- and th.[Date] = convert(varchar, getdate(), 112)
+
 and 
 	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) BETWEEN 20220101 AND convert(varchar, getdate(), 112)
 	and nullif(th.[Receipt No_],'') is not null
@@ -76,7 +75,7 @@ and (
         or 
         c.[Customer Price Group] <> 'INTERNT'
         )
-	--and [Customer Account] = 0
+
 group by
 	th.[Date], 
     th.[Store No_]
