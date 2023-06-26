@@ -28,17 +28,19 @@ select
 from 
     [Hibernian Retail$Trans_ Sales Entry] se 
     inner join
-        [Hibernian Retail$Transaction Header] th on th.[Store No_]=se.[Store No_] 
+        [Hibernian Retail$Transaction Header] th on
+        th.[Store No_]=se.[Store No_] 
         and th.[POS Terminal No_]=se.[POS Terminal No_] 
         and th.[Transaction No_]=se.[Transaction No_]
     LEFT JOIN 
-        [Hibernian Retail$Customer] c on th.[Customer No_] = c.No_ 
+        [Hibernian Retail$Customer] c on 
+        th.[Customer No_] = c.No_ 
 
 where 
     th.[Transaction Type] = 2
     and th.[Entry Status] in (0,2)
-    and datepart(year,th.[Date]) >= datepart(year,getdate())-1
-    and nullif(th.[Receipt No_],'') is not null
+    and CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) BETWEEN 20220101 AND convert(varchar, getdate(), 112)
+	and nullif(th.[Receipt No_],'') is not null
 
 and (
         c.[Customer Price Group] is null 
