@@ -1,1 +1,3 @@
-[{"butikk":"Bamble","Klient":7,"mmoms":487238.740000000000000000,"umoms":389791.000000000000000000,"db":132311.571640000000000000,"dg":0.339442,"antord":403,"prord":1209.02913151364764267990}]
+Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Named Pipes Provider: Could not open a connection to SQL Server [53]. .
+Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Login timeout expired.
+Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online..
