@@ -1,5 +1,93 @@
 [
     {
+        "fakturadato": 20230706,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "252 kr",
+        "umoms": "201 kr",
+        "db": "376 kr",
+        "dg": "186.0%",
+        "antord": "6",
+        "prord": "42 kr"
+    },
+    {
+        "fakturadato": 20230706,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "17 092 kr",
+        "umoms": "13 674 kr",
+        "db": "79 kr",
+        "dg": "1.0%",
+        "antord": "3",
+        "prord": "5 697 kr"
+    },
+    {
+        "fakturadato": 20230706,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "-193 kr",
+        "umoms": "-154 kr",
+        "db": "-12 kr",
+        "dg": "8.0%",
+        "antord": "2",
+        "prord": "-96 kr"
+    },
+    {
+        "fakturadato": 20230706,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "7 132 kr",
+        "umoms": "5 705 kr",
+        "db": "1 411 kr",
+        "dg": "25.0%",
+        "antord": "5",
+        "prord": "1 426 kr"
+    },
+    {
+        "fakturadato": 20230706,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "8 109 kr",
+        "umoms": "6 487 kr",
+        "db": "622 kr",
+        "dg": "10.0%",
+        "antord": "5",
+        "prord": "1 621 kr"
+    },
+    {
+        "fakturadato": 20230706,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "887 kr",
+        "umoms": "709 kr",
+        "db": "140 kr",
+        "dg": "20.0%",
+        "antord": "2",
+        "prord": "443 kr"
+    },
+    {
+        "fakturadato": 20230706,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "149 kr",
+        "umoms": "119 kr",
+        "db": "76 kr",
+        "dg": "64.0%",
+        "antord": "1",
+        "prord": "149 kr"
+    },
+    {
+        "fakturadato": 20230706,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "33 428 kr",
+        "umoms": "26 741 kr",
+        "db": "2 692 kr",
+        "dg": "10.1%",
+        "antord": "24",
+        "prord": "1 392 kr"
+    },
+    {
         "fakturadato": 20230705,
         "butikk": "Skien",
         "Klient": "0",
