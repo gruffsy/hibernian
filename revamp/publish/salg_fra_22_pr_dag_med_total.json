@@ -1,25 +1,91 @@
 [
     {
         "fakturadato": 20230707,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "6 606 kr",
+        "umoms": "5 284 kr",
+        "db": "134 kr",
+        "dg": "3.0%",
+        "antord": "4",
+        "prord": "1 651 kr"
+    },
+    {
+        "fakturadato": 20230707,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "378 kr",
+        "umoms": "302 kr",
+        "db": "194 kr",
+        "dg": "64.0%",
+        "antord": "1",
+        "prord": "378 kr"
+    },
+    {
+        "fakturadato": 20230707,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "12 718 kr",
+        "umoms": "10 174 kr",
+        "db": "4 871 kr",
+        "dg": "48.0%",
+        "antord": "7",
+        "prord": "1 816 kr"
+    },
+    {
+        "fakturadato": 20230707,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "2 070 kr",
+        "umoms": "1 656 kr",
+        "db": "782 kr",
+        "dg": "47.0%",
+        "antord": "6",
+        "prord": "345 kr"
+    },
+    {
+        "fakturadato": 20230707,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "149 kr",
+        "umoms": "119 kr",
+        "db": "57 kr",
+        "dg": "48.0%",
+        "antord": "1",
+        "prord": "149 kr"
+    },
+    {
+        "fakturadato": 20230707,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "4 047 kr",
+        "umoms": "3 237 kr",
+        "db": "423 kr",
+        "dg": "13.0%",
+        "antord": "3",
+        "prord": "1 349 kr"
+    },
+    {
+        "fakturadato": 20230707,
         "butikk": "Bamble",
         "Klient": "7",
-        "mmoms": "0 kr",
-        "umoms": "0 kr",
-        "db": "0 kr",
-        "dg": "0.0%",
-        "antord": "2",
-        "prord": "0 kr"
+        "mmoms": "4 886 kr",
+        "umoms": "3 909 kr",
+        "db": "1 755 kr",
+        "dg": "45.0%",
+        "antord": "4",
+        "prord": "1 221 kr"
     },
     {
         "fakturadato": 20230707,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "0 kr",
-        "umoms": "0 kr",
-        "db": "0 kr",
-        "dg": "0.0%",
-        "antord": "2",
-        "prord": "0 kr"
+        "mmoms": "30 854 kr",
+        "umoms": "24 681 kr",
+        "db": "8 216 kr",
+        "dg": "33.3%",
+        "antord": "26",
+        "prord": "1 186 kr"
     },
     {
         "fakturadato": 20230706,

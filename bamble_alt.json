@@ -2139,7 +2139,7 @@
         "Klient": 7,
         "mmoms": 1471665,
         "umoms": 1177332,
-        "db": 107299,
+        "db": 108329,
         "dg": "0.09",
         "antord": 690,
         "prord": 2132
@@ -2150,7 +2150,7 @@
         "Klient": 7,
         "mmoms": 906861,
         "umoms": 725489,
-        "db": 82319,
+        "db": 83014,
         "dg": "0.11",
         "antord": 497,
         "prord": 1824
@@ -2473,5 +2473,16 @@
         "dg": "0.24",
         "antord": 510,
         "prord": 1159
+    },
+    {
+        "fakturadato": 20230707,
+        "butikk": "Bamble",
+        "Klient": 7,
+        "mmoms": 5264,
+        "umoms": 4211,
+        "db": 1950,
+        "dg": "0.46",
+        "antord": 5,
+        "prord": 1052
     }
 ]
