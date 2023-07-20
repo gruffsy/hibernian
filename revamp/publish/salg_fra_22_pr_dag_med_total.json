@@ -1,5 +1,82 @@
 [
     {
+        "fakturadato": 20230720,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "-3 083 kr",
+        "umoms": "-2 466 kr",
+        "db": "177 kr",
+        "dg": "-7.0%",
+        "antord": "2",
+        "prord": "-1 541 kr"
+    },
+    {
+        "fakturadato": 20230720,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "3 807 kr",
+        "umoms": "3 045 kr",
+        "db": "1 272 kr",
+        "dg": "42.0%",
+        "antord": "5",
+        "prord": "761 kr"
+    },
+    {
+        "fakturadato": 20230720,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "2 289 kr",
+        "umoms": "1 831 kr",
+        "db": "399 kr",
+        "dg": "22.0%",
+        "antord": "4",
+        "prord": "572 kr"
+    },
+    {
+        "fakturadato": 20230720,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "1 896 kr",
+        "umoms": "1 516 kr",
+        "db": "408 kr",
+        "dg": "27.0%",
+        "antord": "4",
+        "prord": "474 kr"
+    },
+    {
+        "fakturadato": 20230720,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "1 583 kr",
+        "umoms": "1 266 kr",
+        "db": "327 kr",
+        "dg": "26.0%",
+        "antord": "1",
+        "prord": "1 583 kr"
+    },
+    {
+        "fakturadato": 20230720,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "199 kr",
+        "umoms": "159 kr",
+        "db": "48 kr",
+        "dg": "30.0%",
+        "antord": "2",
+        "prord": "99 kr"
+    },
+    {
+        "fakturadato": 20230720,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "6 691 kr",
+        "umoms": "5 351 kr",
+        "db": "2 631 kr",
+        "dg": "49.2%",
+        "antord": "18",
+        "prord": "371 kr"
+    },
+    {
         "fakturadato": 20230719,
         "butikk": "Skien",
         "Klient": "0",
@@ -335,7 +412,7 @@
         "Klient": "7",
         "mmoms": "144 159 kr",
         "umoms": "115 327 kr",
-        "db": "23 937 kr",
+        "db": "23 934 kr",
         "dg": "21.0%",
         "antord": "141",
         "prord": "1 022 kr"
@@ -346,7 +423,7 @@
         "Klient": 99,
         "mmoms": "1 425 243 kr",
         "umoms": "1 140 192 kr",
-        "db": "219 072 kr",
+        "db": "219 069 kr",
         "dg": "19.2%",
         "antord": "1 416",
         "prord": "1 006 kr"
