@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20230725,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "1 159 kr",
+        "umoms": "927 kr",
+        "db": "477 kr",
+        "dg": "51.0%",
+        "antord": "1",
+        "prord": "1 159 kr"
+    },
+    {
+        "fakturadato": 20230725,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "1 159 kr",
+        "umoms": "927 kr",
+        "db": "477 kr",
+        "dg": "51.5%",
+        "antord": "1",
+        "prord": "1 159 kr"
+    },
+    {
         "fakturadato": 20230724,
         "butikk": "Skien",
         "Klient": "0",
