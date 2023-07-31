@@ -1,1 +1,3 @@
-[{"butikk":"Bamble","Klient":7,"mmoms":36251.930000000000000000,"umoms":29001.540000000000000000,"db":5579.217610000000000000,"dg":0.192376,"antord":38,"prord":953.99815789473684210526}]
+Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : TCP Provider: Timeout error [258]. .
+Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Login timeout expired.
+Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Unable to complete login process due to delay in prelogin response.
