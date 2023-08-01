@@ -28,7 +28,8 @@ cursor_visma = conn_visma.cursor()
 
 # Hent data fra Tabell NAV
 query_nav = '''
-select top 200
+select 
+        top 10000
 		No_ AS Nr,
 		[Unit Cost] AS Kostpris,
 		[Unit Price Including VAT] AS Normalpris
@@ -38,6 +39,7 @@ select top 200
 
     FROM            MegaFlisMASTER$Item
     -- where No_ = '006029'
+    order by [Last Date Modified] desc
 
 
 
@@ -59,7 +61,7 @@ for row in rows_nav:
     # print(row_visma)
 
     # Sjekk om det er forskjeller, og oppdater raden hvis det er det
-    if row_visma is not None and (row_visma[1] != Kostpris or row_visma[2] != Normalpris):
+    if row_visma is not None and (row_visma[2] != Normalpris):
         cursor_visma.execute("""
             UPDATE [F0001].[dbo].Prod 
             SET Free3 = ?, Free4 = ? 
