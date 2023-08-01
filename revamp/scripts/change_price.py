@@ -28,7 +28,7 @@ cursor_visma = conn_visma.cursor()
 
 # Hent data fra Tabell NAV
 query_nav = '''
-SELECT  top 100    	
+select top 200
 		No_ AS Nr,
 		[Unit Cost] AS Kostpris,
 		[Unit Price Including VAT] AS Normalpris
@@ -37,7 +37,7 @@ SELECT  top 100
                 
 
     FROM            MegaFlisMASTER$Item
-    where No_ = '006029'
+    -- where No_ = '006029'
 
 
 
@@ -47,25 +47,26 @@ SELECT  top 100
 
 cursor_nav.execute(query_nav)
 rows_nav = cursor_nav.fetchall()
-print(rows_nav)
+# print(rows_nav)
 
 
 for row in rows_nav:
     Nr, Kostpris, Normalpris = row
-    print(row)
+    # print(row)
     # Hent den aktuelle raden fra Tabell Visma
     cursor_visma.execute("SELECT TrInf3, Free3, Free4 FROM [F0001].[dbo].Prod WHERE TrInf3 = ?", Nr)
     row_visma = cursor_visma.fetchone()
-    print(row_visma)
+    # print(row_visma)
 
     # Sjekk om det er forskjeller, og oppdater raden hvis det er det
-    if row_visma is None or row_visma[1] != Kostpris or row_visma[2] != Normalpris:
+    if row_visma is not None and (row_visma[1] != Kostpris or row_visma[2] != Normalpris):
         cursor_visma.execute("""
-            UPDATE [F0001].[dbo].ProdProd 
+            UPDATE [F0001].[dbo].Prod 
             SET Free3 = ?, Free4 = ? 
             WHERE TrInf3 = ?
         """, Kostpris, Normalpris, Nr)
         conn_visma.commit()
-    cursor_visma.execute("SELECT TrInf3, Free3, Free4 FROM [F0001].[dbo].Prod WHERE TrInf3 = ?", Nr)
-    row_visma = cursor_visma.fetchone()
-    
+        cursor_visma.execute("SELECT TrInf3, Free3, Free4 FROM [F0001].[dbo].Prod WHERE TrInf3 = ?", Nr)
+        row_visma = cursor_visma.fetchone()
+        print(row)
+        print(row_visma)
