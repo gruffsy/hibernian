@@ -24,7 +24,7 @@ cursor_visma = conn_visma.cursor()
 # Definer SQL-spørringen for å hente data fra Tabell NAV
 query_nav = '''
 SELECT
-top 100
+top 400
     No_ AS Nr,
     [Unit Cost] AS Kostpris,
     [Unit Price Including VAT] AS Normalpris
@@ -58,15 +58,18 @@ for row in rows_nav:
         conn_visma.commit()
 
         # Hent den oppdaterte raden fra Tabell Visma for å bekrefte endringene
-        cursor_visma.execute("SELECT TrInf3, Free3, Free4 FROM [F0001].[dbo].Prod WHERE TrInf3 = ?", Nr)
-        row_visma = cursor_visma.fetchone()
+        cursor_visma.execute("SELECT TrInf3, Free3, Free4, ProdNo FROM [F0001].[dbo].Prod WHERE TrInf3 = ?", Nr)
+        row_visma_updated = cursor_visma.fetchone()
 
         # Skriv ut den opprinnelige raden fra Tabell NAV og den oppdaterte raden fra Tabell Visma
-        print(Nr, Kostpris, Normalpris)
-        print(row_visma)
+        print(row)
+        print(row_visma_updated)
 
-
-        #Endre kostpris for alle linjer i pris- og rabattmatrisen
- 
- 
-
+        # Hvis raden i Tabell Visma ble oppdatert, oppdater den tilsvarende raden i PrDcMat
+        if row_visma != row_visma_updated:
+            cursor_visma.execute("""
+                UPDATE [F0001].[dbo].PrDcMat
+                SET PurcPr = ?, CstPr = ?
+                WHERE ProdNo = ?
+            """, Kostpris, Kostpris, row_visma_updated[3])  # Assuming ProdNo is at index 3
+            conn_visma.commit()
