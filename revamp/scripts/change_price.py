@@ -24,7 +24,7 @@ cursor_visma = conn_visma.cursor()
 # Definer SQL-spørringen for å hente data fra Tabell NAV
 query_nav = '''
 SELECT
-top 400
+-- top 400
     No_ AS Nr,
     [Unit Cost] AS Kostpris,
     [Unit Price Including VAT] AS Normalpris
@@ -82,4 +82,4 @@ for row in rows_nav:
             """, Normalpris, Normalpris, row_visma_updated[3])  # Assuming ProdNo is at index 3
             conn_visma.commit()
 
-            print("OKIDOKI")
+print("OKIDOKI")
