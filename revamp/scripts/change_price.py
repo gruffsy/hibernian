@@ -73,3 +73,13 @@ for row in rows_nav:
                 WHERE ProdNo = ?
             """, Kostpris, Kostpris, row_visma_updated[3])  # Assuming ProdNo is at index 3
             conn_visma.commit()
+        
+          # Oppdater SalePr og SugPr for rader som oppfyller de spesifiserte betingelsene
+            cursor_visma.execute("""
+                UPDATE [F0001].[dbo].PrDcMat
+                SET SalePr = ?, SugPr = ?
+                WHERE ProdNo = ? AND CustPrGr <= 1 AND ToDt = 0
+            """, Normalpris, Normalpris, row_visma_updated[3])  # Assuming ProdNo is at index 3
+            conn_visma.commit()
+
+            print("OKIDOKI")
