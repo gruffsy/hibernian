@@ -24,6 +24,7 @@ cursor_visma = conn_visma.cursor()
 # Definer SQL-spørringen for å hente data fra Tabell NAV
 query_nav = '''
 SELECT
+top 100
     No_ AS Nr,
     [Unit Cost] AS Kostpris,
     [Unit Price Including VAT] AS Normalpris
@@ -63,4 +64,9 @@ for row in rows_nav:
         # Skriv ut den opprinnelige raden fra Tabell NAV og den oppdaterte raden fra Tabell Visma
         print(Nr, Kostpris, Normalpris)
         print(row_visma)
+
+
+        #Endre kostpris for alle linjer i pris- og rabattmatrisen
+ 
+ 
 
