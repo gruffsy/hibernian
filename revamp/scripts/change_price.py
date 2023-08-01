@@ -23,7 +23,7 @@ cursor_visma = conn_visma.cursor()
 
 # Definer SQL-spørringen for å hente data fra Tabell NAV
 query_nav = '''
-SELECT TOP 1100
+SELECT
     No_ AS Nr,
     [Unit Cost] AS Kostpris,
     [Unit Price Including VAT] AS Normalpris
