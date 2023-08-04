@@ -1,4 +1,12 @@
 import pyodbc
+import logging
+from datetime import datetime
+
+# Set up the logging
+logging.basicConfig(filename='log_file.log', 
+                    level=logging.INFO, 
+                    format='%(asctime)s %(message)s',
+                    datefmt='%m/%d/%Y %I:%M:%S %p')
 
 # Sett opp tilkoblingsdetaljer for Tabell NAV
 server_nav = "10.0.10.41"
@@ -24,7 +32,7 @@ cursor_visma = conn_visma.cursor()
 # Definer SQL-spørringen for å hente data fra Tabell NAV
 query_nav = '''
 SELECT
--- top 400
+top 100
     No_ AS Nr,
     [Unit Cost] AS Kostpris,
     [Unit Price Including VAT] AS Normalpris
@@ -64,6 +72,8 @@ for row in rows_nav:
         # Skriv ut den opprinnelige raden fra Tabell NAV og den oppdaterte raden fra Tabell Visma
         print(row)
         print(row_visma_updated)
+        logging.info(row)
+        logging.info(row_visma_updated)
 
         # Hvis raden i Tabell Visma ble oppdatert, oppdater den tilsvarende raden i PrDcMat
         if row_visma != row_visma_updated:
