@@ -32,11 +32,11 @@ cursor_visma = conn_visma.cursor()
 # Definer SQL-spørringen for å hente data fra Tabell NAV
 query_nav = '''
 SELECT
--- top 100
+ top 1000
     No_ AS Nr,
     [Unit Cost] AS Kostpris,
     [Unit Price Including VAT] AS Normalpris
-FROM MegaFlisMASTER$Item
+FROM MegaFlisMASTER$Item where No_ = '018547'
 ORDER BY [Last Date Modified] DESC
 '''
 
@@ -80,7 +80,7 @@ for row in rows_nav:
             cursor_visma.execute("""
                 UPDATE [F0001].[dbo].PrDcMat
                 SET PurcPr = ?, CstPr = ?
-                WHERE ProdNo = ?
+                WHERE ProdNo = ? and Prod.Gr3 <> 30
             """, Kostpris, Kostpris, row_visma_updated[3])  # Assuming ProdNo is at index 3
             conn_visma.commit()
         
