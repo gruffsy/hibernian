@@ -34,7 +34,7 @@ with
         from 
             [MegaFlisMASTER$Item]
             --where [No_] = '019441' --debugging
-        where [Exclude from Replenishment] = 0
+        -- where [Exclude from Replenishment] = 0
     ),
     categories as (
         select 
