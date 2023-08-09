@@ -3,7 +3,7 @@ import logging
 from datetime import datetime
 
 # Set up the logging
-logging.basicConfig(filename='logs/log_file.log', 
+logging.basicConfig(filename='../logs/log_file.log', 
                     level=logging.INFO, 
                     format='%(asctime)s %(message)s',
                     datefmt='%m/%d/%Y %H:%M:%S')
