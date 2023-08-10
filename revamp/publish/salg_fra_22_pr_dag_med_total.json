@@ -12,14 +12,25 @@
     },
     {
         "fakturadato": 20230810,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "199 kr",
+        "umoms": "159 kr",
+        "db": "85 kr",
+        "dg": "53.0%",
+        "antord": "1",
+        "prord": "199 kr"
+    },
+    {
+        "fakturadato": 20230810,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "25 150 kr",
-        "umoms": "20 120 kr",
-        "db": "-4 840 kr",
-        "dg": "-24.1%",
-        "antord": "1",
-        "prord": "25 150 kr"
+        "mmoms": "25 349 kr",
+        "umoms": "20 279 kr",
+        "db": "-4 755 kr",
+        "dg": "-23.4%",
+        "antord": "2",
+        "prord": "12 674 kr"
     },
     {
         "fakturadato": 20230809,
