@@ -1,6 +1,17 @@
 [
     {
         "fakturadato": 20230811,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "149 kr",
+        "umoms": "119 kr",
+        "db": "19 kr",
+        "dg": "16.0%",
+        "antord": "1",
+        "prord": "149 kr"
+    },
+    {
+        "fakturadato": 20230811,
         "butikk": "Sandefjord",
         "Klient": "5",
         "mmoms": "24 906 kr",
@@ -14,12 +25,12 @@
         "fakturadato": 20230811,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "24 906 kr",
-        "umoms": "19 925 kr",
-        "db": "6 321 kr",
-        "dg": "31.7%",
-        "antord": "1",
-        "prord": "24 906 kr"
+        "mmoms": "25 055 kr",
+        "umoms": "20 044 kr",
+        "db": "6 340 kr",
+        "dg": "31.6%",
+        "antord": "2",
+        "prord": "12 527 kr"
     },
     {
         "fakturadato": 20230810,
