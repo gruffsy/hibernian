@@ -1,5 +1,38 @@
 [
     {
+        "fakturadato": 20230815,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "2 574 kr",
+        "umoms": "2 059 kr",
+        "db": "-1 914 kr",
+        "dg": "-93.0%",
+        "antord": "1",
+        "prord": "2 574 kr"
+    },
+    {
+        "fakturadato": 20230815,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "458 kr",
+        "umoms": "366 kr",
+        "db": "159 kr",
+        "dg": "44.0%",
+        "antord": "1",
+        "prord": "458 kr"
+    },
+    {
+        "fakturadato": 20230815,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "3 032 kr",
+        "umoms": "2 425 kr",
+        "db": "-1 755 kr",
+        "dg": "-72.4%",
+        "antord": "2",
+        "prord": "1 516 kr"
+    },
+    {
         "fakturadato": 20230814,
         "butikk": "Skien",
         "Klient": "0",
