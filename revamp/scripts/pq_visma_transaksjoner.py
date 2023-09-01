@@ -30,8 +30,7 @@ SELECT [Butikknr]
 Group By
     Butikknr,
     Fakturadato,
-    NAVnr,
-    
+    NAVnr
 
 
 '''
