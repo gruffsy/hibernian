@@ -17,16 +17,22 @@ query = '''
 SELECT [Butikknr]
       ,[Fakturadato]
       ,[NAVnr]
-      ,[Antall]
-      ,[u_mva]
-      ,[m_mva]
-      ,[kostnad]
-      ,[DB]
+      ,sum([Antall]) as Antall
+      ,sum([u_mva]) as u_mva
+      ,sum([m_mva]) as m_mva
+      ,sum([kostnad]) as kostnad
+      ,sum(u_mva - kostnad) as DB
   FROM [F0001].[dbo].[PRODUKTRANSER_ALLE]
   where 
     Transaksjonstype = 1
     and Fakturadato <> 0
     and NAVnr <> ''
+Group By
+    Butikknr,
+    Fakturadato,
+    NAVnr,
+    
+
 
 '''
 
