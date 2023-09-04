@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20230904,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "119 kr",
+        "umoms": "95 kr",
+        "db": "30 kr",
+        "dg": "32.0%",
+        "antord": "1",
+        "prord": "119 kr"
+    },
+    {
+        "fakturadato": 20230904,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "119 kr",
+        "umoms": "95 kr",
+        "db": "30 kr",
+        "dg": "31.6%",
+        "antord": "1",
+        "prord": "119 kr"
+    },
+    {
         "fakturadato": 20230903,
         "butikk": "Kristiansand",
         "Klient": "2",
