@@ -2,28 +2,29 @@ import pyodbc
 import csv
 
 # Replace with your actual SQL Server details
-server = "10.0.10.41"
-# database = "<database>"
-username = "intranett"
-password = "Megareader18"
+server = "mf-ls-sql02.norwayeast.cloudapp.azure.com"
+database = "Megaflis_AS"
+username = "perarne"
+password = "AdaiQQvlq!#to43"
 # table = "<table>"
 
 
 # Connect to the SQL Server
-connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};UID={username};PWD={password}"
+connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};Database={database};UID={username};PWD={password}"
 conn = pyodbc.connect(connection_string)
 
 # Run the SELECT clause
 query = """
- select
-        [Item No_] as No_,
-        [Location],
-        [Phys_ Inventory] as Inventory,
-        [Saleable Quantity] as [Saleable qty]
-    
-    from
-        [Hibernian Retail$Inventory Lookup Table]
-
+SELECT
+    ilt.[Item No_] AS No_,
+    il.[Location],
+    il.[Phys_ Inventory] AS Inventory,
+    ilt.[Saleable Quantity]
+FROM [Hibernian Retail$LSC Inventory Lookup Table$5ecfc871-5d82-43f1-9c54-59685e82318d] il
+    inner join
+    [Hibernian Retail$LSC Inventory Lookup Table$64848631-618b-42d9-91c4-5fffcbea6f69] ilt
+    on il.[Item No_] = ilt.[Item No_]
+        and il.[Store No_]= ilt.[Store No_]
 """
 
 cursor = conn.cursor()
