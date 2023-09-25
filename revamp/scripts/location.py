@@ -2,15 +2,15 @@ import pyodbc
 import csv
 
 # Replace with your actual SQL Server details
-server = "10.0.10.41"
-# database = "<database>"
-username = "intranett"
-password = "Megareader18"
+server = "mf-ls-sql02.norwayeast.cloudapp.azure.com"
+database = "Megaflis_AS"
+username = "perarne"
+password = "AdaiQQvlq!#to43"
 # table = "<table>"
 
 
 # Connect to the SQL Server
-connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};UID={username};PWD={password}"
+connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};Database={database};UID={username};PWD={password}"
 conn = pyodbc.connect(connection_string)
 
 # Run the SELECT clause
@@ -19,7 +19,7 @@ select
     Code, 
     Name
 from 
-    [MegaFlisMASTER$Location]
+    [MASTER$Location$437dbf0e-84ff-417a-965d-ed2bb9650972]
 
 """
 
