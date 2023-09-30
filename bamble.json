@@ -1,1 +1,3 @@
-[{"butikk":"Bamble","Klient":7,"mmoms":789464.030000000000000000,"umoms":631571.200000000000000000,"db":59807.214740000000000000,"dg":0.094695,"antord":404,"prord":1954.11888613861386138613}]
+Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : SSL Provider: En etablert tilkobling ble avbrutt av programvaren på vertsmaskinen.
+.
+Sqlcmd: Error: Microsoft ODBC Driver 17 for SQL Server : Client unable to establish connection.
