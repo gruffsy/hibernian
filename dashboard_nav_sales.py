@@ -40,15 +40,23 @@ select
     sum([Total Rounded Amt_])*-1 as mmoms,
     sum(se.[Net Amount])*-1 as umoms,
     sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as db,
-	count(distinct th.[Receipt No_]) as antord,
-    th2.[Customer Account]/1.25 as kreditt
+	count(distinct th.[Receipt No_]) as antord
+    ,th2.[Customer Account]/1.25 as kreditt
 from
       	[Hibernian Retail$LSC Trans_ Sales Entry$5ecfc871-5d82-43f1-9c54-59685e82318d] se
+
+
 inner join [Hibernian Retail$LSC Transaction Header$5ecfc871-5d82-43f1-9c54-59685e82318d] th 
 on 
 	th.[Store No_]=se.[Store No_] and 
    	th.[POS Terminal No_]=se.[POS Terminal No_] and 
    	th.[Transaction No_]=se.[Transaction No_] 
+
+inner join [Hibernian Retail$LSC Transaction Header$64848631-618b-42d9-91c4-5fffcbea6f69] th2 on 
+th2.[Store No_] = th.[Store No_] and
+th2.[Transaction No_] = th.[Transaction No_] AND
+th2.[POS Terminal No_] = th.[POS Terminal No_]
+
 
 LEFT JOIN [Hibernian Retail$Customer$437dbf0e-84ff-417a-965d-ed2bb9650972] c
 on 
@@ -56,14 +64,12 @@ on
 
 
 
-Inner join [Hibernian Retail$LSC Transaction Header$64848631-618b-42d9-91c4-5fffcbea6f69] th2 on 
-th.[Transaction No_] = th2.[Transaction No_]
 
 where 	th.[Transaction Type]=2 
 	and th.[Entry Status] in (0,2)
 
 and 
-	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) BETWEEN 20220101 AND convert(varchar, getdate(), 112)
+	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) BETWEEN 20231003 AND convert(varchar, getdate(), 112)
 	and nullif(th.[Receipt No_],'') is not null
 
 and (
@@ -73,7 +79,7 @@ and (
         )
 group by
 	th.[Date],
-   th2.[Customer Account],
+  th2.[Customer Account],
     th.[Store No_]
 order by
 	th.[Date]
