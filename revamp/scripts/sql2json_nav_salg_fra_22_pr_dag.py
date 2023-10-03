@@ -50,17 +50,17 @@ select
         ELSE cast(sum(-[Total Rounded Amt_])/count(distinct th.[Receipt No_]) as int)
     END as 'prord'
 from
-      	[Hibernian Retail$Trans_ Sales Entry] se
-inner join [Hibernian Retail$Transaction Header] th 
+      	[Hibernian Retail$LSC Trans_ Sales Entry$5ecfc871-5d82-43f1-9c54-59685e82318d] se
+inner join [Hibernian Retail$LSC Transaction Header$5ecfc871-5d82-43f1-9c54-59685e82318d] th 
 on 
 	th.[Store No_]=se.[Store No_] and 
    	th.[POS Terminal No_]=se.[POS Terminal No_] and 
    	th.[Transaction No_]=se.[Transaction No_] 
-INNER JOIN [Hibernian Retail$Store] s 
-on
-	s.No_=th.[Store No_]
+-- INNER JOIN [Hibernian Retail$Store] s 
+-- on
+-- 	s.No_=th.[Store No_]
 
-LEFT JOIN [Hibernian Retail$Customer] c
+LEFT JOIN [Hibernian Retail$Customer$437dbf0e-84ff-417a-965d-ed2bb9650972] c
 on 
        th.[Customer No_] = c.No_ 
 where 	th.[Transaction Type]=2 
@@ -97,9 +97,4 @@ column_names = [column[0] for column in cursor.description]
 result = [dict(zip(column_names, row)) for row in rows]
 
 # Save the result as JSON
-with open("../jsons/nav_salg_fra_22.json", "w") as output_file:
-    json.dump(result, output_file, default=str, indent=4)
-
-# Close the connection
-cursor.close()
-conn.close()
+with open("../jsons/nav_salg_fra_22.json", "w") as output
