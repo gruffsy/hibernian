@@ -2,15 +2,15 @@ import pyodbc
 import json
 
 # Replace with your actual SQL Server details
-server = "10.0.10.41"
-# database = "<database>"
-username = "intranett"
-password = "Megareader18"
+server = "mf-ls-sql02.norwayeast.cloudapp.azure.com"
+database = "Megaflis_AS"
+username = "perarne"
+password = "AdaiQQvlq!#to43"
 # table = "<table>"
 
 
 # Connect to the SQL Server
-connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};UID={username};PWD={password}"
+connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};Database={database};UID={username};PWD={password}"
 conn = pyodbc.connect(connection_string)
 
 # Run the SELECT clause
@@ -97,4 +97,9 @@ column_names = [column[0] for column in cursor.description]
 result = [dict(zip(column_names, row)) for row in rows]
 
 # Save the result as JSON
-with open("../jsons/nav_salg_fra_22.json", "w") as output
+with open("../jsons/nav_salg_fra_22.json", "w") as output_file:
+    json.dump(result, output_file, default=str, indent=4)
+
+# Close the connection
+cursor.close()
+conn.close()
