@@ -2,15 +2,15 @@ import pyodbc
 import csv
 
 # Replace with your actual SQL Server details
-server = "10.0.10.41"
-# database = "<database>"
-username = "intranett"
-password = "Megareader18"
+server = "mf-ls-sql02.norwayeast.cloudapp.azure.com"
+database = "Megaflis_AS"
+username = "perarne"
+password = "AdaiQQvlq!#to43"
 # table = "<table>"
 
 
 # Connect to the SQL Server
-connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};UID={username};PWD={password}"
+connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};Database={database};UID={username};PWD={password}"
 conn = pyodbc.connect(connection_string)
 
 # Run the SELECT clause
@@ -43,21 +43,24 @@ select
 	count(distinct th.[Receipt No_]) as antord,
     [Customer Account]/1.25 as kreditt
 from
-      	[Hibernian Retail$Trans_ Sales Entry] se 
-inner join [Hibernian Retail$Transaction Header] th 
+      	[Hibernian Retail$LSC Trans_ Sales Entry$5ecfc871-5d82-43f1-9c54-59685e82318d] se
+inner join [Hibernian Retail$LSC Transaction Header$5ecfc871-5d82-43f1-9c54-59685e82318d] th 
 on 
 	th.[Store No_]=se.[Store No_] and 
    	th.[POS Terminal No_]=se.[POS Terminal No_] and 
    	th.[Transaction No_]=se.[Transaction No_] 
-INNER JOIN [Hibernian Retail$Store] s 
-on
-	s.No_=th.[Store No_]
+-- INNER JOIN [Hibernian Retail$Store] s 
+-- on
+-- 	s.No_=th.[Store No_]
 
-LEFT JOIN [Hibernian Retail$Customer] c
+LEFT JOIN [Hibernian Retail$Customer$437dbf0e-84ff-417a-965d-ed2bb9650972] c
 on 
        th.[Customer No_] = c.No_ 
 where 	th.[Transaction Type]=2 
 	and th.[Entry Status] in (0,2)
+
+and 
+	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) BETWEEN 20220101 AND convert(varchar, getdate(), 112)
 	and nullif(th.[Receipt No_],'') is not null
 
 and (
