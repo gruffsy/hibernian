@@ -3,34 +3,45 @@
         "fakturadato": 20231003,
         "butikk": "Skien",
         "Klient": "0",
-        "mmoms": "429 kr",
-        "umoms": "343 kr",
-        "db": "36 kr",
-        "dg": "11.0%",
-        "antord": "1",
-        "prord": "429 kr"
+        "mmoms": "3 016 kr",
+        "umoms": "2 412 kr",
+        "db": "842 kr",
+        "dg": "35.0%",
+        "antord": "5",
+        "prord": "603 kr"
     },
     {
         "fakturadato": 20231003,
         "butikk": "Tønsberg",
         "Klient": "3",
-        "mmoms": "454 576 kr",
-        "umoms": "363 661 kr",
-        "db": "-58 510 kr",
+        "mmoms": "455 674 kr",
+        "umoms": "364 539 kr",
+        "db": "-58 290 kr",
         "dg": "-16.0%",
-        "antord": "4",
-        "prord": "113 644 kr"
+        "antord": "5",
+        "prord": "91 134 kr"
     },
     {
         "fakturadato": 20231003,
         "butikk": "Arendal",
         "Klient": "4",
-        "mmoms": "-109 kr",
-        "umoms": "-87 kr",
-        "db": "-44 kr",
-        "dg": "51.0%",
-        "antord": "1",
-        "prord": "-109 kr"
+        "mmoms": "13 625 kr",
+        "umoms": "10 900 kr",
+        "db": "355 kr",
+        "dg": "3.0%",
+        "antord": "6",
+        "prord": "2 270 kr"
+    },
+    {
+        "fakturadato": 20231003,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "17 362 kr",
+        "umoms": "13 889 kr",
+        "db": "-424 kr",
+        "dg": "-3.0%",
+        "antord": "9",
+        "prord": "1 929 kr"
     },
     {
         "fakturadato": 20231003,
@@ -47,12 +58,12 @@
         "fakturadato": 20231003,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "475 956 kr",
-        "umoms": "380 765 kr",
-        "db": "-52 623 kr",
-        "dg": "-13.8%",
-        "antord": "7",
-        "prord": "67 993 kr"
+        "mmoms": "510 737 kr",
+        "umoms": "408 588 kr",
+        "db": "-51 622 kr",
+        "dg": "-12.6%",
+        "antord": "26",
+        "prord": "19 643 kr"
     },
     {
         "fakturadato": 20231002,
