@@ -69,7 +69,7 @@ where 	th.[Transaction Type]=2
 	and th.[Entry Status] in (0,2)
 
 and 
-	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) BETWEEN 20231003 AND convert(varchar, getdate(), 112)
+	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) BETWEEN 20220101 AND convert(varchar, getdate(), 112)
 	and nullif(th.[Receipt No_],'') is not null
 
 and (
