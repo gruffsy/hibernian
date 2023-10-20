@@ -8,61 +8,49 @@ set
     noexec off
 
 	
-select
-	s.Name as 'butikk',
-s.ERPHostCompanyNo,
-	s.WarehouseNo,
-	FORMAT(sum(tl.extendedprice),'### ### ##0 kr') AS 'mmoms',
-	FORMAT(sum((tl.extendedprice) / 1.25),'### ### ##0 kr') AS 'umoms',
-	-- FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity)),'### ### ##0 kr') AS 'db',
-	-- FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity))/sum(tl.extendedprice / 1.25), 'P') as 'dg',
-	FORMAT(count(distinct tr.PosTransactionNo), '### ### ##0') as 'antord',
-	FORMAT(sum(tl.extendedprice)/count(distinct tr.PosTransactionNo), '### ### ##0 kr') as 'prord'
-	
-from
-	ErpPosDb.dbo.vcrPosTransactionLine tl,
-	ErpPosDb.dbo.vcrPosTransaction tr,
-	ErpPosDb.dbo.vcrStore s
-where
-	s.StoreNo = tr.StoreNo and 
-	tl.PosTransactionNo = tr.PosTransactionNo 
-	and datepart(year, cast(tr.CompletedDate as DATE)) = datepart(year, cast(getdate() as Date))
-	and tr.Status = 4
-	
-	group by
-	
-	s.ERPHostCompanyNo,
-	s.WarehouseNo,
-	s.Name
+select 
+butikk,
+Klient,
+
+FORMAT(sum(m_mva),'### ### ##0 kr') AS 'mmoms',
+FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
+	FORMAT(sum(u_mva - kostnad),'### ### ##0 kr') AS 'db',
+	FORMAT(sum(u_mva - kostnad)/sum(u_mva), 'P1') as 'dg',
+	FORMAT(count(distinct Ordrenummer), '### ### ##0') as 'antord',
+	FORMAT(sum(m_mva)/count(distinct Ordrenummer), '### ### ##0 kr') as 'prord'
+
+
+from f0001.dbo.PRODUKTRANSER_ALLE
+where 
+substring(   Cast(fakturadato as varchar(10)),1,4) =substring(Cast(datepart(year, cast(getdate() as Date)) as varchar(10)),1,4)
+and Fakturadato <> 0
+and transaksjonstype = 1
+and Ordretype = 3
+
+
+group by
+butikk,
+Klient
 
 union all
 select
 	'Totalt' As 'butikk',
 9999,
-9999,
-	FORMAT(sum(tl.extendedprice),'### ### ##0 kr') AS 'mmoms',
-	FORMAT(sum((tl.extendedprice) / 1.25),'### ### ##0 kr') AS 'umoms',
-	-- FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity)),'### ### ##0 kr') AS 'db',
-	-- FORMAT(sum(((tl.extendedprice) / 1.25) - (tl.costprice * tl.quantity))/sum(tl.extendedprice / 1.25), 'P') as 'dg',
-	FORMAT(count(distinct tr.PosTransactionNo), '### ### ##0') as 'antord',
-	FORMAT(sum(tl.extendedprice)/count(distinct tr.PosTransactionNo), '### ### ##0 kr') as 'prord'
-	
-from
-	ErpPosDb.dbo.vcrPosTransactionLine tl,
-	ErpPosDb.dbo.vcrPosTransaction tr,
-	ErpPosDb.dbo.vcrStore s
-where
-	s.StoreNo = tr.StoreNo and 
-	tl.PosTransactionNo = tr.PosTransactionNo 
-	and datepart(year, cast(tr.CompletedDate as DATE)) = datepart(year, cast(getdate() as Date))
-	and tr.Status = 4
 
-	
+FORMAT(sum(m_mva),'### ### ##0 kr') AS 'mmoms',
+FORMAT(sum(u_mva),'### ### ##0 kr') AS 'umoms',
+	FORMAT(sum(u_mva - kostnad),'### ### ##0 kr') AS 'db',
+	FORMAT(sum(u_mva - kostnad)/sum(u_mva), 'P1') as 'dg',
+	FORMAT(count(distinct Ordrenummer), '### ### ##0') as 'antord',
+	FORMAT(sum(m_mva)/count(distinct Ordrenummer), '### ### ##0 kr') as 'prord'
+	from f0001.dbo.PRODUKTRANSER_ALLE
+where 
+substring(   Cast(fakturadato as varchar(10)),1,4) =substring(Cast(datepart(year, cast(getdate() as Date)) as varchar(10)),1,4) 
+and Fakturadato <> 0
+and transaksjonstype = 1
+and Ordretype = 3
+
 order by
-	
-	s.ERPHostCompanyNo,
-	s.WarehouseNo,
-	s.Name
-	
+klient
 	
 for json auto

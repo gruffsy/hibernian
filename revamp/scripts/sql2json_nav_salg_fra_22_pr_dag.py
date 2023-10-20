@@ -26,6 +26,10 @@ select
         	th.[Store No_] = 'S100' 
         THEN 
         	'Bamble' 
+        WHEN 
+        	th.[Store No_] = 'S110' 
+        THEN 
+        	'Arendal' 
 	END as 'butikk',
     CASE 
     	WHEN 
@@ -36,6 +40,10 @@ select
 			th.[Store No_] = 'S100' 
         THEN 
         	'7' 
+        WHEN 
+			th.[Store No_] = 'S110' 
+        THEN 
+        	'4' 
     END as 'Klient',
     cast(sum([Total Rounded Amt_])*-1 as int) as 'mmoms',
     cast(sum(se.[Net Amount])*-1 as int) as 'umoms',

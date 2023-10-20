@@ -65,6 +65,10 @@ SELECT
         	ButikkID = 'S100' 
         THEN 
         	'Bamble' 
+        WHEN 
+        	th.[Store No_] = 'S110' 
+        THEN 
+        	'Arendal' 
 	END as 'butikk',
     CONVERT(INT, CONVERT(VARCHAR, Dato, 112)) as 'fakturadato'
     
