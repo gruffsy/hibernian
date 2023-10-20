@@ -264,7 +264,7 @@
                 <div class="q-px-md q-py-md">
                   <q-table
                     title="Hittil i år"
-                    :data="iaar"
+                    :data="YearCurrent"
                     dense
                     :pagination.sync="pagination"
                     hide-pagination
@@ -289,8 +289,8 @@
                 </div>
                 <div class="q-px-md q-py-md">
                   <q-table
-                    title="Hittil i fjor"
-                    :data="ifjor"
+                    title="Totalt i fjor"
+                    :data="LastYear"
                     dense
                     :pagination.sync="pagination"
                     hide-pagination
@@ -314,7 +314,7 @@
                   </q-table>
                 </div>
 
-                <div class="q-px-md q-py-md">
+                <!-- <div class="q-px-md q-py-md">
                   <q-table
                     title="Sammenligning i år mot i fjor"
                     :data="aarSammen"
@@ -339,7 +339,7 @@
                       </q-tr>
                     </template>
                   </q-table>
-                </div>
+                </div> -->
               </q-tab-panel>
 
               <q-tab-panel name="selger">

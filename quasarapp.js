@@ -15,6 +15,8 @@ new Vue({
       CompareLastYearMonth: [],
       DiffLastYearMonth: [],
       ProjectedLastYearMonth: [],
+      YearCurrent: [],
+      LastYear: [],
       today: [],
       bamble: [],
       yesterday: [],
@@ -168,6 +170,22 @@ new Vue({
               entry.month === currentMonth && entry.year === currentYear - 1
           );
         });
+    },
+    getYearCurrent(){
+      const currentYear = new Date().getFullYear()
+      fetch("./revamp/publish/salg_fra_22_pr_aar_med_total.json")
+      .then((response) => response.json())
+      .then((data) => {
+        this.YearCurrent = data.filter(
+          (entry) =>
+            entry.year === currentYear
+        );
+        this.LastYear = data.filter(
+          (entry) =>
+            entry.year === currentYear - 1
+        );
+      });
+
     },
     getCompareLastYearMonth() {
       const currentMonth = new Date().getMonth() + 1; // getMonth() returns a 0-based month, so add 1
@@ -332,6 +350,7 @@ new Vue({
     this.getAllDays();
     this.getMonthCurrent();
     this.getCompareLastYearMonth();
+    this.getYearCurrent();
     // this.getToday();
     // this.getBamble();
     this.getStock();
@@ -346,9 +365,9 @@ new Vue({
     // this.getIgarSelger();
     // this.getManedNaaSelger();
     // this.getIaarSelger();
-    this.getIaar();
-    this.getIfjor();
-    this.getYearCompare();
+    // this.getIaar();
+    // this.getIfjor();
+    // this.getYearCompare();
   },
   // ...etc
 });
