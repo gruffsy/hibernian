@@ -45,6 +45,17 @@
     },
     {
         "fakturadato": 20231021,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "0 kr",
+        "umoms": "0 kr",
+        "db": "0 kr",
+        "dg": "0.0%",
+        "antord": "2",
+        "prord": "0 kr"
+    },
+    {
+        "fakturadato": 20231021,
         "butikk": "Sandefjord",
         "Klient": "5",
         "mmoms": "203 344 kr",
@@ -84,8 +95,8 @@
         "umoms": "1 520 988 kr",
         "db": "262 378 kr",
         "dg": "17.3%",
-        "antord": "1 514",
-        "prord": "1 255 kr"
+        "antord": "1 516",
+        "prord": "1 254 kr"
     },
     {
         "fakturadato": 20231020,
