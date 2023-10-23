@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20231022,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "0 kr",
+        "umoms": "0 kr",
+        "db": "51 kr",
+        "dg": "0.0%",
+        "antord": "2",
+        "prord": "0 kr"
+    },
+    {
+        "fakturadato": 20231022,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "0 kr",
+        "umoms": "0 kr",
+        "db": "51 kr",
+        "dg": "0.0%",
+        "antord": "2",
+        "prord": "0 kr"
+    },
+    {
         "fakturadato": 20231021,
         "butikk": "Skien",
         "Klient": "0",
@@ -47,12 +69,12 @@
         "fakturadato": 20231021,
         "butikk": "Arendal",
         "Klient": "4",
-        "mmoms": "4 kr",
-        "umoms": "3 kr",
-        "db": "2 kr",
+        "mmoms": "8 kr",
+        "umoms": "6 kr",
+        "db": "4 kr",
         "dg": "64.0%",
-        "antord": "3",
-        "prord": "1 kr"
+        "antord": "4",
+        "prord": "2 kr"
     },
     {
         "fakturadato": 20231021,
@@ -91,12 +113,12 @@
         "fakturadato": 20231021,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "1 901 241 kr",
-        "umoms": "1 520 991 kr",
-        "db": "262 380 kr",
+        "mmoms": "1 901 245 kr",
+        "umoms": "1 520 994 kr",
+        "db": "262 382 kr",
         "dg": "17.3%",
-        "antord": "1 517",
-        "prord": "1 253 kr"
+        "antord": "1 518",
+        "prord": "1 252 kr"
     },
     {
         "fakturadato": 20231020,
