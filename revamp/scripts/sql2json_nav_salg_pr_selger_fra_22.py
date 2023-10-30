@@ -2,15 +2,15 @@ import pyodbc
 import json
 
 # Replace with your actual SQL Server details
-server = "10.0.10.41"
-# database = "<database>"
-username = "intranett"
-password = "Megareader18"
+server = "mf-ls-sql02.norwayeast.cloudapp.azure.com"
+database = "Megaflis_AS"
+username = "perarne"
+password = "AdaiQQvlq!#to43"
 # table = "<table>"
 
 
 # Connect to the SQL Server
-connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};UID={username};PWD={password}"
+connection_string = f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={server};Database={database};UID={username};PWD={password}"
 conn = pyodbc.connect(connection_string)
 
 # Run the SELECT clause
@@ -34,20 +34,20 @@ WITH Sales AS (
         -(Sum(SalesEntry.[Net Amount])-Sum(SalesEntry.[Cost Amount])) AS 'Db.kr', 
         Staff.[First Name] AS 'Fornavn', 
         Staff.[Last Name] AS 'Etternavn', 
-        Staff.[Store No_] AS 'ButikkID',
-        UPPER(Salesperson.[Job Title]) AS 'Stilling'
-    FROM MegaflisNAVLS2016.dbo.[Hibernian Retail$Staff] Staff, 
-        MegaflisNAVLS2016.dbo.[Hibernian Retail$Trans_ Sales Entry] SalesEntry, 
-        [MegaflisNAVLS2016].[dbo].[Hibernian Retail$Salesperson_Purchaser] Salesperson
+        Staff.[Store No_] AS 'ButikkID'
+     --   ,UPPER(Salesperson.[Job Title]) AS 'Stilling'
+    FROM [Hibernian Retail$LSC Staff$5ecfc871-5d82-43f1-9c54-59685e82318d] Staff, 
+        [Megaflis_AS].[dbo].[mf_trans_sales_entry__hib] SalesEntry
+        --,        [MegaflisNAVLS2016].[dbo].[Hibernian Retail$Salesperson_Purchaser] Salesperson
     WHERE 
-        SalesEntry.[Created by Staff ID] = Staff.[Sales Person] AND 
-        Salesperson.Code = Staff.[Sales Person]
+        SalesEntry.[Created by Staff ID] = Staff.[Sales Person]
+         --AND        Salesperson.Code = Staff.[Sales Person]
     GROUP BY SalesEntry.Date, 
         SalesEntry.[Created by Staff ID], 
         Staff.[First Name], 
         Staff.[Last Name], 
-        Staff.[Store No_],
-        UPPER(Salesperson.[Job Title])
+        Staff.[Store No_]
+        --,UPPER(Salesperson.[Job Title])
     HAVING (SalesEntry.[Created by Staff ID]<>'')
 )
 
@@ -66,7 +66,7 @@ SELECT
         THEN 
         	'Bamble' 
         WHEN 
-        	th.[Store No_] = 'S110' 
+        	ButikkID = 'S110' 
         THEN 
         	'Arendal' 
 	END as 'butikk',
