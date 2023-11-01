@@ -1,5 +1,18 @@
 [
     {
+        "mmoms": "1 060 kr",
+        "umoms": "848 kr",
+        "db": "0 kr",
+        "antord": "1",
+        "butikk": "Skien",
+        "incomplete": true,
+        "dg": "0.0%",
+        "prord": "1 060 kr",
+        "year": 2023,
+        "month": 11,
+        "Klient": "0"
+    },
+    {
         "mmoms": "358 kr",
         "umoms": "286 kr",
         "db": "120 kr",
@@ -13,14 +26,27 @@
         "Klient": "3"
     },
     {
-        "mmoms": "358 kr",
-        "umoms": "286 kr",
-        "db": "120 kr",
+        "mmoms": "68 kr",
+        "umoms": "54 kr",
+        "db": "-2 kr",
         "antord": "1",
+        "butikk": "Sandefjord",
+        "incomplete": true,
+        "dg": "-3.7%",
+        "prord": "68 kr",
+        "year": 2023,
+        "month": 11,
+        "Klient": "5"
+    },
+    {
+        "mmoms": "1 486 kr",
+        "umoms": "1 188 kr",
+        "db": "118 kr",
+        "antord": "3",
         "butikk": "Totalt",
         "incomplete": true,
-        "dg": "42.0%",
-        "prord": "358 kr",
+        "dg": "9.9%",
+        "prord": "495 kr",
         "year": 2023,
         "month": 11,
         "Klient": 99
