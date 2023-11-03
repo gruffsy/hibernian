@@ -28,7 +28,12 @@ select
         WHEN 
         	th.[Store No_] = 'S110' 
         THEN 
-        	'Arendal'     
+        	'Arendal'
+        WHEN 
+        	th.[Store No_] = 'S170' 
+        THEN 
+        	'Larvik'
+             
 	END as 'butikk',
 	convert(varchar, th.[Date], 112) as Dato, 
 	CASE 
@@ -43,7 +48,11 @@ select
         WHEN 
 			th.[Store No_] = 'S100' 
         THEN 
-        	'4'    
+        	'4'
+        WHEN 
+			th.[Store No_] = 'S170' 
+        THEN 
+        	'6'    
     END as 'Klient',
     sum([Total Rounded Amt_])*-1 as mmoms,
     sum(se.[Net Amount])*-1 as umoms,
