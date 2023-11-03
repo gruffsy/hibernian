@@ -46,7 +46,7 @@ select
         THEN 
         	'7' 
         WHEN 
-			th.[Store No_] = 'S100' 
+			th.[Store No_] = 'S110' 
         THEN 
         	'4'
         WHEN 
