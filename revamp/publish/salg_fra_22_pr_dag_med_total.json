@@ -69,12 +69,12 @@
         "fakturadato": 20231104,
         "butikk": "Larvik",
         "Klient": "6",
-        "mmoms": "0 kr",
-        "umoms": "0 kr",
-        "db": "0 kr",
-        "dg": "0.0%",
-        "antord": "2",
-        "prord": "0 kr"
+        "mmoms": "4 kr",
+        "umoms": "3 kr",
+        "db": "2 kr",
+        "dg": "64.0%",
+        "antord": "3",
+        "prord": "1 kr"
     },
     {
         "fakturadato": 20231104,
@@ -91,11 +91,11 @@
         "fakturadato": 20231104,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "2 206 528 kr",
-        "umoms": "1 765 221 kr",
-        "db": "352 757 kr",
+        "mmoms": "2 206 532 kr",
+        "umoms": "1 765 224 kr",
+        "db": "352 759 kr",
         "dg": "20.0%",
-        "antord": "1 691",
+        "antord": "1 692",
         "prord": "1 304 kr"
     },
     {
