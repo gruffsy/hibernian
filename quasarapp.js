@@ -40,7 +40,7 @@ new Vue({
       tab: "dag",
       displayedTables: 3,
       pagination: {
-        rowsPerPage: 30, // current rows per page being displayed
+        rowsPerPage: 300, // current rows per page being displayed
       },
       paginationSalesPersons: {
         rowsPerPage: 50, // current rows per page being displayed
