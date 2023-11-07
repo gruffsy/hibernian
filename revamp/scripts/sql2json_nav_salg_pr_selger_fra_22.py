@@ -70,7 +70,7 @@ SELECT
         THEN 
         	'Arendal'
         WHEN 
-        	th.[Store No_] = 'S170' 
+        	ButikkID = 'S170' 
         THEN 
         	'Larvik' 
 	END as 'butikk',
