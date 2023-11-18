@@ -1,25 +1,36 @@
 [
     {
         "fakturadato": 20231118,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "1 420 kr",
+        "umoms": "1 136 kr",
+        "db": "-1 286 kr",
+        "dg": "-113.0%",
+        "antord": "1",
+        "prord": "1 420 kr"
+    },
+    {
+        "fakturadato": 20231118,
         "butikk": "Arendal",
         "Klient": "4",
-        "mmoms": "686 kr",
-        "umoms": "548 kr",
-        "db": "233 kr",
-        "dg": "43.0%",
-        "antord": "3",
-        "prord": "228 kr"
+        "mmoms": "30 351 kr",
+        "umoms": "24 281 kr",
+        "db": "10 249 kr",
+        "dg": "42.0%",
+        "antord": "5",
+        "prord": "6 070 kr"
     },
     {
         "fakturadato": 20231118,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "686 kr",
-        "umoms": "548 kr",
-        "db": "233 kr",
-        "dg": "42.5%",
-        "antord": "3",
-        "prord": "228 kr"
+        "mmoms": "31 771 kr",
+        "umoms": "25 417 kr",
+        "db": "8 963 kr",
+        "dg": "35.3%",
+        "antord": "6",
+        "prord": "5 295 kr"
     },
     {
         "fakturadato": 20231117,
