@@ -48,8 +48,8 @@ SELECT
 	  DATEPART(Year,[TransHeader].[Date]) AS [Year],
       [Item No_] as ItemNo,
       -Quantity As SalesQty,
-	  -[TransHeader].[Net Amount] AS AmountExclVAT,
-	  -[TransHeader].[Net Amount] + TransHeader.[Cost Amount] AS GrossMargin
+	 -[SalesEntry].[Net Amount] AS AmountExclVAT,
+	  -[SalesEntry].[Net Amount] + SalesEntry.[Cost Amount] AS GrossMargin
 	FROM 
     mf_trans_sales_entry__mfas SalesEntry
     inner join    
