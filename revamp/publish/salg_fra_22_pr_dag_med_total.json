@@ -1,5 +1,38 @@
 [
     {
+        "fakturadato": 20231129,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "-993 kr",
+        "umoms": "-794 kr",
+        "db": "0 kr",
+        "dg": "0.0%",
+        "antord": "1",
+        "prord": "-993 kr"
+    },
+    {
+        "fakturadato": 20231129,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "39 kr",
+        "umoms": "31 kr",
+        "db": "-1 kr",
+        "dg": "-4.0%",
+        "antord": "1",
+        "prord": "39 kr"
+    },
+    {
+        "fakturadato": 20231129,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "-954 kr",
+        "umoms": "-763 kr",
+        "db": "-1 kr",
+        "dg": "0.1%",
+        "antord": "2",
+        "prord": "-477 kr"
+    },
+    {
         "fakturadato": 20231128,
         "butikk": "Skien",
         "Klient": "0",
