@@ -1,5 +1,44 @@
 [
     {
+        "mmoms": "113 kr",
+        "umoms": "90 kr",
+        "db": "0 kr",
+        "antord": "1",
+        "butikk": "Tønsberg",
+        "incomplete": true,
+        "dg": "0.0%",
+        "prord": "113 kr",
+        "year": 2023,
+        "month": 12,
+        "Klient": "3"
+    },
+    {
+        "mmoms": "58 kr",
+        "umoms": "46 kr",
+        "db": "32 kr",
+        "antord": "1",
+        "butikk": "Sandefjord",
+        "incomplete": true,
+        "dg": "69.6%",
+        "prord": "58 kr",
+        "year": 2023,
+        "month": 12,
+        "Klient": "5"
+    },
+    {
+        "mmoms": "171 kr",
+        "umoms": "136 kr",
+        "db": "32 kr",
+        "antord": "2",
+        "butikk": "Totalt",
+        "incomplete": true,
+        "dg": "23.5%",
+        "prord": "85 kr",
+        "year": 2023,
+        "month": 12,
+        "Klient": 99
+    },
+    {
         "mmoms": "10 885 830 kr",
         "umoms": "8 708 659 kr",
         "db": "841 169 kr",
