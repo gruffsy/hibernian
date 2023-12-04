@@ -12,6 +12,17 @@
     },
     {
         "fakturadato": 20231204,
+        "butikk": null,
+        "Klient": null,
+        "mmoms": "4 kr",
+        "umoms": "3 kr",
+        "db": "2 kr",
+        "dg": "75.0%",
+        "antord": "1",
+        "prord": "4 kr"
+    },
+    {
+        "fakturadato": 20231204,
         "butikk": "Kristiansand",
         "Klient": "2",
         "mmoms": "236 559 kr",
@@ -80,12 +91,12 @@
         "fakturadato": 20231204,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "1 593 733 kr",
-        "umoms": "1 274 987 kr",
-        "db": "279 076 kr",
+        "mmoms": "1 593 737 kr",
+        "umoms": "1 274 990 kr",
+        "db": "279 078 kr",
         "dg": "21.9%",
-        "antord": "1 471",
-        "prord": "1 083 kr"
+        "antord": "1 472",
+        "prord": "1 082 kr"
     },
     {
         "fakturadato": 20231202,
