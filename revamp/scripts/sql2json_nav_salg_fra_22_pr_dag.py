@@ -18,6 +18,7 @@ query = '''
 select
 	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) as 'fakturadato',
 	 CASE 
+    	 CASE 
     	WHEN 
         	th.[Store No_] = 'S150' 
         THEN 
@@ -34,6 +35,10 @@ select
         	th.[Store No_] = 'S170' 
         THEN 
         	'Larvik'
+        WHEN 
+        	th.[Store No_] = 'S130' 
+        THEN 
+        	'Sandefjord'
              
 	END as 'butikk',
     CASE 
@@ -53,6 +58,10 @@ select
 			th.[Store No_] = 'S170' 
         THEN 
         	'6'    
+        WHEN 
+			th.[Store No_] = 'S170' 
+        THEN 
+        	'5'       
     END as 'Klient',
     cast(sum([Total Rounded Amt_])*-1 as int) as 'mmoms',
     cast(sum(se.[Net Amount])*-1 as int) as 'umoms',
