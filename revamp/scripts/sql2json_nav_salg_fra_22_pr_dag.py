@@ -17,8 +17,7 @@ conn = pyodbc.connect(connection_string)
 query = '''
 select
 	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) as 'fakturadato',
-	 CASE 
-    	 CASE 
+	     	 CASE 
     	WHEN 
         	th.[Store No_] = 'S150' 
         THEN 
