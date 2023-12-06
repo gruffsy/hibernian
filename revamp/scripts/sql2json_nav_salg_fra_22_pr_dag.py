@@ -59,7 +59,7 @@ select
         THEN 
         	'6'    
         WHEN 
-			th.[Store No_] = 'S170' 
+			th.[Store No_] = 'S130' 
         THEN 
         	'5'       
     END as 'Klient',
