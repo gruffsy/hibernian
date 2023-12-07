@@ -1,6 +1,17 @@
 [
     {
         "fakturadato": 20231207,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "2 134 kr",
+        "umoms": "1 707 kr",
+        "db": "674 kr",
+        "dg": "40.0%",
+        "antord": "1",
+        "prord": "2 134 kr"
+    },
+    {
+        "fakturadato": 20231207,
         "butikk": "Bamble",
         "Klient": "7",
         "mmoms": "128 kr",
@@ -14,12 +25,12 @@
         "fakturadato": 20231207,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "128 kr",
-        "umoms": "103 kr",
-        "db": "3 kr",
-        "dg": "2.9%",
-        "antord": "1",
-        "prord": "128 kr"
+        "mmoms": "2 262 kr",
+        "umoms": "1 810 kr",
+        "db": "677 kr",
+        "dg": "37.4%",
+        "antord": "2",
+        "prord": "1 131 kr"
     },
     {
         "fakturadato": 20231206,
