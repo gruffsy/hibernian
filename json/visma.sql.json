@@ -1,2 +1,1 @@
-﻿Msg 1205, Level 13, State 52, Server DB-HIB, Line 11
-Transaction (Process ID 122) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+﻿[{"butikk":"Skien","Klient":"0","mmoms":101672.512500,"umoms":81338.010000,"db":18328.940000,"dg":0.225342,"antord":104,"prord":977.620312},{"butikk":"Tønsberg","Klient":"3","mmoms":75484.200000,"umoms":60387.360000,"db":10853.870000,"dg":0.179737,"antord":93,"prord":811.658064}]
