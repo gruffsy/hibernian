@@ -1,36 +1,69 @@
 [
     {
         "fakturadato": 20231228,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "1 897 kr",
+        "umoms": "1 517 kr",
+        "db": "213 kr",
+        "dg": "14.0%",
+        "antord": "1",
+        "prord": "1 897 kr"
+    },
+    {
+        "fakturadato": 20231228,
         "butikk": "Tønsberg",
         "Klient": "3",
-        "mmoms": "1 269 kr",
-        "umoms": "1 015 kr",
-        "db": "108 kr",
-        "dg": "11.0%",
-        "antord": "2",
-        "prord": "634 kr"
+        "mmoms": "1 655 kr",
+        "umoms": "1 324 kr",
+        "db": "192 kr",
+        "dg": "15.0%",
+        "antord": "3",
+        "prord": "551 kr"
     },
     {
         "fakturadato": 20231228,
         "butikk": "Sandefjord",
         "Klient": "5",
-        "mmoms": "58 kr",
-        "umoms": "46 kr",
-        "db": "16 kr",
-        "dg": "35.0%",
+        "mmoms": "2 217 kr",
+        "umoms": "1 773 kr",
+        "db": "763 kr",
+        "dg": "43.0%",
+        "antord": "2",
+        "prord": "1 108 kr"
+    },
+    {
+        "fakturadato": 20231228,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "539 kr",
+        "umoms": "431 kr",
+        "db": "128 kr",
+        "dg": "30.0%",
         "antord": "1",
-        "prord": "58 kr"
+        "prord": "539 kr"
+    },
+    {
+        "fakturadato": 20231228,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "459 kr",
+        "umoms": "367 kr",
+        "db": "165 kr",
+        "dg": "45.0%",
+        "antord": "1",
+        "prord": "459 kr"
     },
     {
         "fakturadato": 20231228,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "1 327 kr",
-        "umoms": "1 061 kr",
-        "db": "124 kr",
-        "dg": "11.7%",
-        "antord": "3",
-        "prord": "442 kr"
+        "mmoms": "6 767 kr",
+        "umoms": "5 412 kr",
+        "db": "1 461 kr",
+        "dg": "27.0%",
+        "antord": "8",
+        "prord": "845 kr"
     },
     {
         "fakturadato": 20231227,
