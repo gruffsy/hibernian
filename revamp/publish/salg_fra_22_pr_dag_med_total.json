@@ -1,5 +1,38 @@
 [
     {
+        "fakturadato": 20240104,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "350 kr",
+        "umoms": "280 kr",
+        "db": "141 kr",
+        "dg": "50.0%",
+        "antord": "1",
+        "prord": "350 kr"
+    },
+    {
+        "fakturadato": 20240104,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "188 kr",
+        "umoms": "150 kr",
+        "db": "-49 kr",
+        "dg": "-33.0%",
+        "antord": "1",
+        "prord": "188 kr"
+    },
+    {
+        "fakturadato": 20240104,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "538 kr",
+        "umoms": "430 kr",
+        "db": "92 kr",
+        "dg": "21.4%",
+        "antord": "2",
+        "prord": "269 kr"
+    },
+    {
         "fakturadato": 20240103,
         "butikk": "Skien",
         "Klient": "0",
