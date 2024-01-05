@@ -96,9 +96,9 @@ SELECT
             WHEN 
         	ButikkID = 'S130' 
         THEN 
-        	'Arendal'
+        	'Sandefjord'
         WHEN 
-        	ButikkID = 'S130' 
+        	ButikkID = 'S170' 
         THEN 
         	'Larvik' 
 	END as 'butikk',
