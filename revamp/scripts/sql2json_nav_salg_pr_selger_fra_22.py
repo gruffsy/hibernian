@@ -38,10 +38,34 @@ WITH Sales AS (
      --   ,UPPER(Salesperson.[Job Title]) AS 'Stilling'
     FROM [Hibernian Retail$LSC Staff$5ecfc871-5d82-43f1-9c54-59685e82318d] Staff, 
         [Megaflis_AS].[dbo].[mf_trans_sales_entry__hib] SalesEntry
-        --,        [MegaflisNAVLS2016].[dbo].[Hibernian Retail$Salesperson_Purchaser] Salesperson
+        
+    inner join [Hibernian Retail$LSC Transaction Header$5ecfc871-5d82-43f1-9c54-59685e82318d] th 
+on 
+	th.[Store No_]=SalesEntry.[Store No_] and 
+   	th.[POS Terminal No_]=SalesEntry.[POS Terminal No_] and 
+   	th.[Transaction No_]=SalesEntry.[Transaction No_] 
+
+
+LEFT JOIN [Hibernian Retail$Customer$437dbf0e-84ff-417a-965d-ed2bb9650972] c
+on 
+       th.[Customer No_] = c.No_ 
+where 	th.[Transaction Type]=2 
+	and th.[Entry Status] in (0,2)
+
+and 
+	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) BETWEEN 20220101 AND convert(varchar, getdate(), 112)
+	and nullif(th.[Receipt No_],'') is not null
+
+and (
+        c.[Customer Price Group] is null 
+        or 
+        c.[Customer Price Group] <> 'INTERNT'
+        )
+    
     WHERE 
         SalesEntry.[Created by Staff ID] = Staff.[Sales Person]
          --AND        Salesperson.Code = Staff.[Sales Person]
+
     GROUP BY SalesEntry.Date, 
         SalesEntry.[Created by Staff ID], 
         Staff.[First Name], 
@@ -69,8 +93,12 @@ SELECT
         	ButikkID = 'S110' 
         THEN 
         	'Arendal'
+            WHEN 
+        	ButikkID = 'S130' 
+        THEN 
+        	'Arendal'
         WHEN 
-        	ButikkID = 'S170' 
+        	ButikkID = 'S130' 
         THEN 
         	'Larvik' 
 	END as 'butikk',
