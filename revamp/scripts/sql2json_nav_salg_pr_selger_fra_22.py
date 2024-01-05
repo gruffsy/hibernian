@@ -61,9 +61,9 @@ and (
         or 
         c.[Customer Price Group] <> 'INTERNT'
         )
-    
-    WHERE 
-        SalesEntry.[Created by Staff ID] = Staff.[Sales Person]
+     and SalesEntry.[Created by Staff ID] = Staff.[Sales Person]
+
+       
          --AND        Salesperson.Code = Staff.[Sales Person]
 
     GROUP BY SalesEntry.Date, 
