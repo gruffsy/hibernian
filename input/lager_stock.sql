@@ -18,6 +18,7 @@ SELECT
   where 
   s.prodno = p.prodno
   and p.ProdPrGr <> 99
+  and p.gr2 = 1
   and s.StcNo = 1
   and s.prodno <> 'adm'
 
