@@ -1,36 +1,69 @@
 [
     {
         "fakturadato": 20240202,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "64 371 kr",
+        "umoms": "51 497 kr",
+        "db": "17 321 kr",
+        "dg": "34.0%",
+        "antord": "5",
+        "prord": "12 874 kr"
+    },
+    {
+        "fakturadato": 20240202,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "1 338 kr",
+        "umoms": "1 070 kr",
+        "db": "-105 kr",
+        "dg": "-10.0%",
+        "antord": "5",
+        "prord": "267 kr"
+    },
+    {
+        "fakturadato": 20240202,
         "butikk": "Tønsberg",
         "Klient": "3",
-        "mmoms": "-756 kr",
-        "umoms": "-604 kr",
-        "db": "-211 kr",
-        "dg": "35.0%",
-        "antord": "1",
-        "prord": "-756 kr"
+        "mmoms": "523 kr",
+        "umoms": "418 kr",
+        "db": "277 kr",
+        "dg": "66.0%",
+        "antord": "5",
+        "prord": "104 kr"
+    },
+    {
+        "fakturadato": 20240202,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "3 006 kr",
+        "umoms": "2 404 kr",
+        "db": "1 222 kr",
+        "dg": "51.0%",
+        "antord": "4",
+        "prord": "751 kr"
     },
     {
         "fakturadato": 20240202,
         "butikk": "Sandefjord",
         "Klient": "5",
-        "mmoms": "44 kr",
-        "umoms": "35 kr",
-        "db": "0 kr",
-        "dg": "0.0%",
-        "antord": "1",
-        "prord": "44 kr"
+        "mmoms": "2 411 kr",
+        "umoms": "1 929 kr",
+        "db": "824 kr",
+        "dg": "43.0%",
+        "antord": "5",
+        "prord": "482 kr"
     },
     {
         "fakturadato": 20240202,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "-712 kr",
-        "umoms": "-569 kr",
-        "db": "-211 kr",
-        "dg": "37.1%",
-        "antord": "2",
-        "prord": "-356 kr"
+        "mmoms": "71 649 kr",
+        "umoms": "57 318 kr",
+        "db": "19 539 kr",
+        "dg": "34.1%",
+        "antord": "24",
+        "prord": "2 985 kr"
     },
     {
         "fakturadato": 20240201,
