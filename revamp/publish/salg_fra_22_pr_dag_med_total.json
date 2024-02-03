@@ -12,6 +12,17 @@
     },
     {
         "fakturadato": 20240203,
+        "butikk": null,
+        "Klient": null,
+        "mmoms": "4 kr",
+        "umoms": "3 kr",
+        "db": "2 kr",
+        "dg": "64.0%",
+        "antord": "1",
+        "prord": "4 kr"
+    },
+    {
+        "fakturadato": 20240203,
         "butikk": "Kristiansand",
         "Klient": "2",
         "mmoms": "316 662 kr",
@@ -80,12 +91,12 @@
         "fakturadato": 20240203,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "1 343 665 kr",
-        "umoms": "1 074 931 kr",
-        "db": "218 499 kr",
+        "mmoms": "1 343 669 kr",
+        "umoms": "1 074 934 kr",
+        "db": "218 501 kr",
         "dg": "20.3%",
-        "antord": "1 369",
-        "prord": "981 kr"
+        "antord": "1 370",
+        "prord": "980 kr"
     },
     {
         "fakturadato": 20240202,
