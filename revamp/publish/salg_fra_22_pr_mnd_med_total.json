@@ -1,5 +1,18 @@
 [
     {
+        "mmoms": "772 766 kr",
+        "umoms": "618 211 kr",
+        "db": "100 509 kr",
+        "antord": "646",
+        "butikk": "Skien",
+        "incomplete": true,
+        "dg": "16.3%",
+        "prord": "1 196 kr",
+        "year": 2024,
+        "month": 2,
+        "Klient": "0"
+    },
+    {
         "mmoms": "-4 kr",
         "umoms": "-3 kr",
         "db": "20 kr",
@@ -11,19 +24,6 @@
         "year": 2024,
         "month": 2,
         "Klient": null
-    },
-    {
-        "mmoms": "771 883 kr",
-        "umoms": "617 505 kr",
-        "db": "100 347 kr",
-        "antord": "645",
-        "butikk": "Skien",
-        "incomplete": true,
-        "dg": "16.3%",
-        "prord": "1 196 kr",
-        "year": 2024,
-        "month": 2,
-        "Klient": "0"
     },
     {
         "mmoms": "764 645 kr",
@@ -104,14 +104,14 @@
         "Klient": "7"
     },
     {
-        "mmoms": "4 080 192 kr",
-        "umoms": "3 264 151 kr",
-        "db": "592 555 kr",
-        "antord": "3 799",
+        "mmoms": "4 081 075 kr",
+        "umoms": "3 264 857 kr",
+        "db": "592 717 kr",
+        "antord": "3 800",
         "butikk": "Totalt",
         "incomplete": true,
         "dg": "18.2%",
-        "prord": "1 074 kr",
+        "prord": "1 073 kr",
         "year": 2024,
         "month": 2,
         "Klient": 99
