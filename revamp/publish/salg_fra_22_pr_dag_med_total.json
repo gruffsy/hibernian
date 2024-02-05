@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20240205,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "535 kr",
+        "umoms": "428 kr",
+        "db": "211 kr",
+        "dg": "49.0%",
+        "antord": "1",
+        "prord": "535 kr"
+    },
+    {
+        "fakturadato": 20240205,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "535 kr",
+        "umoms": "428 kr",
+        "db": "211 kr",
+        "dg": "49.3%",
+        "antord": "1",
+        "prord": "535 kr"
+    },
+    {
         "fakturadato": 20240204,
         "butikk": null,
         "Klient": null,
