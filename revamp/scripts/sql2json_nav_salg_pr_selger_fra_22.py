@@ -101,6 +101,10 @@ SELECT
         	ButikkID = 'S170' 
         THEN 
         	'Larvik' 
+        WHEN 
+        	ButikkID = 'S160' 
+        THEN 
+        	'Tønsberg' 
 	END as 'butikk',
     CONVERT(INT, CONVERT(VARCHAR, Dato, 112)) as 'fakturadato'
     
