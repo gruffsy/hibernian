@@ -1,5 +1,17 @@
 [
     {
+        "mmoms": "-18 kr",
+        "umoms": "-14 kr",
+        "db": "-9 kr",
+        "antord": "24",
+        "butikk": null,
+        "incomplete": true,
+        "dg": "64.3%",
+        "prord": "0 kr",
+        "year": 2024,
+        "Klient": null
+    },
+    {
         "mmoms": "12 544 233 kr",
         "umoms": "10 035 380 kr",
         "db": "1 042 207 kr",
@@ -10,18 +22,6 @@
         "prord": "1 462 kr",
         "year": 2024,
         "Klient": "0"
-    },
-    {
-        "mmoms": "-18 kr",
-        "umoms": "-14 kr",
-        "db": "-8 kr",
-        "antord": "20",
-        "butikk": null,
-        "incomplete": true,
-        "dg": "57.1%",
-        "prord": "0 kr",
-        "year": 2024,
-        "Klient": null
     },
     {
         "mmoms": "13 536 116 kr",
@@ -98,8 +98,8 @@
     {
         "mmoms": "67 541 112 kr",
         "umoms": "54 032 863 kr",
-        "db": "6 414 118 kr",
-        "antord": "47 580",
+        "db": "6 414 117 kr",
+        "antord": "47 584",
         "butikk": "Totalt",
         "incomplete": true,
         "dg": "11.9%",

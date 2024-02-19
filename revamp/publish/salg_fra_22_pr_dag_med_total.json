@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20240218,
+        "butikk": null,
+        "Klient": null,
+        "mmoms": "0 kr",
+        "umoms": "0 kr",
+        "db": "-1 kr",
+        "dg": "0.0%",
+        "antord": "4",
+        "prord": "0 kr"
+    },
+    {
+        "fakturadato": 20240218,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "0 kr",
+        "umoms": "0 kr",
+        "db": "-1 kr",
+        "dg": "0.0%",
+        "antord": "4",
+        "prord": "0 kr"
+    },
+    {
         "fakturadato": 20240217,
         "butikk": "Skien",
         "Klient": "0",
