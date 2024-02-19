@@ -72,7 +72,7 @@ select
          WHEN 
 			th.[Store No_] = 'S140' 
         THEN 
-        	'1'     
+        	'0'     
         WHEN 
 			th.[Store No_] = 'S160' 
         THEN 
