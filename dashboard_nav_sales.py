@@ -34,6 +34,10 @@ select
         THEN 
         	'Larvik'
         WHEN 
+        	th.[Store No_] = 'S140' 
+        THEN 
+        	'Skien'
+        WHEN 
         	th.[Store No_] = 'S130' 
         THEN 
         	'Sandefjord'
@@ -64,7 +68,11 @@ select
         WHEN 
 			th.[Store No_] = 'S130' 
         THEN 
-        	'5'    
+        	'5'
+         WHEN 
+			th.[Store No_] = 'S140' 
+        THEN 
+        	'1'     
         WHEN 
 			th.[Store No_] = 'S160' 
         THEN 

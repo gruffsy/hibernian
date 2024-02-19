@@ -93,6 +93,10 @@ SELECT
         	ButikkID = 'S110' 
         THEN 
         	'Arendal'
+        WHEN 
+        	ButikkID = 'S140' 
+        THEN 
+        	'Skien'
             WHEN 
         	ButikkID = 'S130' 
         THEN 

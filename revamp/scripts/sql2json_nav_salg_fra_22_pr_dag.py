@@ -38,6 +38,10 @@ select
         	th.[Store No_] = 'S130' 
         THEN 
         	'Sandefjord'
+         WHEN 
+        	th.[Store No_] = 'S140' 
+        THEN 
+        	'Skien'
         WHEN 
         	th.[Store No_] = 'S160' 
         THEN 
@@ -68,7 +72,11 @@ select
         WHEN 
 			th.[Store No_] = 'S160' 
         THEN 
-        	'3'       
+        	'3'    
+         WHEN 
+			th.[Store No_] = 'S140' 
+        THEN 
+        	'1'      
     END as 'Klient',
     cast(sum([Total Rounded Amt_])*-1 as int) as 'mmoms',
     cast(sum(se.[Net Amount])*-1 as int) as 'umoms',
