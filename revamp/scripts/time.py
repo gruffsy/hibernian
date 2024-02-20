@@ -41,7 +41,7 @@ column_names = [column[0] for column in cursor.description]
 result = [dict(zip(column_names, row)) for row in rows]
 
 # Save the result as JSON
-with open("../jsons/tid.json", "w") as output_file:
+with open("../publish/tid.json", "w") as output_file:
     json.dump(result, output_file, default=str, indent=4)
 
 # Close the connection

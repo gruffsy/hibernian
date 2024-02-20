@@ -229,7 +229,9 @@ new Vue({
         .then((data) => (this.dayBeforYesterday = data));
     },
     getTime() {
-      fetch("./json/tid.sql.json")
+      fetch(
+        "./revamp/publish/tid.json"
+      )
         .then((response) => response.json())
         .then((data) => (this.updated = data));
     },
