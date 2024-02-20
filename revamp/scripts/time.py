@@ -24,7 +24,17 @@ set
 set
     noexec off
 
-SELECT FORMAT (getdate(), 'HH:mm - dddd dd. MMMM yyyy', 'no-NO') as "oppdatert";
+--  SELECT FORMAT (getdate(), 'HH:mm - dddd dd. MMMM yyyy', 'no-NO') as "oppdatert";
+
+SELECT FORMAT(
+  DATEADD(
+    MINUTE,
+    DATEDIFF(MINUTE, 0, GETDATE()) / 5 * 5,
+    0
+  ),
+  'HH:mm - dddd dd. MMMM yyyy',
+  'no-NO'
+) AS "oppdatert";
 
 """
 
