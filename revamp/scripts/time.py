@@ -1,5 +1,5 @@
 import pyodbc
-import csv
+import json
 
 # Replace with your actual SQL Server details
 server = "mf-ls-sql02.norwayeast.cloudapp.azure.com"
@@ -33,4 +33,17 @@ cursor.execute(query)
 
 # Fetch all rows and column names
 rows = cursor.fetchall()
-# print(rows)
+column_names = [column[0] for column in cursor.description]
+print(rows)
+column_names = [column[0] for column in cursor.description]
+
+# Convert rows to a list of dictionaries
+result = [dict(zip(column_names, row)) for row in rows]
+
+# Save the result as JSON
+with open("../jsons/tid.json", "w") as output_file:
+    json.dump(result, output_file, default=str, indent=4)
+
+# Close the connection
+cursor.close()
+conn.close()

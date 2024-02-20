@@ -248,31 +248,13 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.manedSammen = data));
     },
-    // getLordagSelger() {
-    //   fetch("./json/lordagselger.sql.json")
-    //     .then((response) => response.json())
-    //     .then((data) => (this.lordagselger = data));
-    // },
+    
     getIdagSelger() {
       fetch("./revamp/publish/salg_pr_selger_fra_22_pr_dag.json")
         .then((response) => response.json())
         .then((data) => (this.idagselger = data));
     },
-    // getIgarSelger() {
-    //   fetch("./json/igarselger.sql.json")
-    //     .then((response) => response.json())
-    //     .then((data) => (this.igarselger = data));
-    // },
-    // getManedNaaSelger() {
-    //   fetch("./json/manednaaselger.sql.json")
-    //     .then((response) => response.json())
-    //     .then((data) => (this.manednaaselger = data));
-    // },
-    // getIaarSelger() {
-    //   fetch("./json/iaarselger.sql.json")
-    //     .then((response) => response.json())
-    //     .then((data) => (this.iaarselger = data));
-    // },
+   
     getIaar() {
       fetch("./json/iaar.sql.json")
         .then((response) => response.json())
