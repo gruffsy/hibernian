@@ -57,3 +57,4 @@ with open("../publish/tid.json", "w") as output_file:
 # Close the connection
 cursor.close()
 conn.close()
+
