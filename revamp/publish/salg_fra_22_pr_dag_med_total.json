@@ -3,34 +3,67 @@
         "fakturadato": 20240223,
         "butikk": "Skien",
         "Klient": "0",
-        "mmoms": "537 kr",
-        "umoms": "429 kr",
-        "db": "189 kr",
+        "mmoms": "1 235 kr",
+        "umoms": "988 kr",
+        "db": "434 kr",
         "dg": "44.0%",
-        "antord": "1",
-        "prord": "537 kr"
+        "antord": "3",
+        "prord": "411 kr"
+    },
+    {
+        "fakturadato": 20240223,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "415 kr",
+        "umoms": "332 kr",
+        "db": "-1 423 kr",
+        "dg": "-429.0%",
+        "antord": "2",
+        "prord": "207 kr"
     },
     {
         "fakturadato": 20240223,
         "butikk": "Tønsberg",
         "Klient": "3",
-        "mmoms": "59 kr",
-        "umoms": "47 kr",
-        "db": "-45 kr",
-        "dg": "-95.0%",
+        "mmoms": "1 329 kr",
+        "umoms": "1 063 kr",
+        "db": "-360 kr",
+        "dg": "-34.0%",
+        "antord": "5",
+        "prord": "265 kr"
+    },
+    {
+        "fakturadato": 20240223,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "1 155 kr",
+        "umoms": "924 kr",
+        "db": "-123 kr",
+        "dg": "-13.0%",
+        "antord": "3",
+        "prord": "385 kr"
+    },
+    {
+        "fakturadato": 20240223,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "597 kr",
+        "umoms": "477 kr",
+        "db": "230 kr",
+        "dg": "48.0%",
         "antord": "1",
-        "prord": "59 kr"
+        "prord": "597 kr"
     },
     {
         "fakturadato": 20240223,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "596 kr",
-        "umoms": "476 kr",
-        "db": "144 kr",
-        "dg": "30.3%",
-        "antord": "2",
-        "prord": "298 kr"
+        "mmoms": "4 731 kr",
+        "umoms": "3 784 kr",
+        "db": "-1 242 kr",
+        "dg": "-32.8%",
+        "antord": "14",
+        "prord": "337 kr"
     },
     {
         "fakturadato": 20240222,
