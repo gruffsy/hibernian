@@ -20,7 +20,7 @@ SET DATEFIRST 1;
 WITH Sales AS (
     SELECT 
         SalesEntry.[Date] AS 'Dato', 
-        SalesEntry.[Created by Staff ID] AS 'Selger', 
+        SalesEntry.[Sales Staff] AS 'Selger', 
         CASE DATEPART(WEEKDAY,SalesEntry.[Date]) 
             WHEN 1 THEN 'Mandag' 
             WHEN 2 THEN 'Tirsdag' 
@@ -61,18 +61,18 @@ and (
         or 
         c.[Customer Price Group] <> 'INTERNT'
         )
-     and SalesEntry.[Created by Staff ID] = Staff.[Sales Person]
+     and SalesEntry.[Sales Staff] = Staff.[Sales Person]
 
        
          --AND        Salesperson.Code = Staff.[Sales Person]
 
     GROUP BY SalesEntry.Date, 
-        SalesEntry.[Created by Staff ID], 
+        SalesEntry.[Sales Staff], 
         Staff.[First Name], 
         Staff.[Last Name], 
         Staff.[Store No_]
         --,UPPER(Salesperson.[Job Title])
-    HAVING (SalesEntry.[Created by Staff ID]<>'')
+    HAVING (SalesEntry.[Sales Staff]<>'')
 )
 
 SELECT 
