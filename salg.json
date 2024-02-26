@@ -1,62 +1,52 @@
 [
     {
-        "butikk": "Monday",
-        "Klient": 7,
-        "mmoms": " 908 724 kr",
-        "umoms": " 726 979 kr",
-        "db": " 142 503 kr",
-        "dg": "19.6%",
-        "antord": 801,
-        "prord": " 1 134 kr"
-    },
-    {
         "butikk": "Tuesday",
         "Klient": 7,
-        "mmoms": " 846 716 kr",
-        "umoms": " 677 373 kr",
-        "db": " 153 387 kr",
-        "dg": "22.6%",
-        "antord": 769,
-        "prord": " 1 101 kr"
+        "mmoms": "1 313 340 kr",
+        "umoms": "1 050 672 kr",
+        "db": " 261 134 kr",
+        "dg": "24.9%",
+        "antord": 1197,
+        "prord": " 1 097 kr"
     },
     {
         "butikk": "Wednesday",
         "Klient": 7,
-        "mmoms": " 942 934 kr",
-        "umoms": " 754 347 kr",
-        "db": " 143 103 kr",
-        "dg": "19.0%",
-        "antord": 844,
-        "prord": " 1 117 kr"
+        "mmoms": "1 151 304 kr",
+        "umoms": " 921 043 kr",
+        "db": " 213 397 kr",
+        "dg": "23.2%",
+        "antord": 1129,
+        "prord": " 1 020 kr"
     },
     {
         "butikk": "Thursday",
         "Klient": 7,
-        "mmoms": "1 017 102 kr",
-        "umoms": " 813 682 kr",
-        "db": " 112 377 kr",
-        "dg": "13.8%",
-        "antord": 822,
-        "prord": " 1 237 kr"
+        "mmoms": "1 560 447 kr",
+        "umoms": "1 248 357 kr",
+        "db": " 272 023 kr",
+        "dg": "21.8%",
+        "antord": 1311,
+        "prord": " 1 190 kr"
     },
     {
         "butikk": "Friday",
         "Klient": 7,
-        "mmoms": "1 176 261 kr",
-        "umoms": " 941 009 kr",
-        "db": " 196 326 kr",
-        "dg": "20.9%",
-        "antord": 914,
-        "prord": " 1 287 kr"
+        "mmoms": "1 286 965 kr",
+        "umoms": "1 029 572 kr",
+        "db": " 198 376 kr",
+        "dg": "19.3%",
+        "antord": 1263,
+        "prord": " 1 019 kr"
     },
     {
         "butikk": "Saturday",
         "Klient": 7,
-        "mmoms": "1 364 401 kr",
-        "umoms": "1 091 521 kr",
-        "db": " 205 973 kr",
-        "dg": "18.9%",
-        "antord": 1091,
-        "prord": " 1 251 kr"
+        "mmoms": "1 555 581 kr",
+        "umoms": "1 244 465 kr",
+        "db": " 290 982 kr",
+        "dg": "23.4%",
+        "antord": 1370,
+        "prord": " 1 135 kr"
     }
 ]
