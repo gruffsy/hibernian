@@ -72,11 +72,11 @@ rows = cursor.fetchall()
 column_names = [column[0] for column in cursor.description]
 
 # Save the result as CSV
-with open("../csv/item.csv", "w", newline="") as output_file:
+with open("../csv/item.csv", "w", newline="", encoding='utf-8') as output_file:
     writer = csv.writer(output_file, delimiter=";")
-    # Write the column headers
+    # Skriv kolonneoverskriftene
     writer.writerow(column_names)
-    # Write the rows
+    # Skriv radene
     for row in rows:
         writer.writerow(row)
 
