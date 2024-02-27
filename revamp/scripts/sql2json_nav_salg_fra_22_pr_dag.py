@@ -15,9 +15,9 @@ conn = pyodbc.connect(connection_string)
 
 # Run the SELECT clause
 query = '''
-SELECT 
-    CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) as 'fakturadato',
-   	 CASE 
+select
+	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) as 'fakturadato',
+	     	 CASE 
     	WHEN 
         	th.[Store No_] = 'S150' 
         THEN 
@@ -77,31 +77,51 @@ SELECT
 			th.[Store No_] = 'S140' 
         THEN 
         	'0'      
-    END as 'Klient'
---  , th.[Customer Name]
---  , th.[Customer No_]
---  , c.[Customer Price Group]
- ,cast(sum(th.[Gross Amount])*-1 as int) as 'mmoms'
- ,cast(sum(th.[Net Amount])*-1 as int) as 'umoms'
- ,cast(sum(th.[Net Amount])*-1-sum(th.[Cost Amount])*-1 as int) as 'db'
---  ,cast(sum(th.[Customer Account]) as int) as 'Fakturert'
- 
-FROM [Megaflis_AS].[dbo].[mf_transaction_header__hib] th
-    left join [Hibernian Retail$Customer$437dbf0e-84ff-417a-965d-ed2bb9650972] c
-    on c.No_ = th.[customer no_]
-where 
-th.[Transaction Type] = 2
-and th.[Entry Status] in (0,2)
-and th.[Receipt No_] is not NULL
-and th.[Customer Account] = 0
-group BY
-th.[Date]
-,th.[Store No_]
--- , th.[Customer Name]
---  , th.[Customer No_]
---  , c.[Customer Price Group]
+    END as 'Klient',
+    cast(sum([Total Rounded Amt_])*-1 as int) as 'mmoms',
+    cast(sum(se.[Net Amount])*-1 as int) as 'umoms',
+    cast(sum(se.[Net Amount])*-1-sum(se.[Cost Amount])*-1 as int) as 'db',
+    CASE 
+        WHEN sum(se.[Net Amount]) = 0 THEN 0 
+        ELSE CAST(ROUND(sum(se.[Net Amount] - se.[Cost Amount]) / sum(se.[Net Amount]), 2) AS FLOAT) 
+    END as 'dg',
+	count(distinct th.[Receipt No_]) as 'antord',
+    CASE 
+        WHEN count(distinct th.[Receipt No_]) = 0 THEN 0 
+        ELSE cast(sum(-[Total Rounded Amt_])/count(distinct th.[Receipt No_]) as int)
+    END as 'prord'
+from
+      	[Hibernian Retail$LSC Trans_ Sales Entry$5ecfc871-5d82-43f1-9c54-59685e82318d] se
+inner join [Hibernian Retail$LSC Transaction Header$5ecfc871-5d82-43f1-9c54-59685e82318d] th 
+on 
+	th.[Store No_]=se.[Store No_] and 
+   	th.[POS Terminal No_]=se.[POS Terminal No_] and 
+   	th.[Transaction No_]=se.[Transaction No_] 
+-- INNER JOIN [Hibernian Retail$Store] s 
+-- on
+-- 	s.No_=th.[Store No_]
 
- order by th.[Date]
+LEFT JOIN [Hibernian Retail$Customer$437dbf0e-84ff-417a-965d-ed2bb9650972] c
+on 
+       th.[Customer No_] = c.No_ 
+where 	th.[Transaction Type]=2 
+	and th.[Entry Status] in (0,2)
+
+and 
+	CONVERT(INT, CONVERT(VARCHAR, th.[Date], 112)) BETWEEN 20220101 AND convert(varchar, getdate(), 112)
+	and nullif(th.[Receipt No_],'') is not null
+
+and (
+        c.[Customer Price Group] is null 
+        or 
+        c.[Customer Price Group] <> 'INTERNT'
+        )
+
+group by
+	th.[Date], 
+    th.[Store No_]
+order by
+	th.[Date]
 
 
 '''
