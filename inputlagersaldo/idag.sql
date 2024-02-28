@@ -10,8 +10,8 @@ set
 	
 select 
 butikk,
---fakturadato,
-ferdigmeldtdato,
+fakturadato,
+--ferdigmeldtdato,
 Klient,
 --ordretype,
 sum(m_mva) AS 'mmoms',
@@ -27,7 +27,7 @@ CASE WHEN Ordretype = 1
 
 from f0001.dbo.PRODUKTRANSER_ALLE
 where 
---Fakturadato <> 0
+Fakturadato <> 0
 transaksjonstype = 1
 --and Ordretype = 3
 and antall <> 0
@@ -36,8 +36,8 @@ and Kundeprisgruppe <> 4
 
 group by
 butikk,
---fakturadato,
-ferdigmeldtdato,
+fakturadato,
+--ferdigmeldtdato,
 Klient,
 ordretype
 
