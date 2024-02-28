@@ -30,6 +30,9 @@ WHERE
   AND Fakturadato <> 0
   AND transaksjonstype = 1
   AND Ordretype = 3
+  and antall <> 0
+  and produktnr <> 'a1'
+  and Kundeprisgruppe <> 4
 GROUP BY
   fakturadato,
   butikk,
