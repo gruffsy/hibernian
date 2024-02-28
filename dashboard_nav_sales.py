@@ -78,15 +78,12 @@ select
         THEN 
         	'3'    
     END as 'Klient'
-     ,cast(sum(th.[Gross Amount])*-1 as int) as 'mmoms'
- ,cast(sum(th.[Net Amount])*-1 as int) as 'umoms'
- ,cast(sum(th.[Net Amount])*-1-sum(th.[Cost Amount])*-1 as int) as 'db'
- ,CASE 
-        WHEN sum(th.[Net Amount]) = 0 THEN 0 
-        ELSE CAST(ROUND(sum(th.[Net Amount] - th.[Cost Amount]) / sum(th.[Net Amount]), 2) AS FLOAT) 
-    END as 'dg'
- ,count(distinct th.[Receipt No_]) as 'antord'
-    ,cast(sum(th.[Customer Account]) as int) as 'kreditt'
+     ,sum(th.[Gross Amount])*-1  as mmoms
+ ,sum(th.[Net Amount])*-1 as umoms
+ ,sum(th.[Net Amount])*-1-sum(th.[Cost Amount])*-1 as db
+
+ ,count(distinct th.[Receipt No_]) as antord
+    ,sum(th.[Customer Account]/1.25) as kreditt
 
       	FROM [Megaflis_AS].[dbo].[mf_transaction_header__hib] th
 
