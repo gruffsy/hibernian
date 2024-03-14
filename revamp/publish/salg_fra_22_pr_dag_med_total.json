@@ -25,34 +25,45 @@
         "fakturadato": 20240314,
         "butikk": "Tønsberg",
         "Klient": "3",
-        "mmoms": "12 463 kr",
-        "umoms": "9 970 kr",
-        "db": "-1 332 kr",
-        "dg": "-13.0%",
-        "antord": "1",
-        "prord": "12 463 kr"
+        "mmoms": "13 206 kr",
+        "umoms": "10 565 kr",
+        "db": "-1 529 kr",
+        "dg": "-14.0%",
+        "antord": "2",
+        "prord": "6 603 kr"
     },
     {
         "fakturadato": 20240314,
         "butikk": "Arendal",
         "Klient": "4",
-        "mmoms": "34 959 kr",
-        "umoms": "27 967 kr",
-        "db": "-4 078 kr",
-        "dg": "-15.0%",
-        "antord": "1",
-        "prord": "34 959 kr"
+        "mmoms": "53 875 kr",
+        "umoms": "43 100 kr",
+        "db": "-3 147 kr",
+        "dg": "-7.0%",
+        "antord": "3",
+        "prord": "17 958 kr"
+    },
+    {
+        "fakturadato": 20240314,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "2 578 kr",
+        "umoms": "2 062 kr",
+        "db": "177 kr",
+        "dg": "9.0%",
+        "antord": "2",
+        "prord": "1 289 kr"
     },
     {
         "fakturadato": 20240314,
         "butikk": "Larvik",
         "Klient": "6",
-        "mmoms": "501 kr",
-        "umoms": "400 kr",
-        "db": "-126 kr",
-        "dg": "-32.0%",
-        "antord": "1",
-        "prord": "501 kr"
+        "mmoms": "1 371 kr",
+        "umoms": "1 096 kr",
+        "db": "-495 kr",
+        "dg": "-45.0%",
+        "antord": "4",
+        "prord": "342 kr"
     },
     {
         "fakturadato": 20240314,
@@ -69,12 +80,12 @@
         "fakturadato": 20240314,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "85 335 kr",
-        "umoms": "68 265 kr",
-        "db": "-5 284 kr",
-        "dg": "-7.7%",
-        "antord": "11",
-        "prord": "7 757 kr"
+        "mmoms": "108 442 kr",
+        "umoms": "86 751 kr",
+        "db": "-4 742 kr",
+        "dg": "-5.5%",
+        "antord": "19",
+        "prord": "5 707 kr"
     },
     {
         "fakturadato": 20240313,
