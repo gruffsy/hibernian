@@ -1,25 +1,80 @@
 [
     {
         "fakturadato": 20240321,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "396 kr",
+        "umoms": "316 kr",
+        "db": "77 kr",
+        "dg": "25.0%",
+        "antord": "2",
+        "prord": "198 kr"
+    },
+    {
+        "fakturadato": 20240321,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "378 kr",
+        "umoms": "302 kr",
+        "db": "-38 kr",
+        "dg": "-13.0%",
+        "antord": "1",
+        "prord": "378 kr"
+    },
+    {
+        "fakturadato": 20240321,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "8 593 kr",
+        "umoms": "6 874 kr",
+        "db": "2 801 kr",
+        "dg": "41.0%",
+        "antord": "8",
+        "prord": "1 074 kr"
+    },
+    {
+        "fakturadato": 20240321,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "1 602 kr",
+        "umoms": "1 281 kr",
+        "db": "779 kr",
+        "dg": "61.0%",
+        "antord": "4",
+        "prord": "400 kr"
+    },
+    {
+        "fakturadato": 20240321,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "455 kr",
+        "umoms": "364 kr",
+        "db": "211 kr",
+        "dg": "58.0%",
+        "antord": "3",
+        "prord": "151 kr"
+    },
+    {
+        "fakturadato": 20240321,
         "butikk": "Bamble",
         "Klient": "7",
-        "mmoms": "260 kr",
-        "umoms": "208 kr",
-        "db": "-501 kr",
-        "dg": "-241.0%",
-        "antord": "1",
-        "prord": "260 kr"
+        "mmoms": "1 284 kr",
+        "umoms": "1 027 kr",
+        "db": "-502 kr",
+        "dg": "-49.0%",
+        "antord": "2",
+        "prord": "642 kr"
     },
     {
         "fakturadato": 20240321,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "260 kr",
-        "umoms": "208 kr",
-        "db": "-501 kr",
-        "dg": "-240.9%",
-        "antord": "1",
-        "prord": "260 kr"
+        "mmoms": "12 708 kr",
+        "umoms": "10 164 kr",
+        "db": "3 328 kr",
+        "dg": "32.7%",
+        "antord": "20",
+        "prord": "635 kr"
     },
     {
         "fakturadato": 20240320,
