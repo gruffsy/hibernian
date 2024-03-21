@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20240321,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "260 kr",
+        "umoms": "208 kr",
+        "db": "-501 kr",
+        "dg": "-241.0%",
+        "antord": "1",
+        "prord": "260 kr"
+    },
+    {
+        "fakturadato": 20240321,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "260 kr",
+        "umoms": "208 kr",
+        "db": "-501 kr",
+        "dg": "-240.9%",
+        "antord": "1",
+        "prord": "260 kr"
+    },
+    {
         "fakturadato": 20240320,
         "butikk": "Skien",
         "Klient": "0",
