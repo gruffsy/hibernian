@@ -39,7 +39,7 @@ WITH Sales AS (
     FROM [Hibernian Retail$LSC Staff$5ecfc871-5d82-43f1-9c54-59685e82318d] Staff, 
         [Megaflis_AS].[dbo].[mf_trans_sales_entry__hib] SalesEntry
         
-    inner join [Hibernian Retail$LSC Transaction Header$5ecfc871-5d82-43f1-9c54-59685e82318d] th 
+    inner join [mf_transaction_header__hib] th 
 on 
 	th.[Store No_]=SalesEntry.[Store No_] and 
    	th.[POS Terminal No_]=SalesEntry.[POS Terminal No_] and 
