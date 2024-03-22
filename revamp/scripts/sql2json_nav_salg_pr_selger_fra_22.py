@@ -62,7 +62,7 @@ and (
         c.[Customer Price Group] <> 'INTERNT'
         )
      and SalesEntry.[Sales Staff] = Staff.[Sales Person]
-
+and th.[Customer Account] = 0
        
          --AND        Salesperson.Code = Staff.[Sales Person]
 
