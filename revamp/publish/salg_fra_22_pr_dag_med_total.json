@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20240416,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "484 kr",
+        "umoms": "387 kr",
+        "db": "-32 kr",
+        "dg": "-8.0%",
+        "antord": "1",
+        "prord": "484 kr"
+    },
+    {
+        "fakturadato": 20240416,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "484 kr",
+        "umoms": "387 kr",
+        "db": "-32 kr",
+        "dg": "-8.3%",
+        "antord": "1",
+        "prord": "484 kr"
+    },
+    {
         "fakturadato": 20240415,
         "butikk": "Skien",
         "Klient": "0",
