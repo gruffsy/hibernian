@@ -23,6 +23,17 @@
     },
     {
         "fakturadato": 20240418,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "-599 kr",
+        "umoms": "-479 kr",
+        "db": "-27 kr",
+        "dg": "6.0%",
+        "antord": "1",
+        "prord": "-599 kr"
+    },
+    {
+        "fakturadato": 20240418,
         "butikk": "Larvik",
         "Klient": "6",
         "mmoms": "144 kr",
@@ -36,12 +47,12 @@
         "fakturadato": 20240418,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "856 kr",
-        "umoms": "684 kr",
-        "db": "-272 kr",
-        "dg": "-39.8%",
-        "antord": "3",
-        "prord": "285 kr"
+        "mmoms": "257 kr",
+        "umoms": "205 kr",
+        "db": "-299 kr",
+        "dg": "-145.9%",
+        "antord": "4",
+        "prord": "64 kr"
     },
     {
         "fakturadato": 20240417,
