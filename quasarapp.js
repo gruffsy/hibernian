@@ -112,14 +112,7 @@ new Vue({
         format24h: true,
         pluralDay: "dager",
       },
-      stockColumns: [
-        { name: 'Prodno', label: 'Produktnummer', field: 'Prodno', sortable: true },
-        { name: 'Beskrivelse', label: 'Beskrivelse', field: 'Beskrivelse', sortable: true },
-        { name: 'antall på lager', label: 'Antall på lager', field: 'antall på lager', sortable: true },
-        { name: 'antall pr pall', label: 'Antall pr pall', field: 'antall pr pall', sortable: true },
-        { name: 'Paller på lager', label: 'Paller på lager', field: 'Paller på lager', sortable: true },
-        { name: 'Paller på vei', label: 'Paller på vei', field: 'Paller på vei', sortable: true },
-      ],
+     
     };
   },
   methods: {
