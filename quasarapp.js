@@ -119,9 +119,8 @@ new Vue({
         { name: "antall pr pall", label: "Antall pr pall", field: "antall pr pall" },
         { name: "Paller på lager", label: "Paller på lager", field: "Paller på lager" },
         { name: "Paller på vei", label: "Paller på vei", field: "Paller på vei" },
-        { name: "DelDt", label: "DelDt", field: "DelDt" }, // Dette kan trenge rettelse
       ],
-    
+      expanded: [], // Utvidede rader
     };
   },
   methods: {
@@ -335,11 +334,13 @@ new Vue({
     productOrders() {
       const ordersMap = {};
       this.ordersStock.forEach((order) => {
-        if (!ordersMap[order.Prodno]) {
-          ordersMap[order.Prodno] = [];
+        const prodno = order.Prodno;
+        if (!ordersMap[prodno]) {
+          ordersMap[prodno] = [];
         }
-        ordersMap[order.Prodno].push(order);
+        ordersMap[prodno].push(order);
       });
+      console.log("Orders map:", ordersMap);
       return ordersMap;
     },
   },
