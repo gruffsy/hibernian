@@ -216,17 +216,24 @@ new Vue({
         .then((data) => (this.bamble = data));
     },
     getStock() {
-      fetch("./json/lager_stock.sql.json")
+      fetch('./json/lager_stock.sql.json')
         .then((response) => response.json())
-        .then((data) => (this.stock = data));
+        .then((data) => {
+          this.stock = data; // Lagre lagerbeholdningen
+          console.log("Stock Data:", data); // Konsollrapport for lagerdata
+        });
     },
     getOrdersStock() {
-      fetch("./json/bestillinger_stock.sql.json")
-      .then((response) => response.json())
-      .then((data) => (this.ordersStock = data));
+      fetch('./json/bestillinger_stock.sql.json')
+        .then((response) => response.json())
+        .then((data) => {
+          this.ordersStock = data; // Lagre tilleggsinformasjonen
+          console.log("Orders Stock Data:", data); // Konsollrapport for tilleggsdata
+          this.mergeStock(); // Slå sammen dataene
+        });
     },
-    
     mergeStock() {
+      console.log("Slår sammen data...");
       this.stock.forEach((item) => {
         const orderStock = this.ordersStock.find(
           (order) => order.Prodno === item.Prodno
@@ -234,6 +241,7 @@ new Vue({
         if (orderStock) {
           item.ordersStock = orderStock; // Legg til tilleggsinformasjonen i lagerdataene
         }
+        console.log("Item after merge:", item); // Konsollrapport etter sammenslåing
       });
     },
     toggleExpand(props) {
