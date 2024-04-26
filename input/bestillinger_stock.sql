@@ -9,7 +9,8 @@ set
 SELECT [ProdNo]
      , [Descr]
      , [NoInvoAb]
-     , [DelDt]
+    ,DATEPART(WEEK, CAST(DelDt AS DATE)) AS uke
+  ,DATEPART(YEAR, CAST(DelDt AS DATE)) AS år
 FROM [F0015].[dbo].[OrdLn]
 where trtp = 6
 and NoInvoAb <> 0
