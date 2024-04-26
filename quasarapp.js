@@ -220,6 +220,11 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.stock = data));
     },
+    getOrdersStock() {
+      fetch("./json/bestillinger_stock.sql.json")
+      .then((response) => response.json())
+      .then((data) => (this.ordersStock = data));
+    },
     
     mergeStock() {
       this.stock.forEach((item) => {
