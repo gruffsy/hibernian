@@ -381,35 +381,40 @@
                 <div class="q-px-md q-py-md">
                  
                   <q-table
-      title="Lagerbeholdning med Utvidelse"
-      :data="stock"
-      :columns="tableColumns"
-      dense
-      :row-key="'Prodno'"
-      :expanded.sync="expanded"
-    >
-      <!-- Utvidelsesdelen -->
-      <template v-slot:body-cell-expand="props">
-        <q-tr>
-          <q-td colspan="99">
-            <q-list>
-              <q-item
-                v-if="productOrders[props.row.Prodno] && productOrders[props.row.Prodno].length > 0"
-                v-for="order in productOrders[props.row.Prodno]"
-                :key="order.id"
-              >
-                <q-item-section>
-                  ProdNo: {{ order.ProdNo }}, Week/Year: {{ order.Week_Year }}
-                </q-item-section>
-              </q-item>
-              <q-item v-else>
-                <q-item-section>Ingen ordre funnet for dette produktet</q-item-section>
-              </q-item>
-            </q-list>
-          </q-td>
-        </q-tr>
-      </template>
-    </q-table>
+                  title="Lagerbeholdning med Utvidelse"
+                  :data="stock"
+                  :columns="tableColumns"
+                  dense
+                  :row-key="'Prodno'"
+                  :expanded.sync="expanded"
+                >
+                  <!-- Utvidelsesdelen -->
+                  <template v-slot:body-cell-expand="props">
+                    <q-btn
+                      color="primary"
+                      @click="toggleExpansion(props.row.Prodno)"
+                      icon="expand_more"
+                    />
+                  </template>
+            
+                  <!-- Detaljer som vises når raden er utvidet -->
+                  <template v-slot:body-cell-expand="props">
+                    <q-tr>
+                      <q-td colspan="99">
+                        <q-list>
+                          <q-item
+                            v-for="order in productOrders[props.row.Prodno] || []"
+                            :key="order.id"
+                          >
+                            <q-item-section>
+                              ProdNo: {{ order.ProdNo }}, Week/Year: {{ order.Week_Year }}
+                            </q-item-section>
+                          </q-item>
+                        </q-list>
+                      </q-td>
+                    </q-tr>
+                  </template>
+                </q-table>
  
                  
                  

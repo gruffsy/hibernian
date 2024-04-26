@@ -119,7 +119,13 @@ new Vue({
         { name: "antall pr pall", label: "Antall pr pall", field: "antall pr pall" },
         { name: "Paller på lager", label: "Paller på lager", field: "Paller på lager" },
         { name: "Paller på vei", label: "Paller på vei", field: "Paller på vei" },
-        { name: "expand", label: "", align: "center", render: true },
+        {
+          name: "expand",
+          label: "",
+          align: "center",
+          field: "expand",
+          sortable: false,
+        },
       ],
       expanded: [],
     };
@@ -233,6 +239,14 @@ new Vue({
       fetch("./json/bestillinger_stock.sql.json")
       .then((response) => response.json())
       .then((data) => (this.ordersStock = data));
+    },
+    toggleExpansion(prodNo) {
+      const index = this.expanded.indexOf(prodNo);
+      if (index >= 0) {
+        this.expanded.splice(index, 1); // Fjern fra expanded hvis allerede utvidet
+      } else {
+        this.expanded.push(prodNo); // Legg til hvis ikke utvidet
+      }
     },
     getYesterday() {
       fetch("./json/igar.sql.json")
