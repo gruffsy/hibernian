@@ -112,15 +112,14 @@ new Vue({
         format24h: true,
         pluralDay: "dager",
       },
-      tableColumns: [
-        { name: "Prodno", label: "Prodno", field: "Prodno" },
-        { name: "Beskrivelse", label: "Beskrivelse", field: "Beskrivelse" },
-        { name: "antall på lager", label: "Antall på lager", field: "antall på lager" },
-        { name: "antall pr pall", label: "Antall pr pall", field: "antall pr pall" },
-        { name: "Paller på lager", label: "Paller på lager", field: "Paller på lager" },
-        { name: "Paller på vei", label: "Paller på vei", field: "Paller på vei" },
+      stockColumns: [
+        { name: 'Prodno', label: 'Produktnummer', field: 'Prodno', sortable: true },
+        { name: 'Beskrivelse', label: 'Beskrivelse', field: 'Beskrivelse', sortable: true },
+        { name: 'antall på lager', label: 'Antall på lager', field: 'antall på lager', sortable: true },
+        { name: 'antall pr pall', label: 'Antall pr pall', field: 'antall pr pall', sortable: true },
+        { name: 'Paller på lager', label: 'Paller på lager', field: 'Paller på lager', sortable: true },
+        { name: 'Paller på vei', label: 'Paller på vei', field: 'Paller på vei', sortable: true },
       ],
-      expanded: [], // Utvidede rader
     };
   },
   methods: {
@@ -331,18 +330,7 @@ new Vue({
         return acc;
       }, {});
     },
-    productOrders() {
-      const ordersMap = {};
-      this.ordersStock.forEach((order) => {
-        const prodno = order.Prodno;
-        if (!ordersMap[prodno]) {
-          ordersMap[prodno] = [];
-        }
-        ordersMap[prodno].push(order);
-      });
-      console.log("Orders map:", ordersMap);
-      return ordersMap;
-    },
+    
   },
   mounted() {
     this.getAllDays();

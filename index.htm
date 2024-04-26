@@ -381,13 +381,13 @@
                 <div class="q-px-md q-py-md">
                  
                   <q-table
-                  title="Lagerbeholdning med Utvidelse"
+                  title="Lager Stock"
                   :data="stock"
-                  :columns="tableColumns"
+                  :columns="stockColumns"
                   row-key="Prodno"
-                  dense
                 >
-                  <!-- Header-oppsett -->
+            
+                  <!-- Header template -->
                   <template v-slot:header="props">
                     <q-tr :props="props">
                       <q-th auto-width />
@@ -401,21 +401,19 @@
                     </q-tr>
                   </template>
             
-                  <!-- Tabellens kropp -->
+                  <!-- Body template with expandable row -->
                   <template v-slot:body="props">
                     <q-tr :props="props">
-                      <!-- Utvidelsesknapp -->
                       <q-td auto-width>
                         <q-btn
                           size="sm"
-                          color="primary"
+                          color="accent"
                           round
                           dense
                           @click="props.expand = !props.expand"
                           :icon="props.expand ? 'remove' : 'add'"
                         />
                       </q-td>
-                      <!-- Gjennomgang av verdier i rader -->
                       <q-td
                         v-for="col in props.cols"
                         :key="col.name"
@@ -424,31 +422,22 @@
                         {{ col.value }}
                       </q-td>
                     </q-tr>
-            
-                    <!-- Raden som utvides -->
                     <q-tr v-show="props.expand" :props="props">
-                      <q-td colspan="99">
-                        <!-- Legger til ekstra data -->
-                        <div>
-                          <h3>Utvidet informasjon</h3>
-                          <q-list>
-                            <q-item
-                              v-if="productOrders[props.row.Prodno]"
-                              v-for="order in productOrders[props.row.Prodno]"
-                              :key="order.id"
-                            >
-                              <q-item-section>
-                                Prodno: {{ order.Prodno }}, Beskrivelse: {{ order.Descr }}, Uke/År: {{ order.Week_Year }}
-                              </q-item-section>
-                            </q-item>
-                            <q-item v-else>
-                              <q-item-section>Ingen ordre funnet.</q-item-section>
-                            </q-item>
-                          </q-list>
+                      <q-td colspan="100%">
+                        <div class="q-mb-md">
+                          <!-- Utvidelsesinnhold -->
+                          <strong>Produktbeskrivelse:</strong> {{ props.row.Beskrivelse }}
+                          <br>
+                          <strong>Paller på lager:</strong> {{ props.row["Paller på lager"] }}
+                          <br>
+                          <strong>Paller på vei:</strong> {{ props.row["Paller på vei"] }}
+                          <br>
+                          <strong>Antall på lager:</strong> {{ props.row["antall på lager"] }}
                         </div>
                       </q-td>
                     </q-tr>
                   </template>
+            
                 </q-table>
                  
                  
