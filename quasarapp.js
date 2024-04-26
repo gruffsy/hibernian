@@ -20,6 +20,7 @@ new Vue({
       idagselger: [],
       updated: [],
       stock: [],
+      ordersStock: [],
       filter: "",
       filterselger: "",
       showDatePicker: false,
@@ -320,6 +321,16 @@ new Vue({
         return acc;
       }, {});
     },
+    productOrders() {
+      const ordersMap = {};
+      this.ordersStock.forEach((order) => {
+        if (!ordersMap[order.ProdNo]) {
+          ordersMap[order.ProdNo] = [];
+        }
+        ordersMap[order.ProdNo].push(order);
+      });
+      return ordersMap;
+    },
   },
   mounted() {
     this.getAllDays();
@@ -329,6 +340,7 @@ new Vue({
     // this.getToday();
     // this.getBamble();
     this.getStock();
+    this.getOrdersStock();
     // this.getYesterday();
     // this.getDayBeforeYesterday();
     this.getTime();
