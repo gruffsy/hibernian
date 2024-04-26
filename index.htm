@@ -384,31 +384,60 @@
                   title="Lagerbeholdning med Utvidelse"
                   :data="stock"
                   :columns="tableColumns"
-                  dense
-                  :row-key="'Prodno'"
-                  :expanded.sync="expanded"
+                  row-key="Prodno"
                 >
-                  <!-- Utvidelsesdelen -->
-                  <template v-slot:body-cell-expand="props">
-                    <q-btn
-                      color="primary"
-                      @click="toggleExpansion(props.row.Prodno)"
-                      icon="expand_more"
-                    />
+                  <template v-slot:header="props">
+                    <q-tr :props="props">
+                      <!-- Kolonnen for utvidelsesknappen -->
+                      <q-th auto-width />
+                      <!-- Gjennomgang av kolonner -->
+                      <q-th
+                        v-for="col i props.cols"
+                        :key="col.name"
+                        :props="props"
+                      >
+                        {{ col.label }}
+                      </q-th>
+                    </q-tr>
                   </template>
             
-                  <!-- Detaljer som vises når raden er utvidet -->
-                  <template v-slot:body-cell-expand="props">
-                    <q-tr>
+                  <template v-slot:body="props">
+                    <q-tr :props="props">
+                      <!-- Utvidelsesknapp -->
+                      <q-td auto-width>
+                        <q-btn
+                          size="sm"
+                          color="primary"
+                          round
+                          dense
+                          @click="props.expand = !props.expand"
+                          :icon="props.expand ? 'remove' : 'add'"
+                        />
+                      </q-td>
+                      <!-- Gjennomgang av verdier i rader -->
+                      <q-td
+                        v-for="col i props.cols"
+                        :key="col.name"
+                        :props="props"
+                      >
+                        {{ col.value }}
+                      </q-td>
+                    </q-tr>
+                    <!-- Raden som utvides -->
+                    <q-tr v-show="props.expand" :props="props">
                       <q-td colspan="99">
                         <q-list>
                           <q-item
-                            v-for="order in productOrders[props.row.Prodno] || []"
+                            v-if="productOrders[props.row.Prodno]"
+                            v-for="order i productOrders[props.row.Prodno]"
                             :key="order.id"
                           >
                             <q-item-section>
-                              ProdNo: {{ order.ProdNo }}, Week/Year: {{ order.Week_Year }}
+                              Order: {{ order.ProdNo }} - Beskrivelse: {{ order.Descr }} - Uke/År: {{ order.Week_Year }}
                             </q-item-section>
+                          </q-item>
+                          <q-item v-else>
+                            <q-item-section>Ingen ordre funnet for dette produktet.</q-item-section>
                           </q-item>
                         </q-list>
                       </q-td>

@@ -113,21 +113,14 @@ new Vue({
         pluralDay: "dager",
       },
       tableColumns: [
-        { name: "Prodno", label: "Prodno", field: "Prodno" },
+        { name: "Prodno", label: "Produktnummer", field: "Prodno" },
         { name: "Beskrivelse", label: "Beskrivelse", field: "Beskrivelse" },
         { name: "antall på lager", label: "Antall på lager", field: "antall på lager" },
         { name: "antall pr pall", label: "Antall pr pall", field: "antall pr pall" },
         { name: "Paller på lager", label: "Paller på lager", field: "Paller på lager" },
         { name: "Paller på vei", label: "Paller på vei", field: "Paller på vei" },
-        {
-          name: "expand",
-          label: "",
-          align: "center",
-          field: "expand",
-          sortable: false,
-        },
       ],
-      expanded: [],
+    
     };
   },
   methods: {
@@ -240,14 +233,7 @@ new Vue({
       .then((response) => response.json())
       .then((data) => (this.ordersStock = data));
     },
-    toggleExpansion(prodNo) {
-      const index = this.expanded.indexOf(prodNo);
-      if (index >= 0) {
-        this.expanded.splice(index, 1); // Fjern fra expanded hvis allerede utvidet
-      } else {
-        this.expanded.push(prodNo); // Legg til hvis ikke utvidet
-      }
-    },
+    
     getYesterday() {
       fetch("./json/igar.sql.json")
         .then((response) => response.json())
