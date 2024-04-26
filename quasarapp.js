@@ -220,10 +220,19 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.stock = data));
     },
-    getOrdersStock() {
-      fetch("./json/bestillinger_stock.sql.json")
-      .then((response) => response.json())
-      .then((data) => (this.ordersStock = data));
+    
+    mergeStock() {
+      this.stock.forEach((item) => {
+        const orderStock = this.ordersStock.find(
+          (order) => order.Prodno === item.Prodno
+        );
+        if (orderStock) {
+          item.ordersStock = orderStock; // Legg til tilleggsinformasjonen i lagerdataene
+        }
+      });
+    },
+    toggleExpand(props) {
+      props.expand = !props.expand; // Utvid eller slå sammen raden
     },
     
     getYesterday() {
