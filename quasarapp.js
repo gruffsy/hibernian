@@ -335,10 +335,10 @@ new Vue({
     productOrders() {
       const ordersMap = {};
       this.ordersStock.forEach((order) => {
-        if (!ordersMap[order.ProdNo]) {
-          ordersMap[order.ProdNo] = [];
+        if (!ordersMap[order.Prodno]) {
+          ordersMap[order.Prodno] = [];
         }
-        ordersMap[order.ProdNo].push(order);
+        ordersMap[order.Prodno].push(order);
       });
       return ordersMap;
     },

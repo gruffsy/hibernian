@@ -7,7 +7,7 @@ SET
 set
     noexec off
 SELECT 
-    [ProdNo], 
+    [ProdNo] as 'Prodno', 
     [Descr], 
     [NoInvoAb], 
     CASE 
