@@ -237,24 +237,10 @@ new Vue({
         .then((data) => {
           this.ordersStock = data; // Lagre tilleggsinformasjonen
           console.log("Orders Stock Data:", data); // Konsollrapport for tilleggsdata
-          this.mergeStock(); // Slå sammen dataene
+         
         });
     },
-    mergeStock() {
-      console.log("Slår sammen data...");
-      this.stock.forEach((item) => {
-        const orderStock = this.ordersStock.find(
-          (order) => order.Prodno === item.Prodno
-        );
-        if (orderStock) {
-          item.ordersStock = orderStock; // Legg til tilleggsinformasjonen i lagerdataene
-        }
-        console.log("Item after merge:", item); // Konsollrapport etter sammenslåing
-      });
-    },
-    toggleExpand(props) {
-      props.expand = !props.expand; // Utvid eller slå sammen raden
-    },
+ 
     
     getYesterday() {
       fetch("./json/igar.sql.json")
