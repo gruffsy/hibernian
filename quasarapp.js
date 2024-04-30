@@ -18,6 +18,8 @@ new Vue({
       YearCurrent: [],
       LastYear: [],
       idagselger: [],
+      manedSelger: [],
+      aarSelger: [],
       updated: [],
       stock: [],
       ordersStock: [],
@@ -25,6 +27,7 @@ new Vue({
       filterselger: "",
       showDatePicker: false,
       tab: "dag",
+      selgerTab: "idag_selger",
       displayedTables: 3,
       pagination: {
         rowsPerPage: 300, // current rows per page being displayed
@@ -280,6 +283,16 @@ new Vue({
         .then((response) => response.json())
         .then((data) => (this.idagselger = data));
     },
+    getManedSelger(){
+      fetch("./revamp/publish/salg_pr_selger_fra_22_pr_måned.json")
+        .then((response) => response.json())
+        .then((data) => (this.manedSelger = data));
+    },
+    getAarSelger() {
+      fetch("./revamp/publish/salg_pr_selger_fra_22_pr_år.json")
+        .then((response) => response.json())
+        .then((data) => (this.aarSelger = data));
+    },
    
     getIaar() {
       fetch("./json/iaar.sql.json")
@@ -358,6 +371,8 @@ new Vue({
     this.getMonthCompare();
     // this.getLordagSelger();
     this.getIdagSelger();
+    this.getManedSelger();
+    this.getAarSelger();
     // this.getIgarSelger();
     // this.getManedNaaSelger();
     // this.getIaarSelger();
