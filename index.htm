@@ -317,7 +317,7 @@
 
               <q-tab-panel name="selger">
                 <q-tab-panels v-model="selgerTab" animated>
-                  <q-tab-panel name="idag_selger" label="PER DAG">
+                  <q-tab-panel name="idag_selger" label="Dag">
                     <div class="column">
                       <div class="row">
                         <div>
@@ -367,8 +367,10 @@
                             </q-table>
                           </div>
                         </div>
-                      </div></div
-                  ></q-tab-panel>
+                      </div>
+                    </div>
+                  </q-tab-panel>
+            
                   <q-tab-panel name="måned_selger" label="Måned">
                     <div class="q-px-md q-py-md">
                       <q-table
@@ -378,8 +380,10 @@
                         virtual-scroll
                         :pagination.sync="pagination"
                         :rows-per-page-options="[0]"
-                      /></div
-                  ></q-tab-panel>
+                      />
+                    </div>
+                  </q-tab-panel>
+            
                   <q-tab-panel name="år_selger" label="År">
                     <div class="q-px-md q-py-md">
                       <q-table
