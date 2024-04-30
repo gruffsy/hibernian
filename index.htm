@@ -370,13 +370,14 @@
               </q-tab-panel>
 
               <q-tab-panel name="stock">
+                <div class="q-px-md q-py-md">
                 <q-input
                   debounce="300"
                   v-model="filter"
                   placeholder="Søk"
                   square outline
                   ><template v-slot:append> <q-icon name="search" /> </template
-                ></q-input>
+                ></q-input></div>
                 <div class="q-px-md q-py-md">
                   <!-- <q-table
                     title="Lagerbehldning Stock Supply"
