@@ -97,6 +97,13 @@ new Vue({
           headerStyle: "max-width: 50px",
         },
       ],
+      stockColumns: [
+        { name: 'Prodno', label: 'Prodno', field: row => row.Prodno, align: 'left', sortable: true },
+        { name: 'Beskrivelse', label: 'Beskrivelse', field: row => row.Beskrivelse, align: 'left', sortable: true },
+        { name: 'antall_lager', label: 'Antall på lager', field: row => row['antall på lager'], align: 'right', sortable: true },
+        { name: 'paller_lager', label: 'Paller på lager', field: row => row['Paller på lager'], align: 'right', sortable: true },
+        { name: 'paller_vei', label: 'Paller på vei', field: row => row['Paller på vei'], align: 'right', sortable: true }
+      ]
       myLocale: {
         /* starting with Sunday */
         days: "Søndag_Mandag_Tirsdag_Onsdag_Torsdag_Fredag_Lørdag".split("_"),
@@ -224,7 +231,7 @@ new Vue({
         });
     },
     getOrdersStock() {
-      fetch('./json/bestillinger_stock.sql.json')
+      fetch('./revamp/publish/merged_stock_orders.json')
         .then((response) => response.json())
         .then((data) => {
           this.ordersStock = data; // Lagre tilleggsinformasjonen
