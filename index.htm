@@ -416,48 +416,46 @@
                     class="bg-grey-4 text-body shadow-5"
 
                   >
-                    <!-- Body template med utvidbar rad -->
-                    <template v-slot:body="props">
-                      <q-tr :props="props">
-                        <q-td auto-width>
-                          <q-btn
-                            size="sm"
-                            color="accent"
-                            round
-                            dense
-                            @click="props.expand = !props.expand"
-                            :icon="props.expand ? 'remove' : 'add'"
-                          />
-                        </q-td>
-                        <q-td
-                          v-for="col in props.cols"
-                          :key="col.name"
-                          :props="props"
-                        >
-                          {{ col.field(props.row) }}
-                        </q-td>
-                      </q-tr>
-                      <q-tr v-show="props.expand" :props="props">
-                        <q-td colspan="100%">
-                          <div class="text-left">
-                            <div v-if="props.row['Bestilling på vei']">
-                              <strong>Bestilling på vei:</strong>
-                              <ul>
-                                <li
-                                  v-for="order in props.row['Bestilling på vei']"
-                                  :key="order.Ukenr"
-                                >
-                                  Ukenr: {{ order.Ukenr }}, Antall: {{
-                                  order.Antall }}
-                                </li>
-                              </ul>
-                            </div>
-                            <div v-else>Ingen bestilling på vei.</div>
-                          </div>
-                        </q-td>
-                      </q-tr>
-                    </template>
-                  </q-table>
+                     <!-- Custom header template -->
+      <template v-slot:header="props">
+        <q-tr :props="props">
+          <q-th v-for="col in props.cols" :key="col.name" :props="props">
+            {{ col.label }}
+          </q-th>
+        </q-tr>
+      </template>
+
+      <!-- Custom body template -->
+      <template v-slot:body="props">
+        <q-tr :props="props">
+          <q-td v-for="col in props.cols" :key="col.name" :props="props">
+            <template v-if="col.name === 'expand'">
+              <q-btn size="sm" color="accent" round dense @click="props.expand = !props.expand" :icon="props.expand ? 'remove' : 'add'" />
+            </template>
+            <template v-else>
+              {{ col.field(props.row) }}
+            </template>
+          </q-td>
+        </q-tr>
+        <q-tr v-show="props.expand" :props="props">
+          <q-td colspan="100%">
+            <div class="text-left">
+              <div v-if="props.row['Bestilling på vei']">
+                <strong>Bestilling på vei:</strong>
+                <ul>
+                  <li v-for="order in props.row['Bestilling på vei']" :key="order.Ukenr">
+                    Ukenr: {{ order.Ukenr }}, Antall: {{ order.Antall }}
+                  </li>
+                </ul>
+              </div>
+              <div v-else>
+                Ingen bestilling på vei.
+              </div>
+            </div>
+          </q-td>
+        </q-tr>
+      </template>
+    </q-table>
                 </div>
               </q-tab-panel>
             </q-tab-panels>
