@@ -1,37 +1,44 @@
 import json
 import re
+import json5
 
 def clean_json_string(json_string):
-    # Replace any invalid control characters
+    # Replace any invalid control characters with an empty string
     json_string = re.sub(r'[\x00-\x1F\x7F]', '', json_string)
     return json_string
 
 def read_json_file(filename):
     with open(filename, "r", encoding="utf-8-sig") as file:
-        data = file.read()
+        content = file.read()
 
-        # Clean the JSON string
-        data = clean_json_string(data)
+    # Clean the JSON string from any invalid characters
+    content = clean_json_string(content)
 
-        return json.loads(data)
+    # Use json5 for parsing, which is more tolerant
+    return json5.loads(content)
+
+def convert_to_utf8(filename, output_filename):
+    """Converts a file from UTF-8 with BOM to standard UTF-8."""
+    with open(filename, "r", encoding="utf-8-sig") as file:
+        content = file.read()
+
+    # Write the content back in standard UTF-8
+    with open(output_filename, "w", encoding="utf-8") as outfile:
+        outfile.write(content)
 
 # Define the file paths
-json1_file = "../json/lager_stock.sql.json"
-json2_file = "../../json/bestillinger_stock.sql.json"
-output_file = "../publish/merged_stock_orders.json"
+json1_input_file = "../../json/lager_stock.sql.json"
+json2_input_file = "../../json/bestillinger_stock.sql.json"
+json1_file = "lager_stock_utf8.json"
+json2_file = "bestillinger_stock_utf8.json"
+convert_to_utf8(json1_input_file, json1_file)
+convert_to_utf8(json2_input_file, json2_file)
 
 # Load the data from JSON 1
 json1_data = read_json_file(json1_file)
 
 # Load the data from JSON 2
 json2_data = read_json_file(json2_file)
-# Load the data from JSON 1
-with open(json1_file, "r") as file1:
-    json1_data = json.load(file1)
-
-# Load the data from JSON 2
-with open(json2_file, "r") as file2:
-    json2_data = json.load(file2)
 
 # Convert json1_data to a dictionary for easier merging
 json1_dict = {item["Prodno"]: item for item in json1_data}
@@ -50,8 +57,11 @@ for item2 in json2_data:
 # Convert back to list format
 merged_data = list(json1_dict.values())
 
+# Define the output path
+output_file = "../publish/merged_stock_orders.json"
+
 # Save the merged data to a new file
-with open(output_file, "w") as outfile:
+with open(output_file, "w", encoding="utf-8") as outfile:
     json.dump(merged_data, outfile, indent=4)
 
 print(f"Merged data saved to {output_file}")
