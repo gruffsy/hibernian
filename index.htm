@@ -323,60 +323,53 @@
                 </q-tabs>
                 <q-tab-panels v-model="selgerTab" animated>
                   <q-tab-panel name="idag_selger">
-                    <div class="column">
-                      <div class="row">
-                        <div>
-                          
-                          <div class="q-px-md q-py-md">
-                            <q-btn
-                              color="grey-4"
-                              text-color="grey-9"
-                              icon="date_range"
-                              label="Velg Dato"
-                              @click="showDatePicker = !showDatePicker"
-                            />
-                          </div>
-                          <div class="q-px-md q-py-md" v-if="showDatePicker">
-                            <q-date
-                              v-model="filterselger"
-                              :options="dateOptions"
-                              mask="YYYYMMDD"
-                              minimal
-                              :locale="myLocale"
-                              color="grey-4"
-                              text-color="grey-9"
-                            />
-                          </div>
-                          <div class="q-px-md q-py-md">
-                            <q-table
-                              title="Selgerstatistikk"
-                              :data="idagselger"
-                              :filter="filterselger"
-                              dense
-                              virtual-scroll
-                              :pagination.sync="pagination"
-                              :rows-per-page-options="[0]"
-                            >
-                              <template v-slot:top-left>
-                                <q-input
-                                  borderless
-                                  dense
-                                  debounce="300"
-                                  v-model="filterselger"
-                                  placeholder="Søk"
-                                >
-                                  <template v-slot:append>
-                                    <q-icon name="search" />
-                                  </template>
-                                </q-input>
-                              </template>
-                            </q-table>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="q-px-md q-py-md">
+                      <q-btn
+                        color="grey-4"
+                        text-color="grey-9"
+                        icon="date_range"
+                        label="Velg Dato"
+                        @click="showDatePicker = !showDatePicker"
+                      />
+                    </div>
+                    <div class="q-px-md q-py-md" v-if="showDatePicker">
+                      <q-date
+                        v-model="filterselger"
+                        :options="dateOptions"
+                        mask="YYYYMMDD"
+                        minimal
+                        :locale="myLocale"
+                        color="grey-4"
+                        text-color="grey-9"
+                      />
+                    </div>
+                    <div class="q-px-md q-py-md">
+                      <q-table
+                        title="Selgerstatistikk"
+                        :data="idagselger"
+                        :filter="filterselger"
+                        dense
+                        virtual-scroll
+                        :pagination.sync="pagination"
+                        :rows-per-page-options="[0]"
+                      >
+                        <template v-slot:top-left>
+                          <q-input
+                            borderless
+                            dense
+                            debounce="300"
+                            v-model="filterselger"
+                            placeholder="Søk"
+                          >
+                            <template v-slot:append>
+                              <q-icon name="search" />
+                            </template>
+                          </q-input>
+                        </template>
+                      </q-table>
                     </div>
                   </q-tab-panel>
-
+          
                   <q-tab-panel name="måned_selger">
                     <div class="q-px-md q-py-md">
                       <q-table
@@ -389,7 +382,7 @@
                       />
                     </div>
                   </q-tab-panel>
-
+          
                   <q-tab-panel name="år_selger">
                     <div class="q-px-md q-py-md">
                       <q-table
