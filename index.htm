@@ -316,11 +316,14 @@
               </q-tab-panel>
 
               <q-tab-panel name="selger">
-                <q-tabs v-model="selgerTab">
-                  <q-tab name="idag_selger" label="Dag" />
-                  <q-tab name="måned_selger" label="Måned" />
-                  <q-tab name="år_selger" label="År" />
-                </q-tabs>
+                <q-btn
+                v-for="tab in tabs"
+                :key="tab.name"
+                :label="tab.label"
+                :color="selgerTab === tab.name ? 'primary' : 'grey-4'"
+                flat
+                @click="selgerTab = tab.name"
+              />
                 <q-tab-panels v-model="selgerTab" animated>
                   <q-tab-panel name="idag_selger">
                     <div class="q-px-md q-py-md">

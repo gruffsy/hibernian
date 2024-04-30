@@ -28,6 +28,11 @@ new Vue({
       showDatePicker: false,
       tab: "dag",
       selgerTab: "idag_selger",
+      tabs: [
+        { name: "idag_selger", label: "Dag" },
+        { name: "måned_selger", label: "Måned" },
+        { name: "år_selger", label: "År" },
+      ],
       displayedTables: 3,
       pagination: {
         rowsPerPage: 300, // current rows per page being displayed
