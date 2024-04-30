@@ -1,10 +1,30 @@
 import json
+import re
+
+def clean_json_string(json_string):
+    # Replace any invalid control characters
+    json_string = re.sub(r'[\x00-\x1F\x7F]', '', json_string)
+    return json_string
+
+def read_json_file(filename):
+    with open(filename, "r", encoding="utf-8-sig") as file:
+        data = file.read()
+
+        # Clean the JSON string
+        data = clean_json_string(data)
+
+        return json.loads(data)
 
 # Define the file paths
-json1_file = "../../json/lager_stock.sql.json"
+json1_file = "../json/lager_stock.sql.json"
 json2_file = "../../json/bestillinger_stock.sql.json"
 output_file = "../publish/merged_stock_orders.json"
 
+# Load the data from JSON 1
+json1_data = read_json_file(json1_file)
+
+# Load the data from JSON 2
+json2_data = read_json_file(json2_file)
 # Load the data from JSON 1
 with open(json1_file, "r") as file1:
     json1_data = json.load(file1)
