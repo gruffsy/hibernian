@@ -98,6 +98,7 @@ new Vue({
         },
       ],
       stockColumns: [
+        { name: 'expand', label: '', align: 'left' },
         { name: 'Prodno', label: 'Prodno', field: row => row.Prodno, align: 'left', sortable: true },
         { name: 'Beskrivelse', label: 'Beskrivelse', field: row => row.Beskrivelse, align: 'left', sortable: true },
         { name: 'antall_lager', label: 'Antall på lager', field: row => row['antall på lager'], align: 'right', sortable: true },

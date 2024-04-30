@@ -379,7 +379,7 @@
                   ><template v-slot:append> <q-icon name="search" /> </template
                 ></q-input>
                 <div class="q-px-md q-py-md">
-                  <q-table
+                  <!-- <q-table
                     title="Lagerbehldning Stock Supply"
                     :data="stock"
                     dense
@@ -401,13 +401,20 @@
                         </template>
                       </q-input>
                     </template>
-                  </q-table>
+                  </q-table> -->
+                 
+                 
                   <q-table
                     title="Lager Stock"
                     :data="ordersStock"
                     row-key="Prodno"
                     dense
                     :columns="stockColumns"
+                    :pagination.sync="pagination"
+                    :filter="filter"
+                    hide-pagination
+                    class="bg-grey-4 text-body shadow-5"
+
                   >
                     <!-- Body template med utvidbar rad -->
                     <template v-slot:body="props">
