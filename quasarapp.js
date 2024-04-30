@@ -103,7 +103,7 @@ new Vue({
         { name: 'antall_lager', label: 'Antall på lager', field: row => row['antall på lager'], align: 'right', sortable: true },
         { name: 'paller_lager', label: 'Paller på lager', field: row => row['Paller på lager'], align: 'right', sortable: true },
         { name: 'paller_vei', label: 'Paller på vei', field: row => row['Paller på vei'], align: 'right', sortable: true }
-      ]
+      ],
       myLocale: {
         /* starting with Sunday */
         days: "Søndag_Mandag_Tirsdag_Onsdag_Torsdag_Fredag_Lørdag".split("_"),
