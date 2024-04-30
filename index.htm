@@ -316,8 +316,16 @@
               </q-tab-panel>
 
               <q-tab-panel name="selger">
+                <q-tabs
+                v-model="selgerTab"
+                
+              >
+                <q-tab name="mails" label="Dag" />
+                <q-tab name="alarms" label="Alarms" />
+                <q-tab name="movies" label="Movies" />
+              </q-tabs>
                 <q-tab-panels v-model="selgerTab" animated>
-                  <q-tab-panel name="idag_selger" label="Dag">
+                  <q-tab-panel name="idag_selger" >
                     <div class="column">
                       <div class="row">
                         <div>
