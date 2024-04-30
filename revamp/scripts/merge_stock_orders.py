@@ -29,8 +29,8 @@ def convert_to_utf8(filename, output_filename):
 # Define the file paths
 json1_input_file = "../../json/lager_stock.sql.json"
 json2_input_file = "../../json/bestillinger_stock.sql.json"
-json1_file = "lager_stock_utf8.json"
-json2_file = "bestillinger_stock_utf8.json"
+json1_file = "../../json/lager_stock_utf8.json"
+json2_file = "../../json/bestillinger_stock_utf8.json"
 convert_to_utf8(json1_input_file, json1_file)
 convert_to_utf8(json2_input_file, json2_file)
 
