@@ -379,10 +379,6 @@
                   ><template v-slot:append> <q-icon name="search" /> </template
                 ></q-input>
                 <div class="q-px-md q-py-md">
-                 
-                
-                 
-                 
                   <q-table
                     title="Lagerbehldning Stock Supply"
                     :data="stock"
@@ -407,56 +403,53 @@
                     </template>
                   </q-table>
                   <q-table
-                  title="Lager Stock"
-                  :data="stock"
-                  row-key="Prodno"
-                  dense
-                   
-                >
-            
-                 
-            
-                 <!-- Body template med utvidbar rad -->
-      <template v-slot:body="props">
-        <q-tr :props="props">
-          <q-td auto-width>
-            <q-btn
-              size="sm"
-              color="accent"
-              round
-              dense
-              @click="toggleExpand(props)"
-              :icon="props.expand ? 'remove' : 'add'"
-            />
-          </q-td>
-          <q-td
-            v-for="col in props.cols"
-            :key="col.name"
-            :props="props"
-          >
-            {{ col.value }}
-          </q-td>
-        </q-tr>
-        <q-tr v-show="props.expand" :props="props">
-          <q-td colspan="100%">
-            <!-- Tilleggsinformasjon ved utvidelse -->
-            <div class="q-mb-md">
-              <strong>Produktbeskrivelse:</strong> {{ props.row.Beskrivelse }}
-              <br>
-              <strong>Tilgjengelig på lager:</strong> {{ props.row["antall på lager"] }}
-              <br>
-              <!-- Hvis det er tilleggsinformasjon fra bestillingslageret -->
-              <template v-if="props.row.ordersStock">
-                <strong>Antall bestilt:</strong> {{ props.row.ordersStock.NoInvoAb }}
-                <br>
-                <strong>Leveringsuke:</strong> {{ props.row.ordersStock.Week_Year }}
-              </template>
-            </div>
-          </q-td>
-        </q-tr>
-      </template>
-            
-                </q-table>
+                    title="Lager Stock"
+                    :data="ordersStock"
+                    row-key="Prodno"
+                    dense
+                  >
+                    <!-- Body template med utvidbar rad -->
+                    <template v-slot:body="props">
+                      <q-tr :props="props">
+                        <q-td auto-width>
+                          <q-btn
+                            size="sm"
+                            color="accent"
+                            round
+                            dense
+                            @click="props.expand = !props.expand"
+                            :icon="props.expand ? 'remove' : 'add'"
+                          />
+                        </q-td>
+                        <q-td
+                          v-for="col in props.cols"
+                          :key="col.name"
+                          :props="props"
+                        >
+                          {{ col.field(props.row) }}
+                        </q-td>
+                      </q-tr>
+                      <q-tr v-show="props.expand" :props="props">
+                        <q-td colspan="100%">
+                          <div class="text-left">
+                            <div v-if="props.row['Bestilling på vei']">
+                              <strong>Bestilling på vei:</strong>
+                              <ul>
+                                <li
+                                  v-for="order in props.row['Bestilling på vei']"
+                                  :key="order.Ukenr"
+                                >
+                                  Ukenr: {{ order.Ukenr }}, Antall: {{
+                                  order.Antall }}
+                                </li>
+                              </ul>
+                            </div>
+                            <div v-else>Ingen bestilling på vei.</div>
+                          </div>
+                        </q-td>
+                      </q-tr>
+                    </template>
+                  </q-table>
                 </div>
               </q-tab-panel>
             </q-tab-panels>

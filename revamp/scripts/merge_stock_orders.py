@@ -50,8 +50,8 @@ for item2 in json2_data:
         if "Bestilling på vei" not in json1_dict[prodno]:
             json1_dict[prodno]["Bestilling på vei"] = []
         json1_dict[prodno]["Bestilling på vei"].append({
-            "Week_Year": item2["Week_Year"],
-            "NoInvoAb": item2["NoInvoAb"]
+            "Ukenr": item2["Week_Year"],
+            "Antall": item2["NoInvoAb"]
         })
 
 # Convert back to list format
@@ -62,6 +62,6 @@ output_file = "../publish/merged_stock_orders.json"
 
 # Save the merged data to a new file
 with open(output_file, "w", encoding="utf-8") as outfile:
-    json.dump(merged_data, outfile, indent=4)
+    json.dump(merged_data, outfile, indent=4, ensure_ascii=False)
 
 print(f"Merged data saved to {output_file}")
