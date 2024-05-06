@@ -918,9 +918,9 @@
     {
         "Prodno": "300000000000045339",
         "Beskrivelse": "CIF OVERLAND PEARL 60X120 - XS",
-        "antall på lager": 259.2,
+        "antall på lager": 207.4,
         "antall pr pall": 51.8,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 3,
         "Bestilling på vei": [
             {
@@ -1010,15 +1010,11 @@
     {
         "Prodno": "XKO60R1",
         "Beskrivelse": "CTV KONKRETE 20MM BIANCO 60X60",
-        "antall på lager": 384.0,
+        "antall på lager": 1024.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 6,
-        "Paller på vei": 14,
+        "Paller på lager": 16,
+        "Paller på vei": 4,
         "Bestilling på vei": [
-            {
-                "Ukenr": "14/2024",
-                "Antall": 640.0
-            },
             {
                 "Ukenr": "26/2024",
                 "Antall": 256.0
@@ -1028,43 +1024,27 @@
     {
         "Prodno": "XKO60R44",
         "Beskrivelse": "CTV KONKRETE 20MM CENERE 60X60",
-        "antall på lager": 448.0,
+        "antall på lager": 1024.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 7,
-        "Paller på vei": 9,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "14/2024",
-                "Antall": 576.0
-            }
-        ]
+        "Paller på lager": 16,
+        "Paller på vei": 0
     },
     {
         "Prodno": "XKO60R4",
         "Beskrivelse": "CTV KONKRETE 20MM GRIGIO 60X60",
-        "antall på lager": 1088.0,
+        "antall på lager": 1216.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 17,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "14/2024",
-                "Antall": 128.0
-            }
-        ]
+        "Paller på lager": 19,
+        "Paller på vei": 0
     },
     {
         "Prodno": "CKO62R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X120",
-        "antall på lager": -46.1,
+        "antall på lager": 46.1,
         "antall pr pall": 46.1,
-        "Paller på lager": -1,
-        "Paller på vei": 7,
+        "Paller på lager": 1,
+        "Paller på vei": 5,
         "Bestilling på vei": [
-            {
-                "Ukenr": "14/2024",
-                "Antall": 92.16
-            },
             {
                 "Ukenr": "26/2024",
                 "Antall": 230.4
@@ -1074,47 +1054,27 @@
     {
         "Prodno": "CKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60",
-        "antall på lager": -172.8,
+        "antall på lager": 691.2,
         "antall pr pall": 43.2,
-        "Paller på lager": -4,
-        "Paller på vei": 20,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "14/2024",
-                "Antall": 388.8
-            },
-            {
-                "Ukenr": "16/2024",
-                "Antall": 475.2
-            }
-        ]
+        "Paller på lager": 16,
+        "Paller på vei": 0
     },
     {
         "Prodno": "CKO62R44",
         "Beskrivelse": "CTV KONKRETE CENERE 60X120",
-        "antall på lager": 46.1,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "14/2024",
-                "Antall": 46.08
-            }
-        ]
+        "Paller på lager": 2,
+        "Paller på vei": 0
     },
     {
         "Prodno": "CKO60R44",
         "Beskrivelse": "CTV KONKRETE CENERE 60X60",
-        "antall på lager": 86.4,
+        "antall på lager": 129.6,
         "antall pr pall": 43.2,
-        "Paller på lager": 2,
-        "Paller på vei": 3,
+        "Paller på lager": 3,
+        "Paller på vei": 2,
         "Bestilling på vei": [
-            {
-                "Ukenr": "14/2024",
-                "Antall": 43.2
-            },
             {
                 "Ukenr": "19/2024",
                 "Antall": 86.4
@@ -1124,33 +1084,19 @@
     {
         "Prodno": "CKO62R4",
         "Beskrivelse": "CTV KONKRETE GRIGIO 60X120",
-        "antall på lager": 0.0,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "14/2024",
-                "Antall": 92.16
-            },
-            {
-                "Ukenr": "17/2024",
-                "Antall": 46.08
-            }
-        ]
+        "Paller på lager": 3,
+        "Paller på vei": 0
     },
     {
         "Prodno": "CKO60R4",
         "Beskrivelse": "CTV KONKRETE GRIGIO 60X60",
-        "antall på lager": 259.2,
+        "antall på lager": 302.4,
         "antall pr pall": 43.2,
-        "Paller på lager": 6,
-        "Paller på vei": 2,
+        "Paller på lager": 7,
+        "Paller på vei": 1,
         "Bestilling på vei": [
-            {
-                "Ukenr": "14/2024",
-                "Antall": 43.2
-            },
             {
                 "Ukenr": "19/2024",
                 "Antall": 43.2
