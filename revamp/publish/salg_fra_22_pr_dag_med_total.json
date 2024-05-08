@@ -1,14 +1,25 @@
 [
     {
         "fakturadato": 20240508,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "573 kr",
+        "umoms": "458 kr",
+        "db": "-229 kr",
+        "dg": "-50.0%",
+        "antord": "1",
+        "prord": "573 kr"
+    },
+    {
+        "fakturadato": 20240508,
         "butikk": "Tønsberg",
         "Klient": "3",
-        "mmoms": "140 kr",
-        "umoms": "112 kr",
-        "db": "5 kr",
-        "dg": "5.0%",
-        "antord": "1",
-        "prord": "140 kr"
+        "mmoms": "489 kr",
+        "umoms": "391 kr",
+        "db": "-47 kr",
+        "dg": "-12.0%",
+        "antord": "2",
+        "prord": "244 kr"
     },
     {
         "fakturadato": 20240508,
@@ -25,12 +36,12 @@
         "fakturadato": 20240508,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "2 188 kr",
-        "umoms": "1 750 kr",
-        "db": "305 kr",
-        "dg": "17.4%",
-        "antord": "2",
-        "prord": "1 094 kr"
+        "mmoms": "3 110 kr",
+        "umoms": "2 487 kr",
+        "db": "24 kr",
+        "dg": "1.0%",
+        "antord": "4",
+        "prord": "777 kr"
     },
     {
         "fakturadato": 20240507,
