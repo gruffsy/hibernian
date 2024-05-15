@@ -1,5 +1,38 @@
 [
     {
+        "fakturadato": 20240515,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "3 674 kr",
+        "umoms": "2 939 kr",
+        "db": "-394 kr",
+        "dg": "-13.0%",
+        "antord": "2",
+        "prord": "1 837 kr"
+    },
+    {
+        "fakturadato": 20240515,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "2 380 kr",
+        "umoms": "1 904 kr",
+        "db": "724 kr",
+        "dg": "38.0%",
+        "antord": "1",
+        "prord": "2 380 kr"
+    },
+    {
+        "fakturadato": 20240515,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "6 054 kr",
+        "umoms": "4 843 kr",
+        "db": "330 kr",
+        "dg": "6.8%",
+        "antord": "3",
+        "prord": "2 018 kr"
+    },
+    {
         "fakturadato": 20240514,
         "butikk": "Skien",
         "Klient": "0",
