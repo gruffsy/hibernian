@@ -1371,7 +1371,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 54.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "26/2024",
+                "Antall": 271.2
+            }
+        ]
     },
     {
         "Prodno": "G4321011",
@@ -1379,7 +1385,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 28.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 23,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "26/2024",
+                "Antall": 640.0
+            }
+        ]
     },
     {
         "Prodno": "G434200K",
@@ -1387,7 +1399,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 9,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "26/2024",
+                "Antall": 388.8
+            }
+        ]
     },
     {
         "Prodno": "G43AC002",
@@ -1427,7 +1445,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 10,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "26/2024",
+                "Antall": 432.0
+            }
+        ]
     },
     {
         "Prodno": "GUX6P011-N",
@@ -1435,7 +1459,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 53.7,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "26/2024",
+                "Antall": 107.36
+            }
+        ]
     },
     {
         "Prodno": "GUX6N011-N",
@@ -1443,7 +1473,13 @@
         "antall på lager": 43.7,
         "antall pr pall": 43.7,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "26/2024",
+                "Antall": 87.48
+            }
+        ]
     },
     {
         "Prodno": "KUXZA000-N",
@@ -1459,7 +1495,13 @@
         "antall på lager": 86.4,
         "antall pr pall": 43.2,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 8,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "26/2024",
+                "Antall": 345.6
+            }
+        ]
     },
     {
         "Prodno": "GUX6P010-N",
@@ -1473,8 +1515,8 @@
         "Prodno": "GUX6N010-N",
         "Beskrivelse": "KER RUE DE PARIS BLANCO LAPPATO 90X90",
         "antall på lager": 175.0,
-        "antall pr pall": 55.4,
-        "Paller på lager": 3,
+        "antall pr pall": 43.7,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
