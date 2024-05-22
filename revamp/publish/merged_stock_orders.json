@@ -1371,10 +1371,14 @@
         "antall på lager": 0.0,
         "antall pr pall": 54.2,
         "Paller på lager": 0,
-        "Paller på vei": 5,
+        "Paller på vei": 10,
         "Bestilling på vei": [
             {
                 "Ukenr": "26/2024",
+                "Antall": 271.2
+            },
+            {
+                "Ukenr": "22/2024",
                 "Antall": 271.2
             }
         ]
@@ -1385,11 +1389,15 @@
         "antall på lager": 0.0,
         "antall pr pall": 28.0,
         "Paller på lager": 0,
-        "Paller på vei": 23,
+        "Paller på vei": 34,
         "Bestilling på vei": [
             {
                 "Ukenr": "24/2024",
                 "Antall": 640.0
+            },
+            {
+                "Ukenr": "22/2024",
+                "Antall": 308.0
             }
         ]
     },
@@ -1399,11 +1407,15 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 9,
+        "Paller på vei": 16,
         "Bestilling på vei": [
             {
                 "Ukenr": "26/2024",
                 "Antall": 388.8
+            },
+            {
+                "Ukenr": "22/2024",
+                "Antall": 302.4
             }
         ]
     },
@@ -1459,10 +1471,14 @@
         "antall på lager": 0.0,
         "antall pr pall": 53.7,
         "Paller på lager": 0,
-        "Paller på vei": 2,
+        "Paller på vei": 4,
         "Bestilling på vei": [
             {
                 "Ukenr": "26/2024",
+                "Antall": 107.36
+            },
+            {
+                "Ukenr": "22/2024",
                 "Antall": 107.36
             }
         ]
@@ -1521,10 +1537,14 @@
         "antall på lager": 175.0,
         "antall pr pall": 43.7,
         "Paller på lager": 4,
-        "Paller på vei": 2,
+        "Paller på vei": 4,
         "Bestilling på vei": [
             {
                 "Ukenr": "26/2024",
+                "Antall": 87.48
+            },
+            {
+                "Ukenr": "22/2024",
                 "Antall": 87.48
             }
         ]
@@ -1535,7 +1555,13 @@
         "antall på lager": 107.4,
         "antall pr pall": 53.7,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "22/2024",
+                "Antall": 53.68
+            }
+        ]
     },
     {
         "Prodno": "GUX6N01M-N",
