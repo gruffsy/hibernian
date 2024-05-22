@@ -1388,7 +1388,7 @@
         "Paller på vei": 23,
         "Bestilling på vei": [
             {
-                "Ukenr": "26/2024",
+                "Ukenr": "24/2024",
                 "Antall": 640.0
             }
         ]
@@ -1448,7 +1448,7 @@
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
-                "Ukenr": "26/2024",
+                "Ukenr": "24/2024",
                 "Antall": 432.0
             }
         ]
@@ -1499,7 +1499,11 @@
         "Bestilling på vei": [
             {
                 "Ukenr": "26/2024",
-                "Antall": 345.6
+                "Antall": 259.2
+            },
+            {
+                "Ukenr": "24/2024",
+                "Antall": 86.4
             }
         ]
     },
@@ -1517,7 +1521,13 @@
         "antall på lager": 175.0,
         "antall pr pall": 43.7,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "26/2024",
+                "Antall": 87.48
+            }
+        ]
     },
     {
         "Prodno": "GUX6P01M-N",
