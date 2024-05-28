@@ -94,7 +94,7 @@ select
     left join [Hibernian Retail$Customer$437dbf0e-84ff-417a-965d-ed2bb9650972] c
     on c.No_ = th.[customer no_]
 where 
-th.[Transaction Type] = 2
+th.[Transaction Type] IN (0,2)
 
 
 and 
