@@ -36,7 +36,7 @@ left join mf_items items on ile1.[Item No_] = items.No_
 where 
 [Entry Type] = 3
 and [Posting Date] > '2024-05-01'
-and [Entry No_] <> '678658'
+and ile1.[Entry No_] <> '678658'
 """
 
 cursor = conn.cursor()
