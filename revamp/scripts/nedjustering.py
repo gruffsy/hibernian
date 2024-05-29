@@ -24,7 +24,7 @@ items.[Last Direct Cost],
 [Reason Code bdg],
 [Posting Date],
 [Location Code],
-Quantity,
+-Quantity AS Quantity,
 ile1.[Entry No_],
 Positive,
 
