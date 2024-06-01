@@ -6,12 +6,12 @@
         "this_year": 2024,
         "month": 6,
         "incomplete": true,
-        "mmoms": "-289 134 kr",
-        "umoms": "-231 307 kr",
-        "db": "-29 931 kr",
-        "antord": "-238",
-        "prord": "-4 kr",
-        "dg": "20246.6%"
+        "mmoms": "-287 589 kr",
+        "umoms": "-230 071 kr",
+        "db": "-29 582 kr",
+        "antord": "-237",
+        "prord": "46 kr",
+        "dg": "26059.9%"
     },
     {
         "butikk": "Bamble",
@@ -20,12 +20,12 @@
         "this_year": 2024,
         "month": 6,
         "incomplete": true,
-        "mmoms": "-183 827 kr",
-        "umoms": "-147 062 kr",
-        "db": "-23 191 kr",
-        "antord": "-113",
-        "prord": "-1 250 kr",
-        "dg": "393466.4%"
+        "mmoms": "-183 758 kr",
+        "umoms": "-147 007 kr",
+        "db": "-23 171 kr",
+        "antord": "-112",
+        "prord": "-1 280 kr",
+        "dg": "187530.5%"
     },
     {
         "butikk": "Totalt",
@@ -34,12 +34,12 @@
         "this_year": 2024,
         "month": 6,
         "incomplete": true,
-        "mmoms": "-1 651 897 kr",
-        "umoms": "-1 321 517 kr",
-        "db": "-226 323 kr",
-        "antord": "-1 246",
-        "prord": "-191 kr",
-        "dg": "67987.5%"
+        "mmoms": "-1 650 283 kr",
+        "umoms": "-1 320 226 kr",
+        "db": "-225 954 kr",
+        "antord": "-1 244",
+        "prord": "-214 kr",
+        "dg": "79906.3%"
     },
     {
         "butikk": "Arendal",
@@ -48,12 +48,12 @@
         "this_year": 2024,
         "month": 6,
         "incomplete": false,
-        "mmoms": "-8 943 122 kr",
-        "umoms": "-7 154 492 kr",
-        "db": "-913 070 kr",
-        "antord": "-7 429",
-        "prord": "-30 024 kr",
-        "dg": "578.2%"
+        "mmoms": "-8 941 577 kr",
+        "umoms": "-7 153 256 kr",
+        "db": "-912 721 kr",
+        "antord": "-7 428",
+        "prord": "-29 973 kr",
+        "dg": "772.0%"
     },
     {
         "butikk": "Bamble",
@@ -62,12 +62,12 @@
         "this_year": 2024,
         "month": 6,
         "incomplete": false,
-        "mmoms": "-5 518 566 kr",
-        "umoms": "-4 414 850 kr",
-        "db": "-697 012 kr",
-        "antord": "-3 425",
-        "prord": "-41 257 kr",
-        "dg": "13018.9%"
+        "mmoms": "-5 518 497 kr",
+        "umoms": "-4 414 795 kr",
+        "db": "-696 992 kr",
+        "antord": "-3 424",
+        "prord": "-41 287 kr",
+        "dg": "6154.4%"
     },
     {
         "butikk": "Totalt",
@@ -76,12 +76,12 @@
         "this_year": 2024,
         "month": 6,
         "incomplete": false,
-        "mmoms": "-49 829 766 kr",
-        "umoms": "-39 863 793 kr",
-        "db": "-6 806 104 kr",
-        "antord": "-37 675",
-        "prord": "-33 036 kr",
-        "dg": "2169.6%"
+        "mmoms": "-49 828 152 kr",
+        "umoms": "-39 862 502 kr",
+        "db": "-6 805 735 kr",
+        "antord": "-37 673",
+        "prord": "-33 058 kr",
+        "dg": "2566.9%"
     },
     {
         "butikk": "Arendal",
@@ -89,38 +89,38 @@
         "this_year": 2024,
         "month": 6,
         "incomplete": null,
-        "mmoms": "231 975 kr",
-        "umoms": "185 575 kr",
-        "db": "13 050 kr",
-        "antord": "225",
-        "dg": "7.0%",
-        "prord": "824 kr"
-    },
-    {
-        "butikk": "Bamble",
-        "Klient": 0,
-        "this_year": 2024,
-        "month": 6,
-        "incomplete": null,
-        "mmoms": "3 225 kr",
-        "umoms": "2 575 kr",
-        "db": "1 100 kr",
-        "antord": "25",
-        "dg": "42.7%",
-        "prord": "103 kr"
-    },
-    {
-        "butikk": "Totalt",
-        "Klient": 0,
-        "this_year": 2024,
-        "month": 6,
-        "incomplete": null,
-        "mmoms": "235 200 kr",
-        "umoms": "188 150 kr",
-        "db": "14 150 kr",
+        "mmoms": "270 600 kr",
+        "umoms": "216 475 kr",
+        "db": "21 775 kr",
         "antord": "250",
-        "dg": "7.5%",
-        "prord": "752 kr"
+        "dg": "10.1%",
+        "prord": "865 kr"
+    },
+    {
+        "butikk": "Bamble",
+        "Klient": 0,
+        "this_year": 2024,
+        "month": 6,
+        "incomplete": null,
+        "mmoms": "4 950 kr",
+        "umoms": "3 950 kr",
+        "db": "1 600 kr",
+        "antord": "50",
+        "dg": "40.5%",
+        "prord": "79 kr"
+    },
+    {
+        "butikk": "Totalt",
+        "Klient": 0,
+        "this_year": 2024,
+        "month": 6,
+        "incomplete": null,
+        "mmoms": "275 550 kr",
+        "umoms": "220 425 kr",
+        "db": "23 375 kr",
+        "antord": "300",
+        "dg": "10.6%",
+        "prord": "734 kr"
     },
     {
         "butikk": "Skien",
