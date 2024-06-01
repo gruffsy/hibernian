@@ -1,17 +1,31 @@
 [
     {
+        "butikk": "Tønsberg",
+        "Klient": 0,
+        "last_year": 2023,
+        "this_year": 2024,
+        "month": 6,
+        "incomplete": true,
+        "mmoms": "-235 343 kr",
+        "umoms": "-188 275 kr",
+        "db": "-30 929 kr",
+        "antord": "-187",
+        "prord": "-329 kr",
+        "dg": "31410.8%"
+    },
+    {
         "butikk": "Arendal",
         "Klient": 0,
         "last_year": 2023,
         "this_year": 2024,
         "month": 6,
         "incomplete": true,
-        "mmoms": "-287 589 kr",
-        "umoms": "-230 071 kr",
-        "db": "-29 582 kr",
-        "antord": "-237",
-        "prord": "46 kr",
-        "dg": "26059.9%"
+        "mmoms": "-283 064 kr",
+        "umoms": "-226 451 kr",
+        "db": "-28 853 kr",
+        "antord": "-228",
+        "prord": "-228 kr",
+        "dg": "17798.8%"
     },
     {
         "butikk": "Bamble",
@@ -34,12 +48,26 @@
         "this_year": 2024,
         "month": 6,
         "incomplete": true,
-        "mmoms": "-1 650 283 kr",
-        "umoms": "-1 320 226 kr",
-        "db": "-225 954 kr",
-        "antord": "-1 244",
-        "prord": "-214 kr",
-        "dg": "79906.3%"
+        "mmoms": "-1 641 342 kr",
+        "umoms": "-1 313 074 kr",
+        "db": "-224 751 kr",
+        "antord": "-1 229",
+        "prord": "-393 kr",
+        "dg": "44793.3%"
+    },
+    {
+        "butikk": "Tønsberg",
+        "Klient": 0,
+        "last_year": 2023,
+        "this_year": 2024,
+        "month": 6,
+        "incomplete": false,
+        "mmoms": "-7 188 359 kr",
+        "umoms": "-5 750 683 kr",
+        "db": "-941 643 kr",
+        "antord": "-5 808",
+        "prord": "-31 221 kr",
+        "dg": "950.4%"
     },
     {
         "butikk": "Arendal",
@@ -48,12 +76,12 @@
         "this_year": 2024,
         "month": 6,
         "incomplete": false,
-        "mmoms": "-8 941 577 kr",
-        "umoms": "-7 153 256 kr",
-        "db": "-912 721 kr",
-        "antord": "-7 428",
-        "prord": "-29 973 kr",
-        "dg": "772.0%"
+        "mmoms": "-8 937 052 kr",
+        "umoms": "-7 149 636 kr",
+        "db": "-911 992 kr",
+        "antord": "-7 419",
+        "prord": "-30 248 kr",
+        "dg": "496.6%"
     },
     {
         "butikk": "Bamble",
@@ -76,12 +104,25 @@
         "this_year": 2024,
         "month": 6,
         "incomplete": false,
-        "mmoms": "-49 828 152 kr",
-        "umoms": "-39 862 502 kr",
-        "db": "-6 805 735 kr",
-        "antord": "-37 673",
-        "prord": "-33 058 kr",
-        "dg": "2566.9%"
+        "mmoms": "-49 819 211 kr",
+        "umoms": "-39 855 350 kr",
+        "db": "-6 804 532 kr",
+        "antord": "-37 658",
+        "prord": "-33 237 kr",
+        "dg": "1396.4%"
+    },
+    {
+        "butikk": "Tønsberg",
+        "Klient": 0,
+        "this_year": 2024,
+        "month": 6,
+        "incomplete": null,
+        "mmoms": "110 400 kr",
+        "umoms": "88 300 kr",
+        "db": "11 850 kr",
+        "antord": "150",
+        "dg": "13.4%",
+        "prord": "588 kr"
     },
     {
         "butikk": "Arendal",
@@ -89,12 +130,12 @@
         "this_year": 2024,
         "month": 6,
         "incomplete": null,
-        "mmoms": "270 600 kr",
-        "umoms": "216 475 kr",
-        "db": "21 775 kr",
-        "antord": "250",
-        "dg": "10.1%",
-        "prord": "865 kr"
+        "mmoms": "383 725 kr",
+        "umoms": "306 975 kr",
+        "db": "40 000 kr",
+        "antord": "475",
+        "dg": "13.0%",
+        "prord": "646 kr"
     },
     {
         "butikk": "Bamble",
@@ -115,12 +156,12 @@
         "this_year": 2024,
         "month": 6,
         "incomplete": null,
-        "mmoms": "275 550 kr",
-        "umoms": "220 425 kr",
-        "db": "23 375 kr",
-        "antord": "300",
-        "dg": "10.6%",
-        "prord": "734 kr"
+        "mmoms": "499 075 kr",
+        "umoms": "399 225 kr",
+        "db": "53 450 kr",
+        "antord": "675",
+        "dg": "13.4%",
+        "prord": "591 kr"
     },
     {
         "butikk": "Skien",

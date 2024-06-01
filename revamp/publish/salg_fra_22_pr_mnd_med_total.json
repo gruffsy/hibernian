@@ -1,13 +1,26 @@
 [
     {
-        "mmoms": "10 824 kr",
-        "umoms": "8 659 kr",
-        "db": "871 kr",
-        "antord": "10",
+        "mmoms": "4 416 kr",
+        "umoms": "3 532 kr",
+        "db": "474 kr",
+        "antord": "6",
+        "butikk": "Tønsberg",
+        "incomplete": true,
+        "dg": "13.4%",
+        "prord": "736 kr",
+        "year": 2024,
+        "month": 6,
+        "Klient": "3"
+    },
+    {
+        "mmoms": "15 349 kr",
+        "umoms": "12 279 kr",
+        "db": "1 600 kr",
+        "antord": "19",
         "butikk": "Arendal",
         "incomplete": true,
-        "dg": "10.1%",
-        "prord": "1 082 kr",
+        "dg": "13.0%",
+        "prord": "807 kr",
         "year": 2024,
         "month": 6,
         "Klient": "4"
@@ -26,14 +39,14 @@
         "Klient": "7"
     },
     {
-        "mmoms": "11 022 kr",
-        "umoms": "8 817 kr",
-        "db": "935 kr",
-        "antord": "12",
+        "mmoms": "19 963 kr",
+        "umoms": "15 969 kr",
+        "db": "2 138 kr",
+        "antord": "27",
         "butikk": "Totalt",
         "incomplete": true,
-        "dg": "10.6%",
-        "prord": "918 kr",
+        "dg": "13.4%",
+        "prord": "739 kr",
         "year": 2024,
         "month": 6,
         "Klient": 99
