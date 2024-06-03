@@ -50,10 +50,26 @@
     {
         "måned": "June",
         "år": "2024",
+        "navn": "Linn Kristine Terjesen",
+        "umoms": "60,539 kr",
+        "db": "11,207 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "måned": "June",
+        "år": "2024",
         "navn": "Morten Hegland",
         "umoms": "57,084 kr",
         "db": "11,544 kr",
         "butikk": "Kristiansand"
+    },
+    {
+        "måned": "June",
+        "år": "2024",
+        "navn": "Julie Nilsen Bjølseth",
+        "umoms": "56,801 kr",
+        "db": "13,435 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "June",
@@ -66,30 +82,6 @@
     {
         "måned": "June",
         "år": "2024",
-        "navn": "Linn Kristine Terjesen",
-        "umoms": "55,588 kr",
-        "db": "10,461 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "måned": "June",
-        "år": "2024",
-        "navn": "Julie Nilsen Bjølseth",
-        "umoms": "55,407 kr",
-        "db": "13,066 kr",
-        "butikk": "Sandefjord"
-    },
-    {
-        "måned": "June",
-        "år": "2024",
-        "navn": "Marcus Vegelbo",
-        "umoms": "50,065 kr",
-        "db": "14,041 kr",
-        "butikk": null
-    },
-    {
-        "måned": "June",
-        "år": "2024",
         "navn": "Sjur Eivind Andersen",
         "umoms": "49,218 kr",
         "db": "5,156 kr",
@@ -98,9 +90,25 @@
     {
         "måned": "June",
         "år": "2024",
+        "navn": "Marcus Vegelbo",
+        "umoms": "49,189 kr",
+        "db": "14,061 kr",
+        "butikk": null
+    },
+    {
+        "måned": "June",
+        "år": "2024",
         "navn": "Fredrik Frost Pettersen",
         "umoms": "45,452 kr",
         "db": "8,300 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "June",
+        "år": "2024",
+        "navn": "Linn Bjørnholt-Kristensen",
+        "umoms": "42,806 kr",
+        "db": "12,874 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -114,9 +122,17 @@
     {
         "måned": "June",
         "år": "2024",
+        "navn": "Runar Fossen",
+        "umoms": "38,996 kr",
+        "db": "9,522 kr",
+        "butikk": "Bamble"
+    },
+    {
+        "måned": "June",
+        "år": "2024",
         "navn": "Tonje W  Madsen",
-        "umoms": "37,436 kr",
-        "db": "9,809 kr",
+        "umoms": "38,228 kr",
+        "db": "10,167 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -130,26 +146,10 @@
     {
         "måned": "June",
         "år": "2024",
-        "navn": "Runar Fossen",
-        "umoms": "37,079 kr",
-        "db": "9,022 kr",
-        "butikk": "Bamble"
-    },
-    {
-        "måned": "June",
-        "år": "2024",
         "navn": "Frode  Olsen",
         "umoms": "36,806 kr",
         "db": "6,280 kr",
         "butikk": "Bamble"
-    },
-    {
-        "måned": "June",
-        "år": "2024",
-        "navn": "Linn Bjørnholt-Kristensen",
-        "umoms": "34,124 kr",
-        "db": "9,832 kr",
-        "butikk": "Tønsberg"
     },
     {
         "måned": "June",
@@ -163,8 +163,8 @@
         "måned": "June",
         "år": "2024",
         "navn": "Stine Marie Hofsrud",
-        "umoms": "31,234 kr",
-        "db": "9,754 kr",
+        "umoms": "31,458 kr",
+        "db": "9,788 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -174,6 +174,14 @@
         "umoms": "29,246 kr",
         "db": "7,557 kr",
         "butikk": "Sandefjord"
+    },
+    {
+        "måned": "June",
+        "år": "2024",
+        "navn": "James Michael McGurty",
+        "umoms": "28,651 kr",
+        "db": "8,327 kr",
+        "butikk": "Skien"
     },
     {
         "måned": "June",
@@ -202,14 +210,6 @@
     {
         "måned": "June",
         "år": "2024",
-        "navn": "James Michael McGurty",
-        "umoms": "26,393 kr",
-        "db": "8,021 kr",
-        "butikk": "Skien"
-    },
-    {
-        "måned": "June",
-        "år": "2024",
         "navn": "Sander Engum Westgård",
         "umoms": "26,186 kr",
         "db": "7,595 kr",
@@ -219,8 +219,8 @@
         "måned": "June",
         "år": "2024",
         "navn": "Pål Magnus Andersen",
-        "umoms": "25,945 kr",
-        "db": "6,304 kr",
+        "umoms": "26,024 kr",
+        "db": "6,332 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -370,6 +370,14 @@
     {
         "måned": "June",
         "år": "2024",
+        "navn": "Anders Eide",
+        "umoms": "10,152 kr",
+        "db": "1,599 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "June",
+        "år": "2024",
         "navn": "Laila Skripeland",
         "umoms": "8,743 kr",
         "db": "2,952 kr",
@@ -402,18 +410,18 @@
     {
         "måned": "June",
         "år": "2024",
-        "navn": "Anders Eide",
-        "umoms": "7,814 kr",
-        "db": "1,423 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "måned": "June",
-        "år": "2024",
         "navn": "Veronica Skaug Bolt Hansen",
         "umoms": "7,269 kr",
         "db": "-1,424 kr",
         "butikk": "Sandefjord"
+    },
+    {
+        "måned": "June",
+        "år": "2024",
+        "navn": "Anette Omland Brubakken",
+        "umoms": "5,569 kr",
+        "db": "900 kr",
+        "butikk": "Bamble"
     },
     {
         "måned": "June",
@@ -434,6 +442,22 @@
     {
         "måned": "June",
         "år": "2024",
+        "navn": "Andreas Hæreid Larsen",
+        "umoms": "2,827 kr",
+        "db": "966 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "måned": "June",
+        "år": "2024",
+        "navn": "Tom Richard Ekeberg",
+        "umoms": "2,724 kr",
+        "db": "-63 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "måned": "June",
+        "år": "2024",
         "navn": "Trond Andreas Frøitland",
         "umoms": "2,584 kr",
         "db": "789 kr",
@@ -446,14 +470,6 @@
         "umoms": "2,501 kr",
         "db": "-259 kr",
         "butikk": "Skien"
-    },
-    {
-        "måned": "June",
-        "år": "2024",
-        "navn": "Andreas Hæreid Larsen",
-        "umoms": "2,428 kr",
-        "db": "1,025 kr",
-        "butikk": "Larvik"
     },
     {
         "måned": "June",
@@ -478,22 +494,6 @@
         "umoms": "1,820 kr",
         "db": "-1,024 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "måned": "June",
-        "år": "2024",
-        "navn": "Anette Omland Brubakken",
-        "umoms": "1,586 kr",
-        "db": "338 kr",
-        "butikk": "Bamble"
-    },
-    {
-        "måned": "June",
-        "år": "2024",
-        "navn": "Tom Richard Ekeberg",
-        "umoms": "1,267 kr",
-        "db": "86 kr",
-        "butikk": "Larvik"
     },
     {
         "måned": "June",
