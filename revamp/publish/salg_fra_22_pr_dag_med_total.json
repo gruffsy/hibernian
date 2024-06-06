@@ -1,25 +1,36 @@
 [
     {
         "fakturadato": 20240606,
-        "butikk": "Bamble",
-        "Klient": "7",
-        "mmoms": "34 412 kr",
-        "umoms": "27 529 kr",
-        "db": "5 165 kr",
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "349 kr",
+        "umoms": "279 kr",
+        "db": "54 kr",
         "dg": "19.0%",
         "antord": "1",
-        "prord": "34 412 kr"
+        "prord": "349 kr"
+    },
+    {
+        "fakturadato": 20240606,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "34 471 kr",
+        "umoms": "27 576 kr",
+        "db": "5 194 kr",
+        "dg": "19.0%",
+        "antord": "2",
+        "prord": "17 235 kr"
     },
     {
         "fakturadato": 20240606,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "34 412 kr",
-        "umoms": "27 529 kr",
-        "db": "5 165 kr",
+        "mmoms": "34 820 kr",
+        "umoms": "27 855 kr",
+        "db": "5 248 kr",
         "dg": "18.8%",
-        "antord": "1",
-        "prord": "34 412 kr"
+        "antord": "3",
+        "prord": "11 606 kr"
     },
     {
         "fakturadato": 20240605,
