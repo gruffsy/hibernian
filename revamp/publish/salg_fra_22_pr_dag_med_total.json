@@ -12,6 +12,28 @@
     },
     {
         "fakturadato": 20240621,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "705 kr",
+        "umoms": "564 kr",
+        "db": "199 kr",
+        "dg": "35.0%",
+        "antord": "2",
+        "prord": "352 kr"
+    },
+    {
+        "fakturadato": 20240621,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "238 kr",
+        "umoms": "190 kr",
+        "db": "123 kr",
+        "dg": "65.0%",
+        "antord": "1",
+        "prord": "238 kr"
+    },
+    {
+        "fakturadato": 20240621,
         "butikk": "Bamble",
         "Klient": "7",
         "mmoms": "999 kr",
@@ -25,12 +47,12 @@
         "fakturadato": 20240621,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "999 kr",
-        "umoms": "799 kr",
-        "db": "568 kr",
-        "dg": "71.1%",
-        "antord": "2",
-        "prord": "499 kr"
+        "mmoms": "1 942 kr",
+        "umoms": "1 553 kr",
+        "db": "890 kr",
+        "dg": "57.3%",
+        "antord": "5",
+        "prord": "388 kr"
     },
     {
         "fakturadato": 20240620,
