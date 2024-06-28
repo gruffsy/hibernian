@@ -29,7 +29,7 @@ set
 SELECT FORMAT(
   DATEADD(
     MINUTE,
-    DATEDIFF(MINUTE, 0, GETDATE()) / 5 * 5,
+    DATEDIFF((MINUTE, 0, GETDATE()) / 5 * 5) - 5,
     0
   ),
   'HH:mm - dddd dd. MMMM yyyy',
