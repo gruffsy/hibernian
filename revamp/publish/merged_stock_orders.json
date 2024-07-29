@@ -1723,7 +1723,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 52.1,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 10,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "34/2024",
+                "Antall": 520.99
+            }
+        ]
     },
     {
         "Prodno": "PG-P900",
