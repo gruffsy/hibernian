@@ -14,23 +14,34 @@
         "fakturadato": 20240817,
         "butikk": "Arendal",
         "Klient": "4",
-        "mmoms": "4 725 kr",
-        "umoms": "3 780 kr",
-        "db": "1 271 kr",
-        "dg": "34.0%",
-        "antord": "9",
-        "prord": "525 kr"
+        "mmoms": "5 280 kr",
+        "umoms": "4 224 kr",
+        "db": "1 466 kr",
+        "dg": "35.0%",
+        "antord": "12",
+        "prord": "440 kr"
+    },
+    {
+        "fakturadato": 20240817,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "278 kr",
+        "umoms": "222 kr",
+        "db": "22 kr",
+        "dg": "10.0%",
+        "antord": "1",
+        "prord": "278 kr"
     },
     {
         "fakturadato": 20240817,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "5 878 kr",
-        "umoms": "4 702 kr",
-        "db": "1 686 kr",
-        "dg": "35.9%",
-        "antord": "11",
-        "prord": "534 kr"
+        "mmoms": "6 711 kr",
+        "umoms": "5 368 kr",
+        "db": "1 903 kr",
+        "dg": "35.5%",
+        "antord": "15",
+        "prord": "447 kr"
     },
     {
         "fakturadato": 20240816,
