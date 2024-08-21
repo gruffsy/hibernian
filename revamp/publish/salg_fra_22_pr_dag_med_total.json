@@ -12,14 +12,25 @@
     },
     {
         "fakturadato": 20240821,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "0 kr",
+        "umoms": "0 kr",
+        "db": "0 kr",
+        "dg": "0.0%",
+        "antord": "2",
+        "prord": "0 kr"
+    },
+    {
+        "fakturadato": 20240821,
         "butikk": "Totalt",
         "Klient": 99,
         "mmoms": "818 kr",
         "umoms": "654 kr",
         "db": "311 kr",
         "dg": "47.6%",
-        "antord": "1",
-        "prord": "818 kr"
+        "antord": "3",
+        "prord": "272 kr"
     },
     {
         "fakturadato": 20240820,
