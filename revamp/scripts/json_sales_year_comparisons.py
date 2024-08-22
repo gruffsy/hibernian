@@ -39,9 +39,10 @@ for record in data:
         yearly_data[year][month][store][field] += record[field]
     
     # For fields 'dg', take the average
-    yearly_data[year][month][store]['dg'] = yearly_data[year][month][store].get('dg', 0) + \
-                                            (record['dg'] - yearly_data[year][month][store].get('dg', 0)) / \
-                                            (yearly_data[year][month][store]['antord'])
+    if 'dg' in record:
+        yearly_data[year][month][store]['dg'] = yearly_data[year][month][store].get('dg', 0) + \
+                                                (record['dg'] - yearly_data[year][month][store].get('dg', 0)) / \
+                                                (yearly_data[year][month][store]['antord'])
                                             
     sales_days[year][month][store].add(day)
 
@@ -81,9 +82,11 @@ for i in range(1, len(years)):
                 for field in ['mmoms', 'umoms', 'db', 'antord', 'prord']:
                     comparison_record[field] = current_data[field] - prev_data[field]
 
-                # Calculate profit margin change in percentage
-                if prev_data['dg'] != 0:
-                    comparison_record['dg'] = ((current_data['dg'] - prev_data['dg']) / prev_data['dg']) 
+                # Calculate profit margin change in percentage (handling missing 'dg')
+                current_dg = current_data.get('dg', 0)
+                prev_dg = prev_data.get('dg', 0)
+                if prev_dg != 0:
+                    comparison_record['dg'] = ((current_dg - prev_dg) / prev_dg) 
                 else:
                     comparison_record['dg'] = 0
 
@@ -115,9 +118,11 @@ for i in range(1, len(years)):
         for field in ['mmoms', 'umoms', 'db', 'antord', 'prord']:
             yearly_comparison_record[field] = current_data[field] - prev_data[field]
 
-        # Calculate profit margin change in percentage
-        if prev_data['dg'] != 0:
-            yearly_comparison_record['dg'] = ((current_data['dg'] - prev_data['dg']) / prev_data['dg']) 
+        # Calculate profit margin change in percentage (handling missing 'dg')
+        current_dg = current_data.get('dg', 0)
+        prev_dg = prev_data.get('dg', 0)
+        if prev_dg != 0:
+            yearly_comparison_record['dg'] = ((current_dg - prev_dg) / prev_dg) 
         else:
             yearly_comparison_record['dg'] = 0
 
