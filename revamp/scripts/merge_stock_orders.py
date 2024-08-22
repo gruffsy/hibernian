@@ -11,6 +11,10 @@ def read_json_file(filename):
     with open(filename, "r", encoding="utf-8-sig") as file:
         content = file.read()
 
+    # Sjekk om filen er tom
+    if not content.strip():
+        return []  # Returnerer en tom liste hvis filen er tom
+
     # Clean the JSON string from any invalid characters
     content = clean_json_string(content)
 
@@ -50,8 +54,8 @@ for item2 in json2_data:
         if "Bestilling på vei" not in json1_dict[prodno]:
             json1_dict[prodno]["Bestilling på vei"] = []
         json1_dict[prodno]["Bestilling på vei"].append({
-            "Ukenr": item2["Week_Year"],
-            "Antall": item2["NoInvoAb"]
+            "Ukenr": item2.get("Week_Year", "ukjent"),  # Bruker "ukjent" hvis 'Week_Year' ikke finnes
+            "Antall": item2.get("NoInvoAb", 0)  # Bruker 0 hvis 'NoInvoAb' ikke finnes
         })
 
 # Convert back to list format
