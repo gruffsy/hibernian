@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20240827,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "15 894 kr",
+        "umoms": "12 715 kr",
+        "db": "3 132 kr",
+        "dg": "25.0%",
+        "antord": "1",
+        "prord": "15 894 kr"
+    },
+    {
+        "fakturadato": 20240827,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "15 894 kr",
+        "umoms": "12 715 kr",
+        "db": "3 132 kr",
+        "dg": "24.6%",
+        "antord": "1",
+        "prord": "15 894 kr"
+    },
+    {
         "fakturadato": 20240826,
         "butikk": "Skien",
         "Klient": "0",
