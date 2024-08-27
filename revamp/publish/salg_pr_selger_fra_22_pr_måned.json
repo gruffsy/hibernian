@@ -51,8 +51,8 @@
         "måned": "August",
         "år": "2024",
         "navn": "Pål Magnus Andersen",
-        "umoms": "691,239 kr",
-        "db": "155,436 kr",
+        "umoms": "691,399 kr",
+        "db": "155,522 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -67,8 +67,8 @@
         "måned": "August",
         "år": "2024",
         "navn": "Tonje W  Madsen",
-        "umoms": "579,896 kr",
-        "db": "137,852 kr",
+        "umoms": "581,539 kr",
+        "db": "138,362 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -78,6 +78,14 @@
         "umoms": "561,478 kr",
         "db": "120,007 kr",
         "butikk": "Tønsberg"
+    },
+    {
+        "måned": "August",
+        "år": "2024",
+        "navn": "Julie Nilsen Bjølseth",
+        "umoms": "550,113 kr",
+        "db": "148,167 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "August",
@@ -94,14 +102,6 @@
         "umoms": "546,634 kr",
         "db": "118,579 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "måned": "August",
-        "år": "2024",
-        "navn": "Julie Nilsen Bjølseth",
-        "umoms": "546,470 kr",
-        "db": "147,277 kr",
-        "butikk": "Sandefjord"
     },
     {
         "måned": "August",
@@ -155,16 +155,16 @@
         "måned": "August",
         "år": "2024",
         "navn": "Jesper Frost Pettersen",
-        "umoms": "456,410 kr",
-        "db": "118,045 kr",
+        "umoms": "456,801 kr",
+        "db": "118,221 kr",
         "butikk": "Tønsberg"
     },
     {
         "måned": "August",
         "år": "2024",
         "navn": "Anette Omland Brubakken",
-        "umoms": "436,361 kr",
-        "db": "84,720 kr",
+        "umoms": "438,291 kr",
+        "db": "84,773 kr",
         "butikk": "Bamble"
     },
     {
@@ -195,16 +195,16 @@
         "måned": "August",
         "år": "2024",
         "navn": "Fredrik Frost Pettersen",
-        "umoms": "419,041 kr",
-        "db": "92,310 kr",
+        "umoms": "419,189 kr",
+        "db": "92,363 kr",
         "butikk": "Tønsberg"
     },
     {
         "måned": "August",
         "år": "2024",
         "navn": "Menglei Chen Ottem",
-        "umoms": "401,998 kr",
-        "db": "80,251 kr",
+        "umoms": "402,388 kr",
+        "db": "80,460 kr",
         "butikk": "Larvik"
     },
     {
@@ -243,8 +243,8 @@
         "måned": "August",
         "år": "2024",
         "navn": "Ida Pernille Iversen",
-        "umoms": "347,394 kr",
-        "db": "75,279 kr",
+        "umoms": "348,281 kr",
+        "db": "75,589 kr",
         "butikk": "Skien"
     },
     {
@@ -259,8 +259,8 @@
         "måned": "August",
         "år": "2024",
         "navn": "Anders Eide",
-        "umoms": "328,362 kr",
-        "db": "55,969 kr",
+        "umoms": "329,000 kr",
+        "db": "56,201 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -298,18 +298,18 @@
     {
         "måned": "August",
         "år": "2024",
-        "navn": "Helge Johansen",
-        "umoms": "273,816 kr",
-        "db": "77,177 kr",
-        "butikk": "Tønsberg"
+        "navn": "Rasmus Helle",
+        "umoms": "274,059 kr",
+        "db": "61,341 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "August",
         "år": "2024",
-        "navn": "Rasmus Helle",
-        "umoms": "273,676 kr",
-        "db": "61,183 kr",
-        "butikk": "Kristiansand"
+        "navn": "Helge Johansen",
+        "umoms": "273,816 kr",
+        "db": "77,177 kr",
+        "butikk": "Tønsberg"
     },
     {
         "måned": "August",
@@ -370,14 +370,6 @@
     {
         "måned": "August",
         "år": "2024",
-        "navn": "Sjur Eivind Andersen",
-        "umoms": "243,763 kr",
-        "db": "39,851 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "måned": "August",
-        "år": "2024",
         "navn": "Torstein Sandve",
         "umoms": "240,992 kr",
         "db": "40,221 kr",
@@ -386,9 +378,17 @@
     {
         "måned": "August",
         "år": "2024",
+        "navn": "Sjur Eivind Andersen",
+        "umoms": "240,564 kr",
+        "db": "39,313 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "måned": "August",
+        "år": "2024",
         "navn": "Tobias Eide",
-        "umoms": "224,864 kr",
-        "db": "57,326 kr",
+        "umoms": "228,452 kr",
+        "db": "58,231 kr",
         "butikk": "Arendal"
     },
     {
@@ -411,8 +411,8 @@
         "måned": "August",
         "år": "2024",
         "navn": "Christina Larsen",
-        "umoms": "199,556 kr",
-        "db": "29,719 kr",
+        "umoms": "199,699 kr",
+        "db": "29,707 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -482,6 +482,14 @@
     {
         "måned": "August",
         "år": "2024",
+        "navn": "Laila Skripeland",
+        "umoms": "144,863 kr",
+        "db": "36,285 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "måned": "August",
+        "år": "2024",
         "navn": "Elin Eilefsen",
         "umoms": "143,516 kr",
         "db": "26,327 kr",
@@ -490,17 +498,9 @@
     {
         "måned": "August",
         "år": "2024",
-        "navn": "Laila Skripeland",
-        "umoms": "142,584 kr",
-        "db": "36,474 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "måned": "August",
-        "år": "2024",
         "navn": "Linn Bjørnholt-Kristensen",
-        "umoms": "142,503 kr",
-        "db": "33,700 kr",
+        "umoms": "143,118 kr",
+        "db": "33,707 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -531,8 +531,8 @@
         "måned": "August",
         "år": "2024",
         "navn": "Aleksander Bang",
-        "umoms": "110,948 kr",
-        "db": "26,582 kr",
+        "umoms": "113,061 kr",
+        "db": "27,224 kr",
         "butikk": "Skien"
     },
     {
