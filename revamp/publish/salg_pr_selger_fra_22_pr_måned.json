@@ -27,8 +27,8 @@
         "måned": "September",
         "år": "2024",
         "navn": "Andrea Isabell Samuelsen",
-        "umoms": "45,435 kr",
-        "db": "13,560 kr",
+        "umoms": "44,909 kr",
+        "db": "13,432 kr",
         "butikk": "Arendal"
     },
     {
@@ -60,7 +60,7 @@
         "år": "2024",
         "navn": "Stine Marie Hofsrud",
         "umoms": "39,521 kr",
-        "db": "10,120 kr",
+        "db": "10,138 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -74,6 +74,14 @@
     {
         "måned": "September",
         "år": "2024",
+        "navn": "Ida Pernille Iversen",
+        "umoms": "35,700 kr",
+        "db": "8,945 kr",
+        "butikk": "Skien"
+    },
+    {
+        "måned": "September",
+        "år": "2024",
         "navn": "Linn Bjørnholt-Kristensen",
         "umoms": "35,650 kr",
         "db": "-3,997 kr",
@@ -82,9 +90,17 @@
     {
         "måned": "September",
         "år": "2024",
+        "navn": "Christina Larsen",
+        "umoms": "35,538 kr",
+        "db": "6,519 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "September",
+        "år": "2024",
         "navn": "Menglei Chen Ottem",
-        "umoms": "35,009 kr",
-        "db": "9,253 kr",
+        "umoms": "35,489 kr",
+        "db": "9,230 kr",
         "butikk": "Larvik"
     },
     {
@@ -102,22 +118,6 @@
         "umoms": "34,130 kr",
         "db": "9,674 kr",
         "butikk": "Sandefjord"
-    },
-    {
-        "måned": "September",
-        "år": "2024",
-        "navn": "Christina Larsen",
-        "umoms": "33,952 kr",
-        "db": "5,927 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "September",
-        "år": "2024",
-        "navn": "Ida Pernille Iversen",
-        "umoms": "28,920 kr",
-        "db": "8,252 kr",
-        "butikk": "Skien"
     },
     {
         "måned": "September",
@@ -150,6 +150,14 @@
         "umoms": "24,179 kr",
         "db": "5,644 kr",
         "butikk": "Skien"
+    },
+    {
+        "måned": "September",
+        "år": "2024",
+        "navn": "Torstein Sandve",
+        "umoms": "23,839 kr",
+        "db": "7,093 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "September",
@@ -234,6 +242,14 @@
     {
         "måned": "September",
         "år": "2024",
+        "navn": "Mikkel Kihle Lindvig",
+        "umoms": "17,364 kr",
+        "db": "4,441 kr",
+        "butikk": "Skien"
+    },
+    {
+        "måned": "September",
+        "år": "2024",
         "navn": "Philip Jacobsen",
         "umoms": "16,094 kr",
         "db": "3,450 kr",
@@ -242,18 +258,18 @@
     {
         "måned": "September",
         "år": "2024",
-        "navn": "Mikkel Kihle Lindvig",
-        "umoms": "15,300 kr",
-        "db": "3,819 kr",
-        "butikk": "Skien"
+        "navn": "Erling Enes",
+        "umoms": "14,560 kr",
+        "db": "1,260 kr",
+        "butikk": "Tønsberg"
     },
     {
         "måned": "September",
         "år": "2024",
-        "navn": "Erling Enes",
-        "umoms": "14,520 kr",
-        "db": "1,228 kr",
-        "butikk": "Tønsberg"
+        "navn": "Sol Emilie Risdal",
+        "umoms": "13,587 kr",
+        "db": "2,942 kr",
+        "butikk": "Larvik"
     },
     {
         "måned": "September",
@@ -270,14 +286,6 @@
         "umoms": "12,379 kr",
         "db": "3,652 kr",
         "butikk": "Bamble"
-    },
-    {
-        "måned": "September",
-        "år": "2024",
-        "navn": "Sol Emilie Risdal",
-        "umoms": "11,880 kr",
-        "db": "2,692 kr",
-        "butikk": "Larvik"
     },
     {
         "måned": "September",
@@ -302,14 +310,6 @@
         "umoms": "8,849 kr",
         "db": "2,653 kr",
         "butikk": "Bamble"
-    },
-    {
-        "måned": "September",
-        "år": "2024",
-        "navn": "Torstein Sandve",
-        "umoms": "8,814 kr",
-        "db": "3,517 kr",
-        "butikk": "Arendal"
     },
     {
         "måned": "September",
@@ -394,6 +394,14 @@
     {
         "måned": "September",
         "år": "2024",
+        "navn": "Tony K. Fagermo",
+        "umoms": "1,836 kr",
+        "db": "-16 kr",
+        "butikk": "Bamble"
+    },
+    {
+        "måned": "September",
+        "år": "2024",
         "navn": "Lilian Margi Frøitland",
         "umoms": "1,726 kr",
         "db": "437 kr",
@@ -422,14 +430,6 @@
         "umoms": "1,347 kr",
         "db": "755 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "måned": "September",
-        "år": "2024",
-        "navn": "Tony K. Fagermo",
-        "umoms": "1,302 kr",
-        "db": "-16 kr",
-        "butikk": "Bamble"
     },
     {
         "måned": "September",
@@ -587,8 +587,8 @@
         "måned": "September",
         "år": "2024",
         "navn": "Odne Hansen",
-        "umoms": "-3,120 kr",
-        "db": "-636 kr",
+        "umoms": "-3,191 kr",
+        "db": "-660 kr",
         "butikk": "Kristiansand"
     },
     {
