@@ -1509,7 +1509,13 @@
         "antall på lager": 116.6,
         "antall pr pall": 38.9,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 77.76
+            }
+        ]
     },
     {
         "Prodno": "PGWBE50",
@@ -1517,7 +1523,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 230.4
+            }
+        ]
     },
     {
         "Prodno": "PG-BK15",
@@ -1525,7 +1537,13 @@
         "antall på lager": 364.7,
         "antall pr pall": 52.1,
         "Paller på lager": 7,
-        "Paller på vei": 0
+        "Paller på vei": 7,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 364.693
+            }
+        ]
     },
     {
         "Prodno": "PG-P900",
@@ -1565,7 +1583,13 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 92.16
+            }
+        ]
     },
     {
         "Prodno": "PGIBE301",
@@ -1589,7 +1613,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 54.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 54.0
+            }
+        ]
     },
     {
         "Prodno": "PGEME20",
@@ -1597,7 +1627,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 54.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 108.0
+            }
+        ]
     },
     {
         "Prodno": "PGEME50",
@@ -1605,7 +1641,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 54.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 108.0
+            }
+        ]
     },
     {
         "Prodno": "PG-P940",
