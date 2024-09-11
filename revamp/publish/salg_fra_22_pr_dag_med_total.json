@@ -12,6 +12,17 @@
     },
     {
         "fakturadato": 20240911,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "444 kr",
+        "umoms": "355 kr",
+        "db": "134 kr",
+        "dg": "38.0%",
+        "antord": "1",
+        "prord": "444 kr"
+    },
+    {
+        "fakturadato": 20240911,
         "butikk": "Bamble",
         "Klient": "7",
         "mmoms": "80 kr",
@@ -25,12 +36,12 @@
         "fakturadato": 20240911,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "206 kr",
-        "umoms": "164 kr",
-        "db": "186 kr",
-        "dg": "113.4%",
-        "antord": "2",
-        "prord": "103 kr"
+        "mmoms": "650 kr",
+        "umoms": "519 kr",
+        "db": "320 kr",
+        "dg": "61.7%",
+        "antord": "3",
+        "prord": "216 kr"
     },
     {
         "fakturadato": 20240910,
