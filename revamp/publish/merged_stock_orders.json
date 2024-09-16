@@ -5,7 +5,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 15,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 777.6
+            }
+        ]
     },
     {
         "Prodno": "D05707",
@@ -13,15 +19,27 @@
         "antall på lager": 155.5,
         "antall pr pall": 51.8,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 259.2
+            }
+        ]
     },
     {
         "Prodno": "D05705",
         "Beskrivelse": "AET DORATO NUVOLATO GRIGIO 30X60",
-        "antall på lager": 155.5,
+        "antall på lager": 103.7,
         "antall pr pall": 51.8,
-        "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på lager": 2,
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 259.2
+            }
+        ]
     },
     {
         "Prodno": "LC60029",
@@ -82,9 +100,9 @@
     {
         "Prodno": "D066284R",
         "Beskrivelse": "AET ULTRA NERO 60X60",
-        "antall på lager": 345.6,
+        "antall på lager": 302.4,
         "antall pr pall": 43.2,
-        "Paller på lager": 8,
+        "Paller på lager": 7,
         "Paller på vei": 0
     },
     {
@@ -141,7 +159,13 @@
         "antall på lager": 168.5,
         "antall pr pall": 56.2,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 56.16
+            }
+        ]
     },
     {
         "Prodno": "9700103",
@@ -149,7 +173,13 @@
         "antall på lager": 168.5,
         "antall pr pall": 56.2,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 112.32
+            }
+        ]
     },
     {
         "Prodno": "3780063",
@@ -165,7 +195,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 155.52
+            }
+        ]
     },
     {
         "Prodno": "3790063",
@@ -197,7 +233,13 @@
         "antall på lager": 207.4,
         "antall pr pall": 51.8,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 51.84
+            }
+        ]
     },
     {
         "Prodno": "3780034",
@@ -269,7 +311,13 @@
         "antall på lager": 86.4,
         "antall pr pall": 43.2,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 7,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 302.4
+            }
+        ]
     },
     {
         "Prodno": "3700033",
@@ -301,7 +349,13 @@
         "antall på lager": 505.4,
         "antall pr pall": 56.2,
         "Paller på lager": 9,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 56.16
+            }
+        ]
     },
     {
         "Prodno": "400037",
@@ -314,10 +368,16 @@
     {
         "Prodno": "710037",
         "Beskrivelse": "CAS GRANITO - DAKOTA 30X30 8MM",
-        "antall på lager": 505.4,
+        "antall på lager": 449.3,
         "antall pr pall": 56.2,
-        "Paller på lager": 9,
-        "Paller på vei": 0
+        "Paller på lager": 8,
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 56.16
+            }
+        ]
     },
     {
         "Prodno": "400024",
@@ -333,7 +393,13 @@
         "antall på lager": 168.5,
         "antall pr pall": 56.2,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 336.96
+            }
+        ]
     },
     {
         "Prodno": "002844",
@@ -341,7 +407,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 56.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 112.32
+            }
+        ]
     },
     {
         "Prodno": "1730004",
@@ -405,7 +477,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 12,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 518.4
+            }
+        ]
     },
     {
         "Prodno": "MWPL10",
@@ -437,7 +515,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 155.52
+            }
+        ]
     },
     {
         "Prodno": "1720004",
@@ -445,7 +529,13 @@
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 103.68
+            }
+        ]
     },
     {
         "Prodno": "1740004",
@@ -453,7 +543,13 @@
         "antall på lager": 86.4,
         "antall pr pall": 43.2,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 15,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 648.0
+            }
+        ]
     },
     {
         "Prodno": "1700008",
@@ -549,7 +645,13 @@
         "antall på lager": 216.0,
         "antall pr pall": 43.2,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 43.2
+            }
+        ]
     },
     {
         "Prodno": "042455",
@@ -557,7 +659,13 @@
         "antall på lager": 51.8,
         "antall pr pall": 51.8,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 259.2
+            }
+        ]
     },
     {
         "Prodno": "042456",
@@ -565,14 +673,20 @@
         "antall på lager": 162.0,
         "antall pr pall": 54.0,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 216.0
+            }
+        ]
     },
     {
         "Prodno": "51782",
         "Beskrivelse": "CIF BETON ANTRACITE 60X60",
-        "antall på lager": 414.7,
+        "antall på lager": 368.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 9,
+        "Paller på lager": 8,
         "Paller på vei": 0
     },
     {
@@ -629,7 +743,13 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 92.16
+            }
+        ]
     },
     {
         "Prodno": "042447",
@@ -637,7 +757,13 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "042449",
@@ -645,7 +771,13 @@
         "antall på lager": 144.0,
         "antall pr pall": 43.2,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 230.4
+            }
+        ]
     },
     {
         "Prodno": "300000000000045391",
@@ -661,7 +793,13 @@
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "300000000000038786",
@@ -709,7 +847,13 @@
         "antall på lager": 51.8,
         "antall pr pall": 51.8,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 103.68
+            }
+        ]
     },
     {
         "Prodno": "300000000000044976",
@@ -717,7 +861,13 @@
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 51.84
+            }
+        ]
     },
     {
         "Prodno": "300000000000046867",
@@ -741,7 +891,13 @@
         "antall på lager": 155.5,
         "antall pr pall": 51.8,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 7,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 362.88
+            }
+        ]
     },
     {
         "Prodno": "300000000000044556",
@@ -749,7 +905,13 @@
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 13,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 599.04
+            }
+        ]
     },
     {
         "Prodno": "300000000000045339",
@@ -757,15 +919,27 @@
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 13,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 673.92
+            }
+        ]
     },
     {
         "Prodno": "300000000000037842",
         "Beskrivelse": "CIF OVERLAND PEARL 60X60",
-        "antall på lager": 599.0,
+        "antall på lager": 506.9,
         "antall pr pall": 46.1,
-        "Paller på lager": 13,
-        "Paller på vei": 0
+        "Paller på lager": 11,
+        "Paller på vei": 21,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 967.68
+            }
+        ]
     },
     {
         "Prodno": "40230",
@@ -781,7 +955,13 @@
         "antall på lager": 73.2,
         "antall pr pall": 73.2,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 73.2
+            }
+        ]
     },
     {
         "Prodno": "40233",
@@ -829,7 +1009,13 @@
         "antall på lager": 184.3,
         "antall pr pall": 46.1,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "XKO60R1",
@@ -837,7 +1023,17 @@
         "antall på lager": 512.0,
         "antall pr pall": 64.0,
         "Paller på lager": 8,
-        "Paller på vei": 0
+        "Paller på vei": 8,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 256.0
+            },
+            {
+                "Ukenr": "40/2024",
+                "Antall": 256.0
+            }
+        ]
     },
     {
         "Prodno": "XKO60R44",
@@ -853,7 +1049,13 @@
         "antall på lager": 896.0,
         "antall pr pall": 64.0,
         "Paller på lager": 14,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 64.0
+            }
+        ]
     },
     {
         "Prodno": "CKO62R1",
@@ -861,7 +1063,13 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 92.16
+            }
+        ]
     },
     {
         "Prodno": "CKO60R1",
@@ -869,7 +1077,17 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 13,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 345.6
+            },
+            {
+                "Ukenr": "40/2024",
+                "Antall": 216.0
+            }
+        ]
     },
     {
         "Prodno": "CKO62R44",
@@ -877,7 +1095,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "CKO60R44",
@@ -885,7 +1109,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 216.0
+            }
+        ]
     },
     {
         "Prodno": "CKO62R4",
@@ -893,15 +1123,31 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 92.16
+            }
+        ]
     },
     {
         "Prodno": "CKO60R4",
         "Beskrivelse": "CTV KONKRETE GRIGIO 60X60",
-        "antall på lager": 43.2,
+        "antall på lager": 0.0,
         "antall pr pall": 43.2,
-        "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på lager": 0,
+        "Paller på vei": 15,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 216.0
+            },
+            {
+                "Ukenr": "40/2024",
+                "Antall": 432.0
+            }
+        ]
     },
     {
         "Prodno": "XQR60R2",
@@ -933,7 +1179,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 64.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 320.0
+            }
+        ]
     },
     {
         "Prodno": "XSL60R4",
@@ -941,7 +1193,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 64.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 384.0
+            }
+        ]
     },
     {
         "Prodno": "XSL60R44",
@@ -949,7 +1207,13 @@
         "antall på lager": 192.0,
         "antall pr pall": 64.0,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "40/2024",
+                "Antall": 320.0
+            }
+        ]
     },
     {
         "Prodno": "XWL60R2",
@@ -1034,9 +1298,9 @@
     {
         "Prodno": "0442080",
         "Beskrivelse": "ELI GRAND PLACE BRUXELLES 20X20",
-        "antall på lager": 72.0,
+        "antall på lager": 0.0,
         "antall pr pall": 72.0,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -1117,7 +1381,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 12,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 518.4
+            }
+        ]
     },
     {
         "Prodno": "G43AC002",
@@ -1149,14 +1419,20 @@
         "antall på lager": 0.0,
         "antall pr pall": 55.4,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 166.05
+            }
+        ]
     },
     {
         "Prodno": "GUX42001-N",
         "Beskrivelse": "KER RUE DE PARIS BEIGE 60X60",
-        "antall på lager": 172.8,
+        "antall på lager": 129.6,
         "antall pr pall": 43.2,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
@@ -1173,7 +1449,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.7,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 8,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 349.92
+            }
+        ]
     },
     {
         "Prodno": "KUXZA000-N",
@@ -1229,7 +1511,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 53.7,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2024",
+                "Antall": 107.36
+            }
+        ]
     },
     {
         "Prodno": "GUX6N012-N",
@@ -1306,9 +1594,9 @@
     {
         "Prodno": "IL6004",
         "Beskrivelse": "LTG INNOVATION LIME BIANCO 60X60",
-        "antall på lager": 553.0,
+        "antall på lager": 506.9,
         "antall pr pall": 46.1,
-        "Paller på lager": 12,
+        "Paller på lager": 11,
         "Paller på vei": 0
     },
     {
