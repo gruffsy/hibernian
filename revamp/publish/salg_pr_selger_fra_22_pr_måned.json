@@ -43,8 +43,8 @@
         "måned": "September",
         "år": "2024",
         "navn": "Preben Jacobsen",
-        "umoms": "643,461 kr",
-        "db": "148,165 kr",
+        "umoms": "647,631 kr",
+        "db": "148,473 kr",
         "butikk": "Arendal"
     },
     {
@@ -67,8 +67,8 @@
         "måned": "September",
         "år": "2024",
         "navn": "Amanda Krumsvik",
-        "umoms": "567,282 kr",
-        "db": "128,844 kr",
+        "umoms": "567,099 kr",
+        "db": "128,739 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -83,17 +83,25 @@
         "måned": "September",
         "år": "2024",
         "navn": "James Michael McGurty",
-        "umoms": "556,951 kr",
-        "db": "102,912 kr",
+        "umoms": "556,459 kr",
+        "db": "102,755 kr",
         "butikk": "Skien"
     },
     {
         "måned": "September",
         "år": "2024",
         "navn": "Pål Magnus Andersen",
-        "umoms": "538,900 kr",
-        "db": "117,926 kr",
+        "umoms": "544,276 kr",
+        "db": "120,651 kr",
         "butikk": "Sandefjord"
+    },
+    {
+        "måned": "September",
+        "år": "2024",
+        "navn": "Stine Marie Hofsrud",
+        "umoms": "540,662 kr",
+        "db": "134,397 kr",
+        "butikk": "Tønsberg"
     },
     {
         "måned": "September",
@@ -101,14 +109,6 @@
         "navn": "Helen Roungø",
         "umoms": "538,856 kr",
         "db": "96,935 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "måned": "September",
-        "år": "2024",
-        "navn": "Stine Marie Hofsrud",
-        "umoms": "537,793 kr",
-        "db": "133,544 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -211,8 +211,8 @@
         "måned": "September",
         "år": "2024",
         "navn": "Aleksander Bang",
-        "umoms": "402,310 kr",
-        "db": "87,131 kr",
+        "umoms": "402,184 kr",
+        "db": "87,048 kr",
         "butikk": "Skien"
     },
     {
@@ -243,8 +243,8 @@
         "måned": "September",
         "år": "2024",
         "navn": "Elin Eilefsen",
-        "umoms": "347,363 kr",
-        "db": "44,106 kr",
+        "umoms": "348,112 kr",
+        "db": "44,325 kr",
         "butikk": "Larvik"
     },
     {
@@ -291,16 +291,16 @@
         "måned": "September",
         "år": "2024",
         "navn": "Runar Fossen",
-        "umoms": "270,780 kr",
-        "db": "65,467 kr",
+        "umoms": "271,664 kr",
+        "db": "65,638 kr",
         "butikk": "Bamble"
     },
     {
         "måned": "September",
         "år": "2024",
         "navn": "Mikkel Kihle Lindvig",
-        "umoms": "263,717 kr",
-        "db": "43,316 kr",
+        "umoms": "265,153 kr",
+        "db": "44,126 kr",
         "butikk": "Skien"
     },
     {
@@ -315,8 +315,8 @@
         "måned": "September",
         "år": "2024",
         "navn": "Petter Myhre",
-        "umoms": "249,564 kr",
-        "db": "63,854 kr",
+        "umoms": "249,739 kr",
+        "db": "63,952 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -403,9 +403,17 @@
         "måned": "September",
         "år": "2024",
         "navn": "Pål Linden Anthonisen",
-        "umoms": "185,521 kr",
-        "db": "47,193 kr",
+        "umoms": "185,562 kr",
+        "db": "47,227 kr",
         "butikk": "Larvik"
+    },
+    {
+        "måned": "September",
+        "år": "2024",
+        "navn": "Mathias Oseid Hagen",
+        "umoms": "176,999 kr",
+        "db": "47,665 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "September",
@@ -430,14 +438,6 @@
         "umoms": "171,898 kr",
         "db": "37,345 kr",
         "butikk": "Sandefjord"
-    },
-    {
-        "måned": "September",
-        "år": "2024",
-        "navn": "Mathias Oseid Hagen",
-        "umoms": "170,911 kr",
-        "db": "46,585 kr",
-        "butikk": "Kristiansand"
     },
     {
         "måned": "September",
@@ -523,8 +523,8 @@
         "måned": "September",
         "år": "2024",
         "navn": "Daniel Hotvedt Aashildrød",
-        "umoms": "92,630 kr",
-        "db": "27,388 kr",
+        "umoms": "92,843 kr",
+        "db": "27,498 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -603,8 +603,8 @@
         "måned": "September",
         "år": "2024",
         "navn": "Øystein Kamfjord",
-        "umoms": "43,144 kr",
-        "db": "5,700 kr",
+        "umoms": "43,674 kr",
+        "db": "5,734 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -613,6 +613,14 @@
         "navn": "Patrick Jensen",
         "umoms": "42,885 kr",
         "db": "789 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "September",
+        "år": "2024",
+        "navn": "Trond Andreas Frøitland",
+        "umoms": "34,764 kr",
+        "db": "5,749 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -630,14 +638,6 @@
         "umoms": "34,255 kr",
         "db": "8,410 kr",
         "butikk": "Bamble"
-    },
-    {
-        "måned": "September",
-        "år": "2024",
-        "navn": "Trond Andreas Frøitland",
-        "umoms": "33,198 kr",
-        "db": "5,368 kr",
-        "butikk": "Kristiansand"
     },
     {
         "måned": "September",
