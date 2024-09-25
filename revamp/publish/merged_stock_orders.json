@@ -52,9 +52,9 @@
     {
         "Prodno": "LN60026",
         "Beskrivelse": "AET MILESTONE WHITE GRIP 60X60 20MM",
-        "antall på lager": 896.0,
+        "antall på lager": 832.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 14,
+        "Paller på lager": 13,
         "Paller på vei": 0
     },
     {
@@ -156,9 +156,9 @@
     {
         "Prodno": "9700102",
         "Beskrivelse": "CAS ARDESIA - GRIGIO 30X30 8 MM",
-        "antall på lager": 168.5,
+        "antall på lager": 112.3,
         "antall pr pall": 56.2,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 1,
         "Bestilling på vei": [
             {
@@ -434,9 +434,9 @@
     {
         "Prodno": "11720292",
         "Beskrivelse": "CAS MACRO BIANCO LUCIDO 60X120 9MM",
-        "antall på lager": 51.8,
+        "antall på lager": 0.0,
         "antall pr pall": 51.8,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -586,9 +586,9 @@
     {
         "Prodno": "1700086",
         "Beskrivelse": "CAS PIETRE DI PARAGONE GRE NERO 30X30 9MM",
-        "antall på lager": 103.7,
+        "antall på lager": 51.8,
         "antall pr pall": 51.8,
-        "Paller på lager": 2,
+        "Paller på lager": 1,
         "Paller på vei": 0
     },
     {
@@ -1063,13 +1063,7 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "40/2024",
-                "Antall": 92.16
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "CKO60R1",
@@ -1077,15 +1071,11 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 13,
+        "Paller på vei": 4,
         "Bestilling på vei": [
             {
                 "Ukenr": "40/2024",
-                "Antall": 345.6
-            },
-            {
-                "Ukenr": "40/2024",
-                "Antall": 216.0
+                "Antall": 172.8
             }
         ]
     },
@@ -1095,17 +1085,27 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 4,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "40/2024",
-                "Antall": 184.32
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "CKO60R44",
         "Beskrivelse": "CTV KONKRETE CENERE 60X60",
+        "antall på lager": 0.0,
+        "antall pr pall": 43.2,
+        "Paller på lager": 0,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "CKO62R4",
+        "Beskrivelse": "CTV KONKRETE GRIGIO 60X120",
+        "antall på lager": 46.1,
+        "antall pr pall": 46.1,
+        "Paller på lager": 1,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "CKO60R4",
+        "Beskrivelse": "CTV KONKRETE GRIGIO 60X60",
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
@@ -1114,38 +1114,6 @@
             {
                 "Ukenr": "40/2024",
                 "Antall": 216.0
-            }
-        ]
-    },
-    {
-        "Prodno": "CKO62R4",
-        "Beskrivelse": "CTV KONKRETE GRIGIO 60X120",
-        "antall på lager": 46.1,
-        "antall pr pall": 46.1,
-        "Paller på lager": 1,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "40/2024",
-                "Antall": 92.16
-            }
-        ]
-    },
-    {
-        "Prodno": "CKO60R4",
-        "Beskrivelse": "CTV KONKRETE GRIGIO 60X60",
-        "antall på lager": 0.0,
-        "antall pr pall": 43.2,
-        "Paller på lager": 0,
-        "Paller på vei": 15,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "40/2024",
-                "Antall": 216.0
-            },
-            {
-                "Ukenr": "40/2024",
-                "Antall": 432.0
             }
         ]
     },
@@ -1179,13 +1147,7 @@
         "antall på lager": 0.0,
         "antall pr pall": 64.0,
         "Paller på lager": 0,
-        "Paller på vei": 5,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "40/2024",
-                "Antall": 320.0
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "XSL60R4",
@@ -1193,13 +1155,7 @@
         "antall på lager": 0.0,
         "antall pr pall": 64.0,
         "Paller på lager": 0,
-        "Paller på vei": 6,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "40/2024",
-                "Antall": 384.0
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "XSL60R44",
@@ -1207,13 +1163,7 @@
         "antall på lager": 192.0,
         "antall pr pall": 64.0,
         "Paller på lager": 3,
-        "Paller på vei": 5,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "40/2024",
-                "Antall": 320.0
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "XWL60R2",
