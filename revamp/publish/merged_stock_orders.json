@@ -771,11 +771,11 @@
         "antall på lager": 57.6,
         "antall pr pall": 43.2,
         "Paller på lager": 1,
-        "Paller på vei": 5,
+        "Paller på vei": 6,
         "Bestilling på vei": [
             {
                 "Ukenr": "43/2024",
-                "Antall": 230.4
+                "Antall": 259.2
             }
         ]
     },
@@ -933,11 +933,15 @@
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
-        "Paller på vei": 21,
+        "Paller på vei": 38,
         "Bestilling på vei": [
             {
                 "Ukenr": "43/2024",
                 "Antall": 967.68
+            },
+            {
+                "Ukenr": "43/2024",
+                "Antall": 783.36
             }
         ]
     },
