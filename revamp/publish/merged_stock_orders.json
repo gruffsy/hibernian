@@ -1413,7 +1413,13 @@
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 27,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "1/2024",
+                "Antall": 1244.16
+            }
+        ]
     },
     {
         "Prodno": "IL6004",
@@ -1437,7 +1443,13 @@
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 27,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "1/2024",
+                "Antall": 1244.16
+            }
+        ]
     },
     {
         "Prodno": "PN612061",
@@ -1453,7 +1465,13 @@
         "antall på lager": 45.4,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 27,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "1/2024",
+                "Antall": 1244.16
+            }
+        ]
     },
     {
         "Prodno": "PN612062",
