@@ -22,7 +22,7 @@ select
     [Maximum Inventory],
     [Purchase Order Multiple]
 from 
-    [MASTER$LSC Replen_ Item Store Rec$5ecfc871-5d82-43f1-9c54-59685e82318d]
+    [Hibernian Retail$LSC Replen_ Item Store Rec$5ecfc871-5d82-43f1-9c54-59685e82318d]
 
 """
 
