@@ -3,17 +3,25 @@
         "måned": "November",
         "år": "2024",
         "navn": "Joakim Johnsen",
-        "umoms": "43,675 kr",
-        "db": "12,775 kr",
+        "umoms": "45,360 kr",
+        "db": "13,243 kr",
         "butikk": "Skien"
     },
     {
         "måned": "November",
         "år": "2024",
         "navn": "Preben Jacobsen",
-        "umoms": "35,869 kr",
-        "db": "6,286 kr",
+        "umoms": "39,030 kr",
+        "db": "7,383 kr",
         "butikk": "Arendal"
+    },
+    {
+        "måned": "November",
+        "år": "2024",
+        "navn": "Helen Roungø",
+        "umoms": "31,990 kr",
+        "db": "7,753 kr",
+        "butikk": "Tønsberg"
     },
     {
         "måned": "November",
@@ -26,26 +34,18 @@
     {
         "måned": "November",
         "år": "2024",
-        "navn": "Helen Roungø",
-        "umoms": "25,343 kr",
-        "db": "7,558 kr",
-        "butikk": "Tønsberg"
+        "navn": "Tuva Sofie Risdal",
+        "umoms": "26,028 kr",
+        "db": "3,614 kr",
+        "butikk": "Larvik"
     },
     {
         "måned": "November",
         "år": "2024",
         "navn": "Lilian Margi Frøitland",
-        "umoms": "22,012 kr",
-        "db": "6,463 kr",
+        "umoms": "22,873 kr",
+        "db": "6,568 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "måned": "November",
-        "år": "2024",
-        "navn": "Tuva Sofie Risdal",
-        "umoms": "21,044 kr",
-        "db": "2,965 kr",
-        "butikk": "Larvik"
     },
     {
         "måned": "November",
@@ -59,16 +59,24 @@
         "måned": "November",
         "år": "2024",
         "navn": "Stine Marie Hofsrud",
-        "umoms": "17,803 kr",
-        "db": "6,688 kr",
+        "umoms": "17,826 kr",
+        "db": "6,704 kr",
         "butikk": "Tønsberg"
     },
     {
         "måned": "November",
         "år": "2024",
         "navn": "Bertil Tangen",
-        "umoms": "16,143 kr",
-        "db": "3,503 kr",
+        "umoms": "16,804 kr",
+        "db": "3,774 kr",
+        "butikk": "Sandefjord"
+    },
+    {
+        "måned": "November",
+        "år": "2024",
+        "navn": "Pål Magnus Andersen",
+        "umoms": "15,124 kr",
+        "db": "3,906 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -82,6 +90,14 @@
     {
         "måned": "November",
         "år": "2024",
+        "navn": "Tom Richard Ekeberg",
+        "umoms": "14,622 kr",
+        "db": "1,786 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "måned": "November",
+        "år": "2024",
         "navn": "James Michael McGurty",
         "umoms": "13,572 kr",
         "db": "3,233 kr",
@@ -90,18 +106,10 @@
     {
         "måned": "November",
         "år": "2024",
-        "navn": "Tom Richard Ekeberg",
-        "umoms": "12,343 kr",
-        "db": "3,792 kr",
-        "butikk": "Larvik"
-    },
-    {
-        "måned": "November",
-        "år": "2024",
-        "navn": "Pål Magnus Andersen",
-        "umoms": "11,204 kr",
-        "db": "3,236 kr",
-        "butikk": "Sandefjord"
+        "navn": "Zain Al-Rubay",
+        "umoms": "11,643 kr",
+        "db": "3,186 kr",
+        "butikk": "Bamble"
     },
     {
         "måned": "November",
@@ -110,14 +118,6 @@
         "umoms": "11,170 kr",
         "db": "2,924 kr",
         "butikk": "Skien"
-    },
-    {
-        "måned": "November",
-        "år": "2024",
-        "navn": "Zain Al-Rubay",
-        "umoms": "10,281 kr",
-        "db": "2,880 kr",
-        "butikk": "Bamble"
     },
     {
         "måned": "November",
@@ -202,9 +202,17 @@
     {
         "måned": "November",
         "år": "2024",
+        "navn": "Tonje W  Madsen",
+        "umoms": "4,853 kr",
+        "db": "1,092 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "November",
+        "år": "2024",
         "navn": "Helge Johansen",
-        "umoms": "3,008 kr",
-        "db": "-3,369 kr",
+        "umoms": "3,056 kr",
+        "db": "-3,346 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -222,14 +230,6 @@
         "umoms": "2,392 kr",
         "db": "1,340 kr",
         "butikk": "Bamble"
-    },
-    {
-        "måned": "November",
-        "år": "2024",
-        "navn": "Tonje W  Madsen",
-        "umoms": "1,499 kr",
-        "db": "481 kr",
-        "butikk": "Kristiansand"
     },
     {
         "måned": "November",
@@ -269,14 +269,6 @@
         "navn": "Jelle Soest",
         "umoms": "-31 kr",
         "db": "-19 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "November",
-        "år": "2024",
-        "navn": "Mathias Oseid Hagen",
-        "umoms": "-47 kr",
-        "db": "-22 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -330,18 +322,26 @@
     {
         "måned": "November",
         "år": "2024",
-        "navn": "Erling Enes",
-        "umoms": "-670 kr",
-        "db": "-210 kr",
-        "butikk": "Tønsberg"
+        "navn": "Marcus Hidle Brustad",
+        "umoms": "-444 kr",
+        "db": "1,185 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "November",
         "år": "2024",
-        "navn": "Marcus Hidle Brustad",
-        "umoms": "-1,006 kr",
-        "db": "993 kr",
-        "butikk": "Sandefjord"
+        "navn": "Mathias Oseid Hagen",
+        "umoms": "-477 kr",
+        "db": "-144 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "November",
+        "år": "2024",
+        "navn": "Erling Enes",
+        "umoms": "-670 kr",
+        "db": "-210 kr",
+        "butikk": "Tønsberg"
     },
     {
         "måned": "November",
