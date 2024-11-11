@@ -66,6 +66,14 @@
     {
         "måned": "November",
         "år": "2024",
+        "navn": "Bertil Tangen",
+        "umoms": "221,214 kr",
+        "db": "48,278 kr",
+        "butikk": "Sandefjord"
+    },
+    {
+        "måned": "November",
+        "år": "2024",
         "navn": "Pål Magnus Andersen",
         "umoms": "218,879 kr",
         "db": "49,612 kr",
@@ -74,10 +82,10 @@
     {
         "måned": "November",
         "år": "2024",
-        "navn": "Bertil Tangen",
-        "umoms": "218,354 kr",
-        "db": "48,227 kr",
-        "butikk": "Sandefjord"
+        "navn": "James Michael McGurty",
+        "umoms": "215,736 kr",
+        "db": "52,525 kr",
+        "butikk": "Skien"
     },
     {
         "måned": "November",
@@ -90,17 +98,9 @@
     {
         "måned": "November",
         "år": "2024",
-        "navn": "James Michael McGurty",
-        "umoms": "210,562 kr",
-        "db": "51,629 kr",
-        "butikk": "Skien"
-    },
-    {
-        "måned": "November",
-        "år": "2024",
         "navn": "Linn Kristine Terjesen",
-        "umoms": "208,050 kr",
-        "db": "45,549 kr",
+        "umoms": "207,451 kr",
+        "db": "45,398 kr",
         "butikk": "Arendal"
     },
     {
@@ -131,8 +131,8 @@
         "måned": "November",
         "år": "2024",
         "navn": "Julie Nilsen Bjølseth",
-        "umoms": "185,333 kr",
-        "db": "41,614 kr",
+        "umoms": "185,972 kr",
+        "db": "41,843 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -147,8 +147,8 @@
         "måned": "November",
         "år": "2024",
         "navn": "Helge Johansen",
-        "umoms": "183,309 kr",
-        "db": "47,405 kr",
+        "umoms": "183,643 kr",
+        "db": "47,119 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -163,8 +163,8 @@
         "måned": "November",
         "år": "2024",
         "navn": "Fredrik Frost Pettersen",
-        "umoms": "181,410 kr",
-        "db": "42,543 kr",
+        "umoms": "181,283 kr",
+        "db": "42,502 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -194,18 +194,18 @@
     {
         "måned": "November",
         "år": "2024",
-        "navn": "Ida Pernille Iversen",
-        "umoms": "164,805 kr",
-        "db": "36,077 kr",
-        "butikk": "Skien"
+        "navn": "Jonathan Kaaby",
+        "umoms": "167,640 kr",
+        "db": "45,495 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "November",
         "år": "2024",
-        "navn": "Jonathan Kaaby",
-        "umoms": "163,842 kr",
-        "db": "44,917 kr",
-        "butikk": "Arendal"
+        "navn": "Ida Pernille Iversen",
+        "umoms": "164,805 kr",
+        "db": "36,077 kr",
+        "butikk": "Skien"
     },
     {
         "måned": "November",
@@ -267,17 +267,25 @@
         "måned": "November",
         "år": "2024",
         "navn": "Christina Larsen",
-        "umoms": "123,932 kr",
-        "db": "23,022 kr",
+        "umoms": "125,931 kr",
+        "db": "23,649 kr",
         "butikk": "Kristiansand"
     },
     {
         "måned": "November",
         "år": "2024",
         "navn": "Menglei Chen Ottem",
-        "umoms": "122,768 kr",
-        "db": "35,646 kr",
+        "umoms": "124,751 kr",
+        "db": "36,423 kr",
         "butikk": "Larvik"
+    },
+    {
+        "måned": "November",
+        "år": "2024",
+        "navn": "Petter Myhre",
+        "umoms": "124,387 kr",
+        "db": "27,818 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "November",
@@ -302,14 +310,6 @@
         "umoms": "120,947 kr",
         "db": "23,215 kr",
         "butikk": "Sandefjord"
-    },
-    {
-        "måned": "November",
-        "år": "2024",
-        "navn": "Petter Myhre",
-        "umoms": "119,884 kr",
-        "db": "26,403 kr",
-        "butikk": "Kristiansand"
     },
     {
         "måned": "November",
@@ -378,18 +378,18 @@
     {
         "måned": "November",
         "år": "2024",
-        "navn": "EIVIND HØGETVEIT",
-        "umoms": "98,177 kr",
-        "db": "26,654 kr",
-        "butikk": "Tønsberg"
+        "navn": "Linn Christina Larssen",
+        "umoms": "101,679 kr",
+        "db": "19,121 kr",
+        "butikk": "Larvik"
     },
     {
         "måned": "November",
         "år": "2024",
-        "navn": "Linn Christina Larssen",
-        "umoms": "96,482 kr",
-        "db": "16,176 kr",
-        "butikk": "Larvik"
+        "navn": "EIVIND HØGETVEIT",
+        "umoms": "98,177 kr",
+        "db": "26,654 kr",
+        "butikk": "Tønsberg"
     },
     {
         "måned": "November",
@@ -451,8 +451,8 @@
         "måned": "November",
         "år": "2024",
         "navn": "Sivert Kittelsen Vierdal",
-        "umoms": "82,089 kr",
-        "db": "12,472 kr",
+        "umoms": "81,754 kr",
+        "db": "12,340 kr",
         "butikk": "Skien"
     },
     {
@@ -467,8 +467,8 @@
         "måned": "November",
         "år": "2024",
         "navn": "Daniel Hotvedt Aashildrød",
-        "umoms": "67,845 kr",
-        "db": "18,019 kr",
+        "umoms": "67,607 kr",
+        "db": "17,897 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -490,18 +490,18 @@
     {
         "måned": "November",
         "år": "2024",
-        "navn": "Frode  Olsen",
-        "umoms": "55,328 kr",
-        "db": "14,832 kr",
-        "butikk": "Bamble"
+        "navn": "Emil Bomhoff",
+        "umoms": "58,620 kr",
+        "db": "16,110 kr",
+        "butikk": "Skien"
     },
     {
         "måned": "November",
         "år": "2024",
-        "navn": "Emil Bomhoff",
-        "umoms": "54,467 kr",
-        "db": "14,651 kr",
-        "butikk": "Skien"
+        "navn": "Frode  Olsen",
+        "umoms": "55,328 kr",
+        "db": "14,832 kr",
+        "butikk": "Bamble"
     },
     {
         "måned": "November",
@@ -555,8 +555,8 @@
         "måned": "November",
         "år": "2024",
         "navn": "Aksel Ervik",
-        "umoms": "35,810 kr",
-        "db": "6,073 kr",
+        "umoms": "36,149 kr",
+        "db": "6,248 kr",
         "butikk": "Bamble"
     },
     {
@@ -611,8 +611,8 @@
         "måned": "November",
         "år": "2024",
         "navn": "Linn Bjørnholt-Kristensen",
-        "umoms": "19,284 kr",
-        "db": "2,022 kr",
+        "umoms": "19,850 kr",
+        "db": "2,279 kr",
         "butikk": "Tønsberg"
     },
     {
