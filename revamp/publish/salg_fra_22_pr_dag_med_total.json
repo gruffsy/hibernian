@@ -3,12 +3,12 @@
         "fakturadato": 20241227,
         "butikk": "Skien",
         "Klient": "0",
-        "mmoms": "0 kr",
-        "umoms": "0 kr",
-        "db": "48 kr",
-        "dg": "0.0%",
-        "antord": "1",
-        "prord": "0 kr"
+        "mmoms": "20 236 kr",
+        "umoms": "16 188 kr",
+        "db": "4 430 kr",
+        "dg": "27.0%",
+        "antord": "8",
+        "prord": "2 529 kr"
     },
     {
         "fakturadato": 20241227,
@@ -25,12 +25,12 @@
         "fakturadato": 20241227,
         "butikk": "Tønsberg",
         "Klient": "3",
-        "mmoms": "1 845 kr",
-        "umoms": "1 476 kr",
-        "db": "760 kr",
-        "dg": "52.0%",
-        "antord": "3",
-        "prord": "615 kr"
+        "mmoms": "13 533 kr",
+        "umoms": "10 826 kr",
+        "db": "3 293 kr",
+        "dg": "30.0%",
+        "antord": "8",
+        "prord": "1 691 kr"
     },
     {
         "fakturadato": 20241227,
@@ -58,23 +58,34 @@
         "fakturadato": 20241227,
         "butikk": "Larvik",
         "Klient": "6",
-        "mmoms": "5 399 kr",
-        "umoms": "4 319 kr",
-        "db": "1 018 kr",
-        "dg": "24.0%",
-        "antord": "4",
-        "prord": "1 349 kr"
+        "mmoms": "6 313 kr",
+        "umoms": "5 050 kr",
+        "db": "1 146 kr",
+        "dg": "23.0%",
+        "antord": "6",
+        "prord": "1 052 kr"
+    },
+    {
+        "fakturadato": 20241227,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "5 850 kr",
+        "umoms": "4 680 kr",
+        "db": "1 211 kr",
+        "dg": "26.0%",
+        "antord": "1",
+        "prord": "5 850 kr"
     },
     {
         "fakturadato": 20241227,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "14 887 kr",
-        "umoms": "11 908 kr",
-        "db": "3 404 kr",
-        "dg": "28.6%",
-        "antord": "14",
-        "prord": "1 063 kr"
+        "mmoms": "53 575 kr",
+        "umoms": "42 857 kr",
+        "db": "11 658 kr",
+        "dg": "27.2%",
+        "antord": "29",
+        "prord": "1 847 kr"
     },
     {
         "fakturadato": 20241223,
