@@ -1,6 +1,34 @@
 [
     {
         "år": "2025",
+        "navn": "Pål Magnus Andersen",
+        "umoms": "23,268 kr",
+        "db": "3,255 kr",
+        "butikk": "Sandefjord"
+    },
+    {
+        "år": "2025",
+        "navn": "Linn Bjørnholt-Kristensen",
+        "umoms": "14,176 kr",
+        "db": "2,952 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "år": "2025",
+        "navn": "Joakim Johnsen",
+        "umoms": "10,642 kr",
+        "db": "2,393 kr",
+        "butikk": "Skien"
+    },
+    {
+        "år": "2025",
+        "navn": "Helen Roungø",
+        "umoms": "4,112 kr",
+        "db": "319 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "år": "2025",
         "navn": "Elin Eilefsen",
         "umoms": "3,604 kr",
         "db": "-455 kr",
@@ -9,9 +37,16 @@
     {
         "år": "2025",
         "navn": "Anette Omland Brubakken",
-        "umoms": "2,716 kr",
-        "db": "-133 kr",
+        "umoms": "3,595 kr",
+        "db": "260 kr",
         "butikk": "Bamble"
+    },
+    {
+        "år": "2025",
+        "navn": "Pål Linden Anthonisen",
+        "umoms": "2,159 kr",
+        "db": "55 kr",
+        "butikk": "Larvik"
     },
     {
         "år": "2025",
@@ -22,20 +57,6 @@
     },
     {
         "år": "2025",
-        "navn": "Pål Linden Anthonisen",
-        "umoms": "1,760 kr",
-        "db": "1 kr",
-        "butikk": "Larvik"
-    },
-    {
-        "år": "2025",
-        "navn": "Helen Roungø",
-        "umoms": "1,662 kr",
-        "db": "506 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "år": "2025",
         "navn": "Bertil Tangen",
         "umoms": "1,365 kr",
         "db": "94 kr",
@@ -43,24 +64,45 @@
     },
     {
         "år": "2025",
+        "navn": "Patrick Jensen",
+        "umoms": "1,343 kr",
+        "db": "244 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "år": "2025",
         "navn": "Kine Thi Huynh",
-        "umoms": "545 kr",
-        "db": "326 kr",
+        "umoms": "972 kr",
+        "db": "580 kr",
         "butikk": "Skien"
     },
     {
         "år": "2025",
-        "navn": "Pål Magnus Andersen",
-        "umoms": "117 kr",
-        "db": "55 kr",
-        "butikk": "Sandefjord"
+        "navn": "Amanda Krumsvik",
+        "umoms": "849 kr",
+        "db": "375 kr",
+        "butikk": "Kristiansand"
     },
     {
         "år": "2025",
-        "navn": "Amanda Krumsvik",
-        "umoms": "67 kr",
-        "db": "32 kr",
-        "butikk": "Kristiansand"
+        "navn": "Tom Richard Ekeberg",
+        "umoms": "640 kr",
+        "db": "0 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "år": "2025",
+        "navn": "Preben Jacobsen",
+        "umoms": "415 kr",
+        "db": "171 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "år": "2025",
+        "navn": "Mikkel Kihle Lindvig",
+        "umoms": "319 kr",
+        "db": "28 kr",
+        "butikk": "Skien"
     },
     {
         "år": "2025",
