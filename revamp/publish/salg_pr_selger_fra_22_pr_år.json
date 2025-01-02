@@ -1,6 +1,20 @@
 [
     {
         "år": "2025",
+        "navn": "Petter Myhre",
+        "umoms": "61,416 kr",
+        "db": "8,756 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "år": "2025",
+        "navn": "Jonathan Kaaby",
+        "umoms": "59,557 kr",
+        "db": "9,609 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "år": "2025",
         "navn": "Amanda Krumsvik",
         "umoms": "59,305 kr",
         "db": "14,275 kr",
@@ -15,24 +29,17 @@
     },
     {
         "år": "2025",
-        "navn": "Petter Myhre",
-        "umoms": "56,035 kr",
-        "db": "9,648 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "år": "2025",
-        "navn": "Jonathan Kaaby",
-        "umoms": "54,481 kr",
-        "db": "9,209 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "år": "2025",
         "navn": "Heidi Kristensen Voje",
-        "umoms": "47,149 kr",
-        "db": "14,042 kr",
+        "umoms": "47,227 kr",
+        "db": "14,089 kr",
         "butikk": "Bamble"
+    },
+    {
+        "år": "2025",
+        "navn": "Valeria Salinas",
+        "umoms": "44,838 kr",
+        "db": "9,268 kr",
+        "butikk": "Kristiansand"
     },
     {
         "år": "2025",
@@ -44,8 +51,8 @@
     {
         "år": "2025",
         "navn": "Stine Marie Hofsrud",
-        "umoms": "42,054 kr",
-        "db": "6,368 kr",
+        "umoms": "41,414 kr",
+        "db": "6,426 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -61,6 +68,13 @@
         "umoms": "39,343 kr",
         "db": "7,014 kr",
         "butikk": "Arendal"
+    },
+    {
+        "år": "2025",
+        "navn": "Marthine Hansen",
+        "umoms": "36,689 kr",
+        "db": "9,812 kr",
+        "butikk": "Sandefjord"
     },
     {
         "år": "2025",
@@ -86,7 +100,7 @@
     {
         "år": "2025",
         "navn": "Tuva Sofie Risdal",
-        "umoms": "34,472 kr",
+        "umoms": "34,528 kr",
         "db": "1,306 kr",
         "butikk": "Larvik"
     },
@@ -96,13 +110,6 @@
         "umoms": "33,858 kr",
         "db": "622 kr",
         "butikk": "Arendal"
-    },
-    {
-        "år": "2025",
-        "navn": "Marthine Hansen",
-        "umoms": "32,395 kr",
-        "db": "9,347 kr",
-        "butikk": "Sandefjord"
     },
     {
         "år": "2025",
@@ -155,13 +162,6 @@
     },
     {
         "år": "2025",
-        "navn": "Valeria Salinas",
-        "umoms": "26,054 kr",
-        "db": "5,943 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "år": "2025",
         "navn": "Helen Roungø",
         "umoms": "22,513 kr",
         "db": "3,111 kr",
@@ -177,9 +177,23 @@
     {
         "år": "2025",
         "navn": "Kristoffer Gård",
-        "umoms": "17,122 kr",
-        "db": "4,948 kr",
+        "umoms": "17,791 kr",
+        "db": "5,148 kr",
         "butikk": "Bamble"
+    },
+    {
+        "år": "2025",
+        "navn": "Ida Pernille Iversen",
+        "umoms": "17,067 kr",
+        "db": "5,473 kr",
+        "butikk": "Skien"
+    },
+    {
+        "år": "2025",
+        "navn": "Jelle Soest",
+        "umoms": "16,759 kr",
+        "db": "2,663 kr",
+        "butikk": "Kristiansand"
     },
     {
         "år": "2025",
@@ -197,13 +211,6 @@
     },
     {
         "år": "2025",
-        "navn": "Ida Pernille Iversen",
-        "umoms": "15,078 kr",
-        "db": "4,891 kr",
-        "butikk": "Skien"
-    },
-    {
-        "år": "2025",
         "navn": "Marcus Hidle Brustad",
         "umoms": "15,038 kr",
         "db": "3,538 kr",
@@ -215,13 +222,6 @@
         "umoms": "13,988 kr",
         "db": "2,348 kr",
         "butikk": "Larvik"
-    },
-    {
-        "år": "2025",
-        "navn": "Jelle Soest",
-        "umoms": "13,496 kr",
-        "db": "1,499 kr",
-        "butikk": "Kristiansand"
     },
     {
         "år": "2025",
@@ -260,17 +260,17 @@
     },
     {
         "år": "2025",
+        "navn": "Linn Christina Larssen",
+        "umoms": "9,989 kr",
+        "db": "2,959 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "år": "2025",
         "navn": "Mikkel Kihle Lindvig",
         "umoms": "9,600 kr",
         "db": "124 kr",
         "butikk": "Skien"
-    },
-    {
-        "år": "2025",
-        "navn": "Linn Christina Larssen",
-        "umoms": "9,368 kr",
-        "db": "2,886 kr",
-        "butikk": "Larvik"
     },
     {
         "år": "2025",
@@ -295,6 +295,13 @@
     },
     {
         "år": "2025",
+        "navn": "Fredrik Frost Pettersen",
+        "umoms": "6,221 kr",
+        "db": "2,018 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "år": "2025",
         "navn": "Frode  Olsen",
         "umoms": "6,038 kr",
         "db": "2,820 kr",
@@ -302,9 +309,9 @@
     },
     {
         "år": "2025",
-        "navn": "Fredrik Frost Pettersen",
-        "umoms": "5,501 kr",
-        "db": "1,741 kr",
+        "navn": "Amritpal Nagra Singh",
+        "umoms": "5,760 kr",
+        "db": "961 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -317,8 +324,8 @@
     {
         "år": "2025",
         "navn": "Menglei Chen Ottem",
-        "umoms": "4,935 kr",
-        "db": "907 kr",
+        "umoms": "5,046 kr",
+        "db": "960 kr",
         "butikk": "Larvik"
     },
     {
@@ -327,13 +334,6 @@
         "umoms": "4,755 kr",
         "db": "1,012 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "år": "2025",
-        "navn": "Amritpal Nagra Singh",
-        "umoms": "4,091 kr",
-        "db": "1,130 kr",
-        "butikk": "Tønsberg"
     },
     {
         "år": "2025",
@@ -429,8 +429,8 @@
     {
         "år": "2025",
         "navn": "Maylin Trondahl Olsen",
-        "umoms": "-768 kr",
-        "db": "-214 kr",
+        "umoms": "-1,055 kr",
+        "db": "-348 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -446,6 +446,13 @@
         "umoms": "-1,119 kr",
         "db": "-352 kr",
         "butikk": "Arendal"
+    },
+    {
+        "år": "2025",
+        "navn": "Mattis René Andersen",
+        "umoms": "-1,237 kr",
+        "db": "-315 kr",
+        "butikk": "Skien"
     },
     {
         "år": "2025",
