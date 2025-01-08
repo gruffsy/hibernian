@@ -16,9 +16,16 @@
     {
         "år": "2025",
         "navn": "Amanda Krumsvik",
-        "umoms": "226,245 kr",
-        "db": "34,303 kr",
+        "umoms": "225,284 kr",
+        "db": "28,996 kr",
         "butikk": "Kristiansand"
+    },
+    {
+        "år": "2025",
+        "navn": "Pål Magnus Andersen",
+        "umoms": "198,950 kr",
+        "db": "35,867 kr",
+        "butikk": "Sandefjord"
     },
     {
         "år": "2025",
@@ -33,13 +40,6 @@
         "umoms": "195,441 kr",
         "db": "37,982 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "år": "2025",
-        "navn": "Pål Magnus Andersen",
-        "umoms": "182,732 kr",
-        "db": "32,574 kr",
-        "butikk": "Sandefjord"
     },
     {
         "år": "2025",
@@ -93,8 +93,8 @@
     {
         "år": "2025",
         "navn": "Petter Myhre",
-        "umoms": "144,150 kr",
-        "db": "25,946 kr",
+        "umoms": "143,775 kr",
+        "db": "25,769 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -121,8 +121,8 @@
     {
         "år": "2025",
         "navn": "Tom Richard Ekeberg",
-        "umoms": "129,738 kr",
-        "db": "19,371 kr",
+        "umoms": "130,460 kr",
+        "db": "19,446 kr",
         "butikk": "Larvik"
     },
     {
@@ -135,15 +135,15 @@
     {
         "år": "2025",
         "navn": "Ida Pernille Iversen",
-        "umoms": "116,033 kr",
-        "db": "18,792 kr",
+        "umoms": "115,154 kr",
+        "db": "18,359 kr",
         "butikk": "Skien"
     },
     {
         "år": "2025",
         "navn": "Marthine Hansen",
-        "umoms": "113,303 kr",
-        "db": "29,432 kr",
+        "umoms": "113,766 kr",
+        "db": "29,675 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -162,10 +162,24 @@
     },
     {
         "år": "2025",
+        "navn": "Pernille Dall",
+        "umoms": "105,438 kr",
+        "db": "15,256 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "år": "2025",
         "navn": "Hans Kristian Nenset",
-        "umoms": "102,200 kr",
-        "db": "15,218 kr",
+        "umoms": "102,950 kr",
+        "db": "15,278 kr",
         "butikk": "Skien"
+    },
+    {
+        "år": "2025",
+        "navn": "Patrick Johansen",
+        "umoms": "100,883 kr",
+        "db": "22,442 kr",
+        "butikk": "Arendal"
     },
     {
         "år": "2025",
@@ -173,13 +187,6 @@
         "umoms": "99,762 kr",
         "db": "6,574 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "år": "2025",
-        "navn": "Pernille Dall",
-        "umoms": "99,507 kr",
-        "db": "14,971 kr",
-        "butikk": "Kristiansand"
     },
     {
         "år": "2025",
@@ -194,13 +201,6 @@
         "umoms": "95,281 kr",
         "db": "20,349 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "år": "2025",
-        "navn": "Patrick Johansen",
-        "umoms": "95,226 kr",
-        "db": "21,518 kr",
-        "butikk": "Arendal"
     },
     {
         "år": "2025",
@@ -219,8 +219,8 @@
     {
         "år": "2025",
         "navn": "Anders Eide",
-        "umoms": "88,043 kr",
-        "db": "6,563 kr",
+        "umoms": "87,644 kr",
+        "db": "6,448 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -233,8 +233,8 @@
     {
         "år": "2025",
         "navn": "Menglei Chen Ottem",
-        "umoms": "85,093 kr",
-        "db": "17,489 kr",
+        "umoms": "82,754 kr",
+        "db": "17,328 kr",
         "butikk": "Larvik"
     },
     {
@@ -275,8 +275,8 @@
     {
         "år": "2025",
         "navn": "Marcus Hidle Brustad",
-        "umoms": "73,991 kr",
-        "db": "15,862 kr",
+        "umoms": "73,944 kr",
+        "db": "15,868 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -289,8 +289,8 @@
     {
         "år": "2025",
         "navn": "Tobias Eide",
-        "umoms": "70,158 kr",
-        "db": "7,291 kr",
+        "umoms": "69,923 kr",
+        "db": "7,152 kr",
         "butikk": "Arendal"
     },
     {
@@ -330,17 +330,17 @@
     },
     {
         "år": "2025",
+        "navn": "EIVIND HØGETVEIT",
+        "umoms": "52,886 kr",
+        "db": "11,943 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "år": "2025",
         "navn": "Kristoffer Gård",
         "umoms": "51,866 kr",
         "db": "11,831 kr",
         "butikk": "Bamble"
-    },
-    {
-        "år": "2025",
-        "navn": "EIVIND HØGETVEIT",
-        "umoms": "50,231 kr",
-        "db": "11,484 kr",
-        "butikk": "Tønsberg"
     },
     {
         "år": "2025",
@@ -429,8 +429,8 @@
     {
         "år": "2025",
         "navn": "Zain Al-Rubay",
-        "umoms": "16,811 kr",
-        "db": "2,549 kr",
+        "umoms": "18,090 kr",
+        "db": "3,138 kr",
         "butikk": "Bamble"
     },
     {
