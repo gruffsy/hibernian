@@ -1,14 +1,47 @@
 [
     {
         "fakturadato": 20250115,
-        "butikk": "Tønsberg",
-        "Klient": "3",
-        "mmoms": "4 197 kr",
-        "umoms": "3 357 kr",
-        "db": "841 kr",
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "68 kr",
+        "umoms": "54 kr",
+        "db": "0 kr",
+        "dg": "0.0%",
+        "antord": "1",
+        "prord": "68 kr"
+    },
+    {
+        "fakturadato": 20250115,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "251 kr",
+        "umoms": "200 kr",
+        "db": "50 kr",
         "dg": "25.0%",
         "antord": "1",
-        "prord": "4 197 kr"
+        "prord": "251 kr"
+    },
+    {
+        "fakturadato": 20250115,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "6 565 kr",
+        "umoms": "5 252 kr",
+        "db": "1 791 kr",
+        "dg": "34.0%",
+        "antord": "3",
+        "prord": "2 188 kr"
+    },
+    {
+        "fakturadato": 20250115,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "3 334 kr",
+        "umoms": "2 667 kr",
+        "db": "1 087 kr",
+        "dg": "41.0%",
+        "antord": "5",
+        "prord": "666 kr"
     },
     {
         "fakturadato": 20250115,
@@ -23,14 +56,25 @@
     },
     {
         "fakturadato": 20250115,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "16 311 kr",
+        "umoms": "13 048 kr",
+        "db": "3 452 kr",
+        "dg": "26.0%",
+        "antord": "2",
+        "prord": "8 155 kr"
+    },
+    {
+        "fakturadato": 20250115,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "16 490 kr",
-        "umoms": "13 191 kr",
-        "db": "2 187 kr",
-        "dg": "16.6%",
-        "antord": "2",
-        "prord": "8 245 kr"
+        "mmoms": "38 822 kr",
+        "umoms": "31 055 kr",
+        "db": "7 726 kr",
+        "dg": "24.9%",
+        "antord": "13",
+        "prord": "2 986 kr"
     },
     {
         "fakturadato": 20250114,
