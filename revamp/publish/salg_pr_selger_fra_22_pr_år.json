@@ -37,30 +37,30 @@
     {
         "år": "2025",
         "navn": "Bertil Tangen",
-        "umoms": "410,268 kr",
-        "db": "88,922 kr",
+        "umoms": "410,457 kr",
+        "db": "89,448 kr",
         "butikk": "Sandefjord"
     },
     {
         "år": "2025",
+        "navn": "Jelle Soest",
+        "umoms": "410,385 kr",
+        "db": "91,600 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "år": "2025",
         "navn": "Linn Bjørnholt-Kristensen",
-        "umoms": "409,328 kr",
-        "db": "64,875 kr",
+        "umoms": "409,989 kr",
+        "db": "64,936 kr",
         "butikk": "Tønsberg"
     },
     {
         "år": "2025",
         "navn": "Mikkel Kihle Lindvig",
-        "umoms": "405,394 kr",
-        "db": "75,574 kr",
+        "umoms": "407,416 kr",
+        "db": "76,060 kr",
         "butikk": "Skien"
-    },
-    {
-        "år": "2025",
-        "navn": "Jelle Soest",
-        "umoms": "400,987 kr",
-        "db": "90,612 kr",
-        "butikk": "Kristiansand"
     },
     {
         "år": "2025",
@@ -72,9 +72,16 @@
     {
         "år": "2025",
         "navn": "Stine Marie Hofsrud",
-        "umoms": "370,700 kr",
-        "db": "85,981 kr",
+        "umoms": "373,879 kr",
+        "db": "86,617 kr",
         "butikk": "Tønsberg"
+    },
+    {
+        "år": "2025",
+        "navn": "Laila Skripeland",
+        "umoms": "362,342 kr",
+        "db": "70,097 kr",
+        "butikk": "Arendal"
     },
     {
         "år": "2025",
@@ -82,13 +89,6 @@
         "umoms": "356,502 kr",
         "db": "78,244 kr",
         "butikk": "Larvik"
-    },
-    {
-        "år": "2025",
-        "navn": "Laila Skripeland",
-        "umoms": "356,025 kr",
-        "db": "68,527 kr",
-        "butikk": "Arendal"
     },
     {
         "år": "2025",
@@ -205,8 +205,8 @@
     {
         "år": "2025",
         "navn": "Anders Eide",
-        "umoms": "270,857 kr",
-        "db": "26,383 kr",
+        "umoms": "270,776 kr",
+        "db": "26,354 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -232,6 +232,13 @@
     },
     {
         "år": "2025",
+        "navn": "Valeria Salinas",
+        "umoms": "246,249 kr",
+        "db": "46,439 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "år": "2025",
         "navn": "Kristoffer Gård",
         "umoms": "244,736 kr",
         "db": "38,464 kr",
@@ -240,23 +247,16 @@
     {
         "år": "2025",
         "navn": "Marthine Hansen",
-        "umoms": "243,972 kr",
-        "db": "67,976 kr",
+        "umoms": "243,955 kr",
+        "db": "67,954 kr",
         "butikk": "Sandefjord"
     },
     {
         "år": "2025",
         "navn": "Fredrik Frost Pettersen",
-        "umoms": "242,155 kr",
-        "db": "46,526 kr",
+        "umoms": "241,461 kr",
+        "db": "46,115 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "år": "2025",
-        "navn": "Valeria Salinas",
-        "umoms": "241,151 kr",
-        "db": "44,857 kr",
-        "butikk": "Kristiansand"
     },
     {
         "år": "2025",
@@ -275,8 +275,8 @@
     {
         "år": "2025",
         "navn": "Anette Omland Brubakken",
-        "umoms": "222,955 kr",
-        "db": "49,105 kr",
+        "umoms": "228,752 kr",
+        "db": "50,400 kr",
         "butikk": "Bamble"
     },
     {
@@ -289,15 +289,15 @@
     {
         "år": "2025",
         "navn": "Patrick Johansen",
-        "umoms": "194,761 kr",
-        "db": "44,014 kr",
+        "umoms": "197,010 kr",
+        "db": "44,758 kr",
         "butikk": "Arendal"
     },
     {
         "år": "2025",
         "navn": "Marcus Hidle Brustad",
-        "umoms": "189,034 kr",
-        "db": "34,842 kr",
+        "umoms": "192,567 kr",
+        "db": "36,018 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -330,9 +330,16 @@
     },
     {
         "år": "2025",
+        "navn": "Sander Larsen",
+        "umoms": "162,579 kr",
+        "db": "30,835 kr",
+        "butikk": "Bamble"
+    },
+    {
+        "år": "2025",
         "navn": "Sol Emilie Risdal",
-        "umoms": "161,672 kr",
-        "db": "21,902 kr",
+        "umoms": "161,933 kr",
+        "db": "22,049 kr",
         "butikk": "Larvik"
     },
     {
@@ -341,13 +348,6 @@
         "umoms": "158,737 kr",
         "db": "27,016 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "år": "2025",
-        "navn": "Sander Larsen",
-        "umoms": "158,079 kr",
-        "db": "29,432 kr",
-        "butikk": "Bamble"
     },
     {
         "år": "2025",
@@ -380,16 +380,9 @@
     {
         "år": "2025",
         "navn": "Preben Jacobsen",
-        "umoms": "135,250 kr",
-        "db": "28,654 kr",
+        "umoms": "135,499 kr",
+        "db": "28,655 kr",
         "butikk": "Arendal"
-    },
-    {
-        "år": "2025",
-        "navn": "Christopher Øglænd",
-        "umoms": "131,250 kr",
-        "db": "25,844 kr",
-        "butikk": "Kristiansand"
     },
     {
         "år": "2025",
@@ -397,6 +390,13 @@
         "umoms": "130,707 kr",
         "db": "31,775 kr",
         "butikk": "Larvik"
+    },
+    {
+        "år": "2025",
+        "navn": "Christopher Øglænd",
+        "umoms": "128,339 kr",
+        "db": "24,806 kr",
+        "butikk": "Kristiansand"
     },
     {
         "år": "2025",
@@ -415,8 +415,8 @@
     {
         "år": "2025",
         "navn": "Pål Linden Anthonisen",
-        "umoms": "119,580 kr",
-        "db": "21,007 kr",
+        "umoms": "122,134 kr",
+        "db": "21,794 kr",
         "butikk": "Larvik"
     },
     {
@@ -498,6 +498,13 @@
     },
     {
         "år": "2025",
+        "navn": "Daniel Hotvedt Aashildrød",
+        "umoms": "29,265 kr",
+        "db": "4,154 kr",
+        "butikk": "Sandefjord"
+    },
+    {
+        "år": "2025",
         "navn": "Kristine Martinsen",
         "umoms": "25,553 kr",
         "db": "4,995 kr",
@@ -506,16 +513,9 @@
     {
         "år": "2025",
         "navn": "Erling Enes",
-        "umoms": "22,976 kr",
-        "db": "5,478 kr",
+        "umoms": "23,874 kr",
+        "db": "5,771 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "år": "2025",
-        "navn": "Daniel Hotvedt Aashildrød",
-        "umoms": "22,791 kr",
-        "db": "3,215 kr",
-        "butikk": "Sandefjord"
     },
     {
         "år": "2025",
@@ -561,17 +561,17 @@
     },
     {
         "år": "2025",
+        "navn": "Cathrine Eppeland  Hansen",
+        "umoms": "15,309 kr",
+        "db": "4,931 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "år": "2025",
         "navn": "Rasmus Helle",
         "umoms": "11,824 kr",
         "db": "1,659 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "år": "2025",
-        "navn": "Cathrine Eppeland  Hansen",
-        "umoms": "11,449 kr",
-        "db": "4,072 kr",
-        "butikk": "Arendal"
     },
     {
         "år": "2025",
@@ -624,13 +624,6 @@
     },
     {
         "år": "2025",
-        "navn": "Joseph Nimene Weagba",
-        "umoms": "5,447 kr",
-        "db": "-1,157 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "år": "2025",
         "navn": "Adrian Nygaard",
         "umoms": "4,625 kr",
         "db": "1,555 kr",
@@ -642,6 +635,13 @@
         "umoms": "4,482 kr",
         "db": "265 kr",
         "butikk": "Skien"
+    },
+    {
+        "år": "2025",
+        "navn": "Joseph Nimene Weagba",
+        "umoms": "3,980 kr",
+        "db": "-1,156 kr",
+        "butikk": "Tønsberg"
     },
     {
         "år": "2025",
