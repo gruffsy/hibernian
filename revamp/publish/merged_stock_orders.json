@@ -616,9 +616,9 @@
     {
         "Prodno": "246555",
         "Beskrivelse": "CIF CONCEPT ANTRACITE 60X60",
-        "antall på lager": 92.2,
+        "antall på lager": 0.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -784,15 +784,11 @@
     {
         "Prodno": "300000000000044556",
         "Beskrivelse": "CIF NEXUS PEARL 60x60",
-        "antall på lager": -184.3,
+        "antall på lager": 967.7,
         "antall pr pall": 46.1,
-        "Paller på lager": -4,
-        "Paller på vei": 28,
+        "Paller på lager": 21,
+        "Paller på vei": 3,
         "Bestilling på vei": [
-            {
-                "Ukenr": "3/2025",
-                "Antall": 1152.0
-            },
             {
                 "Ukenr": "3/2025",
                 "Antall": 92.16
