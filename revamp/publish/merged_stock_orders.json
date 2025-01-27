@@ -1207,11 +1207,11 @@
         "Bestilling på vei": [
             {
                 "Ukenr": "ukjent",
-                "Antall": 432.0
+                "Antall": 518.4
             },
             {
                 "Ukenr": "ukjent",
-                "Antall": 518.4
+                "Antall": 432.0
             }
         ]
     },
@@ -1225,11 +1225,11 @@
         "Bestilling på vei": [
             {
                 "Ukenr": "ukjent",
-                "Antall": 107.36
+                "Antall": 161.04
             },
             {
                 "Ukenr": "ukjent",
-                "Antall": 161.04
+                "Antall": 107.36
             }
         ]
     },
@@ -1721,7 +1721,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 276.48
+            }
+        ]
     },
     {
         "Prodno": "PG-BK15",
@@ -1769,7 +1775,13 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 92.16
+            }
+        ]
     },
     {
         "Prodno": "PGIBE301",
@@ -1793,7 +1805,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 54.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 108.0
+            }
+        ]
     },
     {
         "Prodno": "PGEME20",
@@ -1801,7 +1819,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 54.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 54.0
+            }
+        ]
     },
     {
         "Prodno": "PGEME50",
