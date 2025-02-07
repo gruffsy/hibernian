@@ -146,10 +146,26 @@
     {
         "måned": "February",
         "år": "2025",
+        "navn": "Linn Kristine Terjesen",
+        "umoms": "122,496 kr",
+        "db": "37,704 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "måned": "February",
+        "år": "2025",
         "navn": "Laila Skripeland",
         "umoms": "121,413 kr",
         "db": "25,055 kr",
         "butikk": "Arendal"
+    },
+    {
+        "måned": "February",
+        "år": "2025",
+        "navn": "Thor Aksel Thoresen",
+        "umoms": "120,721 kr",
+        "db": "26,607 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "February",
@@ -178,25 +194,9 @@
     {
         "måned": "February",
         "år": "2025",
-        "navn": "Linn Kristine Terjesen",
-        "umoms": "113,786 kr",
-        "db": "35,970 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "måned": "February",
-        "år": "2025",
         "navn": "Odne Hansen",
         "umoms": "113,382 kr",
         "db": "26,449 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "February",
-        "år": "2025",
-        "navn": "Thor Aksel Thoresen",
-        "umoms": "111,244 kr",
-        "db": "26,607 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -219,9 +219,17 @@
         "måned": "February",
         "år": "2025",
         "navn": "Patrick Johansen",
-        "umoms": "104,746 kr",
-        "db": "28,603 kr",
+        "umoms": "105,807 kr",
+        "db": "28,933 kr",
         "butikk": "Arendal"
+    },
+    {
+        "måned": "February",
+        "år": "2025",
+        "navn": "Menglei Chen Ottem",
+        "umoms": "105,039 kr",
+        "db": "29,454 kr",
+        "butikk": "Larvik"
     },
     {
         "måned": "February",
@@ -230,14 +238,6 @@
         "umoms": "104,732 kr",
         "db": "22,858 kr",
         "butikk": "Arendal"
-    },
-    {
-        "måned": "February",
-        "år": "2025",
-        "navn": "Menglei Chen Ottem",
-        "umoms": "101,256 kr",
-        "db": "28,990 kr",
-        "butikk": "Larvik"
     },
     {
         "måned": "February",
@@ -275,8 +275,8 @@
         "måned": "February",
         "år": "2025",
         "navn": "Anders Eide",
-        "umoms": "82,502 kr",
-        "db": "27,322 kr",
+        "umoms": "82,701 kr",
+        "db": "27,409 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -315,8 +315,8 @@
         "måned": "February",
         "år": "2025",
         "navn": "Amritpal Nagra Singh",
-        "umoms": "76,246 kr",
-        "db": "18,432 kr",
+        "umoms": "76,502 kr",
+        "db": "18,476 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -371,9 +371,17 @@
         "måned": "February",
         "år": "2025",
         "navn": "Pernille Dall",
-        "umoms": "55,858 kr",
-        "db": "15,293 kr",
+        "umoms": "55,846 kr",
+        "db": "15,576 kr",
         "butikk": "Kristiansand"
+    },
+    {
+        "måned": "February",
+        "år": "2025",
+        "navn": "Kristoffer Gård",
+        "umoms": "53,200 kr",
+        "db": "9,912 kr",
+        "butikk": "Bamble"
     },
     {
         "måned": "February",
@@ -381,14 +389,6 @@
         "navn": "Kristine Martinsen",
         "umoms": "52,882 kr",
         "db": "16,012 kr",
-        "butikk": "Bamble"
-    },
-    {
-        "måned": "February",
-        "år": "2025",
-        "navn": "Kristoffer Gård",
-        "umoms": "51,970 kr",
-        "db": "9,676 kr",
         "butikk": "Bamble"
     },
     {
@@ -427,8 +427,8 @@
         "måned": "February",
         "år": "2025",
         "navn": "Sander Engum Westgård",
-        "umoms": "39,991 kr",
-        "db": "10,285 kr",
+        "umoms": "40,692 kr",
+        "db": "10,594 kr",
         "butikk": "Skien"
     },
     {
@@ -538,14 +538,6 @@
     {
         "måned": "February",
         "år": "2025",
-        "navn": "Sol Emilie Risdal",
-        "umoms": "19,684 kr",
-        "db": "6,558 kr",
-        "butikk": "Larvik"
-    },
-    {
-        "måned": "February",
-        "år": "2025",
         "navn": "Benjamin Limi",
         "umoms": "19,344 kr",
         "db": "3,989 kr",
@@ -574,6 +566,14 @@
         "umoms": "15,908 kr",
         "db": "4,804 kr",
         "butikk": "Tønsberg"
+    },
+    {
+        "måned": "February",
+        "år": "2025",
+        "navn": "Sol Emilie Risdal",
+        "umoms": "15,716 kr",
+        "db": "4,973 kr",
+        "butikk": "Larvik"
     },
     {
         "måned": "February",
