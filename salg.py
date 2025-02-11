@@ -56,7 +56,7 @@ order by
 
 '''
 
-
+print(query)
 cursor = conn.cursor()
 cursor.execute(query)
 
