@@ -1,6 +1,17 @@
 [
     {
         "fakturadato": 20250214,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "10 298 kr",
+        "umoms": "8 238 kr",
+        "db": "-307 kr",
+        "dg": "-4.0%",
+        "antord": "1",
+        "prord": "10 298 kr"
+    },
+    {
+        "fakturadato": 20250214,
         "butikk": "Tønsberg",
         "Klient": "3",
         "mmoms": "567 kr",
@@ -14,12 +25,12 @@
         "fakturadato": 20250214,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "567 kr",
-        "umoms": "453 kr",
-        "db": "75 kr",
-        "dg": "16.6%",
-        "antord": "1",
-        "prord": "567 kr"
+        "mmoms": "10 865 kr",
+        "umoms": "8 691 kr",
+        "db": "-232 kr",
+        "dg": "-2.7%",
+        "antord": "2",
+        "prord": "5 432 kr"
     },
     {
         "fakturadato": 20250213,
