@@ -1675,7 +1675,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 38.9,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "12/2025",
+                "Antall": 194.4
+            }
+        ]
     },
     {
         "Prodno": "PGWBE50",
@@ -1721,7 +1727,13 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "12/2025",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "PGIBE201",
@@ -1737,8 +1749,12 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 2,
+        "Paller på vei": 5,
         "Bestilling på vei": [
+            {
+                "Ukenr": "12/2025",
+                "Antall": 138.24
+            },
             {
                 "Ukenr": "ukjent",
                 "Antall": 92.16
@@ -1795,7 +1811,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 54.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "12/2025",
+                "Antall": 54.0
+            }
+        ]
     },
     {
         "Prodno": "PG-P940",
@@ -1803,7 +1825,13 @@
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "12/2025",
+                "Antall": 51.84
+            }
+        ]
     },
     {
         "Prodno": "PGXP940",
@@ -1819,7 +1847,13 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "12/2025",
+                "Antall": 46.08
+            }
+        ]
     },
     {
         "Prodno": "KANGRA120",
