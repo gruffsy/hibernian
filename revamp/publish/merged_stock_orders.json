@@ -1079,7 +1079,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 15,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "12/2025",
+                "Antall": 648.0
+            }
+        ]
     },
     {
         "Prodno": "L960A80",
@@ -1087,7 +1093,13 @@
         "antall på lager": 259.2,
         "antall pr pall": 43.2,
         "Paller på lager": 6,
-        "Paller på vei": 0
+        "Paller på vei": 15,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "12/2025",
+                "Antall": 648.0
+            }
+        ]
     },
     {
         "Prodno": "FAB1020BIS",
