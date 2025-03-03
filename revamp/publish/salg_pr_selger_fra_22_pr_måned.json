@@ -83,9 +83,17 @@
         "måned": "March",
         "år": "2025",
         "navn": "Bertil Tangen",
-        "umoms": "67,565 kr",
-        "db": "16,389 kr",
+        "umoms": "67,334 kr",
+        "db": "16,314 kr",
         "butikk": "Sandefjord"
+    },
+    {
+        "måned": "March",
+        "år": "2025",
+        "navn": "Linn Bjørnholt-Kristensen",
+        "umoms": "57,790 kr",
+        "db": "15,670 kr",
+        "butikk": "Tønsberg"
     },
     {
         "måned": "March",
@@ -114,17 +122,9 @@
     {
         "måned": "March",
         "år": "2025",
-        "navn": "Linn Bjørnholt-Kristensen",
-        "umoms": "55,404 kr",
-        "db": "14,666 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "måned": "March",
-        "år": "2025",
         "navn": "Amanda Krumsvik",
-        "umoms": "52,952 kr",
-        "db": "13,505 kr",
+        "umoms": "52,744 kr",
+        "db": "13,444 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -147,8 +147,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Zain Al-Rubay",
-        "umoms": "40,701 kr",
-        "db": "10,127 kr",
+        "umoms": "43,678 kr",
+        "db": "11,297 kr",
         "butikk": "Bamble"
     },
     {
@@ -158,6 +158,14 @@
         "umoms": "39,133 kr",
         "db": "11,246 kr",
         "butikk": "Arendal"
+    },
+    {
+        "måned": "March",
+        "år": "2025",
+        "navn": "Oliwia Leonarda Sobaniec ",
+        "umoms": "38,816 kr",
+        "db": "11,319 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "March",
@@ -181,14 +189,6 @@
         "navn": "Tonje W  Madsen",
         "umoms": "36,564 kr",
         "db": "10,555 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "March",
-        "år": "2025",
-        "navn": "Oliwia Leonarda Sobaniec ",
-        "umoms": "34,835 kr",
-        "db": "10,911 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -235,8 +235,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Philip Jacobsen",
-        "umoms": "27,405 kr",
-        "db": "8,393 kr",
+        "umoms": "28,255 kr",
+        "db": "8,736 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -258,10 +258,10 @@
     {
         "måned": "March",
         "år": "2025",
-        "navn": "Sander Engum Westgård",
-        "umoms": "24,953 kr",
-        "db": "6,084 kr",
-        "butikk": "Skien"
+        "navn": "Julie Nilsen Bjølseth",
+        "umoms": "25,665 kr",
+        "db": "6,008 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "March",
@@ -274,10 +274,10 @@
     {
         "måned": "March",
         "år": "2025",
-        "navn": "Julie Nilsen Bjølseth",
-        "umoms": "22,806 kr",
-        "db": "5,548 kr",
-        "butikk": "Sandefjord"
+        "navn": "Sander Engum Westgård",
+        "umoms": "24,288 kr",
+        "db": "5,686 kr",
+        "butikk": "Skien"
     },
     {
         "måned": "March",
@@ -330,6 +330,22 @@
     {
         "måned": "March",
         "år": "2025",
+        "navn": "Emil Bomhoff",
+        "umoms": "14,363 kr",
+        "db": "3,463 kr",
+        "butikk": "Skien"
+    },
+    {
+        "måned": "March",
+        "år": "2025",
+        "navn": "Torstein Sandve",
+        "umoms": "13,250 kr",
+        "db": "2,626 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "måned": "March",
+        "år": "2025",
         "navn": "Patrick Jensen",
         "umoms": "12,999 kr",
         "db": "2,350 kr",
@@ -346,14 +362,6 @@
     {
         "måned": "March",
         "år": "2025",
-        "navn": "Emil Bomhoff",
-        "umoms": "9,229 kr",
-        "db": "3,202 kr",
-        "butikk": "Skien"
-    },
-    {
-        "måned": "March",
-        "år": "2025",
         "navn": "Frode  Olsen",
         "umoms": "9,125 kr",
         "db": "2,244 kr",
@@ -362,17 +370,9 @@
     {
         "måned": "March",
         "år": "2025",
-        "navn": "Torstein Sandve",
-        "umoms": "8,688 kr",
-        "db": "1,146 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "måned": "March",
-        "år": "2025",
         "navn": "Kemuel Lillestø",
-        "umoms": "8,121 kr",
-        "db": "-831 kr",
+        "umoms": "8,956 kr",
+        "db": "-523 kr",
         "butikk": "Arendal"
     },
     {
@@ -395,8 +395,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Tuva Sofie Risdal",
-        "umoms": "6,300 kr",
-        "db": "822 kr",
+        "umoms": "6,339 kr",
+        "db": "839 kr",
         "butikk": "Larvik"
     },
     {
@@ -562,14 +562,6 @@
     {
         "måned": "March",
         "år": "2025",
-        "navn": "Patrick Johansen",
-        "umoms": "-548 kr",
-        "db": "-313 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "måned": "March",
-        "år": "2025",
         "navn": "Marcus Hidle Brustad",
         "umoms": "-581 kr",
         "db": "-376 kr",
@@ -582,6 +574,14 @@
         "umoms": "-616 kr",
         "db": "-250 kr",
         "butikk": "Kristiansand"
+    },
+    {
+        "måned": "March",
+        "år": "2025",
+        "navn": "Patrick Johansen",
+        "umoms": "-667 kr",
+        "db": "-338 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "March",
