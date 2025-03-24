@@ -784,30 +784,18 @@
     {
         "Prodno": "59671",
         "Beskrivelse": "CIF BETON GREY 60X60",
-        "antall på lager": 138.2,
+        "antall på lager": 230.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "12/2025",
-                "Antall": 92.16
-            }
-        ]
+        "Paller på lager": 5,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000039514",
         "Beskrivelse": "CIF BLANCO BRILLO 30X60",
-        "antall på lager": 86.4,
+        "antall på lager": 172.8,
         "antall pr pall": 86.4,
-        "Paller på lager": 1,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "12/2025",
-                "Antall": 86.4
-            }
-        ]
+        "Paller på lager": 2,
+        "Paller på vei": 0
     },
     {
         "Prodno": "246555",
@@ -834,15 +822,11 @@
     {
         "Prodno": "042447",
         "Beskrivelse": "CIF DIAMOND GOLD PULIDO 60X120",
-        "antall på lager": 46.1,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
-        "Paller på vei": 6,
+        "Paller på lager": 3,
+        "Paller på vei": 4,
         "Bestilling på vei": [
-            {
-                "Ukenr": "12/2025",
-                "Antall": 92.16
-            },
             {
                 "Ukenr": "18/2025",
                 "Antall": 184.32
@@ -852,15 +836,11 @@
     {
         "Prodno": "042449",
         "Beskrivelse": "CIF DIAMOND GOLD PULIDO 60X60",
-        "antall på lager": 216.0,
+        "antall på lager": 262.1,
         "antall pr pall": 43.2,
-        "Paller på lager": 5,
-        "Paller på vei": 4,
+        "Paller på lager": 6,
+        "Paller på vei": 3,
         "Bestilling på vei": [
-            {
-                "Ukenr": "12/2025",
-                "Antall": 46.08
-            },
             {
                 "Ukenr": "18/2025",
                 "Antall": 138.24
@@ -884,9 +864,9 @@
     {
         "Prodno": "300000000000040073",
         "Beskrivelse": "CIF INDUSTRIAL BLACK 60X60",
-        "antall på lager": 138.2,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 4,
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
@@ -906,19 +886,11 @@
     {
         "Prodno": "300000000000048281",
         "Beskrivelse": "CIF INDUSTRIAL SILVER 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 6,
+        "Paller på lager": 3,
+        "Paller på vei": 2,
         "Bestilling på vei": [
-            {
-                "Ukenr": "12/2025",
-                "Antall": 138.24
-            },
-            {
-                "Ukenr": "12/2025",
-                "Antall": 46.08
-            },
             {
                 "Ukenr": "18/2025",
                 "Antall": 92.16
@@ -1018,19 +990,11 @@
     {
         "Prodno": "300000000000037842",
         "Beskrivelse": "CIF OVERLAND PEARL 60X60",
-        "antall på lager": 875.5,
+        "antall på lager": 1382.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 19,
-        "Paller på vei": 32,
+        "Paller på lager": 30,
+        "Paller på vei": 21,
         "Bestilling på vei": [
-            {
-                "Ukenr": "12/2025",
-                "Antall": 368.64
-            },
-            {
-                "Ukenr": "12/2025",
-                "Antall": 138.24
-            },
             {
                 "Ukenr": "18/2025",
                 "Antall": 967.68
@@ -1116,15 +1080,11 @@
     {
         "Prodno": "042451",
         "Beskrivelse": "CIF STATUARIO LUXE PULIDO 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 138.2,
         "antall pr pall": 43.2,
-        "Paller på lager": 0,
-        "Paller på vei": 9,
+        "Paller på lager": 3,
+        "Paller på vei": 6,
         "Bestilling på vei": [
-            {
-                "Ukenr": "12/2025",
-                "Antall": 138.24
-            },
             {
                 "Ukenr": "18/2025",
                 "Antall": 259.2
@@ -1712,34 +1672,18 @@
     {
         "Prodno": "IL6003",
         "Beskrivelse": "LTG INNOVATION LIME BEIGE 60X60",
-        "antall på lager": 1152.0,
+        "antall på lager": 2396.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 25,
-        "Paller på vei": 27,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "11/2025",
-                "Antall": 1244.16
-            }
-        ]
+        "Paller på lager": 52,
+        "Paller på vei": 0
     },
     {
         "Prodno": "IL6004",
         "Beskrivelse": "LTG INNOVATION LIME BIANCO 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 1244.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 27,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "11/2025",
-                "Antall": 599.04
-            },
-            {
-                "Ukenr": "11/2025",
-                "Antall": 645.12
-            }
-        ]
+        "Paller på lager": 27,
+        "Paller på vei": 0
     },
     {
         "Prodno": "IL6001",
@@ -1808,16 +1752,10 @@
     {
         "Prodno": "PN612061",
         "Beskrivelse": "LTG NUVOLA BEIGE 60X120",
-        "antall på lager": 77.8,
+        "antall på lager": 505.4,
         "antall pr pall": 38.9,
-        "Paller på lager": 2,
-        "Paller på vei": 11,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "11/2025",
-                "Antall": 427.68
-            }
-        ]
+        "Paller på lager": 13,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PN6061",
@@ -1830,16 +1768,10 @@
     {
         "Prodno": "PN612062",
         "Beskrivelse": "LTG NUVOLA SILVER 60X120",
-        "antall på lager": 38.9,
+        "antall på lager": 505.4,
         "antall pr pall": 38.9,
-        "Paller på lager": 1,
-        "Paller på vei": 12,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "11/2025",
-                "Antall": 466.56
-            }
-        ]
+        "Paller på lager": 13,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PN6062",
@@ -2014,16 +1946,10 @@
     {
         "Prodno": "LTG2100-662",
         "Beskrivelse": "LTG TERRA CENERE 60X60",
-        "antall på lager": 184.3,
+        "antall på lager": 230.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "11/2025",
-                "Antall": 46.08
-            }
-        ]
+        "Paller på lager": 5,
+        "Paller på vei": 0
     },
     {
         "Prodno": "LTG2100-364",
@@ -2044,16 +1970,10 @@
     {
         "Prodno": "LTG2100-664",
         "Beskrivelse": "LTG TERRA CHIARO 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 276.5,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 6,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "11/2025",
-                "Antall": 276.48
-            }
-        ]
+        "Paller på lager": 6,
+        "Paller på vei": 0
     },
     {
         "Prodno": "612TR08R-M",
