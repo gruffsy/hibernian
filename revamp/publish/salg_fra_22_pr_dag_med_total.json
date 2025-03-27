@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20250327,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "227 kr",
+        "umoms": "181 kr",
+        "db": "98 kr",
+        "dg": "54.0%",
+        "antord": "1",
+        "prord": "227 kr"
+    },
+    {
+        "fakturadato": 20250327,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "227 kr",
+        "umoms": "181 kr",
+        "db": "98 kr",
+        "dg": "54.1%",
+        "antord": "1",
+        "prord": "227 kr"
+    },
+    {
         "fakturadato": 20250326,
         "butikk": "Skien",
         "Klient": "0",
