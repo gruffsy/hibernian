@@ -51,8 +51,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Bertil Tangen",
-        "umoms": "609,901 kr",
-        "db": "131,443 kr",
+        "umoms": "609,956 kr",
+        "db": "131,433 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -83,8 +83,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Julie Nilsen Bjølseth",
-        "umoms": "575,644 kr",
-        "db": "116,538 kr",
+        "umoms": "578,287 kr",
+        "db": "116,895 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -131,8 +131,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Aleksander Bang",
-        "umoms": "503,537 kr",
-        "db": "76,422 kr",
+        "umoms": "503,816 kr",
+        "db": "76,452 kr",
         "butikk": "Skien"
     },
     {
@@ -203,8 +203,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Anders Eide",
-        "umoms": "446,041 kr",
-        "db": "78,285 kr",
+        "umoms": "446,545 kr",
+        "db": "78,283 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -219,8 +219,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Jonas Skog",
-        "umoms": "422,107 kr",
-        "db": "73,423 kr",
+        "umoms": "422,768 kr",
+        "db": "73,815 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -235,8 +235,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Tobias Eide",
-        "umoms": "398,217 kr",
-        "db": "94,256 kr",
+        "umoms": "400,588 kr",
+        "db": "94,886 kr",
         "butikk": "Arendal"
     },
     {
@@ -251,8 +251,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Katarina Kiste Riis",
-        "umoms": "375,575 kr",
-        "db": "83,085 kr",
+        "umoms": "376,050 kr",
+        "db": "83,258 kr",
         "butikk": "Bamble"
     },
     {
@@ -267,8 +267,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Preben Jacobsen",
-        "umoms": "360,808 kr",
-        "db": "74,267 kr",
+        "umoms": "360,745 kr",
+        "db": "74,235 kr",
         "butikk": "Arendal"
     },
     {
@@ -290,9 +290,17 @@
     {
         "måned": "March",
         "år": "2025",
+        "navn": "Torstein Sandve",
+        "umoms": "347,952 kr",
+        "db": "29,517 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "måned": "March",
+        "år": "2025",
         "navn": "Sander Engum Westgård",
-        "umoms": "345,136 kr",
-        "db": "70,874 kr",
+        "umoms": "346,982 kr",
+        "db": "71,278 kr",
         "butikk": "Skien"
     },
     {
@@ -318,14 +326,6 @@
         "umoms": "341,933 kr",
         "db": "96,478 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "måned": "March",
-        "år": "2025",
-        "navn": "Torstein Sandve",
-        "umoms": "341,394 kr",
-        "db": "30,343 kr",
-        "butikk": "Arendal"
     },
     {
         "måned": "March",
@@ -403,8 +403,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Jelle Soest",
-        "umoms": "259,387 kr",
-        "db": "44,228 kr",
+        "umoms": "259,522 kr",
+        "db": "44,280 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -507,8 +507,8 @@
         "måned": "March",
         "år": "2025",
         "navn": "Daniel Jørgensen",
-        "umoms": "166,303 kr",
-        "db": "38,932 kr",
+        "umoms": "166,549 kr",
+        "db": "38,996 kr",
         "butikk": "Larvik"
     },
     {
@@ -539,9 +539,17 @@
         "måned": "March",
         "år": "2025",
         "navn": "Jonas Tjernshaugen",
-        "umoms": "142,158 kr",
-        "db": "39,458 kr",
+        "umoms": "143,840 kr",
+        "db": "40,328 kr",
         "butikk": "Tønsberg"
+    },
+    {
+        "måned": "March",
+        "år": "2025",
+        "navn": "Philip Jacobsen",
+        "umoms": "138,693 kr",
+        "db": "37,000 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "March",
@@ -549,14 +557,6 @@
         "navn": "Marcus Hidle Brustad",
         "umoms": "137,940 kr",
         "db": "34,130 kr",
-        "butikk": "Sandefjord"
-    },
-    {
-        "måned": "March",
-        "år": "2025",
-        "navn": "Philip Jacobsen",
-        "umoms": "136,139 kr",
-        "db": "36,297 kr",
         "butikk": "Sandefjord"
     },
     {
