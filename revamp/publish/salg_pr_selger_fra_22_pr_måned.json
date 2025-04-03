@@ -19,8 +19,8 @@
         "måned": "April",
         "år": "2025",
         "navn": "Torstein Sandve",
-        "umoms": "121,308 kr",
-        "db": "15,062 kr",
+        "umoms": "121,217 kr",
+        "db": "15,067 kr",
         "butikk": "Arendal"
     },
     {
@@ -66,6 +66,14 @@
     {
         "måned": "April",
         "år": "2025",
+        "navn": "Aleksander Bang",
+        "umoms": "85,564 kr",
+        "db": "14,320 kr",
+        "butikk": "Skien"
+    },
+    {
+        "måned": "April",
+        "år": "2025",
         "navn": "Kristine Martinsen",
         "umoms": "84,342 kr",
         "db": "13,552 kr",
@@ -78,14 +86,6 @@
         "umoms": "83,092 kr",
         "db": "18,245 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "måned": "April",
-        "år": "2025",
-        "navn": "Aleksander Bang",
-        "umoms": "83,056 kr",
-        "db": "14,225 kr",
-        "butikk": "Skien"
     },
     {
         "måned": "April",
@@ -155,8 +155,8 @@
         "måned": "April",
         "år": "2025",
         "navn": "Heidi Kristensen Voje",
-        "umoms": "74,266 kr",
-        "db": "20,780 kr",
+        "umoms": "74,446 kr",
+        "db": "20,828 kr",
         "butikk": "Bamble"
     },
     {
@@ -174,6 +174,14 @@
         "umoms": "69,038 kr",
         "db": "10,757 kr",
         "butikk": "Larvik"
+    },
+    {
+        "måned": "April",
+        "år": "2025",
+        "navn": "Kemuel Lillestø",
+        "umoms": "64,509 kr",
+        "db": "16,901 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "April",
@@ -210,22 +218,6 @@
     {
         "måned": "April",
         "år": "2025",
-        "navn": "Anders Eide",
-        "umoms": "62,780 kr",
-        "db": "3,381 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "måned": "April",
-        "år": "2025",
-        "navn": "Kemuel Lillestø",
-        "umoms": "61,921 kr",
-        "db": "16,009 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "måned": "April",
-        "år": "2025",
         "navn": "Fredrik Mølmen",
         "umoms": "61,852 kr",
         "db": "3,129 kr",
@@ -238,6 +230,14 @@
         "umoms": "60,943 kr",
         "db": "7,540 kr",
         "butikk": "Larvik"
+    },
+    {
+        "måned": "April",
+        "år": "2025",
+        "navn": "Anders Eide",
+        "umoms": "60,452 kr",
+        "db": "3,185 kr",
+        "butikk": "Tønsberg"
     },
     {
         "måned": "April",
@@ -356,7 +356,7 @@
         "år": "2025",
         "navn": "Daniel Jørgensen",
         "umoms": "33,403 kr",
-        "db": "-12,496 kr",
+        "db": "-12,484 kr",
         "butikk": "Larvik"
     },
     {
@@ -386,6 +386,14 @@
     {
         "måned": "April",
         "år": "2025",
+        "navn": "Stine Marie Hofsrud",
+        "umoms": "30,509 kr",
+        "db": "9,253 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "April",
+        "år": "2025",
         "navn": "Zain Al-Rubay",
         "umoms": "30,103 kr",
         "db": "3,623 kr",
@@ -398,14 +406,6 @@
         "umoms": "29,374 kr",
         "db": "66 kr",
         "butikk": "Sandefjord"
-    },
-    {
-        "måned": "April",
-        "år": "2025",
-        "navn": "Stine Marie Hofsrud",
-        "umoms": "27,381 kr",
-        "db": "8,154 kr",
-        "butikk": "Tønsberg"
     },
     {
         "måned": "April",
@@ -435,8 +435,8 @@
         "måned": "April",
         "år": "2025",
         "navn": "Marcus Hidle Brustad",
-        "umoms": "23,608 kr",
-        "db": "6,111 kr",
+        "umoms": "23,688 kr",
+        "db": "6,089 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -467,17 +467,25 @@
         "måned": "April",
         "år": "2025",
         "navn": "Tobias Eide",
-        "umoms": "18,322 kr",
-        "db": "1,694 kr",
+        "umoms": "19,009 kr",
+        "db": "1,575 kr",
         "butikk": "Arendal"
     },
     {
         "måned": "April",
         "år": "2025",
         "navn": "Kine Thi Huynh",
-        "umoms": "14,274 kr",
-        "db": "5,382 kr",
+        "umoms": "15,449 kr",
+        "db": "6,030 kr",
         "butikk": "Skien"
+    },
+    {
+        "måned": "April",
+        "år": "2025",
+        "navn": "Daniel Hotvedt Aashildrød",
+        "umoms": "14,742 kr",
+        "db": "2,410 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "April",
@@ -502,14 +510,6 @@
         "umoms": "13,336 kr",
         "db": "2,793 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "måned": "April",
-        "år": "2025",
-        "navn": "Daniel Hotvedt Aashildrød",
-        "umoms": "12,915 kr",
-        "db": "1,889 kr",
-        "butikk": "Sandefjord"
     },
     {
         "måned": "April",
@@ -586,6 +586,14 @@
     {
         "måned": "April",
         "år": "2025",
+        "navn": "Jonas Tjernshaugen",
+        "umoms": "5,624 kr",
+        "db": "1,199 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "April",
+        "år": "2025",
         "navn": "Øystein Kamfjord",
         "umoms": "5,458 kr",
         "db": "730 kr",
@@ -602,6 +610,14 @@
     {
         "måned": "April",
         "år": "2025",
+        "navn": "Lilian Margi Frøitland",
+        "umoms": "3,768 kr",
+        "db": "1,172 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "April",
+        "år": "2025",
         "navn": "Runar Fossen",
         "umoms": "3,683 kr",
         "db": "798 kr",
@@ -614,14 +630,6 @@
         "umoms": "3,330 kr",
         "db": "-1,390 kr",
         "butikk": "Arendal"
-    },
-    {
-        "måned": "April",
-        "år": "2025",
-        "navn": "Jonas Tjernshaugen",
-        "umoms": "2,707 kr",
-        "db": "-238 kr",
-        "butikk": "Tønsberg"
     },
     {
         "måned": "April",
@@ -670,14 +678,6 @@
         "umoms": "1,509 kr",
         "db": "168 kr",
         "butikk": "Arendal"
-    },
-    {
-        "måned": "April",
-        "år": "2025",
-        "navn": "Lilian Margi Frøitland",
-        "umoms": "1,508 kr",
-        "db": "188 kr",
-        "butikk": "Kristiansand"
     },
     {
         "måned": "April",
