@@ -811,7 +811,7 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 9,
+        "Paller på vei": 7,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
@@ -822,8 +822,8 @@
                 "Antall": 138.24
             },
             {
-                "Ukenr": "18/2025",
-                "Antall": 138.24
+                "Ukenr": "20/2025",
+                "Antall": 46.08
             }
         ]
     },
@@ -833,14 +833,10 @@
         "antall på lager": 184.3,
         "antall pr pall": 46.1,
         "Paller på lager": 4,
-        "Paller på vei": 8,
+        "Paller på vei": 4,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
-                "Antall": 184.32
-            },
-            {
-                "Ukenr": "18/2025",
                 "Antall": 184.32
             }
         ]
@@ -851,13 +847,7 @@
         "antall på lager": 259.2,
         "antall pr pall": 43.2,
         "Paller på lager": 6,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "18/2025",
-                "Antall": 138.24
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000045391",
@@ -865,13 +855,7 @@
         "antall på lager": 207.4,
         "antall pr pall": 51.8,
         "Paller på lager": 4,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "18/2025",
-                "Antall": 155.52
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000040073",
@@ -879,11 +863,11 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 7,
+        "Paller på vei": 5,
         "Bestilling på vei": [
             {
-                "Ukenr": "18/2025",
-                "Antall": 322.56
+                "Ukenr": "20/2025",
+                "Antall": 207.36
             }
         ]
     },
@@ -901,14 +885,10 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 4,
+        "Paller på vei": 2,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
-                "Antall": 92.16
-            },
-            {
-                "Ukenr": "18/2025",
                 "Antall": 92.16
             }
         ]
@@ -951,14 +931,10 @@
         "antall på lager": 51.8,
         "antall pr pall": 51.8,
         "Paller på lager": 1,
-        "Paller på vei": 4,
+        "Paller på vei": 2,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
-                "Antall": 103.68
-            },
-            {
-                "Ukenr": "18/2025",
                 "Antall": 103.68
             }
         ]
@@ -985,15 +961,15 @@
         "antall på lager": 553.0,
         "antall pr pall": 46.1,
         "Paller på lager": 12,
-        "Paller på vei": 14,
+        "Paller på vei": 8,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
                 "Antall": 322.56
             },
             {
-                "Ukenr": "18/2025",
-                "Antall": 322.56
+                "Ukenr": "20/2025",
+                "Antall": 46.08
             }
         ]
     },
@@ -1003,11 +979,11 @@
         "antall på lager": 259.2,
         "antall pr pall": 51.8,
         "Paller på lager": 5,
-        "Paller på vei": 3,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
-                "Ukenr": "18/2025",
-                "Antall": 155.52
+                "Ukenr": "20/2025",
+                "Antall": 51.84
             }
         ]
     },
@@ -1017,11 +993,19 @@
         "antall på lager": 967.7,
         "antall pr pall": 46.1,
         "Paller på lager": 21,
-        "Paller på vei": 21,
+        "Paller på vei": 24,
         "Bestilling på vei": [
             {
-                "Ukenr": "18/2025",
-                "Antall": 967.68
+                "Ukenr": "20/2025",
+                "Antall": 276.48
+            },
+            {
+                "Ukenr": "20/2025",
+                "Antall": 691.2
+            },
+            {
+                "Ukenr": "20/2025",
+                "Antall": 155.52
             }
         ]
     },
@@ -1031,14 +1015,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 14,
+        "Paller på vei": 7,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
-                "Antall": 362.88
-            },
-            {
-                "Ukenr": "18/2025",
                 "Antall": 362.88
             }
         ]
@@ -1049,7 +1029,7 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 30,
+        "Paller på vei": 15,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
@@ -1058,10 +1038,6 @@
             {
                 "Ukenr": "20/2025",
                 "Antall": 184.32
-            },
-            {
-                "Ukenr": "18/2025",
-                "Antall": 691.2
             }
         ]
     },
@@ -1122,8 +1098,12 @@
         "Paller på vei": 6,
         "Bestilling på vei": [
             {
-                "Ukenr": "18/2025",
-                "Antall": 259.2
+                "Ukenr": "20/2025",
+                "Antall": 230.4
+            },
+            {
+                "Ukenr": "20/2025",
+                "Antall": 43.2
             }
         ]
     },
@@ -2031,14 +2011,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 57.6,
         "Paller på lager": 0,
-        "Paller på vei": 2,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
-                "Antall": 57.6
-            },
-            {
-                "Ukenr": "18/2025",
                 "Antall": 57.6
             }
         ]
@@ -2049,14 +2025,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 57.6,
         "Paller på lager": 0,
-        "Paller på vei": 2,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
-                "Antall": 57.6
-            },
-            {
-                "Ukenr": "18/2025",
                 "Antall": 57.6
             }
         ]
@@ -2067,14 +2039,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 57.6,
         "Paller på lager": 0,
-        "Paller på vei": 2,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
-                "Antall": 57.6
-            },
-            {
-                "Ukenr": "18/2025",
                 "Antall": 57.6
             }
         ]
@@ -2085,14 +2053,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 57.6,
         "Paller på lager": 0,
-        "Paller på vei": 2,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
-                "Antall": 57.6
-            },
-            {
-                "Ukenr": "18/2025",
                 "Antall": 57.6
             }
         ]
@@ -2103,14 +2067,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 57.6,
         "Paller på lager": 0,
-        "Paller på vei": 2,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
-                "Antall": 57.6
-            },
-            {
-                "Ukenr": "18/2025",
                 "Antall": 57.6
             }
         ]
@@ -2124,7 +2084,7 @@
         "Paller på vei": 1,
         "Bestilling på vei": [
             {
-                "Ukenr": "18/2025",
+                "Ukenr": "20/2025",
                 "Antall": 57.6
             }
         ]
@@ -2138,7 +2098,7 @@
         "Paller på vei": 1,
         "Bestilling på vei": [
             {
-                "Ukenr": "18/2025",
+                "Ukenr": "20/2025",
                 "Antall": 46.08
             }
         ]
@@ -2149,14 +2109,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 57.6,
         "Paller på lager": 0,
-        "Paller på vei": 2,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
-                "Antall": 57.6
-            },
-            {
-                "Ukenr": "18/2025",
                 "Antall": 57.6
             }
         ]
@@ -2167,14 +2123,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 2,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
                 "Ukenr": "20/2025",
-                "Antall": 46.08
-            },
-            {
-                "Ukenr": "18/2025",
                 "Antall": 46.08
             }
         ]
@@ -2188,7 +2140,7 @@
         "Paller på vei": 1,
         "Bestilling på vei": [
             {
-                "Ukenr": "18/2025",
+                "Ukenr": "20/2025",
                 "Antall": 57.6
             }
         ]
@@ -2202,7 +2154,7 @@
         "Paller på vei": 1,
         "Bestilling på vei": [
             {
-                "Ukenr": "18/2025",
+                "Ukenr": "20/2025",
                 "Antall": 46.08
             }
         ]
@@ -2216,7 +2168,7 @@
         "Paller på vei": 1,
         "Bestilling på vei": [
             {
-                "Ukenr": "18/2025",
+                "Ukenr": "20/2025",
                 "Antall": 57.6
             }
         ]
@@ -2230,7 +2182,7 @@
         "Paller på vei": 1,
         "Bestilling på vei": [
             {
-                "Ukenr": "18/2025",
+                "Ukenr": "20/2025",
                 "Antall": 46.08
             }
         ]
@@ -2244,7 +2196,7 @@
         "Paller på vei": 1,
         "Bestilling på vei": [
             {
-                "Ukenr": "18/2025",
+                "Ukenr": "20/2025",
                 "Antall": 57.6
             }
         ]
@@ -2258,7 +2210,7 @@
         "Paller på vei": 1,
         "Bestilling på vei": [
             {
-                "Ukenr": "18/2025",
+                "Ukenr": "20/2025",
                 "Antall": 46.08
             }
         ]
