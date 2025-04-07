@@ -37,11 +37,11 @@
         "Bestilling på vei": [
             {
                 "Ukenr": "16/2025",
-                "Antall": 103.68
+                "Antall": 51.84
             },
             {
                 "Ukenr": "16/2025",
-                "Antall": 51.84
+                "Antall": 103.68
             }
         ]
     },
@@ -69,15 +69,15 @@
         "Bestilling på vei": [
             {
                 "Ukenr": "16/2025",
+                "Antall": 1792.0
+            },
+            {
+                "Ukenr": "16/2025",
+                "Antall": 1792.0
+            },
+            {
+                "Ukenr": "16/2025",
                 "Antall": 512.0
-            },
-            {
-                "Ukenr": "16/2025",
-                "Antall": 1792.0
-            },
-            {
-                "Ukenr": "16/2025",
-                "Antall": 1792.0
             }
         ]
     },
@@ -1422,16 +1422,10 @@
     {
         "Prodno": "G434200K",
         "Beskrivelse": "KER NATURE BONE 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 432.0,
         "antall pr pall": 43.2,
-        "Paller på lager": 0,
-        "Paller på vei": 10,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "14/2025",
-                "Antall": 432.0
-            }
-        ]
+        "Paller på lager": 10,
+        "Paller på vei": 0
     },
     {
         "Prodno": "G43AC002",
@@ -1468,30 +1462,18 @@
     {
         "Prodno": "GUX42001",
         "Beskrivelse": "KER RUE DE PARIS BEIGE 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 518.4,
         "antall pr pall": 43.2,
-        "Paller på lager": 0,
-        "Paller på vei": 10,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "14/2025",
-                "Antall": 432.0
-            }
-        ]
+        "Paller på lager": 12,
+        "Paller på vei": 0
     },
     {
         "Prodno": "GUX6P011-N",
         "Beskrivelse": "KER RUE DE PARIS BEIGE LAPPATO 45X90",
-        "antall på lager": 0.0,
+        "antall på lager": 161.0,
         "antall pr pall": 53.7,
-        "Paller på lager": 0,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "14/2025",
-                "Antall": 107.36
-            }
-        ]
+        "Paller på lager": 3,
+        "Paller på vei": 0
     },
     {
         "Prodno": "GUX6N011-N",
@@ -1536,16 +1518,10 @@
     {
         "Prodno": "GUX6P01M-N",
         "Beskrivelse": "KER RUE DE PARIS COBRE LAPPATO 45X90",
-        "antall på lager": 0.0,
+        "antall på lager": 107.4,
         "antall pr pall": 53.7,
-        "Paller på lager": 0,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "14/2025",
-                "Antall": 107.36
-            }
-        ]
+        "Paller på lager": 2,
+        "Paller på vei": 0
     },
     {
         "Prodno": "GUX6N01M-N",
