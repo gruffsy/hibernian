@@ -1,5 +1,93 @@
 [
     {
+        "fakturadato": 20250407,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "1 074 kr",
+        "umoms": "859 kr",
+        "db": "521 kr",
+        "dg": "61.0%",
+        "antord": "3",
+        "prord": "358 kr"
+    },
+    {
+        "fakturadato": 20250407,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "69 kr",
+        "umoms": "55 kr",
+        "db": "19 kr",
+        "dg": "35.0%",
+        "antord": "1",
+        "prord": "69 kr"
+    },
+    {
+        "fakturadato": 20250407,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "-158 kr",
+        "umoms": "-126 kr",
+        "db": "-70 kr",
+        "dg": "55.0%",
+        "antord": "1",
+        "prord": "-158 kr"
+    },
+    {
+        "fakturadato": 20250407,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "7 790 kr",
+        "umoms": "6 232 kr",
+        "db": "100 kr",
+        "dg": "2.0%",
+        "antord": "7",
+        "prord": "1 112 kr"
+    },
+    {
+        "fakturadato": 20250407,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "285 kr",
+        "umoms": "228 kr",
+        "db": "79 kr",
+        "dg": "35.0%",
+        "antord": "2",
+        "prord": "142 kr"
+    },
+    {
+        "fakturadato": 20250407,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "1 365 kr",
+        "umoms": "1 092 kr",
+        "db": "-57 kr",
+        "dg": "-5.0%",
+        "antord": "1",
+        "prord": "1 365 kr"
+    },
+    {
+        "fakturadato": 20250407,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "-129 kr",
+        "umoms": "-103 kr",
+        "db": "-73 kr",
+        "dg": "71.0%",
+        "antord": "1",
+        "prord": "-129 kr"
+    },
+    {
+        "fakturadato": 20250407,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "10 296 kr",
+        "umoms": "8 237 kr",
+        "db": "519 kr",
+        "dg": "6.3%",
+        "antord": "16",
+        "prord": "643 kr"
+    },
+    {
         "fakturadato": 20250406,
         "butikk": "Sandefjord",
         "Klient": "5",
