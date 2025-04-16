@@ -12,14 +12,25 @@
     },
     {
         "fakturadato": 20250416,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "789 kr",
+        "umoms": "631 kr",
+        "db": "70 kr",
+        "dg": "11.0%",
+        "antord": "1",
+        "prord": "789 kr"
+    },
+    {
+        "fakturadato": 20250416,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "1 319 kr",
-        "umoms": "1 055 kr",
-        "db": "-320 kr",
-        "dg": "-30.3%",
-        "antord": "1",
-        "prord": "1 319 kr"
+        "mmoms": "2 108 kr",
+        "umoms": "1 686 kr",
+        "db": "-250 kr",
+        "dg": "-14.8%",
+        "antord": "2",
+        "prord": "1 054 kr"
     },
     {
         "fakturadato": 20250415,
