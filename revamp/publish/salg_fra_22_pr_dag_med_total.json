@@ -1,25 +1,47 @@
 [
     {
         "fakturadato": 20250426,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "229 kr",
+        "umoms": "183 kr",
+        "db": "13 kr",
+        "dg": "7.0%",
+        "antord": "1",
+        "prord": "229 kr"
+    },
+    {
+        "fakturadato": 20250426,
         "butikk": "Arendal",
         "Klient": "4",
-        "mmoms": "15 835 kr",
-        "umoms": "12 668 kr",
-        "db": "2 087 kr",
-        "dg": "16.0%",
-        "antord": "14",
-        "prord": "1 131 kr"
+        "mmoms": "25 618 kr",
+        "umoms": "20 494 kr",
+        "db": "4 059 kr",
+        "dg": "20.0%",
+        "antord": "22",
+        "prord": "1 164 kr"
+    },
+    {
+        "fakturadato": 20250426,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "189 kr",
+        "umoms": "151 kr",
+        "db": "70 kr",
+        "dg": "46.0%",
+        "antord": "1",
+        "prord": "189 kr"
     },
     {
         "fakturadato": 20250426,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "15 835 kr",
-        "umoms": "12 668 kr",
-        "db": "2 087 kr",
-        "dg": "16.5%",
-        "antord": "14",
-        "prord": "1 131 kr"
+        "mmoms": "26 036 kr",
+        "umoms": "20 828 kr",
+        "db": "4 142 kr",
+        "dg": "19.9%",
+        "antord": "24",
+        "prord": "1 084 kr"
     },
     {
         "fakturadato": 20250425,
