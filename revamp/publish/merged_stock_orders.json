@@ -898,9 +898,9 @@
     {
         "Prodno": "300000000000044556",
         "Beskrivelse": "CIF NEXUS PEARL 60x60",
-        "antall på lager": 460.8,
+        "antall på lager": 368.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 10,
+        "Paller på lager": 8,
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
@@ -930,9 +930,9 @@
     {
         "Prodno": "300000000000037842",
         "Beskrivelse": "CIF OVERLAND PEARL 60X60",
-        "antall på lager": 463.7,
+        "antall på lager": 371.5,
         "antall pr pall": 46.1,
-        "Paller på lager": 10,
+        "Paller på lager": 8,
         "Paller på vei": 24,
         "Bestilling på vei": [
             {
@@ -1174,16 +1174,10 @@
     {
         "Prodno": "CKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60",
-        "antall på lager": -129.6,
+        "antall på lager": 1209.6,
         "antall pr pall": 43.2,
-        "Paller på lager": -3,
-        "Paller på vei": 39,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "19/2025",
-                "Antall": 1684.8
-            }
-        ]
+        "Paller på lager": 28,
+        "Paller på vei": 0
     },
     {
         "Prodno": "CKO62R44",
