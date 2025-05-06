@@ -1177,7 +1177,13 @@
         "antall på lager": 1209.6,
         "antall pr pall": 43.2,
         "Paller på lager": 28,
-        "Paller på vei": 0
+        "Paller på vei": 8,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "19/2025",
+                "Antall": 345.6
+            }
+        ]
     },
     {
         "Prodno": "CKO62R44",
