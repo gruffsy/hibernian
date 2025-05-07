@@ -3,8 +3,8 @@
         "måned": "May",
         "år": "2025",
         "navn": "Håkon Tvede",
-        "umoms": "330,391 kr",
-        "db": "80,995 kr",
+        "umoms": "331,752 kr",
+        "db": "81,633 kr",
         "butikk": "Arendal"
     },
     {
@@ -19,8 +19,8 @@
         "måned": "May",
         "år": "2025",
         "navn": "Odne Hansen",
-        "umoms": "234,400 kr",
-        "db": "52,219 kr",
+        "umoms": "237,057 kr",
+        "db": "52,171 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -51,8 +51,8 @@
         "måned": "May",
         "år": "2025",
         "navn": "Pål Magnus Andersen",
-        "umoms": "196,128 kr",
-        "db": "53,557 kr",
+        "umoms": "196,253 kr",
+        "db": "52,052 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -99,25 +99,33 @@
         "måned": "May",
         "år": "2025",
         "navn": "Jonas Skog",
-        "umoms": "168,821 kr",
-        "db": "36,478 kr",
+        "umoms": "170,247 kr",
+        "db": "37,140 kr",
         "butikk": "Sandefjord"
     },
     {
         "måned": "May",
         "år": "2025",
         "navn": "James Michael McGurty",
-        "umoms": "163,938 kr",
-        "db": "39,212 kr",
+        "umoms": "164,461 kr",
+        "db": "37,007 kr",
         "butikk": "Skien"
     },
     {
         "måned": "May",
         "år": "2025",
         "navn": "Tuva Sofie Risdal",
-        "umoms": "162,627 kr",
-        "db": "29,757 kr",
+        "umoms": "163,313 kr",
+        "db": "29,869 kr",
         "butikk": "Larvik"
+    },
+    {
+        "måned": "May",
+        "år": "2025",
+        "navn": "Frode  Olsen",
+        "umoms": "158,490 kr",
+        "db": "40,744 kr",
+        "butikk": "Bamble"
     },
     {
         "måned": "May",
@@ -130,17 +138,9 @@
     {
         "måned": "May",
         "år": "2025",
-        "navn": "Frode  Olsen",
-        "umoms": "151,590 kr",
-        "db": "38,997 kr",
-        "butikk": "Bamble"
-    },
-    {
-        "måned": "May",
-        "år": "2025",
         "navn": "Bertil Tangen",
-        "umoms": "147,130 kr",
-        "db": "35,545 kr",
+        "umoms": "150,582 kr",
+        "db": "36,519 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -187,16 +187,16 @@
         "måned": "May",
         "år": "2025",
         "navn": "Mikkel Kihle Lindvig",
-        "umoms": "125,122 kr",
-        "db": "12,681 kr",
+        "umoms": "125,327 kr",
+        "db": "12,744 kr",
         "butikk": "Skien"
     },
     {
         "måned": "May",
         "år": "2025",
         "navn": "Menglei Chen Ottem",
-        "umoms": "120,263 kr",
-        "db": "25,708 kr",
+        "umoms": "120,691 kr",
+        "db": "25,965 kr",
         "butikk": "Larvik"
     },
     {
@@ -267,8 +267,8 @@
         "måned": "May",
         "år": "2025",
         "navn": "Katarina Kiste Riis",
-        "umoms": "83,816 kr",
-        "db": "14,277 kr",
+        "umoms": "83,970 kr",
+        "db": "14,316 kr",
         "butikk": "Bamble"
     },
     {
@@ -291,8 +291,8 @@
         "måned": "May",
         "år": "2025",
         "navn": "Julie Nilsen Bjølseth",
-        "umoms": "77,934 kr",
-        "db": "16,328 kr",
+        "umoms": "77,647 kr",
+        "db": "16,153 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -387,16 +387,16 @@
         "måned": "May",
         "år": "2025",
         "navn": "Christina Larsen",
-        "umoms": "42,820 kr",
-        "db": "16,850 kr",
+        "umoms": "43,779 kr",
+        "db": "17,067 kr",
         "butikk": "Kristiansand"
     },
     {
         "måned": "May",
         "år": "2025",
         "navn": "Marcus Hidle Brustad",
-        "umoms": "41,409 kr",
-        "db": "15,222 kr",
+        "umoms": "41,900 kr",
+        "db": "15,419 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -579,8 +579,8 @@
         "måned": "May",
         "år": "2025",
         "navn": "Kamilla Fedje Vedå",
-        "umoms": "13,915 kr",
-        "db": "3,033 kr",
+        "umoms": "14,714 kr",
+        "db": "3,280 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -643,8 +643,8 @@
         "måned": "May",
         "år": "2025",
         "navn": "Henrik Holmesland",
-        "umoms": "4,033 kr",
-        "db": "-940 kr",
+        "umoms": "5,861 kr",
+        "db": "-385 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -699,8 +699,8 @@
         "måned": "May",
         "år": "2025",
         "navn": "Trond Andreas Frøitland",
-        "umoms": "1,364 kr",
-        "db": "533 kr",
+        "umoms": "1,488 kr",
+        "db": "527 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -778,6 +778,14 @@
     {
         "måned": "May",
         "år": "2025",
+        "navn": "Petter Myhre",
+        "umoms": "-3,005 kr",
+        "db": "-603 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "May",
+        "år": "2025",
         "navn": "Lilian Margi Frøitland",
         "umoms": "-3,266 kr",
         "db": "-1,674 kr",
@@ -798,14 +806,6 @@
         "umoms": "-3,704 kr",
         "db": "-1,680 kr",
         "butikk": "Arendal"
-    },
-    {
-        "måned": "May",
-        "år": "2025",
-        "navn": "Petter Myhre",
-        "umoms": "-5,352 kr",
-        "db": "-1,306 kr",
-        "butikk": "Kristiansand"
     },
     {
         "måned": "May",
