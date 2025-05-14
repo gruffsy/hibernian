@@ -1293,11 +1293,11 @@
         "Bestilling på vei": [
             {
                 "Ukenr": "21/2025",
-                "Antall": 777.6
+                "Antall": 561.6
             },
             {
                 "Ukenr": "21/2025",
-                "Antall": 561.6
+                "Antall": 777.6
             }
         ]
     },
@@ -1363,11 +1363,11 @@
         "Bestilling på vei": [
             {
                 "Ukenr": "21/2025",
-                "Antall": 448.0
+                "Antall": 512.0
             },
             {
                 "Ukenr": "21/2025",
-                "Antall": 512.0
+                "Antall": 448.0
             }
         ]
     },
@@ -1785,7 +1785,13 @@
         "antall på lager": 184.3,
         "antall pr pall": 46.1,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "27/2025",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "LTG2900-YH002-36",
@@ -1844,8 +1850,8 @@
         "Paller på vei": 0
     },
     {
-        "Prodno": "LTG-SE-3-M-66",
-        "Beskrivelse": "LTG SAULO BIANCO 60X60 12,5MM",
+        "Prodno": "LTG-SE-1-M-66",
+        "Beskrivelse": "LTG SAULO BIANCO 60X60",
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
@@ -1858,8 +1864,8 @@
         ]
     },
     {
-        "Prodno": "LTG-SE-1-M-66",
-        "Beskrivelse": "LTG SAULO GRAFITE 60X60 12,5MM",
+        "Prodno": "LTG-SE-3-M-66",
+        "Beskrivelse": "LTG SAULO GRAFITE 60X60",
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
@@ -1873,7 +1879,7 @@
     },
     {
         "Prodno": "LTG-SE-2-M-66",
-        "Beskrivelse": "LTG SAULO GRIGIO 60X60 12,5MM",
+        "Beskrivelse": "LTG SAULO GRIGIO 60X60",
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
@@ -1907,7 +1913,13 @@
         "antall på lager": 276.5,
         "antall pr pall": 46.1,
         "Paller på lager": 6,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "27/2025",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "LTG2100-363",
@@ -1931,7 +1943,13 @@
         "antall på lager": 184.3,
         "antall pr pall": 46.1,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 11,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "27/2025",
+                "Antall": 506.88
+            }
+        ]
     },
     {
         "Prodno": "LTG2100-362",
@@ -1979,7 +1997,13 @@
         "antall på lager": 184.3,
         "antall pr pall": 46.1,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "27/2025",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "612TR08R-M",
