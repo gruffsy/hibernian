@@ -76,9 +76,9 @@
     {
         "Prodno": "LN60026",
         "Beskrivelse": "AET MILESTONE WHITE GRIP 60X60 20MM",
-        "antall på lager": 1216.0,
+        "antall på lager": 1152.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 19,
+        "Paller på lager": 18,
         "Paller på vei": 27,
         "Bestilling på vei": [
             {
@@ -246,9 +246,9 @@
     {
         "Prodno": "9700102",
         "Beskrivelse": "CAS ARDESIA - GRIGIO 30X30 8 MM",
-        "antall på lager": 168.5,
+        "antall på lager": 112.3,
         "antall pr pall": 56.2,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 0
     },
     {
@@ -712,9 +712,9 @@
     {
         "Prodno": "51782",
         "Beskrivelse": "CIF BETON ANTRACITE 60X60",
-        "antall på lager": 230.4,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
@@ -774,9 +774,9 @@
     {
         "Prodno": "042448",
         "Beskrivelse": "CIF DIAMOND GOLD MATE 60X60",
-        "antall på lager": 46.1,
+        "antall på lager": 0.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
@@ -802,21 +802,21 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "26/2025",
-                "Antall": 138.24
-            },
-            {
                 "Ukenr": "22/2025",
                 "Antall": 184.32
+            },
+            {
+                "Ukenr": "26/2025",
+                "Antall": 138.24
             }
         ]
     },
     {
         "Prodno": "042449",
         "Beskrivelse": "CIF DIAMOND GOLD PULIDO 60X60",
-        "antall på lager": 172.8,
+        "antall på lager": 86.4,
         "antall pr pall": 43.2,
-        "Paller på lager": 4,
+        "Paller på lager": 2,
         "Paller på vei": 5,
         "Bestilling på vei": [
             {
@@ -848,12 +848,12 @@
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
-                "Ukenr": "26/2025",
-                "Antall": 138.24
-            },
-            {
                 "Ukenr": "22/2025",
                 "Antall": 207.36
+            },
+            {
+                "Ukenr": "26/2025",
+                "Antall": 138.24
             }
         ]
     },
@@ -874,12 +874,12 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "26/2025",
-                "Antall": 230.4
-            },
-            {
                 "Ukenr": "22/2025",
                 "Antall": 92.16
+            },
+            {
+                "Ukenr": "26/2025",
+                "Antall": 230.4
             }
         ]
     },
@@ -954,9 +954,9 @@
     {
         "Prodno": "300000000000044556",
         "Beskrivelse": "CIF NEXUS PEARL 60x60",
-        "antall på lager": 184.3,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
@@ -972,18 +972,18 @@
     {
         "Prodno": "300000000000045339",
         "Beskrivelse": "CIF OVERLAND PEARL 60X120 - XS",
-        "antall på lager": 207.4,
+        "antall på lager": 155.5,
         "antall pr pall": 51.8,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 11,
         "Bestilling på vei": [
             {
-                "Ukenr": "26/2025",
-                "Antall": 518.4
-            },
-            {
                 "Ukenr": "22/2025",
                 "Antall": 51.84
+            },
+            {
+                "Ukenr": "26/2025",
+                "Antall": 518.4
             }
         ]
     },
@@ -996,10 +996,6 @@
         "Paller på vei": 54,
         "Bestilling på vei": [
             {
-                "Ukenr": "26/2025",
-                "Antall": 1382.4
-            },
-            {
                 "Ukenr": "22/2025",
                 "Antall": 276.48
             },
@@ -1010,6 +1006,10 @@
             {
                 "Ukenr": "22/2025",
                 "Antall": 155.52
+            },
+            {
+                "Ukenr": "26/2025",
+                "Antall": 1382.4
             }
         ]
     },
@@ -1102,16 +1102,16 @@
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
-                "Ukenr": "26/2025",
-                "Antall": 172.8
-            },
-            {
                 "Ukenr": "22/2025",
                 "Antall": 230.4
             },
             {
                 "Ukenr": "22/2025",
                 "Antall": 43.2
+            },
+            {
+                "Ukenr": "26/2025",
+                "Antall": 172.8
             }
         ]
     },
@@ -1226,9 +1226,9 @@
     {
         "Prodno": "XKO60R4",
         "Beskrivelse": "CTV KONKRETE 20MM GRIGIO 60X60",
-        "antall på lager": 896.0,
+        "antall på lager": 832.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 14,
+        "Paller på lager": 13,
         "Paller på vei": 0
     },
     {
