@@ -254,9 +254,9 @@
     {
         "Prodno": "9700103",
         "Beskrivelse": "CAS ARDESIA - NERO 30X30 8 MM",
-        "antall på lager": 168.5,
+        "antall på lager": 56.2,
         "antall pr pall": 56.2,
-        "Paller på lager": 3,
+        "Paller på lager": 1,
         "Paller på vei": 0
     },
     {
@@ -802,12 +802,12 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "22/2025",
-                "Antall": 184.32
-            },
-            {
                 "Ukenr": "26/2025",
                 "Antall": 138.24
+            },
+            {
+                "Ukenr": "22/2025",
+                "Antall": 184.32
             }
         ]
     },
@@ -848,12 +848,12 @@
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
-                "Ukenr": "22/2025",
-                "Antall": 207.36
-            },
-            {
                 "Ukenr": "26/2025",
                 "Antall": 138.24
+            },
+            {
+                "Ukenr": "22/2025",
+                "Antall": 207.36
             }
         ]
     },
@@ -874,12 +874,12 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "22/2025",
-                "Antall": 92.16
-            },
-            {
                 "Ukenr": "26/2025",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "22/2025",
+                "Antall": 92.16
             }
         ]
     },
@@ -954,9 +954,9 @@
     {
         "Prodno": "300000000000044556",
         "Beskrivelse": "CIF NEXUS PEARL 60x60",
-        "antall på lager": 230.4,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
@@ -978,12 +978,12 @@
         "Paller på vei": 11,
         "Bestilling på vei": [
             {
-                "Ukenr": "22/2025",
-                "Antall": 51.84
-            },
-            {
                 "Ukenr": "26/2025",
                 "Antall": 518.4
+            },
+            {
+                "Ukenr": "22/2025",
+                "Antall": 51.84
             }
         ]
     },
@@ -996,6 +996,10 @@
         "Paller på vei": 54,
         "Bestilling på vei": [
             {
+                "Ukenr": "26/2025",
+                "Antall": 1382.4
+            },
+            {
                 "Ukenr": "22/2025",
                 "Antall": 276.48
             },
@@ -1006,10 +1010,6 @@
             {
                 "Ukenr": "22/2025",
                 "Antall": 155.52
-            },
-            {
-                "Ukenr": "26/2025",
-                "Antall": 1382.4
             }
         ]
     },
@@ -1102,16 +1102,16 @@
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
+                "Ukenr": "26/2025",
+                "Antall": 172.8
+            },
+            {
                 "Ukenr": "22/2025",
                 "Antall": 230.4
             },
             {
                 "Ukenr": "22/2025",
                 "Antall": 43.2
-            },
-            {
-                "Ukenr": "26/2025",
-                "Antall": 172.8
             }
         ]
     },
@@ -2414,9 +2414,9 @@
     {
         "Prodno": "PGWP940",
         "Beskrivelse": "PAN MIDTOWN WHITE 60X60",
-        "antall på lager": 46.1,
+        "antall på lager": 0.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
