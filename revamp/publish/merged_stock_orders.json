@@ -2193,7 +2193,13 @@
         "antall på lager": 77.8,
         "antall pr pall": 38.9,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "21/2025",
+                "Antall": 155.52
+            }
+        ]
     },
     {
         "Prodno": "PGWBE50",
