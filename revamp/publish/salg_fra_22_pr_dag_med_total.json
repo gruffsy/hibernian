@@ -12,14 +12,25 @@
     },
     {
         "fakturadato": 20250603,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "62 kr",
+        "umoms": "50 kr",
+        "db": "0 kr",
+        "dg": "1.0%",
+        "antord": "1",
+        "prord": "62 kr"
+    },
+    {
+        "fakturadato": 20250603,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "0 kr",
-        "umoms": "0 kr",
+        "mmoms": "62 kr",
+        "umoms": "50 kr",
         "db": "0 kr",
         "dg": "0.0%",
-        "antord": "1",
-        "prord": "0 kr"
+        "antord": "2",
+        "prord": "31 kr"
     },
     {
         "fakturadato": 20250602,
