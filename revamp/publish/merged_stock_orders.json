@@ -825,7 +825,13 @@
         "antall på lager": 155.5,
         "antall pr pall": 51.8,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "26/2025",
+                "Antall": 207.36
+            }
+        ]
     },
     {
         "Prodno": "300000000000046867",
@@ -849,11 +855,15 @@
         "antall på lager": 276.5,
         "antall pr pall": 46.1,
         "Paller på lager": 6,
-        "Paller på vei": 1,
+        "Paller på vei": 26,
         "Bestilling på vei": [
             {
                 "Ukenr": "24/2025",
                 "Antall": 46.08
+            },
+            {
+                "Ukenr": "26/2025",
+                "Antall": 1152.0
             }
         ]
     },
@@ -881,7 +891,7 @@
         "antall på lager": 2.9,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 54,
+        "Paller på vei": 66,
         "Bestilling på vei": [
             {
                 "Ukenr": "24/2025",
@@ -894,6 +904,10 @@
             {
                 "Ukenr": "24/2025",
                 "Antall": 155.52
+            },
+            {
+                "Ukenr": "26/2025",
+                "Antall": 552.96
             },
             {
                 "Ukenr": "26/2025",
@@ -963,7 +977,13 @@
         "antall på lager": 184.3,
         "antall pr pall": 46.1,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "26/2025",
+                "Antall": 276.48
+            }
+        ]
     },
     {
         "Prodno": "042451",
@@ -971,7 +991,7 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 10,
+        "Paller på vei": 13,
         "Bestilling på vei": [
             {
                 "Ukenr": "24/2025",
@@ -980,6 +1000,10 @@
             {
                 "Ukenr": "24/2025",
                 "Antall": 43.2
+            },
+            {
+                "Ukenr": "26/2025",
+                "Antall": 129.6
             },
             {
                 "Ukenr": "26/2025",
