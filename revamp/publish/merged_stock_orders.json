@@ -748,16 +748,16 @@
         "Paller på vei": 27,
         "Bestilling på vei": [
             {
+                "Ukenr": "24/2025",
+                "Antall": 207.36
+            },
+            {
                 "Ukenr": "26/2025",
                 "Antall": 414.72
             },
             {
                 "Ukenr": "26/2025",
                 "Antall": 599.04
-            },
-            {
-                "Ukenr": "24/2025",
-                "Antall": 207.36
             }
         ]
     },
@@ -860,6 +860,10 @@
         "Paller på vei": 29,
         "Bestilling på vei": [
             {
+                "Ukenr": "24/2025",
+                "Antall": 46.08
+            },
+            {
                 "Ukenr": "26/2025",
                 "Antall": 1152.0
             },
@@ -869,10 +873,6 @@
             },
             {
                 "Ukenr": "26/2025",
-                "Antall": 46.08
-            },
-            {
-                "Ukenr": "24/2025",
                 "Antall": 46.08
             }
         ]
@@ -886,12 +886,12 @@
         "Paller på vei": 15,
         "Bestilling på vei": [
             {
-                "Ukenr": "26/2025",
-                "Antall": 725.76
-            },
-            {
                 "Ukenr": "24/2025",
                 "Antall": 51.84
+            },
+            {
+                "Ukenr": "26/2025",
+                "Antall": 725.76
             }
         ]
     },
@@ -904,10 +904,6 @@
         "Paller på vei": 36,
         "Bestilling på vei": [
             {
-                "Ukenr": "26/2025",
-                "Antall": 552.96
-            },
-            {
                 "Ukenr": "24/2025",
                 "Antall": 276.48
             },
@@ -918,6 +914,10 @@
             {
                 "Ukenr": "24/2025",
                 "Antall": 155.52
+            },
+            {
+                "Ukenr": "26/2025",
+                "Antall": 552.96
             }
         ]
     },
@@ -1000,16 +1000,16 @@
         "Paller på vei": 9,
         "Bestilling på vei": [
             {
-                "Ukenr": "26/2025",
-                "Antall": 129.6
-            },
-            {
                 "Ukenr": "24/2025",
                 "Antall": 230.4
             },
             {
                 "Ukenr": "24/2025",
                 "Antall": 43.2
+            },
+            {
+                "Ukenr": "26/2025",
+                "Antall": 129.6
             }
         ]
     },
