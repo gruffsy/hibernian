@@ -1,25 +1,69 @@
 [
     {
         "fakturadato": 20250616,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "348 kr",
+        "umoms": "278 kr",
+        "db": "149 kr",
+        "dg": "54.0%",
+        "antord": "2",
+        "prord": "174 kr"
+    },
+    {
+        "fakturadato": 20250616,
         "butikk": "Tønsberg",
         "Klient": "3",
-        "mmoms": "1 425 kr",
-        "umoms": "1 140 kr",
-        "db": "220 kr",
-        "dg": "19.0%",
-        "antord": "1",
-        "prord": "1 425 kr"
+        "mmoms": "13 076 kr",
+        "umoms": "10 461 kr",
+        "db": "1 895 kr",
+        "dg": "18.0%",
+        "antord": "5",
+        "prord": "2 615 kr"
+    },
+    {
+        "fakturadato": 20250616,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "1 981 kr",
+        "umoms": "1 584 kr",
+        "db": "550 kr",
+        "dg": "35.0%",
+        "antord": "5",
+        "prord": "396 kr"
+    },
+    {
+        "fakturadato": 20250616,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "755 kr",
+        "umoms": "604 kr",
+        "db": "198 kr",
+        "dg": "33.0%",
+        "antord": "3",
+        "prord": "251 kr"
+    },
+    {
+        "fakturadato": 20250616,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "7 133 kr",
+        "umoms": "5 706 kr",
+        "db": "844 kr",
+        "dg": "15.0%",
+        "antord": "3",
+        "prord": "2 377 kr"
     },
     {
         "fakturadato": 20250616,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "1 425 kr",
-        "umoms": "1 140 kr",
-        "db": "220 kr",
-        "dg": "19.3%",
-        "antord": "1",
-        "prord": "1 425 kr"
+        "mmoms": "23 293 kr",
+        "umoms": "18 633 kr",
+        "db": "3 636 kr",
+        "dg": "19.5%",
+        "antord": "18",
+        "prord": "1 294 kr"
     },
     {
         "fakturadato": 20250614,
