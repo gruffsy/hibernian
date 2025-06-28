@@ -1,25 +1,47 @@
 [
     {
         "fakturadato": 20250628,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "1 669 kr",
+        "umoms": "1 335 kr",
+        "db": "52 kr",
+        "dg": "4.0%",
+        "antord": "1",
+        "prord": "1 669 kr"
+    },
+    {
+        "fakturadato": 20250628,
         "butikk": "Arendal",
         "Klient": "4",
-        "mmoms": "9 750 kr",
-        "umoms": "7 800 kr",
-        "db": "1 879 kr",
-        "dg": "24.0%",
-        "antord": "10",
-        "prord": "975 kr"
+        "mmoms": "31 221 kr",
+        "umoms": "24 977 kr",
+        "db": "957 kr",
+        "dg": "4.0%",
+        "antord": "12",
+        "prord": "2 601 kr"
+    },
+    {
+        "fakturadato": 20250628,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "1 584 kr",
+        "umoms": "1 267 kr",
+        "db": "-2 628 kr",
+        "dg": "-207.0%",
+        "antord": "1",
+        "prord": "1 584 kr"
     },
     {
         "fakturadato": 20250628,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "9 750 kr",
-        "umoms": "7 800 kr",
-        "db": "1 879 kr",
-        "dg": "24.1%",
-        "antord": "10",
-        "prord": "975 kr"
+        "mmoms": "34 474 kr",
+        "umoms": "27 579 kr",
+        "db": "-1 619 kr",
+        "dg": "-5.9%",
+        "antord": "14",
+        "prord": "2 462 kr"
     },
     {
         "fakturadato": 20250627,
