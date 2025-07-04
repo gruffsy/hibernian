@@ -1,36 +1,69 @@
 [
     {
         "fakturadato": 20250704,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "957 kr",
+        "umoms": "765 kr",
+        "db": "434 kr",
+        "dg": "57.0%",
+        "antord": "1",
+        "prord": "957 kr"
+    },
+    {
+        "fakturadato": 20250704,
         "butikk": "Tønsberg",
         "Klient": "3",
-        "mmoms": "3 560 kr",
-        "umoms": "2 848 kr",
-        "db": "1 315 kr",
-        "dg": "46.0%",
-        "antord": "1",
-        "prord": "3 560 kr"
+        "mmoms": "4 949 kr",
+        "umoms": "3 959 kr",
+        "db": "1 772 kr",
+        "dg": "45.0%",
+        "antord": "5",
+        "prord": "989 kr"
+    },
+    {
+        "fakturadato": 20250704,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "4 412 kr",
+        "umoms": "3 529 kr",
+        "db": "581 kr",
+        "dg": "16.0%",
+        "antord": "4",
+        "prord": "1 103 kr"
     },
     {
         "fakturadato": 20250704,
         "butikk": "Sandefjord",
         "Klient": "5",
-        "mmoms": "1 630 kr",
-        "umoms": "1 304 kr",
-        "db": "301 kr",
-        "dg": "23.0%",
+        "mmoms": "2 914 kr",
+        "umoms": "2 331 kr",
+        "db": "642 kr",
+        "dg": "28.0%",
+        "antord": "4",
+        "prord": "728 kr"
+    },
+    {
+        "fakturadato": 20250704,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "14 156 kr",
+        "umoms": "11 324 kr",
+        "db": "3 218 kr",
+        "dg": "28.0%",
         "antord": "2",
-        "prord": "815 kr"
+        "prord": "7 078 kr"
     },
     {
         "fakturadato": 20250704,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "5 190 kr",
-        "umoms": "4 152 kr",
-        "db": "1 616 kr",
-        "dg": "38.9%",
-        "antord": "3",
-        "prord": "1 730 kr"
+        "mmoms": "27 388 kr",
+        "umoms": "21 908 kr",
+        "db": "6 647 kr",
+        "dg": "30.3%",
+        "antord": "16",
+        "prord": "1 711 kr"
     },
     {
         "fakturadato": 20250703,
