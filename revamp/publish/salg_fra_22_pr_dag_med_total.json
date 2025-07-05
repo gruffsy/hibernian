@@ -1,25 +1,36 @@
 [
     {
         "fakturadato": 20250705,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "115 kr",
+        "umoms": "92 kr",
+        "db": "0 kr",
+        "dg": "0.0%",
+        "antord": "1",
+        "prord": "115 kr"
+    },
+    {
+        "fakturadato": 20250705,
         "butikk": "Arendal",
         "Klient": "4",
-        "mmoms": "5 999 kr",
-        "umoms": "4 799 kr",
-        "db": "543 kr",
-        "dg": "11.0%",
-        "antord": "7",
-        "prord": "857 kr"
+        "mmoms": "7 836 kr",
+        "umoms": "6 268 kr",
+        "db": "988 kr",
+        "dg": "16.0%",
+        "antord": "10",
+        "prord": "783 kr"
     },
     {
         "fakturadato": 20250705,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "5 999 kr",
-        "umoms": "4 799 kr",
-        "db": "543 kr",
-        "dg": "11.3%",
-        "antord": "7",
-        "prord": "857 kr"
+        "mmoms": "7 951 kr",
+        "umoms": "6 360 kr",
+        "db": "988 kr",
+        "dg": "15.5%",
+        "antord": "11",
+        "prord": "722 kr"
     },
     {
         "fakturadato": 20250704,
