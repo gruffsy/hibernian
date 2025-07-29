@@ -205,7 +205,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 56.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2025",
+                "Antall": 112.32
+            }
+        ]
     },
     {
         "Prodno": "9700103",
@@ -213,7 +219,13 @@
         "antall på lager": 112.3,
         "antall pr pall": 56.2,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2025",
+                "Antall": 112.32
+            }
+        ]
     },
     {
         "Prodno": "3780063",
@@ -397,7 +409,13 @@
         "antall på lager": 168.5,
         "antall pr pall": 56.2,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2025",
+                "Antall": 112.32
+            }
+        ]
     },
     {
         "Prodno": "002844",
@@ -517,7 +535,13 @@
         "antall på lager": 734.4,
         "antall pr pall": 43.2,
         "Paller på lager": 17,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2025",
+                "Antall": 43.2
+            }
+        ]
     },
     {
         "Prodno": "1700008",
@@ -581,7 +605,13 @@
         "antall på lager": 216.0,
         "antall pr pall": 43.2,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2025",
+                "Antall": 43.2
+            }
+        ]
     },
     {
         "Prodno": "12950029",
@@ -605,7 +635,13 @@
         "antall på lager": 86.4,
         "antall pr pall": 43.2,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2025",
+                "Antall": 259.2
+            }
+        ]
     },
     {
         "Prodno": "042455",
