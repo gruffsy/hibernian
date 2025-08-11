@@ -1565,7 +1565,13 @@
         "antall på lager": 553.0,
         "antall pr pall": 46.1,
         "Paller på lager": 12,
-        "Paller på vei": 0
+        "Paller på vei": 12,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2025",
+                "Antall": 552.96
+            }
+        ]
     },
     {
         "Prodno": "IL6001",
@@ -1573,7 +1579,13 @@
         "antall på lager": 783.4,
         "antall pr pall": 46.1,
         "Paller på lager": 17,
-        "Paller på vei": 0
+        "Paller på vei": 12,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2025",
+                "Antall": 552.96
+            }
+        ]
     },
     {
         "Prodno": "IL6002",
@@ -1589,7 +1601,13 @@
         "antall på lager": 129.6,
         "antall pr pall": 43.2,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2025",
+                "Antall": 86.4
+            }
+        ]
     },
     {
         "Prodno": "LTG-LX--5PD-M-66",
@@ -1613,7 +1631,13 @@
         "antall på lager": 368.6,
         "antall pr pall": 46.1,
         "Paller på lager": 8,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2025",
+                "Antall": 92.16
+            }
+        ]
     },
     {
         "Prodno": "PN612062",
@@ -1757,7 +1781,13 @@
         "antall på lager": 276.5,
         "antall pr pall": 46.1,
         "Paller på lager": 6,
-        "Paller på vei": 0
+        "Paller på vei": 7,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2025",
+                "Antall": 322.56
+            }
+        ]
     },
     {
         "Prodno": "LTG2100-362",
@@ -1765,7 +1795,13 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2025",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "LTG2100-6122",
@@ -1781,7 +1817,13 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2025",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "LTG2100-364",
@@ -1789,7 +1831,13 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2025",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "LTG2100-6124",
@@ -1805,7 +1853,13 @@
         "antall på lager": 184.3,
         "antall pr pall": 46.1,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2025",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "612TR08R-M",
@@ -1821,7 +1875,13 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "43/2025",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "LTG100050-R112",
