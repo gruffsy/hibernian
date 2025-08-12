@@ -472,32 +472,22 @@
     {
         "Prodno": "018720031",
         "Beskrivelse": "CAS LITHOS TAUPE 60X120 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 414.7,
         "antall pr pall": 51.8,
-        "Paller på lager": 0,
-        "Paller på vei": 8,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "33/2025",
-                "Antall": 414.72
-            }
-        ]
+        "Paller på lager": 8,
+        "Paller på vei": 0
     },
     {
         "Prodno": "018740131",
         "Beskrivelse": "CAS LITHOS TAUPE 60X60 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 172.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 0,
-        "Paller på vei": 10,
+        "Paller på lager": 4,
+        "Paller på vei": 6,
         "Bestilling på vei": [
             {
                 "Ukenr": "33/2025",
                 "Antall": 259.2
-            },
-            {
-                "Ukenr": "33/2025",
-                "Antall": 172.8
             }
         ]
     },
@@ -518,18 +508,14 @@
     {
         "Prodno": "018740030",
         "Beskrivelse": "CAS LITHOS TORTORA 60X60 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 302.4,
         "antall pr pall": 43.2,
-        "Paller på lager": 0,
-        "Paller på vei": 10,
+        "Paller på lager": 7,
+        "Paller på vei": 3,
         "Bestilling på vei": [
             {
                 "Ukenr": "33/2025",
                 "Antall": 129.6
-            },
-            {
-                "Ukenr": "33/2025",
-                "Antall": 302.4
             }
         ]
     },
