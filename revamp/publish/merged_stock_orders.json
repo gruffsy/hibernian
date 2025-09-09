@@ -929,7 +929,13 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "02CEV60R4",
@@ -937,7 +943,13 @@
         "antall på lager": 43.2,
         "antall pr pall": 43.2,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 172.8
+            }
+        ]
     },
     {
         "Prodno": "02CEV62R44",
@@ -945,7 +957,13 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "02CEV60R44",
@@ -953,7 +971,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 259.2
+            }
+        ]
     },
     {
         "Prodno": "02CEV62R1",
@@ -961,7 +985,13 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "02CEV60R1",
@@ -969,7 +999,13 @@
         "antall på lager": 43.2,
         "antall pr pall": 43.2,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 172.8
+            }
+        ]
     },
     {
         "Prodno": "XKO60R1",
@@ -1001,7 +1037,13 @@
         "antall på lager": 691.2,
         "antall pr pall": 43.2,
         "Paller på lager": 16,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 259.2
+            }
+        ]
     },
     {
         "Prodno": "CKO62R44",
