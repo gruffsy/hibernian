@@ -197,7 +197,13 @@
         "antall på lager": 51.8,
         "antall pr pall": 51.8,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 51.84
+            }
+        ]
     },
     {
         "Prodno": "3790063",
@@ -205,7 +211,13 @@
         "antall på lager": 51.8,
         "antall pr pall": 51.8,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 51.84
+            }
+        ]
     },
     {
         "Prodno": "3700065",
@@ -213,7 +225,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 51.84
+            }
+        ]
     },
     {
         "Prodno": "3790065",
@@ -221,7 +239,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 259.2
+            }
+        ]
     },
     {
         "Prodno": "3700034",
@@ -237,7 +261,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 51.84
+            }
+        ]
     },
     {
         "Prodno": "3700062",
@@ -261,7 +291,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 172.8
+            }
+        ]
     },
     {
         "Prodno": "3700064",
@@ -301,7 +337,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 155.52
+            }
+        ]
     },
     {
         "Prodno": "3740133",
@@ -309,7 +351,13 @@
         "antall på lager": 43.2,
         "antall pr pall": 43.2,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 43.2
+            }
+        ]
     },
     {
         "Prodno": "9700127",
@@ -317,7 +365,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 56.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 11,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 617.76
+            }
+        ]
     },
     {
         "Prodno": "400037",
@@ -333,7 +387,13 @@
         "antall på lager": 56.2,
         "antall pr pall": 56.2,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "39/2025",
+                "Antall": 112.32
+            }
+        ]
     },
     {
         "Prodno": "400024",
