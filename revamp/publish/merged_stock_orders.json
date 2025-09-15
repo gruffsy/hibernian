@@ -526,9 +526,9 @@
     {
         "Prodno": "1740004",
         "Beskrivelse": "CAS PIETRE DI PARAGONE GRE BIANCO 60X60 9MM",
-        "antall på lager": 691.2,
+        "antall på lager": 648.0,
         "antall pr pall": 43.2,
-        "Paller på lager": 16,
+        "Paller på lager": 15,
         "Paller på vei": 0
     },
     {
@@ -730,12 +730,12 @@
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
-                "Ukenr": "38/2025",
-                "Antall": 138.24
-            },
-            {
                 "Ukenr": "41/2025",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "38/2025",
+                "Antall": 138.24
             }
         ]
     },
@@ -854,11 +854,11 @@
         "Paller på vei": 48,
         "Bestilling på vei": [
             {
-                "Ukenr": "38/2025",
+                "Ukenr": "41/2025",
                 "Antall": 1105.92
             },
             {
-                "Ukenr": "41/2025",
+                "Ukenr": "38/2025",
                 "Antall": 1105.92
             }
         ]
@@ -872,12 +872,12 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "38/2025",
-                "Antall": 311.04
-            },
-            {
                 "Ukenr": "41/2025",
                 "Antall": 51.84
+            },
+            {
+                "Ukenr": "38/2025",
+                "Antall": 311.04
             }
         ]
     },
@@ -890,12 +890,12 @@
         "Paller på vei": 15,
         "Bestilling på vei": [
             {
-                "Ukenr": "38/2025",
-                "Antall": 92.16
-            },
-            {
                 "Ukenr": "41/2025",
                 "Antall": 599.04
+            },
+            {
+                "Ukenr": "38/2025",
+                "Antall": 92.16
             }
         ]
     },
@@ -1102,9 +1102,9 @@
     {
         "Prodno": "CKO60R44",
         "Beskrivelse": "CTV KONKRETE CENERE 60X60",
-        "antall på lager": 216.0,
+        "antall på lager": 172.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
@@ -1246,9 +1246,9 @@
     {
         "Prodno": "GUX42001",
         "Beskrivelse": "KER RUE DE PARIS BEIGE 60X60",
-        "antall på lager": 43.2,
+        "antall på lager": 0.0,
         "antall pr pall": 43.2,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
