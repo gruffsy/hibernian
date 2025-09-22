@@ -34,9 +34,9 @@
     {
         "Prodno": "LN60026",
         "Beskrivelse": "AET MILESTONE WHITE GRIP 60X60 20MM",
-        "antall på lager": 64.0,
+        "antall på lager": 0.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -318,9 +318,9 @@
     {
         "Prodno": "3740064",
         "Beskrivelse": "CAS CEMENTO RASATO BIANCO 60X60 9MM",
-        "antall på lager": 777.6,
+        "antall på lager": 734.4,
         "antall pr pall": 43.2,
-        "Paller på lager": 18,
+        "Paller på lager": 17,
         "Paller på vei": 0
     },
     {
@@ -526,9 +526,9 @@
     {
         "Prodno": "1740004",
         "Beskrivelse": "CAS PIETRE DI PARAGONE GRE BIANCO 60X60 9MM",
-        "antall på lager": 648.0,
+        "antall på lager": 604.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 15,
+        "Paller på lager": 14,
         "Paller på vei": 0
     },
     {
@@ -636,16 +636,10 @@
     {
         "Prodno": "52095",
         "Beskrivelse": "CIF BETON BEIGE 60X60",
-        "antall på lager": -184.3,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": -4,
-        "Paller på vei": 8,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "38/2025",
-                "Antall": 368.64
-            }
-        ]
+        "Paller på lager": 4,
+        "Paller på vei": 0
     },
     {
         "Prodno": "51260",
@@ -680,16 +674,10 @@
     {
         "Prodno": "042448",
         "Beskrivelse": "CIF DIAMOND GOLD MATE 60X60",
-        "antall på lager": 80.6,
+        "antall på lager": 172.8,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "38/2025",
-                "Antall": 92.16
-            }
-        ]
+        "Paller på lager": 4,
+        "Paller på vei": 0
     },
     {
         "Prodno": "042447",
@@ -702,40 +690,30 @@
     {
         "Prodno": "042449",
         "Beskrivelse": "CIF DIAMOND GOLD PULIDO 60X60",
-        "antall på lager": -31.7,
+        "antall på lager": 475.2,
         "antall pr pall": 43.2,
-        "Paller på lager": -1,
-        "Paller på vei": 12,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "38/2025",
-                "Antall": 506.88
-            }
-        ]
+        "Paller på lager": 11,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000045391",
         "Beskrivelse": "CIF INDUSTRIAL BLACK 60X120 - XS",
-        "antall på lager": 362.9,
+        "antall på lager": 311.0,
         "antall pr pall": 51.8,
-        "Paller på lager": 7,
+        "Paller på lager": 6,
         "Paller på vei": 0
     },
     {
         "Prodno": "300000000000040073",
         "Beskrivelse": "CIF INDUSTRIAL BLACK 60X60",
-        "antall på lager": -46.1,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": -1,
-        "Paller på vei": 8,
+        "Paller på lager": 2,
+        "Paller på vei": 5,
         "Bestilling på vei": [
             {
                 "Ukenr": "41/2025",
                 "Antall": 230.4
-            },
-            {
-                "Ukenr": "38/2025",
-                "Antall": 138.24
             }
         ]
     },
@@ -820,16 +798,10 @@
     {
         "Prodno": "300000000000044556",
         "Beskrivelse": "CIF NEXUS PEARL 60x60",
-        "antall på lager": 46.1,
+        "antall på lager": 645.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
-        "Paller på vei": 13,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "38/2025",
-                "Antall": 599.04
-            }
-        ]
+        "Paller på lager": 14,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000045339",
@@ -848,17 +820,13 @@
     {
         "Prodno": "300000000000037842",
         "Beskrivelse": "CIF OVERLAND PEARL 60X60",
-        "antall på lager": -92.2,
+        "antall på lager": 1013.8,
         "antall pr pall": 46.1,
-        "Paller på lager": -2,
-        "Paller på vei": 48,
+        "Paller på lager": 22,
+        "Paller på vei": 24,
         "Bestilling på vei": [
             {
                 "Ukenr": "41/2025",
-                "Antall": 1105.92
-            },
-            {
-                "Ukenr": "38/2025",
                 "Antall": 1105.92
             }
         ]
@@ -866,36 +834,28 @@
     {
         "Prodno": "300000000000040065",
         "Beskrivelse": "CIF OVERLAND SAND 60X120 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 311.0,
         "antall pr pall": 51.8,
-        "Paller på lager": 0,
-        "Paller på vei": 7,
+        "Paller på lager": 6,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
                 "Ukenr": "41/2025",
                 "Antall": 51.84
-            },
-            {
-                "Ukenr": "38/2025",
-                "Antall": 311.04
             }
         ]
     },
     {
         "Prodno": "300000000000035668",
         "Beskrivelse": "CIF OVERLAND SAND 60X60 9MM",
-        "antall på lager": 91.9,
+        "antall på lager": 184.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
-        "Paller på vei": 15,
+        "Paller på lager": 4,
+        "Paller på vei": 13,
         "Bestilling på vei": [
             {
                 "Ukenr": "41/2025",
                 "Antall": 599.04
-            },
-            {
-                "Ukenr": "38/2025",
-                "Antall": 92.16
             }
         ]
     },
@@ -1222,9 +1182,9 @@
     {
         "Prodno": "G434200K",
         "Beskrivelse": "KER NATURE BONE 60X60",
-        "antall på lager": 432.0,
+        "antall på lager": 388.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 10,
+        "Paller på lager": 9,
         "Paller på vei": 0
     },
     {
@@ -1388,9 +1348,9 @@
     {
         "Prodno": "IL6001",
         "Beskrivelse": "LTG INNOVATION LIME DARK 60X60",
-        "antall på lager": 737.3,
+        "antall på lager": 691.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 16,
+        "Paller på lager": 15,
         "Paller på vei": 12,
         "Bestilling på vei": [
             {
@@ -1502,9 +1462,9 @@
     {
         "Prodno": "LTG2900-YH010-36",
         "Beskrivelse": "LTG PROGETTO GRAFITE 30X60",
-        "antall på lager": 506.9,
+        "antall på lager": 460.8,
         "antall pr pall": 46.1,
-        "Paller på lager": 11,
+        "Paller på lager": 10,
         "Paller på vei": 0
     },
     {
@@ -1590,9 +1550,9 @@
     {
         "Prodno": "LTG2100-663",
         "Beskrivelse": "LTG TERRA BEIGE 60X60",
-        "antall på lager": 92.2,
+        "antall på lager": 46.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
+        "Paller på lager": 1,
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
@@ -1746,16 +1706,10 @@
     {
         "Prodno": "300000000000026799",
         "Beskrivelse": "NEUTRA ANTHRACITE 60X60 9MM",
-        "antall på lager": 46.1,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "38/2025",
-                "Antall": 46.08
-            }
-        ]
+        "Paller på lager": 2,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000028643",
@@ -1768,16 +1722,10 @@
     {
         "Prodno": "300000000000023927",
         "Beskrivelse": "NEUTRA CREAM 60X60 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "38/2025",
-                "Antall": 92.16
-            }
-        ]
+        "Paller på lager": 2,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000028649",
@@ -1806,16 +1754,10 @@
     {
         "Prodno": "300000000000026444",
         "Beskrivelse": "NEUTRA TAUPE 60X60 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 46.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "38/2025",
-                "Antall": 46.08
-            }
-        ]
+        "Paller på lager": 1,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000028647",
@@ -1828,16 +1770,10 @@
     {
         "Prodno": "300000000000026446",
         "Beskrivelse": "NEUTRA WHITE 60X60 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 46.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "38/2025",
-                "Antall": 46.08
-            }
-        ]
+        "Paller på lager": 1,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PGIBE001",
@@ -1898,9 +1834,9 @@
     {
         "Prodno": "PGWBE70",
         "Beskrivelse": "PAN DONEGAL QUADRATO 60X60",
-        "antall på lager": 184.3,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
