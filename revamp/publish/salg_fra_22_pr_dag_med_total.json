@@ -12,14 +12,36 @@
     },
     {
         "fakturadato": 20250923,
-        "butikk": "Totalt",
-        "Klient": 99,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "490 kr",
+        "umoms": "392 kr",
+        "db": "62 kr",
+        "dg": "16.0%",
+        "antord": "1",
+        "prord": "490 kr"
+    },
+    {
+        "fakturadato": 20250923,
+        "butikk": "Sandefjord",
+        "Klient": "5",
         "mmoms": "2 599 kr",
         "umoms": "2 079 kr",
-        "db": "1 393 kr",
-        "dg": "67.0%",
+        "db": "938 kr",
+        "dg": "45.0%",
         "antord": "1",
         "prord": "2 599 kr"
+    },
+    {
+        "fakturadato": 20250923,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "5 688 kr",
+        "umoms": "4 550 kr",
+        "db": "2 393 kr",
+        "dg": "52.6%",
+        "antord": "3",
+        "prord": "1 896 kr"
     },
     {
         "fakturadato": 20250922,
