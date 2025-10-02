@@ -1209,7 +1209,13 @@
         "antall på lager": 875.5,
         "antall pr pall": 46.1,
         "Paller på lager": 19,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "52/2025",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "LTG-LX-5PD-M-612",
@@ -1247,8 +1253,12 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 2,
+        "Paller på vei": 9,
         "Bestilling på vei": [
+            {
+                "Ukenr": "52/2025",
+                "Antall": 322.56
+            },
             {
                 "Ukenr": "43/2025",
                 "Antall": 92.16
@@ -1357,7 +1367,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 7,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "52/2025",
+                "Antall": 322.56
+            }
+        ]
     },
     {
         "Prodno": "LTG2100-6121",
@@ -1397,8 +1413,12 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 7,
+        "Paller på vei": 15,
         "Bestilling på vei": [
+            {
+                "Ukenr": "52/2025",
+                "Antall": 368.64
+            },
             {
                 "Ukenr": "43/2025",
                 "Antall": 322.56
@@ -1469,8 +1489,12 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 3,
+        "Paller på vei": 5,
         "Bestilling på vei": [
+            {
+                "Ukenr": "52/2025",
+                "Antall": 92.16
+            },
             {
                 "Ukenr": "43/2025",
                 "Antall": 138.24
