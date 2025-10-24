@@ -441,7 +441,13 @@
         "antall på lager": 164.2,
         "antall pr pall": 43.2,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "018720030",
