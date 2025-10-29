@@ -1116,9 +1116,9 @@
     {
         "Prodno": "G43AC002",
         "Beskrivelse": "KER NATURE GREY 37X75",
-        "antall på lager": 54.2,
+        "antall på lager": 0.0,
         "antall pr pall": 54.2,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -1259,20 +1259,20 @@
         "Bestilling på vei": [
             {
                 "Ukenr": "47/2025",
-                "Antall": 322.56
+                "Antall": 230.4
             },
             {
                 "Ukenr": "47/2025",
-                "Antall": 230.4
+                "Antall": 322.56
             }
         ]
     },
     {
         "Prodno": "IL6001",
         "Beskrivelse": "LTG INNOVATION LIME DARK 60X60",
-        "antall på lager": 138.2,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 12,
         "Bestilling på vei": [
             {
@@ -1334,12 +1334,12 @@
         "Paller på vei": 9,
         "Bestilling på vei": [
             {
-                "Ukenr": "52/2025",
-                "Antall": 322.56
-            },
-            {
                 "Ukenr": "47/2025",
                 "Antall": 92.16
+            },
+            {
+                "Ukenr": "52/2025",
+                "Antall": 322.56
             }
         ]
     },
@@ -1494,12 +1494,12 @@
         "Paller på vei": 15,
         "Bestilling på vei": [
             {
-                "Ukenr": "52/2025",
-                "Antall": 368.64
-            },
-            {
                 "Ukenr": "47/2025",
                 "Antall": 322.56
+            },
+            {
+                "Ukenr": "52/2025",
+                "Antall": 368.64
             }
         ]
     },
@@ -1570,12 +1570,12 @@
         "Paller på vei": 5,
         "Bestilling på vei": [
             {
-                "Ukenr": "52/2025",
-                "Antall": 92.16
-            },
-            {
                 "Ukenr": "47/2025",
                 "Antall": 138.24
+            },
+            {
+                "Ukenr": "52/2025",
+                "Antall": 92.16
             }
         ]
     },
