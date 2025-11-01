@@ -6,12 +6,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": true,
-        "mmoms": "-93 119 kr",
-        "umoms": "-74 496 kr",
-        "db": "9 199 kr",
-        "antord": "-34",
-        "prord": "11 kr",
-        "dg": "1042.4%"
+        "mmoms": "-77 591 kr",
+        "umoms": "-62 074 kr",
+        "db": "9 731 kr",
+        "antord": "-22",
+        "prord": "16 kr",
+        "dg": "939.7%"
     },
     {
         "butikk": "Kristiansand",
@@ -20,12 +20,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": true,
-        "mmoms": "-77 573 kr",
-        "umoms": "-62 076 kr",
-        "db": "-5 898 kr",
-        "antord": "-40",
-        "prord": "132 kr",
-        "dg": "670.9%"
+        "mmoms": "-67 533 kr",
+        "umoms": "-54 045 kr",
+        "db": "-1 408 kr",
+        "antord": "-27",
+        "prord": "100 kr",
+        "dg": "664.9%"
     },
     {
         "butikk": "Tønsberg",
@@ -34,12 +34,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": true,
-        "mmoms": "24 331 kr",
-        "umoms": "19 463 kr",
-        "db": "-5 525 kr",
-        "antord": "44",
-        "prord": "80 kr",
-        "dg": "340.4%"
+        "mmoms": "27 213 kr",
+        "umoms": "21 769 kr",
+        "db": "-4 883 kr",
+        "antord": "53",
+        "prord": "49 kr",
+        "dg": "325.2%"
     },
     {
         "butikk": "Arendal",
@@ -48,40 +48,40 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": true,
-        "mmoms": "-134 747 kr",
-        "umoms": "-107 816 kr",
-        "db": "-1 208 kr",
+        "mmoms": "-113 201 kr",
+        "umoms": "-90 579 kr",
+        "db": "-4 686 kr",
+        "antord": "14",
+        "prord": "-247 kr",
+        "dg": "662.7%"
+    },
+    {
+        "butikk": "Sandefjord",
+        "Klient": 0,
+        "last_year": 2024,
+        "this_year": 2025,
+        "month": 11,
+        "incomplete": true,
+        "mmoms": "-76 119 kr",
+        "umoms": "-60 895 kr",
+        "db": "2 948 kr",
+        "antord": "9",
+        "prord": "-270 kr",
+        "dg": "903.5%"
+    },
+    {
+        "butikk": "Larvik",
+        "Klient": 0,
+        "last_year": 2024,
+        "this_year": 2025,
+        "month": 11,
+        "incomplete": true,
+        "mmoms": "-53 531 kr",
+        "umoms": "-42 826 kr",
+        "db": "5 337 kr",
         "antord": "2",
-        "prord": "-289 kr",
-        "dg": "835.9%"
-    },
-    {
-        "butikk": "Sandefjord",
-        "Klient": 0,
-        "last_year": 2024,
-        "this_year": 2025,
-        "month": 11,
-        "incomplete": true,
-        "mmoms": "-81 685 kr",
-        "umoms": "-65 348 kr",
-        "db": "1 831 kr",
-        "antord": "1",
-        "prord": "-263 kr",
-        "dg": "948.6%"
-    },
-    {
-        "butikk": "Larvik",
-        "Klient": 0,
-        "last_year": 2024,
-        "this_year": 2025,
-        "month": 11,
-        "incomplete": true,
-        "mmoms": "-59 726 kr",
-        "umoms": "-47 782 kr",
-        "db": "3 792 kr",
-        "antord": "-3",
-        "prord": "-163 kr",
-        "dg": "1027.3%"
+        "prord": "-165 kr",
+        "dg": "980.9%"
     },
     {
         "butikk": "Bamble",
@@ -90,12 +90,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": true,
-        "mmoms": "-55 317 kr",
-        "umoms": "-44 259 kr",
-        "db": "-2 173 kr",
-        "antord": "3",
-        "prord": "-198 kr",
-        "dg": "667.2%"
+        "mmoms": "-48 277 kr",
+        "umoms": "-38 627 kr",
+        "db": "-1 744 kr",
+        "antord": "7",
+        "prord": "-182 kr",
+        "dg": "611.1%"
     },
     {
         "butikk": "Totalt",
@@ -104,12 +104,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": true,
-        "mmoms": "-477 838 kr",
-        "umoms": "-382 314 kr",
-        "db": "18 kr",
-        "antord": "-26",
-        "prord": "-86 kr",
-        "dg": "738.1%"
+        "mmoms": "-409 041 kr",
+        "umoms": "-327 277 kr",
+        "db": "5 295 kr",
+        "antord": "37",
+        "prord": "-87 kr",
+        "dg": "682.2%"
     },
     {
         "butikk": "Skien",
@@ -118,12 +118,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": false,
-        "mmoms": "-10 364 859 kr",
-        "umoms": "-8 291 885 kr",
-        "db": "-1 250 253 kr",
-        "antord": "-7 381",
-        "prord": "-34 213 kr",
-        "dg": "-61.9%"
+        "mmoms": "-10 349 331 kr",
+        "umoms": "-8 279 463 kr",
+        "db": "-1 249 721 kr",
+        "antord": "-7 369",
+        "prord": "-34 208 kr",
+        "dg": "-65.3%"
     },
     {
         "butikk": "Kristiansand",
@@ -132,12 +132,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": false,
-        "mmoms": "-11 078 459 kr",
-        "umoms": "-8 863 288 kr",
-        "db": "-1 569 060 kr",
-        "antord": "-7 669",
-        "prord": "-35 276 kr",
-        "dg": "-74.3%"
+        "mmoms": "-11 068 419 kr",
+        "umoms": "-8 855 257 kr",
+        "db": "-1 564 570 kr",
+        "antord": "-7 656",
+        "prord": "-35 308 kr",
+        "dg": "-74.5%"
     },
     {
         "butikk": "Tønsberg",
@@ -146,12 +146,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": false,
-        "mmoms": "-8 109 275 kr",
-        "umoms": "-6 487 453 kr",
-        "db": "-1 238 500 kr",
-        "antord": "-5 979",
-        "prord": "-32 647 kr",
-        "dg": "-85.3%"
+        "mmoms": "-8 106 393 kr",
+        "umoms": "-6 485 147 kr",
+        "db": "-1 237 858 kr",
+        "antord": "-5 970",
+        "prord": "-32 678 kr",
+        "dg": "-85.8%"
     },
     {
         "butikk": "Arendal",
@@ -160,12 +160,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": false,
-        "mmoms": "-10 404 126 kr",
-        "umoms": "-8 323 852 kr",
-        "db": "-1 410 851 kr",
-        "antord": "-7 606",
-        "prord": "-32 669 kr",
-        "dg": "-68.8%"
+        "mmoms": "-10 382 580 kr",
+        "umoms": "-8 306 615 kr",
+        "db": "-1 414 329 kr",
+        "antord": "-7 594",
+        "prord": "-32 627 kr",
+        "dg": "-74.6%"
     },
     {
         "butikk": "Sandefjord",
@@ -174,12 +174,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": false,
-        "mmoms": "-6 776 321 kr",
-        "umoms": "-5 421 053 kr",
-        "db": "-948 042 kr",
-        "antord": "-5 104",
-        "prord": "-32 213 kr",
-        "dg": "-65.0%"
+        "mmoms": "-6 770 755 kr",
+        "umoms": "-5 416 600 kr",
+        "db": "-946 925 kr",
+        "antord": "-5 096",
+        "prord": "-32 220 kr",
+        "dg": "-66.5%"
     },
     {
         "butikk": "Larvik",
@@ -188,12 +188,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": false,
-        "mmoms": "-6 120 225 kr",
-        "umoms": "-4 896 180 kr",
-        "db": "-740 006 kr",
-        "antord": "-4 170",
-        "prord": "-35 833 kr",
-        "dg": "-62.4%"
+        "mmoms": "-6 114 030 kr",
+        "umoms": "-4 891 224 kr",
+        "db": "-738 461 kr",
+        "antord": "-4 164",
+        "prord": "-35 835 kr",
+        "dg": "-64.0%"
     },
     {
         "butikk": "Bamble",
@@ -202,12 +202,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": false,
-        "mmoms": "-6 317 290 kr",
-        "umoms": "-5 053 980 kr",
-        "db": "-875 653 kr",
-        "antord": "-3 794",
-        "prord": "-40 702 kr",
-        "dg": "-74.4%"
+        "mmoms": "-6 310 250 kr",
+        "umoms": "-5 048 348 kr",
+        "db": "-875 224 kr",
+        "antord": "-3 790",
+        "prord": "-40 686 kr",
+        "dg": "-76.3%"
     },
     {
         "butikk": "Totalt",
@@ -216,12 +216,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": false,
-        "mmoms": "-59 170 555 kr",
-        "umoms": "-47 337 691 kr",
-        "db": "-8 032 365 kr",
-        "antord": "-41 703",
-        "prord": "-34 366 kr",
-        "dg": "-72.1%"
+        "mmoms": "-59 101 758 kr",
+        "umoms": "-47 282 654 kr",
+        "db": "-8 027 088 kr",
+        "antord": "-41 639",
+        "prord": "-34 367 kr",
+        "dg": "-73.9%"
     },
     {
         "butikk": "Skien",
@@ -229,12 +229,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": null,
-        "mmoms": "6 526 950 kr",
-        "umoms": "5 221 550 kr",
-        "db": "1 315 725 kr",
-        "antord": "5 475",
-        "dg": "25.2%",
-        "prord": "953 kr"
+        "mmoms": "6 915 150 kr",
+        "umoms": "5 532 100 kr",
+        "db": "1 329 025 kr",
+        "antord": "5 775",
+        "dg": "24.0%",
+        "prord": "957 kr"
     },
     {
         "butikk": "Kristiansand",
@@ -242,12 +242,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": null,
-        "mmoms": "7 544 175 kr",
-        "umoms": "6 035 350 kr",
-        "db": "1 200 100 kr",
-        "antord": "5 575",
-        "dg": "19.9%",
-        "prord": "1 082 kr"
+        "mmoms": "7 795 175 kr",
+        "umoms": "6 236 125 kr",
+        "db": "1 312 350 kr",
+        "antord": "5 900",
+        "dg": "21.0%",
+        "prord": "1 056 kr"
     },
     {
         "butikk": "Tønsberg",
@@ -255,12 +255,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": null,
-        "mmoms": "7 620 025 kr",
-        "umoms": "6 096 000 kr",
-        "db": "924 775 kr",
-        "antord": "6 300",
-        "dg": "15.2%",
-        "prord": "967 kr"
+        "mmoms": "7 692 075 kr",
+        "umoms": "6 153 650 kr",
+        "db": "940 825 kr",
+        "antord": "6 525",
+        "dg": "15.3%",
+        "prord": "943 kr"
     },
     {
         "butikk": "Arendal",
@@ -268,12 +268,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": null,
-        "mmoms": "5 484 225 kr",
-        "umoms": "4 387 375 kr",
-        "db": "1 185 000 kr",
-        "antord": "6 625",
-        "dg": "27.0%",
-        "prord": "662 kr"
+        "mmoms": "6 022 875 kr",
+        "umoms": "4 818 300 kr",
+        "db": "1 098 050 kr",
+        "antord": "6 925",
+        "dg": "22.8%",
+        "prord": "695 kr"
     },
     {
         "butikk": "Sandefjord",
@@ -281,12 +281,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": null,
-        "mmoms": "3 729 100 kr",
-        "umoms": "2 983 275 kr",
-        "db": "864 650 kr",
-        "antord": "4 450",
-        "dg": "29.0%",
-        "prord": "670 kr"
+        "mmoms": "3 868 250 kr",
+        "umoms": "3 094 600 kr",
+        "db": "892 575 kr",
+        "antord": "4 650",
+        "dg": "28.8%",
+        "prord": "665 kr"
     },
     {
         "butikk": "Larvik",
@@ -294,12 +294,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": null,
-        "mmoms": "3 731 400 kr",
-        "umoms": "2 985 100 kr",
-        "db": "736 025 kr",
-        "antord": "3 500",
-        "dg": "24.7%",
-        "prord": "852 kr"
+        "mmoms": "3 886 275 kr",
+        "umoms": "3 109 000 kr",
+        "db": "774 650 kr",
+        "antord": "3 650",
+        "dg": "24.9%",
+        "prord": "851 kr"
     },
     {
         "butikk": "Bamble",
@@ -307,12 +307,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": null,
-        "mmoms": "4 015 325 kr",
-        "umoms": "3 212 250 kr",
-        "db": "698 650 kr",
-        "antord": "3 350",
-        "dg": "21.7%",
-        "prord": "958 kr"
+        "mmoms": "4 191 325 kr",
+        "umoms": "3 353 050 kr",
+        "db": "709 375 kr",
+        "antord": "3 450",
+        "dg": "21.2%",
+        "prord": "971 kr"
     },
     {
         "butikk": "Totalt",
@@ -320,12 +320,12 @@
         "this_year": 2025,
         "month": 11,
         "incomplete": null,
-        "mmoms": "38 651 200 kr",
-        "umoms": "30 920 900 kr",
-        "db": "6 924 925 kr",
-        "antord": "35 275",
-        "dg": "22.4%",
-        "prord": "876 kr"
+        "mmoms": "40 371 125 kr",
+        "umoms": "32 296 825 kr",
+        "db": "7 056 850 kr",
+        "antord": "36 875",
+        "dg": "21.8%",
+        "prord": "875 kr"
     },
     {
         "butikk": "Skien",
