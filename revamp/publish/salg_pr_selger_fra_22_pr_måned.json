@@ -2,18 +2,58 @@
     {
         "måned": "November",
         "år": "2025",
+        "navn": "Frode  Olsen",
+        "umoms": "14,613 kr",
+        "db": "3,105 kr",
+        "butikk": "Bamble"
+    },
+    {
+        "måned": "November",
+        "år": "2025",
         "navn": "Milla F. Moen",
-        "umoms": "9,818 kr",
-        "db": "1,438 kr",
+        "umoms": "13,811 kr",
+        "db": "2,373 kr",
         "butikk": "Skien"
     },
     {
         "måned": "November",
         "år": "2025",
         "navn": "Jonas Tjernshaugen",
-        "umoms": "9,416 kr",
-        "db": "2,587 kr",
+        "umoms": "13,232 kr",
+        "db": "3,588 kr",
         "butikk": "Tønsberg"
+    },
+    {
+        "måned": "November",
+        "år": "2025",
+        "navn": "Christina Larsen",
+        "umoms": "13,067 kr",
+        "db": "3,343 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "November",
+        "år": "2025",
+        "navn": "Julie Nilsen Bjølseth",
+        "umoms": "11,348 kr",
+        "db": "2,525 kr",
+        "butikk": "Sandefjord"
+    },
+    {
+        "måned": "November",
+        "år": "2025",
+        "navn": "Kristine Martinsen",
+        "umoms": "10,591 kr",
+        "db": "1,807 kr",
+        "butikk": "Bamble"
+    },
+    {
+        "måned": "November",
+        "år": "2025",
+        "navn": "Fredrik Jacobsen",
+        "umoms": "10,162 kr",
+        "db": "2,360 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "November",
@@ -26,42 +66,50 @@
     {
         "måned": "November",
         "år": "2025",
-        "navn": "Christina Larsen",
-        "umoms": "7,692 kr",
-        "db": "2,072 kr",
+        "navn": "Linn Christina Larssen",
+        "umoms": "9,140 kr",
+        "db": "1,993 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "måned": "November",
+        "år": "2025",
+        "navn": "Mikkel Kihle Lindvig",
+        "umoms": "6,399 kr",
+        "db": "302 kr",
         "butikk": "Kristiansand"
     },
     {
         "måned": "November",
         "år": "2025",
-        "navn": "Julie Nilsen Bjølseth",
-        "umoms": "7,036 kr",
-        "db": "1,834 kr",
-        "butikk": "Sandefjord"
-    },
-    {
-        "måned": "November",
-        "år": "2025",
-        "navn": "Fredrik Jacobsen",
-        "umoms": "6,631 kr",
-        "db": "1,612 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "måned": "November",
-        "år": "2025",
         "navn": "Fredrik Frost Pettersen",
-        "umoms": "6,072 kr",
-        "db": "2,119 kr",
+        "umoms": "6,302 kr",
+        "db": "2,229 kr",
         "butikk": "Tønsberg"
     },
     {
         "måned": "November",
         "år": "2025",
-        "navn": "Kristine Martinsen",
-        "umoms": "4,749 kr",
-        "db": "1,608 kr",
-        "butikk": "Bamble"
+        "navn": "Marius Hoem Skovly",
+        "umoms": "5,539 kr",
+        "db": "1,984 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "November",
+        "år": "2025",
+        "navn": "Hans Kristian Nenset",
+        "umoms": "4,839 kr",
+        "db": "473 kr",
+        "butikk": "Skien"
+    },
+    {
+        "måned": "November",
+        "år": "2025",
+        "navn": "Maylin Trondahl Olsen",
+        "umoms": "4,754 kr",
+        "db": "358 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "November",
@@ -74,10 +122,10 @@
     {
         "måned": "November",
         "år": "2025",
-        "navn": "Hans Kristian Nenset",
-        "umoms": "4,319 kr",
-        "db": "308 kr",
-        "butikk": "Skien"
+        "navn": "Pernille Dall",
+        "umoms": "3,945 kr",
+        "db": "1,352 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "November",
@@ -98,6 +146,22 @@
     {
         "måned": "November",
         "år": "2025",
+        "navn": "Menglei Chen Ottem",
+        "umoms": "2,128 kr",
+        "db": "583 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "måned": "November",
+        "år": "2025",
+        "navn": "Mathilde Rougnø",
+        "umoms": "2,116 kr",
+        "db": "914 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "November",
+        "år": "2025",
         "navn": "Susanne Engmann",
         "umoms": "1,900 kr",
         "db": "1,757 kr",
@@ -106,25 +170,17 @@
     {
         "måned": "November",
         "år": "2025",
-        "navn": "Marius Hoem Skovly",
-        "umoms": "1,467 kr",
-        "db": "519 kr",
-        "butikk": "Tønsberg"
+        "navn": "Joakim Johnsen",
+        "umoms": "1,489 kr",
+        "db": "48 kr",
+        "butikk": "Skien"
     },
     {
         "måned": "November",
         "år": "2025",
-        "navn": "Maylin Trondahl Olsen",
-        "umoms": "1,087 kr",
-        "db": "212 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "November",
-        "år": "2025",
-        "navn": "Menglei Chen Ottem",
-        "umoms": "936 kr",
-        "db": "231 kr",
+        "navn": "Elin Eilefsen",
+        "umoms": "1,177 kr",
+        "db": "583 kr",
         "butikk": "Larvik"
     },
     {
@@ -138,26 +194,18 @@
     {
         "måned": "November",
         "år": "2025",
-        "navn": "Elin Eilefsen",
-        "umoms": "660 kr",
-        "db": "237 kr",
-        "butikk": "Larvik"
-    },
-    {
-        "måned": "November",
-        "år": "2025",
-        "navn": "Linn Christina Larssen",
-        "umoms": "623 kr",
-        "db": "225 kr",
-        "butikk": "Larvik"
-    },
-    {
-        "måned": "November",
-        "år": "2025",
         "navn": "Elias Saubrekka",
         "umoms": "558 kr",
         "db": "138 kr",
         "butikk": "Skien"
+    },
+    {
+        "måned": "November",
+        "år": "2025",
+        "navn": "Tobias Eide",
+        "umoms": "465 kr",
+        "db": "-209 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "November",
@@ -174,14 +222,6 @@
         "umoms": "71 kr",
         "db": "-5 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "måned": "November",
-        "år": "2025",
-        "navn": "Pernille Dall",
-        "umoms": "-292 kr",
-        "db": "-70 kr",
-        "butikk": "Kristiansand"
     },
     {
         "måned": "November",
