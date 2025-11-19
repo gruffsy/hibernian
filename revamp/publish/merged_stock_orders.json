@@ -522,9 +522,9 @@
     {
         "Prodno": "11950041",
         "Beskrivelse": "CAS TERRAZZO WHITE 60X60 9MM",
-        "antall på lager": 259.2,
+        "antall på lager": 216.0,
         "antall pr pall": 43.2,
-        "Paller på lager": 6,
+        "Paller på lager": 5,
         "Paller på vei": 0
     },
     {
@@ -738,9 +738,9 @@
     {
         "Prodno": "300000000000037842",
         "Beskrivelse": "CIF OVERLAND PEARL 60X60",
-        "antall på lager": 1336.3,
+        "antall på lager": 1290.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 29,
+        "Paller på lager": 28,
         "Paller på vei": 0
     },
     {
@@ -860,9 +860,9 @@
     {
         "Prodno": "02CEV62R1",
         "Beskrivelse": "CTV EVOLUTION WHITE 60X120 9,5MM",
-        "antall på lager": 138.2,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 0
     },
     {
@@ -1226,12 +1226,12 @@
         "Paller på vei": 40,
         "Bestilling på vei": [
             {
-                "Ukenr": "52/2025",
-                "Antall": 138.24
-            },
-            {
                 "Ukenr": "6/2026",
                 "Antall": 1704.96
+            },
+            {
+                "Ukenr": "52/2025",
+                "Antall": 138.24
             }
         ]
     },
@@ -1268,12 +1268,12 @@
         "Paller på vei": 13,
         "Bestilling på vei": [
             {
-                "Ukenr": "52/2025",
-                "Antall": 322.56
-            },
-            {
                 "Ukenr": "6/2026",
                 "Antall": 276.48
+            },
+            {
+                "Ukenr": "52/2025",
+                "Antall": 322.56
             }
         ]
     },
@@ -1464,12 +1464,12 @@
         "Paller på vei": 21,
         "Bestilling på vei": [
             {
-                "Ukenr": "52/2025",
-                "Antall": 368.64
-            },
-            {
                 "Ukenr": "6/2026",
                 "Antall": 599.04
+            },
+            {
+                "Ukenr": "52/2025",
+                "Antall": 368.64
             }
         ]
     },
@@ -1534,12 +1534,12 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "52/2025",
-                "Antall": 92.16
-            },
-            {
                 "Ukenr": "6/2026",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "52/2025",
+                "Antall": 92.16
             }
         ]
     },
