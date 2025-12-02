@@ -82,9 +82,33 @@
     {
         "måned": "December",
         "år": "2025",
+        "navn": "Christina Larsen",
+        "umoms": "31,470 kr",
+        "db": "11,667 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
+        "navn": "Laila Skripeland",
+        "umoms": "31,296 kr",
+        "db": "-604 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
         "navn": "Ingeborg Kristine  Isaksen",
         "umoms": "30,686 kr",
         "db": "4,816 kr",
+        "butikk": "Bamble"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
+        "navn": "Kristine Martinsen",
+        "umoms": "30,196 kr",
+        "db": "7,800 kr",
         "butikk": "Bamble"
     },
     {
@@ -94,30 +118,6 @@
         "umoms": "30,108 kr",
         "db": "5,885 kr",
         "butikk": "Sandefjord"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
-        "navn": "Kristine Martinsen",
-        "umoms": "29,365 kr",
-        "db": "7,483 kr",
-        "butikk": "Bamble"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
-        "navn": "Christina Larsen",
-        "umoms": "26,949 kr",
-        "db": "9,031 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
-        "navn": "Laila Skripeland",
-        "umoms": "26,699 kr",
-        "db": "-732 kr",
-        "butikk": "Arendal"
     },
     {
         "måned": "December",
@@ -154,6 +154,14 @@
     {
         "måned": "December",
         "år": "2025",
+        "navn": "Tom Richard Ekeberg",
+        "umoms": "19,788 kr",
+        "db": "5,112 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
         "navn": "Anette Omland Brubakken",
         "umoms": "19,229 kr",
         "db": "3,168 kr",
@@ -166,14 +174,6 @@
         "umoms": "19,116 kr",
         "db": "3,512 kr",
         "butikk": "Sandefjord"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
-        "navn": "Tom Richard Ekeberg",
-        "umoms": "18,652 kr",
-        "db": "4,690 kr",
-        "butikk": "Larvik"
     },
     {
         "måned": "December",
@@ -266,14 +266,6 @@
     {
         "måned": "December",
         "år": "2025",
-        "navn": "Veronica Skaug Bolt Hansen",
-        "umoms": "10,979 kr",
-        "db": "2,202 kr",
-        "butikk": "Sandefjord"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
         "navn": "Anders Eide",
         "umoms": "10,911 kr",
         "db": "6,601 kr",
@@ -298,6 +290,14 @@
     {
         "måned": "December",
         "år": "2025",
+        "navn": "Aleksander Bang",
+        "umoms": "9,561 kr",
+        "db": "2,609 kr",
+        "butikk": "Skien"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
         "navn": "Niyas Ali",
         "umoms": "9,260 kr",
         "db": "3,235 kr",
@@ -306,10 +306,10 @@
     {
         "måned": "December",
         "år": "2025",
-        "navn": "Aleksander Bang",
-        "umoms": "8,504 kr",
-        "db": "2,419 kr",
-        "butikk": "Skien"
+        "navn": "Veronica Skaug Bolt Hansen",
+        "umoms": "8,958 kr",
+        "db": "1,596 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "December",
@@ -330,26 +330,26 @@
     {
         "måned": "December",
         "år": "2025",
-        "navn": "Thor Aksel Thoresen",
-        "umoms": "6,108 kr",
-        "db": "926 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
         "navn": "Sander Homleid",
-        "umoms": "5,748 kr",
-        "db": "-895 kr",
+        "umoms": "7,644 kr",
+        "db": "-114 kr",
         "butikk": "Tønsberg"
     },
     {
         "måned": "December",
         "år": "2025",
         "navn": "Jonas Skog",
-        "umoms": "5,742 kr",
-        "db": "-14 kr",
+        "umoms": "6,270 kr",
+        "db": "118 kr",
         "butikk": "Sandefjord"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
+        "navn": "Thor Aksel Thoresen",
+        "umoms": "6,108 kr",
+        "db": "926 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "December",
