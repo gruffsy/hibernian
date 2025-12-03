@@ -11,40 +11,40 @@
         "måned": "December",
         "år": "2025",
         "navn": "Ida Pernille Iversen",
-        "umoms": "95,440 kr",
-        "db": "22,053 kr",
+        "umoms": "95,804 kr",
+        "db": "22,229 kr",
         "butikk": "Skien"
     },
     {
         "måned": "December",
         "år": "2025",
         "navn": "Håkon Tvede",
-        "umoms": "77,201 kr",
-        "db": "11,619 kr",
+        "umoms": "80,382 kr",
+        "db": "12,776 kr",
         "butikk": "Arendal"
     },
     {
         "måned": "December",
         "år": "2025",
-        "navn": "Liubov Jonassen",
-        "umoms": "72,606 kr",
-        "db": "19,617 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
         "navn": "Julie Nilsen Bjølseth",
-        "umoms": "71,271 kr",
-        "db": "10,335 kr",
+        "umoms": "74,021 kr",
+        "db": "10,656 kr",
         "butikk": "Sandefjord"
     },
     {
         "måned": "December",
         "år": "2025",
+        "navn": "Liubov Jonassen",
+        "umoms": "73,420 kr",
+        "db": "19,832 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
         "navn": "Tonje W  Madsen",
-        "umoms": "69,120 kr",
-        "db": "22,384 kr",
+        "umoms": "68,641 kr",
+        "db": "22,220 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -67,8 +67,8 @@
         "måned": "December",
         "år": "2025",
         "navn": "Christina Larsen",
-        "umoms": "62,268 kr",
-        "db": "20,727 kr",
+        "umoms": "60,162 kr",
+        "db": "19,642 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -91,9 +91,17 @@
         "måned": "December",
         "år": "2025",
         "navn": "Bertil Tangen",
-        "umoms": "56,311 kr",
-        "db": "8,296 kr",
+        "umoms": "56,798 kr",
+        "db": "8,540 kr",
         "butikk": "Sandefjord"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
+        "navn": "Celine Rød",
+        "umoms": "56,079 kr",
+        "db": "14,000 kr",
+        "butikk": "Larvik"
     },
     {
         "måned": "December",
@@ -102,14 +110,6 @@
         "umoms": "55,599 kr",
         "db": "16,587 kr",
         "butikk": "Arendal"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
-        "navn": "Celine Rød",
-        "umoms": "54,562 kr",
-        "db": "13,624 kr",
-        "butikk": "Larvik"
     },
     {
         "måned": "December",
@@ -178,26 +178,26 @@
     {
         "måned": "December",
         "år": "2025",
-        "navn": "Andreas Olsen",
-        "umoms": "36,483 kr",
-        "db": "11,080 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
         "navn": "Anette Omland Brubakken",
-        "umoms": "35,722 kr",
-        "db": "6,625 kr",
+        "umoms": "36,823 kr",
+        "db": "6,696 kr",
         "butikk": "Bamble"
     },
     {
         "måned": "December",
         "år": "2025",
         "navn": "Ingeborg Kristine  Isaksen",
-        "umoms": "35,342 kr",
-        "db": "5,935 kr",
+        "umoms": "36,500 kr",
+        "db": "6,072 kr",
         "butikk": "Bamble"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
+        "navn": "Andreas Olsen",
+        "umoms": "36,483 kr",
+        "db": "11,080 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "December",
@@ -267,8 +267,8 @@
         "måned": "December",
         "år": "2025",
         "navn": "Susanne Engmann",
-        "umoms": "24,434 kr",
-        "db": "5,102 kr",
+        "umoms": "24,953 kr",
+        "db": "5,167 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -331,8 +331,8 @@
         "måned": "December",
         "år": "2025",
         "navn": "Veronica Skaug Bolt Hansen",
-        "umoms": "19,303 kr",
-        "db": "3,554 kr",
+        "umoms": "19,366 kr",
+        "db": "3,594 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -362,18 +362,18 @@
     {
         "måned": "December",
         "år": "2025",
-        "navn": "Katarina Kiste Riis",
-        "umoms": "17,293 kr",
-        "db": "6,260 kr",
-        "butikk": "Bamble"
+        "navn": "Rasmus Helle",
+        "umoms": "17,731 kr",
+        "db": "12,908 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "December",
         "år": "2025",
-        "navn": "Rasmus Helle",
-        "umoms": "16,638 kr",
-        "db": "12,457 kr",
-        "butikk": "Kristiansand"
+        "navn": "Katarina Kiste Riis",
+        "umoms": "17,293 kr",
+        "db": "6,260 kr",
+        "butikk": "Bamble"
     },
     {
         "måned": "December",
@@ -466,6 +466,14 @@
     {
         "måned": "December",
         "år": "2025",
+        "navn": "Jesper Petterson",
+        "umoms": "10,291 kr",
+        "db": "3,177 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
         "navn": "Helen Roungø",
         "umoms": "8,679 kr",
         "db": "2,896 kr",
@@ -510,14 +518,6 @@
         "umoms": "3,680 kr",
         "db": "771 kr",
         "butikk": "Bamble"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
-        "navn": "Jesper Petterson",
-        "umoms": "3,470 kr",
-        "db": "1,673 kr",
-        "butikk": "Kristiansand"
     },
     {
         "måned": "December",
@@ -690,6 +690,14 @@
     {
         "måned": "December",
         "år": "2025",
+        "navn": "James Michael McGurty",
+        "umoms": "-1,104 kr",
+        "db": "-99 kr",
+        "butikk": "Skien"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
         "navn": "Niels Soest",
         "umoms": "-1,121 kr",
         "db": "-129 kr",
@@ -701,14 +709,6 @@
         "navn": "Hans Kristian Nenset",
         "umoms": "-1,828 kr",
         "db": "-459 kr",
-        "butikk": "Skien"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
-        "navn": "James Michael McGurty",
-        "umoms": "-2,100 kr",
-        "db": "-569 kr",
         "butikk": "Skien"
     },
     {
