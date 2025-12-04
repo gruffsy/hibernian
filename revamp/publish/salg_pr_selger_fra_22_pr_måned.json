@@ -11,7 +11,7 @@
         "måned": "December",
         "år": "2025",
         "navn": "Håkon Tvede",
-        "umoms": "123,228 kr",
+        "umoms": "123,628 kr",
         "db": "24,734 kr",
         "butikk": "Arendal"
     },
@@ -19,8 +19,8 @@
         "måned": "December",
         "år": "2025",
         "navn": "Tuva Sofie Risdal",
-        "umoms": "115,325 kr",
-        "db": "20,090 kr",
+        "umoms": "118,334 kr",
+        "db": "20,965 kr",
         "butikk": "Larvik"
     },
     {
@@ -98,6 +98,22 @@
     {
         "måned": "December",
         "år": "2025",
+        "navn": "Laila Skripeland",
+        "umoms": "74,432 kr",
+        "db": "1,637 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
+        "navn": "Christina Larsen",
+        "umoms": "71,276 kr",
+        "db": "23,040 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
         "navn": "Celine Rød",
         "umoms": "70,923 kr",
         "db": "17,798 kr",
@@ -106,25 +122,9 @@
     {
         "måned": "December",
         "år": "2025",
-        "navn": "Laila Skripeland",
-        "umoms": "70,832 kr",
-        "db": "439 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
-        "navn": "Christina Larsen",
-        "umoms": "69,370 kr",
-        "db": "22,473 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
         "navn": "Patrick Johansen",
-        "umoms": "64,412 kr",
-        "db": "18,308 kr",
+        "umoms": "64,699 kr",
+        "db": "18,385 kr",
         "butikk": "Arendal"
     },
     {
@@ -139,17 +139,9 @@
         "måned": "December",
         "år": "2025",
         "navn": "Kine Thi Huynh",
-        "umoms": "59,681 kr",
-        "db": "14,769 kr",
+        "umoms": "61,032 kr",
+        "db": "15,183 kr",
         "butikk": "Skien"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
-        "navn": "Pernille Dall",
-        "umoms": "56,144 kr",
-        "db": "13,455 kr",
-        "butikk": "Kristiansand"
     },
     {
         "måned": "December",
@@ -166,6 +158,14 @@
         "umoms": "55,410 kr",
         "db": "9,912 kr",
         "butikk": "Skien"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
+        "navn": "Pernille Dall",
+        "umoms": "54,944 kr",
+        "db": "13,195 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "December",
@@ -266,6 +266,14 @@
     {
         "måned": "December",
         "år": "2025",
+        "navn": "Jonas Tjernshaugen",
+        "umoms": "33,608 kr",
+        "db": "8,723 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
         "navn": "Milla F. Moen",
         "umoms": "33,194 kr",
         "db": "11,781 kr",
@@ -278,14 +286,6 @@
         "umoms": "32,397 kr",
         "db": "7,768 kr",
         "butikk": "Bamble"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
-        "navn": "Jonas Tjernshaugen",
-        "umoms": "32,152 kr",
-        "db": "8,292 kr",
-        "butikk": "Tønsberg"
     },
     {
         "måned": "December",
@@ -306,18 +306,18 @@
     {
         "måned": "December",
         "år": "2025",
-        "navn": "Menglei Chen Ottem",
-        "umoms": "29,006 kr",
-        "db": "9,059 kr",
-        "butikk": "Larvik"
+        "navn": "Pål Magnus Andersen",
+        "umoms": "30,578 kr",
+        "db": "7,341 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "December",
         "år": "2025",
-        "navn": "Pål Magnus Andersen",
-        "umoms": "28,838 kr",
-        "db": "6,868 kr",
-        "butikk": "Sandefjord"
+        "navn": "Menglei Chen Ottem",
+        "umoms": "29,061 kr",
+        "db": "9,083 kr",
+        "butikk": "Larvik"
     },
     {
         "måned": "December",
@@ -338,6 +338,14 @@
     {
         "måned": "December",
         "år": "2025",
+        "navn": "Anders Eide",
+        "umoms": "26,554 kr",
+        "db": "9,872 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
         "navn": "Veronica Skaug Bolt Hansen",
         "umoms": "25,825 kr",
         "db": "7,296 kr",
@@ -347,9 +355,17 @@
         "måned": "December",
         "år": "2025",
         "navn": "Jonas Skog",
-        "umoms": "24,709 kr",
-        "db": "4,071 kr",
+        "umoms": "25,044 kr",
+        "db": "4,260 kr",
         "butikk": "Sandefjord"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
+        "navn": "Kristoffer Gård",
+        "umoms": "23,362 kr",
+        "db": "-27,374 kr",
+        "butikk": "Bamble"
     },
     {
         "måned": "December",
@@ -386,26 +402,10 @@
     {
         "måned": "December",
         "år": "2025",
-        "navn": "Anders Eide",
-        "umoms": "21,151 kr",
-        "db": "9,312 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
         "navn": "Rasmus Helle",
         "umoms": "20,494 kr",
         "db": "11,780 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
-        "navn": "Kristoffer Gård",
-        "umoms": "20,460 kr",
-        "db": "-28,195 kr",
-        "butikk": "Bamble"
     },
     {
         "måned": "December",
@@ -579,8 +579,8 @@
         "måned": "December",
         "år": "2025",
         "navn": "Heidi Kristensen Voje",
-        "umoms": "3,731 kr",
-        "db": "287 kr",
+        "umoms": "3,928 kr",
+        "db": "383 kr",
         "butikk": "Bamble"
     },
     {
@@ -606,6 +606,14 @@
         "umoms": "3,043 kr",
         "db": "1,113 kr",
         "butikk": "Skien"
+    },
+    {
+        "måned": "December",
+        "år": "2025",
+        "navn": "Solveig Jørgensen",
+        "umoms": "2,509 kr",
+        "db": "569 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "December",
@@ -670,14 +678,6 @@
         "umoms": "381 kr",
         "db": "138 kr",
         "butikk": "Skien"
-    },
-    {
-        "måned": "December",
-        "år": "2025",
-        "navn": "Solveig Jørgensen",
-        "umoms": "316 kr",
-        "db": "320 kr",
-        "butikk": "Arendal"
     },
     {
         "måned": "December",
