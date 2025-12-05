@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20251205,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "225 kr",
+        "umoms": "180 kr",
+        "db": "-46 kr",
+        "dg": "-26.0%",
+        "antord": "1",
+        "prord": "225 kr"
+    },
+    {
+        "fakturadato": 20251205,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "225 kr",
+        "umoms": "180 kr",
+        "db": "-46 kr",
+        "dg": "-25.6%",
+        "antord": "1",
+        "prord": "225 kr"
+    },
+    {
         "fakturadato": 20251204,
         "butikk": "Skien",
         "Klient": "0",
