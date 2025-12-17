@@ -1635,11 +1635,11 @@
         "antall på lager": 156.3,
         "antall pr pall": 52.1,
         "Paller på lager": 3,
-        "Paller på vei": 5,
+        "Paller på vei": 3,
         "Bestilling på vei": [
             {
                 "Ukenr": "51/2025",
-                "Antall": 260.495
+                "Antall": 156.298
             }
         ]
     },
@@ -1671,11 +1671,15 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 1,
+        "Paller på vei": 3,
         "Bestilling på vei": [
             {
                 "Ukenr": "51/2025",
                 "Antall": 46.08
+            },
+            {
+                "Ukenr": "51/2025",
+                "Antall": 92.16
             }
         ]
     },
@@ -1693,7 +1697,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "51/2025",
+                "Antall": 184.32
+            }
+        ]
     },
     {
         "Prodno": "PGIBE301",
@@ -1769,11 +1779,15 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 1,
+        "Paller på vei": 3,
         "Bestilling på vei": [
             {
                 "Ukenr": "51/2025",
                 "Antall": 46.08
+            },
+            {
+                "Ukenr": "51/2025",
+                "Antall": 92.16
             }
         ]
     },
@@ -1791,11 +1805,15 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 3,
+        "Paller på vei": 5,
         "Bestilling på vei": [
             {
                 "Ukenr": "51/2025",
                 "Antall": 138.24
+            },
+            {
+                "Ukenr": "51/2025",
+                "Antall": 92.16
             }
         ]
     },
@@ -1813,7 +1831,13 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "51/2025",
+                "Antall": 92.16
+            }
+        ]
     },
     {
         "Prodno": "APGXSD30",
