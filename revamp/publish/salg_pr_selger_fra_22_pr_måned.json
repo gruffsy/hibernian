@@ -18,6 +18,22 @@
     {
         "måned": "January",
         "år": "2026",
+        "navn": "Christina Larsen",
+        "umoms": "86,848 kr",
+        "db": "15,876 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
+        "navn": "Liubov Jonassen",
+        "umoms": "81,753 kr",
+        "db": "16,003 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
         "navn": "Heidi Kristensen Voje",
         "umoms": "79,777 kr",
         "db": "14,980 kr",
@@ -26,17 +42,9 @@
     {
         "måned": "January",
         "år": "2026",
-        "navn": "Liubov Jonassen",
-        "umoms": "79,604 kr",
-        "db": "15,042 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
-        "navn": "Christina Larsen",
-        "umoms": "78,690 kr",
-        "db": "14,087 kr",
+        "navn": "Mikkel Kihle Lindvig",
+        "umoms": "77,942 kr",
+        "db": "14,794 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -50,17 +58,9 @@
     {
         "måned": "January",
         "år": "2026",
-        "navn": "Mikkel Kihle Lindvig",
-        "umoms": "69,639 kr",
-        "db": "12,276 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
         "navn": "Jelle Soest",
-        "umoms": "69,066 kr",
-        "db": "14,466 kr",
+        "umoms": "69,249 kr",
+        "db": "14,533 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -115,8 +115,8 @@
         "måned": "January",
         "år": "2026",
         "navn": "Milla F. Moen",
-        "umoms": "41,961 kr",
-        "db": "10,246 kr",
+        "umoms": "46,433 kr",
+        "db": "10,996 kr",
         "butikk": "Skien"
     },
     {
@@ -138,18 +138,18 @@
     {
         "måned": "January",
         "år": "2026",
-        "navn": "Celine Rød",
-        "umoms": "32,336 kr",
-        "db": "8,567 kr",
-        "butikk": "Larvik"
+        "navn": "Andreas Olsen",
+        "umoms": "33,433 kr",
+        "db": "6,932 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "January",
         "år": "2026",
-        "navn": "Andreas Olsen",
-        "umoms": "32,140 kr",
-        "db": "6,664 kr",
-        "butikk": "Arendal"
+        "navn": "Celine Rød",
+        "umoms": "32,336 kr",
+        "db": "8,567 kr",
+        "butikk": "Larvik"
     },
     {
         "måned": "January",
@@ -251,9 +251,17 @@
         "måned": "January",
         "år": "2026",
         "navn": "Anette Omland Brubakken",
-        "umoms": "15,602 kr",
-        "db": "4,284 kr",
+        "umoms": "16,162 kr",
+        "db": "3,601 kr",
         "butikk": "Bamble"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
+        "navn": "Ida Pernille Iversen",
+        "umoms": "15,522 kr",
+        "db": "1,856 kr",
+        "butikk": "Skien"
     },
     {
         "måned": "January",
@@ -274,10 +282,10 @@
     {
         "måned": "January",
         "år": "2026",
-        "navn": "Ida Pernille Iversen",
-        "umoms": "14,323 kr",
-        "db": "1,611 kr",
-        "butikk": "Skien"
+        "navn": "Tuva Sofie Risdal",
+        "umoms": "13,684 kr",
+        "db": "1,098 kr",
+        "butikk": "Larvik"
     },
     {
         "måned": "January",
@@ -286,14 +294,6 @@
         "umoms": "12,644 kr",
         "db": "582 kr",
         "butikk": "Skien"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
-        "navn": "Tuva Sofie Risdal",
-        "umoms": "12,602 kr",
-        "db": "566 kr",
-        "butikk": "Larvik"
     },
     {
         "måned": "January",
@@ -314,6 +314,22 @@
     {
         "måned": "January",
         "år": "2026",
+        "navn": "Zain Al-Rubay",
+        "umoms": "11,425 kr",
+        "db": "1,438 kr",
+        "butikk": "Bamble"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
+        "navn": "Steffen Johannes Forup Hansen",
+        "umoms": "8,486 kr",
+        "db": "1,196 kr",
+        "butikk": "Bamble"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
         "navn": "Anders Eide",
         "umoms": "7,253 kr",
         "db": "1,055 kr",
@@ -326,22 +342,6 @@
         "umoms": "7,247 kr",
         "db": "2,144 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
-        "navn": "Zain Al-Rubay",
-        "umoms": "7,199 kr",
-        "db": "481 kr",
-        "butikk": "Bamble"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
-        "navn": "Steffen Johannes Forup Hansen",
-        "umoms": "6,831 kr",
-        "db": "557 kr",
-        "butikk": "Bamble"
     },
     {
         "måned": "January",
