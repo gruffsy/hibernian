@@ -19,8 +19,8 @@
         "måned": "January",
         "år": "2026",
         "navn": "Christina Larsen",
-        "umoms": "87,220 kr",
-        "db": "16,030 kr",
+        "umoms": "88,689 kr",
+        "db": "16,397 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -35,8 +35,8 @@
         "måned": "January",
         "år": "2026",
         "navn": "Liubov Jonassen",
-        "umoms": "82,469 kr",
-        "db": "16,149 kr",
+        "umoms": "83,491 kr",
+        "db": "16,110 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -51,8 +51,8 @@
         "måned": "January",
         "år": "2026",
         "navn": "Heidi Kristensen Voje",
-        "umoms": "79,777 kr",
-        "db": "14,980 kr",
+        "umoms": "79,936 kr",
+        "db": "15,029 kr",
         "butikk": "Bamble"
     },
     {
@@ -98,18 +98,18 @@
     {
         "måned": "January",
         "år": "2026",
-        "navn": "Helen Roungø",
-        "umoms": "48,666 kr",
-        "db": "5,773 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
         "navn": "Julie Nilsen Bjølseth",
         "umoms": "48,281 kr",
         "db": "6,210 kr",
         "butikk": "Sandefjord"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
+        "navn": "Helen Roungø",
+        "umoms": "47,483 kr",
+        "db": "5,650 kr",
+        "butikk": "Tønsberg"
     },
     {
         "måned": "January",
@@ -130,18 +130,18 @@
     {
         "måned": "January",
         "år": "2026",
-        "navn": "Marcus Hidle Brustad",
-        "umoms": "35,176 kr",
-        "db": "7,225 kr",
-        "butikk": "Sandefjord"
+        "navn": "Andreas Olsen",
+        "umoms": "37,022 kr",
+        "db": "7,756 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "January",
         "år": "2026",
-        "navn": "Andreas Olsen",
-        "umoms": "34,262 kr",
-        "db": "7,223 kr",
-        "butikk": "Arendal"
+        "navn": "Marcus Hidle Brustad",
+        "umoms": "35,176 kr",
+        "db": "7,225 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "January",
@@ -187,8 +187,8 @@
         "måned": "January",
         "år": "2026",
         "navn": "Sander Homleid",
-        "umoms": "24,007 kr",
-        "db": "8,359 kr",
+        "umoms": "24,811 kr",
+        "db": "8,420 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -234,6 +234,14 @@
     {
         "måned": "January",
         "år": "2026",
+        "navn": "Tuva Sofie Risdal",
+        "umoms": "18,321 kr",
+        "db": "1,819 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
         "navn": "Jonas Skog",
         "umoms": "17,380 kr",
         "db": "2,637 kr",
@@ -251,17 +259,25 @@
         "måned": "January",
         "år": "2026",
         "navn": "Anette Omland Brubakken",
-        "umoms": "16,162 kr",
-        "db": "3,601 kr",
+        "umoms": "16,441 kr",
+        "db": "3,624 kr",
         "butikk": "Bamble"
     },
     {
         "måned": "January",
         "år": "2026",
         "navn": "Ida Pernille Iversen",
-        "umoms": "15,522 kr",
-        "db": "1,856 kr",
+        "umoms": "16,112 kr",
+        "db": "2,037 kr",
         "butikk": "Skien"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
+        "navn": "Sol Emilie Risdal",
+        "umoms": "15,900 kr",
+        "db": "2,124 kr",
+        "butikk": "Larvik"
     },
     {
         "måned": "January",
@@ -270,22 +286,6 @@
         "umoms": "14,990 kr",
         "db": "3,785 kr",
         "butikk": "Arendal"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
-        "navn": "Sol Emilie Risdal",
-        "umoms": "14,353 kr",
-        "db": "2,678 kr",
-        "butikk": "Larvik"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
-        "navn": "Tuva Sofie Risdal",
-        "umoms": "13,767 kr",
-        "db": "1,136 kr",
-        "butikk": "Larvik"
     },
     {
         "måned": "January",
@@ -405,6 +405,14 @@
         "navn": "Øyvind K. Solfjeld",
         "umoms": "286 kr",
         "db": "65 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
+        "navn": "Kristoffer Johnsen",
+        "umoms": "159 kr",
+        "db": "98 kr",
         "butikk": "Arendal"
     },
     {
