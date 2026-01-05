@@ -16,8 +16,8 @@
     {
         "år": "2026",
         "navn": "Milla F. Moen",
-        "umoms": "166,115 kr",
-        "db": "42,184 kr",
+        "umoms": "171,140 kr",
+        "db": "42,583 kr",
         "butikk": "Skien"
     },
     {
@@ -44,8 +44,8 @@
     {
         "år": "2026",
         "navn": "Mikkel Kihle Lindvig",
-        "umoms": "131,603 kr",
-        "db": "25,678 kr",
+        "umoms": "132,581 kr",
+        "db": "25,926 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -127,17 +127,17 @@
     },
     {
         "år": "2026",
+        "navn": "Julie Nilsen Bjølseth",
+        "umoms": "78,104 kr",
+        "db": "4,029 kr",
+        "butikk": "Sandefjord"
+    },
+    {
+        "år": "2026",
         "navn": "Patrick Johansen",
         "umoms": "75,392 kr",
         "db": "14,695 kr",
         "butikk": "Arendal"
-    },
-    {
-        "år": "2026",
-        "navn": "Julie Nilsen Bjølseth",
-        "umoms": "75,227 kr",
-        "db": "4,008 kr",
-        "butikk": "Sandefjord"
     },
     {
         "år": "2026",
@@ -163,8 +163,8 @@
     {
         "år": "2026",
         "navn": "Anette Omland Brubakken",
-        "umoms": "62,741 kr",
-        "db": "13,280 kr",
+        "umoms": "63,361 kr",
+        "db": "13,634 kr",
         "butikk": "Bamble"
     },
     {
@@ -197,6 +197,13 @@
     },
     {
         "år": "2026",
+        "navn": "Andreas Olsen",
+        "umoms": "49,832 kr",
+        "db": "12,083 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "år": "2026",
         "navn": "Jonas Skog",
         "umoms": "49,153 kr",
         "db": "8,501 kr",
@@ -214,13 +221,6 @@
         "navn": "Laila Skripeland",
         "umoms": "47,888 kr",
         "db": "9,327 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "år": "2026",
-        "navn": "Andreas Olsen",
-        "umoms": "47,548 kr",
-        "db": "11,062 kr",
         "butikk": "Arendal"
     },
     {
@@ -247,8 +247,8 @@
     {
         "år": "2026",
         "navn": "Steffen Johannes Forup Hansen",
-        "umoms": "35,758 kr",
-        "db": "7,037 kr",
+        "umoms": "36,202 kr",
+        "db": "7,070 kr",
         "butikk": "Bamble"
     },
     {
@@ -281,6 +281,13 @@
     },
     {
         "år": "2026",
+        "navn": "Oscar Gjølme",
+        "umoms": "31,674 kr",
+        "db": "-8,071 kr",
+        "butikk": "Sandefjord"
+    },
+    {
+        "år": "2026",
         "navn": "Aleksander Bang",
         "umoms": "31,521 kr",
         "db": "6,684 kr",
@@ -306,13 +313,6 @@
         "umoms": "30,017 kr",
         "db": "8,078 kr",
         "butikk": "Larvik"
-    },
-    {
-        "år": "2026",
-        "navn": "Oscar Gjølme",
-        "umoms": "29,527 kr",
-        "db": "-8,853 kr",
-        "butikk": "Sandefjord"
     },
     {
         "år": "2026",
@@ -428,6 +428,13 @@
     },
     {
         "år": "2026",
+        "navn": "Tommy Fodsung-Noen Kristensen",
+        "umoms": "6,166 kr",
+        "db": "1,230 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "år": "2026",
         "navn": "Emil Bomhoff",
         "umoms": "6,136 kr",
         "db": "-561 kr",
@@ -446,13 +453,6 @@
         "umoms": "5,526 kr",
         "db": "-544 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "år": "2026",
-        "navn": "Tommy Fodsung-Noen Kristensen",
-        "umoms": "3,554 kr",
-        "db": "841 kr",
-        "butikk": "Kristiansand"
     },
     {
         "år": "2026",
@@ -526,13 +526,6 @@
     },
     {
         "år": "2026",
-        "navn": "Sander Larsen",
-        "umoms": "-158 kr",
-        "db": "-69 kr",
-        "butikk": "Bamble"
-    },
-    {
-        "år": "2026",
         "navn": "Valeria Salinas",
         "umoms": "-174 kr",
         "db": "-105 kr",
@@ -554,10 +547,24 @@
     },
     {
         "år": "2026",
+        "navn": "Mattis René Andersen",
+        "umoms": "-427 kr",
+        "db": "30 kr",
+        "butikk": "Skien"
+    },
+    {
+        "år": "2026",
         "navn": "Pernille Dall",
         "umoms": "-491 kr",
         "db": "-268 kr",
         "butikk": "Kristiansand"
+    },
+    {
+        "år": "2026",
+        "navn": "Sander Larsen",
+        "umoms": "-585 kr",
+        "db": "-39 kr",
+        "butikk": "Bamble"
     },
     {
         "år": "2026",
