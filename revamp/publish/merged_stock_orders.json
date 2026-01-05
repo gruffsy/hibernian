@@ -637,8 +637,12 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 6,
+        "Paller på vei": 16,
         "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 460.8
+            },
             {
                 "Ukenr": "5/2026",
                 "Antall": 276.48
@@ -667,8 +671,12 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 2,
+        "Paller på vei": 4,
         "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 92.16
+            },
             {
                 "Ukenr": "5/2026",
                 "Antall": 92.16
@@ -681,8 +689,12 @@
         "antall på lager": 43.2,
         "antall pr pall": 43.2,
         "Paller på lager": 1,
-        "Paller på vei": 7,
+        "Paller på vei": 17,
         "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 432.0
+            },
             {
                 "Ukenr": "5/2026",
                 "Antall": 322.56
@@ -719,8 +731,12 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 3,
+        "Paller på vei": 6,
         "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 138.24
+            },
             {
                 "Ukenr": "5/2026",
                 "Antall": 138.24
@@ -760,6 +776,132 @@
         "Paller på vei": 0
     },
     {
+        "Prodno": "300000000000025363",
+        "Beskrivelse": "CIF NEUTRA ANTHRACITE 30X60 9MM",
+        "antall på lager": 57.6,
+        "antall pr pall": 57.6,
+        "Paller på lager": 1,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "300000000000026799",
+        "Beskrivelse": "CIF NEUTRA ANTHRACITE 60X60 9MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 46.1,
+        "Paller på lager": 0,
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "5/2026",
+                "Antall": 92.16
+            }
+        ]
+    },
+    {
+        "Prodno": "300000000000028643",
+        "Beskrivelse": "CIF NEUTRA CREAM 30X60 9MM",
+        "antall på lager": 57.6,
+        "antall pr pall": 57.6,
+        "Paller på lager": 1,
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 57.6
+            },
+            {
+                "Ukenr": "5/2026",
+                "Antall": 57.6
+            }
+        ]
+    },
+    {
+        "Prodno": "300000000000023927",
+        "Beskrivelse": "CIF NEUTRA CREAM 60X60 9MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 46.1,
+        "Paller på lager": 0,
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 138.24
+            },
+            {
+                "Ukenr": "5/2026",
+                "Antall": 138.24
+            }
+        ]
+    },
+    {
+        "Prodno": "300000000000028649",
+        "Beskrivelse": "CIF NEUTRA PEARL 30X60 9MM",
+        "antall på lager": 57.6,
+        "antall pr pall": 57.6,
+        "Paller på lager": 1,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "300000000000024867",
+        "Beskrivelse": "CIF NEUTRA PEARL 60X60 9MM",
+        "antall på lager": 46.1,
+        "antall pr pall": 46.1,
+        "Paller på lager": 1,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "300000000000045053",
+        "Beskrivelse": "CIF NEUTRA TAUPE 30X60 9MM",
+        "antall på lager": 57.6,
+        "antall pr pall": 57.6,
+        "Paller på lager": 1,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "300000000000026444",
+        "Beskrivelse": "CIF NEUTRA TAUPE 60X60 9MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 46.1,
+        "Paller på lager": 0,
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 138.24
+            },
+            {
+                "Ukenr": "5/2026",
+                "Antall": 138.24
+            }
+        ]
+    },
+    {
+        "Prodno": "300000000000028647",
+        "Beskrivelse": "CIF NEUTRA WHITE 30X60 9MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 57.6,
+        "Paller på lager": 0,
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 57.6
+            },
+            {
+                "Ukenr": "5/2026",
+                "Antall": 57.6
+            }
+        ]
+    },
+    {
+        "Prodno": "300000000000026446",
+        "Beskrivelse": "CIF NEUTRA WHITE 60X60 9MM",
+        "antall på lager": 92.2,
+        "antall pr pall": 46.1,
+        "Paller på lager": 2,
+        "Paller på vei": 0
+    },
+    {
         "Prodno": "300000000000038781",
         "Beskrivelse": "CIF NEXUS PEARL  60x120 - XS",
         "antall på lager": 518.4,
@@ -773,8 +915,12 @@
         "antall på lager": 276.5,
         "antall pr pall": 46.1,
         "Paller på lager": 6,
-        "Paller på vei": 4,
+        "Paller på vei": 8,
         "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 184.32
+            },
             {
                 "Ukenr": "5/2026",
                 "Antall": 184.32
@@ -795,8 +941,12 @@
         "antall på lager": 737.3,
         "antall pr pall": 46.1,
         "Paller på lager": 16,
-        "Paller på vei": 16,
+        "Paller på vei": 36,
         "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 921.6
+            },
             {
                 "Ukenr": "5/2026",
                 "Antall": 737.28
@@ -817,8 +967,12 @@
         "antall på lager": 276.5,
         "antall pr pall": 46.1,
         "Paller på lager": 6,
-        "Paller på vei": 19,
+        "Paller på vei": 31,
         "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 552.96
+            },
             {
                 "Ukenr": "5/2026",
                 "Antall": 875.52
@@ -855,8 +1009,12 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 3,
+        "Paller på vei": 6,
         "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 138.24
+            },
             {
                 "Ukenr": "5/2026",
                 "Antall": 138.24
@@ -869,8 +1027,12 @@
         "antall på lager": 86.4,
         "antall pr pall": 43.2,
         "Paller på lager": 2,
-        "Paller på vei": 3,
+        "Paller på vei": 6,
         "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 129.6
+            },
             {
                 "Ukenr": "5/2026",
                 "Antall": 129.6
@@ -883,8 +1045,12 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 3,
+        "Paller på vei": 6,
         "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 138.24
+            },
             {
                 "Ukenr": "5/2026",
                 "Antall": 138.24
@@ -1679,8 +1845,12 @@
         "antall på lager": 0.0,
         "antall pr pall": 57.6,
         "Paller på lager": 0,
-        "Paller på vei": 1,
+        "Paller på vei": 2,
         "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 57.6
+            },
             {
                 "Ukenr": "5/2026",
                 "Antall": 57.6
@@ -1693,116 +1863,6 @@
         "antall på lager": 57.6,
         "antall pr pall": 57.6,
         "Paller på lager": 1,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "300000000000025363",
-        "Beskrivelse": "NEUTRA ANTHRACITE 30X60 9MM",
-        "antall på lager": 57.6,
-        "antall pr pall": 57.6,
-        "Paller på lager": 1,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "300000000000026799",
-        "Beskrivelse": "NEUTRA ANTHRACITE 60X60 9MM",
-        "antall på lager": 0.0,
-        "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "5/2026",
-                "Antall": 92.16
-            }
-        ]
-    },
-    {
-        "Prodno": "300000000000028643",
-        "Beskrivelse": "NEUTRA CREAM 30X60 9MM",
-        "antall på lager": 57.6,
-        "antall pr pall": 57.6,
-        "Paller på lager": 1,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "5/2026",
-                "Antall": 57.6
-            }
-        ]
-    },
-    {
-        "Prodno": "300000000000023927",
-        "Beskrivelse": "NEUTRA CREAM 60X60 9MM",
-        "antall på lager": 0.0,
-        "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "5/2026",
-                "Antall": 138.24
-            }
-        ]
-    },
-    {
-        "Prodno": "300000000000028649",
-        "Beskrivelse": "NEUTRA PEARL 30X60 9MM",
-        "antall på lager": 57.6,
-        "antall pr pall": 57.6,
-        "Paller på lager": 1,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "300000000000024867",
-        "Beskrivelse": "NEUTRA PEARL 60X60 9MM",
-        "antall på lager": 46.1,
-        "antall pr pall": 46.1,
-        "Paller på lager": 1,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "300000000000045053",
-        "Beskrivelse": "NEUTRA TAUPE 30X60 9MM",
-        "antall på lager": 57.6,
-        "antall pr pall": 57.6,
-        "Paller på lager": 1,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "300000000000026444",
-        "Beskrivelse": "NEUTRA TAUPE 60X60 9MM",
-        "antall på lager": 0.0,
-        "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "5/2026",
-                "Antall": 138.24
-            }
-        ]
-    },
-    {
-        "Prodno": "300000000000028647",
-        "Beskrivelse": "NEUTRA WHITE 30X60 9MM",
-        "antall på lager": 0.0,
-        "antall pr pall": 57.6,
-        "Paller på lager": 0,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "5/2026",
-                "Antall": 57.6
-            }
-        ]
-    },
-    {
-        "Prodno": "300000000000026446",
-        "Beskrivelse": "NEUTRA WHITE 60X60 9MM",
-        "antall på lager": 92.2,
-        "antall pr pall": 46.1,
-        "Paller på lager": 2,
         "Paller på vei": 0
     },
     {
