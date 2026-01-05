@@ -440,9 +440,9 @@
     {
         "Prodno": "018720030",
         "Beskrivelse": "CAS LITHOS TORTORA 60X120 9MM",
-        "antall på lager": 155.5,
+        "antall på lager": 103.7,
         "antall pr pall": 51.8,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 0
     },
     {
@@ -678,9 +678,9 @@
     {
         "Prodno": "042449",
         "Beskrivelse": "CIF DIAMOND GOLD PULIDO 60X60",
-        "antall på lager": 86.4,
+        "antall på lager": 43.2,
         "antall pr pall": 43.2,
-        "Paller på lager": 2,
+        "Paller på lager": 1,
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
@@ -700,9 +700,9 @@
     {
         "Prodno": "300000000000040073",
         "Beskrivelse": "CIF INDUSTRIAL BLACK 60X60",
-        "antall på lager": 230.4,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
@@ -738,9 +738,9 @@
     {
         "Prodno": "300000000000046869",
         "Beskrivelse": "CIF NEBRASKA ELM 30X120 - XS",
-        "antall på lager": 155.5,
+        "antall på lager": 103.7,
         "antall pr pall": 51.8,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 0
     },
     {
@@ -806,9 +806,9 @@
     {
         "Prodno": "300000000000040065",
         "Beskrivelse": "CIF OVERLAND SAND 60X120 9MM",
-        "antall på lager": 622.1,
+        "antall på lager": 570.2,
         "antall pr pall": 51.8,
-        "Paller på lager": 12,
+        "Paller på lager": 11,
         "Paller på vei": 0
     },
     {
@@ -918,9 +918,9 @@
     {
         "Prodno": "02CEV60R44",
         "Beskrivelse": "CTV EVOLUTION SUGAR 60X60 9,5MM",
-        "antall på lager": 172.8,
+        "antall på lager": 129.6,
         "antall pr pall": 43.2,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
@@ -940,9 +940,9 @@
     {
         "Prodno": "02CEV60R1",
         "Beskrivelse": "CTV EVOLUTION WHITE 60X60 9,5MM",
-        "antall på lager": 43.2,
+        "antall på lager": 0.0,
         "antall pr pall": 43.2,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 9,
         "Bestilling på vei": [
             {
@@ -1028,9 +1028,9 @@
     {
         "Prodno": "CKO60R4",
         "Beskrivelse": "CTV KONKRETE GRIGIO 60X60",
-        "antall på lager": 432.0,
+        "antall på lager": 345.6,
         "antall pr pall": 43.2,
-        "Paller på lager": 10,
+        "Paller på lager": 8,
         "Paller på vei": 0
     },
     {
@@ -1310,12 +1310,12 @@
         "Paller på vei": 40,
         "Bestilling på vei": [
             {
-                "Ukenr": "6/2026",
-                "Antall": 1704.96
-            },
-            {
                 "Ukenr": "52/2025",
                 "Antall": 138.24
+            },
+            {
+                "Ukenr": "6/2026",
+                "Antall": 1704.96
             }
         ]
     },
@@ -1352,12 +1352,12 @@
         "Paller på vei": 13,
         "Bestilling på vei": [
             {
-                "Ukenr": "6/2026",
-                "Antall": 276.48
-            },
-            {
                 "Ukenr": "52/2025",
                 "Antall": 322.56
+            },
+            {
+                "Ukenr": "6/2026",
+                "Antall": 276.48
             }
         ]
     },
@@ -1548,12 +1548,12 @@
         "Paller på vei": 21,
         "Bestilling på vei": [
             {
-                "Ukenr": "6/2026",
-                "Antall": 599.04
-            },
-            {
                 "Ukenr": "52/2025",
                 "Antall": 368.64
+            },
+            {
+                "Ukenr": "6/2026",
+                "Antall": 599.04
             }
         ]
     },
@@ -1618,12 +1618,12 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "6/2026",
-                "Antall": 230.4
-            },
-            {
                 "Ukenr": "52/2025",
                 "Antall": 92.16
+            },
+            {
+                "Ukenr": "6/2026",
+                "Antall": 230.4
             }
         ]
     },
