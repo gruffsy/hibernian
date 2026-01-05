@@ -637,15 +637,11 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 16,
+        "Paller på vei": 10,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
                 "Antall": 460.8
-            },
-            {
-                "Ukenr": "5/2026",
-                "Antall": 276.48
             }
         ]
     },
@@ -671,14 +667,10 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 4,
+        "Paller på vei": 2,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
-                "Antall": 92.16
-            },
-            {
-                "Ukenr": "5/2026",
                 "Antall": 92.16
             }
         ]
@@ -689,15 +681,11 @@
         "antall på lager": 43.2,
         "antall pr pall": 43.2,
         "Paller på lager": 1,
-        "Paller på vei": 17,
+        "Paller på vei": 10,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
                 "Antall": 432.0
-            },
-            {
-                "Ukenr": "5/2026",
-                "Antall": 322.56
             }
         ]
     },
@@ -731,14 +719,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 6,
+        "Paller på vei": 3,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
-                "Antall": 138.24
-            },
-            {
-                "Ukenr": "5/2026",
                 "Antall": 138.24
             }
         ]
@@ -752,11 +736,27 @@
         "Paller på vei": 0
     },
     {
+        "Prodno": "300000000000062409",
+        "Beskrivelse": "CIF NEBRASKA CHERRY N-PLUS 30X60 9MM",
+        "antall på lager": 57.6,
+        "antall pr pall": 57.6,
+        "Paller på lager": 1,
+        "Paller på vei": 0
+    },
+    {
         "Prodno": "300000000000046869",
         "Beskrivelse": "CIF NEBRASKA ELM 30X120 - XS",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "300000000000053158",
+        "Beskrivelse": "CIF NEBRASKA ELM N-PLUS 30X60 9MM",
+        "antall på lager": 57.6,
+        "antall pr pall": 57.6,
+        "Paller på lager": 1,
         "Paller på vei": 0
     },
     {
@@ -768,11 +768,41 @@
         "Paller på vei": 0
     },
     {
+        "Prodno": "300000000000053162",
+        "Beskrivelse": "CIF NEBRASKA MAPLE N-PLUS 30X60 9MM",
+        "antall på lager": 57.6,
+        "antall pr pall": 57.6,
+        "Paller på lager": 1,
+        "Paller på vei": 0
+    },
+    {
         "Prodno": "300000000000044976",
         "Beskrivelse": "CIF NEBRASKA OAK 30X120 - XS",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "300000000000053160",
+        "Beskrivelse": "CIF NEBRASKA OAK N-PLUS 30X60 9MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 57.6,
+        "Paller på lager": 0,
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "4/2026",
+                "Antall": 57.6
+            }
+        ]
+    },
+    {
+        "Prodno": "300000000000062411",
+        "Beskrivelse": "CIF NEBRASKA WHITE N-PLUS 30X60 9MM",
+        "antall på lager": 57.6,
+        "antall pr pall": 57.6,
+        "Paller på lager": 1,
         "Paller på vei": 0
     },
     {
@@ -789,13 +819,7 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "5/2026",
-                "Antall": 92.16
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000028643",
@@ -803,14 +827,10 @@
         "antall på lager": 57.6,
         "antall pr pall": 57.6,
         "Paller på lager": 1,
-        "Paller på vei": 2,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
-                "Antall": 57.6
-            },
-            {
-                "Ukenr": "5/2026",
                 "Antall": 57.6
             }
         ]
@@ -821,14 +841,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 6,
+        "Paller på vei": 3,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
-                "Antall": 138.24
-            },
-            {
-                "Ukenr": "5/2026",
                 "Antall": 138.24
             }
         ]
@@ -863,14 +879,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 6,
+        "Paller på vei": 3,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
-                "Antall": 138.24
-            },
-            {
-                "Ukenr": "5/2026",
                 "Antall": 138.24
             }
         ]
@@ -881,14 +893,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 57.6,
         "Paller på lager": 0,
-        "Paller på vei": 2,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
-                "Antall": 57.6
-            },
-            {
-                "Ukenr": "5/2026",
                 "Antall": 57.6
             }
         ]
@@ -915,14 +923,10 @@
         "antall på lager": 276.5,
         "antall pr pall": 46.1,
         "Paller på lager": 6,
-        "Paller på vei": 8,
+        "Paller på vei": 4,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
-                "Antall": 184.32
-            },
-            {
-                "Ukenr": "5/2026",
                 "Antall": 184.32
             }
         ]
@@ -941,15 +945,11 @@
         "antall på lager": 737.3,
         "antall pr pall": 46.1,
         "Paller på lager": 16,
-        "Paller på vei": 36,
+        "Paller på vei": 20,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
                 "Antall": 921.6
-            },
-            {
-                "Ukenr": "5/2026",
-                "Antall": 737.28
             }
         ]
     },
@@ -967,15 +967,11 @@
         "antall på lager": 276.5,
         "antall pr pall": 46.1,
         "Paller på lager": 6,
-        "Paller på vei": 31,
+        "Paller på vei": 12,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
                 "Antall": 552.96
-            },
-            {
-                "Ukenr": "5/2026",
-                "Antall": 875.52
             }
         ]
     },
@@ -1009,14 +1005,10 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 6,
+        "Paller på vei": 3,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
-                "Antall": 138.24
-            },
-            {
-                "Ukenr": "5/2026",
                 "Antall": 138.24
             }
         ]
@@ -1027,14 +1019,10 @@
         "antall på lager": 86.4,
         "antall pr pall": 43.2,
         "Paller på lager": 2,
-        "Paller på vei": 6,
+        "Paller på vei": 3,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
-                "Antall": 129.6
-            },
-            {
-                "Ukenr": "5/2026",
                 "Antall": 129.6
             }
         ]
@@ -1045,14 +1033,10 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 6,
+        "Paller på vei": 3,
         "Bestilling på vei": [
             {
                 "Ukenr": "4/2026",
-                "Antall": 138.24
-            },
-            {
-                "Ukenr": "5/2026",
                 "Antall": 138.24
             }
         ]
@@ -1476,12 +1460,12 @@
         "Paller på vei": 40,
         "Bestilling på vei": [
             {
-                "Ukenr": "6/2026",
-                "Antall": 1704.96
-            },
-            {
                 "Ukenr": "52/2025",
                 "Antall": 138.24
+            },
+            {
+                "Ukenr": "6/2026",
+                "Antall": 1704.96
             }
         ]
     },
@@ -1518,12 +1502,12 @@
         "Paller på vei": 13,
         "Bestilling på vei": [
             {
-                "Ukenr": "6/2026",
-                "Antall": 276.48
-            },
-            {
                 "Ukenr": "52/2025",
                 "Antall": 322.56
+            },
+            {
+                "Ukenr": "6/2026",
+                "Antall": 276.48
             }
         ]
     },
@@ -1714,12 +1698,12 @@
         "Paller på vei": 21,
         "Bestilling på vei": [
             {
-                "Ukenr": "6/2026",
-                "Antall": 599.04
-            },
-            {
                 "Ukenr": "52/2025",
                 "Antall": 368.64
+            },
+            {
+                "Ukenr": "6/2026",
+                "Antall": 599.04
             }
         ]
     },
@@ -1784,12 +1768,12 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "6/2026",
-                "Antall": 230.4
-            },
-            {
                 "Ukenr": "52/2025",
                 "Antall": 92.16
+            },
+            {
+                "Ukenr": "6/2026",
+                "Antall": 230.4
             }
         ]
     },
@@ -1814,56 +1798,6 @@
                 "Antall": 92.16
             }
         ]
-    },
-    {
-        "Prodno": "300000000000062409",
-        "Beskrivelse": "NEBRASKA CHERRY N-PLUS 30X60 9MM",
-        "antall på lager": 57.6,
-        "antall pr pall": 57.6,
-        "Paller på lager": 1,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "300000000000053158",
-        "Beskrivelse": "NEBRASKA ELM N-PLUS 30X60 9MM",
-        "antall på lager": 57.6,
-        "antall pr pall": 57.6,
-        "Paller på lager": 1,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "300000000000053162",
-        "Beskrivelse": "NEBRASKA MAPLE N-PLUS 30X60 9MM",
-        "antall på lager": 57.6,
-        "antall pr pall": 57.6,
-        "Paller på lager": 1,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "300000000000053160",
-        "Beskrivelse": "NEBRASKA OAK N-PLUS 30X60 9MM",
-        "antall på lager": 0.0,
-        "antall pr pall": 57.6,
-        "Paller på lager": 0,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "4/2026",
-                "Antall": 57.6
-            },
-            {
-                "Ukenr": "5/2026",
-                "Antall": 57.6
-            }
-        ]
-    },
-    {
-        "Prodno": "300000000000062411",
-        "Beskrivelse": "NEBRASKA WHITE N-PLUS 30X60 9MM",
-        "antall på lager": 57.6,
-        "antall pr pall": 57.6,
-        "Paller på lager": 1,
-        "Paller på vei": 0
     },
     {
         "Prodno": "PGIBE001",
