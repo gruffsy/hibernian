@@ -2,15 +2,22 @@
     {
         "år": "2026",
         "navn": "Christina Larsen",
-        "umoms": "226,182 kr",
-        "db": "40,834 kr",
+        "umoms": "227,189 kr",
+        "db": "41,246 kr",
         "butikk": "Kristiansand"
     },
     {
         "år": "2026",
         "navn": "Jelle Soest",
-        "umoms": "212,083 kr",
-        "db": "43,273 kr",
+        "umoms": "214,551 kr",
+        "db": "44,119 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "år": "2026",
+        "navn": "Lilian Margi Frøitland",
+        "umoms": "166,437 kr",
+        "db": "33,586 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -19,13 +26,6 @@
         "umoms": "161,012 kr",
         "db": "30,109 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "år": "2026",
-        "navn": "Lilian Margi Frøitland",
-        "umoms": "155,688 kr",
-        "db": "30,877 kr",
-        "butikk": "Kristiansand"
     },
     {
         "år": "2026",
@@ -86,9 +86,16 @@
     {
         "år": "2026",
         "navn": "Hans Kristian Nenset",
-        "umoms": "85,542 kr",
-        "db": "15,913 kr",
+        "umoms": "87,780 kr",
+        "db": "15,682 kr",
         "butikk": "Skien"
+    },
+    {
+        "år": "2026",
+        "navn": "Bertil Tangen",
+        "umoms": "87,314 kr",
+        "db": "14,497 kr",
+        "butikk": "Sandefjord"
     },
     {
         "år": "2026",
@@ -96,13 +103,6 @@
         "umoms": "85,405 kr",
         "db": "11,214 kr",
         "butikk": "Bamble"
-    },
-    {
-        "år": "2026",
-        "navn": "Bertil Tangen",
-        "umoms": "82,661 kr",
-        "db": "13,028 kr",
-        "butikk": "Sandefjord"
     },
     {
         "år": "2026",
@@ -114,8 +114,8 @@
     {
         "år": "2026",
         "navn": "Sander Homleid",
-        "umoms": "73,393 kr",
-        "db": "13,892 kr",
+        "umoms": "75,797 kr",
+        "db": "14,487 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -135,15 +135,15 @@
     {
         "år": "2026",
         "navn": "Julie Nilsen Bjølseth",
-        "umoms": "62,797 kr",
-        "db": "-152 kr",
+        "umoms": "62,996 kr",
+        "db": "-42 kr",
         "butikk": "Sandefjord"
     },
     {
         "år": "2026",
         "navn": "James Michael McGurty",
-        "umoms": "61,817 kr",
-        "db": "6,904 kr",
+        "umoms": "62,097 kr",
+        "db": "6,977 kr",
         "butikk": "Skien"
     },
     {
@@ -169,17 +169,17 @@
     },
     {
         "år": "2026",
+        "navn": "Patrick Johansen",
+        "umoms": "52,523 kr",
+        "db": "11,682 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "år": "2026",
         "navn": "Anette Omland Brubakken",
         "umoms": "52,042 kr",
         "db": "12,541 kr",
         "butikk": "Bamble"
-    },
-    {
-        "år": "2026",
-        "navn": "Patrick Johansen",
-        "umoms": "51,712 kr",
-        "db": "11,785 kr",
-        "butikk": "Arendal"
     },
     {
         "år": "2026",
@@ -225,6 +225,13 @@
     },
     {
         "år": "2026",
+        "navn": "Thor Aksel Thoresen",
+        "umoms": "37,493 kr",
+        "db": "6,864 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "år": "2026",
         "navn": "Marcus Hidle Brustad",
         "umoms": "34,579 kr",
         "db": "6,941 kr",
@@ -240,8 +247,8 @@
     {
         "år": "2026",
         "navn": "Susanne Engmann",
-        "umoms": "33,432 kr",
-        "db": "8,086 kr",
+        "umoms": "33,527 kr",
+        "db": "8,118 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -282,23 +289,16 @@
     {
         "år": "2026",
         "navn": "Kristoffer Gård",
-        "umoms": "28,652 kr",
-        "db": "6,455 kr",
+        "umoms": "28,253 kr",
+        "db": "6,344 kr",
         "butikk": "Bamble"
     },
     {
         "år": "2026",
         "navn": "Solveig Jørgensen",
-        "umoms": "27,204 kr",
-        "db": "5,608 kr",
+        "umoms": "27,735 kr",
+        "db": "5,781 kr",
         "butikk": "Arendal"
-    },
-    {
-        "år": "2026",
-        "navn": "Thor Aksel Thoresen",
-        "umoms": "27,131 kr",
-        "db": "4,480 kr",
-        "butikk": "Kristiansand"
     },
     {
         "år": "2026",
@@ -309,17 +309,17 @@
     },
     {
         "år": "2026",
+        "navn": "Menglei Chen Ottem",
+        "umoms": "25,135 kr",
+        "db": "3,261 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "år": "2026",
         "navn": "Ida Pernille Iversen",
         "umoms": "24,663 kr",
         "db": "3,230 kr",
         "butikk": "Skien"
-    },
-    {
-        "år": "2026",
-        "navn": "Menglei Chen Ottem",
-        "umoms": "24,420 kr",
-        "db": "2,885 kr",
-        "butikk": "Larvik"
     },
     {
         "år": "2026",
@@ -345,8 +345,8 @@
     {
         "år": "2026",
         "navn": "Kine Thi Huynh",
-        "umoms": "16,870 kr",
-        "db": "5,333 kr",
+        "umoms": "17,032 kr",
+        "db": "5,304 kr",
         "butikk": "Skien"
     },
     {
@@ -379,16 +379,16 @@
     },
     {
         "år": "2026",
-        "navn": "Niyas Ali",
-        "umoms": "9,770 kr",
-        "db": "-417 kr",
+        "navn": "Pål Magnus Andersen",
+        "umoms": "10,165 kr",
+        "db": "2,940 kr",
         "butikk": "Sandefjord"
     },
     {
         "år": "2026",
-        "navn": "Pål Magnus Andersen",
-        "umoms": "9,545 kr",
-        "db": "2,781 kr",
+        "navn": "Niyas Ali",
+        "umoms": "9,770 kr",
+        "db": "-417 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -561,13 +561,6 @@
     },
     {
         "år": "2026",
-        "navn": "Jonas Tjernshaugen",
-        "umoms": "-1,913 kr",
-        "db": "-85 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "år": "2026",
         "navn": "Alf Brynjar Flø",
         "umoms": "-2,229 kr",
         "db": "-88 kr",
@@ -575,9 +568,16 @@
     },
     {
         "år": "2026",
+        "navn": "Jonas Tjernshaugen",
+        "umoms": "-3,104 kr",
+        "db": "-714 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "år": "2026",
         "navn": "Daniel Hotvedt Aashildrød",
-        "umoms": "-3,200 kr",
-        "db": "264 kr",
+        "umoms": "-3,936 kr",
+        "db": "229 kr",
         "butikk": "Sandefjord"
     },
     {
