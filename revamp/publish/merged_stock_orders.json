@@ -154,9 +154,9 @@
     {
         "Prodno": "9700102",
         "Beskrivelse": "CAS ARDESIA - GRIGIO 30X30 8 MM",
-        "antall på lager": 56.2,
+        "antall på lager": 0.0,
         "antall pr pall": 56.2,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -942,9 +942,9 @@
     {
         "Prodno": "300000000000037842",
         "Beskrivelse": "CIF OVERLAND PEARL 60X60",
-        "antall på lager": 737.3,
+        "antall på lager": 691.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 16,
+        "Paller på lager": 15,
         "Paller på vei": 20,
         "Bestilling på vei": [
             {
@@ -964,9 +964,9 @@
     {
         "Prodno": "300000000000035668",
         "Beskrivelse": "CIF OVERLAND SAND 60X60 9MM",
-        "antall på lager": 230.4,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 12,
         "Bestilling på vei": [
             {
@@ -1134,9 +1134,9 @@
     {
         "Prodno": "CKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60",
-        "antall på lager": 216.0,
+        "antall på lager": 172.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 4,
         "Bestilling på vei": [
             {
@@ -1460,12 +1460,12 @@
         "Paller på vei": 40,
         "Bestilling på vei": [
             {
-                "Ukenr": "52/2025",
-                "Antall": 138.24
-            },
-            {
                 "Ukenr": "6/2026",
                 "Antall": 1704.96
+            },
+            {
+                "Ukenr": "52/2025",
+                "Antall": 138.24
             }
         ]
     },
@@ -1566,12 +1566,12 @@
         "Paller på vei": 13,
         "Bestilling på vei": [
             {
-                "Ukenr": "52/2025",
-                "Antall": 322.56
-            },
-            {
                 "Ukenr": "6/2026",
                 "Antall": 276.48
+            },
+            {
+                "Ukenr": "52/2025",
+                "Antall": 322.56
             }
         ]
     },
@@ -1762,12 +1762,12 @@
         "Paller på vei": 21,
         "Bestilling på vei": [
             {
-                "Ukenr": "52/2025",
-                "Antall": 368.64
-            },
-            {
                 "Ukenr": "6/2026",
                 "Antall": 599.04
+            },
+            {
+                "Ukenr": "52/2025",
+                "Antall": 368.64
             }
         ]
     },
@@ -1832,12 +1832,12 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "52/2025",
-                "Antall": 92.16
-            },
-            {
                 "Ukenr": "6/2026",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "52/2025",
+                "Antall": 92.16
             }
         ]
     },
