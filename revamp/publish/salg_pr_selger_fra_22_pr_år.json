@@ -2,15 +2,15 @@
     {
         "år": "2026",
         "navn": "Christina Larsen",
-        "umoms": "492,326 kr",
-        "db": "89,863 kr",
+        "umoms": "492,725 kr",
+        "db": "89,918 kr",
         "butikk": "Kristiansand"
     },
     {
         "år": "2026",
         "navn": "Thor Aksel Thoresen",
-        "umoms": "375,352 kr",
-        "db": "68,150 kr",
+        "umoms": "375,477 kr",
+        "db": "68,187 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -51,8 +51,8 @@
     {
         "år": "2026",
         "navn": "Milla F. Moen",
-        "umoms": "282,405 kr",
-        "db": "69,060 kr",
+        "umoms": "282,327 kr",
+        "db": "69,045 kr",
         "butikk": "Skien"
     },
     {
@@ -72,8 +72,8 @@
     {
         "år": "2026",
         "navn": "Bertil Tangen",
-        "umoms": "259,686 kr",
-        "db": "55,061 kr",
+        "umoms": "265,024 kr",
+        "db": "56,070 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -135,8 +135,8 @@
     {
         "år": "2026",
         "navn": "Patrick Johansen",
-        "umoms": "207,808 kr",
-        "db": "42,359 kr",
+        "umoms": "210,766 kr",
+        "db": "42,662 kr",
         "butikk": "Arendal"
     },
     {
@@ -155,17 +155,17 @@
     },
     {
         "år": "2026",
+        "navn": "Frode  Olsen",
+        "umoms": "202,977 kr",
+        "db": "41,409 kr",
+        "butikk": "Bamble"
+    },
+    {
+        "år": "2026",
         "navn": "Kemuel Lillestø",
         "umoms": "200,539 kr",
         "db": "42,218 kr",
         "butikk": "Arendal"
-    },
-    {
-        "år": "2026",
-        "navn": "Frode  Olsen",
-        "umoms": "199,825 kr",
-        "db": "40,747 kr",
-        "butikk": "Bamble"
     },
     {
         "år": "2026",
@@ -177,7 +177,7 @@
     {
         "år": "2026",
         "navn": "Tom Richard Ekeberg",
-        "umoms": "190,737 kr",
+        "umoms": "190,769 kr",
         "db": "40,761 kr",
         "butikk": "Larvik"
     },
@@ -205,8 +205,8 @@
     {
         "år": "2026",
         "navn": "Ida Pernille Iversen",
-        "umoms": "183,425 kr",
-        "db": "30,220 kr",
+        "umoms": "183,503 kr",
+        "db": "30,235 kr",
         "butikk": "Skien"
     },
     {
@@ -226,16 +226,23 @@
     {
         "år": "2026",
         "navn": "Susanne Engmann",
-        "umoms": "169,430 kr",
-        "db": "37,525 kr",
+        "umoms": "169,826 kr",
+        "db": "37,321 kr",
         "butikk": "Tønsberg"
     },
     {
         "år": "2026",
         "navn": "Sjur Eivind Andersen",
-        "umoms": "167,814 kr",
-        "db": "23,939 kr",
+        "umoms": "169,493 kr",
+        "db": "24,792 kr",
         "butikk": "Arendal"
+    },
+    {
+        "år": "2026",
+        "navn": "Veronica Skaug Bolt Hansen",
+        "umoms": "161,673 kr",
+        "db": "35,189 kr",
+        "butikk": "Sandefjord"
     },
     {
         "år": "2026",
@@ -243,13 +250,6 @@
         "umoms": "161,598 kr",
         "db": "31,953 kr",
         "butikk": "Arendal"
-    },
-    {
-        "år": "2026",
-        "navn": "Veronica Skaug Bolt Hansen",
-        "umoms": "158,575 kr",
-        "db": "33,814 kr",
-        "butikk": "Sandefjord"
     },
     {
         "år": "2026",
@@ -296,9 +296,16 @@
     {
         "år": "2026",
         "navn": "Elin Eilefsen",
-        "umoms": "142,506 kr",
-        "db": "31,097 kr",
+        "umoms": "147,818 kr",
+        "db": "31,524 kr",
         "butikk": "Larvik"
+    },
+    {
+        "år": "2026",
+        "navn": "Anette Omland Brubakken",
+        "umoms": "139,296 kr",
+        "db": "28,273 kr",
+        "butikk": "Bamble"
     },
     {
         "år": "2026",
@@ -319,13 +326,6 @@
         "navn": "Kristoffer Gård",
         "umoms": "133,794 kr",
         "db": "31,150 kr",
-        "butikk": "Bamble"
-    },
-    {
-        "år": "2026",
-        "navn": "Anette Omland Brubakken",
-        "umoms": "132,416 kr",
-        "db": "27,007 kr",
         "butikk": "Bamble"
     },
     {
@@ -435,17 +435,17 @@
     },
     {
         "år": "2026",
+        "navn": "Emil Bomhoff",
+        "umoms": "59,938 kr",
+        "db": "1,941 kr",
+        "butikk": "Skien"
+    },
+    {
+        "år": "2026",
         "navn": "Zain Al-Rubay",
         "umoms": "58,813 kr",
         "db": "9,672 kr",
         "butikk": "Bamble"
-    },
-    {
-        "år": "2026",
-        "navn": "Emil Bomhoff",
-        "umoms": "58,390 kr",
-        "db": "1,774 kr",
-        "butikk": "Skien"
     },
     {
         "år": "2026",
@@ -520,8 +520,8 @@
     {
         "år": "2026",
         "navn": "Pernille Dall",
-        "umoms": "28,192 kr",
-        "db": "2,952 kr",
+        "umoms": "28,120 kr",
+        "db": "2,955 kr",
         "butikk": "Kristiansand"
     },
     {
