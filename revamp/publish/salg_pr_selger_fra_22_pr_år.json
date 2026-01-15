@@ -50,13 +50,6 @@
     },
     {
         "år": "2026",
-        "navn": "Jelle Soest",
-        "umoms": "314,567 kr",
-        "db": "60,321 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "år": "2026",
         "navn": "Bertil Tangen",
         "umoms": "313,602 kr",
         "db": "66,283 kr",
@@ -65,9 +58,16 @@
     {
         "år": "2026",
         "navn": "Liubov Jonassen",
-        "umoms": "308,296 kr",
-        "db": "66,993 kr",
+        "umoms": "310,998 kr",
+        "db": "68,348 kr",
         "butikk": "Tønsberg"
+    },
+    {
+        "år": "2026",
+        "navn": "Jelle Soest",
+        "umoms": "310,165 kr",
+        "db": "59,750 kr",
+        "butikk": "Kristiansand"
     },
     {
         "år": "2026",
@@ -128,9 +128,16 @@
     {
         "år": "2026",
         "navn": "Elias Saubrekka",
-        "umoms": "244,749 kr",
-        "db": "54,396 kr",
+        "umoms": "245,571 kr",
+        "db": "54,627 kr",
         "butikk": "Skien"
+    },
+    {
+        "år": "2026",
+        "navn": "Menglei Chen Ottem",
+        "umoms": "241,768 kr",
+        "db": "39,022 kr",
+        "butikk": "Larvik"
     },
     {
         "år": "2026",
@@ -138,13 +145,6 @@
         "umoms": "240,141 kr",
         "db": "50,164 kr",
         "butikk": "Arendal"
-    },
-    {
-        "år": "2026",
-        "navn": "Menglei Chen Ottem",
-        "umoms": "238,657 kr",
-        "db": "37,931 kr",
-        "butikk": "Larvik"
     },
     {
         "år": "2026",
@@ -204,6 +204,13 @@
     },
     {
         "år": "2026",
+        "navn": "Jonathan Kaaby",
+        "umoms": "213,229 kr",
+        "db": "51,708 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "år": "2026",
         "navn": "Ida Pernille Iversen",
         "umoms": "212,354 kr",
         "db": "33,722 kr",
@@ -218,16 +225,9 @@
     },
     {
         "år": "2026",
-        "navn": "Jonathan Kaaby",
-        "umoms": "210,938 kr",
-        "db": "50,819 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "år": "2026",
         "navn": "Jonas Tjernshaugen",
-        "umoms": "196,097 kr",
-        "db": "27,443 kr",
+        "umoms": "195,410 kr",
+        "db": "27,278 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -281,6 +281,13 @@
     },
     {
         "år": "2026",
+        "navn": "Marius Hoem Skovly",
+        "umoms": "158,070 kr",
+        "db": "34,324 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "år": "2026",
         "navn": "Tommy Fodsung-Noen Kristensen",
         "umoms": "157,804 kr",
         "db": "40,259 kr",
@@ -292,13 +299,6 @@
         "umoms": "157,626 kr",
         "db": "44,056 kr",
         "butikk": "Sandefjord"
-    },
-    {
-        "år": "2026",
-        "navn": "Marius Hoem Skovly",
-        "umoms": "154,784 kr",
-        "db": "33,524 kr",
-        "butikk": "Tønsberg"
     },
     {
         "år": "2026",
@@ -337,17 +337,17 @@
     },
     {
         "år": "2026",
+        "navn": "Mathias Oseid Hagen",
+        "umoms": "129,724 kr",
+        "db": "24,996 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "år": "2026",
         "navn": "Steffen Johannes Forup Hansen",
         "umoms": "128,938 kr",
         "db": "22,506 kr",
         "butikk": "Bamble"
-    },
-    {
-        "år": "2026",
-        "navn": "Mathias Oseid Hagen",
-        "umoms": "127,988 kr",
-        "db": "24,297 kr",
-        "butikk": "Kristiansand"
     },
     {
         "år": "2026",
@@ -386,17 +386,17 @@
     },
     {
         "år": "2026",
-        "navn": "Katarina Kiste Riis",
-        "umoms": "107,687 kr",
-        "db": "19,121 kr",
-        "butikk": "Bamble"
+        "navn": "Anders Eide",
+        "umoms": "109,122 kr",
+        "db": "16,829 kr",
+        "butikk": "Tønsberg"
     },
     {
         "år": "2026",
-        "navn": "Anders Eide",
-        "umoms": "107,349 kr",
-        "db": "16,285 kr",
-        "butikk": "Tønsberg"
+        "navn": "Katarina Kiste Riis",
+        "umoms": "108,341 kr",
+        "db": "19,403 kr",
+        "butikk": "Bamble"
     },
     {
         "år": "2026",
@@ -408,8 +408,8 @@
     {
         "år": "2026",
         "navn": "Pernille Dall",
-        "umoms": "81,901 kr",
-        "db": "16,010 kr",
+        "umoms": "82,071 kr",
+        "db": "16,026 kr",
         "butikk": "Kristiansand"
     },
     {
