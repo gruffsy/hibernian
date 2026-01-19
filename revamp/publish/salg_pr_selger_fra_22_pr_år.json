@@ -15,6 +15,20 @@
     },
     {
         "år": "2026",
+        "navn": "Tuva Sofie Risdal",
+        "umoms": "489,176 kr",
+        "db": "68,913 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "år": "2026",
+        "navn": "Jelle Soest",
+        "umoms": "487,690 kr",
+        "db": "95,913 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "år": "2026",
         "navn": "Liubov Jonassen",
         "umoms": "486,425 kr",
         "db": "115,085 kr",
@@ -22,24 +36,17 @@
     },
     {
         "år": "2026",
-        "navn": "Jelle Soest",
-        "umoms": "486,399 kr",
-        "db": "95,511 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "år": "2026",
-        "navn": "Tuva Sofie Risdal",
-        "umoms": "485,442 kr",
-        "db": "69,024 kr",
-        "butikk": "Larvik"
-    },
-    {
-        "år": "2026",
         "navn": "Bertil Tangen",
-        "umoms": "455,118 kr",
-        "db": "91,352 kr",
+        "umoms": "458,340 kr",
+        "db": "92,566 kr",
         "butikk": "Sandefjord"
+    },
+    {
+        "år": "2026",
+        "navn": "Milla F. Moen",
+        "umoms": "438,088 kr",
+        "db": "106,552 kr",
+        "butikk": "Skien"
     },
     {
         "år": "2026",
@@ -47,13 +54,6 @@
         "umoms": "434,427 kr",
         "db": "83,408 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "år": "2026",
-        "navn": "Milla F. Moen",
-        "umoms": "433,718 kr",
-        "db": "105,897 kr",
-        "butikk": "Skien"
     },
     {
         "år": "2026",
@@ -72,8 +72,8 @@
     {
         "år": "2026",
         "navn": "Julie Nilsen Bjølseth",
-        "umoms": "385,667 kr",
-        "db": "79,929 kr",
+        "umoms": "386,746 kr",
+        "db": "80,312 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -127,6 +127,13 @@
     },
     {
         "år": "2026",
+        "navn": "Susanne Engmann",
+        "umoms": "303,950 kr",
+        "db": "75,160 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "år": "2026",
         "navn": "Torstein Sandve",
         "umoms": "300,081 kr",
         "db": "39,290 kr",
@@ -162,16 +169,9 @@
     },
     {
         "år": "2026",
-        "navn": "Susanne Engmann",
-        "umoms": "283,271 kr",
-        "db": "72,406 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "år": "2026",
         "navn": "Menglei Chen Ottem",
-        "umoms": "266,646 kr",
-        "db": "42,936 kr",
+        "umoms": "266,802 kr",
+        "db": "43,003 kr",
         "butikk": "Larvik"
     },
     {
@@ -204,6 +204,13 @@
     },
     {
         "år": "2026",
+        "navn": "Andreas Olsen",
+        "umoms": "250,893 kr",
+        "db": "63,400 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "år": "2026",
         "navn": "Pernille Dall",
         "umoms": "250,465 kr",
         "db": "58,669 kr",
@@ -215,13 +222,6 @@
         "umoms": "249,835 kr",
         "db": "37,026 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "år": "2026",
-        "navn": "Andreas Olsen",
-        "umoms": "249,405 kr",
-        "db": "62,910 kr",
-        "butikk": "Arendal"
     },
     {
         "år": "2026",
@@ -338,8 +338,8 @@
     {
         "år": "2026",
         "navn": "Marius Hoem Skovly",
-        "umoms": "175,930 kr",
-        "db": "35,528 kr",
+        "umoms": "179,147 kr",
+        "db": "36,316 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -352,8 +352,8 @@
     {
         "år": "2026",
         "navn": "Veronica Skaug Bolt Hansen",
-        "umoms": "169,298 kr",
-        "db": "36,742 kr",
+        "umoms": "169,139 kr",
+        "db": "36,714 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -387,8 +387,8 @@
     {
         "år": "2026",
         "navn": "Steffen Johannes Forup Hansen",
-        "umoms": "152,424 kr",
-        "db": "28,235 kr",
+        "umoms": "153,977 kr",
+        "db": "28,930 kr",
         "butikk": "Bamble"
     },
     {
@@ -701,17 +701,17 @@
     },
     {
         "år": "2026",
-        "navn": "Håkon Tvede",
-        "umoms": "-3,031 kr",
-        "db": "-1,299 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "år": "2026",
         "navn": "Mattis René Andersen",
         "umoms": "-3,790 kr",
         "db": "-981 kr",
         "butikk": "Skien"
+    },
+    {
+        "år": "2026",
+        "navn": "Håkon Tvede",
+        "umoms": "-4,274 kr",
+        "db": "-1,658 kr",
+        "butikk": "Arendal"
     },
     {
         "år": "2025",
