@@ -1851,7 +1851,13 @@
         "antall på lager": 172.8,
         "antall pr pall": 43.2,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "19/2026",
+                "Antall": 86.4
+            }
+        ]
     },
     {
         "Prodno": "LTG-LX--5PD-M-66",
@@ -1859,7 +1865,13 @@
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 8,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "19/2026",
+                "Antall": 368.64
+            }
+        ]
     },
     {
         "Prodno": "PN612061",
@@ -1919,7 +1931,13 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "19/2026",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "LTG2900-YH005-36",
@@ -1943,11 +1961,15 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 2,
+        "Paller på vei": 8,
         "Bestilling på vei": [
             {
                 "Ukenr": "13/2026",
                 "Antall": 92.16
+            },
+            {
+                "Ukenr": "19/2026",
+                "Antall": 276.48
             }
         ]
     },
@@ -2031,11 +2053,15 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 2,
+        "Paller på vei": 7,
         "Bestilling på vei": [
             {
                 "Ukenr": "13/2026",
                 "Antall": 92.16
+            },
+            {
+                "Ukenr": "19/2026",
+                "Antall": 230.4
             }
         ]
     },
@@ -2045,7 +2071,13 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "19/2026",
+                "Antall": 46.08
+            }
+        ]
     },
     {
         "Prodno": "LTG2100-6123",
@@ -2127,11 +2159,15 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 5,
+        "Paller på vei": 7,
         "Bestilling på vei": [
             {
                 "Ukenr": "13/2026",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "19/2026",
+                "Antall": 92.16
             }
         ]
     },
