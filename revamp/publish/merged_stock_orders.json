@@ -1341,11 +1341,11 @@
         "antall på lager": 0.0,
         "antall pr pall": 64.0,
         "Paller på lager": 0,
-        "Paller på vei": 10,
+        "Paller på vei": 7,
         "Bestilling på vei": [
             {
                 "Ukenr": "6/2026",
-                "Antall": 640.0
+                "Antall": 448.0
             }
         ]
     },
@@ -1383,13 +1383,7 @@
         "antall på lager": 256.0,
         "antall pr pall": 64.0,
         "Paller på lager": 4,
-        "Paller på vei": 6,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "6/2026",
-                "Antall": 384.0
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "XWL60R1",
