@@ -1,5 +1,38 @@
 [
     {
+        "fakturadato": 20260127,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "-144 kr",
+        "umoms": "-115 kr",
+        "db": "0 kr",
+        "dg": "0.0%",
+        "antord": "1",
+        "prord": "-144 kr"
+    },
+    {
+        "fakturadato": 20260127,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "23 942 kr",
+        "umoms": "19 154 kr",
+        "db": "3 151 kr",
+        "dg": "16.0%",
+        "antord": "1",
+        "prord": "23 942 kr"
+    },
+    {
+        "fakturadato": 20260127,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "23 798 kr",
+        "umoms": "19 039 kr",
+        "db": "3 151 kr",
+        "dg": "16.6%",
+        "antord": "2",
+        "prord": "11 899 kr"
+    },
+    {
         "fakturadato": 20260126,
         "butikk": "Skien",
         "Klient": "0",
