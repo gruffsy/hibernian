@@ -11,9 +11,17 @@
         "måned": "January",
         "år": "2026",
         "navn": "Bertil Tangen",
-        "umoms": "717,855 kr",
-        "db": "161,534 kr",
+        "umoms": "720,225 kr",
+        "db": "161,942 kr",
         "butikk": "Sandefjord"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
+        "navn": "Heidi Kristensen Voje",
+        "umoms": "693,815 kr",
+        "db": "145,930 kr",
+        "butikk": "Bamble"
     },
     {
         "måned": "January",
@@ -22,14 +30,6 @@
         "umoms": "692,752 kr",
         "db": "121,562 kr",
         "butikk": "Skien"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
-        "navn": "Heidi Kristensen Voje",
-        "umoms": "692,314 kr",
-        "db": "145,685 kr",
-        "butikk": "Bamble"
     },
     {
         "måned": "January",
@@ -51,9 +51,17 @@
         "måned": "January",
         "år": "2026",
         "navn": "Liubov Jonassen",
-        "umoms": "660,151 kr",
-        "db": "156,062 kr",
+        "umoms": "660,812 kr",
+        "db": "156,255 kr",
         "butikk": "Tønsberg"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
+        "navn": "Laila Skripeland",
+        "umoms": "657,526 kr",
+        "db": "129,152 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "January",
@@ -62,14 +70,6 @@
         "umoms": "656,720 kr",
         "db": "102,946 kr",
         "butikk": "Larvik"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
-        "navn": "Laila Skripeland",
-        "umoms": "650,211 kr",
-        "db": "126,638 kr",
-        "butikk": "Arendal"
     },
     {
         "måned": "January",
@@ -99,8 +99,8 @@
         "måned": "January",
         "år": "2026",
         "navn": "Jelle Soest",
-        "umoms": "566,202 kr",
-        "db": "118,952 kr",
+        "umoms": "566,409 kr",
+        "db": "119,040 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -195,8 +195,8 @@
         "måned": "January",
         "år": "2026",
         "navn": "Fredrik Frost Pettersen",
-        "umoms": "433,456 kr",
-        "db": "94,214 kr",
+        "umoms": "433,273 kr",
+        "db": "94,112 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -206,6 +206,14 @@
         "umoms": "430,281 kr",
         "db": "74,085 kr",
         "butikk": "Arendal"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
+        "navn": "Niels Soest",
+        "umoms": "421,067 kr",
+        "db": "94,288 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "January",
@@ -222,14 +230,6 @@
         "umoms": "415,470 kr",
         "db": "67,490 kr",
         "butikk": "Skien"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
-        "navn": "Niels Soest",
-        "umoms": "413,439 kr",
-        "db": "91,330 kr",
-        "butikk": "Kristiansand"
     },
     {
         "måned": "January",
@@ -274,25 +274,25 @@
     {
         "måned": "January",
         "år": "2026",
-        "navn": "Fredrik Mølmen",
-        "umoms": "385,757 kr",
-        "db": "65,105 kr",
-        "butikk": "Bamble"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
         "navn": "Helen Roungø",
-        "umoms": "380,071 kr",
-        "db": "70,407 kr",
+        "umoms": "388,325 kr",
+        "db": "73,420 kr",
         "butikk": "Tønsberg"
     },
     {
         "måned": "January",
         "år": "2026",
+        "navn": "Fredrik Mølmen",
+        "umoms": "385,582 kr",
+        "db": "64,975 kr",
+        "butikk": "Bamble"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
         "navn": "Torstein Sandve",
-        "umoms": "374,417 kr",
-        "db": "60,012 kr",
+        "umoms": "381,314 kr",
+        "db": "61,483 kr",
         "butikk": "Arendal"
     },
     {
@@ -315,8 +315,8 @@
         "måned": "January",
         "år": "2026",
         "navn": "Anette Omland Brubakken",
-        "umoms": "364,528 kr",
-        "db": "76,912 kr",
+        "umoms": "366,839 kr",
+        "db": "77,111 kr",
         "butikk": "Bamble"
     },
     {
@@ -379,8 +379,8 @@
         "måned": "January",
         "år": "2026",
         "navn": "Maylin Trondahl Olsen",
-        "umoms": "333,523 kr",
-        "db": "83,152 kr",
+        "umoms": "331,849 kr",
+        "db": "82,731 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -451,8 +451,8 @@
         "måned": "January",
         "år": "2026",
         "navn": "Marthine Hansen",
-        "umoms": "199,703 kr",
-        "db": "31,714 kr",
+        "umoms": "199,356 kr",
+        "db": "31,612 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -467,17 +467,25 @@
         "måned": "January",
         "år": "2026",
         "navn": "Mathias Oseid Hagen",
-        "umoms": "174,722 kr",
-        "db": "35,640 kr",
+        "umoms": "178,560 kr",
+        "db": "36,928 kr",
         "butikk": "Kristiansand"
     },
     {
         "måned": "January",
         "år": "2026",
         "navn": "Fredrik Askim Bjørløw",
-        "umoms": "169,798 kr",
-        "db": "38,804 kr",
+        "umoms": "171,146 kr",
+        "db": "39,408 kr",
         "butikk": "Larvik"
+    },
+    {
+        "måned": "January",
+        "år": "2026",
+        "navn": "Emil Bomhoff",
+        "umoms": "162,139 kr",
+        "db": "27,628 kr",
+        "butikk": "Skien"
     },
     {
         "måned": "January",
@@ -486,14 +494,6 @@
         "umoms": "158,618 kr",
         "db": "25,753 kr",
         "butikk": "Arendal"
-    },
-    {
-        "måned": "January",
-        "år": "2026",
-        "navn": "Emil Bomhoff",
-        "umoms": "156,034 kr",
-        "db": "26,601 kr",
-        "butikk": "Skien"
     },
     {
         "måned": "January",
@@ -563,8 +563,8 @@
         "måned": "January",
         "år": "2026",
         "navn": "Niyas Ali",
-        "umoms": "110,204 kr",
-        "db": "20,295 kr",
+        "umoms": "110,763 kr",
+        "db": "20,329 kr",
         "butikk": "Sandefjord"
     },
     {
@@ -587,8 +587,8 @@
         "måned": "January",
         "år": "2026",
         "navn": "Daniel Hotvedt Aashildrød",
-        "umoms": "86,353 kr",
-        "db": "20,137 kr",
+        "umoms": "87,162 kr",
+        "db": "20,289 kr",
         "butikk": "Sandefjord"
     },
     {
