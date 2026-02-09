@@ -378,9 +378,9 @@
     {
         "Prodno": "018740131",
         "Beskrivelse": "CAS LITHOS TAUPE 60X60 9MM",
-        "antall på lager": 172.8,
+        "antall på lager": 129.6,
         "antall pr pall": 43.2,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
@@ -442,9 +442,9 @@
     {
         "Prodno": "1740004",
         "Beskrivelse": "CAS PIETRE DI PARAGONE GRE BIANCO 60X60 9MM",
-        "antall på lager": 388.8,
+        "antall på lager": 345.6,
         "antall pr pall": 43.2,
-        "Paller på lager": 9,
+        "Paller på lager": 8,
         "Paller på vei": 0
     },
     {
@@ -868,9 +868,9 @@
     {
         "Prodno": "300000000000035668",
         "Beskrivelse": "CIF OVERLAND SAND 60X60 9MM",
-        "antall på lager": 138.2,
+        "antall på lager": 46.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 1,
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
@@ -1570,9 +1570,9 @@
     {
         "Prodno": "PN6061",
         "Beskrivelse": "LTG NUVOLA BEIGE 60X60",
-        "antall på lager": 322.6,
+        "antall på lager": 276.5,
         "antall pr pall": 46.1,
-        "Paller på lager": 7,
+        "Paller på lager": 6,
         "Paller på vei": 6,
         "Bestilling på vei": [
             {
@@ -1678,6 +1678,20 @@
     {
         "Prodno": "LTG-SE-1-M-66",
         "Beskrivelse": "LTG SAULO BIANCO 60X60",
+        "antall på lager": 829.4,
+        "antall pr pall": 46.1,
+        "Paller på lager": 18,
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "13/2026",
+                "Antall": 276.48
+            }
+        ]
+    },
+    {
+        "Prodno": "LTG-SE-3-M-66",
+        "Beskrivelse": "LTG SAULO GRAFITE 60X60",
         "antall på lager": 875.5,
         "antall pr pall": 46.1,
         "Paller på lager": 19,
@@ -1690,25 +1704,11 @@
         ]
     },
     {
-        "Prodno": "LTG-SE-3-M-66",
-        "Beskrivelse": "LTG SAULO GRAFITE 60X60",
-        "antall på lager": 921.6,
-        "antall pr pall": 46.1,
-        "Paller på lager": 20,
-        "Paller på vei": 6,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 276.48
-            }
-        ]
-    },
-    {
         "Prodno": "LTG-SE-2-M-66",
         "Beskrivelse": "LTG SAULO GRIGIO 60X60",
-        "antall på lager": 553.0,
+        "antall på lager": 506.9,
         "antall pr pall": 46.1,
-        "Paller på lager": 12,
+        "Paller på lager": 11,
         "Paller på vei": 9,
         "Bestilling på vei": [
             {
@@ -2104,9 +2104,9 @@
     {
         "Prodno": "APGWSD30",
         "Beskrivelse": "PAN SURROUND SKETCH 60X60 9MM",
-        "antall på lager": 184.3,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 3,
         "Bestilling på vei": [
             {
