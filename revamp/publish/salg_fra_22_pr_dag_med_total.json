@@ -3,23 +3,67 @@
         "fakturadato": 20260209,
         "butikk": "Skien",
         "Klient": "0",
-        "mmoms": "-957 kr",
-        "umoms": "-765 kr",
-        "db": "-353 kr",
-        "dg": "46.0%",
+        "mmoms": "1 807 kr",
+        "umoms": "1 445 kr",
+        "db": "-137 kr",
+        "dg": "-9.0%",
+        "antord": "6",
+        "prord": "301 kr"
+    },
+    {
+        "fakturadato": 20260209,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "5 955 kr",
+        "umoms": "4 764 kr",
+        "db": "1 289 kr",
+        "dg": "27.0%",
+        "antord": "3",
+        "prord": "1 985 kr"
+    },
+    {
+        "fakturadato": 20260209,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "1 556 kr",
+        "umoms": "1 244 kr",
+        "db": "304 kr",
+        "dg": "24.0%",
         "antord": "1",
-        "prord": "-957 kr"
+        "prord": "1 556 kr"
+    },
+    {
+        "fakturadato": 20260209,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "226 kr",
+        "umoms": "180 kr",
+        "db": "116 kr",
+        "dg": "64.0%",
+        "antord": "2",
+        "prord": "113 kr"
+    },
+    {
+        "fakturadato": 20260209,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "75 kr",
+        "umoms": "60 kr",
+        "db": "37 kr",
+        "dg": "63.0%",
+        "antord": "1",
+        "prord": "75 kr"
     },
     {
         "fakturadato": 20260209,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "-957 kr",
-        "umoms": "-765 kr",
-        "db": "-353 kr",
-        "dg": "46.1%",
-        "antord": "1",
-        "prord": "-957 kr"
+        "mmoms": "9 619 kr",
+        "umoms": "7 693 kr",
+        "db": "1 609 kr",
+        "dg": "20.9%",
+        "antord": "13",
+        "prord": "739 kr"
     },
     {
         "fakturadato": 20260207,
