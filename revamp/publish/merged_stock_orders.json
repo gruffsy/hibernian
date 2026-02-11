@@ -1167,7 +1167,7 @@
         "antall på lager": 0.0,
         "antall pr pall": 60.0,
         "Paller på lager": 0,
-        "Paller på vei": 20,
+        "Paller på vei": 10,
         "Bestilling på vei": [
             {
                 "Ukenr": "10/2026",
@@ -1176,10 +1176,6 @@
             {
                 "Ukenr": "12/2026",
                 "Antall": 120.0
-            },
-            {
-                "Ukenr": "10/2026",
-                "Antall": 600.0
             }
         ]
     },
@@ -1189,12 +1185,8 @@
         "antall på lager": 0.0,
         "antall pr pall": 60.0,
         "Paller på lager": 0,
-        "Paller på vei": 20,
+        "Paller på vei": 10,
         "Bestilling på vei": [
-            {
-                "Ukenr": "10/2026",
-                "Antall": 600.0
-            },
             {
                 "Ukenr": "10/2026",
                 "Antall": 600.0
@@ -1207,12 +1199,8 @@
         "antall på lager": 0.0,
         "antall pr pall": 60.0,
         "Paller på lager": 0,
-        "Paller på vei": 20,
+        "Paller på vei": 10,
         "Bestilling på vei": [
-            {
-                "Ukenr": "10/2026",
-                "Antall": 600.0
-            },
             {
                 "Ukenr": "10/2026",
                 "Antall": 600.0
@@ -1225,15 +1213,11 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 19,
+        "Paller på vei": 10,
         "Bestilling på vei": [
             {
                 "Ukenr": "12/2026",
                 "Antall": 432.0
-            },
-            {
-                "Ukenr": "10/2026",
-                "Antall": 388.8
             }
         ]
     },
@@ -1243,15 +1227,11 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 18,
+        "Paller på vei": 10,
         "Bestilling på vei": [
             {
                 "Ukenr": "12/2026",
                 "Antall": 518.4
-            },
-            {
-                "Ukenr": "10/2026",
-                "Antall": 414.72
             }
         ]
     },
@@ -1261,15 +1241,15 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 13,
+        "Paller på vei": 9,
         "Bestilling på vei": [
             {
                 "Ukenr": "12/2026",
                 "Antall": 172.8
             },
             {
-                "Ukenr": "10/2026",
-                "Antall": 388.8
+                "Ukenr": "12/2026",
+                "Antall": 216.0
             }
         ]
     },
@@ -1279,11 +1259,11 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 9,
+        "Paller på vei": 10,
         "Bestilling på vei": [
             {
-                "Ukenr": "10/2026",
-                "Antall": 414.72
+                "Ukenr": "12/2026",
+                "Antall": 460.8
             }
         ]
     },
@@ -1293,11 +1273,11 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 9,
+        "Paller på vei": 10,
         "Bestilling på vei": [
             {
-                "Ukenr": "10/2026",
-                "Antall": 388.8
+                "Ukenr": "12/2026",
+                "Antall": 432.0
             }
         ]
     },
@@ -1918,30 +1898,18 @@
     {
         "Prodno": "PGIBE001",
         "Beskrivelse": "PAN ABISKO LUNGO 30X180",
-        "antall på lager": 77.8,
+        "antall på lager": 116.6,
         "antall pr pall": 38.9,
-        "Paller på lager": 2,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "8/2026",
-                "Antall": 38.88
-            }
-        ]
+        "Paller på lager": 3,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PGWBE50",
         "Beskrivelse": "PAN ABISKO QUADRATO 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "8/2026",
-                "Antall": 138.24
-            }
-        ]
+        "Paller på lager": 3,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PG-BK15",
@@ -1970,16 +1938,10 @@
     {
         "Prodno": "PGWP900",
         "Beskrivelse": "PAN COTTAGE DARK 60X60",
-        "antall på lager": 46.1,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "8/2026",
-                "Antall": 92.16
-            }
-        ]
+        "Paller på lager": 3,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PGIBE201",
@@ -1992,16 +1954,10 @@
     {
         "Prodno": "PGWBE70",
         "Beskrivelse": "PAN DONEGAL QUADRATO 60X60",
-        "antall på lager": 184.3,
+        "antall på lager": 322.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "8/2026",
-                "Antall": 138.24
-            }
-        ]
+        "Paller på lager": 7,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PGIBE301",
@@ -2030,30 +1986,18 @@
     {
         "Prodno": "PGEME20",
         "Beskrivelse": "PAN MEMORY MOOD DIM 20X20",
-        "antall på lager": 0.0,
+        "antall på lager": 54.0,
         "antall pr pall": 54.0,
-        "Paller på lager": 0,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "8/2026",
-                "Antall": 54.0
-            }
-        ]
+        "Paller på lager": 1,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PGEME50",
         "Beskrivelse": "PAN MEMORY MOOD SHEER 20X20",
-        "antall på lager": 54.0,
+        "antall på lager": 108.0,
         "antall pr pall": 54.0,
-        "Paller på lager": 1,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "8/2026",
-                "Antall": 54.0
-            }
-        ]
+        "Paller på lager": 2,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PG-P940",
@@ -2090,16 +2034,10 @@
     {
         "Prodno": "APGWSD10",
         "Beskrivelse": "PAN SURROUND DRAFT 60X60 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 414.7,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 9,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "8/2026",
-                "Antall": 414.72
-            }
-        ]
+        "Paller på lager": 9,
+        "Paller på vei": 0
     },
     {
         "Prodno": "APGXSD40",
@@ -2112,16 +2050,10 @@
     {
         "Prodno": "APGWSD40",
         "Beskrivelse": "PAN SURROUND ROW 60X60 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 4,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "8/2026",
-                "Antall": 184.32
-            }
-        ]
+        "Paller på lager": 4,
+        "Paller på vei": 0
     },
     {
         "Prodno": "APGXSD30",
@@ -2134,16 +2066,10 @@
     {
         "Prodno": "APGWSD30",
         "Beskrivelse": "PAN SURROUND SKETCH 60X60 9MM",
-        "antall på lager": 92.2,
+        "antall på lager": 230.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "8/2026",
-                "Antall": 138.24
-            }
-        ]
+        "Paller på lager": 5,
+        "Paller på vei": 0
     },
     {
         "Prodno": "KANGRA120",
