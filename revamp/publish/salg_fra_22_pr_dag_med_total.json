@@ -1,25 +1,80 @@
 [
     {
         "fakturadato": 20260213,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "5 862 kr",
+        "umoms": "4 689 kr",
+        "db": "700 kr",
+        "dg": "15.0%",
+        "antord": "5",
+        "prord": "1 172 kr"
+    },
+    {
+        "fakturadato": 20260213,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "5 725 kr",
+        "umoms": "4 580 kr",
+        "db": "1 163 kr",
+        "dg": "25.0%",
+        "antord": "6",
+        "prord": "954 kr"
+    },
+    {
+        "fakturadato": 20260213,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "660 kr",
+        "umoms": "528 kr",
+        "db": "399 kr",
+        "dg": "76.0%",
+        "antord": "5",
+        "prord": "132 kr"
+    },
+    {
+        "fakturadato": 20260213,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "827 kr",
+        "umoms": "661 kr",
+        "db": "7 kr",
+        "dg": "1.0%",
+        "antord": "1",
+        "prord": "827 kr"
+    },
+    {
+        "fakturadato": 20260213,
         "butikk": "Larvik",
         "Klient": "6",
-        "mmoms": "4 109 kr",
-        "umoms": "3 287 kr",
-        "db": "663 kr",
-        "dg": "20.0%",
+        "mmoms": "4 178 kr",
+        "umoms": "3 342 kr",
+        "db": "688 kr",
+        "dg": "21.0%",
+        "antord": "2",
+        "prord": "2 089 kr"
+    },
+    {
+        "fakturadato": 20260213,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "1 226 kr",
+        "umoms": "980 kr",
+        "db": "375 kr",
+        "dg": "38.0%",
         "antord": "1",
-        "prord": "4 109 kr"
+        "prord": "1 226 kr"
     },
     {
         "fakturadato": 20260213,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "4 109 kr",
-        "umoms": "3 287 kr",
-        "db": "663 kr",
-        "dg": "20.2%",
-        "antord": "1",
-        "prord": "4 109 kr"
+        "mmoms": "18 478 kr",
+        "umoms": "14 780 kr",
+        "db": "3 332 kr",
+        "dg": "22.5%",
+        "antord": "20",
+        "prord": "923 kr"
     },
     {
         "fakturadato": 20260212,
