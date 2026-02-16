@@ -202,9 +202,9 @@
     {
         "Prodno": "3700034",
         "Beskrivelse": "CAS CEMENTO CASSERO GRIGIO 30X30 9MM",
-        "antall på lager": 103.7,
+        "antall på lager": 51.8,
         "antall pr pall": 51.8,
-        "Paller på lager": 2,
+        "Paller på lager": 1,
         "Paller på vei": 0
     },
     {
@@ -608,9 +608,9 @@
     {
         "Prodno": "300000000000045391",
         "Beskrivelse": "CIF INDUSTRIAL BLACK 60X120 - XS",
-        "antall på lager": 311.0,
+        "antall på lager": 259.2,
         "antall pr pall": 51.8,
-        "Paller på lager": 6,
+        "Paller på lager": 5,
         "Paller på vei": 0
     },
     {
@@ -854,9 +854,9 @@
     {
         "Prodno": "300000000000040065",
         "Beskrivelse": "CIF OVERLAND SAND 60X120 9MM",
-        "antall på lager": 259.2,
+        "antall på lager": 207.4,
         "antall pr pall": 51.8,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 3,
         "Bestilling på vei": [
             {
@@ -920,9 +920,9 @@
     {
         "Prodno": "042451",
         "Beskrivelse": "CIF STATUARIO LUXE PULIDO 60X60",
-        "antall på lager": 216.0,
+        "antall på lager": 172.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
@@ -960,9 +960,9 @@
     {
         "Prodno": "02CEV60R44",
         "Beskrivelse": "CTV EVOLUTION SUGAR 60X60 9,5MM",
-        "antall på lager": 216.0,
+        "antall på lager": 172.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
@@ -984,17 +984,17 @@
     {
         "Prodno": "CKO62R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X120",
-        "antall på lager": 230.4,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
         "Prodno": "CKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60",
-        "antall på lager": 907.2,
+        "antall på lager": 864.0,
         "antall pr pall": 43.2,
-        "Paller på lager": 21,
+        "Paller på lager": 20,
         "Paller på vei": 0
     },
     {
@@ -1040,9 +1040,9 @@
     {
         "Prodno": "CKO60R4",
         "Beskrivelse": "CTV KONKRETE GRIGIO 60X60",
-        "antall på lager": 691.2,
+        "antall på lager": 604.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 16,
+        "Paller på lager": 14,
         "Paller på vei": 0
     },
     {
@@ -1582,9 +1582,9 @@
     {
         "Prodno": "PN6061",
         "Beskrivelse": "LTG NUVOLA BEIGE 60X60",
-        "antall på lager": 138.2,
+        "antall på lager": 46.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 1,
         "Paller på vei": 4,
         "Bestilling på vei": [
             {
@@ -1690,6 +1690,20 @@
     {
         "Prodno": "LTG-SE-1-M-66",
         "Beskrivelse": "LTG SAULO BIANCO 60X60",
+        "antall på lager": 737.3,
+        "antall pr pall": 46.1,
+        "Paller på lager": 16,
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "12/2026",
+                "Antall": 276.48
+            }
+        ]
+    },
+    {
+        "Prodno": "LTG-SE-3-M-66",
+        "Beskrivelse": "LTG SAULO GRAFITE 60X60",
         "antall på lager": 829.4,
         "antall pr pall": 46.1,
         "Paller på lager": 18,
@@ -1702,25 +1716,11 @@
         ]
     },
     {
-        "Prodno": "LTG-SE-3-M-66",
-        "Beskrivelse": "LTG SAULO GRAFITE 60X60",
-        "antall på lager": 875.5,
-        "antall pr pall": 46.1,
-        "Paller på lager": 19,
-        "Paller på vei": 6,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "12/2026",
-                "Antall": 276.48
-            }
-        ]
-    },
-    {
         "Prodno": "LTG-SE-2-M-66",
         "Beskrivelse": "LTG SAULO GRIGIO 60X60",
-        "antall på lager": 460.8,
+        "antall på lager": 414.7,
         "antall pr pall": 46.1,
-        "Paller på lager": 10,
+        "Paller på lager": 9,
         "Paller på vei": 9,
         "Bestilling på vei": [
             {
@@ -1978,25 +1978,25 @@
     {
         "Prodno": "PGEME00",
         "Beskrivelse": "PAN MEMORY MOOD COPPER 20x20",
-        "antall på lager": 54.0,
+        "antall på lager": 0.0,
         "antall pr pall": 54.0,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
         "Prodno": "PGEME20",
         "Beskrivelse": "PAN MEMORY MOOD DIM 20X20",
-        "antall på lager": 54.0,
+        "antall på lager": 0.0,
         "antall pr pall": 54.0,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
         "Prodno": "PGEME50",
         "Beskrivelse": "PAN MEMORY MOOD SHEER 20X20",
-        "antall på lager": 108.0,
+        "antall på lager": 0.0,
         "antall pr pall": 54.0,
-        "Paller på lager": 2,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
