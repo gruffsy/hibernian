@@ -1,5 +1,71 @@
 [
     {
+        "fakturadato": 20260223,
+        "butikk": "Skien",
+        "Klient": "0",
+        "mmoms": "2 026 kr",
+        "umoms": "1 620 kr",
+        "db": "468 kr",
+        "dg": "29.0%",
+        "antord": "3",
+        "prord": "675 kr"
+    },
+    {
+        "fakturadato": 20260223,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "5 221 kr",
+        "umoms": "4 177 kr",
+        "db": "852 kr",
+        "dg": "20.0%",
+        "antord": "4",
+        "prord": "1 305 kr"
+    },
+    {
+        "fakturadato": 20260223,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "10 104 kr",
+        "umoms": "8 083 kr",
+        "db": "3 314 kr",
+        "dg": "41.0%",
+        "antord": "12",
+        "prord": "842 kr"
+    },
+    {
+        "fakturadato": 20260223,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "2 180 kr",
+        "umoms": "1 744 kr",
+        "db": "276 kr",
+        "dg": "16.0%",
+        "antord": "2",
+        "prord": "1 090 kr"
+    },
+    {
+        "fakturadato": 20260223,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "28 488 kr",
+        "umoms": "22 790 kr",
+        "db": "5 366 kr",
+        "dg": "24.0%",
+        "antord": "2",
+        "prord": "14 244 kr"
+    },
+    {
+        "fakturadato": 20260223,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "48 019 kr",
+        "umoms": "38 414 kr",
+        "db": "10 276 kr",
+        "dg": "26.8%",
+        "antord": "23",
+        "prord": "2 087 kr"
+    },
+    {
         "fakturadato": 20260221,
         "butikk": "Skien",
         "Klient": "0",
