@@ -74,6 +74,14 @@
     {
         "måned": "March",
         "år": "2026",
+        "navn": "Kristoffer Gård",
+        "umoms": "43,535 kr",
+        "db": "7,264 kr",
+        "butikk": "Bamble"
+    },
+    {
+        "måned": "March",
+        "år": "2026",
         "navn": "Filip Söderlund",
         "umoms": "43,120 kr",
         "db": "9,672 kr",
@@ -91,17 +99,9 @@
         "måned": "March",
         "år": "2026",
         "navn": "Marius Hoem Skovly",
-        "umoms": "41,429 kr",
-        "db": "10,948 kr",
+        "umoms": "41,348 kr",
+        "db": "10,880 kr",
         "butikk": "Tønsberg"
-    },
-    {
-        "måned": "March",
-        "år": "2026",
-        "navn": "Kristoffer Gård",
-        "umoms": "40,320 kr",
-        "db": "6,876 kr",
-        "butikk": "Bamble"
     },
     {
         "måned": "March",
@@ -109,14 +109,6 @@
         "navn": "Amanda Krumsvik",
         "umoms": "39,408 kr",
         "db": "12,949 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "March",
-        "år": "2026",
-        "navn": "Christina Larsen",
-        "umoms": "38,845 kr",
-        "db": "14,272 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -186,6 +178,22 @@
     {
         "måned": "March",
         "år": "2026",
+        "navn": "Jonathan Kaaby",
+        "umoms": "33,570 kr",
+        "db": "7,229 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "måned": "March",
+        "år": "2026",
+        "navn": "Liubov Jonassen",
+        "umoms": "31,400 kr",
+        "db": "8,705 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "March",
+        "år": "2026",
         "navn": "Ida Pernille Iversen",
         "umoms": "31,290 kr",
         "db": "6,739 kr",
@@ -198,22 +206,6 @@
         "umoms": "31,272 kr",
         "db": "9,881 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "måned": "March",
-        "år": "2026",
-        "navn": "Liubov Jonassen",
-        "umoms": "31,153 kr",
-        "db": "8,513 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "måned": "March",
-        "år": "2026",
-        "navn": "Jonathan Kaaby",
-        "umoms": "31,111 kr",
-        "db": "6,379 kr",
-        "butikk": "Arendal"
     },
     {
         "måned": "March",
@@ -269,6 +261,14 @@
         "navn": "Martin Høyer Halvorsen",
         "umoms": "21,374 kr",
         "db": "7,560 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "March",
+        "år": "2026",
+        "navn": "Christina Larsen",
+        "umoms": "20,763 kr",
+        "db": "15,657 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -539,8 +539,8 @@
         "måned": "March",
         "år": "2026",
         "navn": "Elias Saubrekka",
-        "umoms": "1,027 kr",
-        "db": "301 kr",
+        "umoms": "1,179 kr",
+        "db": "341 kr",
         "butikk": "Skien"
     },
     {
