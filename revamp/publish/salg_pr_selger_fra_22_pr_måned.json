@@ -98,9 +98,25 @@
     {
         "måned": "March",
         "år": "2026",
+        "navn": "Pål Magnus Andersen",
+        "umoms": "27,814 kr",
+        "db": "7,653 kr",
+        "butikk": "Sandefjord"
+    },
+    {
+        "måned": "March",
+        "år": "2026",
         "navn": "Aleksander Bang",
         "umoms": "26,967 kr",
         "db": "7,789 kr",
+        "butikk": "Skien"
+    },
+    {
+        "måned": "March",
+        "år": "2026",
+        "navn": "Hans Kristian Nenset",
+        "umoms": "26,122 kr",
+        "db": "7,989 kr",
         "butikk": "Skien"
     },
     {
@@ -138,18 +154,18 @@
     {
         "måned": "March",
         "år": "2026",
-        "navn": "Niyas Ali",
-        "umoms": "18,183 kr",
-        "db": "5,353 kr",
-        "butikk": "Sandefjord"
-    },
-    {
-        "måned": "March",
-        "år": "2026",
         "navn": "Marius Hoem Skovly",
         "umoms": "18,166 kr",
         "db": "4,417 kr",
         "butikk": "Tønsberg"
+    },
+    {
+        "måned": "March",
+        "år": "2026",
+        "navn": "Niyas Ali",
+        "umoms": "17,756 kr",
+        "db": "5,292 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "March",
@@ -165,22 +181,6 @@
         "navn": "James Michael McGurty",
         "umoms": "17,196 kr",
         "db": "3,657 kr",
-        "butikk": "Skien"
-    },
-    {
-        "måned": "March",
-        "år": "2026",
-        "navn": "Pål Magnus Andersen",
-        "umoms": "16,086 kr",
-        "db": "3,805 kr",
-        "butikk": "Sandefjord"
-    },
-    {
-        "måned": "March",
-        "år": "2026",
-        "navn": "Hans Kristian Nenset",
-        "umoms": "15,658 kr",
-        "db": "4,289 kr",
         "butikk": "Skien"
     },
     {
@@ -205,6 +205,14 @@
         "navn": "Tuva Sofie Risdal",
         "umoms": "14,065 kr",
         "db": "4,045 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "måned": "March",
+        "år": "2026",
+        "navn": "Menglei Chen Ottem",
+        "umoms": "13,237 kr",
+        "db": "4,024 kr",
         "butikk": "Larvik"
     },
     {
@@ -266,6 +274,14 @@
     {
         "måned": "March",
         "år": "2026",
+        "navn": "Thor Aksel Thoresen",
+        "umoms": "10,870 kr",
+        "db": "3,192 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "March",
+        "år": "2026",
         "navn": "Steffen Johannes Forup Hansen",
         "umoms": "10,719 kr",
         "db": "3,047 kr",
@@ -282,26 +298,10 @@
     {
         "måned": "March",
         "år": "2026",
-        "navn": "Thor Aksel Thoresen",
-        "umoms": "10,120 kr",
-        "db": "2,911 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "March",
-        "år": "2026",
         "navn": "Kristoffer Gård",
         "umoms": "9,678 kr",
         "db": "2,923 kr",
         "butikk": "Bamble"
-    },
-    {
-        "måned": "March",
-        "år": "2026",
-        "navn": "Menglei Chen Ottem",
-        "umoms": "8,837 kr",
-        "db": "3,312 kr",
-        "butikk": "Larvik"
     },
     {
         "måned": "March",
@@ -322,6 +322,14 @@
     {
         "måned": "March",
         "år": "2026",
+        "navn": "Patrick Johansen",
+        "umoms": "6,799 kr",
+        "db": "1,856 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "måned": "March",
+        "år": "2026",
         "navn": "Elin Eilefsen",
         "umoms": "6,554 kr",
         "db": "1,270 kr",
@@ -334,14 +342,6 @@
         "umoms": "6,398 kr",
         "db": "2,795 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "måned": "March",
-        "år": "2026",
-        "navn": "Patrick Johansen",
-        "umoms": "5,930 kr",
-        "db": "1,409 kr",
-        "butikk": "Arendal"
     },
     {
         "måned": "March",
@@ -510,6 +510,14 @@
         "umoms": "-262 kr",
         "db": "-161 kr",
         "butikk": "Kristiansand"
+    },
+    {
+        "måned": "March",
+        "år": "2026",
+        "navn": "Jonathan Kaaby",
+        "umoms": "-295 kr",
+        "db": "-129 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "March",
