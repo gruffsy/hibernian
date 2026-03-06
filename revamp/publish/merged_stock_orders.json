@@ -986,9 +986,9 @@
     {
         "Prodno": "CKO60R4",
         "Beskrivelse": "CTV KONKRETE GRIGIO 60X60",
-        "antall på lager": 518.4,
+        "antall på lager": 475.2,
         "antall pr pall": 43.2,
-        "Paller på lager": 12,
+        "Paller på lager": 11,
         "Paller på vei": 0
     },
     {
@@ -1560,12 +1560,12 @@
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
-                "Ukenr": "19/2026",
-                "Antall": 276.48
-            },
-            {
                 "Ukenr": "12/2026",
                 "Antall": 92.16
+            },
+            {
+                "Ukenr": "19/2026",
+                "Antall": 276.48
             }
         ]
     },
@@ -1652,12 +1652,12 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "19/2026",
-                "Antall": 230.4
-            },
-            {
                 "Ukenr": "12/2026",
                 "Antall": 92.16
+            },
+            {
+                "Ukenr": "19/2026",
+                "Antall": 230.4
             }
         ]
     },
@@ -1758,12 +1758,12 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "19/2026",
-                "Antall": 92.16
-            },
-            {
                 "Ukenr": "12/2026",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "19/2026",
+                "Antall": 92.16
             }
         ]
     },
