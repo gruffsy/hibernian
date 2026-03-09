@@ -1,6 +1,17 @@
 [
     {
         "fakturadato": 20260309,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "169 kr",
+        "umoms": "135 kr",
+        "db": "24 kr",
+        "dg": "18.0%",
+        "antord": "1",
+        "prord": "169 kr"
+    },
+    {
+        "fakturadato": 20260309,
         "butikk": "Larvik",
         "Klient": "6",
         "mmoms": "189 kr",
@@ -14,12 +25,12 @@
         "fakturadato": 20260309,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "189 kr",
-        "umoms": "151 kr",
-        "db": "64 kr",
-        "dg": "42.4%",
-        "antord": "1",
-        "prord": "189 kr"
+        "mmoms": "358 kr",
+        "umoms": "286 kr",
+        "db": "88 kr",
+        "dg": "30.8%",
+        "antord": "2",
+        "prord": "179 kr"
     },
     {
         "fakturadato": 20260308,
