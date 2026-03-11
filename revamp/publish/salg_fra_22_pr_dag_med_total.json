@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20260311,
+        "butikk": "Tønsberg",
+        "Klient": "3",
+        "mmoms": "-132 kr",
+        "umoms": "-106 kr",
+        "db": "0 kr",
+        "dg": "0.0%",
+        "antord": "1",
+        "prord": "-132 kr"
+    },
+    {
+        "fakturadato": 20260311,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "-132 kr",
+        "umoms": "-106 kr",
+        "db": "0 kr",
+        "dg": "-0.0%",
+        "antord": "1",
+        "prord": "-132 kr"
+    },
+    {
         "fakturadato": 20260310,
         "butikk": "Skien",
         "Klient": "0",
