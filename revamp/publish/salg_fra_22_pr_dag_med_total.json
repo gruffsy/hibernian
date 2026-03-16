@@ -1,6 +1,17 @@
 [
     {
         "fakturadato": 20260316,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "8 549 kr",
+        "umoms": "6 839 kr",
+        "db": "1 317 kr",
+        "dg": "19.0%",
+        "antord": "1",
+        "prord": "8 549 kr"
+    },
+    {
+        "fakturadato": 20260316,
         "butikk": "Bamble",
         "Klient": "7",
         "mmoms": "22 571 kr",
@@ -14,12 +25,12 @@
         "fakturadato": 20260316,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "22 571 kr",
-        "umoms": "18 057 kr",
-        "db": "2 572 kr",
-        "dg": "14.2%",
-        "antord": "1",
-        "prord": "22 571 kr"
+        "mmoms": "31 120 kr",
+        "umoms": "24 896 kr",
+        "db": "3 889 kr",
+        "dg": "15.6%",
+        "antord": "2",
+        "prord": "15 560 kr"
     },
     {
         "fakturadato": 20260314,
