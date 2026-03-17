@@ -661,7 +661,13 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "17/2026",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "042449",
@@ -685,7 +691,13 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "17/2026",
+                "Antall": 276.48
+            }
+        ]
     },
     {
         "Prodno": "300000000000038786",
@@ -725,7 +737,13 @@
         "antall på lager": 51.8,
         "antall pr pall": 51.8,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "17/2026",
+                "Antall": 155.52
+            }
+        ]
     },
     {
         "Prodno": "300000000000053158",
@@ -757,7 +775,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "17/2026",
+                "Antall": 207.36
+            }
+        ]
     },
     {
         "Prodno": "300000000000053160",
@@ -789,7 +813,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "17/2026",
+                "Antall": 276.48
+            }
+        ]
     },
     {
         "Prodno": "300000000000028643",
@@ -805,7 +835,13 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "17/2026",
+                "Antall": 46.08
+            }
+        ]
     },
     {
         "Prodno": "300000000000028649",
@@ -872,12 +908,46 @@
         "Paller på vei": 0
     },
     {
+        "Prodno": "300000000000067511",
+        "Beskrivelse": "CIF ORION MARFIL PULIDO 60X120 9MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 46.1,
+        "Paller på lager": 0,
+        "Paller på vei": 9,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "17/2026",
+                "Antall": 414.72
+            }
+        ]
+    },
+    {
+        "Prodno": "300000000000072945",
+        "Beskrivelse": "CIF ORION MARFIL PULIDO 60X60 9MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 43.2,
+        "Paller på lager": 0,
+        "Paller på vei": 14,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "17/2026",
+                "Antall": 604.8
+            }
+        ]
+    },
+    {
         "Prodno": "300000000000045339",
         "Beskrivelse": "CIF OVERLAND PEARL 60X120 - XS",
         "antall på lager": 155.5,
         "antall pr pall": 51.8,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "17/2026",
+                "Antall": 103.68
+            }
+        ]
     },
     {
         "Prodno": "300000000000037842",
@@ -885,7 +955,13 @@
         "antall på lager": 691.2,
         "antall pr pall": 46.1,
         "Paller på lager": 15,
-        "Paller på vei": 0
+        "Paller på vei": 10,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "17/2026",
+                "Antall": 460.8
+            }
+        ]
     },
     {
         "Prodno": "300000000000040065",
@@ -893,7 +969,13 @@
         "antall på lager": 259.2,
         "antall pr pall": 51.8,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 11,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "17/2026",
+                "Antall": 570.24
+            }
+        ]
     },
     {
         "Prodno": "300000000000035668",
@@ -901,7 +983,13 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 30,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "17/2026",
+                "Antall": 1382.4
+            }
+        ]
     },
     {
         "Prodno": "40232",
@@ -1336,6 +1424,46 @@
                 "Antall": 432.0
             }
         ]
+    },
+    {
+        "Prodno": "20044550",
+        "Beskrivelse": "KER ALBORA CREMA 120X20 9MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 51.8,
+        "Paller på lager": 0,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "20044551",
+        "Beskrivelse": "KER ALBORA ROBLE 120X20 9MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 51.8,
+        "Paller på lager": 0,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "20044552",
+        "Beskrivelse": "KER ALBORA TITANIUM 120X20 9MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 51.8,
+        "Paller på lager": 0,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "20044393",
+        "Beskrivelse": "KER AMBROSIA SAND 60X120 9MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 43.2,
+        "Paller på lager": 0,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "20044396",
+        "Beskrivelse": "KER AMBROSIA SAND 60X60 9MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 43.2,
+        "Paller på lager": 0,
+        "Paller på vei": 0
     },
     {
         "Prodno": "G43AC00K",
