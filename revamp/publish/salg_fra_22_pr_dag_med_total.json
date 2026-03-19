@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20260319,
+        "butikk": "Kristiansand",
+        "Klient": "2",
+        "mmoms": "213 kr",
+        "umoms": "171 kr",
+        "db": "0 kr",
+        "dg": "0.0%",
+        "antord": "1",
+        "prord": "213 kr"
+    },
+    {
+        "fakturadato": 20260319,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "213 kr",
+        "umoms": "171 kr",
+        "db": "0 kr",
+        "dg": "0.0%",
+        "antord": "1",
+        "prord": "213 kr"
+    },
+    {
         "fakturadato": 20260318,
         "butikk": "Skien",
         "Klient": "0",
