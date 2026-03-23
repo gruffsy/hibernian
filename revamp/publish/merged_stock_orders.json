@@ -658,9 +658,9 @@
     {
         "Prodno": "042447",
         "Beskrivelse": "CIF DIAMOND GOLD PULIDO 60X120",
-        "antall på lager": 46.1,
+        "antall på lager": 0.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 3,
         "Bestilling på vei": [
             {
@@ -980,9 +980,9 @@
     {
         "Prodno": "300000000000035668",
         "Beskrivelse": "CIF OVERLAND SAND 60X60 9MM",
-        "antall på lager": 46.1,
+        "antall på lager": 0.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 30,
         "Bestilling på vei": [
             {
@@ -1058,9 +1058,9 @@
     {
         "Prodno": "02CEV62R44",
         "Beskrivelse": "CTV EVOLUTION SUGAR 60X120 9,5MM",
-        "antall på lager": 184.3,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 1,
         "Bestilling på vei": [
             {
@@ -1086,9 +1086,9 @@
     {
         "Prodno": "02CEV62R1",
         "Beskrivelse": "CTV EVOLUTION WHITE 60X120 9,5MM",
-        "antall på lager": 230.4,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
@@ -1122,9 +1122,9 @@
     {
         "Prodno": "CKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60",
-        "antall på lager": 345.6,
+        "antall på lager": 253.4,
         "antall pr pall": 43.2,
-        "Paller på lager": 8,
+        "Paller på lager": 6,
         "Paller på vei": 15,
         "Bestilling på vei": [
             {
@@ -1196,17 +1196,17 @@
     {
         "Prodno": "02XPA60R4",
         "Beskrivelse": "CTV PIETRE ANTICA GREY 60X60 20MM",
-        "antall på lager": 448.0,
+        "antall på lager": 384.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 7,
+        "Paller på lager": 6,
         "Paller på vei": 0
     },
     {
         "Prodno": "02XPA60R1",
         "Beskrivelse": "CTV PIETRE ANTICA WHITE 60X60 20MM",
-        "antall på lager": 640.0,
+        "antall på lager": 576.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 10,
+        "Paller på lager": 9,
         "Paller på vei": 0
     },
     {
@@ -1288,30 +1288,18 @@
     {
         "Prodno": "L956A80",
         "Beskrivelse": "ELI MARBLE SOVEROYA 60X120",
-        "antall på lager": 0.0,
+        "antall på lager": 604.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 0,
-        "Paller på vei": 15,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 648.0
-            }
-        ]
+        "Paller på lager": 14,
+        "Paller på vei": 0
     },
     {
         "Prodno": "L960A80",
         "Beskrivelse": "ELI MARBLE SOVEROYA 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 648.0,
         "antall pr pall": 43.2,
-        "Paller på lager": 0,
-        "Paller på vei": 15,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 648.0
-            }
-        ]
+        "Paller på lager": 15,
+        "Paller på vei": 0
     },
     {
         "Prodno": "FAB1020BIS",
@@ -1382,48 +1370,32 @@
     {
         "Prodno": "0178400036909",
         "Beskrivelse": "GEO STRATOS VEIN BONE MATT 60X60 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 216.0,
         "antall pr pall": 43.2,
-        "Paller på lager": 0,
-        "Paller på vei": 9,
+        "Paller på lager": 5,
+        "Paller på vei": 4,
         "Bestilling på vei": [
             {
                 "Ukenr": "13/2026",
                 "Antall": 172.8
-            },
-            {
-                "Ukenr": "13/2026",
-                "Antall": 216.0
             }
         ]
     },
     {
         "Prodno": "0048690036855",
         "Beskrivelse": "GEO TAJMAHAL TAN POLISHED 60X120 9,5MM",
-        "antall på lager": 0.0,
+        "antall på lager": 460.8,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 10,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 460.8
-            }
-        ]
+        "Paller på lager": 10,
+        "Paller på vei": 0
     },
     {
         "Prodno": "0048400036865",
         "Beskrivelse": "GEO TAJMAHAL TAN POLISHED 60X60 9,5MM",
-        "antall på lager": 0.0,
+        "antall på lager": 432.0,
         "antall pr pall": 43.2,
-        "Paller på lager": 0,
-        "Paller på vei": 10,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 432.0
-            }
-        ]
+        "Paller på lager": 10,
+        "Paller på vei": 0
     },
     {
         "Prodno": "20044550",
@@ -1716,9 +1688,9 @@
     {
         "Prodno": "IL6001",
         "Beskrivelse": "LTG INNOVATION LIME DARK 60X60",
-        "antall på lager": 92.2,
+        "antall på lager": 46.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
+        "Paller på lager": 1,
         "Paller på vei": 24,
         "Bestilling på vei": [
             {
@@ -1956,9 +1928,9 @@
     {
         "Prodno": "LTG-SE-3-M-66",
         "Beskrivelse": "LTG SAULO GRAFITE 60X60",
-        "antall på lager": 645.1,
+        "antall på lager": 599.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 14,
+        "Paller på lager": 13,
         "Paller på vei": 6,
         "Bestilling på vei": [
             {
@@ -2044,9 +2016,9 @@
     {
         "Prodno": "LTG2100-663",
         "Beskrivelse": "LTG TERRA BEIGE 60X60",
-        "antall på lager": 138.2,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 13,
         "Bestilling på vei": [
             {
@@ -2326,9 +2298,9 @@
     {
         "Prodno": "APGWSD10",
         "Beskrivelse": "PAN SURROUND DRAFT 60X60 9MM",
-        "antall på lager": 138.2,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
@@ -2348,9 +2320,9 @@
     {
         "Prodno": "APGWSD40",
         "Beskrivelse": "PAN SURROUND ROW 60X60 9MM",
-        "antall på lager": 138.2,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 2,
         "Bestilling på vei": [
             {
@@ -2392,9 +2364,9 @@
     {
         "Prodno": "SIS-820-PORTUGAL",
         "Beskrivelse": "SIS GRANITTKANTSTEIN 8X20X100 PORTUGAL",
-        "antall på lager": 1881.0,
+        "antall på lager": 1749.0,
         "antall pr pall": 33.0,
-        "Paller på lager": 57,
+        "Paller på lager": 53,
         "Paller på vei": 0
     },
     {
