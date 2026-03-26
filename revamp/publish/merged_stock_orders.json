@@ -1778,9 +1778,9 @@
     {
         "Prodno": "PN6061",
         "Beskrivelse": "LTG NUVOLA BEIGE 60X60",
-        "antall på lager": 184.3,
+        "antall på lager": 276.5,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
+        "Paller på lager": 6,
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
@@ -1846,18 +1846,14 @@
     {
         "Prodno": "LTG2900-YH010-36",
         "Beskrivelse": "LTG PROGETTO GRAFITE 30X60",
-        "antall på lager": 46.1,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
-        "Paller på vei": 8,
+        "Paller på lager": 3,
+        "Paller på vei": 6,
         "Bestilling på vei": [
             {
                 "Ukenr": "19/2026",
                 "Antall": 276.48
-            },
-            {
-                "Ukenr": "13/2026",
-                "Antall": 92.16
             }
         ]
     },
@@ -1886,15 +1882,11 @@
     {
         "Prodno": "LTG-SE-1-M-66",
         "Beskrivelse": "LTG SAULO BIANCO 60X60",
-        "antall på lager": 230.4,
+        "antall på lager": 506.9,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
-        "Paller på vei": 23,
+        "Paller på lager": 11,
+        "Paller på vei": 17,
         "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 276.48
-            },
             {
                 "Ukenr": "26/2026",
                 "Antall": 783.36
@@ -1904,29 +1896,19 @@
     {
         "Prodno": "LTG-SE-3-M-66",
         "Beskrivelse": "LTG SAULO GRAFITE 60X60",
-        "antall på lager": 599.0,
+        "antall på lager": 875.5,
         "antall pr pall": 46.1,
-        "Paller på lager": 13,
-        "Paller på vei": 6,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 276.48
-            }
-        ]
+        "Paller på lager": 19,
+        "Paller på vei": 0
     },
     {
         "Prodno": "LTG-SE-2-M-66",
         "Beskrivelse": "LTG SAULO GRIGIO 60X60",
-        "antall på lager": 92.2,
+        "antall på lager": 506.9,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
-        "Paller på vei": 36,
+        "Paller på lager": 11,
+        "Paller på vei": 27,
         "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 414.72
-            },
             {
                 "Ukenr": "26/2026",
                 "Antall": 1244.16
@@ -2058,20 +2040,10 @@
     {
         "Prodno": "60TR08R-M",
         "Beskrivelse": "LTG TERRAZZO ANTICO 60X60",
-        "antall på lager": 138.2,
+        "antall på lager": 230.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
-        "Paller på vei": 4,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 92.16
-            },
-            {
-                "Ukenr": "13/2026",
-                "Antall": 92.16
-            }
-        ]
+        "Paller på lager": 5,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PGIBE001",
