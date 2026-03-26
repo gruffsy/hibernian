@@ -1194,6 +1194,20 @@
         ]
     },
     {
+        "Prodno": "XKO60R4",
+        "Beskrivelse": "CTV KONKRETE GRIGIO 60X60 20MM",
+        "antall på lager": 576.0,
+        "antall pr pall": 64.0,
+        "Paller på lager": 9,
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "13/2026",
+                "Antall": 64.0
+            }
+        ]
+    },
+    {
         "Prodno": "02XPA60R4",
         "Beskrivelse": "CTV PIETRE ANTICA GREY 60X60 20MM",
         "antall på lager": 256.0,
@@ -1234,6 +1248,20 @@
             {
                 "Ukenr": "13/2026",
                 "Antall": 640.0
+            }
+        ]
+    },
+    {
+        "Prodno": "XSL60R44",
+        "Beskrivelse": "CTV SLATE PIOMBO 60X60 20MM",
+        "antall på lager": 448.0,
+        "antall pr pall": 64.0,
+        "Paller på lager": 7,
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "13/2026",
+                "Antall": 192.0
             }
         ]
     },
@@ -1824,12 +1852,12 @@
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
-                "Ukenr": "13/2026",
-                "Antall": 92.16
-            },
-            {
                 "Ukenr": "19/2026",
                 "Antall": 276.48
+            },
+            {
+                "Ukenr": "13/2026",
+                "Antall": 92.16
             }
         ]
     },
