@@ -1682,15 +1682,11 @@
     {
         "Prodno": "IL6002",
         "Beskrivelse": "LTG INNOVATION LIME GRIGIO 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 1244.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 37,
+        "Paller på lager": 27,
+        "Paller på vei": 10,
         "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 1244.16
-            },
             {
                 "Ukenr": "13/2026",
                 "Antall": 460.8
@@ -1768,15 +1764,11 @@
     {
         "Prodno": "PN6061",
         "Beskrivelse": "LTG NUVOLA BEIGE 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 14,
+        "Paller på lager": 4,
+        "Paller på vei": 10,
         "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 184.32
-            },
             {
                 "Ukenr": "26/2026",
                 "Antall": 460.8
@@ -1952,18 +1944,14 @@
     {
         "Prodno": "LTG2100-661",
         "Beskrivelse": "LTG TERRA ANTRACITE 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 7,
+        "Paller på lager": 2,
+        "Paller på vei": 5,
         "Bestilling på vei": [
             {
                 "Ukenr": "19/2026",
                 "Antall": 230.4
-            },
-            {
-                "Ukenr": "13/2026",
-                "Antall": 92.16
             }
         ]
     },
@@ -1992,16 +1980,10 @@
     {
         "Prodno": "LTG2100-663",
         "Beskrivelse": "LTG TERRA BEIGE 60X60",
-        "antall på lager": 92.2,
+        "antall på lager": 691.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
-        "Paller på vei": 13,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 599.04
-            }
-        ]
+        "Paller på lager": 15,
+        "Paller på vei": 0
     },
     {
         "Prodno": "LTG2100-362",
@@ -2028,16 +2010,10 @@
     {
         "Prodno": "LTG2100-662",
         "Beskrivelse": "LTG TERRA CENERE 60X60",
-        "antall på lager": 184.3,
+        "antall på lager": 322.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "13/2026",
-                "Antall": 138.24
-            }
-        ]
+        "Paller på lager": 7,
+        "Paller på vei": 0
     },
     {
         "Prodno": "LTG2100-364",
@@ -2058,18 +2034,14 @@
     {
         "Prodno": "LTG2100-664",
         "Beskrivelse": "LTG TERRA CHIARO 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 230.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 7,
+        "Paller på lager": 5,
+        "Paller på vei": 2,
         "Bestilling på vei": [
             {
                 "Ukenr": "19/2026",
                 "Antall": 92.16
-            },
-            {
-                "Ukenr": "13/2026",
-                "Antall": 230.4
             }
         ]
     },
