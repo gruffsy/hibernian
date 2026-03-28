@@ -14,23 +14,45 @@
         "fakturadato": 20260328,
         "butikk": "Arendal",
         "Klient": "4",
-        "mmoms": "13 014 kr",
-        "umoms": "10 411 kr",
-        "db": "1 478 kr",
-        "dg": "14.0%",
-        "antord": "13",
-        "prord": "1 001 kr"
+        "mmoms": "28 696 kr",
+        "umoms": "22 957 kr",
+        "db": "3 844 kr",
+        "dg": "17.0%",
+        "antord": "21",
+        "prord": "1 366 kr"
+    },
+    {
+        "fakturadato": 20260328,
+        "butikk": "Sandefjord",
+        "Klient": "5",
+        "mmoms": "170 kr",
+        "umoms": "136 kr",
+        "db": "6 kr",
+        "dg": "4.0%",
+        "antord": "1",
+        "prord": "170 kr"
+    },
+    {
+        "fakturadato": 20260328,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "149 kr",
+        "umoms": "119 kr",
+        "db": "40 kr",
+        "dg": "34.0%",
+        "antord": "1",
+        "prord": "149 kr"
     },
     {
         "fakturadato": 20260328,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "13 053 kr",
-        "umoms": "10 442 kr",
-        "db": "1 471 kr",
-        "dg": "14.1%",
-        "antord": "14",
-        "prord": "932 kr"
+        "mmoms": "29 054 kr",
+        "umoms": "23 243 kr",
+        "db": "3 883 kr",
+        "dg": "16.7%",
+        "antord": "24",
+        "prord": "1 210 kr"
     },
     {
         "fakturadato": 20260327,
