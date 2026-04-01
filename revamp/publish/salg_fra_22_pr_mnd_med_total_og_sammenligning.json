@@ -14,6 +14,20 @@
         "dg": "196435.7%"
     },
     {
+        "butikk": "Tønsberg",
+        "Klient": 0,
+        "last_year": 2025,
+        "this_year": 2026,
+        "month": 4,
+        "incomplete": true,
+        "mmoms": "-201 913 kr",
+        "umoms": "-161 530 kr",
+        "db": "-31 838 kr",
+        "antord": "-192",
+        "prord": "5 103 kr",
+        "dg": "274415.1%"
+    },
+    {
         "butikk": "Larvik",
         "Klient": 0,
         "last_year": 2025,
@@ -34,12 +48,12 @@
         "this_year": 2026,
         "month": 4,
         "incomplete": true,
-        "mmoms": "-1 482 988 kr",
-        "umoms": "-1 186 391 kr",
-        "db": "-251 150 kr",
-        "antord": "-1 295",
-        "prord": "-2 289 kr",
-        "dg": "689290.9%"
+        "mmoms": "-1 471 072 kr",
+        "umoms": "-1 176 858 kr",
+        "db": "-245 331 kr",
+        "antord": "-1 293",
+        "prord": "1 389 kr",
+        "dg": "1119460.9%"
     },
     {
         "butikk": "Skien",
@@ -54,6 +68,20 @@
         "antord": "-6 158",
         "prord": "-28 115 kr",
         "dg": "6451.2%"
+    },
+    {
+        "butikk": "Tønsberg",
+        "Klient": 0,
+        "last_year": 2025,
+        "this_year": 2026,
+        "month": 4,
+        "incomplete": false,
+        "mmoms": "-6 402 983 kr",
+        "umoms": "-5 122 384 kr",
+        "db": "-1 123 913 kr",
+        "antord": "-5 847",
+        "prord": "-19 667 kr",
+        "dg": "9050.5%"
     },
     {
         "butikk": "Larvik",
@@ -76,12 +104,12 @@
         "this_year": 2026,
         "month": 4,
         "incomplete": false,
-        "mmoms": "-44 408 421 kr",
-        "umoms": "-35 526 750 kr",
-        "db": "-7 519 928 kr",
-        "antord": "-38 923",
-        "prord": "-28 073 kr",
-        "dg": "22879.7%"
+        "mmoms": "-44 396 505 kr",
+        "umoms": "-35 517 217 kr",
+        "db": "-7 514 109 kr",
+        "antord": "-38 921",
+        "prord": "-24 394 kr",
+        "dg": "37218.7%"
     },
     {
         "butikk": "Skien",
@@ -95,6 +123,19 @@
         "antord": "26",
         "dg": "22.2%",
         "prord": "-2 257 kr"
+    },
+    {
+        "butikk": "Tønsberg",
+        "Klient": 0,
+        "this_year": 2026,
+        "month": 4,
+        "incomplete": null,
+        "mmoms": "309 816 kr",
+        "umoms": "247 858 kr",
+        "db": "151 294 kr",
+        "antord": "52",
+        "dg": "61.0%",
+        "prord": "4 766 kr"
     },
     {
         "butikk": "Larvik",
@@ -115,12 +156,12 @@
         "this_year": 2026,
         "month": 4,
         "incomplete": null,
-        "mmoms": "-72 826 kr",
-        "umoms": "-58 266 kr",
-        "db": "-13 078 kr",
-        "antord": "52",
-        "dg": "22.4%",
-        "prord": "-1 120 kr"
+        "mmoms": "236 990 kr",
+        "umoms": "189 592 kr",
+        "db": "138 216 kr",
+        "antord": "104",
+        "dg": "72.9%",
+        "prord": "1 823 kr"
     },
     {
         "butikk": "Skien",
