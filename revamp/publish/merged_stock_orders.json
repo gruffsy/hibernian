@@ -992,7 +992,7 @@
         "Paller på vei": 1,
         "Bestilling på vei": [
             {
-                "Ukenr": "15/2026",
+                "Ukenr": "ukjent",
                 "Antall": 46.08
             }
         ]
@@ -1006,7 +1006,7 @@
         "Paller på vei": 4,
         "Bestilling på vei": [
             {
-                "Ukenr": "15/2026",
+                "Ukenr": "ukjent",
                 "Antall": 172.8
             }
         ]
@@ -1036,7 +1036,7 @@
         "Paller på vei": 2,
         "Bestilling på vei": [
             {
-                "Ukenr": "15/2026",
+                "Ukenr": "ukjent",
                 "Antall": 92.16
             }
         ]
@@ -1050,7 +1050,7 @@
         "Paller på vei": 15,
         "Bestilling på vei": [
             {
-                "Ukenr": "15/2026",
+                "Ukenr": "ukjent",
                 "Antall": 648.0
             }
         ]
@@ -1101,13 +1101,7 @@
         "antall på lager": 432.0,
         "antall pr pall": 43.2,
         "Paller på lager": 10,
-        "Paller på vei": 4,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "15/2026",
-                "Antall": 172.8
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "XKO60R4",
@@ -1115,11 +1109,15 @@
         "antall på lager": 448.0,
         "antall pr pall": 64.0,
         "Paller på lager": 7,
-        "Paller på vei": 1,
+        "Paller på vei": 5,
         "Bestilling på vei": [
             {
-                "Ukenr": "15/2026",
+                "Ukenr": "ukjent",
                 "Antall": 64.0
+            },
+            {
+                "Ukenr": "ukjent",
+                "Antall": 240.0
             }
         ]
     },
@@ -1129,7 +1127,13 @@
         "antall på lager": 64.0,
         "antall pr pall": 64.0,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 16,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 1024.0
+            }
+        ]
     },
     {
         "Prodno": "02XPA60R1",
@@ -1156,7 +1160,7 @@
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
-                "Ukenr": "15/2026",
+                "Ukenr": "ukjent",
                 "Antall": 640.0
             }
         ]
@@ -1167,7 +1171,13 @@
         "antall på lager": 320.0,
         "antall pr pall": 64.0,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 192.0
+            }
+        ]
     },
     {
         "Prodno": "XWL60R1",
