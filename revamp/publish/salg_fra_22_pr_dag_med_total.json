@@ -12,14 +12,25 @@
     },
     {
         "fakturadato": 20260410,
+        "butikk": "Arendal",
+        "Klient": "4",
+        "mmoms": "477 kr",
+        "umoms": "381 kr",
+        "db": "181 kr",
+        "dg": "48.0%",
+        "antord": "1",
+        "prord": "477 kr"
+    },
+    {
+        "fakturadato": 20260410,
         "butikk": "Totalt",
         "Klient": 99,
-        "mmoms": "119 kr",
-        "umoms": "95 kr",
-        "db": "46 kr",
-        "dg": "48.4%",
-        "antord": "1",
-        "prord": "119 kr"
+        "mmoms": "596 kr",
+        "umoms": "476 kr",
+        "db": "227 kr",
+        "dg": "47.7%",
+        "antord": "2",
+        "prord": "298 kr"
     },
     {
         "fakturadato": 20260409,
