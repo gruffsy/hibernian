@@ -2015,7 +2015,13 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "18/2026",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "PG-BK15",
@@ -2047,7 +2053,13 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "18/2026",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "PGIBE201",
@@ -2127,7 +2139,13 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "18/2026",
+                "Antall": 46.08
+            }
+        ]
     },
     {
         "Prodno": "APGXSD10",
@@ -2143,7 +2161,13 @@
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 11,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "18/2026",
+                "Antall": 506.88
+            }
+        ]
     },
     {
         "Prodno": "APGXSD40",
@@ -2159,7 +2183,13 @@
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "18/2026",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "APGXSD30",
