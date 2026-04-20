@@ -670,12 +670,12 @@
         "Paller på vei": 5,
         "Bestilling på vei": [
             {
-                "Ukenr": "21/2026",
-                "Antall": 92.16
-            },
-            {
                 "Ukenr": "18/2026",
                 "Antall": 138.24
+            },
+            {
+                "Ukenr": "21/2026",
+                "Antall": 92.16
             }
         ]
     },
@@ -704,12 +704,12 @@
         "Paller på vei": 9,
         "Bestilling på vei": [
             {
-                "Ukenr": "21/2026",
-                "Antall": 138.24
-            },
-            {
                 "Ukenr": "18/2026",
                 "Antall": 276.48
+            },
+            {
+                "Ukenr": "21/2026",
+                "Antall": 138.24
             }
         ]
     },
@@ -798,12 +798,12 @@
         "Paller på vei": 5,
         "Bestilling på vei": [
             {
-                "Ukenr": "21/2026",
-                "Antall": 51.84
-            },
-            {
                 "Ukenr": "18/2026",
                 "Antall": 207.36
+            },
+            {
+                "Ukenr": "21/2026",
+                "Antall": 51.84
             }
         ]
     },
@@ -840,12 +840,12 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "21/2026",
-                "Antall": 46.08
-            },
-            {
                 "Ukenr": "18/2026",
                 "Antall": 276.48
+            },
+            {
+                "Ukenr": "21/2026",
+                "Antall": 46.08
             }
         ]
     },
@@ -986,12 +986,12 @@
         "Paller på vei": 18,
         "Bestilling på vei": [
             {
-                "Ukenr": "21/2026",
-                "Antall": 368.64
-            },
-            {
                 "Ukenr": "18/2026",
                 "Antall": 460.8
+            },
+            {
+                "Ukenr": "21/2026",
+                "Antall": 368.64
             }
         ]
     },
@@ -1004,12 +1004,12 @@
         "Paller på vei": 15,
         "Bestilling på vei": [
             {
-                "Ukenr": "21/2026",
-                "Antall": 207.36
-            },
-            {
                 "Ukenr": "18/2026",
                 "Antall": 570.24
+            },
+            {
+                "Ukenr": "21/2026",
+                "Antall": 207.36
             }
         ]
     },
@@ -2057,13 +2057,7 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "18/2026",
-                "Antall": 138.24
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "PG-BK15",
@@ -2095,13 +2089,7 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "18/2026",
-                "Antall": 138.24
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "PGIBE201",
@@ -2181,13 +2169,7 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "18/2026",
-                "Antall": 46.08
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "APGXSD10",
@@ -2203,13 +2185,7 @@
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
-        "Paller på vei": 11,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "18/2026",
-                "Antall": 506.88
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "APGXSD40",
@@ -2225,13 +2201,7 @@
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "18/2026",
-                "Antall": 138.24
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "APGXSD30",
@@ -2247,13 +2217,7 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 7,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "18/2026",
-                "Antall": 322.56
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "KANGRA120",
