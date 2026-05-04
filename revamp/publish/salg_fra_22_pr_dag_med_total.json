@@ -1,5 +1,27 @@
 [
     {
+        "fakturadato": 20260504,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "2 699 kr",
+        "umoms": "2 159 kr",
+        "db": "-6 kr",
+        "dg": "0.0%",
+        "antord": "1",
+        "prord": "2 699 kr"
+    },
+    {
+        "fakturadato": 20260504,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "2 699 kr",
+        "umoms": "2 159 kr",
+        "db": "-6 kr",
+        "dg": "-0.3%",
+        "antord": "1",
+        "prord": "2 699 kr"
+    },
+    {
         "fakturadato": 20260502,
         "butikk": "Skien",
         "Klient": "0",
