@@ -10,6 +10,14 @@
     {
         "måned": "May",
         "år": "2026",
+        "navn": "Thor Aksel Thoresen",
+        "umoms": "148,901 kr",
+        "db": "51,000 kr",
+        "butikk": "Kristiansand"
+    },
+    {
+        "måned": "May",
+        "år": "2026",
         "navn": "Marius Olsen",
         "umoms": "142,292 kr",
         "db": "30,791 kr",
@@ -35,24 +43,16 @@
         "måned": "May",
         "år": "2026",
         "navn": "Julie Nilsen Bjølseth",
-        "umoms": "100,956 kr",
-        "db": "21,854 kr",
+        "umoms": "101,187 kr",
+        "db": "21,961 kr",
         "butikk": "Sandefjord"
     },
     {
         "måned": "May",
         "år": "2026",
-        "navn": "Thor Aksel Thoresen",
-        "umoms": "99,639 kr",
-        "db": "21,321 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "May",
-        "år": "2026",
         "navn": "Celine Rød",
-        "umoms": "94,269 kr",
-        "db": "15,008 kr",
+        "umoms": "94,828 kr",
+        "db": "15,151 kr",
         "butikk": "Larvik"
     },
     {
@@ -75,8 +75,8 @@
         "måned": "May",
         "år": "2026",
         "navn": "Hans Kristian Nenset",
-        "umoms": "80,564 kr",
-        "db": "15,278 kr",
+        "umoms": "81,364 kr",
+        "db": "15,360 kr",
         "butikk": "Skien"
     },
     {
@@ -123,8 +123,8 @@
         "måned": "May",
         "år": "2026",
         "navn": "Elias Saubrekka",
-        "umoms": "63,958 kr",
-        "db": "-7,919 kr",
+        "umoms": "63,486 kr",
+        "db": "-7,913 kr",
         "butikk": "Skien"
     },
     {
@@ -142,6 +142,14 @@
         "umoms": "56,883 kr",
         "db": "11,635 kr",
         "butikk": "Larvik"
+    },
+    {
+        "måned": "May",
+        "år": "2026",
+        "navn": "Tommy Fodsung-Noen Kristensen",
+        "umoms": "55,599 kr",
+        "db": "12,129 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "May",
@@ -170,14 +178,6 @@
     {
         "måned": "May",
         "år": "2026",
-        "navn": "Tommy Fodsung-Noen Kristensen",
-        "umoms": "51,568 kr",
-        "db": "11,417 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "May",
-        "år": "2026",
         "navn": "Torstein Sandve",
         "umoms": "46,235 kr",
         "db": "5,356 kr",
@@ -194,6 +194,14 @@
     {
         "måned": "May",
         "år": "2026",
+        "navn": "Tuva Sofie Risdal",
+        "umoms": "42,672 kr",
+        "db": "2,829 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "måned": "May",
+        "år": "2026",
         "navn": "Oscar Gjølme",
         "umoms": "42,317 kr",
         "db": "11,809 kr",
@@ -206,14 +214,6 @@
         "umoms": "42,060 kr",
         "db": "8,540 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "måned": "May",
-        "år": "2026",
-        "navn": "Tuva Sofie Risdal",
-        "umoms": "42,034 kr",
-        "db": "2,594 kr",
-        "butikk": "Larvik"
     },
     {
         "måned": "May",
@@ -242,17 +242,17 @@
     {
         "måned": "May",
         "år": "2026",
-        "navn": "Jelle Soest",
-        "umoms": "38,873 kr",
-        "db": "8,353 kr",
+        "navn": "Tonje W  Madsen",
+        "umoms": "39,340 kr",
+        "db": "6,779 kr",
         "butikk": "Kristiansand"
     },
     {
         "måned": "May",
         "år": "2026",
-        "navn": "Tonje W  Madsen",
-        "umoms": "38,324 kr",
-        "db": "6,621 kr",
+        "navn": "Jelle Soest",
+        "umoms": "38,873 kr",
+        "db": "8,353 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -346,18 +346,18 @@
     {
         "måned": "May",
         "år": "2026",
-        "navn": "Milla F. Moen",
-        "umoms": "19,735 kr",
-        "db": "4,702 kr",
-        "butikk": "Skien"
+        "navn": "Jonas Skog",
+        "umoms": "20,531 kr",
+        "db": "5,438 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "May",
         "år": "2026",
-        "navn": "Jonas Skog",
-        "umoms": "18,904 kr",
-        "db": "5,464 kr",
-        "butikk": "Sandefjord"
+        "navn": "Milla F. Moen",
+        "umoms": "20,398 kr",
+        "db": "4,959 kr",
+        "butikk": "Skien"
     },
     {
         "måned": "May",
@@ -379,8 +379,8 @@
         "måned": "May",
         "år": "2026",
         "navn": "Petter Sandvik",
-        "umoms": "12,215 kr",
-        "db": "3,304 kr",
+        "umoms": "15,415 kr",
+        "db": "4,282 kr",
         "butikk": "Arendal"
     },
     {
@@ -397,6 +397,14 @@
         "navn": "Sander Larsen",
         "umoms": "11,441 kr",
         "db": "1,617 kr",
+        "butikk": "Bamble"
+    },
+    {
+        "måned": "May",
+        "år": "2026",
+        "navn": "Herman Larsen  Helland",
+        "umoms": "11,055 kr",
+        "db": "1,391 kr",
         "butikk": "Bamble"
     },
     {
@@ -434,10 +442,10 @@
     {
         "måned": "May",
         "år": "2026",
-        "navn": "Herman Larsen  Helland",
-        "umoms": "7,138 kr",
-        "db": "479 kr",
-        "butikk": "Bamble"
+        "navn": "Marthine Hansen",
+        "umoms": "8,400 kr",
+        "db": "1,834 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "May",
@@ -506,14 +514,6 @@
     {
         "måned": "May",
         "år": "2026",
-        "navn": "Marthine Hansen",
-        "umoms": "849 kr",
-        "db": "-125 kr",
-        "butikk": "Sandefjord"
-    },
-    {
-        "måned": "May",
-        "år": "2026",
         "navn": "Tor Arnold Hansen",
         "umoms": "535 kr",
         "db": "66 kr",
@@ -578,14 +578,6 @@
     {
         "måned": "May",
         "år": "2026",
-        "navn": "Valeria Salinas",
-        "umoms": "-237 kr",
-        "db": "-112 kr",
-        "butikk": "Kristiansand"
-    },
-    {
-        "måned": "May",
-        "år": "2026",
         "navn": "Mathilde Rougnø",
         "umoms": "-255 kr",
         "db": "-79 kr",
@@ -606,6 +598,14 @@
         "umoms": "-500 kr",
         "db": "-698 kr",
         "butikk": "Bamble"
+    },
+    {
+        "måned": "May",
+        "år": "2026",
+        "navn": "Valeria Salinas",
+        "umoms": "-516 kr",
+        "db": "-233 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "May",
