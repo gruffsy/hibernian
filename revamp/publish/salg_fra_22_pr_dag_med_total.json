@@ -1,5 +1,38 @@
 [
     {
+        "fakturadato": 20260506,
+        "butikk": "Larvik",
+        "Klient": "6",
+        "mmoms": "215 kr",
+        "umoms": "172 kr",
+        "db": "0 kr",
+        "dg": "0.0%",
+        "antord": "1",
+        "prord": "215 kr"
+    },
+    {
+        "fakturadato": 20260506,
+        "butikk": "Bamble",
+        "Klient": "7",
+        "mmoms": "20 kr",
+        "umoms": "16 kr",
+        "db": "-1 kr",
+        "dg": "-10.0%",
+        "antord": "1",
+        "prord": "20 kr"
+    },
+    {
+        "fakturadato": 20260506,
+        "butikk": "Totalt",
+        "Klient": 99,
+        "mmoms": "235 kr",
+        "umoms": "188 kr",
+        "db": "-1 kr",
+        "dg": "-0.5%",
+        "antord": "2",
+        "prord": "117 kr"
+    },
+    {
         "fakturadato": 20260505,
         "butikk": "Skien",
         "Klient": "0",
