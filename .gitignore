@@ -1,0 +1,10 @@
+*.txt
+*.log
+utf.ps1
+*.bat
+*.csv
+lagersaldo/*.csv
+!lagersaldo/lagersaldo.csv
+produkt/*.*
+revamp/jsons/*.*
+revamp/csv/*.*
