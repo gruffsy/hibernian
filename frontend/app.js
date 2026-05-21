@@ -1325,6 +1325,31 @@ function renderSellerList(title, subtitle, rows, metric, expanded = false, query
   `;
 }
 
+function getSellerRankings(state) {
+  return {
+    dayRanking: buildSellerRanking(state.sellerDayRows, state.sellerMetric),
+    monthRanking: buildSellerRanking(state.sellerMonthRows, state.sellerMetric),
+    yearRanking: buildSellerRanking(state.sellerYearRows, state.sellerMetric),
+    query: state.sellerQuery.trim(),
+  };
+}
+
+function renderPeopleCards(state) {
+  const { dayRanking, monthRanking, yearRanking, query } = getSellerRankings(state);
+  const filterRows = (rows) => {
+    if (!query) {
+      return rows;
+    }
+    return rows.filter((row) => sellerMatchesQuery(row.navn, query));
+  };
+
+  return `
+    ${renderSellerList("Dag", formatDateLabel(state.sellerLatestDay), filterRows(dayRanking), state.sellerMetric, false, query)}
+    ${renderSellerList("Måned", monthLabelFromKey(state.sellerLatestMonthKey), filterRows(monthRanking), state.sellerMetric, false, query)}
+    ${renderSellerList("År", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric, false, query)}
+  `;
+}
+
 function stockMatchesQuery(row, query) {
   const normalizedQuery = normalizeText(query);
   if (!normalizedQuery) {
@@ -1620,10 +1645,13 @@ function renderStockSection(state, filteredRows, stats) {
   `;
 }
 
-function renderStockPageCompact(state) {
+function renderStockContent(state) {
   const filteredRows = filterStockRows(state);
   const stats = buildStockStats(filteredRows);
+  return renderStockSection(state, filteredRows, stats);
+}
 
+function renderStockPageCompact(state) {
   return `
     <main class="page-shell">
       ${renderNav(state.page)}
@@ -1631,7 +1659,7 @@ function renderStockPageCompact(state) {
       ${renderStockToolbarClean(state)}
 
       <section class="content-main stock-layout">
-        ${renderStockSection(state, filteredRows, stats)}
+        ${renderStockContent(state)}
       </section>
 
       <section class="day-page-footer">
@@ -1779,18 +1807,6 @@ function renderPeoplePageClean(state) {
 }
 
 function renderPeoplePageCompact(state) {
-  const dayRanking = buildSellerRanking(state.sellerDayRows, state.sellerMetric);
-  const monthRanking = buildSellerRanking(state.sellerMonthRows, state.sellerMetric);
-  const yearRanking = buildSellerRanking(state.sellerYearRows, state.sellerMetric);
-  const query = state.sellerQuery.trim();
-
-  const filterRows = (rows) => {
-    if (!query) {
-      return rows;
-    }
-    return rows.filter((row) => sellerMatchesQuery(row.navn, query));
-  };
-
   return `
     <main class="page-shell">
       ${renderNav(state.page)}
@@ -1811,9 +1827,7 @@ function renderPeoplePageCompact(state) {
       </section>
 
       <section class="content-main seller-columns seller-layout">
-        ${renderSellerList("Dag", formatDateLabel(state.sellerLatestDay), filterRows(dayRanking), state.sellerMetric, false, query)}
-        ${renderSellerList("Måned", monthLabelFromKey(state.sellerLatestMonthKey), filterRows(monthRanking), state.sellerMetric, false, query)}
-        ${renderSellerList("År", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric, false, query)}
+        ${renderPeopleCards(state)}
       </section>
 
       <section class="day-page-footer">
@@ -3097,6 +3111,24 @@ function restoreViewState(viewState) {
   }
 }
 
+function refreshSellerResults(state) {
+  const sellerLayout = document.querySelector(".seller-layout");
+  if (!sellerLayout) {
+    paint(state);
+    return;
+  }
+  sellerLayout.innerHTML = renderPeopleCards(state);
+}
+
+function refreshStockResults(state) {
+  const stockLayout = document.querySelector(".stock-layout");
+  if (!stockLayout) {
+    paint(state);
+    return;
+  }
+  stockLayout.innerHTML = renderStockContent(state);
+}
+
 function bindEvents(state) {
   document.querySelectorAll("[data-action='classic']").forEach((button) => {
     button.addEventListener("click", goClassic);
@@ -3223,17 +3255,15 @@ function bindEvents(state) {
 
   if (sellerSearch) {
     sellerSearch.addEventListener("input", (event) => {
-      const viewState = captureViewState();
       state.sellerQuery = event.target.value;
-      paint(state, viewState);
+      refreshSellerResults(state);
     });
   }
 
   if (stockSearch) {
     stockSearch.addEventListener("input", (event) => {
-      const viewState = captureViewState();
       state.stockQuery = event.target.value;
-      paint(state, viewState);
+      refreshStockResults(state);
     });
   }
 
