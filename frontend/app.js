@@ -1823,36 +1823,19 @@ function renderPeoplePageCompact(state) {
   `;
 }
 
-function renderDaySection(title, dateKey, rows, expanded = false) {
+function renderDaySection(title, dateKey, rows, expanded = false, modifier = "") {
   const totals = getTotals(rows);
+  const detailContent = `${renderDesktopTable(rows)}${renderMobileCards(rows)}`;
 
   return `
-    <details class="day-section" ${expanded ? "open" : ""}>
-      <summary>
-        <div class="day-summary-copy">
-          <p class="section-label">${title}</p>
-          <h2>${formatDayHeading(dateKey)}</h2>
-        </div>
-        ${
-          totals
-            ? `
-          <div class="day-summary-preview">
-            <div class="day-preview-primary">
-              <span>Omsetning</span>
-              <strong>${totals.mmoms}</strong>
-            </div>
-            <div><span>DB</span><strong>${totals.db}</strong></div>
-            <div><span>DG</span><strong>${totals.dg}</strong></div>
-            <div><span>Kunder</span><strong>${totals.antord}</strong></div>
-            <div><span>Per kunde</span><strong>${totals.prord}</strong></div>
-          </div>
-        `
-            : `<span class="section-toggle">Ingen data</span>`
-        }
-      </summary>
-      ${renderDesktopTable(rows)}
-      ${renderDayMobileRows(rows)}
-    </details>
+    ${renderWeekExpandableSummaryCard(
+      `${title} · ${formatDayHeading(dateKey)}`,
+      totals,
+      detailContent,
+      expanded,
+      modifier,
+      `data-day-toggle=\"${dateKey}\"`
+    )}
   `;
 }
 
@@ -1881,7 +1864,13 @@ function renderDayPage(state) {
       <section class="day-stack">
         ${visibleDates
           .map((date, index) =>
-            renderDaySection(daySectionLabels[index] || "Salgsdag", date, state.dayGrouped.get(date) || [], index === 0)
+            renderDaySection(
+              daySectionLabels[index] || "Salgsdag",
+              date,
+              state.dayGrouped.get(date) || [],
+              state.dayExpandedDates.includes(date),
+              index === 0 ? "summary-emphasis" : ""
+            )
           )
           .join("")}
       </section>
@@ -3269,6 +3258,16 @@ function bindEvents(state) {
     });
   });
 
+  document.querySelectorAll("[data-day-toggle]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const key = button.dataset.dayToggle;
+      state.dayExpandedDates = state.dayExpandedDates.includes(key)
+        ? state.dayExpandedDates.filter((value) => value !== key)
+        : [...state.dayExpandedDates, key];
+      paint(state);
+    });
+  });
+
   document.querySelectorAll("[data-month-panels-toggle]").forEach((button) => {
     button.addEventListener("click", () => {
       state.monthPanelsExpanded = !state.monthPanelsExpanded;
@@ -3398,6 +3397,7 @@ async function render() {
       dayMonthDates: dayData.monthDates,
       dayWeekDates: dayData.weekDates,
       selectedDate: dayData.dates[0],
+      dayExpandedDates: [],
       weekOptions,
       selectedWeekKey,
       compareWeekKey,
