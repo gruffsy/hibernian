@@ -8,6 +8,7 @@ Dette dokumentet er oppdatert etter at vi har:
 - redusert betaen til i hovedsak dagsbaserte filer
 - besluttet at `Render` skal beholdes for frontend
 - vurdert sikkerhet for sensitive bedriftsdata og SSO via eksisterende Microsoft 365-kontoer
+- avklart at `Visma` ikke lenger oppdateres og derfor bare er historisk datagrunnlag
 
 De viktigste beslutningene na er:
 
@@ -120,6 +121,13 @@ Etter arbeidet i betaen ser det na ut som malbildet kan forenkles enda mer:
 - `meta.json` beholdes for sist oppdatert
 
 Det betyr at ny pipeline sannsynligvis bor sikte mot et veldig lite sett publiserte filer.
+
+En viktig presisering er at ny pipeline ikke bor bygges rundt to aktive salgskilder.
+
+- `NAV` er aktiv kilde for nye oppdateringer
+- `Visma` bor behandles som historisk seed-data
+
+Se ogsa [docs/architecture/PIPELINE_PLAN.md](/C:/Users/una/Documents/New%20project/hibernian-beta-copy/docs/architecture/PIPELINE_PLAN.md).
 
 ## Maal
 

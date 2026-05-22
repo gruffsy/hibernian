@@ -1,5 +1,7 @@
 *.txt
 *.log
+__pycache__/
+*.pyc
 utf.ps1
 *.bat
 *.csv

@@ -9,6 +9,15 @@ const app = document.getElementById("app");
 const activeVisuals = [];
 let resizeVisualsBound = false;
 
+async function fetchJson(url) {
+  const separator = url.includes("?") ? "&" : "?";
+  const response = await fetch(`${url}${separator}_ts=${Date.now()}`, { cache: "no-store" });
+  if (!response.ok) {
+    throw new Error(`Failed to fetch ${url}: ${response.status}`);
+  }
+  return response.json();
+}
+
 function setPreference(value) {
   localStorage.setItem(PREFERENCE_KEY, value);
 }
@@ -262,11 +271,7 @@ function getStoreRows(rows) {
 
 async function loadUpdatedAt() {
   try {
-    const response = await fetch(META_URL);
-    if (!response.ok) {
-      return null;
-    }
-    const data = await response.json();
+    const data = await fetchJson(META_URL);
     return Array.isArray(data) && data[0] ? data[0].oppdatert : null;
   } catch {
     return null;
@@ -274,12 +279,7 @@ async function loadUpdatedAt() {
 }
 
 async function loadDayData() {
-  const response = await fetch(DAY_DATA_URL);
-  if (!response.ok) {
-    throw new Error("Kunne ikke lese dagsdata.");
-  }
-
-  const rows = (await response.json()).map(enrichRow);
+  const rows = (await fetchJson(DAY_DATA_URL)).map(enrichRow);
   const grouped = new Map();
   const monthDates = new Map();
   const weekDates = new Map();
@@ -359,13 +359,7 @@ function enrichSellerDayRow(row) {
 }
 
 async function loadSellerData() {
-  const dayResponse = await fetch(SELLER_DAY_DATA_URL);
-
-  if (!dayResponse.ok) {
-    throw new Error("Kunne ikke lese selgerdata.");
-  }
-
-  const dayRows = (await dayResponse.json()).map(enrichSellerDayRow);
+  const dayRows = (await fetchJson(SELLER_DAY_DATA_URL)).map(enrichSellerDayRow);
   const latestDay = Math.max(...dayRows.map((row) => row.fakturadato));
   const latestMonthKey = monthKey(
     Number(String(latestDay).slice(0, 4)),
@@ -397,6 +391,16 @@ function readStockValue(row, keys, fallback = 0) {
       return row[key];
     }
   }
+
+  const entries = Object.entries(row);
+  for (const key of keys) {
+    const decodedKey = decodeMojibake(key);
+    const match = entries.find(([candidate]) => decodeMojibake(candidate) === decodedKey);
+    if (match) {
+      return match[1];
+    }
+  }
+
   return fallback;
 }
 
@@ -431,12 +435,7 @@ function enrichStockRow(row) {
 }
 
 async function loadStockData() {
-  const response = await fetch(STOCK_DATA_URL);
-  if (!response.ok) {
-    throw new Error("Kunne ikke lese lagerdata.");
-  }
-
-  const rows = (await response.json()).map(enrichStockRow);
+  const rows = (await fetchJson(STOCK_DATA_URL)).map(enrichStockRow);
   return rows.sort((left, right) => {
     if (right.palletsIncoming !== left.palletsIncoming) {
       return right.palletsIncoming - left.palletsIncoming;

@@ -1,0 +1,18 @@
+{
+  "bootstrap_store_source": "legacy/frontend-static/data/publish/salg_fra_22_pr_dag_med_total.json",
+  "bootstrap_seller_source": "legacy/frontend-static/data/publish/salg_pr_selger_fra_22_pr_dag.json",
+  "nav_store_source": "\\\\PO02-HP\\Salgstall\\hibernian\\revamp\\jsons\\nav_salg_fra_22.json",
+  "nav_seller_source": "\\\\PO02-HP\\Salgstall\\hibernian\\revamp\\jsons\\nav_salg_pr_selger_fra_22.json",
+  "stock_source": "\\\\PO02-HP\\Salgstall\\hibernian\\json\\lager_stock.sql.json",
+  "orders_source": "\\\\PO02-HP\\Salgstall\\hibernian\\json\\bestillinger_stock.sql.json",
+  "historical_store_day": "pipeline/artifacts/raw/historical_store_day.json",
+  "historical_seller_day": "pipeline/artifacts/raw/historical_seller_day.json",
+  "nav_store_day_raw": "pipeline/artifacts/raw/nav_store_day_raw.json",
+  "nav_seller_day_raw": "pipeline/artifacts/raw/nav_seller_day_raw.json",
+  "stock_raw": "pipeline/artifacts/raw/stock_raw.json",
+  "orders_raw": "pipeline/artifacts/raw/orders_raw.json",
+  "store_day_publish": "pipeline/artifacts/publish/store_day.json",
+  "seller_day_publish": "pipeline/artifacts/publish/seller_day.json",
+  "stock_publish": "pipeline/artifacts/publish/stock.json",
+  "meta_publish": "pipeline/artifacts/publish/meta.json"
+}
