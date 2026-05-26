@@ -1,13 +1,44 @@
 const PREFERENCE_KEY = "hibernian.ui.preference";
 const CLASSIC_URL = "./legacy/frontend-static/index.htm";
-const DAY_DATA_URL = "./legacy/frontend-static/data/publish/salg_fra_22_pr_dag_med_total.json";
-const MONTH_COMPARE_URL = "./legacy/frontend-static/data/publish/salg_fra_22_pr_mnd_med_total_og_sammenligning.json";
-const SELLER_DAY_DATA_URL = "./legacy/frontend-static/data/publish/salg_pr_selger_fra_22_pr_dag.json";
-const STOCK_DATA_URL = "./legacy/frontend-static/data/publish/merged_stock_orders.json";
-const META_URL = "./legacy/frontend-static/data/publish/tid.json";
+const R2_BASE_URL = "https://pub-a1dbb638fdc8455c914f9f6c5f5b4564.r2.dev/latest";
+const LOCAL_PUBLISH_BASE_URL = "./legacy/frontend-static/data/publish";
+const DAY_DATA_URL = {
+  local: `${LOCAL_PUBLISH_BASE_URL}/salg_fra_22_pr_dag_med_total.json`,
+  remote: `${R2_BASE_URL}/salg_fra_22_pr_dag_med_total.json`,
+};
+const MONTH_COMPARE_URL = `${LOCAL_PUBLISH_BASE_URL}/salg_fra_22_pr_mnd_med_total_og_sammenligning.json`;
+const SELLER_DAY_DATA_URL = {
+  local: `${LOCAL_PUBLISH_BASE_URL}/salg_pr_selger_fra_22_pr_dag.json`,
+  remote: `${R2_BASE_URL}/salg_pr_selger_fra_22_pr_dag.json`,
+};
+const STOCK_DATA_URL = {
+  local: `${LOCAL_PUBLISH_BASE_URL}/merged_stock_orders.json`,
+  remote: `${R2_BASE_URL}/merged_stock_orders.json`,
+};
+const META_URL = {
+  local: `${LOCAL_PUBLISH_BASE_URL}/tid.json`,
+  remote: `${R2_BASE_URL}/tid.json`,
+};
 const app = document.getElementById("app");
 const activeVisuals = [];
 let resizeVisualsBound = false;
+
+function getDataMode() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("data") === "local" ? "local" : "auto";
+}
+
+function getCandidateUrls(target) {
+  if (typeof target === "string") {
+    return [target];
+  }
+
+  if (getDataMode() === "local") {
+    return [target.local];
+  }
+
+  return [target.remote, target.local];
+}
 
 async function fetchJson(url) {
   const separator = url.includes("?") ? "&" : "?";
@@ -16,6 +47,19 @@ async function fetchJson(url) {
     throw new Error(`Failed to fetch ${url}: ${response.status}`);
   }
   return response.json();
+}
+
+async function fetchJsonWithFallback(target) {
+  const errors = [];
+  for (const url of getCandidateUrls(target)) {
+    try {
+      return await fetchJson(url);
+    } catch (error) {
+      errors.push(error instanceof Error ? error.message : String(error));
+    }
+  }
+
+  throw new Error(errors.join(" | "));
 }
 
 function setPreference(value) {
@@ -271,7 +315,7 @@ function getStoreRows(rows) {
 
 async function loadUpdatedAt() {
   try {
-    const data = await fetchJson(META_URL);
+    const data = await fetchJsonWithFallback(META_URL);
     return Array.isArray(data) && data[0] ? data[0].oppdatert : null;
   } catch {
     return null;
@@ -279,7 +323,7 @@ async function loadUpdatedAt() {
 }
 
 async function loadDayData() {
-  const rows = (await fetchJson(DAY_DATA_URL)).map(enrichRow);
+  const rows = (await fetchJsonWithFallback(DAY_DATA_URL)).map(enrichRow);
   const grouped = new Map();
   const monthDates = new Map();
   const weekDates = new Map();
@@ -359,7 +403,7 @@ function enrichSellerDayRow(row) {
 }
 
 async function loadSellerData() {
-  const dayRows = (await fetchJson(SELLER_DAY_DATA_URL)).map(enrichSellerDayRow);
+  const dayRows = (await fetchJsonWithFallback(SELLER_DAY_DATA_URL)).map(enrichSellerDayRow);
   const latestDay = Math.max(...dayRows.map((row) => row.fakturadato));
   const latestMonthKey = monthKey(
     Number(String(latestDay).slice(0, 4)),
@@ -435,7 +479,7 @@ function enrichStockRow(row) {
 }
 
 async function loadStockData() {
-  const rows = (await fetchJson(STOCK_DATA_URL)).map(enrichStockRow);
+  const rows = (await fetchJsonWithFallback(STOCK_DATA_URL)).map(enrichStockRow);
   return rows.sort((left, right) => {
     if (right.palletsIncoming !== left.palletsIncoming) {
       return right.palletsIncoming - left.palletsIncoming;
