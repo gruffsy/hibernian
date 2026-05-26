@@ -53,6 +53,7 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers.add_parser("build-stock", help="Build the published stock feed from stock and order raw data")
     subparsers.add_parser("publish-local", help="Copy publish artifacts into the beta static data folder")
     subparsers.add_parser("publish-r2", help="Upload publish artifacts to the Cloudflare R2 bucket")
+    subparsers.add_parser("refresh-r2", help="Run the full refresh cycle before publishing to local beta data and Cloudflare R2")
     return parser
 
 
@@ -87,6 +88,79 @@ def _write_example_config(config) -> Path:
     destination.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(source, destination)
     return destination
+
+
+def _run_refresh_r2_cycle(config) -> dict[str, object]:
+    result: dict[str, object] = {"steps": []}
+
+    if not config.historical_store_day.exists() or not config.historical_seller_day.exists():
+        bootstrap_result = run_bootstrap_visma_history(config)
+        result["steps"].append({"name": "bootstrap-visma-history", "result": bootstrap_result})
+
+    nav_store_rows = run_extract_nav_store_day(config)
+    result["steps"].append(
+        {
+            "name": "extract-nav-store-day",
+            "rows": len(nav_store_rows),
+            "output_file": str(config.nav_store_day_raw),
+        }
+    )
+
+    nav_seller_rows = run_extract_nav_seller_day(config)
+    result["steps"].append(
+        {
+            "name": "extract-nav-seller-day",
+            "rows": len(nav_seller_rows),
+            "output_file": str(config.nav_seller_day_raw),
+        }
+    )
+
+    stock_result = run_extract_stock(config)
+    result["steps"].append({"name": "extract-stock", "result": stock_result})
+
+    meta_rows = run_extract_meta(config)
+    result["steps"].append(
+        {
+            "name": "extract-meta",
+            "rows": len(meta_rows),
+            "output_file": str(config.meta_publish),
+        }
+    )
+
+    store_rows = run_build_store_day(config)
+    result["steps"].append(
+        {
+            "name": "build-store-day",
+            "rows": len(store_rows),
+            "output_file": str(config.store_day_publish),
+        }
+    )
+
+    seller_rows = run_build_seller_day(config)
+    result["steps"].append(
+        {
+            "name": "build-seller-day",
+            "rows": len(seller_rows),
+            "output_file": str(config.seller_day_publish),
+        }
+    )
+
+    stock_rows = run_build_stock(config)
+    result["steps"].append(
+        {
+            "name": "build-stock",
+            "rows": len(stock_rows),
+            "output_file": str(config.stock_publish),
+        }
+    )
+
+    copied = publish_to_beta_static_copy(config)
+    result["steps"].append({"name": "publish-local", "copied": copied})
+
+    uploaded = publish_to_r2(config)
+    result["steps"].append({"name": "publish-r2", "uploaded": uploaded})
+
+    return result
 
 
 def main() -> int:
@@ -185,6 +259,11 @@ def main() -> int:
     if args.command == "publish-r2":
         uploaded = publish_to_r2(config)
         print(json.dumps({"uploaded": uploaded}, indent=2))
+        return 0
+
+    if args.command == "refresh-r2":
+        result = _run_refresh_r2_cycle(config)
+        print(json.dumps(result, indent=2))
         return 0
 
     parser.error(f"Unknown command: {args.command}")

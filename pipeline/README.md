@@ -71,6 +71,7 @@ python -m hibernian_pipeline.cli build-seller-day
 python -m hibernian_pipeline.cli build-stock
 python -m hibernian_pipeline.cli publish-local
 python -m hibernian_pipeline.cli publish-r2
+python -m hibernian_pipeline.cli refresh-r2
 ```
 
 `publish-r2` bruker helst R2 access keys fra miljøvariabler:
@@ -94,6 +95,14 @@ Den publiserer disse fire filene til R2 under `latest/`:
 - `salg_pr_selger_fra_22_pr_dag.json`
 - `merged_stock_orders.json`
 - `tid.json`
+
+For scheduleren er `refresh-r2` den viktigste kommandoen. Den kjører hele løypa i riktig rekkefølge:
+
+1. bootstrap historikk ved behov
+2. extract fra NAV og stock-kilder
+3. build av nye publish-artifacts
+4. `publish-local`
+5. `publish-r2`
 
 ## Hva som fortsatt mangler
 
