@@ -8,6 +8,10 @@ DEFAULT_NAV_STORE_SOURCE = Path(r"\\PO02-HP\Salgstall\hibernian\revamp\jsons\nav
 DEFAULT_NAV_SELLER_SOURCE = Path(r"\\PO02-HP\Salgstall\hibernian\revamp\jsons\nav_salg_pr_selger_fra_22.json")
 DEFAULT_STOCK_SOURCE = Path(r"\\PO02-HP\Salgstall\hibernian\json\lager_stock.sql.json")
 DEFAULT_ORDERS_SOURCE = Path(r"\\PO02-HP\Salgstall\hibernian\json\bestillinger_stock.sql.json")
+DEFAULT_CLOUDFLARE_ACCOUNT_ID = "4b045f1e830bb6bad28e4d91716a3a0c"
+DEFAULT_R2_BUCKET_NAME = "hibernian-beta-data"
+DEFAULT_R2_PUBLIC_BASE_URL = "https://pub-a1dbb638fdc8455c914f9f6c5f5b4564.r2.dev"
+DEFAULT_R2_OBJECT_PREFIX = "latest"
 
 
 @dataclass(frozen=True)
@@ -65,6 +69,10 @@ class PipelineConfig:
     seller_day_publish: Path
     stock_publish: Path
     meta_publish: Path
+    cloudflare_account_id: str
+    r2_bucket_name: str
+    r2_public_base_url: str
+    r2_object_prefix: str
 
     def to_dict(self) -> dict[str, object]:
         data = {"paths": self.paths.to_dict()}
@@ -132,4 +140,8 @@ def load_config(pipeline_root: Path) -> PipelineConfig:
         seller_day_publish=resolve_path("seller_day_publish", paths.artifacts_publish_dir / "seller_day.json"),
         stock_publish=resolve_path("stock_publish", paths.artifacts_publish_dir / "stock.json"),
         meta_publish=resolve_path("meta_publish", paths.artifacts_publish_dir / "meta.json"),
+        cloudflare_account_id=values.get("cloudflare_account_id", DEFAULT_CLOUDFLARE_ACCOUNT_ID),
+        r2_bucket_name=values.get("r2_bucket_name", DEFAULT_R2_BUCKET_NAME),
+        r2_public_base_url=values.get("r2_public_base_url", DEFAULT_R2_PUBLIC_BASE_URL),
+        r2_object_prefix=values.get("r2_object_prefix", DEFAULT_R2_OBJECT_PREFIX),
     )

@@ -40,6 +40,7 @@ Den er delt i:
 - `src/hibernian_pipeline/settings.py`
 - `src/hibernian_pipeline/cli.py`
 - `src/hibernian_pipeline/publish/local.py`
+- `src/hibernian_pipeline/publish/r2.py`
 
 ## Hva scaffoldet gjør nå
 
@@ -69,7 +70,30 @@ python -m hibernian_pipeline.cli build-store-day
 python -m hibernian_pipeline.cli build-seller-day
 python -m hibernian_pipeline.cli build-stock
 python -m hibernian_pipeline.cli publish-local
+python -m hibernian_pipeline.cli publish-r2
 ```
+
+`publish-r2` bruker helst R2 access keys fra miljøvariabler:
+
+```powershell
+$env:HIBERNIAN_R2_ACCESS_KEY_ID = "..."
+$env:HIBERNIAN_R2_SECRET_ACCESS_KEY = "..."
+python -m hibernian_pipeline.cli publish-r2
+```
+
+Hvis du heller vil bruke Cloudflare API-token, støttes også:
+
+```powershell
+$env:HIBERNIAN_CLOUDFLARE_API_TOKEN = "..."
+python -m hibernian_pipeline.cli publish-r2
+```
+
+Den publiserer disse fire filene til R2 under `latest/`:
+
+- `salg_fra_22_pr_dag_med_total.json`
+- `salg_pr_selger_fra_22_pr_dag.json`
+- `merged_stock_orders.json`
+- `tid.json`
 
 ## Hva som fortsatt mangler
 

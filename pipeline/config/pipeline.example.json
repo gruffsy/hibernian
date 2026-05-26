@@ -14,5 +14,9 @@
   "store_day_publish": "pipeline/artifacts/publish/store_day.json",
   "seller_day_publish": "pipeline/artifacts/publish/seller_day.json",
   "stock_publish": "pipeline/artifacts/publish/stock.json",
-  "meta_publish": "pipeline/artifacts/publish/meta.json"
+  "meta_publish": "pipeline/artifacts/publish/meta.json",
+  "cloudflare_account_id": "4b045f1e830bb6bad28e4d91716a3a0c",
+  "r2_bucket_name": "hibernian-beta-data",
+  "r2_public_base_url": "https://pub-a1dbb638fdc8455c914f9f6c5f5b4564.r2.dev",
+  "r2_object_prefix": "latest"
 }

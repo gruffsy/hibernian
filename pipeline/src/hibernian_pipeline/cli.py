@@ -23,6 +23,8 @@ from .extract.stock import run as run_extract_stock
 from .extract.stock import describe_step as describe_extract_stock
 from .publish.local import publish_to_beta_static_copy
 from .publish.local import describe_step as describe_publish_local
+from .publish.r2 import publish_to_r2
+from .publish.r2 import describe_step as describe_publish_r2
 from .settings import load_config
 from .shared.models import PipelineStep
 
@@ -50,6 +52,7 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers.add_parser("build-seller-day", help="Build the published daily seller feed from historical and NAV raw data")
     subparsers.add_parser("build-stock", help="Build the published stock feed from stock and order raw data")
     subparsers.add_parser("publish-local", help="Copy publish artifacts into the beta static data folder")
+    subparsers.add_parser("publish-r2", help="Upload publish artifacts to the Cloudflare R2 bucket")
     return parser
 
 
@@ -64,6 +67,7 @@ def _build_plan(config) -> list[PipelineStep]:
         describe_build_seller_day(config),
         describe_build_stock(config),
         describe_publish_local(config),
+        describe_publish_r2(config),
     ]
 
 
@@ -176,6 +180,11 @@ def main() -> int:
     if args.command == "publish-local":
         copied = publish_to_beta_static_copy(config)
         print(json.dumps({"copied": copied}, indent=2))
+        return 0
+
+    if args.command == "publish-r2":
+        uploaded = publish_to_r2(config)
+        print(json.dumps({"uploaded": uploaded}, indent=2))
         return 0
 
     parser.error(f"Unknown command: {args.command}")
