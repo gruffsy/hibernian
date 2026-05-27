@@ -26,6 +26,7 @@ Den er delt i:
 
 - `config/`
 - `artifacts/raw/`
+- `artifacts/state/`
 - `artifacts/publish/`
 - `sql/sales/`
 - `sql/stock/`
@@ -114,3 +115,41 @@ Neste implementasjonssteg er:
 2. historisk Visma-bootstrap
 3. build-logikk for `butikk_dag`, `selger_dag` og `stock`
 4. senere ny publish-mekanisme uten Git
+
+## Neste pipeline-retning
+
+Den nÃ¥vÃ¦rende pipelinen fungerer, men den neste store forbedringen er Ã¥ gjÃ¸re SQL-lesingen inkrementell.
+
+Ny modell:
+
+- historikk eldre enn `7` dager behandles som base
+- bare siste `7` dager leses pÃ¥ nytt fra SQL
+- base og trailing-vindu slÃ¥s sammen i build-steget
+
+Det er scaffoldet egne steder for dette nÃ¥:
+
+- `artifacts/state/`
+- `store_day_base_snapshot.json`
+- `seller_day_base_snapshot.json`
+- `refresh_state.json`
+
+Se [INCREMENTAL_PIPELINE_ARCHITECTURE.md](/C:/Users/una/Documents/New%20project/hibernian-beta-copy/docs/architecture/INCREMENTAL_PIPELINE_ARCHITECTURE.md).
+
+## SQL-first refresh
+
+`refresh-r2` bruker na den nye SQL-baserte innlesingen som standard for butikk- og selgerdata.
+
+Det vil si:
+
+- SQL leses direkte med `7` dagers trailing-vindu
+- build-steget bruker `base + hale`
+- `refresh_state.json` skrives etter vellykket kjoring
+
+Miljovariabler som trengs for direkte NAV-SQL:
+
+```powershell
+$env:HIBERNIAN_NAV_SQL_USERNAME = "..."
+$env:HIBERNIAN_NAV_SQL_PASSWORD = "..."
+```
+
+Hvis disse ikke finnes, faller extract-modulene tilbake til de gamle lokale NAV JSON-kildene. Det gjor overgangen tryggere mens den nye losningen fases inn.

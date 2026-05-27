@@ -20,6 +20,7 @@ De viktigste beslutningene na er:
    - beskyttet datatilgang med `Cloudflare Access`
    - innlogging med `Microsoft Entra ID` fra eksisterende Microsoft 365-tenant
 4. Frontend skal fortsatt vaere en statisk app, men data skal hentes fra et beskyttet endepunkt, ikke fra apne filer.
+5. SQL-lesing skal gjøres inkrementelt, ikke som fullhistorikk ved hver oppdatering.
 
 ## Oppdatert Malbilde
 
@@ -94,6 +95,24 @@ Ansvar:
   - eventuell masking av felter
 
 ## Oppdatert Publiseringsstrategi
+
+## Oppdatert SQL-strategi per 26. mai 2026
+
+Målinger av de opprinnelige live-spørringene viste at den virkelige flaskehalsen nå er SQL-lesingen, ikke frontend, Git eller `R2`.
+
+Derfor skal neste versjon av pipelinen bygges rundt:
+
+- fast historisk base
+- trailing refresh-vindu på `7` dager
+- full frisk henting bare for halen
+
+Det betyr i praksis:
+
+1. historiske dager eldre enn `7` dager behandles som frosset grunnlag
+2. butikk- og selgerspørringene skal bare lese siste `7` dager
+3. build-steget skal erstatte trailing-vinduet i stedet for å lese og aggregere hele historikken på nytt
+
+Se også [docs/architecture/INCREMENTAL_PIPELINE_ARCHITECTURE.md](/C:/Users/una/Documents/New%20project/hibernian-beta-copy/docs/architecture/INCREMENTAL_PIPELINE_ARCHITECTURE.md).
 
 Publisering bor na designes for dette malbildet:
 

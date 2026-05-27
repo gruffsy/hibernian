@@ -27,6 +27,9 @@ from .publish.r2 import publish_to_r2
 from .publish.r2 import describe_step as describe_publish_r2
 from .settings import load_config
 from .shared.models import PipelineStep
+from .shared.state import build_success_state
+from .shared.state import save_refresh_state
+from .shared.window import compute_window_start_date
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -92,6 +95,8 @@ def _write_example_config(config) -> Path:
 
 def _run_refresh_r2_cycle(config) -> dict[str, object]:
     result: dict[str, object] = {"steps": []}
+    window_start_date = compute_window_start_date(trailing_refresh_days=config.trailing_refresh_days)
+    result["window_start_date"] = window_start_date
 
     if not config.historical_store_day.exists() or not config.historical_seller_day.exists():
         bootstrap_result = run_bootstrap_visma_history(config)
@@ -159,6 +164,22 @@ def _run_refresh_r2_cycle(config) -> dict[str, object]:
 
     uploaded = publish_to_r2(config)
     result["steps"].append({"name": "publish-r2", "uploaded": uploaded})
+
+    refresh_state = build_success_state(
+        trailing_refresh_days=config.trailing_refresh_days,
+        window_start_date=window_start_date,
+        store_rows=len(store_rows),
+        seller_rows=len(seller_rows),
+        stock_rows=len(stock_rows),
+    )
+    save_refresh_state(config.refresh_state_file, refresh_state)
+    result["steps"].append(
+        {
+            "name": "write-refresh-state",
+            "output_file": str(config.refresh_state_file),
+            "state": refresh_state.to_dict(),
+        }
+    )
 
     return result
 

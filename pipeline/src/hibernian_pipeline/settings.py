@@ -8,6 +8,9 @@ DEFAULT_NAV_STORE_SOURCE = Path(r"\\PO02-HP\Salgstall\hibernian\revamp\jsons\nav
 DEFAULT_NAV_SELLER_SOURCE = Path(r"\\PO02-HP\Salgstall\hibernian\revamp\jsons\nav_salg_pr_selger_fra_22.json")
 DEFAULT_STOCK_SOURCE = Path(r"\\PO02-HP\Salgstall\hibernian\json\lager_stock.sql.json")
 DEFAULT_ORDERS_SOURCE = Path(r"\\PO02-HP\Salgstall\hibernian\json\bestillinger_stock.sql.json")
+DEFAULT_NAV_SQL_SERVER = "mf-ls-sql02.norwayeast.cloudapp.azure.com"
+DEFAULT_NAV_SQL_DATABASE = "Megaflis_AS"
+DEFAULT_NAV_SQL_DRIVER = "ODBC Driver 18 for SQL Server"
 DEFAULT_CLOUDFLARE_ACCOUNT_ID = "4b045f1e830bb6bad28e4d91716a3a0c"
 DEFAULT_R2_BUCKET_NAME = "hibernian-beta-data"
 DEFAULT_R2_PUBLIC_BASE_URL = "https://pub-a1dbb638fdc8455c914f9f6c5f5b4564.r2.dev"
@@ -19,6 +22,7 @@ class PipelinePaths:
     pipeline_root: Path
     config_dir: Path
     artifacts_raw_dir: Path
+    artifacts_state_dir: Path
     artifacts_publish_dir: Path
     logs_dir: Path
     scripts_dir: Path
@@ -42,6 +46,7 @@ class PipelinePaths:
         return (
             self.config_dir,
             self.artifacts_raw_dir,
+            self.artifacts_state_dir,
             self.artifacts_publish_dir,
             self.logs_dir,
             self.scripts_dir,
@@ -57,6 +62,8 @@ class PipelineConfig:
     bootstrap_seller_source: Path
     nav_store_source: Path
     nav_seller_source: Path
+    nav_store_sql_file: Path
+    nav_seller_sql_file: Path
     stock_source: Path
     orders_source: Path
     historical_store_day: Path
@@ -65,10 +72,18 @@ class PipelineConfig:
     nav_seller_day_raw: Path
     stock_raw: Path
     orders_raw: Path
+    store_day_base_snapshot: Path
+    seller_day_base_snapshot: Path
+    refresh_state_file: Path
     store_day_publish: Path
     seller_day_publish: Path
     stock_publish: Path
     meta_publish: Path
+    trailing_refresh_days: int
+    nav_sql_server: str
+    nav_sql_database: str
+    nav_sql_driver: str
+    nav_sql_use_snapshot_isolation: bool
     cloudflare_account_id: str
     r2_bucket_name: str
     r2_public_base_url: str
@@ -90,6 +105,7 @@ def _default_paths(pipeline_root: Path) -> PipelinePaths:
         pipeline_root=pipeline_root,
         config_dir=pipeline_root / "config",
         artifacts_raw_dir=pipeline_root / "artifacts" / "raw",
+        artifacts_state_dir=pipeline_root / "artifacts" / "state",
         artifacts_publish_dir=pipeline_root / "artifacts" / "publish",
         logs_dir=pipeline_root / "logs",
         scripts_dir=pipeline_root / "scripts",
@@ -116,6 +132,14 @@ def load_config(pipeline_root: Path) -> PipelineConfig:
         candidate = Path(raw)
         return candidate if candidate.is_absolute() else pipeline_root.parent / candidate
 
+    def resolve_bool(key: str, default: bool) -> bool:
+        raw = values.get(key)
+        if raw is None:
+            return default
+        if isinstance(raw, bool):
+            return raw
+        return str(raw).strip().lower() in {"1", "true", "yes", "on"}
+
     return PipelineConfig(
         paths=paths,
         bootstrap_store_source=resolve_path(
@@ -128,6 +152,8 @@ def load_config(pipeline_root: Path) -> PipelineConfig:
         ),
         nav_store_source=resolve_path("nav_store_source", DEFAULT_NAV_STORE_SOURCE),
         nav_seller_source=resolve_path("nav_seller_source", DEFAULT_NAV_SELLER_SOURCE),
+        nav_store_sql_file=resolve_path("nav_store_sql_file", paths.sql_sales_dir / "nav_store_day_window.sql"),
+        nav_seller_sql_file=resolve_path("nav_seller_sql_file", paths.sql_sales_dir / "nav_seller_day_window.sql"),
         stock_source=resolve_path("stock_source", DEFAULT_STOCK_SOURCE),
         orders_source=resolve_path("orders_source", DEFAULT_ORDERS_SOURCE),
         historical_store_day=resolve_path("historical_store_day", paths.artifacts_raw_dir / "historical_store_day.json"),
@@ -136,10 +162,27 @@ def load_config(pipeline_root: Path) -> PipelineConfig:
         nav_seller_day_raw=resolve_path("nav_seller_day_raw", paths.artifacts_raw_dir / "nav_seller_day_raw.json"),
         stock_raw=resolve_path("stock_raw", paths.artifacts_raw_dir / "stock_raw.json"),
         orders_raw=resolve_path("orders_raw", paths.artifacts_raw_dir / "orders_raw.json"),
+        store_day_base_snapshot=resolve_path(
+            "store_day_base_snapshot",
+            paths.artifacts_state_dir / "store_day_base_snapshot.json",
+        ),
+        seller_day_base_snapshot=resolve_path(
+            "seller_day_base_snapshot",
+            paths.artifacts_state_dir / "seller_day_base_snapshot.json",
+        ),
+        refresh_state_file=resolve_path(
+            "refresh_state_file",
+            paths.artifacts_state_dir / "refresh_state.json",
+        ),
         store_day_publish=resolve_path("store_day_publish", paths.artifacts_publish_dir / "store_day.json"),
         seller_day_publish=resolve_path("seller_day_publish", paths.artifacts_publish_dir / "seller_day.json"),
         stock_publish=resolve_path("stock_publish", paths.artifacts_publish_dir / "stock.json"),
         meta_publish=resolve_path("meta_publish", paths.artifacts_publish_dir / "meta.json"),
+        trailing_refresh_days=int(values.get("trailing_refresh_days", 7)),
+        nav_sql_server=values.get("nav_sql_server", DEFAULT_NAV_SQL_SERVER),
+        nav_sql_database=values.get("nav_sql_database", DEFAULT_NAV_SQL_DATABASE),
+        nav_sql_driver=values.get("nav_sql_driver", DEFAULT_NAV_SQL_DRIVER),
+        nav_sql_use_snapshot_isolation=resolve_bool("nav_sql_use_snapshot_isolation", True),
         cloudflare_account_id=values.get("cloudflare_account_id", DEFAULT_CLOUDFLARE_ACCOUNT_ID),
         r2_bucket_name=values.get("r2_bucket_name", DEFAULT_R2_BUCKET_NAME),
         r2_public_base_url=values.get("r2_public_base_url", DEFAULT_R2_PUBLIC_BASE_URL),

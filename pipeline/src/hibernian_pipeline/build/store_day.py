@@ -16,6 +16,8 @@ from ..shared.legacy_format import parse_date
 from ..shared.legacy_format import parse_number
 from ..shared.legacy_format import parse_ratio
 from ..shared.models import PipelineStep
+from ..shared.window import compute_window_start_date
+from ..shared.window import filter_rows_before_date
 
 
 def planned_inputs(config: PipelineConfig) -> list[Path]:
@@ -145,11 +147,21 @@ def _format_row(row: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def build_store_day_payload(
+def build_base_snapshot_rows(
     historical_rows: list[dict[str, Any]],
+    *,
+    window_start_date: int,
+) -> list[dict[str, Any]]:
+    normalized = [_normalize_row(row) for row in historical_rows]
+    normalized = [row for row in normalized if row["butikk"] != TOTAL_STORE_NAME]
+    return filter_rows_before_date(normalized, field_name="fakturadato", start_date=window_start_date)
+
+
+def build_store_day_payload(
+    base_rows: list[dict[str, Any]],
     nav_rows: list[dict[str, Any]],
 ) -> list[dict[str, Any]]:
-    merged_rows = _merge_rows(historical_rows, nav_rows)
+    merged_rows = _merge_rows(base_rows, nav_rows)
     rows_with_totals = _append_totals(merged_rows)
     rows_with_totals.sort(key=_sort_key)
     return [_format_row(row) for row in rows_with_totals]
@@ -158,6 +170,9 @@ def build_store_day_payload(
 def run(config: PipelineConfig) -> list[dict[str, Any]]:
     historical_rows = read_json(config.historical_store_day) if config.historical_store_day.exists() else []
     nav_rows = read_json(config.nav_store_day_raw) if config.nav_store_day_raw.exists() else []
-    payload = build_store_day_payload(historical_rows, nav_rows)
+    window_start_date = compute_window_start_date(trailing_refresh_days=config.trailing_refresh_days)
+    base_rows = build_base_snapshot_rows(historical_rows, window_start_date=window_start_date)
+    write_json(config.store_day_base_snapshot, [_format_row(row) for row in sorted(base_rows, key=_sort_key)])
+    payload = build_store_day_payload(base_rows, nav_rows)
     write_json(planned_output(config), payload)
     return payload

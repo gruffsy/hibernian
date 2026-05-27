@@ -2,6 +2,31 @@
 
 ## Oppdatert premiss per 21. mai 2026
 
+## Oppdatert premiss per 26. mai 2026
+
+Etter måling av de opprinnelige live-spørringene mot `Megaflis_AS` er det tydelig at neste steg må være en inkrementell pipeline:
+
+- `nav_store_day`: ca. `9.1 s`
+- `nav_seller_day`: ca. `22.6 s`
+- `stock`: ca. `3.8 s`
+
+I tillegg står databasen med:
+
+- `READ_COMMITTED_SNAPSHOT = false`
+- `SNAPSHOT ISOLATION = ON`
+
+Det betyr at fullhistorikkspørringene ikke bare er trege; de øker også risikoen for blocking fordi vanlige `SELECT`-spørringer fortsatt kan ta delte låser under `READ COMMITTED`.
+
+Ny anbefaling er derfor:
+
+- frys historikk eldre enn trailing-vinduet
+- les bare siste `7` dager på nytt ved hver kjøring
+- bygg publiserte filer av:
+  - fast base
+  - fersk trailing-hale
+
+Se også [INCREMENTAL_PIPELINE_ARCHITECTURE.md](/C:/Users/una/Documents/New%20project/hibernian-beta-copy/docs/architecture/INCREMENTAL_PIPELINE_ARCHITECTURE.md).
+
 Dette dokumentet erstatter den tidligere antakelsen om at `Visma` fortsatt er en aktiv datakilde.
 
 Ny, viktig avklaring:

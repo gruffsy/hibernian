@@ -7,7 +7,7 @@ name = "hibernian-pipeline"
 version = "0.1.0"
 description = "Local data pipeline scaffold for the Hibernian beta app."
 requires-python = ">=3.11"
-dependencies = []
+dependencies = ["pyodbc>=5.0"]
 
 [tool.setuptools]
 package-dir = {"" = "src"}
