@@ -18,6 +18,21 @@
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue-axios@2.1.4/dist/vue-axios.min.js"></script>
+    <style>
+      .version-switch {
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        z-index: 9999;
+        padding: 12px 16px;
+        border-radius: 999px;
+        background: #111827;
+        color: #f9fafb;
+        text-decoration: none;
+        font-weight: 600;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+    </style>
   </head>
 
   <body>
@@ -453,6 +468,12 @@
     </div>
 
     <!-- Add the following at the end of your body tag -->
+    <a
+      class="version-switch"
+      href="../../index.htm?ui=beta"
+      onclick="localStorage.setItem('hibernian.ui.preference', 'beta')"
+      >Bytt til ny beta</a
+    >
 
     <script src="https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.umd.min.js"></script>
