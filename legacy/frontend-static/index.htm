@@ -19,28 +19,22 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue-axios@2.1.4/dist/vue-axios.min.js"></script>
     <style>
-      .version-switch {
-        position: fixed;
-        right: 16px;
-        bottom: 16px;
-        z-index: 9999;
-        padding: 12px 16px;
-        border-radius: 999px;
-        background: #111827;
-        color: #f9fafb;
+      .beta-menu-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 48px;
+        padding: 0 12px;
+        color: rgba(0, 0, 0, 0.87);
         text-decoration: none;
-        font-weight: 600;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 12px;
       }
 
-      @media (max-width: 640px) {
-        .version-switch {
-          right: 20px;
-          bottom: 20px;
-          padding: 16px 20px;
-          font-size: 15px;
-          line-height: 1.2;
-        }
+      .beta-menu-link:focus,
+      .beta-menu-link:hover {
+        color: #1976d2;
       }
     </style>
   </head>
@@ -70,6 +64,14 @@
             </div>
             <div class="q-pa-md">
               <q-tab name="stock" label="Stock Supply" />
+            </div>
+            <div class="q-pa-md">
+              <a
+                class="beta-menu-link"
+                href="../../index.htm?ui=beta"
+                onclick="localStorage.setItem('hibernian.ui.preference', 'beta')"
+                >Beta</a
+              >
             </div>
           </q-tabs>
 
@@ -476,14 +478,6 @@
         </q-card>
       </div>
     </div>
-
-    <!-- Add the following at the end of your body tag -->
-    <a
-      class="version-switch"
-      href="../../index.htm?ui=beta"
-      onclick="localStorage.setItem('hibernian.ui.preference', 'beta')"
-      >Bytt til ny beta</a
-    >
 
     <script src="https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/quasar@1.12.8/dist/quasar.umd.min.js"></script>
