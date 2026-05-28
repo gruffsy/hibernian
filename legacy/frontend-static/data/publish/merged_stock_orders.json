@@ -1368,12 +1368,12 @@
     "Paller på vei": 28,
     "Bestilling på vei": [
       {
-        "Ukenr": "32/2026",
-        "Antall": 552.96
-      },
-      {
         "Ukenr": "34/2026",
         "Antall": 737.28
+      },
+      {
+        "Ukenr": "32/2026",
+        "Antall": 552.96
       }
     ]
   },
@@ -1534,11 +1534,11 @@
         "Antall": 46.08
       },
       {
-        "Ukenr": "32/2026",
+        "Ukenr": "34/2026",
         "Antall": 276.48
       },
       {
-        "Ukenr": "34/2026",
+        "Ukenr": "32/2026",
         "Antall": 276.48
       }
     ]
@@ -1642,11 +1642,11 @@
         "Antall": 92.16
       },
       {
-        "Ukenr": "32/2026",
+        "Ukenr": "34/2026",
         "Antall": 184.32
       },
       {
-        "Ukenr": "34/2026",
+        "Ukenr": "32/2026",
         "Antall": 184.32
       }
     ]
@@ -1970,9 +1970,9 @@
   {
     "Prodno": "SISGM30",
     "Beskrivelse": "SIS GRANITTMUR 30X30X100",
-    "antall på lager": 66.0,
+    "antall på lager": 48.0,
     "antall pr pall": 6.0,
-    "Paller på lager": 11,
+    "Paller på lager": 8,
     "Paller på vei": 0
   },
   {

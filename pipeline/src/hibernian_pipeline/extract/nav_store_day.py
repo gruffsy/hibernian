@@ -49,6 +49,7 @@ def run(config: PipelineConfig) -> list[dict[str, Any]]:
         trailing_refresh_days=config.trailing_refresh_days,
         existing_rows=existing_rows,
         field_name="fakturadato",
+        backfill_start_date=config.backfill_start_date,
     )
     rows = _load_rows(config, window_start_date=window_start_date)
     payload = [_normalize_row(row) for row in rows]

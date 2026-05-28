@@ -3400,6 +3400,7 @@ function bindEvents(state) {
   document.querySelectorAll("[data-page]").forEach((button) => {
     button.addEventListener("click", () => {
       state.page = button.dataset.page;
+      state.chromeExpanded = false;
       syncUrl(state);
       paint(state);
     });

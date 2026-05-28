@@ -21,6 +21,7 @@
   "stock_publish": "pipeline/artifacts/publish/stock.json",
   "meta_publish": "pipeline/artifacts/publish/meta.json",
   "trailing_refresh_days": 7,
+  "backfill_start_date": null,
   "nav_sql_server": "mf-ls-sql02.norwayeast.cloudapp.azure.com",
   "nav_sql_database": "Megaflis_AS",
   "nav_sql_driver": "ODBC Driver 18 for SQL Server",

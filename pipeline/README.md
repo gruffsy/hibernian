@@ -153,3 +153,12 @@ $env:HIBERNIAN_NAV_SQL_PASSWORD = "..."
 ```
 
 Hvis disse ikke finnes, faller extract-modulene tilbake til de gamle lokale NAV JSON-kildene. Det gjor overgangen tryggere mens den nye losningen fases inn.
+
+For a tvinge en historisk backfill av en enkelt dato, for eksempel `20260515`, kan du sette:
+
+```powershell
+$env:HIBERNIAN_BACKFILL_START_DATE = "20260515"
+python -m hibernian_pipeline.cli refresh-r2
+```
+
+Det gjor at extract-steget leser fra denne datoen og fremover for den kjoringen, men vanlig drift fortsetter som vanlig nar variabelen ikke er satt.

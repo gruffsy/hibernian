@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import asdict, dataclass
 import json
+import os
 from pathlib import Path
 
 DEFAULT_NAV_STORE_SOURCE = Path(r"\\PO02-HP\Salgstall\hibernian\revamp\jsons\nav_salg_fra_22.json")
@@ -80,6 +81,7 @@ class PipelineConfig:
     stock_publish: Path
     meta_publish: Path
     trailing_refresh_days: int
+    backfill_start_date: int | None
     nav_sql_server: str
     nav_sql_database: str
     nav_sql_driver: str
@@ -140,6 +142,14 @@ def load_config(pipeline_root: Path) -> PipelineConfig:
             return raw
         return str(raw).strip().lower() in {"1", "true", "yes", "on"}
 
+    def resolve_optional_int(key: str) -> int | None:
+        raw = os.environ.get(key)
+        if raw in (None, ""):
+            raw = values.get(key)
+        if raw in (None, ""):
+            return None
+        return int(raw)
+
     return PipelineConfig(
         paths=paths,
         bootstrap_store_source=resolve_path(
@@ -179,6 +189,7 @@ def load_config(pipeline_root: Path) -> PipelineConfig:
         stock_publish=resolve_path("stock_publish", paths.artifacts_publish_dir / "stock.json"),
         meta_publish=resolve_path("meta_publish", paths.artifacts_publish_dir / "meta.json"),
         trailing_refresh_days=int(values.get("trailing_refresh_days", 7)),
+        backfill_start_date=resolve_optional_int("backfill_start_date"),
         nav_sql_server=values.get("nav_sql_server", DEFAULT_NAV_SQL_SERVER),
         nav_sql_database=values.get("nav_sql_database", DEFAULT_NAV_SQL_DATABASE),
         nav_sql_driver=values.get("nav_sql_driver", DEFAULT_NAV_SQL_DRIVER),

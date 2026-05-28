@@ -3,6 +3,7 @@ param(
     [string]$NavSqlPassword = $env:HIBERNIAN_NAV_SQL_PASSWORD,
     [string]$R2AccessKeyId = $env:HIBERNIAN_R2_ACCESS_KEY_ID,
     [string]$R2SecretAccessKey = $env:HIBERNIAN_R2_SECRET_ACCESS_KEY,
+    [string]$BackfillStartDate = $env:HIBERNIAN_BACKFILL_START_DATE,
     [string]$PipelineRoot = ".",
     [string]$SecretsFile = ".\config\secrets.local.ps1"
 )
@@ -38,5 +39,8 @@ $env:HIBERNIAN_NAV_SQL_USERNAME = $NavSqlUsername
 $env:HIBERNIAN_NAV_SQL_PASSWORD = $NavSqlPassword
 $env:HIBERNIAN_R2_ACCESS_KEY_ID = $R2AccessKeyId
 $env:HIBERNIAN_R2_SECRET_ACCESS_KEY = $R2SecretAccessKey
+if (-not [string]::IsNullOrWhiteSpace($BackfillStartDate)) {
+    $env:HIBERNIAN_BACKFILL_START_DATE = $BackfillStartDate
+}
 
 python -m hibernian_pipeline.cli --pipeline-root $PipelineRoot refresh-r2

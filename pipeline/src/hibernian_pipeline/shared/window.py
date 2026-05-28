@@ -26,16 +26,18 @@ def compute_extract_start_date(
     trailing_refresh_days: int,
     existing_rows: Iterable[dict],
     field_name: str,
+    backfill_start_date: int | None = None,
     today: date | None = None,
 ) -> int:
     window_start_date = compute_window_start_date(trailing_refresh_days=trailing_refresh_days, today=today)
     existing_dates = [parse_date(row.get(field_name)) for row in existing_rows]
     latest_existing_before_window = max((date_key for date_key in existing_dates if date_key < window_start_date), default=None)
-    if latest_existing_before_window is None:
-        return window_start_date
-
-    gap_fill_start = shift_date_key(latest_existing_before_window, days=0)
-    return min(window_start_date, gap_fill_start)
+    candidates = [window_start_date]
+    if latest_existing_before_window is not None:
+        candidates.append(shift_date_key(latest_existing_before_window, days=0))
+    if backfill_start_date is not None:
+        candidates.append(int(backfill_start_date))
+    return min(candidates)
 
 
 def filter_rows_on_or_after_date(rows: Iterable[dict], *, field_name: str, start_date: int) -> list[dict]:

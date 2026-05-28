@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import os
 
 from hibernian_pipeline.bootstrap.visma_history import run as run_bootstrap_visma_history
 from hibernian_pipeline.build.seller_day import run as run_build_seller_day
@@ -20,9 +21,12 @@ from hibernian_pipeline.shared.window import compute_window_start_date
 
 def main() -> int:
     config = load_config(Path("."))
+    backfill_start_date = os.environ.get("HIBERNIAN_BACKFILL_START_DATE")
     result: dict[str, object] = {"steps": []}
     window_start_date = compute_window_start_date(trailing_refresh_days=config.trailing_refresh_days)
     result["window_start_date"] = window_start_date
+    if backfill_start_date not in (None, ""):
+        result["backfill_start_date"] = int(backfill_start_date)
 
     if not config.historical_store_day.exists() or not config.historical_seller_day.exists():
         bootstrap_result = run_bootstrap_visma_history(config)
