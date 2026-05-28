@@ -819,6 +819,177 @@ function buildWeekSeries(state, weekKey, cutoffIsoDay = null) {
   };
 }
 
+function formatComparisonDayLabel(dateKey) {
+  if (!dateKey) {
+    return "";
+  }
+
+  const date = toUtcDate(dateKey);
+  const weekday = new Intl.DateTimeFormat("nb-NO", { weekday: "short", timeZone: "UTC" })
+    .format(date)
+    .replace(".", "")
+    .toLowerCase();
+  const day = new Intl.DateTimeFormat("nb-NO", { day: "2-digit", timeZone: "UTC" }).format(date);
+  return `${weekday} ${day}`;
+}
+
+function getPreviousYearMonthKey(state, selectedMonthKey) {
+  const [year, month] = selectedMonthKey.split("-").map(Number);
+  const preferred = monthKey(year - 1, month);
+  if (state.dayMonthDates.has(preferred)) {
+    return preferred;
+  }
+
+  const fallback = state.monthOptions.find((key) => {
+    const [candidateYear, candidateMonth] = key.split("-").map(Number);
+    return candidateMonth === month && candidateYear < year;
+  });
+
+  return fallback || null;
+}
+
+function buildDayMonthComparison(state, selectedDate, metric = "gross") {
+  const { year, month } = parseDateKey(selectedDate);
+  const selectedMonthKey = monthKey(year, month);
+  const compareMonthKey = getPreviousYearMonthKey(state, selectedMonthKey);
+
+  if (!compareMonthKey) {
+    return null;
+  }
+
+  const selectedDates = state.dayMonthDates.get(selectedMonthKey) || [];
+  const compareDates = state.dayMonthDates.get(compareMonthKey) || [];
+
+  if (!selectedDates.length || !compareDates.length) {
+    return null;
+  }
+
+  const rowCount = Math.max(selectedDates.length, compareDates.length);
+  const rows = [];
+  let runningDiff = 0;
+  let selectedTotal = 0;
+  let compareTotal = 0;
+
+  for (let index = 0; index < rowCount; index += 1) {
+    const compareDate = compareDates[index] || null;
+    const selectedMonthDate = selectedDates[index] || null;
+    const compareTotals = compareDate ? getTotals(state.dayGrouped.get(compareDate) || []) : null;
+    const selectedTotals = selectedMonthDate ? getTotals(state.dayGrouped.get(selectedMonthDate) || []) : null;
+    const compareValue = metric === "db" ? compareTotals?.dbAmount || 0 : compareTotals?.gross || 0;
+    const selectedValue = metric === "db" ? selectedTotals?.dbAmount || 0 : selectedTotals?.gross || 0;
+
+    compareTotal += compareValue;
+    selectedTotal += selectedValue;
+    runningDiff += selectedValue - compareValue;
+
+    rows.push({
+      compareDate,
+      selectedDate: selectedMonthDate,
+      compareLabel: formatComparisonDayLabel(compareDate),
+      selectedLabel: formatComparisonDayLabel(selectedMonthDate),
+      compareValue,
+      selectedValue,
+      runningDiff,
+    });
+  }
+
+  return {
+    metric,
+    metricLabel: metric === "db" ? "DB dag for dag" : "Omsetning dag for dag",
+    selectedMonthKey,
+    compareMonthKey,
+    selectedYear: year,
+    compareYear: Number(compareMonthKey.slice(0, 4)),
+    rows,
+    selectedTotal,
+    compareTotal,
+    selectedCount: selectedDates.length,
+    compareCount: compareDates.length,
+    selectedAverage: selectedDates.length ? selectedTotal / selectedDates.length : 0,
+    compareAverage: compareDates.length ? compareTotal / compareDates.length : 0,
+    finalDiff: selectedTotal - compareTotal,
+  };
+}
+
+function renderDayMonthComparisonCard(comparison) {
+  if (!comparison) {
+    return "";
+  }
+
+  const diffClass = comparison.finalDiff >= 0 ? "is-positive" : "is-negative";
+
+  return `
+    <article class="day-comparison-card">
+      <div class="day-comparison-head">
+        <div>
+          <p class="summary-label">${comparison.metricLabel}</p>
+          <h2>${monthLabelFromKey(comparison.selectedMonthKey)} mot ${monthLabelFromKey(comparison.compareMonthKey)}</h2>
+        </div>
+        <div class="day-comparison-kpi ${diffClass}">
+          <span>Akk. diff</span>
+          <strong>${formatSignedCurrency(comparison.finalDiff)}</strong>
+        </div>
+      </div>
+
+      <div class="day-comparison-table-shell">
+        <table class="day-comparison-table">
+          <thead>
+            <tr>
+              <th colspan="2">${comparison.compareYear}</th>
+              <th colspan="2">${comparison.selectedYear}</th>
+              <th rowspan="2">Akk. diff</th>
+            </tr>
+            <tr>
+              <th>Dag</th>
+              <th>Beløp</th>
+              <th>Beløp</th>
+              <th>Dag</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${comparison.rows
+              .map(
+                (row) => `
+                  <tr>
+                    <td class="day-label-cell">${row.compareLabel || ""}</td>
+                    <td>${row.compareDate ? formatCurrency(row.compareValue) : ""}</td>
+                    <td>${row.selectedDate ? formatCurrency(row.selectedValue) : ""}</td>
+                    <td class="day-label-cell">${row.selectedLabel || ""}</td>
+                    <td class="${row.runningDiff >= 0 ? "is-positive" : "is-negative"}">${formatSignedCurrency(row.runningDiff)}</td>
+                  </tr>
+                `
+              )
+              .join("")}
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Totalt</th>
+              <th>${formatCurrency(comparison.compareTotal)}</th>
+              <th>${formatCurrency(comparison.selectedTotal)}</th>
+              <th></th>
+              <th class="${diffClass}">${formatSignedCurrency(comparison.finalDiff)}</th>
+            </tr>
+            <tr>
+              <th>Snitt</th>
+              <th>${formatCurrency(comparison.compareAverage)}</th>
+              <th>${formatCurrency(comparison.selectedAverage)}</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>Salgsdager</th>
+              <th>${formatInteger(comparison.compareCount)}</th>
+              <th>${formatInteger(comparison.selectedCount)}</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </article>
+  `;
+}
+
 function sellerMatchesQuery(name, query) {
   const normalizedName = normalizeText(name);
   const normalizedQuery = normalizeText(query);
@@ -1900,6 +2071,8 @@ function renderDayPage(state) {
   const selectedIndex = state.dayDates.indexOf(state.selectedDate);
   const visibleDates = state.dayDates.slice(selectedIndex, selectedIndex + 3);
   const daySectionLabels = ["Valgt dag", "Forrige salgsdag", "Tredje siste salgsdag"];
+  const grossComparison = buildDayMonthComparison(state, state.selectedDate, "gross");
+  const dbComparison = buildDayMonthComparison(state, state.selectedDate, "db");
 
   return `
     <main class="page-shell">
@@ -1931,6 +2104,17 @@ function renderDayPage(state) {
           )
           .join("")}
       </section>
+
+      ${
+        grossComparison || dbComparison
+          ? `
+            <section class="day-comparison-stack">
+              ${renderDayMonthComparisonCard(grossComparison)}
+              ${renderDayMonthComparisonCard(dbComparison)}
+            </section>
+          `
+          : ""
+      }
 
       <section class="day-page-footer">
         <button class="button button-secondary" type="button" data-action="classic">Bytt til klassisk</button>
