@@ -1113,10 +1113,28 @@ function renderDeltaCard(selectedTotals, compareTotals) {
   `;
 }
 
-function renderWeekExpandableSummaryCard(title, totals, detailContent, expanded = false, modifier = "", toggleAttr = "data-week-panels-toggle") {
+function renderWeekExpandableSummaryCard(
+  title,
+  totals,
+  detailContent,
+  expanded = false,
+  modifier = "",
+  toggleAttr = "data-week-panels-toggle",
+  secondaryLabel = "",
+  secondaryValue = ""
+) {
   if (!totals) {
     return "";
   }
+
+  const secondaryBlock = secondaryLabel && secondaryValue
+    ? `
+        <div class="summary-side">
+          <span>${secondaryLabel}</span>
+          <strong>${secondaryValue}</strong>
+        </div>
+      `
+    : "";
 
   return `
     <article class="summary-card week-summary-card ${modifier} ${expanded ? "is-expanded" : ""}">
@@ -1127,7 +1145,12 @@ function renderWeekExpandableSummaryCard(title, totals, detailContent, expanded 
         aria-expanded="${expanded ? "true" : "false"}"
       >
         <p class="summary-label">${title}</p>
-        <h3>${totals.mmoms}</h3>
+        <div class="summary-topline">
+          <div class="summary-topline-main">
+            <h3>${totals.mmoms}</h3>
+          </div>
+          ${secondaryBlock}
+        </div>
         <div class="summary-grid">
           <div><span>DB</span><strong>${totals.db}</strong></div>
           <div><span>DG</span><strong>${totals.dg}</strong></div>
@@ -2114,7 +2137,9 @@ function renderDaySection(dateKey, rows, expanded = false, modifier = "") {
       detailContent,
       expanded,
       modifier,
-      `data-day-toggle=\"${dateKey}\"`
+      `data-day-toggle=\"${dateKey}\"`,
+      "U/moms",
+      totals.umoms
     )}
   `;
 }

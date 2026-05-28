@@ -15,9 +15,9 @@ Rules:
 status: complete
 owner: codex
 started_at: 2026-05-28T23:40:50
-updated_at: 2026-05-28T23:41:31
-objective: Restore chrome menu to always expanded
-scope: frontend/app.js
+updated_at: 2026-05-28T23:51:10
+objective: Add U/moms to day summary cards
+scope: frontend/app.js, frontend/styles.css
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
 blockers: ingen
@@ -186,5 +186,16 @@ owner: codex
 status: complete
 summary: Removed the chrome collapse/scroll behavior so the navigation stays expanded and no longer responds by hiding itself when tapped or scrolled.
 files: frontend/app.js
+next: <ikke spesifisert>
+```
+
+### 2026-05-28T23:51:10
+
+```text
+timestamp: 2026-05-28T23:51:10
+owner: codex
+status: complete
+summary: Added U/moms as a right-side value in the day summary cards so the mobile and desktop summaries have more balanced visual weight.
+files: frontend/app.js, frontend/styles.css
 next: <ikke spesifisert>
 ```

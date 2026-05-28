@@ -356,6 +356,39 @@ select {
   margin: 10px 0 0;
 }
 
+.summary-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 6px;
+}
+
+.summary-topline-main {
+  min-width: 0;
+}
+
+.summary-side {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.summary-side span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.summary-side strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 1rem;
+}
+
+.week-summary-trigger .summary-topline-main h3 {
+  margin: 0;
+}
+
 .week-summary-detail {
   padding: 0 20px 20px;
 }
@@ -1341,6 +1374,24 @@ select {
     line-height: 1.05;
   }
 
+  .summary-card .summary-topline-main h3 {
+    margin: 0;
+  }
+
+  .summary-topline {
+    margin-top: 4px;
+    gap: 12px;
+  }
+
+  .summary-side span {
+    font-size: 0.72rem;
+  }
+
+  .summary-side strong {
+    margin-top: 2px;
+    font-size: 0.92rem;
+  }
+
   .summary-grid {
     gap: 8px 12px;
     margin-top: 12px;
@@ -1509,6 +1560,14 @@ select {
   .day-summary-card h3 {
     margin-top: 4px;
     font-size: 1.32rem;
+  }
+
+  .day-summary-card .summary-topline-main h3 {
+    margin: 0;
+  }
+
+  .day-summary-card .summary-topline {
+    margin-top: 4px;
   }
 
   .day-summary-card .summary-grid {
