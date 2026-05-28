@@ -12,29 +12,65 @@ Regler:
 ## Current
 
 ```text
-status: idle | in_progress | blocked | complete
-owner: <agent-navn eller session-id>
-started_at: <ISO-8601 tid>
-updated_at: <ISO-8601 tid>
-objective: <kort beskrivelse av jobben>
-scope: <hvilke filer eller deler av appen som er i spill>
-next_step: <helt konkret neste steg>
-verification: <hva som er testet eller bekreftet>
-blockers: <ingen | kort forklaring>
+status: blocked
+owner: desktop-agent
+started_at: 2026-05-28T21:17:25+02:00
+updated_at: 2026-05-28T21:18:35+02:00
+objective: Legge til myk overgang for menyen og publisere endringene til repoet
+scope: frontend/app.js, frontend/styles.css
+next_step: Logg inn mot GitHub og push `codex/chrome-menu-smooth-collapse`
+verification: Commit er laget lokalt på `codex/chrome-menu-smooth-collapse` med hash `73d043f`
+blockers: GitHub-push krever autentisering for `https://github.com/gruffsy/hibernian-beta.git`
 ```
 
 ## Resume Notes
 
 Bruk denne delen for korte notater som hjelper en annen sesjon a fortsette raskt.
 
-- Hva er ferdig:
-- Hva gjenstar:
-- Viktige valg:
-- Ting som ikke ma rores:
+- Hva er ferdig: Menyen kollapser nå ved scroll, åpner ved topp, og har myk overgang.
+- Hva gjenstår: Pushe commit `73d043f` på branch `codex/chrome-menu-smooth-collapse` til `origin`.
+- Viktige valg: Toggle-knappen vises bare når menyen er kollapset; menyen er sticky i kollapset tilstand.
+- Ting som ikke ma rores: De andre lokale endringene i worktree er ikke del av denne jobben.
 
 ## History
 
 Legg inn korte historikkposter nederst eller under denne seksjonen.
+
+```text
+timestamp: 2026-05-28T21:15:01+02:00
+owner: codex
+status: complete
+summary: Gjorde menyen utvidet ved start og koblet kollaps til scroll, med knapp kun i kollapset tilstand
+files: frontend/app.js, frontend/styles.css, AGENTS.md
+next: Ingen
+```
+
+```text
+timestamp: 2026-05-28T21:18:35+02:00
+owner: codex
+status: complete
+summary: La til myk overgang for menyen og klargjorde repoet for commit/push
+files: frontend/app.js, frontend/styles.css, AGENTS.md
+next: Ingen
+```
+
+```text
+timestamp: 2026-05-28T21:18:35+02:00
+owner: codex
+status: blocked
+summary: Commit fullført, men push stoppet av manglende GitHub-autentisering mot origin
+files: frontend/app.js, frontend/styles.css
+next: Skaff push-tilgang eller autentiser GitHub og kjør push på nytt
+```
+
+```text
+timestamp: 2026-05-28T21:18:35+02:00
+owner: desktop-agent
+status: blocked
+summary: Overlevert publiseringsjobben med commit `73d043f` klar for push
+files: frontend/app.js, frontend/styles.css
+next: Autentiser mot GitHub og push branch `codex/chrome-menu-smooth-collapse`
+```
 
 ### Template for en ny post
 
