@@ -1042,6 +1042,73 @@ select {
   padding-top: 8px;
 }
 
+.day-mobile-table-shell {
+  padding-top: 8px;
+}
+
+.day-mobile-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.62);
+  overflow: hidden;
+  font-variant-numeric: tabular-nums;
+}
+
+.day-mobile-table col.day-mobile-col-store {
+  width: 24%;
+}
+
+.day-mobile-table col.day-mobile-col-amount {
+  width: 20%;
+}
+
+.day-mobile-table col.day-mobile-col-diff {
+  width: 16%;
+}
+
+.day-mobile-table col.day-mobile-col-customers {
+  width: 12%;
+}
+
+.day-mobile-table th,
+.day-mobile-table td {
+  padding: 8px 6px;
+  border-bottom: 1px solid rgba(29, 26, 22, 0.08);
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.day-mobile-table th {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.1;
+}
+
+.day-mobile-table td {
+  font-size: 0.78rem;
+  line-height: 1.12;
+}
+
+.day-mobile-table th:nth-child(n + 2),
+.day-mobile-table td:nth-child(n + 2) {
+  text-align: right;
+}
+
+.day-mobile-store-cell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.day-mobile-table tbody tr:first-child td {
+  border-top: 1px solid rgba(29, 26, 22, 0.08);
+}
+
+.day-mobile-table .total-row {
+  background: rgba(15, 118, 110, 0.08);
+  font-weight: 700;
+}
+
 .day-mobile-row {
   padding: 12px 14px;
   border-bottom: 1px solid rgba(29, 26, 22, 0.08);
@@ -1581,6 +1648,23 @@ select {
 
   .day-mobile-row {
     padding: 8px 10px;
+  }
+
+  .day-mobile-table-shell {
+    padding-top: 6px;
+  }
+
+  .day-mobile-table th,
+  .day-mobile-table td {
+    padding: 6px 4px;
+  }
+
+  .day-mobile-table th {
+    font-size: 0.68rem;
+  }
+
+  .day-mobile-table td {
+    font-size: 0.73rem;
   }
 
   .day-mobile-top h3 {

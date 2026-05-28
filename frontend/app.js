@@ -1309,29 +1309,45 @@ function renderMobileCards(rows) {
   `;
 }
 
-function renderDayMobileRows(rows) {
+function renderDayMobileTable(rows) {
   return `
-    <div class="mobile-only day-mobile-list">
-      ${rows
-        .map((row) => {
-          const className = row.butikk === "Totalt" ? "day-mobile-row total-card" : "day-mobile-row";
-          return `
-            <article class="${className}">
-              <div class="day-mobile-top">
-                <h3>${row.butikk}</h3>
-                <strong>${row.mmoms}</strong>
-              </div>
-              <div class="day-mobile-grid">
-                <div><span>DB</span><strong>${row.db}</strong></div>
-                <div><span>DG</span><strong>${row.dg}</strong></div>
-                <div><span>Kunder</span><strong>${row.antord}</strong></div>
-                <div><span>Per kunde</span><strong>${row.prord}</strong></div>
-              </div>
-              <p class="day-mobile-foot">U/moms ${row.umoms}</p>
-            </article>
-          `;
-        })
-        .join("")}
+    <div class="mobile-only day-mobile-table-shell">
+      <table class="store-table day-mobile-table">
+        <colgroup>
+          <col class="day-mobile-col-store" />
+          <col class="day-mobile-col-amount" />
+          <col class="day-mobile-col-diff" />
+          <col class="day-mobile-col-diff" />
+          <col class="day-mobile-col-customers" />
+          <col class="day-mobile-col-customers" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Butikk</th>
+            <th>U/moms</th>
+            <th>DB</th>
+            <th>DG</th>
+            <th>Kunder</th>
+            <th>Per kunde</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows
+            .map(
+              (row) => `
+                <tr class="${row.butikk === "Totalt" ? "total-row" : ""}">
+                  <td class="day-mobile-store-cell">${row.butikk}</td>
+                  <td>${row.umoms}</td>
+                  <td>${row.db}</td>
+                  <td>${row.dg}</td>
+                  <td>${row.antord}</td>
+                  <td>${row.prord}</td>
+                </tr>
+              `
+            )
+            .join("")}
+        </tbody>
+      </table>
     </div>
   `;
 }
@@ -2128,7 +2144,7 @@ function renderPeoplePageCompact(state) {
 
 function renderDaySection(dateKey, rows, expanded = false, modifier = "") {
   const totals = getTotals(rows);
-  const detailContent = `${renderDesktopTable(rows)}${renderMobileCards(rows)}`;
+  const detailContent = `${renderDesktopTable(rows)}${renderDayMobileTable(rows)}`;
 
   return `
     ${renderWeekExpandableSummaryCard(
