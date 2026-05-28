@@ -14,10 +14,10 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-28T23:32:49
-updated_at: 2026-05-28T23:33:26
-objective: Fit the mobile day table within the viewport
-scope: frontend/styles.css
+started_at: 2026-05-28T23:40:50
+updated_at: 2026-05-28T23:41:31
+objective: Restore chrome menu to always expanded
+scope: frontend/app.js
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
 blockers: ingen
@@ -175,5 +175,16 @@ owner: codex
 status: complete
 summary: Removed the forced horizontal overflow on the mobile day table so the columns can shrink to the viewport instead of clipping off-screen.
 files: frontend/styles.css
+next: <ikke spesifisert>
+```
+
+### 2026-05-28T23:41:31
+
+```text
+timestamp: 2026-05-28T23:41:31
+owner: codex
+status: complete
+summary: Removed the chrome collapse/scroll behavior so the navigation stays expanded and no longer responds by hiding itself when tapped or scrolled.
+files: frontend/app.js
 next: <ikke spesifisert>
 ```

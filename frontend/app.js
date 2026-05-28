@@ -22,9 +22,6 @@ const META_URL = {
 const app = document.getElementById("app");
 const activeVisuals = [];
 let resizeVisualsBound = false;
-const CHROME_COLLAPSE_SCROLL_THRESHOLD = 24;
-let chromeScrollBound = false;
-let chromeScrollRaf = null;
 
 function getDataMode() {
   const params = new URLSearchParams(window.location.search);
@@ -1062,50 +1059,10 @@ function getPageLabel(page) {
   return labels[page] || "DAG";
 }
 
-function syncChromeExpansionFromScroll(state) {
-  const shouldExpand = window.scrollY <= CHROME_COLLAPSE_SCROLL_THRESHOLD;
-  if (state.chromeExpanded === shouldExpand) {
-    return;
-  }
-
-  state.chromeExpanded = shouldExpand;
-  paint(state);
-}
-
-function bindChromeScroll(state) {
-  if (chromeScrollBound) {
-    return;
-  }
-
-  chromeScrollBound = true;
-  window.addEventListener(
-    "scroll",
-    () => {
-      if (chromeScrollRaf !== null) {
-        return;
-      }
-
-      chromeScrollRaf = window.requestAnimationFrame(() => {
-        chromeScrollRaf = null;
-        syncChromeExpansionFromScroll(state);
-      });
-    },
-    { passive: true }
-  );
-}
-
 function renderChrome(state, controlsHtml = "") {
   return `
-    <section class="chrome-shell ${state.chromeExpanded ? "is-expanded" : "is-collapsed"}">
-      <button
-        class="chrome-toggle ${state.chromeExpanded ? "is-hidden" : ""}"
-        type="button"
-        data-chrome-toggle
-        aria-expanded="${state.chromeExpanded ? "true" : "false"}"
-      >
-        ${getPageLabel(state.page)}
-      </button>
-      <div class="chrome-panel ${state.chromeExpanded ? "is-expanded" : "is-collapsed"}" aria-hidden="${state.chromeExpanded ? "false" : "true"}">
+    <section class="chrome-shell is-expanded">
+      <div class="chrome-panel is-expanded">
         ${renderNav(state.page)}
         ${controlsHtml}
       </div>
@@ -3459,12 +3416,6 @@ function bindEvents(state) {
     });
   });
 
-  document.querySelectorAll("[data-chrome-toggle]").forEach((button) => {
-    button.addEventListener("click", () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  });
-
   document.querySelectorAll("[data-date]").forEach((button) => {
     button.addEventListener("click", () => {
       state.selectedDate = button.dataset.date;
@@ -3743,7 +3694,7 @@ async function render() {
               : params.get("page") === "stock"
                 ? "stock"
                 : "day",
-      chromeExpanded: window.scrollY <= CHROME_COLLAPSE_SCROLL_THRESHOLD,
+      chromeExpanded: true,
       updatedAt,
       dayGrouped: dayData.grouped,
       dayDates: dayData.dates,
@@ -3791,7 +3742,6 @@ async function render() {
 
     syncUrl(state);
     paint(state);
-    bindChromeScroll(state);
   } catch (error) {
     app.innerHTML = `
       <main class="page-shell">
