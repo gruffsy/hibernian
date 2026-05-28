@@ -14,10 +14,10 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-28T23:27:50
-updated_at: 2026-05-28T23:29:46
-objective: Tighten mobile stock layout
-scope: frontend/app.js, frontend/styles.css
+started_at: 2026-05-28T23:32:49
+updated_at: 2026-05-28T23:33:26
+objective: Fit the mobile day table within the viewport
+scope: frontend/styles.css
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
 blockers: ingen
@@ -164,5 +164,16 @@ owner: codex
 status: complete
 summary: Removed the remaining card framing from the mobile day sections and tightened the mobile day-table spacing so the report reads more like a flat view on small screens.
 files: frontend/app.js, frontend/styles.css
+next: <ikke spesifisert>
+```
+
+### 2026-05-28T23:33:26
+
+```text
+timestamp: 2026-05-28T23:33:26
+owner: codex
+status: complete
+summary: Removed the forced horizontal overflow on the mobile day table so the columns can shrink to the viewport instead of clipping off-screen.
+files: frontend/styles.css
 next: <ikke spesifisert>
 ```

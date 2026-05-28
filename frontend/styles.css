@@ -1704,27 +1704,27 @@ select {
   }
 
   .day-mobile-table-shell {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin: 0 -12px;
-    padding: 2px 12px 0;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 2px 0 0;
   }
 
   .day-mobile-table {
-    min-width: 560px;
+    width: 100%;
+    min-width: 0;
   }
 
   .day-mobile-table th,
   .day-mobile-table td {
-    padding: 5px 3px;
+    padding: 4px 2px;
   }
 
   .day-mobile-table th {
-    font-size: 0.66rem;
+    font-size: 0.63rem;
   }
 
   .day-mobile-table td {
-    font-size: 0.7rem;
+    font-size: 0.68rem;
   }
 
   .day-mobile-top h3 {
