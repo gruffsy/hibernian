@@ -860,7 +860,7 @@ select {
 }
 
 .day-comparison-col-day {
-  width: 64px;
+  width: 54px;
 }
 
 .day-comparison-col-amount {
@@ -1196,7 +1196,7 @@ select {
   }
 
   .day-comparison-col-day {
-    width: 54px;
+    width: 46px;
   }
 
   .day-comparison-col-amount,

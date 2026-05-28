@@ -824,12 +824,14 @@ function formatComparisonDayLabel(dateKey) {
     return "";
   }
 
+  const raw = String(dateKey);
   const date = toUtcDate(dateKey);
   const weekday = new Intl.DateTimeFormat("nb-NO", { weekday: "short", timeZone: "UTC" })
     .format(date)
-    .replace(".", "")
+    .replace(/\./g, "")
+    .slice(0, 3)
     .toLowerCase();
-  const day = new Intl.DateTimeFormat("nb-NO", { day: "2-digit", timeZone: "UTC" }).format(date);
+  const day = raw.slice(6, 8);
   return `${weekday} ${day}`;
 }
 
@@ -908,6 +910,7 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
     selectedAverage: selectedDates.length ? selectedTotal / selectedDates.length : 0,
     compareAverage: compareDates.length ? compareTotal / compareDates.length : 0,
     finalDiff: selectedTotal - compareTotal,
+    finalPercentChange: compareTotal ? ((selectedTotal - compareTotal) / compareTotal) * 100 : 0,
   };
 }
 
@@ -989,6 +992,13 @@ function renderDayMonthComparisonCard(comparison) {
               <th>${formatInteger(comparison.selectedCount)}</th>
               <th></th>
               <th></th>
+            </tr>
+            <tr>
+              <th>Endring</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th class="${diffClass}">${comparison.finalPercentChange.toFixed(2).replace(".", ",")} %</th>
             </tr>
           </tfoot>
         </table>
