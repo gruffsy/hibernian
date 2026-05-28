@@ -14,10 +14,10 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-28T23:40:50
-updated_at: 2026-05-28T23:51:10
-objective: Add U/moms to day summary cards
-scope: frontend/app.js, frontend/styles.css
+started_at: 2026-05-29T00:08:24
+updated_at: 2026-05-29T00:10:05
+objective: Stack day summary metrics and compact the day comparison table
+scope: frontend/app.js, frontend/styles.css, scripts/git-scope-guard.ps1
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
 blockers: ingen
@@ -197,5 +197,27 @@ owner: codex
 status: complete
 summary: Added U/moms as a right-side value in the day summary cards so the mobile and desktop summaries have more balanced visual weight.
 files: frontend/app.js, frontend/styles.css
+next: <ikke spesifisert>
+```
+
+### 2026-05-29T00:06:54
+
+```text
+timestamp: 2026-05-29T00:06:54
+owner: codex
+status: complete
+summary: Moved DG and Per kunde into a stacked right-side block on day summary cards and tightened the day comparison table to match the compact day-table style
+files: frontend/app.js, frontend/styles.css
+next: <ikke spesifisert>
+```
+
+### 2026-05-29T00:10:05
+
+```text
+timestamp: 2026-05-29T00:10:05
+owner: codex
+status: complete
+summary: Added a stacked right-side metric block to the day summary cards, aligned the day comparison table with the compact day-table style, and relaxed the scope guard so it checks staged files first
+files: frontend/app.js, frontend/styles.css, scripts/git-scope-guard.ps1
 next: <ikke spesifisert>
 ```

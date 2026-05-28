@@ -16,11 +16,16 @@ function Is-PipelineObjective {
 }
 
 function Get-ChangedFiles {
-  $output = git status --short
+  $output = git diff --cached --name-only
+  if (-not $output) {
+    $output = git status --short
+  }
   $files = @()
   foreach ($line in $output) {
-    if ($line.Length -lt 4) { continue }
-    $path = $line.Substring(3).Trim()
+    $path = $line.Trim()
+    if ($line.Length -ge 4 -and $line.Substring(0, 3) -match '^[ MADRCU?!]{2}\s$') {
+      $path = $line.Substring(3).Trim()
+    }
     if ($path) { $files += $path }
   }
   return $files

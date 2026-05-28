@@ -369,20 +369,30 @@ select {
 }
 
 .summary-side {
+  display: grid;
+  gap: 8px;
+  margin-left: auto;
   text-align: right;
-  white-space: nowrap;
+}
+
+.summary-side-item {
+  display: grid;
+  gap: 2px;
+  justify-items: end;
 }
 
 .summary-side span {
   display: block;
   color: var(--muted);
   font-size: 0.82rem;
+  line-height: 1.05;
 }
 
 .summary-side strong {
   display: block;
-  margin-top: 4px;
+  margin-top: 0;
   font-size: 1rem;
+  line-height: 1.1;
 }
 
 .week-summary-trigger .summary-topline-main h3 {
@@ -430,6 +440,15 @@ select {
 .mobile-store-meta strong {
   display: block;
   margin-top: 4px;
+}
+
+.compact-report-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.62);
+  overflow: hidden;
+  font-variant-numeric: tabular-nums;
 }
 
 .chart-grid {
@@ -945,11 +964,7 @@ select {
 }
 
 .day-comparison-table {
-  width: 100%;
   min-width: 500px;
-  border-collapse: collapse;
-  table-layout: fixed;
-  background: rgba(255, 255, 255, 0.55);
 }
 
 .day-comparison-col-day {
@@ -966,22 +981,22 @@ select {
 
 .day-comparison-table th,
 .day-comparison-table td {
-  padding: 6px 6px;
+  padding: 7px 6px;
   border-bottom: 1px solid rgba(29, 26, 22, 0.08);
   white-space: nowrap;
   text-align: right;
   line-height: 1.15;
-  font-size: 0.92rem;
+  font-size: 0.8rem;
 }
 
 .day-comparison-table thead th {
   color: var(--muted);
-  font-size: 0.84rem;
+  font-size: 0.72rem;
 }
 
 .day-comparison-table thead tr:first-child th {
   color: var(--ink);
-  font-size: 0.96rem;
+  font-size: 0.86rem;
 }
 
 .day-comparison-table td.day-label-cell,
@@ -997,7 +1012,7 @@ select {
 .day-comparison-table tfoot th,
 .day-comparison-table tfoot td {
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.79rem;
 }
 
 .is-positive {

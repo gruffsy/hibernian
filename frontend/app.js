@@ -935,7 +935,7 @@ function renderDayMonthComparisonCard(comparison) {
       </div>
 
       <div class="day-comparison-table-shell">
-        <table class="day-comparison-table">
+        <table class="day-comparison-table compact-report-table">
           <colgroup>
             <col class="day-comparison-col-day" />
             <col class="day-comparison-col-amount" />
@@ -1121,20 +1121,46 @@ function renderWeekExpandableSummaryCard(
   modifier = "",
   toggleAttr = "data-week-panels-toggle",
   secondaryLabel = "",
-  secondaryValue = ""
+  secondaryValue = "",
+  secondaryItems = [],
+  gridItems = null
 ) {
   if (!totals) {
     return "";
   }
 
-  const secondaryBlock = secondaryLabel && secondaryValue
+  const sideEntries = [];
+  if (secondaryLabel && secondaryValue) {
+    sideEntries.push({ label: secondaryLabel, value: secondaryValue });
+  }
+  if (Array.isArray(secondaryItems) && secondaryItems.length) {
+    sideEntries.push(...secondaryItems);
+  }
+
+  const sideBlock = sideEntries.length
     ? `
-        <div class="summary-side">
-          <span>${secondaryLabel}</span>
-          <strong>${secondaryValue}</strong>
+        <div class="summary-side ${sideEntries.length > 1 ? "summary-side-stack" : ""}">
+          ${sideEntries
+            .map(
+              (entry) => `
+                <div class="summary-side-item">
+                  <span>${entry.label}</span>
+                  <strong>${entry.value}</strong>
+                </div>
+              `
+            )
+            .join("")}
         </div>
       `
     : "";
+
+  const defaultGridItems = [
+    { label: "DB", value: totals.db },
+    { label: "DG", value: totals.dg },
+    { label: "Kunder", value: totals.antord },
+    { label: "Per kunde", value: totals.prord },
+  ];
+  const summaryGridItems = Array.isArray(gridItems) && gridItems.length ? gridItems : defaultGridItems;
 
   return `
     <article class="summary-card week-summary-card ${modifier} ${expanded ? "is-expanded" : ""}">
@@ -1149,13 +1175,16 @@ function renderWeekExpandableSummaryCard(
           <div class="summary-topline-main">
             <h3>${totals.mmoms}</h3>
           </div>
-          ${secondaryBlock}
+          ${sideBlock}
         </div>
         <div class="summary-grid">
-          <div><span>DB</span><strong>${totals.db}</strong></div>
-          <div><span>DG</span><strong>${totals.dg}</strong></div>
-          <div><span>Kunder</span><strong>${totals.antord}</strong></div>
-          <div><span>Per kunde</span><strong>${totals.prord}</strong></div>
+          ${summaryGridItems
+            .map(
+              (entry) => `
+                <div><span>${entry.label}</span><strong>${entry.value}</strong></div>
+              `
+            )
+            .join("")}
         </div>
       </button>
       ${expanded ? `<div class="week-summary-detail">${detailContent}</div>` : ""}
@@ -2139,7 +2168,15 @@ function renderDaySection(dateKey, rows, expanded = false, modifier = "") {
       modifier,
       `data-day-toggle=\"${dateKey}\"`,
       "U/moms",
-      totals.umoms
+      totals.umoms,
+      [
+        { label: "DG", value: totals.dg },
+        { label: "Per kunde", value: totals.prord },
+      ],
+      [
+        { label: "DB", value: totals.db },
+        { label: "Kunder", value: totals.antord },
+      ]
     )}
   `;
 }
