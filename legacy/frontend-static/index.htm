@@ -22,21 +22,50 @@
       .beta-menu-link {
         display: inline-flex;
         align-items: center;
+        gap: 10px;
         min-height: 48px;
         padding: 0 12px;
         color: rgba(0, 0, 0, 0.87);
         text-decoration: none;
-        font-weight: 500;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        font-size: 12px;
-        opacity: 0.78;
+        font-weight: 400;
+        font-size: 14px;
+        white-space: nowrap;
       }
 
       .beta-menu-link:focus,
       .beta-menu-link:hover {
         color: #1976d2;
-        opacity: 1;
+      }
+
+      .beta-switch {
+        position: relative;
+        width: 52px;
+        height: 30px;
+        border: 2px solid #6b7280;
+        border-radius: 999px;
+        background: #ffffff;
+        box-sizing: border-box;
+      }
+
+      .beta-switch::after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: #6b7280;
+      }
+
+      .beta-menu-link:hover .beta-switch,
+      .beta-menu-link:focus .beta-switch {
+        border-color: #1976d2;
+      }
+
+      .beta-menu-link:hover .beta-switch::after,
+      .beta-menu-link:focus .beta-switch::after {
+        background: #1976d2;
       }
     </style>
   </head>
@@ -56,7 +85,7 @@
                 class="beta-menu-link"
                 href="../../index.htm?ui=beta"
                 onclick="localStorage.setItem('hibernian.ui.preference', 'beta')"
-                >Beta</a
+                ><span>Prøv ny versjon</span><span class="beta-switch" aria-hidden="true"></span></a
               >
             </div>
             <div class="q-pa-md">
