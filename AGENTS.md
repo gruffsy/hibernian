@@ -12,15 +12,13 @@ Regler:
 ## Current
 
 ```text
-status: idle
-owner: <agent-navn eller session-id>
-started_at: <ISO-8601 tid>
-updated_at: 2026-05-28T21:25:00+02:00
-objective: <kort beskrivelse av jobben>
-scope: <hvilke filer eller deler av appen som er i spill>
-next_step: Les AGENTS.md og ta over neste konkrete kommando
-verification: GitHub er autentisert i tmux og branch `codex/chrome-menu-smooth-collapse` er pushet
-blockers: ingen
+status: in_progress
+owner: codex
+started_at: 2026-05-28T22:03:27+02:00
+updated_at: 2026-05-28T22:03:27+02:00
+objective: Kartlegg og commit/push relevante lokale endringer på smooth-menu-branchen
+scope: codex/chrome-menu-smooth-collapse og lokale worktree-endringer
+next_step: Inspeksjon av diff og valg av commit-scope
 ```
 
 ## Resume Notes
@@ -31,6 +29,47 @@ Bruk denne delen for korte notater som hjelper en annen sesjon a fortsette raskt
 - Hva gjenstar: De tre lokale pipeline-datafilene er fortsatt endret lokalt og er ikke del av handoff-jobben.
 - Viktige valg: Toggle-knappen vises bare nar menyen er kollapset; menyen er sticky i kollapset tilstand.
 - Ting som ikke ma rores: De andre lokale endringene i worktree er ikke del av denne jobben.
+
+## Tmux Recovery Task
+
+Bruk denne oppgaven hvis tmux-okt eller en ny sesjon ikke ser branch eller mister konteksten:
+
+```text
+Repo: C:\Users\una\Documents\New project\hibernian-beta-copy
+Branch: codex/chrome-menu-smooth-collapse
+Maal: fa GitHub og repo-tilstand til a se branchen igjen, og fortsette der vi slapp
+
+Kjor i rekkefolge:
+1. cd "C:\Users\una\Documents\New project\hibernian-beta-copy"
+2. git status --short
+3. gh auth status
+4. gh auth setup-git
+5. git fetch origin --prune
+6. git branch -a -vv
+7. git switch --track origin/codex/chrome-menu-smooth-collapse
+
+Hvis branchen allerede finnes lokalt:
+- bruk `git switch codex/chrome-menu-smooth-collapse`
+
+Hvis Git fortsatt ber om brukernavn/passord:
+- kjør `gh auth login -h github.com`
+- og gjenta `gh auth setup-git`
+```
+
+## Shortcut Command
+
+Hvis du bare sier:
+
+```text
+Les AGENTS.md
+```
+
+skal tmux-økten gjøre dette automatisk:
+1. Lese `Current`.
+2. Oppdatere `Current` til `status: in_progress` og eie jobben hvis `owner` er ledig eller peker på en tidligere sesjon.
+3. Hvis `Current` peker på recovery eller branch-problemer, følge `Tmux Recovery Task`.
+4. Ellers fortsette fra `next_step` i `Current`.
+5. Oppdatere `AGENTS.md` med resultatet når den er ferdig.
 
 ## History
 
@@ -77,6 +116,42 @@ timestamp: 2026-05-28T21:25:00+02:00
 owner: codex
 status: complete
 summary: Klargjorde repoet for tmux-overlevering etter vellykket GitHub-autentisering og push
+files: AGENTS.md
+next: Ingen
+```
+
+```text
+timestamp: 2026-05-28T21:41:28+02:00
+owner: codex
+status: complete
+summary: Leste AGENTS.md og verifiserte at `gh auth status` feiler med ugyldig github.com-token
+files: AGENTS.md
+next: Re-autentiser GitHub med `gh auth login -h github.com`
+```
+
+```text
+timestamp: 2026-05-28T21:45:43+02:00
+owner: codex
+status: complete
+summary: Leste AGENTS.md for denne sesjonen og oppdaterte Current etter handoff-reglene
+files: AGENTS.md
+next: Ingen
+```
+
+```text
+timestamp: 2026-05-28T21:50:48+02:00
+owner: codex
+status: complete
+summary: Overlot jobben til desktop-agent ved a oppdatere Current med ny eier
+files: AGENTS.md
+next: Desktop fortsetter fra denne statusen
+```
+
+```text
+timestamp: 2026-05-28T22:02:49+02:00
+owner: codex
+status: complete
+summary: Gjenopprettet repo-tilstanden og verifiserte at recovery-branchen er lokalt tilgjengelig og i sync med origin
 files: AGENTS.md
 next: Ingen
 ```
@@ -141,6 +216,20 @@ Hvis en annen sesjon allerede har `status: in_progress` pa samme scope:
 - eller sett din egen jobb til et annet scope
 
 Det viktigste er at `AGENTS.md` alltid viser hvem som har siste aktive eierskap.
+
+## Commit Scope Guard
+
+Før enhver commit eller push skal tmux-kjøre scope-guarden:
+
+```text
+powershell -ExecutionPolicy Bypass -File .\scripts\git-scope-guard.ps1 -Objective "<kort objektiv>"
+```
+
+Regler:
+- `legacy/frontend-static/data/publish/*` skal ikke med i UI- eller dokumentasjonsjobber
+- de filene får bare være med hvis objektivet tydelig er pipeline, data refresh, R2 eller scheduler
+- hvis scope-guarden stopper, skal du ikke fortsette med `git add`, `git commit` eller `git push` før scopet er ryddet
+- hvis du faktisk jobber med pipeline/data, bruk `-AllowPipelineData`
 
 ## Automatisk Bruk
 
