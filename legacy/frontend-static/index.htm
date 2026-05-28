@@ -30,11 +30,13 @@
         text-transform: uppercase;
         letter-spacing: 0.08em;
         font-size: 12px;
+        opacity: 0.78;
       }
 
       .beta-menu-link:focus,
       .beta-menu-link:hover {
         color: #1976d2;
+        opacity: 1;
       }
     </style>
   </head>
@@ -50,6 +52,14 @@
             indicator-color="primary"
           >
             <div class="q-pa-md">
+              <a
+                class="beta-menu-link"
+                href="../../index.htm?ui=beta"
+                onclick="localStorage.setItem('hibernian.ui.preference', 'beta')"
+                >Beta</a
+              >
+            </div>
+            <div class="q-pa-md">
               <q-tab name="dag" label="Dag" />
             </div>
 
@@ -64,14 +74,6 @@
             </div>
             <div class="q-pa-md">
               <q-tab name="stock" label="Stock Supply" />
-            </div>
-            <div class="q-pa-md">
-              <a
-                class="beta-menu-link"
-                href="../../index.htm?ui=beta"
-                onclick="localStorage.setItem('hibernian.ui.preference', 'beta')"
-                >Beta</a
-              >
             </div>
           </q-tabs>
 
