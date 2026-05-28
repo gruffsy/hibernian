@@ -1053,6 +1053,39 @@ function renderNav(page) {
   `;
 }
 
+function getPageLabel(page) {
+  const labels = {
+    day: "DAG",
+    week: "UKE",
+    month: "MÅNED",
+    year: "ÅR",
+    people: "SELGERE",
+    stock: "STOCK",
+  };
+
+  return labels[page] || "DAG";
+}
+
+function renderChrome(state, controlsHtml = "") {
+  return `
+    <section class="chrome-shell ${state.chromeExpanded ? "is-expanded" : ""}">
+      <button class="chrome-toggle" type="button" data-chrome-toggle aria-expanded="${state.chromeExpanded ? "true" : "false"}">
+        ${getPageLabel(state.page)}
+      </button>
+      ${
+        state.chromeExpanded
+          ? `
+            <div class="chrome-panel">
+              ${renderNav(state.page)}
+              ${controlsHtml}
+            </div>
+          `
+          : ""
+      }
+    </section>
+  `;
+}
+
 function renderSummaryCard(title, totals, modifier = "") {
   if (!totals) {
     return "";
@@ -1885,9 +1918,7 @@ function renderStockContent(state) {
 function renderStockPageCompact(state) {
   return `
     <main class="page-shell">
-      ${renderNav(state.page)}
-
-      ${renderStockToolbarClean(state)}
+      ${renderChrome(state, renderStockToolbarClean(state))}
 
       <section class="content-main stock-layout">
         ${renderStockContent(state)}
@@ -2040,9 +2071,9 @@ function renderPeoplePageClean(state) {
 function renderPeoplePageCompact(state) {
   return `
     <main class="page-shell">
-      ${renderNav(state.page)}
+      ${renderChrome(state)}
 
-      <section class="control-panel seller-toolbar">
+      ${state.chromeExpanded ? `<section class="control-panel seller-toolbar">
         <div class="week-toolbar-meta">
           <p class="updated-line">Oppdatert sist: <strong>${state.updatedAt || "ukjent"}</strong></p>
         </div>
@@ -2055,7 +2086,7 @@ function renderPeoplePageCompact(state) {
         <div class="week-toolbar-footer">
           ${renderSellerMetricToggle(state)}
         </div>
-      </section>
+      </section>` : ""}
 
       <section class="content-main seller-columns seller-layout">
         ${renderPeopleCards(state)}
@@ -2068,13 +2099,13 @@ function renderPeoplePageCompact(state) {
   `;
 }
 
-function renderDaySection(title, dateKey, rows, expanded = false, modifier = "") {
+function renderDaySection(dateKey, rows, expanded = false, modifier = "") {
   const totals = getTotals(rows);
   const detailContent = `${renderDesktopTable(rows)}${renderMobileCards(rows)}`;
 
   return `
     ${renderWeekExpandableSummaryCard(
-      `${title} · ${formatDayHeading(dateKey)}`,
+      `${formatDayHeading(dateKey)}`,
       totals,
       detailContent,
       expanded,
@@ -2087,32 +2118,33 @@ function renderDaySection(title, dateKey, rows, expanded = false, modifier = "")
 function renderDayPage(state) {
   const selectedIndex = state.dayDates.indexOf(state.selectedDate);
   const visibleDates = state.dayDates.slice(selectedIndex, selectedIndex + 3);
-  const daySectionLabels = ["Valgt dag", "Forrige salgsdag", "Tredje siste salgsdag"];
   const grossComparison = buildDayMonthComparison(state, state.selectedDate, "gross");
   const dbComparison = buildDayMonthComparison(state, state.selectedDate, "db");
 
   return `
     <main class="page-shell">
-      ${renderNav(state.page)}
-
-      <section class="status-strip day-status-strip">
-        <p class="updated-line">Oppdatert sist: <strong>${state.updatedAt || "ukjent"}</strong></p>
-        <label class="date-picker inline-date-picker" aria-label="Velg dato">
-          <input
-            data-role="date-picker"
-            type="date"
-            min="${formatInputDate(state.dayDates[state.dayDates.length - 1])}"
-            max="${formatInputDate(state.dayDates[0])}"
-            value="${formatInputDate(state.selectedDate)}"
-          />
-        </label>
-      </section>
+      ${renderChrome(
+        state,
+        `
+          <section class="status-strip day-status-strip">
+            <p class="updated-line">Oppdatert sist: <strong>${state.updatedAt || "ukjent"}</strong></p>
+            <label class="date-picker inline-date-picker" aria-label="Velg dato">
+              <input
+                data-role="date-picker"
+                type="date"
+                min="${formatInputDate(state.dayDates[state.dayDates.length - 1])}"
+                max="${formatInputDate(state.dayDates[0])}"
+                value="${formatInputDate(state.selectedDate)}"
+              />
+            </label>
+          </section>
+        `
+      )}
 
       <section class="day-stack">
         ${visibleDates
           .map((date, index) =>
             renderDaySection(
-              daySectionLabels[index] || "Salgsdag",
               date,
               state.dayGrouped.get(date) || [],
               state.dayExpandedDates.includes(date),
@@ -2431,9 +2463,7 @@ function renderMonthPageCompact(state) {
 
   return `
     <main class="page-shell">
-      ${renderNav(state.page)}
-
-      ${renderMonthToolbarClean(state)}
+      ${renderChrome(state, renderMonthToolbarClean(state))}
 
       <section class="summary-band week-summary-band ${panelsExpanded ? "is-expanded" : ""}">
         ${renderWeekExpandableSummaryCard(
@@ -2654,9 +2684,7 @@ function renderWeekPageCompact(state) {
 
   return `
     <main class="page-shell">
-      ${renderNav(state.page)}
-
-      ${renderWeekControls(state)}
+      ${renderChrome(state, renderWeekControls(state))}
 
       <section class="summary-band week-summary-band ${panelsExpanded ? "is-expanded" : ""}">
         ${renderWeekExpandableSummaryCard(
@@ -2918,9 +2946,7 @@ function renderYearPageCompact(state) {
 
   return `
     <main class="page-shell">
-      ${renderNav(state.page)}
-
-      ${renderYearToolbarClean(state)}
+      ${renderChrome(state, renderYearToolbarClean(state))}
 
       <section class="summary-band week-summary-band ${panelsExpanded ? "is-expanded" : ""}">
         ${renderWeekExpandableSummaryCard(
@@ -3386,6 +3412,13 @@ function bindEvents(state) {
     });
   });
 
+  document.querySelectorAll("[data-chrome-toggle]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.chromeExpanded = !state.chromeExpanded;
+      paint(state);
+    });
+  });
+
   document.querySelectorAll("[data-date]").forEach((button) => {
     button.addEventListener("click", () => {
       state.selectedDate = button.dataset.date;
@@ -3665,6 +3698,7 @@ async function render() {
               : params.get("page") === "stock"
                 ? "stock"
               : "day",
+      chromeExpanded: false,
       updatedAt,
       dayGrouped: dayData.grouped,
       dayDates: dayData.dates,

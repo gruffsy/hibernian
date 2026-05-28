@@ -103,6 +103,34 @@ select {
   margin-top: 18px;
 }
 
+.chrome-shell {
+  margin-top: 18px;
+}
+
+.chrome-toggle {
+  appearance: none;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 22px;
+  cursor: pointer;
+  background: var(--accent);
+  color: #f3fffd;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+
+.chrome-panel {
+  display: grid;
+  gap: var(--section-gap);
+  margin-top: var(--section-gap);
+}
+
+.chrome-panel .beta-nav,
+.chrome-panel .status-strip,
+.chrome-panel .control-panel {
+  margin-top: 0;
+}
+
 .nav-pill,
 .quick-button,
 .button {

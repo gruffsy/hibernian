@@ -34,7 +34,7 @@ def compute_extract_start_date(
     if latest_existing_before_window is None:
         return window_start_date
 
-    gap_fill_start = shift_date_key(latest_existing_before_window, days=1)
+    gap_fill_start = shift_date_key(latest_existing_before_window, days=0)
     return min(window_start_date, gap_fill_start)
 
 
