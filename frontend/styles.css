@@ -105,9 +105,18 @@ select {
 
 .chrome-shell {
   margin-top: 18px;
+  display: grid;
+  gap: var(--section-gap);
+}
+
+.chrome-shell.is-collapsed {
+  position: sticky;
+  top: 18px;
+  z-index: 20;
 }
 
 .chrome-toggle {
+  justify-self: end;
   appearance: none;
   border: none;
   border-radius: 999px;
@@ -117,17 +126,40 @@ select {
   color: #f3fffd;
   font-weight: 800;
   letter-spacing: 0.06em;
+  box-shadow: var(--shadow);
+  transition: opacity 220ms ease, transform 220ms ease, background-color 220ms ease, box-shadow 220ms ease;
+}
+
+.chrome-toggle.is-hidden {
+  display: none;
 }
 
 .chrome-panel {
   display: grid;
   gap: var(--section-gap);
-  margin-top: var(--section-gap);
+  margin-top: 0;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-8px);
+  pointer-events: none;
+  transition:
+    max-height 280ms ease,
+    opacity 180ms ease,
+    transform 280ms ease,
+    margin-top 280ms ease;
+  will-change: max-height, opacity, transform;
 }
 
-.chrome-panel .beta-nav,
-.chrome-panel .status-strip,
-.chrome-panel .control-panel {
+.chrome-panel.is-expanded {
+  max-height: 2200px;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: var(--section-gap);
+  pointer-events: auto;
+}
+
+.chrome-panel.is-collapsed {
   margin-top: 0;
 }
 
@@ -1134,6 +1166,10 @@ select {
     margin-top: 12px;
   }
 
+  .chrome-shell.is-collapsed {
+    top: 12px;
+  }
+
   .chrome-toggle {
     padding: 10px 16px;
     font-size: 0.95rem;
@@ -1141,7 +1177,6 @@ select {
 
   .chrome-panel {
     gap: var(--section-gap);
-    margin-top: var(--section-gap);
   }
 
   .beta-nav,
