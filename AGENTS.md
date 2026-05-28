@@ -7,29 +7,29 @@ Regler:
 - Oppdater `Current` nar du starter a jobbe.
 - Oppdater `Current` igjen nar du avslutter eller setter jobben pa vent.
 - Ikke slett historikk med mindre brukeren ber om det.
-- Ikke skriv over andres pagående arbeid. Legg heller inn din egen status i `Current` og noter konflikt under `Blockers`.
+- Ikke skriv over andres pagende arbeid. Legg heller inn din egen status i `Current` og noter konflikt under `Blockers`.
 
 ## Current
 
 ```text
-status: blocked
-owner: desktop-agent
-started_at: 2026-05-28T21:17:25+02:00
-updated_at: 2026-05-28T21:18:35+02:00
-objective: Legge til myk overgang for menyen og publisere endringene til repoet
-scope: frontend/app.js, frontend/styles.css
-next_step: Logg inn mot GitHub og push `codex/chrome-menu-smooth-collapse`
-verification: Commit er laget lokalt på `codex/chrome-menu-smooth-collapse` med hash `73d043f`
-blockers: GitHub-push krever autentisering for `https://github.com/gruffsy/hibernian-beta.git`
+status: idle
+owner: <agent-navn eller session-id>
+started_at: <ISO-8601 tid>
+updated_at: 2026-05-28T21:25:00+02:00
+objective: <kort beskrivelse av jobben>
+scope: <hvilke filer eller deler av appen som er i spill>
+next_step: Les AGENTS.md og ta over neste konkrete kommando
+verification: GitHub er autentisert i tmux og branch `codex/chrome-menu-smooth-collapse` er pushet
+blockers: ingen
 ```
 
 ## Resume Notes
 
 Bruk denne delen for korte notater som hjelper en annen sesjon a fortsette raskt.
 
-- Hva er ferdig: Menyen kollapser nå ved scroll, åpner ved topp, og har myk overgang.
-- Hva gjenstår: Pushe commit `73d043f` på branch `codex/chrome-menu-smooth-collapse` til `origin`.
-- Viktige valg: Toggle-knappen vises bare når menyen er kollapset; menyen er sticky i kollapset tilstand.
+- Hva er ferdig: Menyen kollapser na ved scroll, apner ved topp, og har myk overgang.
+- Hva gjenstar: De tre lokale pipeline-datafilene er fortsatt endret lokalt og er ikke del av handoff-jobben.
+- Viktige valg: Toggle-knappen vises bare nar menyen er kollapset; menyen er sticky i kollapset tilstand.
 - Ting som ikke ma rores: De andre lokale endringene i worktree er ikke del av denne jobben.
 
 ## History
@@ -58,9 +58,9 @@ next: Ingen
 timestamp: 2026-05-28T21:18:35+02:00
 owner: codex
 status: blocked
-summary: Commit fullført, men push stoppet av manglende GitHub-autentisering mot origin
+summary: Commit fullfort, men push stoppet av manglende GitHub-autentisering mot origin
 files: frontend/app.js, frontend/styles.css
-next: Skaff push-tilgang eller autentiser GitHub og kjør push på nytt
+next: Skaff push-tilgang eller autentiser GitHub og kjør push pa nytt
 ```
 
 ```text
@@ -70,6 +70,15 @@ status: blocked
 summary: Overlevert publiseringsjobben med commit `73d043f` klar for push
 files: frontend/app.js, frontend/styles.css
 next: Autentiser mot GitHub og push branch `codex/chrome-menu-smooth-collapse`
+```
+
+```text
+timestamp: 2026-05-28T21:25:00+02:00
+owner: codex
+status: complete
+summary: Klargjorde repoet for tmux-overlevering etter vellykket GitHub-autentisering og push
+files: AGENTS.md
+next: Ingen
 ```
 
 ### Template for en ny post
@@ -115,12 +124,12 @@ Kort variant du kan bruke som standard beskjed til en annen sesjon:
 Les AGENTS.md, ta eierskap til jobben, kjør: <kommando>, og oppdater AGENTS.md nar du er ferdig.
 ```
 
-Hvis du vil gi en tmux-økt en ren start, bruk gjerne denne rekkefolgen:
+Hvis du vil gi en tmux-okt en ren start, bruk gjerne denne rekkefolgen:
 
 ```text
 les AGENTS.md
 oppdater Current med mitt navn / session-id
-kjør neste kommando
+kjor neste kommando
 skriv tilbake status
 ```
 
@@ -155,5 +164,5 @@ powershell -ExecutionPolicy Bypass -File .\scripts\agent-task.ps1 -Mode run -Own
 ```
 
 Regel:
-- tmux-økt og Codex-sesjon skal bruke scriptet i stedet for a redigere `AGENTS.md` for hand
+- tmux-okt og Codex-sesjon skal bruke scriptet i stedet for a redigere `AGENTS.md` for hand
 - hvis scriptet brukes riktig, skal `Current` alltid oppdateres automatisk ved start og avslutning
