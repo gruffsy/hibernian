@@ -984,7 +984,7 @@ function renderDayMonthComparisonCard(comparison) {
               <th></th>
             </tr>
             <tr>
-              <th>Salgsdager</th>
+              <th>Dager</th>
               <th>${formatInteger(comparison.compareCount)}</th>
               <th>${formatInteger(comparison.selectedCount)}</th>
               <th></th>

@@ -853,40 +853,41 @@ select {
 
 .day-comparison-table {
   width: 100%;
-  min-width: 590px;
+  min-width: 560px;
   border-collapse: collapse;
   table-layout: fixed;
   background: rgba(255, 255, 255, 0.55);
 }
 
 .day-comparison-col-day {
-  width: 72px;
+  width: 64px;
 }
 
 .day-comparison-col-amount {
-  width: 132px;
+  width: 122px;
 }
 
 .day-comparison-col-diff {
-  width: 132px;
+  width: 118px;
 }
 
 .day-comparison-table th,
 .day-comparison-table td {
-  padding: 10px 12px;
+  padding: 8px 9px;
   border-bottom: 1px solid rgba(29, 26, 22, 0.08);
   white-space: nowrap;
   text-align: right;
+  line-height: 1.15;
 }
 
 .day-comparison-table thead th {
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.84rem;
 }
 
 .day-comparison-table thead tr:first-child th {
   color: var(--ink);
-  font-size: 1rem;
+  font-size: 0.96rem;
 }
 
 .day-comparison-table td.day-label-cell,
@@ -1185,22 +1186,22 @@ select {
   }
 
   .day-comparison-table {
-    min-width: 540px;
+    min-width: 500px;
   }
 
   .day-comparison-table th,
   .day-comparison-table td {
-    padding: 8px 8px;
-    font-size: 0.78rem;
+    padding: 6px 6px;
+    font-size: 0.74rem;
   }
 
   .day-comparison-col-day {
-    width: 62px;
+    width: 54px;
   }
 
   .day-comparison-col-amount,
   .day-comparison-col-diff {
-    width: 118px;
+    width: 108px;
   }
 
   .day-summary-preview div {
