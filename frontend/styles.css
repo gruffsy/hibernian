@@ -1484,6 +1484,7 @@ select {
     border-radius: 0;
     background: transparent;
     box-shadow: none;
+    overflow: visible;
   }
 
   .day-summary-card + .day-summary-card {
@@ -1520,7 +1521,10 @@ select {
   }
 
   .day-summary-card .week-summary-detail {
-    padding: 0 0 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -12px;
+    padding: 0 12px 10px;
   }
 
   .day-preview-primary {
@@ -1695,8 +1699,14 @@ select {
   }
 
   .day-mobile-table-shell {
-    margin: 0 -2px;
-    padding-top: 2px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 0 -12px;
+    padding: 2px 12px 0;
+  }
+
+  .day-mobile-table {
+    min-width: 560px;
   }
 
   .day-mobile-table th,
