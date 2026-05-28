@@ -930,7 +930,7 @@ function renderDayMonthComparisonCard(comparison) {
         </div>
         <div class="day-comparison-kpi ${diffClass}">
           <span>Akk. diff</span>
-          <strong>${formatSignedCurrency(comparison.finalDiff)}</strong>
+          <strong>${formatSignedInteger(comparison.finalDiff)}</strong>
         </div>
       </div>
 
@@ -960,12 +960,12 @@ function renderDayMonthComparisonCard(comparison) {
             ${comparison.rows
               .map(
                 (row) => `
-                  <tr>
+                <tr>
                     <td class="day-label-cell">${row.compareLabel || ""}</td>
-                    <td>${row.compareDate ? formatCurrency(row.compareValue) : ""}</td>
-                    <td>${row.selectedDate ? formatCurrency(row.selectedValue) : ""}</td>
+                    <td>${row.compareDate ? formatInteger(row.compareValue) : ""}</td>
+                    <td>${row.selectedDate ? formatInteger(row.selectedValue) : ""}</td>
                     <td class="day-label-cell">${row.selectedLabel || ""}</td>
-                    <td class="${row.runningDiff >= 0 ? "is-positive" : "is-negative"}">${formatSignedCurrency(row.runningDiff)}</td>
+                    <td class="${row.runningDiff >= 0 ? "is-positive" : "is-negative"}">${formatSignedInteger(row.runningDiff)}</td>
                   </tr>
                 `
               )
@@ -974,17 +974,17 @@ function renderDayMonthComparisonCard(comparison) {
           <tfoot>
             <tr>
               <th>Totalt</th>
-              <th>${formatCurrency(comparison.compareTotal)}</th>
-              <th>${formatCurrency(comparison.selectedTotal)}</th>
+              <th>${formatInteger(comparison.compareTotal)}</th>
+              <th>${formatInteger(comparison.selectedTotal)}</th>
               <th></th>
-              <th class="${diffClass}">${formatSignedCurrency(comparison.finalDiff)}</th>
+              <th class="${diffClass}">${formatSignedInteger(comparison.finalDiff)}</th>
             </tr>
             <tr>
               <th>Snitt</th>
-              <th>${formatCurrency(comparison.compareAverage)}</th>
-              <th>${formatCurrency(comparison.selectedAverage)}</th>
+              <th>${formatInteger(comparison.compareAverage)}</th>
+              <th>${formatInteger(comparison.selectedAverage)}</th>
               <th></th>
-              <th></th>
+              <th class="${diffClass}">${comparison.finalPercentChange.toFixed(2).replace(".", ",")} %</th>
             </tr>
             <tr>
               <th>Dager</th>
@@ -992,13 +992,6 @@ function renderDayMonthComparisonCard(comparison) {
               <th>${formatInteger(comparison.selectedCount)}</th>
               <th></th>
               <th></th>
-            </tr>
-            <tr>
-              <th>Endring</th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th class="${diffClass}">${comparison.finalPercentChange.toFixed(2).replace(".", ",")} %</th>
             </tr>
           </tfoot>
         </table>
