@@ -28,6 +28,14 @@ def planned_output(config: PipelineConfig) -> Path:
     return config.store_day_publish
 
 
+def _load_base_source_rows(config: PipelineConfig) -> list[dict[str, Any]]:
+    if config.store_day_publish.exists():
+        return read_json(config.store_day_publish)
+    if config.historical_store_day.exists():
+        return read_json(config.historical_store_day)
+    return []
+
+
 def describe_step(config: PipelineConfig) -> PipelineStep:
     return PipelineStep(
         name="build_store_day",
@@ -168,7 +176,7 @@ def build_store_day_payload(
 
 
 def run(config: PipelineConfig) -> list[dict[str, Any]]:
-    historical_rows = read_json(config.historical_store_day) if config.historical_store_day.exists() else []
+    historical_rows = _load_base_source_rows(config)
     nav_rows = read_json(config.nav_store_day_raw) if config.nav_store_day_raw.exists() else []
     window_start_date = compute_window_start_date(trailing_refresh_days=config.trailing_refresh_days)
     base_rows = build_base_snapshot_rows(historical_rows, window_start_date=window_start_date)
