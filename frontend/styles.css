@@ -1479,6 +1479,50 @@ select {
     font-size: 0.96rem;
   }
 
+  .day-summary-card {
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .day-summary-card + .day-summary-card {
+    margin-top: 0;
+  }
+
+  .day-summary-card .week-summary-trigger {
+    padding: 12px 0 10px;
+  }
+
+  .day-summary-card .summary-label {
+    margin-top: 0;
+    font-size: 0.74rem;
+    letter-spacing: 0.16em;
+  }
+
+  .day-summary-card h3 {
+    margin-top: 6px;
+    font-size: 1.45rem;
+  }
+
+  .day-summary-card .summary-grid {
+    margin-top: 10px;
+    gap: 8px 10px;
+  }
+
+  .day-summary-card .summary-grid span {
+    font-size: 0.72rem;
+  }
+
+  .day-summary-card .summary-grid strong {
+    margin-top: 2px;
+    font-size: 0.9rem;
+  }
+
+  .day-summary-card .week-summary-detail {
+    padding: 0 0 10px;
+  }
+
   .day-preview-primary {
     grid-column: 1 / -1;
     display: flex;
@@ -1651,20 +1695,21 @@ select {
   }
 
   .day-mobile-table-shell {
-    padding-top: 6px;
+    margin: 0 -2px;
+    padding-top: 2px;
   }
 
   .day-mobile-table th,
   .day-mobile-table td {
-    padding: 6px 4px;
+    padding: 5px 3px;
   }
 
   .day-mobile-table th {
-    font-size: 0.68rem;
+    font-size: 0.66rem;
   }
 
   .day-mobile-table td {
-    font-size: 0.73rem;
+    font-size: 0.7rem;
   }
 
   .day-mobile-top h3 {

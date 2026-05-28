@@ -14,9 +14,9 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-28T22:55:37
-updated_at: 2026-05-28T22:57:33
-objective: Tighten mobile day view with compact table layout
+started_at: 2026-05-28T23:08:52
+updated_at: 2026-05-28T23:11:18
+objective: Rework mobile day layout to reduce card framing
 scope: frontend/app.js, frontend/styles.css
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
@@ -141,6 +141,17 @@ timestamp: 2026-05-28T22:57:33
 owner: codex
 status: complete
 summary: Replaced the mobile day card stack with a compact table layout and tightened spacing for day details on mobile.
+files: frontend/app.js, frontend/styles.css
+next: <ikke spesifisert>
+```
+
+### 2026-05-28T23:11:18
+
+```text
+timestamp: 2026-05-28T23:11:18
+owner: codex
+status: complete
+summary: Flattened the mobile day sections, reduced the card framing, and tightened the mobile day table with shorter labels and compact money formatting.
 files: frontend/app.js, frontend/styles.css
 next: <ikke spesifisert>
 ```

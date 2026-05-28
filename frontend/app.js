@@ -1309,6 +1309,10 @@ function renderMobileCards(rows) {
   `;
 }
 
+function compactMoneyText(value) {
+  return String(value || "").replace(/\s*kr$/u, "");
+}
+
 function renderDayMobileTable(rows) {
   return `
     <div class="mobile-only day-mobile-table-shell">
@@ -1324,11 +1328,11 @@ function renderDayMobileTable(rows) {
         <thead>
           <tr>
             <th>Butikk</th>
-            <th>U/moms</th>
+            <th>U/m</th>
             <th>DB</th>
             <th>DG</th>
             <th>Kunder</th>
-            <th>Per kunde</th>
+            <th>Per k.</th>
           </tr>
         </thead>
         <tbody>
@@ -1337,11 +1341,11 @@ function renderDayMobileTable(rows) {
               (row) => `
                 <tr class="${row.butikk === "Totalt" ? "total-row" : ""}">
                   <td class="day-mobile-store-cell">${row.butikk}</td>
-                  <td>${row.umoms}</td>
-                  <td>${row.db}</td>
+                  <td>${compactMoneyText(row.umoms)}</td>
+                  <td>${compactMoneyText(row.db)}</td>
                   <td>${row.dg}</td>
                   <td>${row.antord}</td>
-                  <td>${row.prord}</td>
+                  <td>${compactMoneyText(row.prord)}</td>
                 </tr>
               `
             )
@@ -2191,7 +2195,7 @@ function renderDayPage(state) {
               date,
               state.dayGrouped.get(date) || [],
               state.dayExpandedDates.includes(date),
-              index === 0 ? "summary-emphasis" : ""
+              [index === 0 ? "summary-emphasis" : "", "day-summary-card"].filter(Boolean).join(" ")
             )
           )
           .join("")}
