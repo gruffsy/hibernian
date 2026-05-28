@@ -875,8 +875,8 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
     const selectedMonthDate = selectedDates[index] || null;
     const compareTotals = compareDate ? getTotals(state.dayGrouped.get(compareDate) || []) : null;
     const selectedTotals = selectedMonthDate ? getTotals(state.dayGrouped.get(selectedMonthDate) || []) : null;
-    const compareValue = metric === "db" ? compareTotals?.dbAmount || 0 : compareTotals?.gross || 0;
-    const selectedValue = metric === "db" ? selectedTotals?.dbAmount || 0 : selectedTotals?.gross || 0;
+    const compareValue = metric === "db" ? compareTotals?.dbAmount || 0 : compareTotals?.net || 0;
+    const selectedValue = metric === "db" ? selectedTotals?.dbAmount || 0 : selectedTotals?.net || 0;
 
     compareTotal += compareValue;
     selectedTotal += selectedValue;
@@ -895,7 +895,7 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
 
   return {
     metric,
-    metricLabel: metric === "db" ? "DB dag for dag" : "Omsetning dag for dag",
+    metricLabel: metric === "db" ? "DB dag for dag" : "Omsetning u/moms dag for dag",
     selectedMonthKey,
     compareMonthKey,
     selectedYear: year,
@@ -933,6 +933,13 @@ function renderDayMonthComparisonCard(comparison) {
 
       <div class="day-comparison-table-shell">
         <table class="day-comparison-table">
+          <colgroup>
+            <col class="day-comparison-col-day" />
+            <col class="day-comparison-col-amount" />
+            <col class="day-comparison-col-amount" />
+            <col class="day-comparison-col-day" />
+            <col class="day-comparison-col-diff" />
+          </colgroup>
           <thead>
             <tr>
               <th colspan="2">${comparison.compareYear}</th>

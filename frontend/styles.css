@@ -853,9 +853,22 @@ select {
 
 .day-comparison-table {
   width: 100%;
-  min-width: 680px;
+  min-width: 590px;
   border-collapse: collapse;
+  table-layout: fixed;
   background: rgba(255, 255, 255, 0.55);
+}
+
+.day-comparison-col-day {
+  width: 72px;
+}
+
+.day-comparison-col-amount {
+  width: 132px;
+}
+
+.day-comparison-col-diff {
+  width: 132px;
 }
 
 .day-comparison-table th,
@@ -1172,13 +1185,22 @@ select {
   }
 
   .day-comparison-table {
-    min-width: 620px;
+    min-width: 540px;
   }
 
   .day-comparison-table th,
   .day-comparison-table td {
-    padding: 8px 10px;
-    font-size: 0.82rem;
+    padding: 8px 8px;
+    font-size: 0.78rem;
+  }
+
+  .day-comparison-col-day {
+    width: 62px;
+  }
+
+  .day-comparison-col-amount,
+  .day-comparison-col-diff {
+    width: 118px;
   }
 
   .day-summary-preview div {
