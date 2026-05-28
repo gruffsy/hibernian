@@ -1481,10 +1481,15 @@ select {
 
   .day-summary-card {
     padding: 0;
+    border: 0;
     border-radius: 0;
     background: transparent;
     box-shadow: none;
     overflow: visible;
+  }
+
+  .day-summary-card.summary-emphasis {
+    background: transparent;
   }
 
   .day-summary-card + .day-summary-card {
@@ -1492,39 +1497,39 @@ select {
   }
 
   .day-summary-card .week-summary-trigger {
-    padding: 12px 0 10px;
+    padding: 8px 0 8px;
   }
 
   .day-summary-card .summary-label {
     margin-top: 0;
-    font-size: 0.74rem;
-    letter-spacing: 0.16em;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
   }
 
   .day-summary-card h3 {
-    margin-top: 6px;
-    font-size: 1.45rem;
+    margin-top: 4px;
+    font-size: 1.32rem;
   }
 
   .day-summary-card .summary-grid {
-    margin-top: 10px;
-    gap: 8px 10px;
+    margin-top: 8px;
+    gap: 6px 8px;
   }
 
   .day-summary-card .summary-grid span {
-    font-size: 0.72rem;
+    font-size: 0.68rem;
   }
 
   .day-summary-card .summary-grid strong {
     margin-top: 2px;
-    font-size: 0.9rem;
+    font-size: 0.84rem;
   }
 
   .day-summary-card .week-summary-detail {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    margin: 0 -12px;
-    padding: 0 12px 10px;
+    margin: 0 -8px;
+    padding: 0 8px 10px;
   }
 
   .day-preview-primary {
