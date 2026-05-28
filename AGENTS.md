@@ -1,45 +1,44 @@
 # AGENTS.md
 
-Dette er en enkel handoff-logg for parallelle sesjoner i prosjektet.
+This file is the shared handoff log for parallel sessions in this repo.
 
-Regler:
-- Les alltid denne filen for du starter en ny jobb.
-- Oppdater `Current` nar du starter a jobbe.
-- Oppdater `Current` igjen nar du avslutter eller setter jobben pa vent.
-- Ikke slett historikk med mindre brukeren ber om det.
-- Ikke skriv over andres pagende arbeid. Legg heller inn din egen status i `Current` og noter konflikt under `Blockers`.
+Rules:
+- Read this file before starting a new job.
+- Update `Current` when you start work.
+- Update `Current` again when you finish or pause.
+- Do not delete history unless the user asks.
+- Do not overwrite another session's work. Note conflicts in `Blockers` or `Resume Notes`.
 
 ## Current
 
 ```text
-status: in_progress
+status: complete
 owner: codex
 started_at: 2026-05-28T22:03:27+02:00
-updated_at: 2026-05-28T22:03:27+02:00
-objective: Kartlegg og commit/push relevante lokale endringer på smooth-menu-branchen
-scope: codex/chrome-menu-smooth-collapse og lokale worktree-endringer
-next_step: Inspeksjon av diff og valg av commit-scope
+updated_at: 2026-05-28T22:12:00+02:00
+objective: Finish and push `codex/chrome-menu-smooth-collapse`
+scope: codex/chrome-menu-smooth-collapse
+next_step: Start a new job from `Les AGENTS.md`
+verification: Branch is pushed to origin on commit `0930485`
+blockers: none
 ```
 
 ## Resume Notes
 
-Bruk denne delen for korte notater som hjelper en annen sesjon a fortsette raskt.
-
-- Hva er ferdig: Menyen kollapser na ved scroll, apner ved topp, og har myk overgang.
-- Hva gjenstar: De tre lokale pipeline-datafilene er fortsatt endret lokalt og er ikke del av handoff-jobben.
-- Viktige valg: Toggle-knappen vises bare nar menyen er kollapset; menyen er sticky i kollapset tilstand.
-- Ting som ikke ma rores: De andre lokale endringene i worktree er ikke del av denne jobben.
+- What is done: The smooth menu branch is finished and pushed to origin.
+- What remains: Three local pipeline data files are still modified in the worktree, but they are not part of this handoff.
+- Important choices: The menu toggle stays sticky only in collapsed mode.
+- Do not touch: The three `legacy/frontend-static/data/publish/*` files unless the job is explicitly about pipeline/data refresh.
 
 ## Tmux Recovery Task
 
-Bruk denne oppgaven hvis tmux-okt eller en ny sesjon ikke ser branch eller mister konteksten:
+Use this if a fresh tmux session cannot see the branch or loses context:
 
 ```text
 Repo: C:\Users\una\Documents\New project\hibernian-beta-copy
 Branch: codex/chrome-menu-smooth-collapse
-Maal: fa GitHub og repo-tilstand til a se branchen igjen, og fortsette der vi slapp
 
-Kjor i rekkefolge:
+Run in order:
 1. cd "C:\Users\una\Documents\New project\hibernian-beta-copy"
 2. git status --short
 3. gh auth status
@@ -48,210 +47,89 @@ Kjor i rekkefolge:
 6. git branch -a -vv
 7. git switch --track origin/codex/chrome-menu-smooth-collapse
 
-Hvis branchen allerede finnes lokalt:
-- bruk `git switch codex/chrome-menu-smooth-collapse`
+If the branch already exists locally:
+- use `git switch codex/chrome-menu-smooth-collapse`
 
-Hvis Git fortsatt ber om brukernavn/passord:
-- kjør `gh auth login -h github.com`
-- og gjenta `gh auth setup-git`
+If Git still asks for username/password:
+- run `gh auth login -h github.com`
+- then run `gh auth setup-git` again
 ```
 
 ## Shortcut Command
 
-Hvis du bare sier:
+If you say:
 
 ```text
 Les AGENTS.md
 ```
 
-skal tmux-økten gjøre dette automatisk:
-1. Lese `Current`.
-2. Oppdatere `Current` til `status: in_progress` og eie jobben hvis `owner` er ledig eller peker på en tidligere sesjon.
-3. Hvis `Current` peker på recovery eller branch-problemer, følge `Tmux Recovery Task`.
-4. Ellers fortsette fra `next_step` i `Current`.
-5. Oppdatere `AGENTS.md` med resultatet når den er ferdig.
-
-## History
-
-Legg inn korte historikkposter nederst eller under denne seksjonen.
-
-```text
-timestamp: 2026-05-28T21:15:01+02:00
-owner: codex
-status: complete
-summary: Gjorde menyen utvidet ved start og koblet kollaps til scroll, med knapp kun i kollapset tilstand
-files: frontend/app.js, frontend/styles.css, AGENTS.md
-next: Ingen
-```
-
-```text
-timestamp: 2026-05-28T21:18:35+02:00
-owner: codex
-status: complete
-summary: La til myk overgang for menyen og klargjorde repoet for commit/push
-files: frontend/app.js, frontend/styles.css, AGENTS.md
-next: Ingen
-```
-
-```text
-timestamp: 2026-05-28T21:18:35+02:00
-owner: codex
-status: blocked
-summary: Commit fullfort, men push stoppet av manglende GitHub-autentisering mot origin
-files: frontend/app.js, frontend/styles.css
-next: Skaff push-tilgang eller autentiser GitHub og kjør push pa nytt
-```
-
-```text
-timestamp: 2026-05-28T21:18:35+02:00
-owner: desktop-agent
-status: blocked
-summary: Overlevert publiseringsjobben med commit `73d043f` klar for push
-files: frontend/app.js, frontend/styles.css
-next: Autentiser mot GitHub og push branch `codex/chrome-menu-smooth-collapse`
-```
-
-```text
-timestamp: 2026-05-28T21:25:00+02:00
-owner: codex
-status: complete
-summary: Klargjorde repoet for tmux-overlevering etter vellykket GitHub-autentisering og push
-files: AGENTS.md
-next: Ingen
-```
-
-```text
-timestamp: 2026-05-28T21:41:28+02:00
-owner: codex
-status: complete
-summary: Leste AGENTS.md og verifiserte at `gh auth status` feiler med ugyldig github.com-token
-files: AGENTS.md
-next: Re-autentiser GitHub med `gh auth login -h github.com`
-```
-
-```text
-timestamp: 2026-05-28T21:45:43+02:00
-owner: codex
-status: complete
-summary: Leste AGENTS.md for denne sesjonen og oppdaterte Current etter handoff-reglene
-files: AGENTS.md
-next: Ingen
-```
-
-```text
-timestamp: 2026-05-28T21:50:48+02:00
-owner: codex
-status: complete
-summary: Overlot jobben til desktop-agent ved a oppdatere Current med ny eier
-files: AGENTS.md
-next: Desktop fortsetter fra denne statusen
-```
-
-```text
-timestamp: 2026-05-28T22:02:49+02:00
-owner: codex
-status: complete
-summary: Gjenopprettet repo-tilstanden og verifiserte at recovery-branchen er lokalt tilgjengelig og i sync med origin
-files: AGENTS.md
-next: Ingen
-```
-
-### Template for en ny post
-
-```text
-timestamp: <ISO-8601 tid>
-owner: <agent-navn eller session-id>
-status: <in_progress | blocked | complete>
-summary: <kort oppsummering>
-files: <list de viktigste filene>
-next: <neste steg hvis relevant>
-```
-
-## Hand-off pattern
-
-Nar du starter:
-1. Les `Current`.
-2. Oppdater `owner`, `status`, `started_at`, `updated_at`, `objective`, `scope` og `next_step`.
-3. Fortsett arbeidet.
-
-Nar du avslutter:
-1. Oppdater `Current` med resultatet.
-2. Sett `status` til `complete` eller `blocked`.
-3. Fyll inn `verification` og `blockers` tydelig.
-4. Legg gjerne til en kort post i `History`.
-
-## Tmux Routine
-
-Dette er den anbefalte ma-ten a jobbe pa fra SSH eller tmux:
-
-```text
-1. Les AGENTS.md
-2. Sjekk Current for siste status
-3. Oppdater Current til at du eier jobben
-4. Kjor kommandoen du fikk
-5. Oppdater Current med resultatet
-6. Fortsett med neste kommando, eller sett status til complete
-```
-
-Kort variant du kan bruke som standard beskjed til en annen sesjon:
-
-```text
-Les AGENTS.md, ta eierskap til jobben, kjør: <kommando>, og oppdater AGENTS.md nar du er ferdig.
-```
-
-Hvis du vil gi en tmux-okt en ren start, bruk gjerne denne rekkefolgen:
-
-```text
-les AGENTS.md
-oppdater Current med mitt navn / session-id
-kjor neste kommando
-skriv tilbake status
-```
-
-## Conflict Rule
-
-Hvis en annen sesjon allerede har `status: in_progress` pa samme scope:
-- vent med a ta over
-- eller skriv en kort kommentar i `Resume Notes`
-- eller sett din egen jobb til et annet scope
-
-Det viktigste er at `AGENTS.md` alltid viser hvem som har siste aktive eierskap.
+the tmux session should:
+1. Read `Current`.
+2. If `Current.status` is `complete`, start a new job by setting `status: in_progress` with a new `objective` and `scope`.
+3. If `Current` points to recovery or branch problems, follow `Tmux Recovery Task`.
+4. Otherwise continue from `next_step`.
+5. Write the result back to `AGENTS.md` when done.
 
 ## Commit Scope Guard
 
-Før enhver commit eller push skal tmux-kjøre scope-guarden:
+Before any commit or push, run:
 
 ```text
-powershell -ExecutionPolicy Bypass -File .\scripts\git-scope-guard.ps1 -Objective "<kort objektiv>"
+powershell -ExecutionPolicy Bypass -File .\scripts\git-scope-guard.ps1 -Objective "<short objective>"
 ```
 
-Regler:
-- `legacy/frontend-static/data/publish/*` skal ikke med i UI- eller dokumentasjonsjobber
-- de filene får bare være med hvis objektivet tydelig er pipeline, data refresh, R2 eller scheduler
-- hvis scope-guarden stopper, skal du ikke fortsette med `git add`, `git commit` eller `git push` før scopet er ryddet
-- hvis du faktisk jobber med pipeline/data, bruk `-AllowPipelineData`
+Rules:
+- `legacy/frontend-static/data/publish/*` must not be included in UI or documentation jobs.
+- Those files are only allowed when the objective clearly says pipeline, data refresh, R2, or scheduler.
+- If the guard stops the job, do not continue with `git add`, `git commit`, or `git push` until the scope is cleaned up.
+- For actual pipeline/data work, use `-AllowPipelineData`.
 
-## Automatisk Bruk
+## Automatic Use
 
-For a slippe manuell redigering skal denne fila oppdateres av scriptet:
+To avoid manual edits, use this script to update the file:
 
 ```text
 scripts/agent-task.ps1
 ```
 
-Vanlig bruk:
+Typical usage:
 
 ```text
-powershell -ExecutionPolicy Bypass -File .\scripts\agent-task.ps1 -Mode start -Owner tmux -Objective "<jobb>" -Scope "<filer>" -NextStep "<neste steg>"
-powershell -ExecutionPolicy Bypass -File .\scripts\agent-task.ps1 -Mode finish -Owner tmux -Objective "<jobb>" -Scope "<filer>" -Summary "<kort resultat>"
+powershell -ExecutionPolicy Bypass -File .\scripts\agent-task.ps1 -Mode start -Owner tmux -Objective "<job>" -Scope "<files>" -NextStep "<next step>"
+powershell -ExecutionPolicy Bypass -File .\scripts\agent-task.ps1 -Mode finish -Owner tmux -Objective "<job>" -Scope "<files>" -Summary "<short result>"
+powershell -ExecutionPolicy Bypass -File .\scripts\agent-task.ps1 -Mode run -Owner tmux -Objective "<job>" -Scope "<files>" -Command "<command>"
 ```
 
-Hvis du vil at ett kall skal starte, kjorre kommando og avslutte automatisk:
+Rule:
+- tmux and Codex should use the script instead of editing `AGENTS.md` by hand.
+- If the script is used correctly, `Current` is always updated automatically at start and finish.
+
+## History
 
 ```text
-powershell -ExecutionPolicy Bypass -File .\scripts\agent-task.ps1 -Mode run -Owner tmux -Objective "<jobb>" -Scope "<filer>" -Command "<kommando>"
+timestamp: 2026-05-28T22:12:00+02:00
+owner: codex
+status: complete
+summary: Closed the smooth-menu branch and reset the handoff file so a fresh tmux session can start a new job cleanly
+files: AGENTS.md
+next: None
 ```
 
-Regel:
-- tmux-okt og Codex-sesjon skal bruke scriptet i stedet for a redigere `AGENTS.md` for hand
-- hvis scriptet brukes riktig, skal `Current` alltid oppdateres automatisk ved start og avslutning
+```text
+timestamp: 2026-05-28T21:15:01+02:00
+owner: codex
+status: complete
+summary: Made the menu start expanded and collapse on scroll, with the toggle only in the collapsed state
+files: frontend/app.js, frontend/styles.css, AGENTS.md
+next: None
+```
+
+```text
+timestamp: 2026-05-28T21:18:35+02:00
+owner: codex
+status: blocked
+summary: Commit finished, but push stopped by missing GitHub authentication for origin
+files: frontend/app.js, frontend/styles.css
+next: Authenticate GitHub and push again
+```
+
