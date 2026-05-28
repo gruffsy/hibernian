@@ -1111,9 +1111,63 @@ select {
 }
 
 @media (max-width: 860px) {
+  :root {
+    --section-gap: 12px;
+    --radius-xl: 22px;
+    --radius-lg: 18px;
+    --radius-md: 14px;
+  }
+
   .page-shell {
-    width: min(100%, calc(100% - 18px));
-    padding-top: 18px;
+    width: min(100%, calc(100% - 14px));
+    padding: 12px 0 32px;
+  }
+
+  .eyebrow,
+  .summary-label,
+  .section-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.13em;
+  }
+
+  .chrome-shell {
+    margin-top: 12px;
+  }
+
+  .chrome-toggle {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+
+  .chrome-panel {
+    gap: var(--section-gap);
+    margin-top: var(--section-gap);
+  }
+
+  .beta-nav,
+  .quick-picker,
+  .mode-picker {
+    gap: 8px;
+  }
+
+  .nav-pill,
+  .quick-button,
+  .button {
+    padding: 10px 14px;
+  }
+
+  .date-picker input,
+  .date-picker select,
+  .seller-search input {
+    width: 100%;
+    min-width: 0;
+    padding: 10px 12px;
+    border-radius: 12px;
+  }
+
+  .date-picker span {
+    font-size: 0.82rem;
+    font-weight: 700;
   }
 
   .masthead {
@@ -1127,13 +1181,26 @@ select {
   }
 
   .history-head h2 {
-    font-size: clamp(1.8rem, 8vw, 2.6rem);
+    font-size: clamp(1.55rem, 7vw, 2.25rem);
   }
 
   .status-strip,
   .control-panel {
     flex-direction: column;
     align-items: stretch;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+
+  .updated-line,
+  .status-context {
+    font-size: 0.9rem;
+  }
+
+  .week-toolbar,
+  .seller-toolbar,
+  .stock-toolbar {
+    gap: 10px;
   }
 
   .week-toolbar-pickers {
@@ -1162,31 +1229,83 @@ select {
     grid-template-columns: 1fr;
   }
 
+  .summary-card {
+    padding: 14px;
+  }
+
+  .summary-card h3 {
+    margin: 6px 0 0;
+    font-size: clamp(1.35rem, 7vw, 1.9rem);
+    line-height: 1.05;
+  }
+
+  .summary-grid {
+    gap: 8px 12px;
+    margin-top: 12px;
+  }
+
+  .summary-grid span,
+  .mobile-store-meta span {
+    font-size: 0.74rem;
+    font-weight: 600;
+  }
+
+  .summary-grid strong,
+  .mobile-store-meta strong {
+    margin-top: 2px;
+    font-size: 0.9rem;
+  }
+
   .stock-stats-grid {
     grid-template-columns: 1fr 1fr;
-    padding: 0 18px 18px;
+    gap: 8px;
+    padding: 0 12px 12px;
   }
 
   .stock-stat-card {
-    padding: 16px 18px;
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .stock-stat-card span {
+    font-size: 0.78rem;
+    font-weight: 600;
+  }
+
+  .stock-stat-card strong {
+    margin-top: 4px;
+    font-size: 1rem;
+  }
+
+  .stock-stat-card-primary {
+    gap: 10px;
+  }
+
+  .stock-stat-card-primary strong {
+    font-size: 1.25rem;
   }
 
   .week-summary-detail {
-    padding: 0 14px 14px;
+    padding: 0 12px 12px;
+  }
+
+  .week-summary-trigger {
+    padding: 14px;
   }
 
   .day-section summary {
-    padding: 18px 16px 14px;
+    padding: 14px 12px 12px;
     align-items: flex-start;
     flex-direction: column;
+    gap: 12px;
   }
 
   .seller-section summary {
-    padding: 18px 16px 14px;
+    padding: 14px 12px 12px;
   }
 
   .seller-section-body {
-    padding: 0 16px 16px;
+    padding: 0 12px 12px;
   }
 
   .day-section h2 {
@@ -1201,7 +1320,7 @@ select {
   }
 
   .day-comparison-card {
-    padding: 18px 14px;
+    padding: 14px 10px;
   }
 
   .day-comparison-head {
@@ -1216,27 +1335,37 @@ select {
   }
 
   .day-comparison-table {
-    min-width: 470px;
+    min-width: 390px;
   }
 
   .day-comparison-table th,
   .day-comparison-table td {
-    padding: 5px 5px;
-    font-size: 0.82rem;
+    padding: 4px 3px;
+    font-size: 0.78rem;
+  }
+
+  .day-comparison-table thead th,
+  .day-comparison-table tfoot th,
+  .day-comparison-table tfoot td {
+    font-size: 0.76rem;
+  }
+
+  .day-comparison-table thead tr:first-child th {
+    font-size: 0.86rem;
   }
 
   .day-comparison-col-day {
-    width: 40px;
+    width: 34px;
   }
 
   .day-comparison-col-amount,
   .day-comparison-col-diff {
-    width: 92px;
+    width: 82px;
   }
 
   .day-summary-preview div {
-    padding: 10px 12px;
-    border-radius: 14px;
+    padding: 8px 10px;
+    border-radius: 12px;
   }
 
   .day-summary-preview span {
@@ -1272,11 +1401,151 @@ select {
 
   .month-block,
   .history-block {
-    padding: 18px 14px;
+    padding: 14px 12px;
+  }
+
+  .chart-card,
+  .side-panel {
+    padding: 14px;
+    border-radius: var(--radius-lg);
+  }
+
+  .chart-card h3 {
+    margin-bottom: 8px;
+    font-size: 0.98rem;
+  }
+
+  .chart-caption,
+  .side-panel p,
+  .side-list {
+    font-size: 0.8rem;
+    line-height: 1.35;
+  }
+
+  .mobile-store-list {
+    gap: 8px;
+    padding-top: 8px;
+  }
+
+  .mobile-store-card {
+    padding: 12px;
+    border-radius: 14px;
+  }
+
+  .mobile-store-card + .mobile-store-card {
+    margin-top: 0;
+  }
+
+  .mobile-store-head {
+    gap: 10px;
+  }
+
+  .mobile-store-head h3 {
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.15;
+  }
+
+  .mobile-store-head strong {
+    font-size: 0.95rem;
+  }
+
+  .mobile-store-meta {
+    gap: 8px 10px;
+    margin-top: 10px;
+  }
+
+  .mobile-store-foot {
+    margin-top: 8px;
+    font-size: 0.78rem;
+  }
+
+  .seller-list {
+    gap: 8px;
+  }
+
+  .seller-block {
+    gap: 10px;
+  }
+
+  .seller-block-head {
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .seller-block-head h2 {
+    font-size: 1.2rem;
+  }
+
+  .seller-count {
+    font-size: 0.78rem;
+  }
+
+  .seller-row {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 6px 10px;
+    align-items: start;
+    padding: 10px 12px;
+    border-radius: 14px;
+  }
+
+  .seller-rank {
+    min-width: 40px;
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+
+  .seller-copy {
+    min-width: 0;
+  }
+
+  .seller-copy h3 {
+    overflow-wrap: anywhere;
+    font-size: 0.95rem;
+    font-weight: 800;
+    line-height: 1.15;
+  }
+
+  .seller-copy p,
+  .seller-metrics span {
+    font-size: 0.74rem;
+  }
+
+  .seller-metrics {
+    grid-column: 2;
+    justify-self: start;
+    display: flex;
+    gap: 6px;
+    align-items: baseline;
+    text-align: left;
+  }
+
+  .seller-metrics strong {
+    font-size: 0.95rem;
+  }
+
+  .stock-mobile-card .mobile-store-head {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .stock-mobile-card .mobile-store-head strong {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .stock-mobile-card .mobile-store-head h3 {
+    font-size: 0.95rem;
+  }
+
+  .stock-mobile-code {
+    margin-bottom: 3px;
+    font-size: 0.74rem;
   }
 
   .day-mobile-row {
-    padding: 10px 12px;
+    padding: 8px 10px;
   }
 
   .day-mobile-top h3 {
