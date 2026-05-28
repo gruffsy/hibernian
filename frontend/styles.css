@@ -442,6 +442,23 @@ select {
   margin-top: 4px;
 }
 
+.day-summary-card .summary-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px 8px;
+  margin-top: 12px;
+}
+
+.day-summary-card .summary-grid span {
+  font-size: 0.74rem;
+  line-height: 1.05;
+}
+
+.day-summary-card .summary-grid strong {
+  margin-top: 2px;
+  font-size: 0.92rem;
+  line-height: 1.08;
+}
+
 .compact-report-table {
   width: 100%;
   table-layout: fixed;
@@ -981,22 +998,22 @@ select {
 
 .day-comparison-table th,
 .day-comparison-table td {
-  padding: 7px 6px;
+  padding: 5px 4px;
   border-bottom: 1px solid rgba(29, 26, 22, 0.08);
   white-space: nowrap;
   text-align: right;
-  line-height: 1.15;
-  font-size: 0.8rem;
+  line-height: 1.08;
+  font-size: 0.74rem;
 }
 
 .day-comparison-table thead th {
   color: var(--muted);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
 }
 
 .day-comparison-table thead tr:first-child th {
   color: var(--ink);
-  font-size: 0.86rem;
+  font-size: 0.8rem;
 }
 
 .day-comparison-table td.day-label-cell,
@@ -1012,7 +1029,7 @@ select {
 .day-comparison-table tfoot th,
 .day-comparison-table tfoot td {
   font-weight: 700;
-  font-size: 0.79rem;
+  font-size: 0.74rem;
 }
 
 .is-positive {

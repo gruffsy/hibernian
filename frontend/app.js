@@ -2168,15 +2168,7 @@ function renderDaySection(dateKey, rows, expanded = false, modifier = "") {
       modifier,
       `data-day-toggle=\"${dateKey}\"`,
       "U/moms",
-      totals.umoms,
-      [
-        { label: "DG", value: totals.dg },
-        { label: "Per kunde", value: totals.prord },
-      ],
-      [
-        { label: "DB", value: totals.db },
-        { label: "Kunder", value: totals.antord },
-      ]
+      totals.umoms
     )}
   `;
 }

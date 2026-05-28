@@ -14,10 +14,10 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-29T00:08:24
-updated_at: 2026-05-29T00:10:05
-objective: Stack day summary metrics and compact the day comparison table
-scope: frontend/app.js, frontend/styles.css, scripts/git-scope-guard.ps1
+started_at: 2026-05-29T00:25:47
+updated_at: 2026-05-29T00:26:35
+objective: Tighten day summary layout and day comparison typography
+scope: frontend/app.js, frontend/styles.css
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
 blockers: ingen
@@ -219,5 +219,16 @@ owner: codex
 status: complete
 summary: Added a stacked right-side metric block to the day summary cards, aligned the day comparison table with the compact day-table style, and relaxed the scope guard so it checks staged files first
 files: frontend/app.js, frontend/styles.css, scripts/git-scope-guard.ps1
+next: <ikke spesifisert>
+```
+
+### 2026-05-29T00:26:35
+
+```text
+timestamp: 2026-05-29T00:26:35
+owner: codex
+status: complete
+summary: Moved the day summary back to a single U/moms side metric with DB, DG, Kunder, and Per kunde in one compact row, and tightened the day comparison table typography to better match the day table
+files: frontend/app.js, frontend/styles.css
 next: <ikke spesifisert>
 ```
