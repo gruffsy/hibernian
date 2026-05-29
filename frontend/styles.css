@@ -444,19 +444,25 @@ select {
 
 .day-summary-card .summary-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px 8px;
-  margin-top: 12px;
+  gap: 4px 6px;
+  margin-top: 8px;
+}
+
+.day-summary-card .summary-grid div {
+  min-width: 0;
 }
 
 .day-summary-card .summary-grid span {
-  font-size: 0.74rem;
+  font-size: 0.68rem;
   line-height: 1.05;
+  white-space: nowrap;
 }
 
 .day-summary-card .summary-grid strong {
   margin-top: 2px;
-  font-size: 0.92rem;
+  font-size: 0.84rem;
   line-height: 1.08;
+  white-space: nowrap;
 }
 
 .compact-report-table {
@@ -981,7 +987,7 @@ select {
 }
 
 .day-comparison-table {
-  min-width: 500px;
+  min-width: 360px;
 }
 
 .day-comparison-col-day {
@@ -1520,32 +1526,33 @@ select {
   }
 
   .day-comparison-table {
-    min-width: 390px;
+    min-width: 360px;
   }
 
   .day-comparison-table th,
   .day-comparison-table td {
-    padding: 4px 3px;
-    font-size: 0.78rem;
+    padding: 8px 6px;
+    font-size: 0.72rem;
+    line-height: 1.1;
   }
 
   .day-comparison-table thead th,
   .day-comparison-table tfoot th,
   .day-comparison-table tfoot td {
-    font-size: 0.76rem;
+    font-size: 0.72rem;
   }
 
   .day-comparison-table thead tr:first-child th {
-    font-size: 0.86rem;
+    font-size: 0.76rem;
   }
 
   .day-comparison-col-day {
-    width: 34px;
+    width: 28px;
   }
 
   .day-comparison-col-amount,
   .day-comparison-col-diff {
-    width: 82px;
+    width: 72px;
   }
 
   .day-summary-preview div {
