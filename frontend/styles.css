@@ -1370,6 +1370,14 @@ select {
     padding: 12px 14px;
   }
 
+  .day-status-strip {
+    margin-top: 10px;
+    padding: 0 12px 4px;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
   .updated-line,
   .status-context {
     font-size: 0.9rem;
@@ -1409,6 +1417,12 @@ select {
 
   .summary-card {
     padding: 14px;
+  }
+
+  .day-stack,
+  .day-comparison-stack {
+    gap: 18px;
+    margin-top: 18px;
   }
 
   .summary-card h3 {
@@ -1642,6 +1656,29 @@ select {
     -webkit-overflow-scrolling: touch;
     margin: 0 -8px;
     padding: 0 8px 10px;
+  }
+
+  .day-comparison-head h2 {
+    margin: 6px 0 0;
+  }
+
+  .day-comparison-kpi {
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+  }
+
+  .day-comparison-kpi span {
+    font-size: 0.72rem;
+  }
+
+  .day-comparison-kpi strong {
+    margin-top: 4px;
+    font-size: 1rem;
+  }
+
+  .day-page-footer {
+    margin-top: 20px;
   }
 
   .day-preview-primary {
