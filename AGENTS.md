@@ -14,11 +14,11 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-29T12:38:58
-updated_at: 2026-05-29T12:56:56
-objective: Mobile day summary and comparison card refinements
+started_at: 2026-05-29T13:06:15
+updated_at: 2026-05-29T13:12:59
+objective: Update day comparison labels to include selected day context
 scope: frontend/app.js,frontend/styles.css,AGENTS.md
-next_step: Verify the mobile day page visually and tune spacing if needed
+next_step: Verify the mobile day page visually and adjust the label wording if it feels too long
 verification: <ikke spesifisert>
 blockers: ingen
 ```
@@ -341,4 +341,15 @@ status: complete
 summary: Stacked the day summary metrics into left/right columns, lowercased the mobile labels, and made the day comparison tables collapsible behind the Akk. diff summary.
 files: frontend/app.js,frontend/styles.css,AGENTS.md
 next: Verify the mobile day page visually and tune spacing if needed
+```
+
+### 2026-05-29T13:12:59
+
+```text
+timestamp: 2026-05-29T13:12:59
+owner: codex
+status: complete
+summary: Changed the day comparison KPI label to include the selected day and kept the comparison cards collapsible behind that summary.
+files: frontend/app.js,frontend/styles.css,AGENTS.md
+next: Verify the mobile day page visually and adjust the label wording if it feels too long
 ```

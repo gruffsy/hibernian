@@ -914,7 +914,7 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
   };
 }
 
-function renderDayMonthComparisonCard(comparison) {
+function renderDayMonthComparisonCardLegacy(comparison) {
   if (!comparison) {
     return "";
   }
@@ -1000,12 +1000,13 @@ function renderDayMonthComparisonCard(comparison) {
   `;
 }
 
-function renderDayMonthComparisonCard(comparison, expanded = false) {
+function renderDayMonthComparisonCard(comparison, expanded = false, selectedDayLabel = "") {
   if (!comparison) {
     return "";
   }
 
   const diffClass = comparison.finalDiff >= 0 ? "is-positive" : "is-negative";
+  const diffTitle = selectedDayLabel ? `Akk. diff - ${selectedDayLabel}` : "Akk. diff";
 
   return `
     <article class="day-comparison-card ${expanded ? "is-expanded" : "is-collapsed"}">
@@ -1017,7 +1018,7 @@ function renderDayMonthComparisonCard(comparison, expanded = false) {
       >
         <p class="summary-label">${comparison.metricLabel}</p>
         <div class="day-comparison-kpi ${diffClass}">
-          <span>Akk. diff</span>
+          <span>${diffTitle}</span>
           <strong>${formatSignedInteger(comparison.finalDiff)}</strong>
         </div>
       </button>
@@ -2301,6 +2302,7 @@ function renderDayPage(state) {
   const dbComparison = buildDayMonthComparison(state, state.selectedDate, "db");
   const grossComparisonExpanded = state.dayComparisonExpanded.includes("gross");
   const dbComparisonExpanded = state.dayComparisonExpanded.includes("db");
+  const selectedDayLabel = formatDayHeading(state.selectedDate);
 
   return `
     <main class="page-shell">
@@ -2339,8 +2341,8 @@ function renderDayPage(state) {
         grossComparison || dbComparison
           ? `
             <section class="day-comparison-stack">
-              ${renderDayMonthComparisonCard(grossComparison, grossComparisonExpanded)}
-              ${renderDayMonthComparisonCard(dbComparison, dbComparisonExpanded)}
+              ${renderDayMonthComparisonCard(grossComparison, grossComparisonExpanded, selectedDayLabel)}
+              ${renderDayMonthComparisonCard(dbComparison, dbComparisonExpanded, selectedDayLabel)}
             </section>
           `
           : ""
