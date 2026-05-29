@@ -14,9 +14,9 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-29T10:26:56
-updated_at: 2026-05-29T10:27:55
-objective: Tighten mobile day comparison amount columns
+started_at: 2026-05-29T10:45:42
+updated_at: 2026-05-29T10:48:22
+objective: Convert mobile day comparison columns to percentages
 scope: frontend/styles.css
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
@@ -273,6 +273,17 @@ timestamp: 2026-05-29T10:27:55
 owner: codex
 status: complete
 summary: Narrowed the mobile amount and Akk. diff columns a little more so the comparison table breathes better on small screens
+files: frontend/styles.css
+next: <ikke spesifisert>
+```
+
+### 2026-05-29T10:48:22
+
+```text
+timestamp: 2026-05-29T10:48:22
+owner: codex
+status: complete
+summary: Switched the mobile day-comparison table to percentage-based column widths so it matches the compact day-mobile-table more closely
 files: frontend/styles.css
 next: <ikke spesifisert>
 ```

@@ -1539,7 +1539,7 @@ select {
   }
 
   .day-comparison-table {
-    min-width: 360px;
+    min-width: 0;
   }
 
   .day-comparison-table th,
@@ -1560,16 +1560,15 @@ select {
   }
 
   .day-comparison-col-day {
-    width: 22px;
+    width: 13%;
   }
 
-  .day-comparison-col-amount,
-  .day-comparison-col-diff {
-    width: 70px;
+  .day-comparison-col-amount {
+    width: 28%;
   }
 
   .day-comparison-col-diff {
-    width: 70px;
+    width: 18%;
   }
 
   .day-summary-preview div {
