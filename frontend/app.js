@@ -897,7 +897,7 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
 
   return {
     metric,
-    metricLabel: metric === "db" ? "DB dag for dag" : "Omsetning u/moms dag for dag",
+    metricLabel: metric === "db" ? "DB dag for dag" : "Omsetning u/mva dag for dag",
     selectedMonthKey,
     compareMonthKey,
     selectedYear: year,
@@ -996,6 +996,106 @@ function renderDayMonthComparisonCard(comparison) {
           </tfoot>
         </table>
       </div>
+    </article>
+  `;
+}
+
+function renderDayMonthComparisonCard(comparison, expanded = false) {
+  if (!comparison) {
+    return "";
+  }
+
+  const diffClass = comparison.finalDiff >= 0 ? "is-positive" : "is-negative";
+
+  return `
+    <article class="day-comparison-card ${expanded ? "is-expanded" : "is-collapsed"}">
+      <button
+        class="day-comparison-trigger"
+        type="button"
+        data-day-comparison-toggle="${comparison.metric}"
+        aria-expanded="${expanded ? "true" : "false"}"
+      >
+        <p class="summary-label">${comparison.metricLabel}</p>
+        <div class="day-comparison-kpi ${diffClass}">
+          <span>Akk. diff</span>
+          <strong>${formatSignedInteger(comparison.finalDiff)}</strong>
+        </div>
+      </button>
+
+      ${expanded
+        ? `
+          <div class="day-comparison-body">
+            <div class="day-comparison-head">
+              <div>
+                <h2>${monthLabelFromKey(comparison.selectedMonthKey)} mot ${monthLabelFromKey(comparison.compareMonthKey)}</h2>
+              </div>
+            </div>
+
+            <div class="day-comparison-table-shell">
+              <table class="day-comparison-table compact-report-table">
+                <colgroup>
+                  <col class="day-comparison-col-day" />
+                  <col class="day-comparison-col-amount" />
+                  <col class="day-comparison-col-amount" />
+                  <col class="day-comparison-col-day" />
+                  <col class="day-comparison-col-diff" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th colspan="2">${comparison.compareYear}</th>
+                    <th colspan="2">${comparison.selectedYear}</th>
+                    <th rowspan="2">Akk. diff</th>
+                  </tr>
+                  <tr>
+                    <th>Dag</th>
+                    <th>BelÃ¸p</th>
+                    <th>BelÃ¸p</th>
+                    <th>Dag</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${comparison.rows
+                    .map(
+                      (row) => `
+                      <tr>
+                          <td class="day-label-cell">${row.compareLabel || ""}</td>
+                          <td>${row.compareDate ? formatInteger(row.compareValue) : ""}</td>
+                          <td>${row.selectedDate ? formatInteger(row.selectedValue) : ""}</td>
+                          <td class="day-label-cell">${row.selectedLabel || ""}</td>
+                          <td class="${row.runningDiff >= 0 ? "is-positive" : "is-negative"}">${formatSignedInteger(row.runningDiff)}</td>
+                        </tr>
+                      `
+                    )
+                    .join("")}
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Totalt</th>
+                    <th>${formatInteger(comparison.compareTotal)}</th>
+                    <th>${formatInteger(comparison.selectedTotal)}</th>
+                    <th></th>
+                    <th class="${diffClass}">${formatSignedInteger(comparison.finalDiff)}</th>
+                  </tr>
+                  <tr>
+                    <th>Snitt</th>
+                    <th>${formatInteger(comparison.compareAverage)}</th>
+                    <th>${formatInteger(comparison.selectedAverage)}</th>
+                    <th></th>
+                    <th class="${diffClass}">${comparison.finalPercentChange.toFixed(2).replace(".", ",")} %</th>
+                  </tr>
+                  <tr>
+                    <th>Dager</th>
+                    <th>${formatInteger(comparison.compareCount)}</th>
+                    <th>${formatInteger(comparison.selectedCount)}</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        `
+        : ""}
     </article>
   `;
 }
@@ -1123,7 +1223,8 @@ function renderWeekExpandableSummaryCard(
   secondaryLabel = "",
   secondaryValue = "",
   secondaryItems = [],
-  gridItems = null
+  gridItems = null,
+  summaryGridHtml = ""
 ) {
   if (!totals) {
     return "";
@@ -1161,6 +1262,19 @@ function renderWeekExpandableSummaryCard(
     { label: "Per kunde", value: totals.prord },
   ];
   const summaryGridItems = Array.isArray(gridItems) && gridItems.length ? gridItems : defaultGridItems;
+  const gridMarkup = summaryGridHtml
+    ? summaryGridHtml
+    : `
+        <div class="summary-grid">
+          ${summaryGridItems
+            .map(
+              (entry) => `
+                <div><span>${entry.label}</span><strong>${entry.value}</strong></div>
+              `
+            )
+            .join("")}
+        </div>
+      `;
 
   return `
     <article class="summary-card week-summary-card ${modifier} ${expanded ? "is-expanded" : ""}">
@@ -1177,15 +1291,7 @@ function renderWeekExpandableSummaryCard(
           </div>
           ${sideBlock}
         </div>
-        <div class="summary-grid">
-          ${summaryGridItems
-            .map(
-              (entry) => `
-                <div><span>${entry.label}</span><strong>${entry.value}</strong></div>
-              `
-            )
-            .join("")}
-        </div>
+        ${gridMarkup}
       </button>
       ${expanded ? `<div class="week-summary-detail">${detailContent}</div>` : ""}
     </article>
@@ -1337,11 +1443,11 @@ function renderDayMobileTable(rows) {
         <thead>
           <tr>
             <th>Butikk</th>
-            <th>U/m</th>
+            <th>u/mva</th>
             <th>DB</th>
             <th>DG</th>
             <th>Kunder</th>
-            <th>Per k.</th>
+            <th>pr. k.</th>
           </tr>
         </thead>
         <tbody>
@@ -2158,6 +2264,18 @@ function renderPeoplePageCompact(state) {
 function renderDaySection(dateKey, rows, expanded = false, modifier = "") {
   const totals = getTotals(rows);
   const detailContent = `${renderDesktopTable(rows)}${renderDayMobileTable(rows)}`;
+  const summaryGridHtml = `
+    <div class="day-summary-metrics">
+      <div class="day-summary-metric-column">
+        <div><span>DB</span><strong>${totals.db}</strong></div>
+        <div><span>DG</span><strong>${totals.dg}</strong></div>
+      </div>
+      <div class="day-summary-metric-column">
+        <div><span>Kunder</span><strong>${totals.antord}</strong></div>
+        <div><span>Pr. k.</span><strong>${totals.prord}</strong></div>
+      </div>
+    </div>
+  `;
 
   return `
     ${renderWeekExpandableSummaryCard(
@@ -2167,8 +2285,11 @@ function renderDaySection(dateKey, rows, expanded = false, modifier = "") {
       expanded,
       modifier,
       `data-day-toggle=\"${dateKey}\"`,
-      "U/moms",
-      totals.umoms
+      "u/mva",
+      totals.umoms,
+      [],
+      null,
+      summaryGridHtml
     )}
   `;
 }
@@ -2178,6 +2299,8 @@ function renderDayPage(state) {
   const visibleDates = state.dayDates.slice(selectedIndex, selectedIndex + 3);
   const grossComparison = buildDayMonthComparison(state, state.selectedDate, "gross");
   const dbComparison = buildDayMonthComparison(state, state.selectedDate, "db");
+  const grossComparisonExpanded = state.dayComparisonExpanded.includes("gross");
+  const dbComparisonExpanded = state.dayComparisonExpanded.includes("db");
 
   return `
     <main class="page-shell">
@@ -2216,8 +2339,8 @@ function renderDayPage(state) {
         grossComparison || dbComparison
           ? `
             <section class="day-comparison-stack">
-              ${renderDayMonthComparisonCard(grossComparison)}
-              ${renderDayMonthComparisonCard(dbComparison)}
+              ${renderDayMonthComparisonCard(grossComparison, grossComparisonExpanded)}
+              ${renderDayMonthComparisonCard(dbComparison, dbComparisonExpanded)}
             </section>
           `
           : ""
@@ -3626,6 +3749,16 @@ function bindEvents(state) {
     });
   });
 
+  document.querySelectorAll("[data-day-comparison-toggle]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const key = button.dataset.dayComparisonToggle;
+      state.dayComparisonExpanded = state.dayComparisonExpanded.includes(key)
+        ? state.dayComparisonExpanded.filter((value) => value !== key)
+        : [...state.dayComparisonExpanded, key];
+      paint(state);
+    });
+  });
+
   document.querySelectorAll("[data-month-panels-toggle]").forEach((button) => {
     button.addEventListener("click", () => {
       state.monthPanelsExpanded = !state.monthPanelsExpanded;
@@ -3756,6 +3889,7 @@ async function render() {
       dayWeekDates: dayData.weekDates,
       selectedDate: dayData.dates[0],
       dayExpandedDates: [],
+      dayComparisonExpanded: [],
       weekOptions,
       selectedWeekKey,
       compareWeekKey,

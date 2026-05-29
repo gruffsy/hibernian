@@ -465,6 +465,38 @@ select {
   white-space: nowrap;
 }
 
+.day-summary-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 14px;
+  margin-top: 8px;
+}
+
+.day-summary-metric-column {
+  display: grid;
+  gap: 8px;
+}
+
+.day-summary-metric-column div {
+  min-width: 0;
+}
+
+.day-summary-metric-column span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.day-summary-metric-column strong {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.84rem;
+  line-height: 1.08;
+  white-space: nowrap;
+}
+
 .compact-report-table {
   width: 100%;
   table-layout: fixed;
@@ -949,6 +981,30 @@ select {
   border-radius: 0;
   background: transparent;
   box-shadow: none;
+}
+
+.day-comparison-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.day-comparison-trigger:focus-visible {
+  outline: 2px solid rgba(15, 118, 110, 0.35);
+  outline-offset: 4px;
+}
+
+.day-comparison-card.is-collapsed .day-comparison-body {
+  display: none;
+}
+
+.day-comparison-body {
+  margin-top: 10px;
 }
 
 .day-comparison-head {
@@ -1542,6 +1598,14 @@ select {
     box-shadow: none;
   }
 
+  .day-comparison-card.is-collapsed .day-comparison-body {
+    display: none;
+  }
+
+  .day-comparison-trigger {
+    width: 100%;
+  }
+
   .day-comparison-head {
     flex-direction: column;
     gap: 12px;
@@ -1658,6 +1722,23 @@ select {
 
   .day-summary-card .summary-grid strong {
     margin-top: 2px;
+    font-size: 0.84rem;
+  }
+
+  .day-summary-metrics {
+    gap: 8px 10px;
+    margin-top: 8px;
+  }
+
+  .day-summary-metric-column {
+    gap: 6px;
+  }
+
+  .day-summary-metric-column span {
+    font-size: 0.68rem;
+  }
+
+  .day-summary-metric-column strong {
     font-size: 0.84rem;
   }
 
