@@ -1558,6 +1558,21 @@ function renderWeekExpandableSummaryCard(
   `;
 }
 
+function buildSummaryMetricsHtml(totals) {
+  return `
+    <div class="day-summary-metrics">
+      <div class="day-summary-metric-column">
+        <div><span>DB</span><strong>${totals.db}</strong></div>
+        <div><span>DG</span><strong>${totals.dg}</strong></div>
+      </div>
+      <div class="day-summary-metric-column">
+        <div><span>Kunder</span><strong>${totals.antord}</strong></div>
+        <div><span>Pr. k.</span><strong>${totals.prord}</strong></div>
+      </div>
+    </div>
+  `;
+}
+
 function renderWeekExpandableDeltaCard(
   selectedTotals,
   compareTotals,
@@ -2524,18 +2539,6 @@ function renderPeoplePageCompact(state) {
 function renderDaySection(dateKey, rows, expanded = false, modifier = "") {
   const totals = getTotals(rows);
   const detailContent = `${renderDesktopTable(rows)}${renderDayMobileTable(rows)}`;
-  const summaryGridHtml = `
-    <div class="day-summary-metrics">
-      <div class="day-summary-metric-column">
-        <div><span>DB</span><strong>${totals.db}</strong></div>
-        <div><span>DG</span><strong>${totals.dg}</strong></div>
-      </div>
-      <div class="day-summary-metric-column">
-        <div><span>Kunder</span><strong>${totals.antord}</strong></div>
-        <div><span>Pr. k.</span><strong>${totals.prord}</strong></div>
-      </div>
-    </div>
-  `;
 
   return `
     ${renderWeekExpandableSummaryCard(
@@ -2549,7 +2552,7 @@ function renderDaySection(dateKey, rows, expanded = false, modifier = "") {
       totals.umoms,
       [],
       null,
-      summaryGridHtml
+      buildSummaryMetricsHtml(totals)
     )}
   `;
 }
@@ -2917,7 +2920,12 @@ function renderMonthPageCompact(state) {
           `${renderDesktopTable(selectedRows)}${renderDayMobileTable(selectedRows)}`,
           panelsExpanded,
           "summary-emphasis",
-          "data-month-panels-toggle"
+          "data-month-panels-toggle",
+          "u/mva",
+          selectedTotals.umoms,
+          [],
+          null,
+          buildSummaryMetricsHtml(selectedTotals)
         )}
         ${renderWeekExpandableSummaryCard(
           formatMonthHeading(state.compareMonthKey, cutoffDay),
@@ -2925,7 +2933,12 @@ function renderMonthPageCompact(state) {
           `${renderDesktopTable(compareRows)}${renderDayMobileTable(compareRows)}`,
           panelsExpanded,
           "",
-          "data-month-panels-toggle"
+          "data-month-panels-toggle",
+          "u/mva",
+          compareTotals.umoms,
+          [],
+          null,
+          buildSummaryMetricsHtml(compareTotals)
         )}
         ${renderWeekExpandableDeltaCard(
           selectedTotals,
@@ -3146,13 +3159,27 @@ function renderWeekPageCompact(state) {
           selectedTotals,
           `${renderDesktopTable(selectedRows)}${renderDayMobileTable(selectedRows)}`,
           panelsExpanded,
-          "summary-emphasis"
+          "summary-emphasis",
+          "data-week-panels-toggle",
+          "u/mva",
+          selectedTotals.umoms,
+          [],
+          null,
+          buildSummaryMetricsHtml(selectedTotals)
         )}
         ${renderWeekExpandableSummaryCard(
           formatWeekHeading(state.compareWeekKey, cutoffIsoDay),
           compareTotals,
           `${renderDesktopTable(compareRows)}${renderDayMobileTable(compareRows)}`,
           panelsExpanded
+          ,
+          "",
+          "data-week-panels-toggle",
+          "u/mva",
+          compareTotals.umoms,
+          [],
+          null,
+          buildSummaryMetricsHtml(compareTotals)
         )}
         ${renderWeekExpandableDeltaCard(
           selectedTotals,
@@ -3414,7 +3441,12 @@ function renderYearPageCompact(state) {
           `${renderDesktopTable(selectedRows)}${renderDayMobileTable(selectedRows)}`,
           panelsExpanded,
           "summary-emphasis",
-          "data-year-panels-toggle"
+          "data-year-panels-toggle",
+          "u/mva",
+          selectedTotals.umoms,
+          [],
+          null,
+          buildSummaryMetricsHtml(selectedTotals)
         )}
         ${renderWeekExpandableSummaryCard(
           formatYearHeading(state.compareYear, cutoffMonthDay),
@@ -3422,7 +3454,12 @@ function renderYearPageCompact(state) {
           `${renderDesktopTable(compareRows)}${renderDayMobileTable(compareRows)}`,
           panelsExpanded,
           "",
-          "data-year-panels-toggle"
+          "data-year-panels-toggle",
+          "u/mva",
+          compareTotals.umoms,
+          [],
+          null,
+          buildSummaryMetricsHtml(compareTotals)
         )}
         ${renderWeekExpandableDeltaCard(
           selectedTotals,
