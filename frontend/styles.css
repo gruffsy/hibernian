@@ -1560,15 +1560,15 @@ select {
   }
 
   .day-comparison-col-day {
-    width: 13%;
+    width: 15%;
   }
 
   .day-comparison-col-amount {
-    width: 28%;
+    width: 25%;
   }
 
   .day-comparison-col-diff {
-    width: 18%;
+    width: 20%;
   }
 
   .day-summary-preview div {
