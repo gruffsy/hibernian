@@ -1556,16 +1556,16 @@ select {
   }
 
   .day-comparison-table thead tr:first-child th {
-    font-size: 0.76rem;
+    font-size: 0.74rem;
   }
 
   .day-comparison-col-day {
-    width: 24px;
+    width: 22px;
   }
 
   .day-comparison-col-amount,
   .day-comparison-col-diff {
-    width: 72px;
+    width: 70px;
   }
 
   .day-comparison-col-diff {
