@@ -942,10 +942,13 @@ select {
 }
 
 .day-comparison-card {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 22px;
-  border-radius: var(--radius-xl);
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .day-comparison-head {
@@ -953,7 +956,8 @@ select {
   justify-content: space-between;
   gap: 18px;
   align-items: flex-start;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  padding: 0;
 }
 
 .day-comparison-head h2 {
@@ -984,6 +988,7 @@ select {
 .day-comparison-table-shell {
   overflow-x: auto;
   padding-bottom: 2px;
+  margin: 0;
 }
 
 .day-comparison-table {
@@ -1512,19 +1517,12 @@ select {
 
   .day-comparison-card {
     padding: 0;
-    max-width: none;
-    margin: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    box-shadow: none;
   }
 
   .day-comparison-head {
     flex-direction: column;
     gap: 12px;
     margin-bottom: 10px;
-    padding: 0 0 4px;
   }
 
   .day-comparison-kpi {
@@ -1534,8 +1532,8 @@ select {
   }
 
   .day-comparison-table-shell {
-    margin: 0 -8px;
-    padding: 0 8px 0;
+    margin: 0;
+    padding: 0;
   }
 
   .day-comparison-table {

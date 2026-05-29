@@ -2176,6 +2176,8 @@ function renderDaySection(dateKey, rows, expanded = false, modifier = "") {
 function renderDayPage(state) {
   const selectedIndex = state.dayDates.indexOf(state.selectedDate);
   const visibleDates = state.dayDates.slice(selectedIndex, selectedIndex + 3);
+  const grossComparison = buildDayMonthComparison(state, state.selectedDate, "gross");
+  const dbComparison = buildDayMonthComparison(state, state.selectedDate, "db");
 
   return `
     <main class="page-shell">
@@ -2209,6 +2211,17 @@ function renderDayPage(state) {
           )
           .join("")}
       </section>
+
+      ${
+        grossComparison || dbComparison
+          ? `
+            <section class="day-comparison-stack">
+              ${renderDayMonthComparisonCard(grossComparison)}
+              ${renderDayMonthComparisonCard(dbComparison)}
+            </section>
+          `
+          : ""
+      }
 
       <section class="day-page-footer">
         <button class="button button-secondary" type="button" data-action="classic">Bytt til klassisk</button>
