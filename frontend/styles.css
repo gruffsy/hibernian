@@ -1371,10 +1371,11 @@ select {
   }
 
   .day-status-strip {
-    margin-top: 10px;
-    padding: 0 12px 4px;
-    border: 0;
-    background: transparent;
+    margin-top: 12px;
+    padding: 12px 14px;
+    border: 1px solid rgba(29, 26, 22, 0.08);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.66);
     box-shadow: none;
   }
 
@@ -1416,13 +1417,17 @@ select {
   }
 
   .summary-card {
-    padding: 14px;
+    padding: 12px;
+    border: 1px solid rgba(29, 26, 22, 0.08);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.62);
+    box-shadow: none;
   }
 
   .day-stack,
   .day-comparison-stack {
-    gap: 18px;
-    margin-top: 18px;
+    gap: 22px;
+    margin-top: 22px;
   }
 
   .summary-card h3 {
@@ -1530,7 +1535,11 @@ select {
   }
 
   .day-comparison-card {
-    padding: 0;
+    padding: 12px;
+    border: 1px solid rgba(29, 26, 22, 0.08);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.62);
+    box-shadow: none;
   }
 
   .day-comparison-head {
@@ -1546,8 +1555,9 @@ select {
   }
 
   .day-comparison-table-shell {
-    margin: 0;
-    padding: 0;
+    margin: 10px 0 0;
+    padding: 10px 0 0;
+    border-top: 1px solid rgba(29, 26, 22, 0.08);
   }
 
   .day-comparison-table {
@@ -1598,16 +1608,16 @@ select {
   }
 
   .day-summary-card {
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    background: transparent;
+    padding: 12px;
+    border: 1px solid rgba(29, 26, 22, 0.08);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.62);
     box-shadow: none;
     overflow: visible;
   }
 
   .day-summary-card.summary-emphasis {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.62);
   }
 
   .day-summary-card + .day-summary-card {
@@ -1615,7 +1625,7 @@ select {
   }
 
   .day-summary-card .week-summary-trigger {
-    padding: 8px 0 8px;
+    padding: 0;
   }
 
   .day-summary-card .summary-label {
@@ -1654,8 +1664,9 @@ select {
   .day-summary-card .week-summary-detail {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    margin: 0 -8px;
-    padding: 0 8px 10px;
+    margin: 10px 0 0;
+    padding: 10px 0 0;
+    border-top: 1px solid rgba(29, 26, 22, 0.08);
   }
 
   .day-comparison-head h2 {
@@ -1678,7 +1689,7 @@ select {
   }
 
   .day-page-footer {
-    margin-top: 20px;
+    margin-top: 24px;
   }
 
   .day-preview-primary {
