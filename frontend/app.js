@@ -871,6 +871,8 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
   let runningDiff = 0;
   let selectedTotal = 0;
   let compareTotal = 0;
+  let currentDiff = 0;
+  let currentDiffRow = null;
 
   for (let index = 0; index < rowCount; index += 1) {
     const compareDate = compareDates[index] || null;
@@ -893,6 +895,11 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
       selectedValue,
       runningDiff,
     });
+
+    if (selectedMonthDate) {
+      currentDiff = runningDiff;
+      currentDiffRow = rows[rows.length - 1];
+    }
   }
 
   return {
@@ -911,6 +918,8 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
     compareAverage: compareDates.length ? compareTotal / compareDates.length : 0,
     finalDiff: selectedTotal - compareTotal,
     finalPercentChange: compareTotal ? ((selectedTotal - compareTotal) / compareTotal) * 100 : 0,
+    currentDiff,
+    currentDiffLabel: currentDiffRow?.selectedLabel || "",
   };
 }
 
@@ -1000,13 +1009,14 @@ function renderDayMonthComparisonCardLegacy(comparison) {
   `;
 }
 
-function renderDayMonthComparisonCard(comparison, expanded = false, selectedDayLabel = "") {
+function renderDayMonthComparisonCard(comparison, expanded = false) {
   if (!comparison) {
     return "";
   }
 
-  const diffClass = comparison.finalDiff >= 0 ? "is-positive" : "is-negative";
-  const diffTitle = selectedDayLabel ? `Akk. diff - ${selectedDayLabel}` : "Akk. diff";
+  const diffValue = Number.isFinite(comparison.currentDiff) ? comparison.currentDiff : comparison.finalDiff;
+  const diffClass = diffValue >= 0 ? "is-positive" : "is-negative";
+  const diffTitle = "Akk. diff hittil";
 
   return `
     <article class="day-comparison-card ${expanded ? "is-expanded" : "is-collapsed"}">
@@ -1019,7 +1029,7 @@ function renderDayMonthComparisonCard(comparison, expanded = false, selectedDayL
         <p class="summary-label">${comparison.metricLabel}</p>
         <div class="day-comparison-kpi ${diffClass}">
           <span>${diffTitle}</span>
-          <strong>${formatSignedInteger(comparison.finalDiff)}</strong>
+          <strong>${formatSignedInteger(diffValue)}</strong>
         </div>
       </button>
 
@@ -2302,7 +2312,6 @@ function renderDayPage(state) {
   const dbComparison = buildDayMonthComparison(state, state.selectedDate, "db");
   const grossComparisonExpanded = state.dayComparisonExpanded.includes("gross");
   const dbComparisonExpanded = state.dayComparisonExpanded.includes("db");
-  const selectedDayLabel = formatDayHeading(state.selectedDate);
 
   return `
     <main class="page-shell">
@@ -2341,8 +2350,8 @@ function renderDayPage(state) {
         grossComparison || dbComparison
           ? `
             <section class="day-comparison-stack">
-              ${renderDayMonthComparisonCard(grossComparison, grossComparisonExpanded, selectedDayLabel)}
-              ${renderDayMonthComparisonCard(dbComparison, dbComparisonExpanded, selectedDayLabel)}
+              ${renderDayMonthComparisonCard(grossComparison, grossComparisonExpanded)}
+              ${renderDayMonthComparisonCard(dbComparison, dbComparisonExpanded)}
             </section>
           `
           : ""

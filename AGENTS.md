@@ -14,11 +14,11 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-29T13:06:15
-updated_at: 2026-05-29T13:12:59
-objective: Update day comparison labels to include selected day context
-scope: frontend/app.js,frontend/styles.css,AGENTS.md
-next_step: Verify the mobile day page visually and adjust the label wording if it feels too long
+started_at: 2026-05-29T13:18:42
+updated_at: 2026-05-29T13:21:43
+objective: Show current accumulated diff in day comparison KPI
+scope: frontend/app.js,AGENTS.md
+next_step: Verify the day comparison card still reads clearly on mobile
 verification: <ikke spesifisert>
 blockers: ingen
 ```
@@ -352,4 +352,15 @@ status: complete
 summary: Changed the day comparison KPI label to include the selected day and kept the comparison cards collapsible behind that summary.
 files: frontend/app.js,frontend/styles.css,AGENTS.md
 next: Verify the mobile day page visually and adjust the label wording if it feels too long
+```
+
+### 2026-05-29T13:21:44
+
+```text
+timestamp: 2026-05-29T13:21:43
+owner: codex
+status: complete
+summary: Changed the comparison KPI to use the latest running difference so it shows the accumulated diff through the selected day instead of the full month total.
+files: frontend/app.js,AGENTS.md
+next: Verify the day comparison card still reads clearly on mobile
 ```
