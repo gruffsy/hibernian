@@ -1565,7 +1565,11 @@ select {
 
   .day-comparison-col-amount,
   .day-comparison-col-diff {
-    width: 74px;
+    width: 72px;
+  }
+
+  .day-comparison-col-diff {
+    width: 70px;
   }
 
   .day-summary-preview div {
