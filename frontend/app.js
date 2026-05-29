@@ -1748,7 +1748,7 @@ function renderDayMobileTable(rows) {
 
 function renderDiffTable(rows) {
   return `
-    <div class="table-shell">
+    <div class="table-shell period-diff-table-shell">
       <table class="store-table">
         <thead>
           <tr>
@@ -1767,6 +1767,41 @@ function renderDiffTable(rows) {
                   <td>${row.butikk}</td>
                   <td>${formatSignedCurrency(row.gross)}</td>
                   <td>${formatSignedCurrency(row.dbAmount)}</td>
+                  <td>${formatSignedPercentPoints(row.dgPercent)}</td>
+                  <td>${formatSignedInteger(row.customers)}</td>
+                </tr>
+              `
+            )
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+    <div class="mobile-only period-diff-mobile-shell">
+      <table class="store-table day-mobile-table period-diff-mobile-table">
+        <colgroup>
+          <col class="period-diff-col-store" />
+          <col class="period-diff-col-amount" />
+          <col class="period-diff-col-diff" />
+          <col class="period-diff-col-diff" />
+          <col class="period-diff-col-customers" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Butikk</th>
+            <th>Omsetning diff</th>
+            <th>DB diff</th>
+            <th>DG diff</th>
+            <th>Kunder diff</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows
+            .map(
+              (row) => `
+                <tr class="${row.butikk === "Totalt" ? "total-row" : ""}">
+                  <td class="day-mobile-store-cell">${row.butikk}</td>
+                  <td>${compactMoneyText(formatSignedCurrency(row.gross))}</td>
+                  <td>${compactMoneyText(formatSignedCurrency(row.dbAmount))}</td>
                   <td>${formatSignedPercentPoints(row.dgPercent)}</td>
                   <td>${formatSignedInteger(row.customers)}</td>
                 </tr>
@@ -2903,24 +2938,26 @@ function renderMonthPageCompact(state) {
   const compareTotals = getTotals(compareRows);
   const diffRows = buildDiffRows(selectedRows, compareRows);
   const cutoffDay = state.monthMode === "mtd" ? state.monthCutoffDay : null;
-  const panelsExpanded = state.monthPanelsExpanded;
   const grossComparison = buildMonthComparison(state, "gross");
   const dbComparison = buildMonthComparison(state, "db");
   const grossComparisonExpanded = state.monthComparisonExpanded.includes("gross");
   const dbComparisonExpanded = state.monthComparisonExpanded.includes("db");
+  const selectedExpanded = state.monthSummaryExpanded.includes("selected");
+  const compareExpanded = state.monthSummaryExpanded.includes("compare");
+  const diffExpanded = state.monthSummaryExpanded.includes("diff");
 
   return `
     <main class="page-shell">
       ${renderChrome(state, renderMonthToolbarClean(state))}
 
-      <section class="summary-band week-summary-band ${panelsExpanded ? "is-expanded" : ""}">
+      <section class="summary-band week-summary-band">
         ${renderWeekExpandableSummaryCard(
           formatMonthHeading(state.selectedMonthKey, cutoffDay),
           selectedTotals,
           `${renderDesktopTable(selectedRows)}${renderDayMobileTable(selectedRows)}`,
-          panelsExpanded,
+          selectedExpanded,
           "summary-emphasis",
-          "data-month-panels-toggle",
+          'data-month-panels-toggle="selected"',
           "u/mva",
           selectedTotals.umoms,
           [],
@@ -2931,9 +2968,9 @@ function renderMonthPageCompact(state) {
           formatMonthHeading(state.compareMonthKey, cutoffDay),
           compareTotals,
           `${renderDesktopTable(compareRows)}${renderDayMobileTable(compareRows)}`,
-          panelsExpanded,
+          compareExpanded,
           "",
-          "data-month-panels-toggle",
+          'data-month-panels-toggle="compare"',
           "u/mva",
           compareTotals.umoms,
           [],
@@ -2944,8 +2981,8 @@ function renderMonthPageCompact(state) {
           selectedTotals,
           compareTotals,
           renderDiffTable(diffRows),
-          panelsExpanded,
-          "data-month-panels-toggle"
+          diffExpanded,
+          'data-month-panels-toggle="diff"'
         )}
       </section>
 
@@ -3143,24 +3180,26 @@ function renderWeekPageCompact(state) {
   const compareTotals = getTotals(compareRows);
   const diffRows = buildDiffRows(selectedRows, compareRows);
   const cutoffIsoDay = state.weekMode === "wtd" ? state.weekCutoffIsoDay : null;
-  const panelsExpanded = state.weekPanelsExpanded;
   const grossComparison = buildWeekComparison(state, "gross");
   const dbComparison = buildWeekComparison(state, "db");
   const grossComparisonExpanded = state.weekComparisonExpanded.includes("gross");
   const dbComparisonExpanded = state.weekComparisonExpanded.includes("db");
+  const selectedExpanded = state.weekSummaryExpanded.includes("selected");
+  const compareExpanded = state.weekSummaryExpanded.includes("compare");
+  const diffExpanded = state.weekSummaryExpanded.includes("diff");
 
   return `
     <main class="page-shell">
       ${renderChrome(state, renderWeekControls(state))}
 
-      <section class="summary-band week-summary-band ${panelsExpanded ? "is-expanded" : ""}">
+      <section class="summary-band week-summary-band">
         ${renderWeekExpandableSummaryCard(
           formatWeekHeading(state.selectedWeekKey, cutoffIsoDay),
           selectedTotals,
           `${renderDesktopTable(selectedRows)}${renderDayMobileTable(selectedRows)}`,
-          panelsExpanded,
+          selectedExpanded,
           "summary-emphasis",
-          "data-week-panels-toggle",
+          'data-week-panels-toggle="selected"',
           "u/mva",
           selectedTotals.umoms,
           [],
@@ -3171,10 +3210,9 @@ function renderWeekPageCompact(state) {
           formatWeekHeading(state.compareWeekKey, cutoffIsoDay),
           compareTotals,
           `${renderDesktopTable(compareRows)}${renderDayMobileTable(compareRows)}`,
-          panelsExpanded
-          ,
+          compareExpanded,
           "",
-          "data-week-panels-toggle",
+          'data-week-panels-toggle="compare"',
           "u/mva",
           compareTotals.umoms,
           [],
@@ -3185,7 +3223,8 @@ function renderWeekPageCompact(state) {
           selectedTotals,
           compareTotals,
           renderDiffTable(diffRows),
-          panelsExpanded
+          diffExpanded,
+          'data-week-panels-toggle="diff"'
         )}
       </section>
 
@@ -3428,20 +3467,22 @@ function renderYearPageCompact(state) {
   const compareTotals = getTotals(compareRows);
   const diffRows = buildDiffRows(selectedRows, compareRows);
   const cutoffMonthDay = state.yearMode === "ytd" ? state.yearCutoffMonthDay : null;
-  const panelsExpanded = state.yearPanelsExpanded;
+  const selectedExpanded = state.yearSummaryExpanded.includes("selected");
+  const compareExpanded = state.yearSummaryExpanded.includes("compare");
+  const diffExpanded = state.yearSummaryExpanded.includes("diff");
 
   return `
     <main class="page-shell">
       ${renderChrome(state, renderYearToolbarClean(state))}
 
-      <section class="summary-band week-summary-band ${panelsExpanded ? "is-expanded" : ""}">
+      <section class="summary-band week-summary-band">
         ${renderWeekExpandableSummaryCard(
           formatYearHeading(state.selectedYear, cutoffMonthDay),
           selectedTotals,
           `${renderDesktopTable(selectedRows)}${renderDayMobileTable(selectedRows)}`,
-          panelsExpanded,
+          selectedExpanded,
           "summary-emphasis",
-          "data-year-panels-toggle",
+          'data-year-panels-toggle="selected"',
           "u/mva",
           selectedTotals.umoms,
           [],
@@ -3452,9 +3493,9 @@ function renderYearPageCompact(state) {
           formatYearHeading(state.compareYear, cutoffMonthDay),
           compareTotals,
           `${renderDesktopTable(compareRows)}${renderDayMobileTable(compareRows)}`,
-          panelsExpanded,
+          compareExpanded,
           "",
-          "data-year-panels-toggle",
+          'data-year-panels-toggle="compare"',
           "u/mva",
           compareTotals.umoms,
           [],
@@ -3465,8 +3506,8 @@ function renderYearPageCompact(state) {
           selectedTotals,
           compareTotals,
           renderDiffTable(diffRows),
-          panelsExpanded,
-          "data-year-panels-toggle"
+          diffExpanded,
+          'data-year-panels-toggle="diff"'
         )}
       </section>
 
@@ -4081,7 +4122,10 @@ function bindEvents(state) {
 
   document.querySelectorAll("[data-week-panels-toggle]").forEach((button) => {
     button.addEventListener("click", () => {
-      state.weekPanelsExpanded = !state.weekPanelsExpanded;
+      const key = button.dataset.weekPanelsToggle;
+      state.weekSummaryExpanded = state.weekSummaryExpanded.includes(key)
+        ? state.weekSummaryExpanded.filter((value) => value !== key)
+        : [...state.weekSummaryExpanded, key];
       paint(state);
     });
   });
@@ -4125,14 +4169,20 @@ function bindEvents(state) {
 
   document.querySelectorAll("[data-month-panels-toggle]").forEach((button) => {
     button.addEventListener("click", () => {
-      state.monthPanelsExpanded = !state.monthPanelsExpanded;
+      const key = button.dataset.monthPanelsToggle;
+      state.monthSummaryExpanded = state.monthSummaryExpanded.includes(key)
+        ? state.monthSummaryExpanded.filter((value) => value !== key)
+        : [...state.monthSummaryExpanded, key];
       paint(state);
     });
   });
 
   document.querySelectorAll("[data-year-panels-toggle]").forEach((button) => {
     button.addEventListener("click", () => {
-      state.yearPanelsExpanded = !state.yearPanelsExpanded;
+      const key = button.dataset.yearPanelsToggle;
+      state.yearSummaryExpanded = state.yearSummaryExpanded.includes(key)
+        ? state.yearSummaryExpanded.filter((value) => value !== key)
+        : [...state.yearSummaryExpanded, key];
       paint(state);
     });
   });
@@ -4259,6 +4309,7 @@ async function render() {
       compareWeekKey,
       weekMode: "full",
       weekPanelsExpanded: false,
+      weekSummaryExpanded: [],
       weekComparisonExpanded: [],
       weekCutoffOptions,
       weekCutoffIsoDay: weekCutoffOptions[weekCutoffOptions.length - 1]?.isoDay || 5,
@@ -4271,6 +4322,7 @@ async function render() {
       compareMonthKey,
       monthMode: "full",
       monthPanelsExpanded: false,
+      monthSummaryExpanded: [],
       monthComparisonExpanded: [],
       yearCanonical: canonicalYears,
       yearOptions,
@@ -4278,6 +4330,7 @@ async function render() {
       compareYear,
       yearMode: "full",
       yearPanelsExpanded: false,
+      yearSummaryExpanded: [],
       yearCutoffOptions,
       latestAvailableCutoffMonthDay,
       yearCutoffMonthDay: latestAvailableCutoffMonthDay,

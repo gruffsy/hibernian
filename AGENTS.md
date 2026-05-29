@@ -12,13 +12,13 @@ Rules:
 ## Current
 
 ```text
-status: complete
+status: in_progress
 owner: codex
-started_at: 2026-05-29T13:41:15
-updated_at: 2026-05-29T14:06:36
-objective: Mobile-only week month and year redesign
+started_at: 2026-05-29T15:01:19
+updated_at: 2026-05-29T15:01:19
+objective: Refine mobile period comparison cards
 scope: frontend/app.js,frontend/styles.css,AGENTS.md
-next_step: Review the mobile week, month, and year pages in the browser and fine-tune spacing if needed
+next_step: Make week, month, and year comparison cards expand independently and give the diff cards the same compact mobile table treatment as the other mobile tables
 verification: <ikke spesifisert>
 blockers: ingen
 ```

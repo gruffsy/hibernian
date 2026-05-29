@@ -1241,6 +1241,72 @@ select {
   font-weight: 700;
 }
 
+.period-diff-table-shell {
+  padding-top: 8px;
+}
+
+.period-diff-mobile-shell {
+  padding-top: 8px;
+}
+
+.period-diff-mobile-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.62);
+  overflow: hidden;
+  font-variant-numeric: tabular-nums;
+}
+
+.period-diff-mobile-table col.period-diff-col-store {
+  width: 26%;
+}
+
+.period-diff-mobile-table col.period-diff-col-amount {
+  width: 22%;
+}
+
+.period-diff-mobile-table col.period-diff-col-diff {
+  width: 16%;
+}
+
+.period-diff-mobile-table col.period-diff-col-customers {
+  width: 18%;
+}
+
+.period-diff-mobile-table th,
+.period-diff-mobile-table td {
+  padding: 8px 6px;
+  border-bottom: 1px solid rgba(29, 26, 22, 0.08);
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.period-diff-mobile-table th {
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.1;
+}
+
+.period-diff-mobile-table td {
+  font-size: 0.78rem;
+  line-height: 1.12;
+}
+
+.period-diff-mobile-table th:nth-child(n + 2),
+.period-diff-mobile-table td:nth-child(n + 2) {
+  text-align: right;
+}
+
+.period-diff-mobile-table tbody tr:first-child td {
+  border-top: 1px solid rgba(29, 26, 22, 0.08);
+}
+
+.period-diff-mobile-table .total-row {
+  background: rgba(15, 118, 110, 0.08);
+  font-weight: 700;
+}
+
 .day-mobile-row {
   padding: 12px 14px;
   border-bottom: 1px solid rgba(29, 26, 22, 0.08);
@@ -1945,28 +2011,50 @@ select {
     padding: 8px 10px;
   }
 
-  .day-mobile-table-shell {
+  .day-mobile-table-shell,
+  .period-diff-mobile-shell {
     overflow-x: hidden;
     margin: 0;
     padding: 2px 0 0;
   }
 
-  .day-mobile-table {
+  .day-mobile-table,
+  .period-diff-mobile-table {
     width: 100%;
     min-width: 0;
   }
 
   .day-mobile-table th,
-  .day-mobile-table td {
+  .day-mobile-table td,
+  .period-diff-mobile-table th,
+  .period-diff-mobile-table td {
     padding: 4px 2px;
   }
 
-  .day-mobile-table th {
+  .day-mobile-table th,
+  .period-diff-mobile-table th {
     font-size: 0.63rem;
   }
 
-  .day-mobile-table td {
+  .day-mobile-table td,
+  .period-diff-mobile-table td {
     font-size: 0.68rem;
+  }
+
+  .period-diff-mobile-table col.period-diff-col-store {
+    width: 28%;
+  }
+
+  .period-diff-mobile-table col.period-diff-col-amount {
+    width: 20%;
+  }
+
+  .period-diff-mobile-table col.period-diff-col-diff {
+    width: 16%;
+  }
+
+  .period-diff-mobile-table col.period-diff-col-customers {
+    width: 20%;
   }
 
   .day-mobile-top h3 {
