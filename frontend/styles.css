@@ -1511,18 +1511,31 @@ select {
   }
 
   .day-comparison-card {
-    padding: 14px 10px;
+    padding: 0;
+    max-width: none;
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
   }
 
   .day-comparison-head {
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 10px;
+    padding: 0 0 4px;
   }
 
   .day-comparison-kpi {
     width: 100%;
     min-width: 0;
     text-align: left;
+  }
+
+  .day-comparison-table-shell {
+    margin: 0 -8px;
+    padding: 0 8px 0;
   }
 
   .day-comparison-table {

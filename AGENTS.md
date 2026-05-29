@@ -14,9 +14,9 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-29T09:41:22
-updated_at: 2026-05-29T09:45:27
-objective: Match day summary metrics and day comparison typography to the compact mobile table
+started_at: 2026-05-29T10:10:02
+updated_at: 2026-05-29T10:11:07
+objective: Remove mobile card framing from the day comparison table
 scope: frontend/styles.css
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
@@ -240,6 +240,17 @@ timestamp: 2026-05-29T09:45:27
 owner: codex
 status: complete
 summary: Tightened the day summary metric row and reduced the day comparison table typography, spacing, and minimum widths to better match the compact day mobile table
+files: frontend/styles.css
+next: <ikke spesifisert>
+```
+
+### 2026-05-29T10:11:07
+
+```text
+timestamp: 2026-05-29T10:11:07
+owner: codex
+status: complete
+summary: Flattened the mobile comparison block so the comparison table sits more like the day-mobile-table without the extra card padding and border
 files: frontend/styles.css
 next: <ikke spesifisert>
 ```
