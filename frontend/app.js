@@ -132,6 +132,15 @@ function formatSignedPercentPoints(value) {
   return `${prefix}${value.toFixed(1)} pp`;
 }
 
+function formatAxisMillions(value) {
+  const millions = Number(value) / 1000000;
+  const formatted = millions
+    .toFixed(millions >= 10 ? 0 : 1)
+    .replace(".", ",")
+    .replace(/,0$/, "");
+  return `${formatted}m`;
+}
+
 function formatDateLabel(dateKey) {
   const raw = String(dateKey);
   const year = Number(raw.slice(0, 4));
@@ -905,6 +914,10 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
   return {
     metric,
     metricLabel: metric === "db" ? "DB dag for dag" : "Omsetning u/mva dag for dag",
+    diffTitle: "Akk. diff hittil",
+    heading: `${monthLabelFromKey(selectedMonthKey)} mot ${monthLabelFromKey(compareMonthKey)}`,
+    rowLabelHeader: "Dag",
+    metricHeader: "Beløp",
     selectedMonthKey,
     compareMonthKey,
     selectedYear: year,
@@ -920,6 +933,128 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
     finalPercentChange: compareTotal ? ((selectedTotal - compareTotal) / compareTotal) * 100 : 0,
     currentDiff,
     currentDiffLabel: currentDiffRow?.selectedLabel || "",
+  };
+}
+
+function buildWeekComparison(state, metric = "gross") {
+  const selectedYear = Number(state.selectedWeekKey.slice(0, 4));
+  const compareYear = Number(state.compareWeekKey.slice(0, 4));
+  const selectedWeekNumber = Number(state.selectedWeekKey.slice(6, 8));
+  const rows = [];
+  let runningDiff = 0;
+  let selectedTotal = 0;
+  let compareTotal = 0;
+  let currentDiff = 0;
+  let currentDiffLabel = "";
+
+  for (let week = 1; week <= 52; week += 1) {
+    const weekLabel = `Uke ${String(week).padStart(2, "0")}`;
+    const selectedTotals = getTotals(buildWeekRows(state, `${selectedYear}-W${String(week).padStart(2, "0")}`, null));
+    const compareTotals = getTotals(buildWeekRows(state, `${compareYear}-W${String(week).padStart(2, "0")}`, null));
+    const selectedValue = metric === "db" ? selectedTotals?.dbAmount || 0 : selectedTotals?.net || 0;
+    const compareValue = metric === "db" ? compareTotals?.dbAmount || 0 : compareTotals?.net || 0;
+
+    compareTotal += compareValue;
+    selectedTotal += selectedValue;
+    runningDiff += selectedValue - compareValue;
+
+    rows.push({
+      compareDate: week,
+      selectedDate: week,
+      compareLabel: weekLabel,
+      selectedLabel: weekLabel,
+      compareValue,
+      selectedValue,
+      runningDiff,
+    });
+
+    if (week === selectedWeekNumber) {
+      currentDiff = runningDiff;
+      currentDiffLabel = weekLabel;
+    }
+  }
+
+  return {
+    metric,
+    metricLabel: metric === "db" ? "DB uke for uke" : "Omsetning u/mva uke for uke",
+    diffTitle: currentDiffLabel ? `Akk. diff hittil ${currentDiffLabel.toLowerCase()}` : "Akk. diff hittil",
+    heading: `${selectedYear} mot ${compareYear}`,
+    rowLabelHeader: "Uke",
+    metricHeader: metric === "db" ? "DB" : "U/mva",
+    selectedYear,
+    compareYear,
+    rows,
+    selectedTotal,
+    compareTotal,
+    selectedCount: 52,
+    compareCount: 52,
+    selectedAverage: selectedTotal / 52,
+    compareAverage: compareTotal / 52,
+    finalDiff: selectedTotal - compareTotal,
+    finalPercentChange: compareTotal ? ((selectedTotal - compareTotal) / compareTotal) * 100 : 0,
+    currentDiff,
+    currentDiffLabel,
+  };
+}
+
+function buildMonthComparison(state, metric = "gross") {
+  const selectedYear = Number(state.selectedMonthKey.slice(0, 4));
+  const compareYear = Number(state.compareMonthKey.slice(0, 4));
+  const selectedMonthNumber = Number(state.selectedMonthKey.slice(5, 7));
+  const rows = [];
+  let runningDiff = 0;
+  let selectedTotal = 0;
+  let compareTotal = 0;
+  let currentDiff = 0;
+  let currentDiffLabel = "";
+
+  for (let month = 1; month <= 12; month += 1) {
+    const monthLabel = formatShortMonth(month);
+    const selectedTotals = getTotals(state.monthCanonical.get(monthKey(selectedYear, month)) || []);
+    const compareTotals = getTotals(state.monthCanonical.get(monthKey(compareYear, month)) || []);
+    const selectedValue = metric === "db" ? selectedTotals?.dbAmount || 0 : selectedTotals?.net || 0;
+    const compareValue = metric === "db" ? compareTotals?.dbAmount || 0 : compareTotals?.net || 0;
+
+    compareTotal += compareValue;
+    selectedTotal += selectedValue;
+    runningDiff += selectedValue - compareValue;
+
+    rows.push({
+      compareDate: month,
+      selectedDate: month,
+      compareLabel: monthLabel,
+      selectedLabel: monthLabel,
+      compareValue,
+      selectedValue,
+      runningDiff,
+    });
+
+    if (month === selectedMonthNumber) {
+      currentDiff = runningDiff;
+      currentDiffLabel = monthLabel;
+    }
+  }
+
+  return {
+    metric,
+    metricLabel: metric === "db" ? "DB måned for måned" : "Omsetning u/mva måned for måned",
+    diffTitle: currentDiffLabel ? `Akk. diff hittil ${currentDiffLabel}` : "Akk. diff hittil",
+    heading: `${selectedYear} mot ${compareYear}`,
+    rowLabelHeader: "Måned",
+    metricHeader: metric === "db" ? "DB" : "U/mva",
+    selectedYear,
+    compareYear,
+    rows,
+    selectedTotal,
+    compareTotal,
+    selectedCount: 12,
+    compareCount: 12,
+    selectedAverage: selectedTotal / 12,
+    compareAverage: compareTotal / 12,
+    finalDiff: selectedTotal - compareTotal,
+    finalPercentChange: compareTotal ? ((selectedTotal - compareTotal) / compareTotal) * 100 : 0,
+    currentDiff,
+    currentDiffLabel,
   };
 }
 
@@ -1016,7 +1151,13 @@ function renderDayMonthComparisonCard(comparison, expanded = false) {
 
   const diffValue = Number.isFinite(comparison.currentDiff) ? comparison.currentDiff : comparison.finalDiff;
   const diffClass = diffValue >= 0 ? "is-positive" : "is-negative";
-  const diffTitle = "Akk. diff hittil";
+  const diffTitle = comparison.diffTitle || "Akk. diff hittil";
+  const heading = comparison.heading || `${monthLabelFromKey(comparison.selectedMonthKey)} mot ${monthLabelFromKey(comparison.compareMonthKey)}`;
+  const rowLabelHeader = comparison.rowLabelHeader || "Dag";
+  const metricHeader = comparison.metricHeader || "Beløp";
+  const rowTotalsLabel = comparison.rowTotalsLabel || "Dager";
+  const leftYear = comparison.compareYear;
+  const rightYear = comparison.selectedYear;
 
   return `
     <article class="day-comparison-card ${expanded ? "is-expanded" : "is-collapsed"}">
@@ -1096,6 +1237,114 @@ function renderDayMonthComparisonCard(comparison, expanded = false) {
                   </tr>
                   <tr>
                     <th>Dager</th>
+                    <th>${formatInteger(comparison.compareCount)}</th>
+                    <th>${formatInteger(comparison.selectedCount)}</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+        `
+        : ""}
+    </article>
+  `;
+}
+
+function renderPeriodComparisonCard(comparison, expanded = false) {
+  if (!comparison) {
+    return "";
+  }
+
+  const diffValue = Number.isFinite(comparison.currentDiff) ? comparison.currentDiff : comparison.finalDiff;
+  const diffClass = diffValue >= 0 ? "is-positive" : "is-negative";
+  const diffTitle = comparison.diffTitle || "Akk. diff hittil";
+  const heading = comparison.heading || "";
+  const rowLabelHeader = comparison.rowLabelHeader || "Periode";
+  const metricHeader = comparison.metricHeader || "Beløp";
+  const rowTotalsLabel = comparison.rowTotalsLabel || "Punkter";
+  const leftYear = comparison.compareYear;
+  const rightYear = comparison.selectedYear;
+
+  return `
+    <article class="day-comparison-card ${expanded ? "is-expanded" : "is-collapsed"}">
+      <button
+        class="day-comparison-trigger"
+        type="button"
+        data-period-comparison-toggle="${comparison.metric}"
+        aria-expanded="${expanded ? "true" : "false"}"
+      >
+        <p class="summary-label">${comparison.metricLabel}</p>
+        <div class="day-comparison-kpi ${diffClass}">
+          <span>${diffTitle}</span>
+          <strong>${formatSignedInteger(diffValue)}</strong>
+        </div>
+      </button>
+
+      ${expanded
+        ? `
+          <div class="day-comparison-body">
+            <div class="day-comparison-head">
+              <div>
+                <h2>${heading}</h2>
+              </div>
+            </div>
+
+            <div class="day-comparison-table-shell">
+              <table class="day-comparison-table compact-report-table">
+                <colgroup>
+                  <col class="day-comparison-col-day" />
+                  <col class="day-comparison-col-amount" />
+                  <col class="day-comparison-col-amount" />
+                  <col class="day-comparison-col-day" />
+                  <col class="day-comparison-col-diff" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th colspan="2">${leftYear}</th>
+                    <th colspan="2">${rightYear}</th>
+                    <th rowspan="2">Akk. diff</th>
+                  </tr>
+                  <tr>
+                    <th>${rowLabelHeader}</th>
+                    <th>${metricHeader}</th>
+                    <th>${metricHeader}</th>
+                    <th>${rowLabelHeader}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${comparison.rows
+                    .map(
+                      (row) => `
+                      <tr>
+                          <td class="day-label-cell">${row.compareLabel || ""}</td>
+                          <td>${formatInteger(row.compareValue)}</td>
+                          <td>${formatInteger(row.selectedValue)}</td>
+                          <td class="day-label-cell">${row.selectedLabel || ""}</td>
+                          <td class="${row.runningDiff >= 0 ? "is-positive" : "is-negative"}">${formatSignedInteger(row.runningDiff)}</td>
+                        </tr>
+                      `
+                    )
+                    .join("")}
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <th>Totalt</th>
+                    <th>${formatInteger(comparison.compareTotal)}</th>
+                    <th>${formatInteger(comparison.selectedTotal)}</th>
+                    <th></th>
+                    <th class="${diffClass}">${formatSignedInteger(comparison.finalDiff)}</th>
+                  </tr>
+                  <tr>
+                    <th>Snitt</th>
+                    <th>${formatInteger(comparison.compareAverage)}</th>
+                    <th>${formatInteger(comparison.selectedAverage)}</th>
+                    <th></th>
+                    <th class="${diffClass}">${comparison.finalPercentChange.toFixed(2).replace(".", ",")} %</th>
+                  </tr>
+                  <tr>
+                    <th>${rowTotalsLabel}</th>
                     <th>${formatInteger(comparison.compareCount)}</th>
                     <th>${formatInteger(comparison.selectedCount)}</th>
                     <th></th>
@@ -2652,6 +2901,10 @@ function renderMonthPageCompact(state) {
   const diffRows = buildDiffRows(selectedRows, compareRows);
   const cutoffDay = state.monthMode === "mtd" ? state.monthCutoffDay : null;
   const panelsExpanded = state.monthPanelsExpanded;
+  const grossComparison = buildMonthComparison(state, "gross");
+  const dbComparison = buildMonthComparison(state, "db");
+  const grossComparisonExpanded = state.monthComparisonExpanded.includes("gross");
+  const dbComparisonExpanded = state.monthComparisonExpanded.includes("db");
 
   return `
     <main class="page-shell">
@@ -2661,7 +2914,7 @@ function renderMonthPageCompact(state) {
         ${renderWeekExpandableSummaryCard(
           formatMonthHeading(state.selectedMonthKey, cutoffDay),
           selectedTotals,
-          `${renderDesktopTable(selectedRows)}${renderMobileCards(selectedRows)}`,
+          `${renderDesktopTable(selectedRows)}${renderDayMobileTable(selectedRows)}`,
           panelsExpanded,
           "summary-emphasis",
           "data-month-panels-toggle"
@@ -2669,7 +2922,7 @@ function renderMonthPageCompact(state) {
         ${renderWeekExpandableSummaryCard(
           formatMonthHeading(state.compareMonthKey, cutoffDay),
           compareTotals,
-          `${renderDesktopTable(compareRows)}${renderMobileCards(compareRows)}`,
+          `${renderDesktopTable(compareRows)}${renderDayMobileTable(compareRows)}`,
           panelsExpanded,
           "",
           "data-month-panels-toggle"
@@ -2685,6 +2938,11 @@ function renderMonthPageCompact(state) {
 
       <section class="content-main week-layout">
         ${renderMonthChartsBlock()}
+      </section>
+
+      <section class="mobile-only day-comparison-stack">
+        ${renderPeriodComparisonCard(grossComparison, grossComparisonExpanded)}
+        ${renderPeriodComparisonCard(dbComparison, dbComparisonExpanded)}
       </section>
 
       <section class="day-page-footer">
@@ -2873,6 +3131,10 @@ function renderWeekPageCompact(state) {
   const diffRows = buildDiffRows(selectedRows, compareRows);
   const cutoffIsoDay = state.weekMode === "wtd" ? state.weekCutoffIsoDay : null;
   const panelsExpanded = state.weekPanelsExpanded;
+  const grossComparison = buildWeekComparison(state, "gross");
+  const dbComparison = buildWeekComparison(state, "db");
+  const grossComparisonExpanded = state.weekComparisonExpanded.includes("gross");
+  const dbComparisonExpanded = state.weekComparisonExpanded.includes("db");
 
   return `
     <main class="page-shell">
@@ -2882,14 +3144,14 @@ function renderWeekPageCompact(state) {
         ${renderWeekExpandableSummaryCard(
           formatWeekHeading(state.selectedWeekKey, cutoffIsoDay),
           selectedTotals,
-          `${renderDesktopTable(selectedRows)}${renderMobileCards(selectedRows)}`,
+          `${renderDesktopTable(selectedRows)}${renderDayMobileTable(selectedRows)}`,
           panelsExpanded,
           "summary-emphasis"
         )}
         ${renderWeekExpandableSummaryCard(
           formatWeekHeading(state.compareWeekKey, cutoffIsoDay),
           compareTotals,
-          `${renderDesktopTable(compareRows)}${renderMobileCards(compareRows)}`,
+          `${renderDesktopTable(compareRows)}${renderDayMobileTable(compareRows)}`,
           panelsExpanded
         )}
         ${renderWeekExpandableDeltaCard(
@@ -2902,6 +3164,11 @@ function renderWeekPageCompact(state) {
 
       <section class="content-main week-layout">
         ${renderWeekChartsBlock()}
+      </section>
+
+      <section class="mobile-only day-comparison-stack">
+        ${renderPeriodComparisonCard(grossComparison, grossComparisonExpanded)}
+        ${renderPeriodComparisonCard(dbComparison, dbComparisonExpanded)}
       </section>
 
       <section class="day-page-footer">
@@ -3144,7 +3411,7 @@ function renderYearPageCompact(state) {
         ${renderWeekExpandableSummaryCard(
           formatYearHeading(state.selectedYear, cutoffMonthDay),
           selectedTotals,
-          `${renderDesktopTable(selectedRows)}${renderMobileCards(selectedRows)}`,
+          `${renderDesktopTable(selectedRows)}${renderDayMobileTable(selectedRows)}`,
           panelsExpanded,
           "summary-emphasis",
           "data-year-panels-toggle"
@@ -3152,7 +3419,7 @@ function renderYearPageCompact(state) {
         ${renderWeekExpandableSummaryCard(
           formatYearHeading(state.compareYear, cutoffMonthDay),
           compareTotals,
-          `${renderDesktopTable(compareRows)}${renderMobileCards(compareRows)}`,
+          `${renderDesktopTable(compareRows)}${renderDayMobileTable(compareRows)}`,
           panelsExpanded,
           "",
           "data-year-panels-toggle"
@@ -3235,14 +3502,28 @@ function renderYearToolbarClean(state) {
 }
 
 function buildStaticChartOptions(overrides = {}) {
+  const isMobile = typeof window !== "undefined" && window.matchMedia && window.matchMedia("(max-width: 860px)").matches;
   return {
     responsive: true,
     maintainAspectRatio: true,
-    aspectRatio: 2.2,
+    aspectRatio: overrides.aspectRatio ?? (isMobile ? 1.08 : 2.2),
     animation: false,
     events: [],
+    layout: {
+      padding: isMobile
+        ? { top: 2, right: 2, bottom: 0, left: 0 }
+        : { top: 8, right: 8, bottom: 0, left: 0 },
+      ...(overrides.layout || {}),
+    },
     plugins: {
-      legend: { position: "top" },
+      legend: {
+        position: "top",
+        labels: {
+          boxWidth: isMobile ? 14 : 18,
+          boxHeight: isMobile ? 8 : 10,
+          font: { size: isMobile ? 11 : 12 },
+        },
+      },
       tooltip: { enabled: false },
       ...(overrides.plugins || {}),
     },
@@ -3296,8 +3577,11 @@ function initMonthCharts(state) {
     options: buildStaticChartOptions({
       scales: {
         y: {
+          beginAtZero: true,
           ticks: {
-            callback: (value) => `${Math.round(value / 1000000)}m`,
+            stepSize: 1000000,
+            maxTicksLimit: 6,
+            callback: formatAxisMillions,
           },
         },
       },
@@ -3330,8 +3614,11 @@ function initMonthCharts(state) {
     options: buildStaticChartOptions({
       scales: {
         y: {
+          beginAtZero: true,
           ticks: {
-            callback: (value) => `${Math.round(value / 1000000)}m`,
+            stepSize: 1000000,
+            maxTicksLimit: 6,
+            callback: formatAxisMillions,
           },
         },
       },
@@ -3386,8 +3673,11 @@ function initWeekCharts(state) {
     options: buildStaticChartOptions({
       scales: {
         y: {
+          beginAtZero: true,
           ticks: {
-            callback: (value) => `${Math.round(value / 1000000)}m`,
+            stepSize: 1000000,
+            maxTicksLimit: 6,
+            callback: formatAxisMillions,
           },
         },
       },
@@ -3420,8 +3710,11 @@ function initWeekCharts(state) {
     options: buildStaticChartOptions({
       scales: {
         y: {
+          beginAtZero: true,
           ticks: {
-            callback: (value) => `${Math.round(value / 1000000)}m`,
+            stepSize: 1000000,
+            maxTicksLimit: 6,
+            callback: formatAxisMillions,
           },
         },
       },
@@ -3470,8 +3763,11 @@ function initYearCharts(state) {
     options: buildStaticChartOptions({
       scales: {
         y: {
+          beginAtZero: true,
           ticks: {
-            callback: (value) => `${Math.round(value / 1000000)}m`,
+            stepSize: 1000000,
+            maxTicksLimit: 6,
+            callback: formatAxisMillions,
           },
         },
       },
@@ -3505,8 +3801,11 @@ function initYearCharts(state) {
     options: buildStaticChartOptions({
       scales: {
         y: {
+          beginAtZero: true,
           ticks: {
-            callback: (value) => `${Math.round(value / 1000000)}m`,
+            stepSize: 1000000,
+            maxTicksLimit: 6,
+            callback: formatAxisMillions,
           },
         },
       },
@@ -3770,6 +4069,23 @@ function bindEvents(state) {
     });
   });
 
+  document.querySelectorAll("[data-period-comparison-toggle]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const key = button.dataset.periodComparisonToggle;
+      if (state.page === "week") {
+        state.weekComparisonExpanded = state.weekComparisonExpanded.includes(key)
+          ? state.weekComparisonExpanded.filter((value) => value !== key)
+          : [...state.weekComparisonExpanded, key];
+      }
+      if (state.page === "month") {
+        state.monthComparisonExpanded = state.monthComparisonExpanded.includes(key)
+          ? state.monthComparisonExpanded.filter((value) => value !== key)
+          : [...state.monthComparisonExpanded, key];
+      }
+      paint(state);
+    });
+  });
+
   document.querySelectorAll("[data-month-panels-toggle]").forEach((button) => {
     button.addEventListener("click", () => {
       state.monthPanelsExpanded = !state.monthPanelsExpanded;
@@ -3906,6 +4222,7 @@ async function render() {
       compareWeekKey,
       weekMode: "full",
       weekPanelsExpanded: false,
+      weekComparisonExpanded: [],
       weekCutoffOptions,
       weekCutoffIsoDay: weekCutoffOptions[weekCutoffOptions.length - 1]?.isoDay || 5,
       monthCanonical: canonicalMonths,
@@ -3917,6 +4234,7 @@ async function render() {
       compareMonthKey,
       monthMode: "full",
       monthPanelsExpanded: false,
+      monthComparisonExpanded: [],
       yearCanonical: canonicalYears,
       yearOptions,
       selectedYear,

@@ -14,11 +14,11 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-29T13:18:42
-updated_at: 2026-05-29T13:21:43
-objective: Show current accumulated diff in day comparison KPI
-scope: frontend/app.js,AGENTS.md
-next_step: Verify the day comparison card still reads clearly on mobile
+started_at: 2026-05-29T13:41:15
+updated_at: 2026-05-29T14:06:36
+objective: Mobile-only week month and year redesign
+scope: frontend/app.js,frontend/styles.css,AGENTS.md
+next_step: Review the mobile week, month, and year pages in the browser and fine-tune spacing if needed
 verification: <ikke spesifisert>
 blockers: ingen
 ```
@@ -363,4 +363,15 @@ status: complete
 summary: Changed the comparison KPI to use the latest running difference so it shows the accumulated diff through the selected day instead of the full month total.
 files: frontend/app.js,AGENTS.md
 next: Verify the day comparison card still reads clearly on mobile
+```
+
+### 2026-05-29T14:06:36
+
+```text
+timestamp: 2026-05-29T14:06:36
+owner: codex
+status: complete
+summary: Added mobile-only table detail views for week and month, compact comparison stacks for week and month, and taller finer-grained mobile charts; year keeps the table detail view without comparison.
+files: frontend/app.js,frontend/styles.css,AGENTS.md
+next: Review the mobile week, month, and year pages in the browser and fine-tune spacing if needed
 ```
