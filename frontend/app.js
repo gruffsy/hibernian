@@ -67,7 +67,7 @@ function setPreference(value) {
 }
 
 function getPreference() {
-  return localStorage.getItem(PREFERENCE_KEY) || "beta";
+  return localStorage.getItem(PREFERENCE_KEY) || "classic";
 }
 
 function goClassic() {
@@ -187,6 +187,14 @@ function parseDateKey(dateKey) {
     month: Number(raw.slice(4, 6)),
     day: Number(raw.slice(6, 8)),
   };
+}
+
+function buildDateKey(year, month, day) {
+  return `${year}${String(month).padStart(2, "0")}${String(day).padStart(2, "0")}`;
+}
+
+function getDaysInMonth(year, month) {
+  return new Date(Date.UTC(year, month, 0)).getUTCDate();
 }
 
 function toUtcDate(dateKey) {
@@ -876,6 +884,7 @@ function getPreviousYearMonthKey(state, selectedMonthKey) {
 
 function buildDayMonthComparison(state, selectedDate, metric = "gross") {
   const { year, month } = parseDateKey(selectedDate);
+  const selectedCutoffDay = Number(String(selectedDate).slice(6, 8));
   const selectedMonthKey = monthKey(year, month);
   const compareMonthKey = getPreviousYearMonthKey(state, selectedMonthKey);
 
@@ -883,26 +892,32 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
     return null;
   }
 
-  const selectedDates = state.dayMonthDates.get(selectedMonthKey) || [];
-  const compareDates = state.dayMonthDates.get(compareMonthKey) || [];
+  const compareYear = Number(compareMonthKey.slice(0, 4));
+  const compareMonth = Number(compareMonthKey.slice(5, 7));
+  const selectedDaysInMonth = getDaysInMonth(year, month);
+  const compareDaysInMonth = getDaysInMonth(compareYear, compareMonth);
 
-  if (!selectedDates.length || !compareDates.length) {
+  if (!selectedDaysInMonth || !compareDaysInMonth) {
     return null;
   }
 
-  const rowCount = Math.max(selectedDates.length, compareDates.length);
+  const rowCount = Math.max(selectedDaysInMonth, compareDaysInMonth);
   const rows = [];
   let runningDiff = 0;
   let selectedTotal = 0;
   let compareTotal = 0;
   let currentDiff = 0;
   let currentDiffRow = null;
+  let selectedCount = 0;
+  let compareCount = 0;
 
-  for (let index = 0; index < rowCount; index += 1) {
-    const compareDate = compareDates[index] || null;
-    const selectedMonthDate = selectedDates[index] || null;
+  for (let day = 1; day <= rowCount; day += 1) {
+    const selectedMonthDate = day <= selectedDaysInMonth ? buildDateKey(year, month, day) : null;
+    const compareDate = day <= compareDaysInMonth ? buildDateKey(compareYear, compareMonth, day) : null;
     const compareTotals = compareDate ? getTotals(state.dayGrouped.get(compareDate) || []) : null;
     const selectedTotals = selectedMonthDate ? getTotals(state.dayGrouped.get(selectedMonthDate) || []) : null;
+    const compareHasSales = Boolean(compareTotals && compareTotals.butikk !== undefined);
+    const selectedHasSales = Boolean(selectedTotals && selectedTotals.butikk !== undefined);
     const compareValue = metric === "db" ? compareTotals?.dbAmount || 0 : compareTotals?.net || 0;
     const selectedValue = metric === "db" ? selectedTotals?.dbAmount || 0 : selectedTotals?.net || 0;
 
@@ -920,7 +935,15 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
       runningDiff,
     });
 
-    if (selectedMonthDate) {
+    if (compareHasSales) {
+      compareCount += 1;
+    }
+
+    if (selectedHasSales) {
+      selectedCount += 1;
+    }
+
+    if (day === selectedCutoffDay) {
       currentDiff = runningDiff;
       currentDiffRow = rows[rows.length - 1];
     }
@@ -936,18 +959,18 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
     selectedMonthKey,
     compareMonthKey,
     selectedYear: year,
-    compareYear: Number(compareMonthKey.slice(0, 4)),
+    compareYear,
     rows,
     selectedTotal,
     compareTotal,
-    selectedCount: selectedDates.length,
-    compareCount: compareDates.length,
-    selectedAverage: selectedDates.length ? selectedTotal / selectedDates.length : 0,
-    compareAverage: compareDates.length ? compareTotal / compareDates.length : 0,
+    selectedCount,
+    compareCount,
+    selectedAverage: selectedCount ? selectedTotal / selectedCount : 0,
+    compareAverage: compareCount ? compareTotal / compareCount : 0,
     finalDiff: selectedTotal - compareTotal,
     finalPercentChange: compareTotal ? ((selectedTotal - compareTotal) / compareTotal) * 100 : 0,
     currentDiff,
-    currentDiffLabel: currentDiffRow?.selectedLabel || "",
+    currentDiffLabel: currentDiffRow?.selectedLabel || formatComparisonDayLabel(selectedDate) || "",
   };
 }
 
