@@ -3008,7 +3008,7 @@ function renderMonthPageCompact(state) {
         ${renderMonthChartsBlock()}
       </section>
 
-      <section class="mobile-only day-comparison-stack">
+      <section class="day-comparison-stack">
         ${renderPeriodComparisonCard(grossComparison, grossComparisonExpanded)}
         ${renderPeriodComparisonCard(dbComparison, dbComparisonExpanded)}
       </section>
@@ -3250,7 +3250,7 @@ function renderWeekPageCompact(state) {
         ${renderWeekChartsBlock()}
       </section>
 
-      <section class="mobile-only day-comparison-stack">
+      <section class="day-comparison-stack">
         ${renderPeriodComparisonCard(grossComparison, grossComparisonExpanded)}
         ${renderPeriodComparisonCard(dbComparison, dbComparisonExpanded)}
       </section>
