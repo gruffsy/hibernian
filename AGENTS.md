@@ -14,11 +14,11 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-31T19:06:32
-updated_at: 2026-05-31T19:14:37
-objective: Diagnose Render branch/data mismatch and add dual-push routine
-scope: frontend/app.js,scripts/*,AGENTS.md
-next_step: <ikke spesifisert>
+started_at: 2026-05-31T22:30:51
+updated_at: 2026-05-31T22:33:42
+objective: Create one-command beta publish routine
+scope: scripts/publish-beta.ps1,AGENTS.md
+next_step: Use publish-beta.ps1 for future beta releases
 verification: <ikke spesifisert>
 blockers: ingen
 ```
@@ -98,6 +98,19 @@ Typical usage:
 powershell -ExecutionPolicy Bypass -File .\scripts\agent-task.ps1 -Mode start -Owner tmux -Objective "<job>" -Scope "<files>" -NextStep "<next step>"
 powershell -ExecutionPolicy Bypass -File .\scripts\agent-task.ps1 -Mode finish -Owner tmux -Objective "<job>" -Scope "<files>" -Summary "<short result>"
 powershell -ExecutionPolicy Bypass -File .\scripts\agent-task.ps1 -Mode run -Owner tmux -Objective "<job>" -Scope "<files>" -Command "<command>"
+```
+
+Publish beta to both repos:
+
+```text
+powershell -ExecutionPolicy Bypass -File .\scripts\publish-beta.ps1 -Message "<commit message>"
+```
+
+Optional:
+
+```text
+powershell -ExecutionPolicy Bypass -File .\scripts\publish-beta.ps1 -Message "<commit message>" -Objective "<short objective>"
+powershell -ExecutionPolicy Bypass -File .\scripts\publish-beta.ps1 -Message "<commit message>" -AllowPipelineData
 ```
 
 Rule:
@@ -451,4 +464,15 @@ status: complete
 summary: Confirmed both beta branches were behind main, pushed main to origin/beta and hibernian/beta, and added a sync script for the normal publish flow.
 files: frontend/app.js,scripts/*,AGENTS.md
 next: <ikke spesifisert>
+```
+
+### 2026-05-31T22:33:42
+
+```text
+timestamp: 2026-05-31T22:33:42
+owner: codex
+status: complete
+summary: Added a one-command beta publish script that stages changes, runs scope guard, commits, and syncs to both beta remotes.
+files: scripts/publish-beta.ps1,AGENTS.md
+next: Use publish-beta.ps1 for future beta releases
 ```
