@@ -14,10 +14,10 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-31T17:28:53
-updated_at: 2026-05-31T17:31:43
-objective: Stack desktop cards vertically and preserve comparison scroll
-scope: frontend/app.js,frontend/styles.css,AGENTS.md
+started_at: 2026-05-31T19:06:32
+updated_at: 2026-05-31T19:14:37
+objective: Diagnose Render branch/data mismatch and add dual-push routine
+scope: frontend/app.js,scripts/*,AGENTS.md
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
 blockers: ingen
@@ -439,5 +439,16 @@ owner: codex
 status: complete
 summary: Made the desktop card layout single-column across day, week, month, year, and seller views, and preserved scroll position when comparison cards expand or collapse.
 files: frontend/app.js,frontend/styles.css,AGENTS.md
+next: <ikke spesifisert>
+```
+
+### 2026-05-31T19:14:37
+
+```text
+timestamp: 2026-05-31T19:14:37
+owner: codex
+status: complete
+summary: Confirmed both beta branches were behind main, pushed main to origin/beta and hibernian/beta, and added a sync script for the normal publish flow.
+files: frontend/app.js,scripts/*,AGENTS.md
 next: <ikke spesifisert>
 ```
