@@ -14,10 +14,10 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-31T17:18:55
-updated_at: 2026-05-31T17:21:17
-objective: Commit period-diff mobile styles isolation
-scope: frontend/styles.css,AGENTS.md
+started_at: 2026-05-31T17:28:53
+updated_at: 2026-05-31T17:31:43
+objective: Stack desktop cards vertically and preserve comparison scroll
+scope: frontend/app.js,frontend/styles.css,AGENTS.md
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
 blockers: ingen
@@ -428,5 +428,16 @@ owner: codex
 status: complete
 summary: Locked the mobile period-diff table styling into its own commit so the compact mobile behavior stays preserved without mixing in other changes.
 files: frontend/styles.css,AGENTS.md
+next: <ikke spesifisert>
+```
+
+### 2026-05-31T17:31:44
+
+```text
+timestamp: 2026-05-31T17:31:43
+owner: codex
+status: complete
+summary: Made the desktop card layout single-column across day, week, month, year, and seller views, and preserved scroll position when comparison cards expand or collapse.
+files: frontend/app.js,frontend/styles.css,AGENTS.md
 next: <ikke spesifisert>
 ```

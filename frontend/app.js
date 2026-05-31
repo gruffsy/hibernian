@@ -3974,6 +3974,10 @@ function restoreViewState(viewState) {
   }
 }
 
+function repaintPreservingViewport(state) {
+  paint(state, captureViewState());
+}
+
 function refreshSellerResults(state) {
   const sellerLayout = document.querySelector(".seller-layout");
   if (!sellerLayout) {
@@ -4150,7 +4154,7 @@ function bindEvents(state) {
       state.weekSummaryExpanded = state.weekSummaryExpanded.includes(key)
         ? state.weekSummaryExpanded.filter((value) => value !== key)
         : [...state.weekSummaryExpanded, key];
-      paint(state);
+      repaintPreservingViewport(state);
     });
   });
 
@@ -4160,7 +4164,7 @@ function bindEvents(state) {
       state.dayExpandedDates = state.dayExpandedDates.includes(key)
         ? state.dayExpandedDates.filter((value) => value !== key)
         : [...state.dayExpandedDates, key];
-      paint(state);
+      repaintPreservingViewport(state);
     });
   });
 
@@ -4170,7 +4174,7 @@ function bindEvents(state) {
       state.dayComparisonExpanded = state.dayComparisonExpanded.includes(key)
         ? state.dayComparisonExpanded.filter((value) => value !== key)
         : [...state.dayComparisonExpanded, key];
-      paint(state);
+      repaintPreservingViewport(state);
     });
   });
 
@@ -4187,7 +4191,7 @@ function bindEvents(state) {
           ? state.monthComparisonExpanded.filter((value) => value !== key)
           : [...state.monthComparisonExpanded, key];
       }
-      paint(state);
+      repaintPreservingViewport(state);
     });
   });
 
@@ -4197,7 +4201,7 @@ function bindEvents(state) {
       state.monthSummaryExpanded = state.monthSummaryExpanded.includes(key)
         ? state.monthSummaryExpanded.filter((value) => value !== key)
         : [...state.monthSummaryExpanded, key];
-      paint(state);
+      repaintPreservingViewport(state);
     });
   });
 
@@ -4207,7 +4211,7 @@ function bindEvents(state) {
       state.yearSummaryExpanded = state.yearSummaryExpanded.includes(key)
         ? state.yearSummaryExpanded.filter((value) => value !== key)
         : [...state.yearSummaryExpanded, key];
-      paint(state);
+      repaintPreservingViewport(state);
     });
   });
 

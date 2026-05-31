@@ -292,13 +292,13 @@ select {
 
 .summary-band {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--section-gap);
   margin-top: var(--section-gap);
 }
 
 .month-summary-band {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .summary-card {
@@ -508,7 +508,7 @@ select {
 
 .chart-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--section-gap);
 }
 
@@ -554,7 +554,7 @@ select {
 }
 
 .seller-columns {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .seller-toolbar {
@@ -822,7 +822,7 @@ select {
 
 .content-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.9fr) minmax(300px, 0.9fr);
+  grid-template-columns: 1fr;
   gap: var(--section-gap);
   margin-top: var(--section-gap);
 }
