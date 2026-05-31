@@ -14,11 +14,11 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-31T16:17:48
-updated_at: 2026-05-31T16:20:54
-objective: Hide desktop diff table on mobile
+started_at: 2026-05-31T16:29:33
+updated_at: 2026-05-31T16:43:16
+objective: Fix graph ordering and diff colors
 scope: frontend/app.js,frontend/styles.css,AGENTS.md
-next_step: Refresh the mobile week, month, or year page and confirm the diff card no longer shows the desktop table
+next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
 blockers: ingen
 ```
@@ -407,4 +407,15 @@ status: complete
 summary: Added a desktop-only wrapper around the diff table so mobile now shows only the compact diff table; kept the compact mobile diff layout intact.
 files: frontend/app.js,frontend/styles.css,AGENTS.md
 next: Refresh the mobile week, month, or year page and confirm the diff card no longer shows the desktop table
+```
+
+### 2026-05-31T16:43:16
+
+```text
+timestamp: 2026-05-31T16:43:16
+owner: codex
+status: complete
+summary: Sorted chart datasets by year so 2025 appears first and separated trigger vs total diff coloring so totals use the final sign.
+files: frontend/app.js,frontend/styles.css,AGENTS.md
+next: <ikke spesifisert>
 ```

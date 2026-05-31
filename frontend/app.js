@@ -141,6 +141,21 @@ function formatAxisMillions(value) {
   return `${formatted}m`;
 }
 
+function getYearFromLabel(label) {
+  const match = String(label).match(/(19|20)\d{2}/);
+  return match ? Number(match[0]) : Number.POSITIVE_INFINITY;
+}
+
+function sortDatasetsByYear(datasets) {
+  return [...datasets].sort((left, right) => {
+    const yearDelta = getYearFromLabel(left.label) - getYearFromLabel(right.label);
+    if (yearDelta !== 0) {
+      return yearDelta;
+    }
+    return String(left.label).localeCompare(String(right.label), "nb-NO");
+  });
+}
+
 function formatDateLabel(dateKey) {
   const raw = String(dateKey);
   const year = Number(raw.slice(0, 4));
@@ -1063,7 +1078,8 @@ function renderDayMonthComparisonCardLegacy(comparison) {
     return "";
   }
 
-  const diffClass = comparison.finalDiff >= 0 ? "is-positive" : "is-negative";
+  const triggerDiffClass = (Number.isFinite(comparison.currentDiff) ? comparison.currentDiff : comparison.finalDiff) >= 0 ? "is-positive" : "is-negative";
+  const tableDiffClass = comparison.finalDiff >= 0 ? "is-positive" : "is-negative";
 
   return `
     <article class="day-comparison-card">
@@ -1072,7 +1088,7 @@ function renderDayMonthComparisonCardLegacy(comparison) {
           <p class="summary-label">${comparison.metricLabel}</p>
           <h2>${monthLabelFromKey(comparison.selectedMonthKey)} mot ${monthLabelFromKey(comparison.compareMonthKey)}</h2>
         </div>
-        <div class="day-comparison-kpi ${diffClass}">
+        <div class="day-comparison-kpi ${triggerDiffClass}">
           <span>Akk. diff</span>
           <strong>${formatSignedInteger(comparison.finalDiff)}</strong>
         </div>
@@ -1121,14 +1137,14 @@ function renderDayMonthComparisonCardLegacy(comparison) {
               <th>${formatInteger(comparison.compareTotal)}</th>
               <th>${formatInteger(comparison.selectedTotal)}</th>
               <th></th>
-              <th class="${diffClass}">${formatSignedInteger(comparison.finalDiff)}</th>
+              <th class="${tableDiffClass}">${formatSignedInteger(comparison.finalDiff)}</th>
             </tr>
             <tr>
               <th>Snitt</th>
               <th>${formatInteger(comparison.compareAverage)}</th>
               <th>${formatInteger(comparison.selectedAverage)}</th>
               <th></th>
-              <th class="${diffClass}">${comparison.finalPercentChange.toFixed(2).replace(".", ",")} %</th>
+              <th class="${tableDiffClass}">${comparison.finalPercentChange.toFixed(2).replace(".", ",")} %</th>
             </tr>
             <tr>
               <th>Dager</th>
@@ -1150,7 +1166,8 @@ function renderDayMonthComparisonCard(comparison, expanded = false) {
   }
 
   const diffValue = Number.isFinite(comparison.currentDiff) ? comparison.currentDiff : comparison.finalDiff;
-  const diffClass = diffValue >= 0 ? "is-positive" : "is-negative";
+  const triggerDiffClass = diffValue >= 0 ? "is-positive" : "is-negative";
+  const tableDiffClass = comparison.finalDiff >= 0 ? "is-positive" : "is-negative";
   const diffTitle = comparison.diffTitle || "Akk. diff hittil";
   const heading = comparison.heading || `${monthLabelFromKey(comparison.selectedMonthKey)} mot ${monthLabelFromKey(comparison.compareMonthKey)}`;
   const rowLabelHeader = comparison.rowLabelHeader || "Dag";
@@ -1168,7 +1185,7 @@ function renderDayMonthComparisonCard(comparison, expanded = false) {
         aria-expanded="${expanded ? "true" : "false"}"
       >
         <p class="summary-label">${comparison.metricLabel}</p>
-        <div class="day-comparison-kpi ${diffClass}">
+        <div class="day-comparison-kpi ${triggerDiffClass}">
           <span>${diffTitle}</span>
           <strong>${formatSignedInteger(diffValue)}</strong>
         </div>
@@ -1226,14 +1243,14 @@ function renderDayMonthComparisonCard(comparison, expanded = false) {
                     <th>${formatInteger(comparison.compareTotal)}</th>
                     <th>${formatInteger(comparison.selectedTotal)}</th>
                     <th></th>
-                    <th class="${diffClass}">${formatSignedInteger(comparison.finalDiff)}</th>
+                    <th class="${tableDiffClass}">${formatSignedInteger(comparison.finalDiff)}</th>
                   </tr>
                   <tr>
                     <th>Snitt</th>
                     <th>${formatInteger(comparison.compareAverage)}</th>
                     <th>${formatInteger(comparison.selectedAverage)}</th>
                     <th></th>
-                    <th class="${diffClass}">${comparison.finalPercentChange.toFixed(2).replace(".", ",")} %</th>
+                    <th class="${tableDiffClass}">${comparison.finalPercentChange.toFixed(2).replace(".", ",")} %</th>
                   </tr>
                   <tr>
                     <th>Dager</th>
@@ -1258,7 +1275,8 @@ function renderPeriodComparisonCard(comparison, expanded = false) {
   }
 
   const diffValue = Number.isFinite(comparison.currentDiff) ? comparison.currentDiff : comparison.finalDiff;
-  const diffClass = diffValue >= 0 ? "is-positive" : "is-negative";
+  const triggerDiffClass = diffValue >= 0 ? "is-positive" : "is-negative";
+  const tableDiffClass = comparison.finalDiff >= 0 ? "is-positive" : "is-negative";
   const diffTitle = comparison.diffTitle || "Akk. diff hittil";
   const heading = comparison.heading || "";
   const rowLabelHeader = comparison.rowLabelHeader || "Periode";
@@ -1276,7 +1294,7 @@ function renderPeriodComparisonCard(comparison, expanded = false) {
         aria-expanded="${expanded ? "true" : "false"}"
       >
         <p class="summary-label">${comparison.metricLabel}</p>
-        <div class="day-comparison-kpi ${diffClass}">
+        <div class="day-comparison-kpi ${triggerDiffClass}">
           <span>${diffTitle}</span>
           <strong>${formatSignedInteger(diffValue)}</strong>
         </div>
@@ -1334,14 +1352,14 @@ function renderPeriodComparisonCard(comparison, expanded = false) {
                     <th>${formatInteger(comparison.compareTotal)}</th>
                     <th>${formatInteger(comparison.selectedTotal)}</th>
                     <th></th>
-                    <th class="${diffClass}">${formatSignedInteger(comparison.finalDiff)}</th>
+                    <th class="${tableDiffClass}">${formatSignedInteger(comparison.finalDiff)}</th>
                   </tr>
                   <tr>
                     <th>Snitt</th>
                     <th>${formatInteger(comparison.compareAverage)}</th>
                     <th>${formatInteger(comparison.selectedAverage)}</th>
                     <th></th>
-                    <th class="${diffClass}">${comparison.finalPercentChange.toFixed(2).replace(".", ",")} %</th>
+                    <th class="${tableDiffClass}">${comparison.finalPercentChange.toFixed(2).replace(".", ",")} %</th>
                   </tr>
                   <tr>
                     <th>${rowTotalsLabel}</th>
@@ -3628,29 +3646,30 @@ function initMonthCharts(state) {
   );
   const selectedCumulativeMap = new Map(selectedSeries.labels.map((label, index) => [label, selectedSeries.cumulative[index]]));
   const compareCumulativeMap = new Map(compareSeries.labels.map((label, index) => [label, compareSeries.cumulative[index]]));
+  const cumulativeDatasets = sortDatasetsByYear([
+    {
+      label: monthLabelFromKey(state.selectedMonthKey),
+      data: labels.map((label) => selectedCumulativeMap.get(label) ?? null),
+      borderColor: "#0f766e",
+      backgroundColor: "rgba(15, 118, 110, 0.14)",
+      tension: 0.28,
+      fill: true,
+    },
+    {
+      label: monthLabelFromKey(state.compareMonthKey),
+      data: labels.map((label) => compareCumulativeMap.get(label) ?? null),
+      borderColor: "#b48b34",
+      backgroundColor: "rgba(180, 139, 52, 0.08)",
+      tension: 0.28,
+      fill: true,
+    },
+  ]);
 
   const cumulativeChart = new window.Chart(cumulativeCanvas, {
     type: "line",
     data: {
       labels,
-      datasets: [
-        {
-          label: monthLabelFromKey(state.selectedMonthKey),
-          data: labels.map((label) => selectedCumulativeMap.get(label) ?? null),
-          borderColor: "#0f766e",
-          backgroundColor: "rgba(15, 118, 110, 0.14)",
-          tension: 0.28,
-          fill: true,
-        },
-        {
-          label: monthLabelFromKey(state.compareMonthKey),
-          data: labels.map((label) => compareCumulativeMap.get(label) ?? null),
-          borderColor: "#b48b34",
-          backgroundColor: "rgba(180, 139, 52, 0.08)",
-          tension: 0.28,
-          fill: true,
-        },
-      ],
+      datasets: cumulativeDatasets,
     },
     options: buildStaticChartOptions({
       scales: {
@@ -3670,24 +3689,25 @@ function initMonthCharts(state) {
   const selectedRows = getStoreRows(resolveMonthRows(state, state.selectedMonthKey));
   const compareRows = getStoreRows(resolveMonthRows(state, state.compareMonthKey));
   const compareMap = new Map(compareRows.map((row) => [row.butikk, row]));
+  const storeDatasets = sortDatasetsByYear([
+    {
+      label: monthLabelFromKey(state.selectedMonthKey),
+      data: selectedRows.map((row) => row.gross),
+      backgroundColor: "rgba(15, 118, 110, 0.82)",
+      borderRadius: 10,
+    },
+    {
+      label: monthLabelFromKey(state.compareMonthKey),
+      data: selectedRows.map((row) => (compareMap.get(row.butikk) ? compareMap.get(row.butikk).gross : 0)),
+      backgroundColor: "rgba(180, 139, 52, 0.75)",
+      borderRadius: 10,
+    },
+  ]);
   const storeChart = new window.Chart(storeCanvas, {
     type: "bar",
     data: {
       labels: selectedRows.map((row) => row.butikk),
-      datasets: [
-        {
-          label: monthLabelFromKey(state.selectedMonthKey),
-          data: selectedRows.map((row) => row.gross),
-          backgroundColor: "rgba(15, 118, 110, 0.82)",
-          borderRadius: 10,
-        },
-        {
-          label: monthLabelFromKey(state.compareMonthKey),
-          data: selectedRows.map((row) => (compareMap.get(row.butikk) ? compareMap.get(row.butikk).gross : 0)),
-          backgroundColor: "rgba(180, 139, 52, 0.75)",
-          borderRadius: 10,
-        },
-      ],
+      datasets: storeDatasets,
     },
     options: buildStaticChartOptions({
       scales: {
@@ -3724,29 +3744,30 @@ function initWeekCharts(state) {
   );
   const selectedMap = new Map(selectedSeries.labels.map((label, index) => [label, selectedSeries.cumulative[index]]));
   const compareMap = new Map(compareSeries.labels.map((label, index) => [label, compareSeries.cumulative[index]]));
+  const cumulativeDatasets = sortDatasetsByYear([
+    {
+      label: formatWeekLabel(state.selectedWeekKey),
+      data: labels.map((label) => selectedMap.get(label) ?? null),
+      borderColor: "#0f766e",
+      backgroundColor: "rgba(15, 118, 110, 0.14)",
+      tension: 0.28,
+      fill: true,
+    },
+    {
+      label: formatWeekLabel(state.compareWeekKey),
+      data: labels.map((label) => compareMap.get(label) ?? null),
+      borderColor: "#b48b34",
+      backgroundColor: "rgba(180, 139, 52, 0.08)",
+      tension: 0.28,
+      fill: true,
+    },
+  ]);
 
   const cumulativeChart = new window.Chart(cumulativeCanvas, {
     type: "line",
     data: {
       labels,
-      datasets: [
-        {
-          label: formatWeekLabel(state.selectedWeekKey),
-          data: labels.map((label) => selectedMap.get(label) ?? null),
-          borderColor: "#0f766e",
-          backgroundColor: "rgba(15, 118, 110, 0.14)",
-          tension: 0.28,
-          fill: true,
-        },
-        {
-          label: formatWeekLabel(state.compareWeekKey),
-          data: labels.map((label) => compareMap.get(label) ?? null),
-          borderColor: "#b48b34",
-          backgroundColor: "rgba(180, 139, 52, 0.08)",
-          tension: 0.28,
-          fill: true,
-        },
-      ],
+      datasets: cumulativeDatasets,
     },
     options: buildStaticChartOptions({
       scales: {
@@ -3766,24 +3787,25 @@ function initWeekCharts(state) {
   const selectedRows = getStoreRows(resolveWeekRows(state, state.selectedWeekKey));
   const compareRows = getStoreRows(resolveWeekRows(state, state.compareWeekKey));
   const compareStoreMap = new Map(compareRows.map((row) => [row.butikk, row]));
+  const storeDatasets = sortDatasetsByYear([
+    {
+      label: formatWeekLabel(state.selectedWeekKey),
+      data: selectedRows.map((row) => row.gross),
+      backgroundColor: "rgba(15, 118, 110, 0.82)",
+      borderRadius: 10,
+    },
+    {
+      label: formatWeekLabel(state.compareWeekKey),
+      data: selectedRows.map((row) => (compareStoreMap.get(row.butikk) ? compareStoreMap.get(row.butikk).gross : 0)),
+      backgroundColor: "rgba(180, 139, 52, 0.75)",
+      borderRadius: 10,
+    },
+  ]);
   const storeChart = new window.Chart(storeCanvas, {
     type: "bar",
     data: {
       labels: selectedRows.map((row) => row.butikk),
-      datasets: [
-        {
-          label: formatWeekLabel(state.selectedWeekKey),
-          data: selectedRows.map((row) => row.gross),
-          backgroundColor: "rgba(15, 118, 110, 0.82)",
-          borderRadius: 10,
-        },
-        {
-          label: formatWeekLabel(state.compareWeekKey),
-          data: selectedRows.map((row) => (compareStoreMap.get(row.butikk) ? compareStoreMap.get(row.butikk).gross : 0)),
-          backgroundColor: "rgba(180, 139, 52, 0.75)",
-          borderRadius: 10,
-        },
-      ],
+      datasets: storeDatasets,
     },
     options: buildStaticChartOptions({
       scales: {
@@ -3814,29 +3836,30 @@ function initYearCharts(state) {
 
   const selectedSeries = buildYearMonthSeries(state, state.selectedYear);
   const compareSeries = buildYearMonthSeries(state, state.compareYear);
+  const cumulativeDatasets = sortDatasetsByYear([
+    {
+      label: String(state.selectedYear),
+      data: selectedSeries.cumulative,
+      borderColor: "#0f766e",
+      backgroundColor: "rgba(15, 118, 110, 0.14)",
+      tension: 0.28,
+      fill: true,
+    },
+    {
+      label: String(state.compareYear),
+      data: compareSeries.cumulative,
+      borderColor: "#b48b34",
+      backgroundColor: "rgba(180, 139, 52, 0.08)",
+      tension: 0.28,
+      fill: true,
+    },
+  ]);
 
   const cumulativeChart = new window.Chart(cumulativeCanvas, {
     type: "line",
     data: {
       labels: selectedSeries.labels,
-      datasets: [
-        {
-          label: String(state.selectedYear),
-          data: selectedSeries.cumulative,
-          borderColor: "#0f766e",
-          backgroundColor: "rgba(15, 118, 110, 0.14)",
-          tension: 0.28,
-          fill: true,
-        },
-        {
-          label: String(state.compareYear),
-          data: compareSeries.cumulative,
-          borderColor: "#b48b34",
-          backgroundColor: "rgba(180, 139, 52, 0.08)",
-          tension: 0.28,
-          fill: true,
-        },
-      ],
+      datasets: cumulativeDatasets,
     },
     options: buildStaticChartOptions({
       scales: {
@@ -3856,25 +3879,26 @@ function initYearCharts(state) {
   const selectedRows = getStoreRows(resolveYearRows(state, state.selectedYear));
   const compareRows = getStoreRows(resolveYearRows(state, state.compareYear));
   const compareMap = new Map(compareRows.map((row) => [row.butikk, row]));
+  const storeDatasets = sortDatasetsByYear([
+    {
+      label: String(state.selectedYear),
+      data: selectedRows.map((row) => row.gross),
+      backgroundColor: "rgba(15, 118, 110, 0.82)",
+      borderRadius: 10,
+    },
+    {
+      label: String(state.compareYear),
+      data: selectedRows.map((row) => (compareMap.get(row.butikk) ? compareMap.get(row.butikk).gross : 0)),
+      backgroundColor: "rgba(180, 139, 52, 0.75)",
+      borderRadius: 10,
+    },
+  ]);
 
   const storeChart = new window.Chart(storeCanvas, {
     type: "bar",
     data: {
       labels: selectedRows.map((row) => row.butikk),
-      datasets: [
-        {
-          label: String(state.selectedYear),
-          data: selectedRows.map((row) => row.gross),
-          backgroundColor: "rgba(15, 118, 110, 0.82)",
-          borderRadius: 10,
-        },
-        {
-          label: String(state.compareYear),
-          data: selectedRows.map((row) => (compareMap.get(row.butikk) ? compareMap.get(row.butikk).gross : 0)),
-          backgroundColor: "rgba(180, 139, 52, 0.75)",
-          borderRadius: 10,
-        },
-      ],
+      datasets: storeDatasets,
     },
     options: buildStaticChartOptions({
       scales: {
