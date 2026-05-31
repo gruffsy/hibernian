@@ -1748,7 +1748,7 @@ function renderDayMobileTable(rows) {
 
 function renderDiffTable(rows) {
   return `
-    <div class="table-shell period-diff-table-shell">
+    <div class="desktop-only table-shell period-diff-table-shell">
       <table class="store-table">
         <thead>
           <tr>
@@ -1776,7 +1776,7 @@ function renderDiffTable(rows) {
         </tbody>
       </table>
     </div>
-    <div class="mobile-only period-diff-mobile-shell">
+    <div class="mobile-only day-mobile-table-shell">
       <table class="store-table day-mobile-table period-diff-mobile-table">
         <colgroup>
           <col class="period-diff-col-store" />

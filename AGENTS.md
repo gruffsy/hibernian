@@ -14,11 +14,11 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-29T15:01:19
-updated_at: 2026-05-29T15:09:25
-objective: Refine mobile period comparison cards
+started_at: 2026-05-31T16:17:48
+updated_at: 2026-05-31T16:20:54
+objective: Hide desktop diff table on mobile
 scope: frontend/app.js,frontend/styles.css,AGENTS.md
-next_step: Review the mobile week, month, and year pages and fine-tune spacing if needed
+next_step: Refresh the mobile week, month, or year page and confirm the diff card no longer shows the desktop table
 verification: <ikke spesifisert>
 blockers: ingen
 ```
@@ -266,6 +266,17 @@ files: frontend/styles.css
 next: <ikke spesifisert>
 ```
 
+### 2026-05-29T17:52:40+02:00
+
+```text
+timestamp: 2026-05-29T17:52:40+02:00
+owner: codex
+status: complete
+summary: Made the mobile diff table reuse the week-view shell and base table styling, removing the diff-specific mobile overrides
+files: frontend/app.js, frontend/styles.css, AGENTS.md
+next: None
+```
+
 ### 2026-05-29T10:27:55
 
 ```text
@@ -385,4 +396,15 @@ status: complete
 summary: Made week, month, and year summary cards expand independently on mobile and added the diff card mobile table treatment so it matches the rest of the compact tables.
 files: frontend/app.js,frontend/styles.css,AGENTS.md
 next: Review the mobile week, month, and year pages and fine-tune spacing if needed
+```
+
+### 2026-05-31T16:20:54
+
+```text
+timestamp: 2026-05-31T16:20:54
+owner: codex
+status: complete
+summary: Added a desktop-only wrapper around the diff table so mobile now shows only the compact diff table; kept the compact mobile diff layout intact.
+files: frontend/app.js,frontend/styles.css,AGENTS.md
+next: Refresh the mobile week, month, or year page and confirm the diff card no longer shows the desktop table
 ```
