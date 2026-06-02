@@ -11,8 +11,8 @@
         "måned": "June",
         "år": "2026",
         "navn": "Thor Aksel Thoresen",
-        "umoms": "103,531 kr",
-        "db": "14,403 kr",
+        "umoms": "106,749 kr",
+        "db": "16,253 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -38,6 +38,14 @@
         "umoms": "86,930 kr",
         "db": "14,267 kr",
         "butikk": "Arendal"
+    },
+    {
+        "måned": "June",
+        "år": "2026",
+        "navn": "Milla F. Moen",
+        "umoms": "76,031 kr",
+        "db": "19,774 kr",
+        "butikk": "Skien"
     },
     {
         "måned": "June",
@@ -74,14 +82,6 @@
     {
         "måned": "June",
         "år": "2026",
-        "navn": "Milla F. Moen",
-        "umoms": "66,843 kr",
-        "db": "18,062 kr",
-        "butikk": "Skien"
-    },
-    {
-        "måned": "June",
-        "år": "2026",
         "navn": "Tuva Sofie Risdal",
         "umoms": "62,936 kr",
         "db": "13,061 kr",
@@ -98,18 +98,18 @@
     {
         "måned": "June",
         "år": "2026",
-        "navn": "James Michael McGurty",
-        "umoms": "60,810 kr",
-        "db": "7,987 kr",
-        "butikk": "Skien"
+        "navn": "Linn Christina Larssen",
+        "umoms": "61,477 kr",
+        "db": "12,695 kr",
+        "butikk": "Larvik"
     },
     {
         "måned": "June",
         "år": "2026",
-        "navn": "Linn Christina Larssen",
-        "umoms": "59,479 kr",
-        "db": "12,048 kr",
-        "butikk": "Larvik"
+        "navn": "James Michael McGurty",
+        "umoms": "60,810 kr",
+        "db": "7,987 kr",
+        "butikk": "Skien"
     },
     {
         "måned": "June",
@@ -211,9 +211,17 @@
         "måned": "June",
         "år": "2026",
         "navn": "Linn Kristine Terjesen",
-        "umoms": "43,076 kr",
-        "db": "11,647 kr",
+        "umoms": "45,331 kr",
+        "db": "12,224 kr",
         "butikk": "Arendal"
+    },
+    {
+        "måned": "June",
+        "år": "2026",
+        "navn": "Pernille Dall",
+        "umoms": "41,906 kr",
+        "db": "7,076 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "June",
@@ -234,10 +242,10 @@
     {
         "måned": "June",
         "år": "2026",
-        "navn": "Pernille Dall",
-        "umoms": "39,214 kr",
-        "db": "6,681 kr",
-        "butikk": "Kristiansand"
+        "navn": "Filip Söderlund",
+        "umoms": "39,670 kr",
+        "db": "7,086 kr",
+        "butikk": "Tønsberg"
     },
     {
         "måned": "June",
@@ -274,26 +282,18 @@
     {
         "måned": "June",
         "år": "2026",
+        "navn": "Fredrik Frost Pettersen",
+        "umoms": "35,776 kr",
+        "db": "10,355 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "June",
+        "år": "2026",
         "navn": "Heidi Kristensen Voje",
         "umoms": "35,156 kr",
         "db": "9,325 kr",
         "butikk": "Bamble"
-    },
-    {
-        "måned": "June",
-        "år": "2026",
-        "navn": "Filip Söderlund",
-        "umoms": "33,879 kr",
-        "db": "6,890 kr",
-        "butikk": "Tønsberg"
-    },
-    {
-        "måned": "June",
-        "år": "2026",
-        "navn": "Fredrik Frost Pettersen",
-        "umoms": "33,658 kr",
-        "db": "9,708 kr",
-        "butikk": "Tønsberg"
     },
     {
         "måned": "June",
@@ -339,17 +339,9 @@
         "måned": "June",
         "år": "2026",
         "navn": "Kristoffer Gård",
-        "umoms": "22,919 kr",
-        "db": "6,473 kr",
+        "umoms": "25,655 kr",
+        "db": "6,304 kr",
         "butikk": "Bamble"
-    },
-    {
-        "måned": "June",
-        "år": "2026",
-        "navn": "Christopher Øglænd",
-        "umoms": "22,648 kr",
-        "db": "4,740 kr",
-        "butikk": "Kristiansand"
     },
     {
         "måned": "June",
@@ -358,6 +350,14 @@
         "umoms": "22,405 kr",
         "db": "3,491 kr",
         "butikk": "Sandefjord"
+    },
+    {
+        "måned": "June",
+        "år": "2026",
+        "navn": "Christopher Øglænd",
+        "umoms": "21,849 kr",
+        "db": "4,401 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "June",
@@ -411,8 +411,8 @@
         "måned": "June",
         "år": "2026",
         "navn": "Pål Linden Anthonisen",
-        "umoms": "14,714 kr",
-        "db": "2,296 kr",
+        "umoms": "15,914 kr",
+        "db": "2,504 kr",
         "butikk": "Larvik"
     },
     {
@@ -427,9 +427,17 @@
         "måned": "June",
         "år": "2026",
         "navn": "Mikkel Kihle Lindvig",
-        "umoms": "11,816 kr",
+        "umoms": "12,000 kr",
         "db": "3,120 kr",
         "butikk": "Kristiansand"
+    },
+    {
+        "måned": "June",
+        "år": "2026",
+        "navn": "Fredrik Mølmen",
+        "umoms": "9,939 kr",
+        "db": "1,263 kr",
+        "butikk": "Bamble"
     },
     {
         "måned": "June",
@@ -446,14 +454,6 @@
         "umoms": "8,521 kr",
         "db": "1,632 kr",
         "butikk": "Arendal"
-    },
-    {
-        "måned": "June",
-        "år": "2026",
-        "navn": "Fredrik Mølmen",
-        "umoms": "8,231 kr",
-        "db": "480 kr",
-        "butikk": "Bamble"
     },
     {
         "måned": "June",
@@ -482,6 +482,14 @@
     {
         "måned": "June",
         "år": "2026",
+        "navn": "Øystein Kamfjord",
+        "umoms": "6,447 kr",
+        "db": "1,891 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "June",
+        "år": "2026",
         "navn": "Thor Øyvind Follaug",
         "umoms": "6,044 kr",
         "db": "977 kr",
@@ -498,10 +506,10 @@
     {
         "måned": "June",
         "år": "2026",
-        "navn": "Øystein Kamfjord",
-        "umoms": "5,876 kr",
-        "db": "1,609 kr",
-        "butikk": "Tønsberg"
+        "navn": "Herman Larsen  Helland",
+        "umoms": "5,970 kr",
+        "db": "1,224 kr",
+        "butikk": "Bamble"
     },
     {
         "måned": "June",
@@ -510,14 +518,6 @@
         "umoms": "5,810 kr",
         "db": "1,075 kr",
         "butikk": "Skien"
-    },
-    {
-        "måned": "June",
-        "år": "2026",
-        "navn": "Herman Larsen  Helland",
-        "umoms": "5,643 kr",
-        "db": "1,237 kr",
-        "butikk": "Bamble"
     },
     {
         "måned": "June",
