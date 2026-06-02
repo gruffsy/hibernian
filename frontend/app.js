@@ -1,4 +1,4 @@
-const PREFERENCE_KEY = "hibernian.ui.preference";
+﻿const PREFERENCE_KEY = "hibernian.ui.preference";
 const CLASSIC_URL = "./legacy/frontend-static/index.htm";
 const R2_BASE_URL = "https://pub-a1dbb638fdc8455c914f9f6c5f5b4564.r2.dev/latest";
 const LOCAL_PUBLISH_BASE_URL = "./legacy/frontend-static/data/publish";
@@ -80,7 +80,7 @@ function decodeMojibake(value) {
     return value;
   }
 
-  if (!/[ÃÂ]/.test(value)) {
+  if (!/[\u00C3\u00C2]/.test(value)) {
     return value;
   }
 
@@ -481,7 +481,7 @@ function readStockValue(row, keys, fallback = 0) {
 }
 
 function enrichStockRow(row) {
-  const incomingOrders = readStockValue(row, ["Bestilling på vei", "Bestilling pÃ¥ vei"], []);
+  const incomingOrders = readStockValue(row, ["Bestilling p� vei"], []);
   const orders = Array.isArray(incomingOrders)
     ? incomingOrders.map((order) => ({
         week: decodeMojibake(order.Ukenr || "Ukjent uke"),
@@ -489,10 +489,10 @@ function enrichStockRow(row) {
         amountLabel: formatInteger(Number(order.Antall || 0)),
       }))
     : [];
-  const stockAmount = Number(readStockValue(row, ["antall på lager", "antall pÃ¥ lager"], 0));
+  const stockAmount = Number(readStockValue(row, ["antall p� lager"], 0));
   const unitsPerPallet = Number(readStockValue(row, ["antall pr pall"], 0));
-  const palletsInStock = Number(readStockValue(row, ["Paller på lager", "Paller pÃ¥ lager"], 0));
-  const palletsIncoming = Number(readStockValue(row, ["Paller på vei", "Paller pÃ¥ vei"], 0));
+  const palletsInStock = Number(readStockValue(row, ["Paller p� lager"], 0));
+  const palletsIncoming = Number(readStockValue(row, ["Paller p� vei"], 0));
 
   return {
     prodno: String(readStockValue(row, ["Prodno"], "")).trim(),
@@ -1240,8 +1240,8 @@ function renderDayMonthComparisonCard(comparison, expanded = false) {
                   </tr>
                   <tr>
                     <th>Dag</th>
-                    <th>BelÃ¸p</th>
-                    <th>BelÃ¸p</th>
+                    <th>Beløp</th>
+                    <th>Beløp</th>
                     <th>Dag</th>
                   </tr>
                 </thead>
@@ -1427,7 +1427,7 @@ function renderNav(page) {
     ["day", "Dag"],
     ["week", "Uke"],
     ["month", "Måned"],
-    ["year", "År"],
+    ["year", "�&r"],
     ["people", "Selgere"],
     ["stock", "Stock"],
   ];
@@ -1451,8 +1451,8 @@ function getPageLabel(page) {
   const labels = {
     day: "DAG",
     week: "UKE",
-    month: "MÅNED",
-    year: "ÅR",
+    month: "M�&NED",
+    year: "�&R",
     people: "SELGERE",
     stock: "STOCK",
   };
@@ -1902,12 +1902,12 @@ function renderMonthChartsStandalone() {
       <article class="chart-card">
         <h3>Kumulativ utvikling dag for dag</h3>
         <canvas id="month-cumulative-chart"></canvas>
-        <p class="chart-caption">Her ser vi hvordan valgt mÃ¥ned og sammenligningsmÃ¥ned bygger seg opp gjennom perioden.</p>
+        <p class="chart-caption">Her ser vi hvordan valgt måned og sammenligningsmåned bygger seg opp gjennom perioden.</p>
       </article>
       <article class="chart-card">
         <h3>Butikkvis omsetning</h3>
         <canvas id="month-store-chart"></canvas>
-        <p class="chart-caption">Dette gjÃ¸r det lettere Ã¥ se hvilke butikker som drar opp eller ned forskjellen mellom periodene.</p>
+        <p class="chart-caption">Dette gjør det lettere å se hvilke butikker som drar opp eller ned forskjellen mellom periodene.</p>
       </article>
     </div>
   `;
@@ -1965,7 +1965,7 @@ function renderWeekChartsStandalone() {
       <article class="chart-card">
         <h3>Butikkvis omsetning</h3>
         <canvas id="week-store-chart"></canvas>
-        <p class="chart-caption">Dette gjÃ¸r det lettere Ã¥ se hvilke butikker som bÃ¦rer uken og forskjellene mellom ukene.</p>
+        <p class="chart-caption">Dette gjør det lettere å se hvilke butikker som bærer uken og forskjellene mellom ukene.</p>
       </article>
     </div>
   `;
@@ -1977,7 +1977,7 @@ function renderYearChartsBlock() {
     <section class="month-block">
       <div class="history-head">
         <p class="section-label">Visualisering</p>
-        <h2>Året som kurver og søyler</h2>
+        <h2>�&ret som kurver og søyler</h2>
       </div>
       <div class="chart-grid">
         <article class="chart-card">
@@ -2016,14 +2016,14 @@ function renderYearChartsStandalone() {
   return `
     <div class="chart-grid chart-grid-standalone">
       <article class="chart-card">
-        <h3>Kumulativ utvikling mÃ¥ned for mÃ¥ned</h3>
+        <h3>Kumulativ utvikling måned for måned</h3>
         <canvas id="year-cumulative-chart"></canvas>
-        <p class="chart-caption">Her ser vi hvordan valgt Ã¥r og sammenligningsÃ¥ret bygger seg opp gjennom Ã¥ret.</p>
+        <p class="chart-caption">Her ser vi hvordan valgt år og sammenligningsåret bygger seg opp gjennom året.</p>
       </article>
       <article class="chart-card">
         <h3>Butikkvis omsetning</h3>
         <canvas id="year-store-chart"></canvas>
-        <p class="chart-caption">Dette gjÃ¸r det lettere Ã¥ se hvilke butikker som drar opp eller ned forskjellen mellom Ã¥rene.</p>
+        <p class="chart-caption">Dette gjør det lettere å se hvilke butikker som drar opp eller ned forskjellen mellom årene.</p>
       </article>
     </div>
   `;
@@ -2123,7 +2123,7 @@ function renderPeopleCards(state) {
   return `
     ${renderSellerList("Dag", formatDateLabel(state.sellerLatestDay), filterRows(dayRanking), state.sellerMetric, false, query)}
     ${renderSellerList("Måned", monthLabelFromKey(state.sellerLatestMonthKey), filterRows(monthRanking), state.sellerMetric, false, query)}
-    ${renderSellerList("År", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric, false, query)}
+    ${renderSellerList("�&r", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric, false, query)}
   `;
 }
 
@@ -2342,7 +2342,7 @@ function renderStockPage(state) {
         <aside class="content-side">
           <section class="side-panel">
             <p class="section-label">Forenkling</p>
-            <h2>Én normalisert lagerfeed</h2>
+            <h2>�0n normalisert lagerfeed</h2>
             <p>
               Betaen leser lageret fra én sammenslått JSON-kilde og normaliserer felt med ulik tegnkoding i frontend.
               Det gjør visningen enklere å vedlikeholde enn dagens doble oppsett.
@@ -2511,7 +2511,7 @@ function renderPeoplePage(state) {
         <div class="content-main seller-columns">
           ${renderSellerList("Dag", formatDateLabel(state.sellerLatestDay), filterRows(dayRanking), state.sellerMetric)}
           ${renderSellerList("Måned", monthLabelFromKey(state.sellerLatestMonthKey), filterRows(monthRanking), state.sellerMetric)}
-          ${renderSellerList("År", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric)}
+          ${renderSellerList("�&r", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric)}
         </div>
 
         <aside class="content-side">
@@ -2571,7 +2571,7 @@ function renderPeoplePageClean(state) {
       <section class="content-main seller-columns seller-layout">
         ${renderSellerList("Dag", formatDateLabel(state.sellerLatestDay), filterRows(dayRanking), state.sellerMetric, false, query)}
         ${renderSellerList("Måned", monthLabelFromKey(state.sellerLatestMonthKey), filterRows(monthRanking), state.sellerMetric, false, query)}
-        ${renderSellerList("År", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric, false, query)}
+        ${renderSellerList("�&r", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric, false, query)}
       </section>
 
       <section class="day-page-footer">
@@ -2923,7 +2923,7 @@ function renderMonthToolbar(state) {
 
       <div class="week-toolbar-pickers">
         <label class="date-picker select-field">
-          <span>Vis mÃ¥ned</span>
+          <span>Vis måned</span>
           <select data-role="selected-month">
             ${state.monthOptions
               .map(
@@ -2964,7 +2964,7 @@ function renderMonthToolbar(state) {
 
       <div class="week-toolbar-footer">
         <div class="mode-picker">
-          <button class="${state.monthMode === "full" ? "quick-button is-active" : "quick-button"}" type="button" data-mode="full">Full mÃ¥ned</button>
+          <button class="${state.monthMode === "full" ? "quick-button is-active" : "quick-button"}" type="button" data-mode="full">Full måned</button>
           <button class="${state.monthMode === "mtd" ? "quick-button is-active" : "quick-button"}" type="button" data-mode="mtd">Hittil samme dag</button>
         </div>
       </div>
@@ -3349,7 +3349,7 @@ function renderYearPage(state) {
       <header class="masthead">
         <div class="masthead-copy">
           <p class="eyebrow">HIBERNIAN BETA</p>
-          <h1>Årsvisning med samme rytme som måned</h1>
+          <h1>�&rsvisning med samme rytme som måned</h1>
           <p class="intro">
             Her kan du sammenligne år mot år, enten som fullt år eller som samme dato i begge år,
             slik at årsvisningen blir like fleksibel og tydelig som månedsvisningen.
@@ -3455,7 +3455,7 @@ function renderYearToolbar(state) {
 
       <div class="week-toolbar-pickers">
         <label class="date-picker select-field">
-          <span>Vis Ã¥r</span>
+          <span>Vis år</span>
           <select data-role="selected-year">
             ${state.yearOptions
               .map((year) => `<option value="${year}" ${year === state.selectedYear ? "selected" : ""}>${year}</option>`)
@@ -3493,7 +3493,7 @@ function renderYearToolbar(state) {
 
       <div class="week-toolbar-footer">
         <div class="mode-picker">
-          <button class="${state.yearMode === "full" ? "quick-button is-active" : "quick-button"}" type="button" data-year-mode="full">Fullt Ã¥r</button>
+          <button class="${state.yearMode === "full" ? "quick-button is-active" : "quick-button"}" type="button" data-year-mode="full">Fullt år</button>
           <button class="${state.yearMode === "ytd" ? "quick-button is-active" : "quick-button"}" type="button" data-year-mode="ytd">Hittil samme dato</button>
         </div>
       </div>
@@ -4408,7 +4408,7 @@ async function render() {
           <h1>Kunne ikke laste beta-visningen</h1>
           <p class="intro">${error instanceof Error ? error.message : "Det oppstod en ukjent feil."}</p>
           <div class="actions">
-            <button class="button button-secondary" type="button" data-action="classic">Åpne klassisk visning</button>
+            <button class="button button-secondary" type="button" data-action="classic">�&pne klassisk visning</button>
           </div>
         </section>
       </main>

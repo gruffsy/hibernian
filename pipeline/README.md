@@ -1,4 +1,4 @@
-# Pipeline
+﻿# Pipeline
 
 Dette er hjemmet til den nye lokale datapipelinen for Hibernian-beta.
 
@@ -118,15 +118,15 @@ Neste implementasjonssteg er:
 
 ## Neste pipeline-retning
 
-Den nÃ¥vÃ¦rende pipelinen fungerer, men den neste store forbedringen er Ã¥ gjÃ¸re SQL-lesingen inkrementell.
+Den nåværende pipelinen fungerer, men den neste store forbedringen er å gjøre SQL-lesingen inkrementell.
 
 Ny modell:
 
 - historikk eldre enn `7` dager behandles som base
-- bare siste `7` dager leses pÃ¥ nytt fra SQL
-- base og trailing-vindu slÃ¥s sammen i build-steget
+- bare siste `7` dager leses på nytt fra SQL
+- base og trailing-vindu slås sammen i build-steget
 
-Det er scaffoldet egne steder for dette nÃ¥:
+Det er scaffoldet egne steder for dette nå:
 
 - `artifacts/state/`
 - `store_day_base_snapshot.json`

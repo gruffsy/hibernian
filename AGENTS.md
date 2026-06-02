@@ -14,11 +14,11 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-06-02T09:12:43
-updated_at: 2026-06-02T09:17:17
-objective: Make day comparison align by sales days instead of calendar days
-scope: frontend/app.js,AGENTS.md
-next_step: Review the comparison cards in the browser and confirm the row order matches sales-day order
+started_at: 2026-06-02T09:30:22
+updated_at: 2026-06-02T10:30:49
+objective: Fix Norwegian text encoding across the project
+scope: frontend/*,legacy/*,scripts/*,AGENTS.md
+next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
 blockers: ingen
 ```
@@ -486,4 +486,15 @@ status: complete
 summary: Changed the day-for-day comparison to pair only actual sales days from each month, so the table skips zero-sales calendar dates and the accumulated diff follows sales-day order.
 files: frontend/app.js,AGENTS.md
 next: Review the comparison cards in the browser and confirm the row order matches sales-day order
+```
+
+### 2026-06-02T10:30:49
+
+```text
+timestamp: 2026-06-02T10:30:49
+owner: codex
+status: complete
+summary: Repaired mojibake and BOM issues in the main UI, legacy UI, and pipeline text normalizers; verified no remaining mojibake markers in the touched files and compile-checked the Python files.
+files: frontend/*,legacy/*,scripts/*,AGENTS.md
+next: <ikke spesifisert>
 ```

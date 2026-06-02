@@ -6,7 +6,7 @@ def test_build_store_day_payload_formats_and_adds_totals() -> None:
     base_rows = [
         {
             "fakturadato": 20220103,
-            "butikk": "TÃƒÂ¸nsberg",
+            "butikk": "Tønsberg",
             "Klient": "3",
             "mmoms": "100 000 kr",
             "umoms": "80 000 kr",
@@ -19,7 +19,7 @@ def test_build_store_day_payload_formats_and_adds_totals() -> None:
     nav_rows = [
         {
             "fakturadato": 20220103,
-            "butikk": "TÃ¸nsberg",
+            "butikk": "Tønsberg",
             "Klient": "3",
             "mmoms": 120000,
             "umoms": 96000,

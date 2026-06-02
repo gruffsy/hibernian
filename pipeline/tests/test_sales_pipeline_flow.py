@@ -113,7 +113,7 @@ def test_sales_pipeline_flow() -> None:
             [
                 {
                     "fakturadato": historical_date,
-                    "butikk": "TÃƒÂ¸nsberg",
+                    "butikk": "Tønsberg",
                     "Klient": "3",
                     "mmoms": "100 000 kr",
                     "umoms": "80 000 kr",
@@ -140,7 +140,7 @@ def test_sales_pipeline_flow() -> None:
             [
                 {
                     "ukedag": "Fredag",
-                    "navn": "Kemuel LillestÃƒÂ¸",
+                    "navn": "Kemuel Lillestø",
                     "umoms": "121 190 kr",
                     "db": "25 752 kr",
                     "butikk": "Arendal",

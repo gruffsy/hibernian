@@ -7,18 +7,29 @@ TOTAL_STORE_NAME = "Totalt"
 TOTAL_CLIENT = "99"
 
 _NUMBER_CLEANUP_RE = re.compile(r"[^\d,.\-]")
+
+
+def _legacy_mojibake(text: str) -> str:
+    for encoding in ("cp1252", "latin-1"):
+        try:
+            return text.encode(encoding).decode("utf-8")
+        except (UnicodeEncodeError, UnicodeDecodeError):
+            continue
+    return text
+
+
 _TEXT_FIXES = {
-    "TÃ¸nsberg": "Tønsberg",
-    "LÃ¸rdag": "Lørdag",
-    "SÃ¸ndag": "Søndag",
-    "BelÃ¸p": "Beløp",
-    "FrÃ¸itland": "Frøitland",
-    "LillestÃ¸": "Lillestø",
+    _legacy_mojibake("Tønsberg"): "Tønsberg",
+    _legacy_mojibake("Lørdag"): "Lørdag",
+    _legacy_mojibake("Søndag"): "Søndag",
+    _legacy_mojibake("Beløp"): "Beløp",
+    _legacy_mojibake("Frøitland"): "Frøitland",
+    _legacy_mojibake("Lillestø"): "Lillestø",
 }
 
 
 def _repair_mojibake(text: str) -> str:
-    if not any(marker in text for marker in ("Ã", "Â")):
+    if not any(marker in text for marker in ("\u00C3", "\u00C2")):
         return text
 
     for encoding in ("latin-1", "cp1252"):

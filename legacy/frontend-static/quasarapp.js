@@ -1,4 +1,4 @@
-const R2_BASE_URL = "https://pub-a1dbb638fdc8455c914f9f6c5f5b4564.r2.dev/latest";
+﻿const R2_BASE_URL = "https://pub-a1dbb638fdc8455c914f9f6c5f5b4564.r2.dev/latest";
 const LOCAL_PUBLISH_BASE_URL = "./data/publish";
 const LEGACY_JSON_BASE_URL = "./data/json";
 const DAY_DATA_URL = {
@@ -97,7 +97,7 @@ function decodeMojibake(value) {
     return value;
   }
 
-  if (!/[Ã�]/.test(value)) {
+  if (!/[\u00C3\u00C2]/.test(value)) {
     return value;
   }
 
@@ -355,17 +355,17 @@ function aggregateSellerRows(rows) {
 }
 
 function normalizeStockRow(row) {
-  const stockCount = parseInteger(row["antall på lager"] ?? row["antall pÃ¥ lager"] ?? row.antall_paa_lager);
-  const pallets = parseInteger(row["Paller på lager"] ?? row["Paller pÃ¥ lager"]);
-  const palletsInbound = parseInteger(row["Paller på vei"] ?? row["Paller pÃ¥ vei"]);
+  const stockCount = parseInteger(row["antall p� lager"] ?? row.antall_paa_lager);
+  const pallets = parseInteger(row["Paller p� lager"]);
+  const palletsInbound = parseInteger(row["Paller p� vei"]);
 
   return {
     Prodno: normalizeText(row.Prodno),
     Beskrivelse: normalizeText(row.Beskrivelse),
-    "antall på lager": stockCount,
-    "Paller på lager": pallets,
-    "Paller på vei": palletsInbound,
-    "Bestilling på vei": Array.isArray(row["Bestilling på vei"]) ? row["Bestilling på vei"] : [],
+    "antall p� lager": stockCount,
+    "Paller p� lager": pallets,
+    "Paller p� vei": palletsInbound,
+    "Bestilling p� vei": Array.isArray(row["Bestilling p� vei"]) ? row["Bestilling p� vei"] : [],
   };
 }
 
@@ -398,7 +398,7 @@ new Vue({
       tabs: [
         { name: "idag_selger", label: "Dag" },
         { name: "måned_selger", label: "Måned" },
-        { name: "år_selger", label: "År" },
+        { name: "år_selger", label: "�&r" },
       ],
       displayedTables: 3,
       pagination: {
