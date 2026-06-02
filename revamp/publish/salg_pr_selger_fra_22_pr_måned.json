@@ -58,6 +58,14 @@
     {
         "måned": "June",
         "år": "2026",
+        "navn": "Julie Nilsen Bjølseth",
+        "umoms": "67,696 kr",
+        "db": "18,364 kr",
+        "butikk": "Sandefjord"
+    },
+    {
+        "måned": "June",
+        "år": "2026",
         "navn": "Menglei Chen Ottem",
         "umoms": "67,066 kr",
         "db": "17,067 kr",
@@ -66,25 +74,17 @@
     {
         "måned": "June",
         "år": "2026",
-        "navn": "Julie Nilsen Bjølseth",
-        "umoms": "65,449 kr",
-        "db": "17,635 kr",
-        "butikk": "Sandefjord"
-    },
-    {
-        "måned": "June",
-        "år": "2026",
         "navn": "Milla F. Moen",
-        "umoms": "64,995 kr",
-        "db": "17,742 kr",
+        "umoms": "66,331 kr",
+        "db": "17,704 kr",
         "butikk": "Skien"
     },
     {
         "måned": "June",
         "år": "2026",
         "navn": "Tuva Sofie Risdal",
-        "umoms": "62,377 kr",
-        "db": "13,068 kr",
+        "umoms": "62,936 kr",
+        "db": "13,061 kr",
         "butikk": "Larvik"
     },
     {
@@ -179,8 +179,8 @@
         "måned": "June",
         "år": "2026",
         "navn": "Preben Holset",
-        "umoms": "49,887 kr",
-        "db": "10,681 kr",
+        "umoms": "50,646 kr",
+        "db": "11,231 kr",
         "butikk": "Tønsberg"
     },
     {
@@ -205,6 +205,14 @@
         "navn": "Preben Jacobsen",
         "umoms": "45,583 kr",
         "db": "4,933 kr",
+        "butikk": "Arendal"
+    },
+    {
+        "måned": "June",
+        "år": "2026",
+        "navn": "Linn Kristine Terjesen",
+        "umoms": "42,166 kr",
+        "db": "11,497 kr",
         "butikk": "Arendal"
     },
     {
@@ -266,14 +274,6 @@
     {
         "måned": "June",
         "år": "2026",
-        "navn": "Linn Kristine Terjesen",
-        "umoms": "35,039 kr",
-        "db": "9,774 kr",
-        "butikk": "Arendal"
-    },
-    {
-        "måned": "June",
-        "år": "2026",
         "navn": "Fredrik Frost Pettersen",
         "umoms": "32,438 kr",
         "db": "9,514 kr",
@@ -307,8 +307,8 @@
         "måned": "June",
         "år": "2026",
         "navn": "Steffen Johannes Forup Hansen",
-        "umoms": "28,777 kr",
-        "db": "1,715 kr",
+        "umoms": "29,418 kr",
+        "db": "1,832 kr",
         "butikk": "Bamble"
     },
     {
@@ -322,18 +322,18 @@
     {
         "måned": "June",
         "år": "2026",
-        "navn": "Jonas Skog",
-        "umoms": "25,860 kr",
-        "db": "4,785 kr",
-        "butikk": "Sandefjord"
+        "navn": "Pernille Dall",
+        "umoms": "26,758 kr",
+        "db": "2,639 kr",
+        "butikk": "Kristiansand"
     },
     {
         "måned": "June",
         "år": "2026",
-        "navn": "Pernille Dall",
-        "umoms": "24,989 kr",
-        "db": "2,494 kr",
-        "butikk": "Kristiansand"
+        "navn": "Jonas Skog",
+        "umoms": "25,860 kr",
+        "db": "4,785 kr",
+        "butikk": "Sandefjord"
     },
     {
         "måned": "June",
@@ -346,26 +346,34 @@
     {
         "måned": "June",
         "år": "2026",
-        "navn": "Emma Frøbom",
-        "umoms": "20,855 kr",
-        "db": "4,234 kr",
-        "butikk": "Tønsberg"
+        "navn": "Kristoffer Gård",
+        "umoms": "21,947 kr",
+        "db": "6,238 kr",
+        "butikk": "Bamble"
     },
     {
         "måned": "June",
         "år": "2026",
         "navn": "Niyas Ali",
-        "umoms": "20,285 kr",
-        "db": "2,909 kr",
+        "umoms": "21,502 kr",
+        "db": "3,181 kr",
         "butikk": "Sandefjord"
     },
     {
         "måned": "June",
         "år": "2026",
-        "navn": "Kristoffer Gård",
-        "umoms": "19,304 kr",
-        "db": "5,416 kr",
-        "butikk": "Bamble"
+        "navn": "Emma Frøbom",
+        "umoms": "21,387 kr",
+        "db": "4,422 kr",
+        "butikk": "Tønsberg"
+    },
+    {
+        "måned": "June",
+        "år": "2026",
+        "navn": "Patrick Johansen",
+        "umoms": "19,164 kr",
+        "db": "6,113 kr",
+        "butikk": "Arendal"
     },
     {
         "måned": "June",
@@ -402,9 +410,9 @@
     {
         "måned": "June",
         "år": "2026",
-        "navn": "Patrick Johansen",
-        "umoms": "14,726 kr",
-        "db": "5,127 kr",
+        "navn": "Petter Sandvik",
+        "umoms": "14,699 kr",
+        "db": "3,056 kr",
         "butikk": "Arendal"
     },
     {
@@ -420,16 +428,8 @@
         "år": "2026",
         "navn": "Mikkel Kihle Lindvig",
         "umoms": "11,816 kr",
-        "db": "3,121 kr",
+        "db": "3,120 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "måned": "June",
-        "år": "2026",
-        "navn": "Petter Sandvik",
-        "umoms": "10,380 kr",
-        "db": "2,747 kr",
-        "butikk": "Arendal"
     },
     {
         "måned": "June",
@@ -539,8 +539,8 @@
         "måned": "June",
         "år": "2026",
         "navn": "Amanda Krumsvik",
-        "umoms": "2,056 kr",
-        "db": "1,793 kr",
+        "umoms": "2,262 kr",
+        "db": "1,878 kr",
         "butikk": "Kristiansand"
     },
     {
@@ -578,6 +578,14 @@
     {
         "måned": "June",
         "år": "2026",
+        "navn": " Herman E. Grimstad",
+        "umoms": "880 kr",
+        "db": "79 kr",
+        "butikk": "Larvik"
+    },
+    {
+        "måned": "June",
+        "år": "2026",
         "navn": "Kemuel Lillestø",
         "umoms": "561 kr",
         "db": "2,360 kr",
@@ -590,14 +598,6 @@
         "umoms": "352 kr",
         "db": "-34 kr",
         "butikk": "Kristiansand"
-    },
-    {
-        "måned": "June",
-        "år": "2026",
-        "navn": " Herman E. Grimstad",
-        "umoms": "266 kr",
-        "db": "65 kr",
-        "butikk": "Larvik"
     },
     {
         "måned": "June",
