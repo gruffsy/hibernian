@@ -1279,7 +1279,13 @@
         "antall på lager": 129.6,
         "antall pr pall": 43.2,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 20,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "25/2026",
+                "Antall": 864.0
+            }
+        ]
     },
     {
         "Prodno": "L960A80",
@@ -1287,7 +1293,13 @@
         "antall på lager": 388.8,
         "antall pr pall": 43.2,
         "Paller på lager": 9,
-        "Paller på vei": 0
+        "Paller på vei": 10,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "25/2026",
+                "Antall": 432.0
+            }
+        ]
     },
     {
         "Prodno": "FAB1020BIS",
@@ -1580,12 +1592,12 @@
         "Paller på vei": 28,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
-                "Antall": 737.28
-            },
-            {
                 "Ukenr": "32/2026",
                 "Antall": 552.96
+            },
+            {
+                "Ukenr": "34/2026",
+                "Antall": 737.28
             }
         ]
     },
@@ -1886,11 +1898,11 @@
                 "Antall": 46.08
             },
             {
-                "Ukenr": "34/2026",
+                "Ukenr": "32/2026",
                 "Antall": 276.48
             },
             {
-                "Ukenr": "32/2026",
+                "Ukenr": "34/2026",
                 "Antall": 276.48
             }
         ]
@@ -1918,12 +1930,12 @@
         "Paller på vei": 12,
         "Bestilling på vei": [
             {
-                "Ukenr": "35/2026",
-                "Antall": 322.56
-            },
-            {
                 "Ukenr": "32/2026",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "35/2026",
+                "Antall": 322.56
             }
         ]
     },
@@ -1980,11 +1992,11 @@
                 "Antall": 92.16
             },
             {
-                "Ukenr": "34/2026",
+                "Ukenr": "32/2026",
                 "Antall": 184.32
             },
             {
-                "Ukenr": "32/2026",
+                "Ukenr": "34/2026",
                 "Antall": 184.32
             }
         ]
