@@ -14,10 +14,10 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-06-02T09:30:22
-updated_at: 2026-06-02T10:30:49
-objective: Fix Norwegian text encoding across the project
-scope: frontend/*,legacy/*,scripts/*,AGENTS.md
+started_at: 2026-06-02T14:40:09
+updated_at: 2026-06-02T14:45:43
+objective: Move mojibake repair out of browser hot path
+scope: frontend/app.js,legacy/frontend-static/quasarapp.js
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
 blockers: ingen
@@ -496,5 +496,16 @@ owner: codex
 status: complete
 summary: Repaired mojibake and BOM issues in the main UI, legacy UI, and pipeline text normalizers; verified no remaining mojibake markers in the touched files and compile-checked the Python files.
 files: frontend/*,legacy/*,scripts/*,AGENTS.md
+next: <ikke spesifisert>
+```
+
+### 2026-06-02T14:45:43
+
+```text
+timestamp: 2026-06-02T14:45:43
+owner: codex
+status: complete
+summary: Removed browser-side mojibake repair and kept text normalization in the pipeline; verified both JS entrypoints parse cleanly.
+files: frontend/app.js,legacy/frontend-static/quasarapp.js
 next: <ikke spesifisert>
 ```

@@ -92,26 +92,12 @@ function formatPercent(value) {
   return `${value.toFixed(1)}%`;
 }
 
-function decodeMojibake(value) {
-  if (typeof value !== "string") {
-    return value;
-  }
-
-  if (!/[\u00C3\u00C2]/.test(value)) {
-    return value;
-  }
-
-  try {
-    const bytes = Uint8Array.from(value, (character) => character.charCodeAt(0));
-    const decoded = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
-    return decoded.includes("\uFFFD") ? value : decoded;
-  } catch {
-    return value;
-  }
+function normalizeDisplayText(value) {
+  return String(value ?? "").trim();
 }
 
 function normalizeText(value) {
-  return String(decodeMojibake(value || "")).trim();
+  return normalizeDisplayText(value);
 }
 
 function getStoreClientValue(row) {

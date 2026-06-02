@@ -75,22 +75,8 @@ function goClassic() {
   window.location.href = CLASSIC_URL;
 }
 
-function decodeMojibake(value) {
-  if (typeof value !== "string") {
-    return value;
-  }
-
-  if (!/[\u00C3\u00C2]/.test(value)) {
-    return value;
-  }
-
-  try {
-    const bytes = Uint8Array.from(value, (character) => character.charCodeAt(0));
-    const decoded = new TextDecoder("utf-8", { fatal: true }).decode(bytes);
-    return decoded.includes("\uFFFD") ? value : decoded;
-  } catch {
-    return value;
-  }
+function normalizeDisplayText(value) {
+  return String(value ?? "").trim();
 }
 
 function parseCurrency(value) {
@@ -294,7 +280,7 @@ function formatShortMonth(month) {
 }
 
 function normalizeText(value) {
-  return decodeMojibake(String(value || ""))
+  return normalizeDisplayText(value)
     .toLowerCase()
     .normalize("NFD")
     .replace(/\p{Diacritic}/gu, "")
@@ -316,7 +302,7 @@ function enrichRow(row) {
 
   return {
     ...row,
-    butikk: decodeMojibake(row.butikk),
+    butikk: normalizeDisplayText(row.butikk),
     gross,
     net,
     dbAmount,
@@ -423,14 +409,14 @@ async function loadMonthData() {
 
 function enrichSellerDayRow(row) {
   return {
-    navn: decodeMojibake(row.navn),
-    butikk: decodeMojibake(row.butikk || "Ukjent butikk"),
+    navn: normalizeDisplayText(row.navn),
+    butikk: normalizeDisplayText(row.butikk || "Ukjent butikk"),
     umomsValue: parseCurrency(row.umoms),
     dbValue: parseCurrency(row.db),
     umoms: formatCurrency(parseCurrency(row.umoms)),
     db: formatCurrency(parseCurrency(row.db)),
     fakturadato: Number(row.fakturadato),
-    ukedag: decodeMojibake(row.ukedag),
+    ukedag: normalizeDisplayText(row.ukedag),
   };
 }
 
@@ -470,8 +456,7 @@ function readStockValue(row, keys, fallback = 0) {
 
   const entries = Object.entries(row);
   for (const key of keys) {
-    const decodedKey = decodeMojibake(key);
-    const match = entries.find(([candidate]) => decodeMojibake(candidate) === decodedKey);
+    const match = entries.find(([candidate]) => normalizeDisplayText(candidate) === normalizeDisplayText(key));
     if (match) {
       return match[1];
     }
@@ -484,7 +469,7 @@ function enrichStockRow(row) {
   const incomingOrders = readStockValue(row, ["Bestilling på vei"], []);
   const orders = Array.isArray(incomingOrders)
     ? incomingOrders.map((order) => ({
-        week: decodeMojibake(order.Ukenr || "Ukjent uke"),
+        week: normalizeDisplayText(order.Ukenr || "Ukjent uke"),
         amount: Number(order.Antall || 0),
         amountLabel: formatInteger(Number(order.Antall || 0)),
       }))
@@ -496,7 +481,7 @@ function enrichStockRow(row) {
 
   return {
     prodno: String(readStockValue(row, ["Prodno"], "")).trim(),
-    description: decodeMojibake(readStockValue(row, ["Beskrivelse"], "")),
+    description: normalizeDisplayText(readStockValue(row, ["Beskrivelse"], "")),
     stockAmount,
     unitsPerPallet,
     palletsInStock,
