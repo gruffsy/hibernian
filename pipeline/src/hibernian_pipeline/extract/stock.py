@@ -30,10 +30,10 @@ def _normalize_stock_row(row: dict[str, Any]) -> dict[str, Any]:
     return {
         "Prodno": normalize_text(row.get("Prodno")),
         "Beskrivelse": normalize_text(row.get("Beskrivelse")),
-        "antall p� lager": row.get("antall p� lager", row.get("antall på lager", 0)),
+        "antall på lager": row.get("antall på lager", 0),
         "antall pr pall": row.get("antall pr pall", 0),
-        "Paller p� lager": row.get("Paller p� lager", row.get("Paller på lager", 0)),
-        "Paller p� vei": row.get("Paller p� vei", row.get("Paller på vei", 0)),
+        "Paller på lager": row.get("Paller på lager", 0),
+        "Paller på vei": row.get("Paller på vei", 0),
     }
 
 

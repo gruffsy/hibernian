@@ -481,7 +481,7 @@ function readStockValue(row, keys, fallback = 0) {
 }
 
 function enrichStockRow(row) {
-  const incomingOrders = readStockValue(row, ["Bestilling p� vei"], []);
+  const incomingOrders = readStockValue(row, ["Bestilling på vei"], []);
   const orders = Array.isArray(incomingOrders)
     ? incomingOrders.map((order) => ({
         week: decodeMojibake(order.Ukenr || "Ukjent uke"),
@@ -489,10 +489,10 @@ function enrichStockRow(row) {
         amountLabel: formatInteger(Number(order.Antall || 0)),
       }))
     : [];
-  const stockAmount = Number(readStockValue(row, ["antall p� lager"], 0));
+  const stockAmount = Number(readStockValue(row, ["antall på lager"], 0));
   const unitsPerPallet = Number(readStockValue(row, ["antall pr pall"], 0));
-  const palletsInStock = Number(readStockValue(row, ["Paller p� lager"], 0));
-  const palletsIncoming = Number(readStockValue(row, ["Paller p� vei"], 0));
+  const palletsInStock = Number(readStockValue(row, ["Paller på lager"], 0));
+  const palletsIncoming = Number(readStockValue(row, ["Paller på vei"], 0));
 
   return {
     prodno: String(readStockValue(row, ["Prodno"], "")).trim(),
@@ -1427,7 +1427,7 @@ function renderNav(page) {
     ["day", "Dag"],
     ["week", "Uke"],
     ["month", "Måned"],
-    ["year", "�&r"],
+    ["year", "År"],
     ["people", "Selgere"],
     ["stock", "Stock"],
   ];
@@ -1451,8 +1451,8 @@ function getPageLabel(page) {
   const labels = {
     day: "DAG",
     week: "UKE",
-    month: "M�&NED",
-    year: "�&R",
+    month: "MÅNED",
+    year: "ÅR",
     people: "SELGERE",
     stock: "STOCK",
   };
@@ -1977,7 +1977,7 @@ function renderYearChartsBlock() {
     <section class="month-block">
       <div class="history-head">
         <p class="section-label">Visualisering</p>
-        <h2>�&ret som kurver og søyler</h2>
+        <h2>Året som kurver og søyler</h2>
       </div>
       <div class="chart-grid">
         <article class="chart-card">
@@ -2123,7 +2123,7 @@ function renderPeopleCards(state) {
   return `
     ${renderSellerList("Dag", formatDateLabel(state.sellerLatestDay), filterRows(dayRanking), state.sellerMetric, false, query)}
     ${renderSellerList("Måned", monthLabelFromKey(state.sellerLatestMonthKey), filterRows(monthRanking), state.sellerMetric, false, query)}
-    ${renderSellerList("�&r", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric, false, query)}
+    ${renderSellerList("År", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric, false, query)}
   `;
 }
 
@@ -2342,7 +2342,7 @@ function renderStockPage(state) {
         <aside class="content-side">
           <section class="side-panel">
             <p class="section-label">Forenkling</p>
-            <h2>�0n normalisert lagerfeed</h2>
+            <h2>En normalisert lagerfeed</h2>
             <p>
               Betaen leser lageret fra én sammenslått JSON-kilde og normaliserer felt med ulik tegnkoding i frontend.
               Det gjør visningen enklere å vedlikeholde enn dagens doble oppsett.
@@ -2511,7 +2511,7 @@ function renderPeoplePage(state) {
         <div class="content-main seller-columns">
           ${renderSellerList("Dag", formatDateLabel(state.sellerLatestDay), filterRows(dayRanking), state.sellerMetric)}
           ${renderSellerList("Måned", monthLabelFromKey(state.sellerLatestMonthKey), filterRows(monthRanking), state.sellerMetric)}
-          ${renderSellerList("�&r", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric)}
+          ${renderSellerList("År", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric)}
         </div>
 
         <aside class="content-side">
@@ -2571,7 +2571,7 @@ function renderPeoplePageClean(state) {
       <section class="content-main seller-columns seller-layout">
         ${renderSellerList("Dag", formatDateLabel(state.sellerLatestDay), filterRows(dayRanking), state.sellerMetric, false, query)}
         ${renderSellerList("Måned", monthLabelFromKey(state.sellerLatestMonthKey), filterRows(monthRanking), state.sellerMetric, false, query)}
-        ${renderSellerList("�&r", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric, false, query)}
+        ${renderSellerList("År", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric, false, query)}
       </section>
 
       <section class="day-page-footer">
@@ -3349,7 +3349,7 @@ function renderYearPage(state) {
       <header class="masthead">
         <div class="masthead-copy">
           <p class="eyebrow">HIBERNIAN BETA</p>
-          <h1>�&rsvisning med samme rytme som måned</h1>
+          <h1>Årsvisning med samme rytme som måned</h1>
           <p class="intro">
             Her kan du sammenligne år mot år, enten som fullt år eller som samme dato i begge år,
             slik at årsvisningen blir like fleksibel og tydelig som månedsvisningen.
@@ -4408,7 +4408,7 @@ async function render() {
           <h1>Kunne ikke laste beta-visningen</h1>
           <p class="intro">${error instanceof Error ? error.message : "Det oppstod en ukjent feil."}</p>
           <div class="actions">
-            <button class="button button-secondary" type="button" data-action="classic">�&pne klassisk visning</button>
+            <button class="button button-secondary" type="button" data-action="classic">Åpne klassisk visning</button>
           </div>
         </section>
       </main>

@@ -355,17 +355,17 @@ function aggregateSellerRows(rows) {
 }
 
 function normalizeStockRow(row) {
-  const stockCount = parseInteger(row["antall p� lager"] ?? row.antall_paa_lager);
-  const pallets = parseInteger(row["Paller p� lager"]);
-  const palletsInbound = parseInteger(row["Paller p� vei"]);
+  const stockCount = parseInteger(row["antall på lager"] ?? row.antall_paa_lager);
+  const pallets = parseInteger(row["Paller på lager"]);
+  const palletsInbound = parseInteger(row["Paller på vei"]);
 
   return {
     Prodno: normalizeText(row.Prodno),
     Beskrivelse: normalizeText(row.Beskrivelse),
-    "antall p� lager": stockCount,
-    "Paller p� lager": pallets,
-    "Paller p� vei": palletsInbound,
-    "Bestilling p� vei": Array.isArray(row["Bestilling p� vei"]) ? row["Bestilling p� vei"] : [],
+    "antall på lager": stockCount,
+    "Paller på lager": pallets,
+    "Paller på vei": palletsInbound,
+    "Bestilling på vei": Array.isArray(row["Bestilling på vei"]) ? row["Bestilling på vei"] : [],
   };
 }
 
@@ -398,7 +398,7 @@ new Vue({
       tabs: [
         { name: "idag_selger", label: "Dag" },
         { name: "måned_selger", label: "Måned" },
-        { name: "år_selger", label: "�&r" },
+        { name: "år_selger", label: "År" },
       ],
       displayedTables: 3,
       pagination: {
