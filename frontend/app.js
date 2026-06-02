@@ -894,14 +894,14 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
 
   const compareYear = Number(compareMonthKey.slice(0, 4));
   const compareMonth = Number(compareMonthKey.slice(5, 7));
-  const selectedDaysInMonth = getDaysInMonth(year, month);
-  const compareDaysInMonth = getDaysInMonth(compareYear, compareMonth);
+  const selectedSalesDates = [...(state.dayMonthDates.get(selectedMonthKey) || [])].sort();
+  const compareSalesDates = [...(state.dayMonthDates.get(compareMonthKey) || [])].sort();
 
-  if (!selectedDaysInMonth || !compareDaysInMonth) {
+  if (!selectedSalesDates.length || !compareSalesDates.length) {
     return null;
   }
 
-  const rowCount = Math.max(selectedDaysInMonth, compareDaysInMonth);
+  const rowCount = Math.max(selectedSalesDates.length, compareSalesDates.length);
   const rows = [];
   let runningDiff = 0;
   let selectedTotal = 0;
@@ -911,9 +911,9 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
   let selectedCount = 0;
   let compareCount = 0;
 
-  for (let day = 1; day <= rowCount; day += 1) {
-    const selectedMonthDate = day <= selectedDaysInMonth ? buildDateKey(year, month, day) : null;
-    const compareDate = day <= compareDaysInMonth ? buildDateKey(compareYear, compareMonth, day) : null;
+  for (let day = 0; day < rowCount; day += 1) {
+    const selectedMonthDate = day < selectedSalesDates.length ? selectedSalesDates[day] : null;
+    const compareDate = day < compareSalesDates.length ? compareSalesDates[day] : null;
     const compareTotals = compareDate ? getTotals(state.dayGrouped.get(compareDate) || []) : null;
     const selectedTotals = selectedMonthDate ? getTotals(state.dayGrouped.get(selectedMonthDate) || []) : null;
     const compareHasSales = Boolean(compareTotals && compareTotals.butikk !== undefined);
@@ -943,7 +943,7 @@ function buildDayMonthComparison(state, selectedDate, metric = "gross") {
       selectedCount += 1;
     }
 
-    if (day === selectedCutoffDay) {
+    if (selectedMonthDate && Number(String(selectedMonthDate).slice(6, 8)) <= selectedCutoffDay) {
       currentDiff = runningDiff;
       currentDiffRow = rows[rows.length - 1];
     }

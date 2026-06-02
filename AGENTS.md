@@ -14,11 +14,11 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-05-31T22:30:51
-updated_at: 2026-05-31T22:33:42
-objective: Create one-command beta publish routine
-scope: scripts/publish-beta.ps1,AGENTS.md
-next_step: Use publish-beta.ps1 for future beta releases
+started_at: 2026-06-02T09:12:43
+updated_at: 2026-06-02T09:17:17
+objective: Make day comparison align by sales days instead of calendar days
+scope: frontend/app.js,AGENTS.md
+next_step: Review the comparison cards in the browser and confirm the row order matches sales-day order
 verification: <ikke spesifisert>
 blockers: ingen
 ```
@@ -475,4 +475,15 @@ status: complete
 summary: Added a one-command beta publish script that stages changes, runs scope guard, commits, and syncs to both beta remotes.
 files: scripts/publish-beta.ps1,AGENTS.md
 next: Use publish-beta.ps1 for future beta releases
+```
+
+### 2026-06-02T09:17:17
+
+```text
+timestamp: 2026-06-02T09:17:17
+owner: codex
+status: complete
+summary: Changed the day-for-day comparison to pair only actual sales days from each month, so the table skips zero-sales calendar dates and the accumulated diff follows sales-day order.
+files: frontend/app.js,AGENTS.md
+next: Review the comparison cards in the browser and confirm the row order matches sales-day order
 ```
