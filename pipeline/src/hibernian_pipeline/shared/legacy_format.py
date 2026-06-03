@@ -19,12 +19,13 @@ def _legacy_mojibake(text: str) -> str:
 
 
 _TEXT_FIXES = {
-    _legacy_mojibake("Tønsberg"): "Tønsberg",
-    _legacy_mojibake("Lørdag"): "Lørdag",
-    _legacy_mojibake("Søndag"): "Søndag",
-    _legacy_mojibake("Beløp"): "Beløp",
-    _legacy_mojibake("Frøitland"): "Frøitland",
-    _legacy_mojibake("Lillestø"): "Lillestø",
+    "T\uFFFDnsberg": "Tønsberg",
+    "TÃ¸nsberg": "Tønsberg",
+    "LÃ¸rdag": "Lørdag",
+    "SÃ¸ndag": "Søndag",
+    "BelÃ¸p": "Beløp",
+    "FrÃ¸itland": "Frøitland",
+    "LillestÃ¸": "Lillestø",
 }
 
 
