@@ -12,13 +12,13 @@ Rules:
 ## Current
 
 ```text
-status: in_progress
+status: complete
 owner: codex
 started_at: 2026-06-03T10:47:09
-updated_at: 2026-06-03T10:47:09
+updated_at: 2026-06-03T17:57:08
 objective: Lean product rebuild: fast R2-first product pipeline
 scope: pipeline, frontend (later), AGENTS.md
-next_step: Tighten the lean product pipeline and update the handoff notes for the new opt-in publish flow
+next_step: None
 verification: <ikke spesifisert>
 blockers: ingen
 ```
@@ -120,6 +120,15 @@ Rule:
 - `gruffsy/hibernian@beta` stays untouched unless `-IncludeSecondaryBeta` is passed explicitly.
 
 ## History
+
+```text
+timestamp: 2026-06-03T17:57:08+02:00
+owner: codex
+status: complete
+summary: Added the lean product pipeline scaffold, kept the secondary beta publish opt-in only, and synced the main/beta branches without touching gruffsy/hibernian@beta.
+files: AGENTS.md, pipeline/sql/sales/nav_product_day_window.sql, pipeline/src/hibernian_pipeline/bootstrap/product_history.py, pipeline/src/hibernian_pipeline/build/product_day.py, pipeline/src/hibernian_pipeline/extract/nav_product_day.py, pipeline/src/hibernian_pipeline/cli.py, pipeline/src/hibernian_pipeline/publish/r2.py, pipeline/src/hibernian_pipeline/settings.py, pipeline/src/hibernian_pipeline/shared/legacy_format.py, pipeline/src/hibernian_pipeline/shared/state.py, pipeline/tests/test_legacy_format.py, pipeline/tests/test_product_pipeline.py, pipeline/tests/test_settings.py, pipeline/config/pipeline.example.json, .gitignore, scripts/publish-beta.ps1, scripts/sync-beta-remotes.ps1
+next: None
+```
 
 ```text
 timestamp: 2026-05-28T22:12:00+02:00
