@@ -430,6 +430,7 @@ async function loadSellerData() {
   const latestYear = Number(String(latestDay).slice(0, 4));
 
   return {
+    rawRows: dayRows,
     dayRows: aggregateSellerRows(dayRows.filter((row) => row.fakturadato === latestDay)),
     monthRows: aggregateSellerRows(
       dayRows.filter(
@@ -1407,6 +1408,55 @@ function buildSellerRanking(rows, metric) {
     .map((row, index) => ({ ...row, rank: index + 1 }));
 }
 
+function parseSellerDateKey(dateKey) {
+  const raw = String(dateKey || "");
+  return /^\d{8}$/.test(raw) ? raw : null;
+}
+
+function getSellerSelectedDate(state) {
+  const candidate = parseSellerDateKey(state.sellerSelectedDate) || parseSellerDateKey(state.sellerLatestDay);
+  if (!candidate) {
+    return null;
+  }
+  return state.dayGrouped?.has(candidate) ? candidate : String(state.sellerLatestDay);
+}
+
+function buildSellerPeriodData(state) {
+  const selectedDate = getSellerSelectedDate(state);
+  const rawRows = Array.isArray(state.sellerRawRows) ? state.sellerRawRows : [];
+  if (!selectedDate) {
+    return {
+      selectedDate: null,
+      selectedMonthKey: null,
+      selectedYear: null,
+      dayRows: [],
+      monthRows: [],
+      yearRows: [],
+    };
+  }
+
+  const selectedYear = Number(String(selectedDate).slice(0, 4));
+  const selectedMonth = Number(String(selectedDate).slice(4, 6));
+  const selectedMonthKey = monthKey(selectedYear, selectedMonth);
+
+  const dayRows = rawRows.filter((row) => row.fakturadato === Number(selectedDate));
+  const monthRows = rawRows.filter(
+    (row) =>
+      Number(String(row.fakturadato).slice(0, 4)) === selectedYear &&
+      Number(String(row.fakturadato).slice(4, 6)) === selectedMonth
+  );
+  const yearRows = rawRows.filter((row) => Number(String(row.fakturadato).slice(0, 4)) === selectedYear);
+
+  return {
+    selectedDate,
+    selectedMonthKey,
+    selectedYear,
+    dayRows: aggregateSellerRows(dayRows),
+    monthRows: aggregateSellerRows(monthRows),
+    yearRows: aggregateSellerRows(yearRows),
+  };
+}
+
 function renderNav(page) {
   const pages = [
     ["day", "Dag"],
@@ -2097,7 +2147,8 @@ function getSellerRankings(state) {
 }
 
 function renderPeopleCards(state) {
-  const { dayRanking, monthRanking, yearRanking, query } = getSellerRankings(state);
+  const { query } = getSellerRankings(state);
+  const periodData = buildSellerPeriodData(state);
   const filterRows = (rows) => {
     if (!query) {
       return rows;
@@ -2105,10 +2156,14 @@ function renderPeopleCards(state) {
     return rows.filter((row) => sellerMatchesQuery(row.navn, query));
   };
 
+  const dayRanking = buildSellerRanking(periodData.dayRows, state.sellerMetric);
+  const monthRanking = buildSellerRanking(periodData.monthRows, state.sellerMetric);
+  const yearRanking = buildSellerRanking(periodData.yearRows, state.sellerMetric);
+
   return `
-    ${renderSellerList("Dag", formatDateLabel(state.sellerLatestDay), filterRows(dayRanking), state.sellerMetric, false, query)}
-    ${renderSellerList("Måned", monthLabelFromKey(state.sellerLatestMonthKey), filterRows(monthRanking), state.sellerMetric, false, query)}
-    ${renderSellerList("År", String(state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric, false, query)}
+    ${renderSellerList("Dag", formatDateLabel(periodData.selectedDate || state.sellerLatestDay), filterRows(dayRanking), state.sellerMetric, false, query)}
+    ${renderSellerList("Måned", monthLabelFromKey(periodData.selectedMonthKey || state.sellerLatestMonthKey), filterRows(monthRanking), state.sellerMetric, false, query)}
+    ${renderSellerList("År", String(periodData.selectedYear || state.sellerLatestYear), filterRows(yearRanking), state.sellerMetric, false, query)}
   `;
 }
 
@@ -2567,24 +2622,34 @@ function renderPeoplePageClean(state) {
 }
 
 function renderPeoplePageCompact(state) {
+  const sellerDate = getSellerSelectedDate(state) || String(state.sellerLatestDay);
   return `
     <main class="page-shell">
-      ${renderChrome(state)}
+      ${renderChrome(
+        state,
+        `
+          <section class="status-strip day-status-strip seller-status-strip">
+            <p class="updated-line">Oppdatert sist: <strong>${state.updatedAt || "ukjent"}</strong></p>
+            <label class="date-picker inline-date-picker seller-date-picker" aria-label="Velg dato">
+              <input
+                data-role="seller-date-picker"
+                type="date"
+                min="${formatInputDate(state.dayDates[state.dayDates.length - 1])}"
+                max="${formatInputDate(state.dayDates[0])}"
+                value="${formatInputDate(sellerDate)}"
+              />
+            </label>
+          </section>
+        `
+      )}
 
-      ${state.chromeExpanded ? `<section class="control-panel seller-toolbar">
-        <div class="week-toolbar-meta">
-          <p class="updated-line">Oppdatert sist: <strong>${state.updatedAt || "ukjent"}</strong></p>
-        </div>
-        <div class="week-toolbar-pickers seller-toolbar-pickers">
-          <label class="date-picker seller-search">
-            <span>Søk etter selger</span>
-            <input data-role="seller-search" type="search" value="${state.sellerQuery}" placeholder="Begynn å skrive navn..." />
-          </label>
-        </div>
-        <div class="week-toolbar-footer">
-          ${renderSellerMetricToggle(state)}
-        </div>
-      </section>` : ""}
+      <section class="control-panel seller-toolbar">
+        <label class="date-picker seller-search">
+          <span>Søk etter selger</span>
+          <input data-role="seller-search" type="search" value="${state.sellerQuery}" placeholder="Begynn å skrive navn..." />
+        </label>
+        ${renderSellerMetricToggle(state)}
+      </section>
 
       <section class="content-main seller-columns seller-layout">
         ${renderPeopleCards(state)}
@@ -3944,6 +4009,11 @@ function syncUrl(state) {
   } else {
     url.searchParams.set("page", state.page);
   }
+  if (state.page === "people" && state.sellerSelectedDate) {
+    url.searchParams.set("sellerDate", formatInputDate(state.sellerSelectedDate));
+  } else {
+    url.searchParams.delete("sellerDate");
+  }
   window.history.replaceState({}, "", url);
 }
 
@@ -4132,6 +4202,18 @@ function bindEvents(state) {
     sellerSearch.addEventListener("input", (event) => {
       state.sellerQuery = event.target.value;
       refreshSellerResults(state);
+    });
+  }
+
+  const sellerDatePicker = document.querySelector("[data-role='seller-date-picker']");
+  if (sellerDatePicker) {
+    sellerDatePicker.addEventListener("change", (event) => {
+      const value = event.target.value.replaceAll("-", "");
+      if (state.dayGrouped.has(value)) {
+        state.sellerSelectedDate = value;
+        syncUrl(state);
+        repaintPreservingViewport(state);
+      }
     });
   }
 
@@ -4370,12 +4452,14 @@ async function render() {
       yearCutoffOptions,
       latestAvailableCutoffMonthDay,
       yearCutoffMonthDay: latestAvailableCutoffMonthDay,
+      sellerRawRows: sellerData.rawRows,
       sellerDayRows: sellerData.dayRows,
       sellerMonthRows: sellerData.monthRows,
       sellerYearRows: sellerData.yearRows,
       sellerLatestDay: sellerData.latestDay,
       sellerLatestMonthKey: sellerData.latestMonthKey,
       sellerLatestYear: sellerData.latestYear,
+      sellerSelectedDate: params.get("sellerDate") && dayData.grouped.has(params.get("sellerDate")) ? params.get("sellerDate") : sellerData.latestDay,
       sellerMetric: "umomsValue",
       sellerQuery: "",
       stockRows,

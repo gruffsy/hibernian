@@ -14,12 +14,12 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-06-03T09:34:01
-updated_at: 2026-06-03T09:40:06
-objective: Refresh pipeline data to remove mojibake store labels
-scope: pipeline/src/hibernian_pipeline/shared/legacy_format.py,pipeline/scripts/run_refresh_r2.ps1,pipeline/scripts/publish_r2_only.ps1,legacy/frontend-static/data/publish/*
+started_at: 2026-06-03T10:18:51
+updated_at: 2026-06-03T10:47:09
+objective: Add optional date picker to seller page
+scope: frontend/app.js
 next_step: <ikke spesifisert>
-verification: <ikke spesifisert>
+verification: node --check frontend/app.js
 blockers: ingen
 ```
 
@@ -518,5 +518,16 @@ owner: codex
 status: complete
 summary: Regenerated and republished data; Tønsberg now appears only once and the year chart should no longer split the store into two bars.
 files: pipeline/src/hibernian_pipeline/shared/legacy_format.py,pipeline/scripts/run_refresh_r2.ps1,pipeline/scripts/publish_r2_only.ps1,legacy/frontend-static/data/publish/*
+next: <ikke spesifisert>
+```
+
+### 2026-06-03T10:47:10
+
+```text
+timestamp: 2026-06-03T10:47:09
+owner: codex
+status: complete
+summary: Added a seller date picker and derived day, month, and year rankings from the selected date so the seller page follows the same date-driven flow as day.
+files: frontend/app.js
 next: <ikke spesifisert>
 ```
