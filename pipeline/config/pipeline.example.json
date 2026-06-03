@@ -27,7 +27,7 @@
   "nav_product_day_raw": "pipeline/artifacts/raw/nav_product_day_raw.json",
   "product_history_base_snapshot": "pipeline/artifacts/state/product_history_base_snapshot.json",
   "product_history_publish": "pipeline/artifacts/publish/product_history.json",
-  "product_day_publish": "pipeline/artifacts/publish/product_day.json",
+  "product_day_publish": "pipeline/artifacts/state/product_summary.json",
   "backfill_start_date": null,
   "nav_sql_server": "mf-ls-sql02.norwayeast.cloudapp.azure.com",
   "nav_sql_database": "Megaflis_AS",

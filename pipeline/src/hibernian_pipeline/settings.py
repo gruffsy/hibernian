@@ -207,7 +207,7 @@ def load_config(pipeline_root: Path) -> PipelineConfig:
         ),
         product_day_publish=resolve_path(
             "product_day_publish",
-            paths.artifacts_publish_dir / "product_day.json",
+            paths.artifacts_state_dir / "product_summary.json",
         ),
         trailing_refresh_days=int(values.get("trailing_refresh_days", 7)),
         product_refresh_days=int(values.get("product_refresh_days", 2)),

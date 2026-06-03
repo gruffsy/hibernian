@@ -15,18 +15,23 @@ from ..settings import PipelineConfig
 from ..shared.models import PipelineStep
 
 
-def _publish_targets(config: PipelineConfig, *, include_product_history: bool = False) -> dict[Path, str]:
+def _sales_targets(config: PipelineConfig) -> dict[Path, str]:
     prefix = config.r2_object_prefix.strip("/")
-    targets: dict[Path, str] = {
+    return {
         config.store_day_publish: f"{prefix}/salg_fra_22_pr_dag_med_total.json",
         config.seller_day_publish: f"{prefix}/salg_pr_selger_fra_22_pr_dag.json",
         config.stock_publish: f"{prefix}/merged_stock_orders.json",
         config.meta_publish: f"{prefix}/tid.json",
     }
+
+
+def _product_targets(config: PipelineConfig, *, include_product_history: bool = False) -> dict[Path, str]:
+    prefix = config.r2_object_prefix.strip("/")
+    targets: dict[Path, str] = {}
     if include_product_history and config.product_history_publish:
         targets[config.product_history_publish] = f"{prefix}/product_history.json"
     if config.product_day_publish:
-        targets[config.product_day_publish] = f"{prefix}/product_day.json"
+        targets[config.product_day_publish] = f"{prefix}/product_summary.json"
     return targets
 
 
@@ -147,12 +152,55 @@ def _public_url(config: PipelineConfig, object_key: str) -> str:
     return f"{config.r2_public_base_url.rstrip('/')}/{encoded_key}"
 
 
-def publish_to_r2(config: PipelineConfig, *, include_product_history: bool = False) -> list[dict[str, Any]]:
+def publish_to_r2(config: PipelineConfig) -> list[dict[str, Any]]:
     token = os.getenv("HIBERNIAN_CLOUDFLARE_API_TOKEN") or os.getenv("CLOUDFLARE_API_TOKEN")
     access_keys = _resolve_access_keys()
     uploaded: list[dict[str, Any]] = []
 
-    for source, object_key in _publish_targets(config, include_product_history=include_product_history).items():
+    for source, object_key in _sales_targets(config).items():
+        if not source.exists():
+            continue
+
+        payload = source.read_bytes()
+        result: Any
+        mode: str
+        if access_keys:
+            access_key, secret_key = access_keys
+            result = _upload_via_s3(config, object_key, payload, access_key, secret_key)
+            mode = "s3"
+        elif token:
+            result = _request_json(
+                _upload_url(config, object_key),
+                method="PUT",
+                token=token,
+                payload=payload,
+                content_type="application/json; charset=utf-8",
+            )
+            mode = "api"
+        else:
+            raise RuntimeError(
+                "Missing R2 credentials. Set either HIBERNIAN_R2_ACCESS_KEY_ID/HIBERNIAN_R2_SECRET_ACCESS_KEY or HIBERNIAN_CLOUDFLARE_API_TOKEN."
+            )
+        uploaded.append(
+            {
+                "source": str(source),
+                "object_key": object_key,
+                "public_url": _public_url(config, object_key),
+                "size": len(payload),
+                "mode": mode,
+                "result": result.get("result", result),
+            }
+        )
+
+    return uploaded
+
+
+def publish_products_to_r2(config: PipelineConfig, *, include_product_history: bool = False) -> list[dict[str, Any]]:
+    token = os.getenv("HIBERNIAN_CLOUDFLARE_API_TOKEN") or os.getenv("CLOUDFLARE_API_TOKEN")
+    access_keys = _resolve_access_keys()
+    uploaded: list[dict[str, Any]] = []
+
+    for source, object_key in _product_targets(config, include_product_history=include_product_history).items():
         if not source.exists():
             continue
 
@@ -191,10 +239,20 @@ def publish_to_r2(config: PipelineConfig, *, include_product_history: bool = Fal
 
 
 def describe_step(config: PipelineConfig) -> PipelineStep:
-    targets = _publish_targets(config)
+    targets = _sales_targets(config)
     return PipelineStep(
         name="publish_r2",
         description="Upload publish artifacts to the Cloudflare R2 beta bucket.",
+        inputs=tuple(str(source) for source in targets),
+        outputs=tuple(_public_url(config, object_key) for object_key in targets.values()),
+    )
+
+
+def describe_product_step(config: PipelineConfig) -> PipelineStep:
+    targets = _product_targets(config, include_product_history=True)
+    return PipelineStep(
+        name="publish_r2_products",
+        description="Upload the product publish artifacts to the Cloudflare R2 beta bucket.",
         inputs=tuple(str(source) for source in targets),
         outputs=tuple(_public_url(config, object_key) for object_key in targets.values()),
     )

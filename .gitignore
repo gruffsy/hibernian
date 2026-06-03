@@ -13,4 +13,5 @@ revamp/csv/*.*
 pipeline/artifacts/publish/product*.json
 pipeline/artifacts/state/product*.json
 pipeline/artifacts/raw/nav_product*.json
+legacy/frontend-static/data/publish/product_summary.json
 pipeline/config/secrets.local.ps1

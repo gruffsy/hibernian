@@ -11,6 +11,10 @@ const SELLER_DAY_DATA_URL = {
   local: `${LOCAL_PUBLISH_BASE_URL}/salg_pr_selger_fra_22_pr_dag.json`,
   remote: `${R2_BASE_URL}/salg_pr_selger_fra_22_pr_dag.json`,
 };
+const PRODUCT_DATA_URL = {
+  local: `${LOCAL_PUBLISH_BASE_URL}/product_summary.json`,
+  remote: `${R2_BASE_URL}/product_summary.json`,
+};
 const STOCK_DATA_URL = {
   local: `${LOCAL_PUBLISH_BASE_URL}/merged_stock_orders.json`,
   remote: `${R2_BASE_URL}/merged_stock_orders.json`,
@@ -89,6 +93,24 @@ function parseInteger(value) {
 
 function parsePercent(value) {
   return Number(String(value).replace("%", "").replace(",", "."));
+}
+
+function parseNumericValue(value) {
+  if (typeof value === "number") {
+    return Number.isFinite(value) ? value : 0;
+  }
+
+  const cleaned = String(value ?? "")
+    .trim()
+    .replace(/\s+/g, "")
+    .replace(",", ".");
+
+  if (!cleaned) {
+    return 0;
+  }
+
+  const parsed = Number(cleaned);
+  return Number.isFinite(parsed) ? parsed : 0;
 }
 
 function formatCurrency(value) {
@@ -507,6 +529,431 @@ async function loadStockData() {
     }
     return left.description.localeCompare(right.description, "nb-NO");
   });
+}
+
+function normalizeProductMetricRow(row) {
+  return {
+    itemNo: normalizeDisplayText(row["Item No_"] ?? row.itemNo ?? row.item_no),
+    description: normalizeDisplayText(row.Description ?? row.description),
+    itemCategory: normalizeDisplayText(row["Item Category"] ?? row.itemCategory),
+    retailProductGroup: normalizeDisplayText(row["Retail Product Group"] ?? row.retailProductGroup),
+    antall: parseNumericValue(row.antall),
+    umoms: parseNumericValue(row.umoms),
+    db: parseNumericValue(row.db),
+    dg: parseNumericValue(row.dg),
+  };
+}
+
+function normalizeProductPeriodData(period) {
+  if (!period) {
+    return null;
+  }
+
+  const totals = {
+    antall: parseNumericValue(period.totals?.antall),
+    umoms: parseNumericValue(period.totals?.umoms),
+    db: parseNumericValue(period.totals?.db),
+    dg: parseNumericValue(period.totals?.dg),
+  };
+
+  const metrics = {
+    antall: Array.isArray(period.metrics?.antall) ? period.metrics.antall.map(normalizeProductMetricRow) : [],
+    umoms: Array.isArray(period.metrics?.umoms) ? period.metrics.umoms.map(normalizeProductMetricRow) : [],
+    db: Array.isArray(period.metrics?.db) ? period.metrics.db.map(normalizeProductMetricRow) : [],
+  };
+
+  return {
+    totals,
+    metrics,
+  };
+}
+
+async function loadProductData() {
+  const data = await fetchJsonWithFallback(PRODUCT_DATA_URL);
+  const availableDates = Array.isArray(data.availableDates) ? data.availableDates.map(String) : [];
+  const availableWeeks = Array.isArray(data.availableWeeks) ? data.availableWeeks.map(String) : [];
+  const availableMonths = Array.isArray(data.availableMonths) ? data.availableMonths.map(String) : [];
+  const availableYears = Array.isArray(data.availableYears) ? data.availableYears.map(String) : [];
+  const periods = {};
+
+  for (const periodName of ["day", "week", "month", "year"]) {
+    periods[periodName] = {};
+    const source = data.periods?.[periodName] || {};
+    for (const [key, period] of Object.entries(source)) {
+      periods[periodName][String(key)] = normalizeProductPeriodData(period);
+    }
+  }
+
+  return {
+    availableDates,
+    availableWeeks,
+    availableMonths,
+    availableYears,
+    periods,
+  };
+}
+
+async function ensureProductData(state) {
+  if (state.productData) {
+    return state.productData;
+  }
+  if (state.productDataPromise) {
+    return state.productDataPromise;
+  }
+
+  state.productDataLoading = true;
+  state.productDataPromise = loadProductData()
+    .then((data) => {
+      state.productData = data;
+      state.productAvailableDates = Array.isArray(data.availableDates) ? data.availableDates : [];
+      if (!state.productAvailableDates.includes(state.productSelectedDate)) {
+        state.productSelectedDate = state.productAvailableDates[0] || state.dayDates?.[0] || null;
+      }
+      state.productDataLoading = false;
+      state.productDataPromise = null;
+      return data;
+    })
+    .catch((error) => {
+      state.productDataLoading = false;
+      state.productDataPromise = null;
+      throw error;
+    });
+
+  return state.productDataPromise;
+}
+
+function getProductSelectedDate(state) {
+  const availableDates = Array.isArray(state.productData?.availableDates) ? state.productData.availableDates : [];
+  const candidate = normalizeDisplayText(state.productSelectedDate);
+  if (candidate && availableDates.includes(candidate)) {
+    return candidate;
+  }
+  return availableDates[0] || state.dayDates?.[0] || null;
+}
+
+function getProductPeriodKey(period, dateKey) {
+  if (!dateKey) {
+    return null;
+  }
+
+  const raw = String(dateKey);
+  if (period === "week") {
+    return getIsoWeekInfo(raw).weekKey;
+  }
+  if (period === "month") {
+    return monthKey(Number(raw.slice(0, 4)), Number(raw.slice(4, 6)));
+  }
+  if (period === "year") {
+    return String(Number(raw.slice(0, 4)));
+  }
+  return raw;
+}
+
+function getProductPeriodLabel(period, dateKey) {
+  if (!dateKey) {
+    return "";
+  }
+
+  const raw = String(dateKey);
+  if (period === "week") {
+    return formatWeekLabel(getProductPeriodKey(period, raw));
+  }
+  if (period === "month") {
+    return monthLabelFromKey(getProductPeriodKey(period, raw));
+  }
+  if (period === "year") {
+    return getProductPeriodKey(period, raw);
+  }
+  return formatDateLabel(raw);
+}
+
+function getProductPeriodData(state, period, dateKey) {
+  const periodKey = getProductPeriodKey(period, dateKey);
+  if (!periodKey) {
+    return null;
+  }
+
+  return state.productData?.periods?.[period]?.[periodKey] || null;
+}
+
+function getProductMetricLabel(metric) {
+  if (metric === "antall") {
+    return "Antall";
+  }
+  if (metric === "db") {
+    return "DB";
+  }
+  return "u/mva";
+}
+
+function formatProductPercent(value) {
+  return formatPercent(Number(value || 0) * 100);
+}
+
+function formatProductMetricValue(value, metric) {
+  if (metric === "antall") {
+    return formatInteger(value);
+  }
+  return formatCurrency(value);
+}
+
+function renderProductMetricToggle(state) {
+  const buttons = [
+    ["antall", "Antall"],
+    ["umoms", "u/mva"],
+    ["db", "DB"],
+  ];
+
+  return `
+    <div class="mode-picker product-metric-toggle" aria-label="Sorter produktlisten">
+      ${buttons
+        .map(
+          ([metric, label]) =>
+            `<button class="${state.productMetric === metric ? "quick-button is-active" : "quick-button"}" type="button" data-product-metric="${metric}">${label}</button>`
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderProductPeriodToggle(state) {
+  const buttons = [
+    ["day", "Dag"],
+    ["week", "Uke"],
+    ["month", "Måned"],
+    ["year", "År"],
+  ];
+
+  return `
+    <div class="mode-picker product-period-toggle" aria-label="Velg periode">
+      ${buttons
+        .map(
+          ([period, label]) =>
+            `<button class="${state.productPeriod === period ? "quick-button is-active" : "quick-button"}" type="button" data-product-period="${period}">${label}</button>`
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderProductSummaryCard(state, periodLabel, periodData) {
+  if (!periodData) {
+    return "";
+  }
+
+  const metric = state.productMetric || "umoms";
+  const totals = periodData.totals || { antall: 0, umoms: 0, db: 0, dg: 0 };
+  const metricRows = Array.isArray(periodData.metrics?.[metric]) ? periodData.metrics[metric] : [];
+
+  return `
+    <article class="summary-card product-summary-card summary-emphasis">
+      <p class="summary-label">Produktoversikt</p>
+      <div class="summary-topline">
+        <div class="summary-topline-main">
+          <h3>${formatProductMetricValue(totals[metric] || 0, metric)}</h3>
+          <p class="chart-caption">${periodLabel} · sortert på ${getProductMetricLabel(metric).toLowerCase()}</p>
+        </div>
+        <div class="summary-side summary-side-stack">
+          <div class="summary-side-item">
+            <span>Produkter</span>
+            <strong>${formatInteger(metricRows.length)}</strong>
+          </div>
+          <div class="summary-side-item">
+            <span>Utsnitt</span>
+            <strong>${getProductMetricLabel(metric)}</strong>
+          </div>
+        </div>
+      </div>
+      <div class="summary-grid">
+        <div><span>Antall</span><strong>${formatInteger(totals.antall)}</strong></div>
+        <div><span>u/mva</span><strong>${formatCurrency(totals.umoms)}</strong></div>
+        <div><span>DB</span><strong>${formatCurrency(totals.db)}</strong></div>
+        <div><span>DG</span><strong>${formatProductPercent(totals.dg)}</strong></div>
+      </div>
+    </article>
+  `;
+}
+
+function renderProductTable(rows, totals) {
+  const safeRows = Array.isArray(rows) ? rows : [];
+  const safeTotals = totals || { antall: 0, umoms: 0, db: 0, dg: 0 };
+
+  const rowMarkup = safeRows
+    .map(
+      (row) => `
+        <tr>
+          <td class="product-description-cell">${row.description || row.itemNo || "Ukjent"}</td>
+          <td>${formatInteger(row.antall || 0)}</td>
+          <td>${compactMoneyText(formatCurrency(row.umoms || 0))}</td>
+          <td>${compactMoneyText(formatCurrency(row.db || 0))}</td>
+          <td>${formatProductPercent(row.dg || 0)}</td>
+        </tr>
+      `
+    )
+    .join("");
+
+  return `
+    <div class="desktop-only table-shell product-table-shell">
+      <table class="store-table compact-report-table product-table">
+        <colgroup>
+          <col class="product-col-description" />
+          <col class="product-col-amount" />
+          <col class="product-col-money" />
+          <col class="product-col-money" />
+          <col class="product-col-dg" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Beskrivelse</th>
+            <th>Antall</th>
+            <th>u/mva</th>
+            <th>DB</th>
+            <th>DG</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rowMarkup}
+        </tbody>
+        <tfoot>
+          <tr class="total-row">
+            <th>Totalt</th>
+            <th>${formatInteger(safeTotals.antall)}</th>
+            <th>${compactMoneyText(formatCurrency(safeTotals.umoms))}</th>
+            <th>${compactMoneyText(formatCurrency(safeTotals.db))}</th>
+            <th>${formatProductPercent(safeTotals.dg)}</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="mobile-only day-mobile-table-shell product-mobile-table-shell">
+      <table class="store-table day-mobile-table product-table">
+        <colgroup>
+          <col class="product-mobile-col-description" />
+          <col class="product-mobile-col-amount" />
+          <col class="product-mobile-col-money" />
+          <col class="product-mobile-col-money" />
+          <col class="product-mobile-col-dg" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th>Beskrivelse</th>
+            <th>Antall</th>
+            <th>u/mva</th>
+            <th>DB</th>
+            <th>DG</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rowMarkup}
+        </tbody>
+        <tfoot>
+          <tr class="total-row">
+            <th>Totalt</th>
+            <th>${formatInteger(safeTotals.antall)}</th>
+            <th>${compactMoneyText(formatCurrency(safeTotals.umoms))}</th>
+            <th>${compactMoneyText(formatCurrency(safeTotals.db))}</th>
+            <th>${formatProductPercent(safeTotals.dg)}</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  `;
+}
+
+function renderProductsPageCompact(state) {
+  if (!state.productData) {
+    if (state.productDataLoading) {
+      return `
+        <main class="page-shell">
+          <section class="error-state">
+            <p class="eyebrow">HIBERNIAN BETA</p>
+            <h1>Laster produktsiden</h1>
+            <p class="intro">Vi henter en kompakt produktoversikt. Dette tar bare et øyeblikk.</p>
+          </section>
+        </main>
+      `;
+    }
+    return `
+      <main class="page-shell">
+        <section class="error-state">
+          <p class="eyebrow">HIBERNIAN BETA</p>
+          <h1>Kunne ikke laste produktsiden</h1>
+          <p class="intro">Produktdataene er ikke tilgjengelige akkurat nå. Prøv å laste siden på nytt.</p>
+          <div class="actions">
+            <button class="button button-secondary" type="button" data-action="classic">Åpne klassisk visning</button>
+          </div>
+        </section>
+      </main>
+    `;
+  }
+
+  const selectedDate = getProductSelectedDate(state);
+  const period = state.productPeriod || "day";
+  const periodLabel = getProductPeriodLabel(period, selectedDate);
+  const periodData = getProductPeriodData(state, period, selectedDate);
+  if (!periodData) {
+    return `
+      <main class="page-shell">
+        <section class="error-state">
+          <p class="eyebrow">HIBERNIAN BETA</p>
+          <h1>Fant ingen produktdata for valgt utsnitt</h1>
+          <p class="intro">Prøv en annen dato eller last siden på nytt.</p>
+          <div class="actions">
+            <button class="button button-secondary" type="button" data-action="classic">Åpne klassisk visning</button>
+          </div>
+        </section>
+      </main>
+    `;
+  }
+  const availableDates = state.productData.availableDates || [];
+  const selectedDateInput = selectedDate ? formatInputDate(selectedDate) : "";
+  const minDate = availableDates.length ? formatInputDate(availableDates[availableDates.length - 1]) : selectedDateInput;
+  const maxDate = availableDates.length ? formatInputDate(availableDates[0]) : selectedDateInput;
+
+  return `
+    <main class="page-shell">
+      ${renderChrome(
+        state,
+        `
+          <section class="status-strip day-status-strip product-status-strip">
+            <p class="updated-line">Oppdatert sist: <strong>${state.updatedAt || "ukjent"}</strong></p>
+            <label class="date-picker inline-date-picker" aria-label="Velg dato">
+              <input
+                data-role="product-date-picker"
+                type="date"
+                min="${minDate}"
+                max="${maxDate}"
+                value="${selectedDateInput}"
+              />
+            </label>
+          </section>
+        `
+      )}
+
+      <section class="control-panel product-toolbar">
+        ${renderProductPeriodToggle(state)}
+        ${renderProductMetricToggle(state)}
+      </section>
+
+      <section class="summary-band product-summary-band">
+        ${renderProductSummaryCard(state, periodLabel, periodData)}
+      </section>
+
+      <section class="content-main product-layout">
+        <section class="month-block product-period-card">
+          <div class="history-head">
+            <p class="section-label">Topp 20 produkter</p>
+            <h2>${periodLabel}</h2>
+          </div>
+          ${renderProductTable(periodData?.metrics?.[state.productMetric || "umoms"] || [], periodData?.totals || null)}
+        </section>
+      </section>
+
+      <section class="day-page-footer">
+        <button class="button button-secondary" type="button" data-action="classic">Bytt til klassisk</button>
+      </section>
+    </main>
+  `;
 }
 
 function aggregateSellerRows(rows) {
@@ -1465,6 +1912,7 @@ function renderNav(page) {
     ["year", "År"],
     ["people", "Selgere"],
     ["stock", "Stock"],
+    ["products", "Produkter"],
   ];
 
   return `
@@ -1490,6 +1938,7 @@ function getPageLabel(page) {
     year: "ÅR",
     people: "SELGERE",
     stock: "STOCK",
+    products: "PRODUKTER",
   };
 
   return labels[page] || "DAG";
@@ -4014,6 +4463,18 @@ function syncUrl(state) {
   } else {
     url.searchParams.delete("sellerDate");
   }
+  if (state.page === "products") {
+    const productSelectedDate = getProductSelectedDate(state);
+    if (productSelectedDate) {
+      url.searchParams.set("productDate", formatInputDate(productSelectedDate));
+    }
+    url.searchParams.set("productPeriod", state.productPeriod || "day");
+    url.searchParams.set("productMetric", state.productMetric || "umoms");
+  } else {
+    url.searchParams.delete("productDate");
+    url.searchParams.delete("productPeriod");
+    url.searchParams.delete("productMetric");
+  }
   window.history.replaceState({}, "", url);
 }
 
@@ -4217,6 +4678,18 @@ function bindEvents(state) {
     });
   }
 
+  const productDatePicker = document.querySelector("[data-role='product-date-picker']");
+  if (productDatePicker) {
+    productDatePicker.addEventListener("change", (event) => {
+      const value = event.target.value.replaceAll("-", "");
+      if (state.productData?.availableDates?.includes(value)) {
+        state.productSelectedDate = value;
+        syncUrl(state);
+        repaintPreservingViewport(state);
+      }
+    });
+  }
+
   if (stockSearch) {
     stockSearch.addEventListener("input", (event) => {
       state.stockQuery = event.target.value;
@@ -4312,6 +4785,22 @@ function bindEvents(state) {
     });
   });
 
+  document.querySelectorAll("[data-product-period]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.productPeriod = button.dataset.productPeriod;
+      syncUrl(state);
+      repaintPreservingViewport(state);
+    });
+  });
+
+  document.querySelectorAll("[data-product-metric]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.productMetric = button.dataset.productMetric;
+      syncUrl(state);
+      repaintPreservingViewport(state);
+    });
+  });
+
   document.querySelectorAll("[data-seller-metric]").forEach((button) => {
     button.addEventListener("click", () => {
       state.sellerMetric = button.dataset.sellerMetric;
@@ -4329,6 +4818,19 @@ function bindEvents(state) {
 
 function paint(state, viewState = null) {
   clearVisuals();
+  if (state.page === "products" && !state.productData && !state.productDataLoading) {
+    ensureProductData(state)
+      .then(() => {
+        if (state.page === "products") {
+          repaintPreservingViewport(state);
+        }
+      })
+      .catch(() => {
+        if (state.page === "products") {
+          repaintPreservingViewport(state);
+        }
+      });
+  }
   if (state.page === "week") {
     app.innerHTML = renderWeekPage(state);
   } else if (state.page === "month") {
@@ -4339,6 +4841,8 @@ function paint(state, viewState = null) {
     app.innerHTML = renderPeoplePage(state);
   } else if (state.page === "stock") {
     app.innerHTML = renderStockPage(state);
+  } else if (state.page === "products") {
+    app.innerHTML = renderProductsPageCompact(state);
   } else {
     app.innerHTML = renderDayPage(state);
   }
@@ -4374,6 +4878,7 @@ async function render() {
       loadStockData(),
       loadUpdatedAt(),
     ]);
+    const productData = await loadProductData().catch(() => null);
 
     const { canonicalMonths, monthOptions } = buildCanonicalMonths(dayData);
     const { canonicalYears, yearOptions } = buildCanonicalYears(dayData);
@@ -4401,6 +4906,7 @@ async function render() {
       )
     ).sort();
 
+    const requestedProductDate = params.get("productDate")?.replaceAll("-", "") || null;
     const state = {
       page: params.get("page") === "week"
         ? "week"
@@ -4412,7 +4918,9 @@ async function render() {
               ? "people"
               : params.get("page") === "stock"
                 ? "stock"
-                : "day",
+                : params.get("page") === "products"
+                  ? "products"
+                  : "day",
       chromeExpanded: true,
       updatedAt,
       dayGrouped: dayData.grouped,
@@ -4462,10 +4970,21 @@ async function render() {
       sellerSelectedDate: params.get("sellerDate") && dayData.grouped.has(params.get("sellerDate")) ? params.get("sellerDate") : sellerData.latestDay,
       sellerMetric: "umomsValue",
       sellerQuery: "",
+      productData: null,
+      productDataLoading: false,
+      productDataPromise: null,
+      productAvailableDates: [],
+      productSelectedDate: requestedProductDate,
+      productPeriod: ["day", "week", "month", "year"].includes(params.get("productPeriod")) ? params.get("productPeriod") : "day",
+      productMetric: ["antall", "umoms", "db"].includes(params.get("productMetric")) ? params.get("productMetric") : "umoms",
       stockRows,
       stockFilter: "all",
       stockQuery: "",
     };
+
+    if (state.page === "products") {
+      await ensureProductData(state);
+    }
 
     syncUrl(state);
     paint(state);

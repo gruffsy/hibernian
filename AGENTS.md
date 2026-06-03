@@ -14,12 +14,12 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-06-03T10:47:09
-updated_at: 2026-06-03T17:57:08
-objective: Lean product rebuild: fast R2-first product pipeline
-scope: pipeline, frontend (later), AGENTS.md
-next_step: None
-verification: <ikke spesifisert>
+started_at: 2026-06-03T20:54:00
+updated_at: 2026-06-03T21:15:00
+objective: Finish the lean product page rollout with lazy loading and the compact product summary file
+scope: frontend, pipeline, AGENTS.md
+next_step: <none>
+verification: node --check frontend/app.js; python AST parse for pipeline settings, local/r2 publish, and product tests
 blockers: ingen
 ```
 
@@ -27,8 +27,10 @@ blockers: ingen
 
 - What is done: The repo is rolled back to `859e225b86fbb49b0e9f64ccc06f95240a8cf692`, and the heavy product release was removed.
 - What remains: Product work must stay lean, R2-first, and fast to refresh.
+- New rule: Product publishing must be separate from the main refresh path so sales data cannot be blocked by product errors.
 - Important choices: Do not push product-related updates to `gruffsy/hibernian@beta` unless the user explicitly asks for it. Use `-IncludeSecondaryBeta` only when the user explicitly wants the secondary beta branch updated.
 - Do not touch: Existing `legacy/frontend-static/data/publish/*` files unless the job is explicitly about pipeline/data refresh.
+- Lean update: `frontend` now points at `product_summary.json`, the product payload stays lazy-loaded so the other pages do not pay the product cost on startup, and the compact summary is published to R2 at `latest/product_summary.json`.
 
 ## Tmux Recovery Task
 

@@ -81,7 +81,7 @@ def make_config(root: Path) -> PipelineConfig:
         store_day_publish=publish_dir / "store_day.json",
         seller_day_publish=publish_dir / "seller_day.json",
         product_history_publish=publish_dir / "product_history.json",
-        product_day_publish=publish_dir / "product_day.json",
+        product_day_publish=state_dir / "product_summary.json",
         stock_publish=publish_dir / "stock.json",
         meta_publish=publish_dir / "meta.json",
         trailing_refresh_days=7,
@@ -143,7 +143,7 @@ def test_product_bootstrap_extract_and_build_payload() -> None:
                 "Description": "Ny vare",
                 "Item Category": "Flis",
                 "Retail Product Group": "Kampanje",
-                "fakturadato": datetime.now().strftime("%Y-%m-%d"),
+                "fakturadato": datetime(2026, 6, 2),
                 "antall": "5",
                 "umoms": "500",
                 "db": "125",
@@ -153,10 +153,11 @@ def test_product_bootstrap_extract_and_build_payload() -> None:
         write_json(config.nav_product_day_raw, nav_rows)
 
         payload = run_build_product_day(config)
-        assert len(payload) == 3
-        assert payload[0]["Item No_"] == "2001"
-        assert payload[0]["umoms"] == 500
-        assert payload[1]["Item No_"] == "1001"
+        assert payload["availableDates"][0] == 20260602
+        assert payload["periods"]["day"][20260602]["totals"]["umoms"] == 500
+        assert payload["periods"]["day"][20260602]["metrics"]["umoms"][0]["Item No_"] == "2001"
+        assert payload["periods"]["month"]["2025-01"]["totals"]["umoms"] == 450
+        assert payload["periods"]["month"]["2025-01"]["metrics"]["umoms"][0]["Item No_"] == "1001"
         assert config.product_day_publish.exists()
 
 
@@ -167,8 +168,8 @@ def test_product_extract_normalizes_rows() -> None:
         rows = [
             {
                 "Item No_": "3001",
-                "Description": "TÃ¸nsberg sett",
-                "Item Category": "KÃ¸kken",
+                "Description": "TÃƒÂ¸nsberg sett",
+                "Item Category": "KÃƒÂ¸kken",
                 "Retail Product Group": "Spesial",
                 "fakturadato": datetime(2026, 6, 2),
                 "antall": "0-18",
@@ -188,7 +189,7 @@ def test_product_extract_normalizes_rows() -> None:
         assert read_json(config.nav_product_day_raw)[0]["Item No_"] == "3001"
 
 
-def test_build_product_day_payload_deduplicates_by_date_and_item() -> None:
+def test_build_product_day_payload_aggregates_and_limits_top_20() -> None:
     base_rows = [
         {
             "Item No_": "1001",
@@ -202,6 +203,21 @@ def test_build_product_day_payload_deduplicates_by_date_and_item() -> None:
             "dg": 0.3,
         }
     ]
+    for index in range(2, 24):
+        base_rows.append(
+            {
+                "Item No_": f"{1000 + index}",
+                "Description": f"Produkt {index}",
+                "Item Category": "Kategori",
+                "Retail Product Group": "Gruppe",
+                "fakturadato": 20250530,
+                "antall": index,
+                "umoms": index * 100,
+                "db": index * 25,
+                "dg": 0.25,
+            }
+        )
+
     nav_rows = [
         {
             "Item No_": "1001",
@@ -229,7 +245,11 @@ def test_build_product_day_payload_deduplicates_by_date_and_item() -> None:
 
     payload = build_product_day_payload(base_rows, nav_rows)
 
-    assert len(payload) == 2
-    assert payload[0]["Item No_"] == "1002"
-    assert payload[1]["Item No_"] == "1001"
-    assert payload[1]["umoms"] == 400
+    assert payload["periods"]["day"][20250530]["totals"]["umoms"] == 7000
+    assert payload["periods"]["day"][20250530]["totals"]["db"] == 1745
+    assert payload["periods"]["day"][20250530]["totals"]["dg"] == 0.2493
+    assert len(payload["periods"]["day"][20250530]["metrics"]["umoms"]) == 20
+    assert payload["periods"]["day"][20250530]["metrics"]["umoms"][0]["Item No_"] == "1023"
+    assert payload["periods"]["day"][20250530]["metrics"]["umoms"][-1]["Item No_"] == "1005"
+    assert payload["periods"]["day"][20250531]["totals"]["umoms"] == 200
+    assert payload["periods"]["day"][20250531]["metrics"]["umoms"][0]["Item No_"] == "1002"

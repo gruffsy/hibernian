@@ -297,6 +297,67 @@ select {
   margin-top: var(--section-gap);
 }
 
+.product-toolbar {
+  display: grid;
+  gap: 12px;
+  align-items: start;
+}
+
+.product-summary-band {
+  grid-template-columns: 1fr;
+}
+
+.product-period-card {
+  padding: 22px;
+  border-radius: var(--radius-xl);
+}
+
+.product-table-shell {
+  padding-top: 8px;
+}
+
+.product-table {
+  width: 100%;
+  table-layout: fixed;
+  font-variant-numeric: tabular-nums;
+}
+
+.product-table col.product-col-description {
+  width: 42%;
+}
+
+.product-table col.product-col-amount {
+  width: 12%;
+}
+
+.product-table col.product-col-money {
+  width: 16%;
+}
+
+.product-table col.product-col-dg {
+  width: 14%;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px 10px;
+}
+
+.product-table th:nth-child(n + 2),
+.product-table td:nth-child(n + 2) {
+  text-align: right;
+}
+
+.product-description-cell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-mobile-table-shell {
+  padding-top: 8px;
+}
+
 .month-summary-band {
   grid-template-columns: 1fr;
 }
@@ -1492,6 +1553,10 @@ select {
     grid-template-columns: 1fr;
   }
 
+  .product-toolbar {
+    gap: 10px;
+  }
+
   .summary-card {
     padding: 12px;
     border: 1px solid rgba(29, 26, 22, 0.08);
@@ -1545,6 +1610,26 @@ select {
   .mobile-store-meta strong {
     margin-top: 2px;
     font-size: 0.9rem;
+  }
+
+  .product-period-card {
+    padding: 12px;
+  }
+
+  .product-table col.product-mobile-col-description {
+    width: 40%;
+  }
+
+  .product-table col.product-mobile-col-amount {
+    width: 12%;
+  }
+
+  .product-table col.product-mobile-col-money {
+    width: 17%;
+  }
+
+  .product-table col.product-mobile-col-dg {
+    width: 14%;
   }
 
   .stock-stats-grid {

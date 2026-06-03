@@ -11,6 +11,7 @@ def _publish_targets(config: PipelineConfig) -> dict[Path, Path]:
     return {
         config.store_day_publish: config.paths.legacy_publish_dir / "salg_fra_22_pr_dag_med_total.json",
         config.seller_day_publish: config.paths.legacy_publish_dir / "salg_pr_selger_fra_22_pr_dag.json",
+        config.product_day_publish: config.paths.legacy_publish_dir / "product_summary.json",
         config.stock_publish: config.paths.legacy_publish_dir / "merged_stock_orders.json",
         config.meta_publish: config.paths.legacy_publish_dir / "tid.json",
     }
@@ -23,6 +24,17 @@ def publish_to_beta_static_copy(config: PipelineConfig) -> list[str]:
             continue
         copy_file(source, destination)
         copied.append(f"{source} -> {destination}")
+    return copied
+
+
+def publish_product_to_beta_static_copy(config: PipelineConfig) -> list[str]:
+    copied: list[str] = []
+    if not config.product_day_publish or not config.product_day_publish.exists():
+        return copied
+
+    destination = config.paths.legacy_publish_dir / "product_summary.json"
+    copy_file(config.product_day_publish, destination)
+    copied.append(f"{config.product_day_publish} -> {destination}")
     return copied
 
 
