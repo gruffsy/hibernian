@@ -79,7 +79,12 @@ def build_parser() -> argparse.ArgumentParser:
         help="Also upload the immutable product history snapshot to R2.",
     )
     subparsers.add_parser("refresh-r2", help="Run the production sales refresh before publishing to local beta data and Cloudflare R2")
-    subparsers.add_parser("refresh-products", help="Run the product-only refresh and publish to Cloudflare R2")
+    refresh_products_parser = subparsers.add_parser("refresh-products", help="Run the product refresh and publish to Cloudflare R2")
+    refresh_products_parser.add_argument(
+        "--skip-product-extract",
+        action="store_true",
+        help="Reuse the existing NAV product raw file instead of running the NAV product extract again.",
+    )
     return parser
 
 
@@ -216,7 +221,7 @@ def _run_refresh_r2_cycle(config) -> dict[str, object]:
     return result
 
 
-def _run_refresh_products_cycle(config) -> dict[str, object]:
+def _run_refresh_products_cycle(config, *, skip_product_extract: bool = False) -> dict[str, object]:
     result: dict[str, object] = {"steps": []}
     window_start_date = compute_window_start_date(trailing_refresh_days=config.product_refresh_days)
     result["window_start_date"] = window_start_date
@@ -227,14 +232,25 @@ def _run_refresh_products_cycle(config) -> dict[str, object]:
         result["steps"].append({"name": "bootstrap-product-history", "result": bootstrap_product_result})
         include_product_history = True
 
-    nav_product_rows = run_extract_nav_product_day(config)
-    result["steps"].append(
-        {
-            "name": "extract-nav-product-day",
-            "rows": len(nav_product_rows),
-            "output_file": str(config.nav_product_day_raw),
-        }
-    )
+    if skip_product_extract:
+        if not config.nav_product_day_raw or not config.nav_product_day_raw.exists():
+            raise RuntimeError("Missing NAV product raw file for skipped extract mode.")
+        result["steps"].append(
+            {
+                "name": "reuse-nav-product-day",
+                "rows": None,
+                "output_file": str(config.nav_product_day_raw),
+            }
+        )
+    else:
+        nav_product_rows = run_extract_nav_product_day(config)
+        result["steps"].append(
+            {
+                "name": "extract-nav-product-day",
+                "rows": len(nav_product_rows),
+                "output_file": str(config.nav_product_day_raw),
+            }
+        )
 
     product_rows = run_build_product_day(config)
     result["steps"].append(
@@ -394,7 +410,7 @@ def main() -> int:
         return 0
 
     if args.command == "refresh-products":
-        result = _run_refresh_products_cycle(config)
+        result = _run_refresh_products_cycle(config, skip_product_extract=getattr(args, "skip_product_extract", False))
         print(json.dumps(result, indent=2))
         return 0
 

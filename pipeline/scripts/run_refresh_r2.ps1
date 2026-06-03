@@ -44,3 +44,10 @@ if (-not [string]::IsNullOrWhiteSpace($BackfillStartDate)) {
 }
 
 python -m hibernian_pipeline.cli --pipeline-root $PipelineRoot refresh-r2
+
+$productRefreshOutput = & python -m hibernian_pipeline.cli --pipeline-root $PipelineRoot refresh-products --skip-product-extract 2>&1
+if ($LASTEXITCODE -ne 0) {
+    Write-Warning "Product refresh failed, but the sales refresh completed successfully. $($productRefreshOutput -join [Environment]::NewLine)"
+} elseif ($productRefreshOutput) {
+    $productRefreshOutput
+}
