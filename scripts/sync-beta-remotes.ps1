@@ -3,7 +3,8 @@ param(
   [string]$PrimaryBranch = "main",
   [string]$SecondaryRemote = "hibernian",
   [string]$SecondaryBranch = "beta",
-  [switch]$SkipPrimaryBeta
+  [switch]$SkipPrimaryBeta,
+  [switch]$IncludeSecondaryRemote
 )
 
 $ErrorActionPreference = "Stop"
@@ -54,16 +55,19 @@ if (-not $SkipPrimaryBeta) {
   Invoke-Git -Arguments @("push", $PrimaryRemote, "$PrimaryBranch`:beta")
 }
 
-Invoke-Git -Arguments @("push", $SecondaryRemote, "$PrimaryBranch`:$SecondaryBranch")
+if ($IncludeSecondaryRemote) {
+  Invoke-Git -Arguments @("push", $SecondaryRemote, "$PrimaryBranch`:$SecondaryBranch")
+}
 
 $primaryMainSha = (& git ls-remote $PrimaryRemote "refs/heads/$PrimaryBranch").Split("`t")[0]
 $primaryBetaSha = (& git ls-remote $PrimaryRemote "refs/heads/beta").Split("`t")[0]
-$secondaryBetaSha = (& git ls-remote $SecondaryRemote "refs/heads/$SecondaryBranch").Split("`t")[0]
-
 Write-Host ""
 Write-Host "Done."
 Write-Host "$PrimaryRemote/$PrimaryBranch  $primaryMainSha"
 if (-not $SkipPrimaryBeta) {
   Write-Host "$PrimaryRemote/beta        $primaryBetaSha"
 }
-Write-Host "$SecondaryRemote/$SecondaryBranch  $secondaryBetaSha"
+if ($IncludeSecondaryRemote) {
+  $secondaryBetaSha = (& git ls-remote $SecondaryRemote "refs/heads/$SecondaryBranch").Split("`t")[0]
+  Write-Host "$SecondaryRemote/$SecondaryBranch  $secondaryBetaSha"
+}

@@ -12,23 +12,23 @@ Rules:
 ## Current
 
 ```text
-status: complete
+status: in_progress
 owner: codex
-started_at: 2026-06-03T10:18:51
+started_at: 2026-06-03T10:47:09
 updated_at: 2026-06-03T10:47:09
-objective: Add optional date picker to seller page
-scope: frontend/app.js
-next_step: <ikke spesifisert>
-verification: node --check frontend/app.js
+objective: Lean product rebuild: fast R2-first product pipeline
+scope: pipeline, frontend (later), AGENTS.md
+next_step: Tighten the lean product pipeline and update the handoff notes for the new opt-in publish flow
+verification: <ikke spesifisert>
 blockers: ingen
 ```
 
 ## Resume Notes
 
-- What is done: The smooth menu branch is finished and pushed to origin.
-- What remains: Three local pipeline data files are still modified in the worktree, but they are not part of this handoff.
-- Important choices: The menu toggle stays sticky only in collapsed mode.
-- Do not touch: The three `legacy/frontend-static/data/publish/*` files unless the job is explicitly about pipeline/data refresh.
+- What is done: The repo is rolled back to `859e225b86fbb49b0e9f64ccc06f95240a8cf692`, and the heavy product release was removed.
+- What remains: Product work must stay lean, R2-first, and fast to refresh.
+- Important choices: Do not push product-related updates to `gruffsy/hibernian@beta` unless the user explicitly asks for it. Use `-IncludeSecondaryBeta` only when the user explicitly wants the secondary beta branch updated.
+- Do not touch: Existing `legacy/frontend-static/data/publish/*` files unless the job is explicitly about pipeline/data refresh.
 
 ## Tmux Recovery Task
 
@@ -100,7 +100,7 @@ powershell -ExecutionPolicy Bypass -File .\scripts\agent-task.ps1 -Mode finish -
 powershell -ExecutionPolicy Bypass -File .\scripts\agent-task.ps1 -Mode run -Owner tmux -Objective "<job>" -Scope "<files>" -Command "<command>"
 ```
 
-Publish beta to both repos:
+Publish beta to primary beta remotes only:
 
 ```text
 powershell -ExecutionPolicy Bypass -File .\scripts\publish-beta.ps1 -Message "<commit message>"
@@ -111,11 +111,13 @@ Optional:
 ```text
 powershell -ExecutionPolicy Bypass -File .\scripts\publish-beta.ps1 -Message "<commit message>" -Objective "<short objective>"
 powershell -ExecutionPolicy Bypass -File .\scripts\publish-beta.ps1 -Message "<commit message>" -AllowPipelineData
+powershell -ExecutionPolicy Bypass -File .\scripts\publish-beta.ps1 -Message "<commit message>" -IncludeSecondaryBeta
 ```
 
 Rule:
 - tmux and Codex should use the script instead of editing `AGENTS.md` by hand.
 - If the script is used correctly, `Current` is always updated automatically at start and finish.
+- `gruffsy/hibernian@beta` stays untouched unless `-IncludeSecondaryBeta` is passed explicitly.
 
 ## History
 

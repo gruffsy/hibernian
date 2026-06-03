@@ -7,6 +7,10 @@ from pathlib import Path
 
 from .bootstrap.visma_history import describe_step as describe_bootstrap_visma_history
 from .bootstrap.visma_history import run as run_bootstrap_visma_history
+from .bootstrap.product_history import describe_step as describe_bootstrap_product_history
+from .bootstrap.product_history import run as run_bootstrap_product_history
+from .build.product_day import describe_step as describe_build_product_day
+from .build.product_day import run as run_build_product_day
 from .build.seller_day import run as run_build_seller_day
 from .build.stock import run as run_build_stock
 from .build.store_day import run as run_build_store_day
@@ -15,6 +19,8 @@ from .build.stock import describe_step as describe_build_stock
 from .build.store_day import describe_step as describe_build_store_day
 from .extract.meta import run as run_extract_meta
 from .extract.meta import describe_step as describe_extract_meta
+from .extract.nav_product_day import describe_step as describe_extract_nav_product_day
+from .extract.nav_product_day import run as run_extract_nav_product_day
 from .extract.nav_seller_day import run as run_extract_nav_seller_day
 from .extract.nav_seller_day import describe_step as describe_extract_nav_seller_day
 from .extract.nav_store_day import run as run_extract_nav_store_day
@@ -47,15 +53,23 @@ def build_parser() -> argparse.ArgumentParser:
     subparsers.add_parser("init-layout", help="Create the expected pipeline directory layout")
     subparsers.add_parser("write-example-config", help="Copy pipeline.example.json to pipeline.json if missing")
     subparsers.add_parser("bootstrap-visma-history", help="Seed historical store and seller artifacts from the frozen published history")
+    subparsers.add_parser("bootstrap-product-history", help="Seed the product history snapshot from NAV SQL")
     subparsers.add_parser("extract-nav-store-day", help="Normalize the NAV store-day source JSON into the raw artifact")
     subparsers.add_parser("extract-nav-seller-day", help="Normalize the NAV seller-day source JSON into the raw artifact")
+    subparsers.add_parser("extract-nav-product-day", help="Normalize the NAV product-day source SQL into the raw artifact")
     subparsers.add_parser("extract-stock", help="Normalize stock balances and stock orders source JSON into raw artifacts")
     subparsers.add_parser("extract-meta", help="Build the metadata artifact with the current rounded update time")
     subparsers.add_parser("build-store-day", help="Build the published daily store feed from historical and NAV raw data")
     subparsers.add_parser("build-seller-day", help="Build the published daily seller feed from historical and NAV raw data")
+    subparsers.add_parser("build-product-day", help="Build the published daily product feed from historical and NAV raw data")
     subparsers.add_parser("build-stock", help="Build the published stock feed from stock and order raw data")
     subparsers.add_parser("publish-local", help="Copy publish artifacts into the beta static data folder")
-    subparsers.add_parser("publish-r2", help="Upload publish artifacts to the Cloudflare R2 bucket")
+    publish_r2_parser = subparsers.add_parser("publish-r2", help="Upload publish artifacts to the Cloudflare R2 bucket")
+    publish_r2_parser.add_argument(
+        "--include-product-history",
+        action="store_true",
+        help="Also upload the immutable product history snapshot to R2.",
+    )
     subparsers.add_parser("refresh-r2", help="Run the full refresh cycle before publishing to local beta data and Cloudflare R2")
     return parser
 
@@ -63,12 +77,15 @@ def build_parser() -> argparse.ArgumentParser:
 def _build_plan(config) -> list[PipelineStep]:
     return [
         describe_bootstrap_visma_history(config),
+        describe_bootstrap_product_history(config),
         describe_extract_nav_store_day(config),
         describe_extract_nav_seller_day(config),
+        describe_extract_nav_product_day(config),
         describe_extract_stock(config),
         describe_extract_meta(config),
         describe_build_store_day(config),
         describe_build_seller_day(config),
+        describe_build_product_day(config),
         describe_build_stock(config),
         describe_publish_local(config),
         describe_publish_r2(config),
@@ -97,10 +114,16 @@ def _run_refresh_r2_cycle(config) -> dict[str, object]:
     result: dict[str, object] = {"steps": []}
     window_start_date = compute_window_start_date(trailing_refresh_days=config.trailing_refresh_days)
     result["window_start_date"] = window_start_date
+    include_product_history = False
 
     if not config.historical_store_day.exists() or not config.historical_seller_day.exists():
         bootstrap_result = run_bootstrap_visma_history(config)
         result["steps"].append({"name": "bootstrap-visma-history", "result": bootstrap_result})
+
+    if not config.product_history_base_snapshot or not config.product_history_base_snapshot.exists():
+        bootstrap_product_result = run_bootstrap_product_history(config)
+        result["steps"].append({"name": "bootstrap-product-history", "result": bootstrap_product_result})
+        include_product_history = True
 
     nav_store_rows = run_extract_nav_store_day(config)
     result["steps"].append(
@@ -117,6 +140,15 @@ def _run_refresh_r2_cycle(config) -> dict[str, object]:
             "name": "extract-nav-seller-day",
             "rows": len(nav_seller_rows),
             "output_file": str(config.nav_seller_day_raw),
+        }
+    )
+
+    nav_product_rows = run_extract_nav_product_day(config)
+    result["steps"].append(
+        {
+            "name": "extract-nav-product-day",
+            "rows": len(nav_product_rows),
+            "output_file": str(config.nav_product_day_raw),
         }
     )
 
@@ -150,6 +182,15 @@ def _run_refresh_r2_cycle(config) -> dict[str, object]:
         }
     )
 
+    product_rows = run_build_product_day(config)
+    result["steps"].append(
+        {
+            "name": "build-product-day",
+            "rows": len(product_rows),
+            "output_file": str(config.product_day_publish),
+        }
+    )
+
     stock_rows = run_build_stock(config)
     result["steps"].append(
         {
@@ -162,7 +203,7 @@ def _run_refresh_r2_cycle(config) -> dict[str, object]:
     copied = publish_to_beta_static_copy(config)
     result["steps"].append({"name": "publish-local", "copied": copied})
 
-    uploaded = publish_to_r2(config)
+    uploaded = publish_to_r2(config, include_product_history=include_product_history)
     result["steps"].append({"name": "publish-r2", "uploaded": uploaded})
 
     refresh_state = build_success_state(
@@ -171,6 +212,7 @@ def _run_refresh_r2_cycle(config) -> dict[str, object]:
         store_rows=len(store_rows),
         seller_rows=len(seller_rows),
         stock_rows=len(stock_rows),
+        product_rows=len(product_rows),
     )
     save_refresh_state(config.refresh_state_file, refresh_state)
     result["steps"].append(
@@ -213,6 +255,11 @@ def main() -> int:
         print(json.dumps(result, indent=2))
         return 0
 
+    if args.command == "bootstrap-product-history":
+        result = run_bootstrap_product_history(config)
+        print(json.dumps(result, indent=2))
+        return 0
+
     if args.command == "extract-nav-store-day":
         payload = run_extract_nav_store_day(config)
         print(json.dumps({"rows": len(payload), "output_file": str(config.nav_store_day_raw)}, indent=2))
@@ -221,6 +268,11 @@ def main() -> int:
     if args.command == "extract-nav-seller-day":
         payload = run_extract_nav_seller_day(config)
         print(json.dumps({"rows": len(payload), "output_file": str(config.nav_seller_day_raw)}, indent=2))
+        return 0
+
+    if args.command == "extract-nav-product-day":
+        payload = run_extract_nav_product_day(config)
+        print(json.dumps({"rows": len(payload), "output_file": str(config.nav_product_day_raw)}, indent=2))
         return 0
 
     if args.command == "extract-stock":
@@ -259,6 +311,19 @@ def main() -> int:
         )
         return 0
 
+    if args.command == "build-product-day":
+        payload = run_build_product_day(config)
+        print(
+            json.dumps(
+                {
+                    "rows": len(payload),
+                    "output_file": str(config.product_day_publish),
+                },
+                indent=2,
+            )
+        )
+        return 0
+
     if args.command == "build-stock":
         payload = run_build_stock(config)
         print(
@@ -278,7 +343,7 @@ def main() -> int:
         return 0
 
     if args.command == "publish-r2":
-        uploaded = publish_to_r2(config)
+        uploaded = publish_to_r2(config, include_product_history=getattr(args, "include_product_history", False))
         print(json.dumps({"uploaded": uploaded}, indent=2))
         return 0
 

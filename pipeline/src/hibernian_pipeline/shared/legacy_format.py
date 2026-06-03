@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import re
+from datetime import date
+from datetime import datetime
 from typing import Any
 
 TOTAL_STORE_NAME = "Totalt"
@@ -58,6 +60,10 @@ def parse_date(value: Any) -> int:
         raise ValueError("Missing fakturadato")
     if isinstance(value, int):
         return value
+    if isinstance(value, datetime):
+        return int(value.strftime("%Y%m%d"))
+    if isinstance(value, date):
+        return int(value.strftime("%Y%m%d"))
     digits = re.sub(r"\D", "", str(value))
     if len(digits) != 8:
         raise ValueError(f"Invalid fakturadato: {value!r}")
@@ -77,6 +83,11 @@ def parse_number(value: Any) -> float:
     cleaned = _NUMBER_CLEANUP_RE.sub("", raw)
     if not cleaned or cleaned in {"-", ".", ","}:
         return 0.0
+
+    dash_decimal_match = re.fullmatch(r"(-?\d+)-(\d+)", cleaned)
+    if dash_decimal_match and "." not in cleaned and "," not in cleaned:
+        whole, fraction = dash_decimal_match.groups()
+        cleaned = f"{whole}.{fraction}"
 
     if "," in cleaned and "." in cleaned:
         cleaned = cleaned.replace(".", "").replace(",", ".")

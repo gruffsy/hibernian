@@ -80,16 +80,23 @@ class PipelineConfig:
     seller_day_publish: Path
     stock_publish: Path
     meta_publish: Path
-    trailing_refresh_days: int
-    backfill_start_date: int | None
-    nav_sql_server: str
-    nav_sql_database: str
-    nav_sql_driver: str
-    nav_sql_use_snapshot_isolation: bool
-    cloudflare_account_id: str
-    r2_bucket_name: str
-    r2_public_base_url: str
-    r2_object_prefix: str
+    nav_product_sql_file: Path | None = None
+    nav_product_day_raw: Path | None = None
+    product_history_base_snapshot: Path | None = None
+    product_history_publish: Path | None = None
+    product_day_publish: Path | None = None
+    trailing_refresh_days: int = 7
+    product_refresh_days: int = 2
+    backfill_start_date: int | None = None
+    product_backfill_start_date: int = 20250101
+    nav_sql_server: str = DEFAULT_NAV_SQL_SERVER
+    nav_sql_database: str = DEFAULT_NAV_SQL_DATABASE
+    nav_sql_driver: str = DEFAULT_NAV_SQL_DRIVER
+    nav_sql_use_snapshot_isolation: bool = True
+    cloudflare_account_id: str = DEFAULT_CLOUDFLARE_ACCOUNT_ID
+    r2_bucket_name: str = DEFAULT_R2_BUCKET_NAME
+    r2_public_base_url: str = DEFAULT_R2_PUBLIC_BASE_URL
+    r2_object_prefix: str = DEFAULT_R2_OBJECT_PREFIX
 
     def to_dict(self) -> dict[str, object]:
         data = {"paths": self.paths.to_dict()}
@@ -188,8 +195,24 @@ def load_config(pipeline_root: Path) -> PipelineConfig:
         seller_day_publish=resolve_path("seller_day_publish", paths.artifacts_publish_dir / "seller_day.json"),
         stock_publish=resolve_path("stock_publish", paths.artifacts_publish_dir / "stock.json"),
         meta_publish=resolve_path("meta_publish", paths.artifacts_publish_dir / "meta.json"),
+        nav_product_sql_file=resolve_path("nav_product_sql_file", paths.sql_sales_dir / "nav_product_day_window.sql"),
+        nav_product_day_raw=resolve_path("nav_product_day_raw", paths.artifacts_raw_dir / "nav_product_day_raw.json"),
+        product_history_base_snapshot=resolve_path(
+            "product_history_base_snapshot",
+            paths.artifacts_state_dir / "product_history_base_snapshot.json",
+        ),
+        product_history_publish=resolve_path(
+            "product_history_publish",
+            paths.artifacts_publish_dir / "product_history.json",
+        ),
+        product_day_publish=resolve_path(
+            "product_day_publish",
+            paths.artifacts_publish_dir / "product_day.json",
+        ),
         trailing_refresh_days=int(values.get("trailing_refresh_days", 7)),
+        product_refresh_days=int(values.get("product_refresh_days", 2)),
         backfill_start_date=resolve_optional_int("backfill_start_date"),
+        product_backfill_start_date=int(values.get("product_backfill_start_date", 20250101)),
         nav_sql_server=values.get("nav_sql_server", DEFAULT_NAV_SQL_SERVER),
         nav_sql_database=values.get("nav_sql_database", DEFAULT_NAV_SQL_DATABASE),
         nav_sql_driver=values.get("nav_sql_driver", DEFAULT_NAV_SQL_DRIVER),

@@ -4,7 +4,8 @@ param(
 
   [string]$Objective = "",
   [switch]$AllowPipelineData,
-  [switch]$SkipPrimaryBeta
+  [switch]$SkipPrimaryBeta,
+  [switch]$IncludeSecondaryBeta
 )
 
 $ErrorActionPreference = "Stop"
@@ -73,6 +74,9 @@ $syncArgs = @(
 )
 if ($SkipPrimaryBeta) {
   $syncArgs += "-SkipPrimaryBeta"
+}
+if ($IncludeSecondaryBeta) {
+  $syncArgs += "-IncludeSecondaryRemote"
 }
 
 Write-Host "Syncing to beta remotes..."

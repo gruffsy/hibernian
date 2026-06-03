@@ -17,6 +17,7 @@ class RefreshState:
     last_store_row_count: int | None = None
     last_seller_row_count: int | None = None
     last_stock_row_count: int | None = None
+    last_product_row_count: int | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -37,6 +38,7 @@ def load_refresh_state(path: Path, *, trailing_refresh_days: int) -> RefreshStat
         last_store_row_count=_parse_int(payload.get("last_store_row_count")),
         last_seller_row_count=_parse_int(payload.get("last_seller_row_count")),
         last_stock_row_count=_parse_int(payload.get("last_stock_row_count")),
+        last_product_row_count=_parse_int(payload.get("last_product_row_count")),
     )
 
 
@@ -52,6 +54,7 @@ def build_success_state(
     store_rows: int,
     seller_rows: int,
     stock_rows: int,
+    product_rows: int | None = None,
     finished_at: datetime | None = None,
 ) -> RefreshState:
     timestamp = (finished_at or datetime.now()).isoformat(timespec="seconds")
@@ -62,6 +65,7 @@ def build_success_state(
         last_store_row_count=store_rows,
         last_seller_row_count=seller_rows,
         last_stock_row_count=stock_rows,
+        last_product_row_count=product_rows,
     )
 
 

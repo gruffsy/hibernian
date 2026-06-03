@@ -15,14 +15,19 @@ from ..settings import PipelineConfig
 from ..shared.models import PipelineStep
 
 
-def _publish_targets(config: PipelineConfig) -> dict[Path, str]:
+def _publish_targets(config: PipelineConfig, *, include_product_history: bool = False) -> dict[Path, str]:
     prefix = config.r2_object_prefix.strip("/")
-    return {
+    targets: dict[Path, str] = {
         config.store_day_publish: f"{prefix}/salg_fra_22_pr_dag_med_total.json",
         config.seller_day_publish: f"{prefix}/salg_pr_selger_fra_22_pr_dag.json",
         config.stock_publish: f"{prefix}/merged_stock_orders.json",
         config.meta_publish: f"{prefix}/tid.json",
     }
+    if include_product_history and config.product_history_publish:
+        targets[config.product_history_publish] = f"{prefix}/product_history.json"
+    if config.product_day_publish:
+        targets[config.product_day_publish] = f"{prefix}/product_day.json"
+    return targets
 
 
 def _resolve_access_keys() -> tuple[str, str] | None:
@@ -142,12 +147,12 @@ def _public_url(config: PipelineConfig, object_key: str) -> str:
     return f"{config.r2_public_base_url.rstrip('/')}/{encoded_key}"
 
 
-def publish_to_r2(config: PipelineConfig) -> list[dict[str, Any]]:
+def publish_to_r2(config: PipelineConfig, *, include_product_history: bool = False) -> list[dict[str, Any]]:
     token = os.getenv("HIBERNIAN_CLOUDFLARE_API_TOKEN") or os.getenv("CLOUDFLARE_API_TOKEN")
     access_keys = _resolve_access_keys()
     uploaded: list[dict[str, Any]] = []
 
-    for source, object_key in _publish_targets(config).items():
+    for source, object_key in _publish_targets(config, include_product_history=include_product_history).items():
         if not source.exists():
             continue
 
