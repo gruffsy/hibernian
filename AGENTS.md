@@ -14,10 +14,10 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-06-02T14:40:09
-updated_at: 2026-06-02T14:45:43
-objective: Move mojibake repair out of browser hot path
-scope: frontend/app.js,legacy/frontend-static/quasarapp.js
+started_at: 2026-06-03T09:34:01
+updated_at: 2026-06-03T09:40:06
+objective: Refresh pipeline data to remove mojibake store labels
+scope: pipeline/src/hibernian_pipeline/shared/legacy_format.py,pipeline/scripts/run_refresh_r2.ps1,pipeline/scripts/publish_r2_only.ps1,legacy/frontend-static/data/publish/*
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
 blockers: ingen
@@ -507,5 +507,16 @@ owner: codex
 status: complete
 summary: Removed browser-side mojibake repair and kept text normalization in the pipeline; verified both JS entrypoints parse cleanly.
 files: frontend/app.js,legacy/frontend-static/quasarapp.js
+next: <ikke spesifisert>
+```
+
+### 2026-06-03T09:40:06
+
+```text
+timestamp: 2026-06-03T09:40:06
+owner: codex
+status: complete
+summary: Regenerated and republished data; Tønsberg now appears only once and the year chart should no longer split the store into two bars.
+files: pipeline/src/hibernian_pipeline/shared/legacy_format.py,pipeline/scripts/run_refresh_r2.ps1,pipeline/scripts/publish_r2_only.ps1,legacy/frontend-static/data/publish/*
 next: <ikke spesifisert>
 ```
