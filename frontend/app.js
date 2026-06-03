@@ -1919,7 +1919,7 @@ function renderNav(page) {
     <nav class="beta-nav" aria-label="Hovednavigasjon">
       ${pages
         .map(([key, label]) => {
-          if (key === "day" || key === "week" || key === "month" || key === "year" || key === "people" || key === "stock") {
+          if (key === "day" || key === "week" || key === "month" || key === "year" || key === "people" || key === "stock" || key === "products") {
             const className = page === key ? "nav-pill is-active" : "nav-pill";
             return `<button class="${className}" type="button" data-page="${key}">${label}</button>`;
           }
