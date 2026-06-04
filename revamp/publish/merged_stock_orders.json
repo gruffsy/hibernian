@@ -1592,12 +1592,12 @@
         "Paller på vei": 28,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
-                "Antall": 552.96
-            },
-            {
                 "Ukenr": "34/2026",
                 "Antall": 737.28
+            },
+            {
+                "Ukenr": "32/2026",
+                "Antall": 552.96
             }
         ]
     },
@@ -1894,15 +1894,15 @@
         "Paller på vei": 13,
         "Bestilling på vei": [
             {
+                "Ukenr": "34/2026",
+                "Antall": 276.48
+            },
+            {
                 "Ukenr": "28/2026",
                 "Antall": 46.08
             },
             {
                 "Ukenr": "32/2026",
-                "Antall": 276.48
-            },
-            {
-                "Ukenr": "34/2026",
                 "Antall": 276.48
             }
         ]
@@ -1988,15 +1988,15 @@
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
+                "Ukenr": "34/2026",
+                "Antall": 184.32
+            },
+            {
                 "Ukenr": "28/2026",
                 "Antall": 92.16
             },
             {
                 "Ukenr": "32/2026",
-                "Antall": 184.32
-            },
-            {
-                "Ukenr": "34/2026",
                 "Antall": 184.32
             }
         ]
@@ -2020,6 +2020,118 @@
             {
                 "Ukenr": "32/2026",
                 "Antall": 230.4
+            }
+        ]
+    },
+    {
+        "Prodno": "410130001",
+        "Beskrivelse": "NSM GRÅ SKIFER PANEL 60X15CM",
+        "antall på lager": 0.0,
+        "antall pr pall": 18.9,
+        "Paller på lager": 0,
+        "Paller på vei": 16,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "29/2026",
+                "Antall": 302.4
+            }
+        ]
+    },
+    {
+        "Prodno": "410130002",
+        "Beskrivelse": "NSM GRÅ SKIFER PANEL UTVENDIG HJØRNE 40,5+10,5X15CM",
+        "antall på lager": 0.0,
+        "antall pr pall": 180.0,
+        "Paller på lager": 0,
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "29/2026",
+                "Antall": 720.0
+            }
+        ]
+    },
+    {
+        "Prodno": "410180001",
+        "Beskrivelse": "NSM SORT SKIFER PANEL 60X15CM",
+        "antall på lager": 0.0,
+        "antall pr pall": 18.9,
+        "Paller på lager": 0,
+        "Paller på vei": 12,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "29/2026",
+                "Antall": 233.28
+            }
+        ]
+    },
+    {
+        "Prodno": "410180002",
+        "Beskrivelse": "NSM SORT SKIFER PANEL UTVENDIG HJØRNE 40,5+10,5X15CM",
+        "antall på lager": 0.0,
+        "antall pr pall": 180.0,
+        "Paller på lager": 0,
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "29/2026",
+                "Antall": 720.0
+            }
+        ]
+    },
+    {
+        "Prodno": "410356020",
+        "Beskrivelse": "NSM STONE WALL LOFOTEN SØMLØS 60X20CM",
+        "antall på lager": 0.0,
+        "antall pr pall": 11.8,
+        "Paller på lager": 0,
+        "Paller på vei": 12,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "28/2026",
+                "Antall": 141.12
+            }
+        ]
+    },
+    {
+        "Prodno": "410354010",
+        "Beskrivelse": "NSM STONE WALL LOFOTEN SØMLØS UTVENDIG HJØRNE 36+7,5X20CM",
+        "antall på lager": 0.0,
+        "antall pr pall": 80.0,
+        "Paller på lager": 0,
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "28/2026",
+                "Antall": 240.0
+            }
+        ]
+    },
+    {
+        "Prodno": "410526020",
+        "Beskrivelse": "NSM STONE WALL VALDRES SØMLØS 60X20CM",
+        "antall på lager": 0.0,
+        "antall pr pall": 11.8,
+        "Paller på lager": 0,
+        "Paller på vei": 11,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "28/2026",
+                "Antall": 129.36
+            }
+        ]
+    },
+    {
+        "Prodno": "410524010",
+        "Beskrivelse": "NSM STONE WALL VALDRES SØMLØS UTVENDIG HJØRNE 36+7,5X20CM",
+        "antall på lager": 0.0,
+        "antall pr pall": 80.0,
+        "Paller på lager": 0,
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "28/2026",
+                "Antall": 240.0
             }
         ]
     },
