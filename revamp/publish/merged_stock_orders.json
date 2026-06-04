@@ -1592,12 +1592,12 @@
         "Paller på vei": 28,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
-                "Antall": 737.28
-            },
-            {
                 "Ukenr": "32/2026",
                 "Antall": 552.96
+            },
+            {
+                "Ukenr": "34/2026",
+                "Antall": 737.28
             }
         ]
     },
@@ -1894,15 +1894,15 @@
         "Paller på vei": 13,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
-                "Antall": 276.48
-            },
-            {
                 "Ukenr": "28/2026",
                 "Antall": 46.08
             },
             {
                 "Ukenr": "32/2026",
+                "Antall": 276.48
+            },
+            {
+                "Ukenr": "34/2026",
                 "Antall": 276.48
             }
         ]
@@ -1988,15 +1988,15 @@
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
-                "Antall": 184.32
-            },
-            {
                 "Ukenr": "28/2026",
                 "Antall": 92.16
             },
             {
                 "Ukenr": "32/2026",
+                "Antall": 184.32
+            },
+            {
+                "Ukenr": "34/2026",
                 "Antall": 184.32
             }
         ]
