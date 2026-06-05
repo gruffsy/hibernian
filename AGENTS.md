@@ -14,12 +14,12 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-06-03T20:54:00
-updated_at: 2026-06-03T21:15:00
-objective: Finish the lean product page rollout with lazy loading and the compact product summary file
-scope: frontend, pipeline, AGENTS.md
-next_step: <none>
-verification: node --check frontend/app.js; python AST parse for pipeline settings, local/r2 publish, and product tests
+started_at: 2026-06-05T11:06:26
+updated_at: 2026-06-05T11:12:48
+objective: Fix product summary refresh and totals
+scope: pipeline product SQL, product refresh verification, AGENTS.md
+next_step: <ikke spesifisert>
+verification: <ikke spesifisert>
 blockers: ingen
 ```
 
@@ -542,5 +542,16 @@ owner: codex
 status: complete
 summary: Added a seller date picker and derived day, month, and year rankings from the selected date so the seller page follows the same date-driven flow as day.
 files: frontend/app.js
+next: <ikke spesifisert>
+```
+
+### 2026-06-05T11:12:48
+
+```text
+timestamp: 2026-06-05T11:12:48
+owner: codex
+status: complete
+summary: Fixed product SQL so refresh no longer fails on missing Gross Amount, uses transaction header date, and keeps line amounts unrounded until build; verified product-only R2 upload and SQL header-vs-line totals.
+files: pipeline product SQL, product refresh verification, AGENTS.md
 next: <ikke spesifisert>
 ```

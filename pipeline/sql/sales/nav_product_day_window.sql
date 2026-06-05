@@ -3,11 +3,10 @@ select
     i.[Description] as [Description],
     i.[Item Category] as [Item Category],
     i.[Retail Product Group] as [Retail Product Group],
-    se.[Date] as [fakturadato],
+    th.[Date] as [fakturadato],
     SUM(se.[Quantity]) * -1 as [antall],
-    CAST(SUM(se.[Gross Amount]) * -1 AS int) AS [mmoms],
-    CAST(SUM(se.[Net Amount]) * -1 AS int) AS [umoms],
-    CAST((SUM(se.[Net Amount]) - SUM(se.[Cost Amount])) * -1 AS int) AS [db],
+    SUM(se.[Net Amount]) * -1 AS [umoms],
+    (SUM(se.[Net Amount]) - SUM(se.[Cost Amount])) * -1 AS [db],
     CASE
         WHEN SUM(se.[Net Amount]) = 0 THEN 0
         ELSE CAST(ROUND((SUM(se.[Net Amount]) - SUM(se.[Cost Amount])) / SUM(se.[Net Amount]), 4) AS float)
@@ -29,8 +28,8 @@ group by
     i.[Description],
     i.[Item Category],
     i.[Retail Product Group],
-    se.[Date]
+    th.[Date]
 order by
-    se.[Date] desc,
+    th.[Date] desc,
     [umoms] desc,
     [Item No_] asc
