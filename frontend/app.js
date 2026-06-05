@@ -867,6 +867,17 @@ function renderProductPeriodToggle(state) {
   `;
 }
 
+function renderProductDevelopmentNote() {
+  return `
+    <section class="product-dev-note" role="note" aria-label="Produktsiden er under utvikling">
+      <p class="product-dev-note-label">Under utvikling</p>
+      <p class="product-dev-note-text">
+        Produktsiden er fortsatt under arbeid. Tall og filtrering kan endre seg, og det kan forekomme midlertidige feil mens vi finjusterer grunnlaget.
+      </p>
+    </section>
+  `;
+}
+
 function renderInlineLoadingState(title, message) {
   return `
     <article class="summary-card loading-card">
@@ -1075,6 +1086,8 @@ function renderProductsPageCompact(state) {
         ${renderProductPeriodToggle(state)}
         ${renderProductMetricToggle(state)}
       </section>
+
+      ${renderProductDevelopmentNote()}
 
       <section class="summary-band product-summary-band">
         ${renderProductSummaryCard(state, periodLabel, periodData)}

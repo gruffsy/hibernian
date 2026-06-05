@@ -614,6 +614,31 @@ select {
   pointer-events: none;
 }
 
+.product-dev-note {
+  margin: var(--section-gap) 0 0;
+  padding: 16px 18px;
+  border: 1px solid rgba(174, 132, 50, 0.22);
+  border-radius: 18px;
+  background: rgba(255, 247, 222, 0.72);
+  color: var(--text);
+}
+
+.product-dev-note-label {
+  margin: 0;
+  color: var(--teal);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.product-dev-note-text {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
 .seller-columns {
   grid-template-columns: 1fr;
 }

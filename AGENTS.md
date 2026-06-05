@@ -15,7 +15,7 @@ Rules:
 status: complete
 owner: codex
 started_at: 2026-06-05T11:20:52
-updated_at: 2026-06-05T11:51:28
+updated_at: 2026-06-05T15:04:01
 objective: Make beta frontend leaner for older iPhone Safari
 scope: frontend lazy loading, AGENTS.md
 next_step: <ikke spesifisert>
@@ -563,6 +563,17 @@ timestamp: 2026-06-05T11:51:28
 owner: codex
 status: complete
 summary: Made beta startup lighter for older iPhone Safari by loading only day/meta initially, lazy-loading seller/stock/product data by page, loading Chart.js only for chart pages, and removing risky older-Safari APIs/spread max patterns from frontend/app.js.
+files: frontend lazy loading, AGENTS.md
+next: <ikke spesifisert>
+```
+
+### 2026-06-05T15:04:01
+
+```text
+timestamp: 2026-06-05T15:04:01
+owner: codex
+status: complete
+summary: Added a compact development warning to the product page while keeping the lean startup changes in place for old Safari users.
 files: frontend lazy loading, AGENTS.md
 next: <ikke spesifisert>
 ```
