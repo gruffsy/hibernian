@@ -20,6 +20,8 @@ inner join [mf_transaction_header__hib] th
 left join [mf_items] i
     on se.[Item No_] = i.[No_]
 where th.[Transaction Type] = 2
+    and th.[Receipt No_] is not null
+    and th.[Customer Account] = 0
     and th.[Date] >= ?
     and th.[Date] < ?
 group by
