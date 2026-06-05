@@ -14,10 +14,10 @@ Rules:
 ```text
 status: complete
 owner: codex
-started_at: 2026-06-05T11:06:26
-updated_at: 2026-06-05T11:12:48
-objective: Fix product summary refresh and totals
-scope: pipeline product SQL, product refresh verification, AGENTS.md
+started_at: 2026-06-05T11:20:52
+updated_at: 2026-06-05T11:51:28
+objective: Make beta frontend leaner for older iPhone Safari
+scope: frontend lazy loading, AGENTS.md
 next_step: <ikke spesifisert>
 verification: <ikke spesifisert>
 blockers: ingen
@@ -553,5 +553,16 @@ owner: codex
 status: complete
 summary: Fixed product SQL so refresh no longer fails on missing Gross Amount, uses transaction header date, and keeps line amounts unrounded until build; verified product-only R2 upload and SQL header-vs-line totals.
 files: pipeline product SQL, product refresh verification, AGENTS.md
+next: <ikke spesifisert>
+```
+
+### 2026-06-05T11:51:28
+
+```text
+timestamp: 2026-06-05T11:51:28
+owner: codex
+status: complete
+summary: Made beta startup lighter for older iPhone Safari by loading only day/meta initially, lazy-loading seller/stock/product data by page, loading Chart.js only for chart pages, and removing risky older-Safari APIs/spread max patterns from frontend/app.js.
+files: frontend lazy loading, AGENTS.md
 next: <ikke spesifisert>
 ```

@@ -23,9 +23,11 @@ const META_URL = {
   local: `${LOCAL_PUBLISH_BASE_URL}/tid.json`,
   remote: `${R2_BASE_URL}/tid.json`,
 };
+const CHART_JS_URL = "https://cdn.jsdelivr.net/npm/chart.js";
 const app = document.getElementById("app");
 const activeVisuals = [];
 let resizeVisualsBound = false;
+let chartLibraryPromise = null;
 
 function getDataMode() {
   const params = new URLSearchParams(window.location.search);
@@ -186,6 +188,10 @@ function formatDayHeading(dateKey) {
 function formatInputDate(dateKey) {
   const raw = String(dateKey);
   return `${raw.slice(0, 4)}-${raw.slice(4, 6)}-${raw.slice(6, 8)}`;
+}
+
+function normalizeUrlDate(value) {
+  return normalizeDisplayText(value).replace(/-/g, "");
 }
 
 function parseDateKey(dateKey) {
@@ -444,7 +450,7 @@ function enrichSellerDayRow(row) {
 
 async function loadSellerData() {
   const dayRows = (await fetchJsonWithFallback(SELLER_DAY_DATA_URL)).map(enrichSellerDayRow);
-  const latestDay = Math.max(...dayRows.map((row) => row.fakturadato));
+  const latestDay = maxNumberBy(dayRows, (row) => row.fakturadato);
   const latestMonthKey = monthKey(
     Number(String(latestDay).slice(0, 4)),
     Number(String(latestDay).slice(4, 6))
@@ -472,7 +478,7 @@ async function loadSellerData() {
 
 function readStockValue(row, keys, fallback = 0) {
   for (const key of keys) {
-    if (Object.hasOwn(row, key)) {
+    if (Object.prototype.hasOwnProperty.call(row, key)) {
       return row[key];
     }
   }
@@ -529,6 +535,131 @@ async function loadStockData() {
     }
     return left.description.localeCompare(right.description, "nb-NO");
   });
+}
+
+function applySellerData(state, sellerData) {
+  state.sellerRawRows = sellerData.rawRows;
+  state.sellerDayRows = sellerData.dayRows;
+  state.sellerMonthRows = sellerData.monthRows;
+  state.sellerYearRows = sellerData.yearRows;
+  state.sellerLatestDay = sellerData.latestDay;
+  state.sellerLatestMonthKey = sellerData.latestMonthKey;
+  state.sellerLatestYear = sellerData.latestYear;
+
+  const selected = parseSellerDateKey(state.sellerSelectedDate);
+  if (!selected || !state.dayGrouped.has(selected)) {
+    state.sellerSelectedDate = String(sellerData.latestDay);
+  }
+}
+
+async function ensureSellerData(state) {
+  if (state.sellerDataLoaded) {
+    return state.sellerRawRows;
+  }
+  if (state.sellerDataPromise) {
+    return state.sellerDataPromise;
+  }
+
+  state.sellerDataLoading = true;
+  state.sellerDataError = null;
+  state.sellerDataPromise = loadSellerData()
+    .then((sellerData) => {
+      applySellerData(state, sellerData);
+      state.sellerDataLoaded = true;
+      state.sellerDataLoading = false;
+      state.sellerDataPromise = null;
+      return state.sellerRawRows;
+    })
+    .catch((error) => {
+      state.sellerDataLoading = false;
+      state.sellerDataPromise = null;
+      state.sellerDataError = error instanceof Error ? error.message : String(error);
+      throw error;
+    });
+
+  return state.sellerDataPromise;
+}
+
+async function ensureStockData(state) {
+  if (state.stockDataLoaded) {
+    return state.stockRows;
+  }
+  if (state.stockDataPromise) {
+    return state.stockDataPromise;
+  }
+
+  state.stockDataLoading = true;
+  state.stockDataError = null;
+  state.stockDataPromise = loadStockData()
+    .then((rows) => {
+      state.stockRows = rows;
+      state.stockDataLoaded = true;
+      state.stockDataLoading = false;
+      state.stockDataPromise = null;
+      return rows;
+    })
+    .catch((error) => {
+      state.stockDataLoading = false;
+      state.stockDataPromise = null;
+      state.stockDataError = error instanceof Error ? error.message : String(error);
+      throw error;
+    });
+
+  return state.stockDataPromise;
+}
+
+function maxNumberBy(items, selector, fallback = 0) {
+  let maxValue = fallback;
+  let hasValue = false;
+
+  for (const item of items) {
+    const value = Number(selector(item));
+    if (!Number.isFinite(value)) {
+      continue;
+    }
+    if (!hasValue || value > maxValue) {
+      maxValue = value;
+      hasValue = true;
+    }
+  }
+
+  return hasValue ? maxValue : fallback;
+}
+
+function loadScriptOnce(src) {
+  return new Promise((resolve, reject) => {
+    const existing = document.querySelector(`script[data-dynamic-src="${src}"]`);
+    if (existing) {
+      if (existing.dataset.loaded === "true") {
+        resolve();
+        return;
+      }
+      existing.addEventListener("load", resolve, { once: true });
+      existing.addEventListener("error", reject, { once: true });
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.src = src;
+    script.async = true;
+    script.dataset.dynamicSrc = src;
+    script.addEventListener("load", () => {
+      script.dataset.loaded = "true";
+      resolve();
+    }, { once: true });
+    script.addEventListener("error", reject, { once: true });
+    document.head.appendChild(script);
+  });
+}
+
+function ensureChartLibrary() {
+  if (window.Chart) {
+    return Promise.resolve(window.Chart);
+  }
+  if (!chartLibraryPromise) {
+    chartLibraryPromise = loadScriptOnce(CHART_JS_URL).then(() => window.Chart);
+  }
+  return chartLibraryPromise;
 }
 
 function normalizeProductMetricRow(row) {
@@ -733,6 +864,16 @@ function renderProductPeriodToggle(state) {
         )
         .join("")}
     </div>
+  `;
+}
+
+function renderInlineLoadingState(title, message) {
+  return `
+    <article class="summary-card loading-card">
+      <p class="summary-label">${title}</p>
+      <h3>Laster...</h3>
+      <p class="chart-caption">${message}</p>
+    </article>
   `;
 }
 
@@ -2596,6 +2737,13 @@ function getSellerRankings(state) {
 }
 
 function renderPeopleCards(state) {
+  if (state.sellerDataLoading) {
+    return renderInlineLoadingState("Selgere", "Henter selgerstatistikk først når siden åpnes.");
+  }
+  if (state.sellerDataError) {
+    return renderInlineLoadingState("Selgere", `Kunne ikke laste selgerdata: ${state.sellerDataError}`);
+  }
+
   const { query } = getSellerRankings(state);
   const periodData = buildSellerPeriodData(state);
   const filterRows = (rows) => {
@@ -2912,6 +3060,13 @@ function renderStockSection(state, filteredRows, stats) {
 }
 
 function renderStockContent(state) {
+  if (state.stockDataLoading) {
+    return renderInlineLoadingState("Lager", "Henter lagerdata først når siden åpnes.");
+  }
+  if (state.stockDataError) {
+    return renderInlineLoadingState("Lager", `Kunne ikke laste lagerdata: ${state.stockDataError}`);
+  }
+
   const filteredRows = filterStockRows(state);
   const stats = buildStockStats(filteredRows);
   return renderStockSection(state, filteredRows, stats);
@@ -4439,15 +4594,25 @@ function initYearCharts(state) {
 }
 
 function initVisuals(state) {
-  if (state.page === "week") {
-    initWeekCharts(state);
+  if (!["week", "month", "year"].includes(state.page)) {
+    return;
   }
-  if (state.page === "month") {
-    initMonthCharts(state);
-  }
-  if (state.page === "year") {
-    initYearCharts(state);
-  }
+
+  ensureChartLibrary()
+    .then(() => {
+      if (state.page === "week") {
+        initWeekCharts(state);
+      }
+      if (state.page === "month") {
+        initMonthCharts(state);
+      }
+      if (state.page === "year") {
+        initYearCharts(state);
+      }
+    })
+    .catch(() => {
+      // Charts are decorative; the tables remain the source of truth if Chart.js cannot load.
+    });
 }
 
 function syncUrl(state) {
@@ -4558,7 +4723,7 @@ function bindEvents(state) {
   const datePicker = document.querySelector("[data-role='date-picker']");
   if (datePicker) {
     datePicker.addEventListener("change", (event) => {
-      const value = event.target.value.replaceAll("-", "");
+      const value = normalizeUrlDate(event.target.value);
       if (state.dayGrouped.has(value)) {
         state.selectedDate = value;
         paint(state);
@@ -4669,7 +4834,7 @@ function bindEvents(state) {
   const sellerDatePicker = document.querySelector("[data-role='seller-date-picker']");
   if (sellerDatePicker) {
     sellerDatePicker.addEventListener("change", (event) => {
-      const value = event.target.value.replaceAll("-", "");
+      const value = normalizeUrlDate(event.target.value);
       if (state.dayGrouped.has(value)) {
         state.sellerSelectedDate = value;
         syncUrl(state);
@@ -4681,7 +4846,7 @@ function bindEvents(state) {
   const productDatePicker = document.querySelector("[data-role='product-date-picker']");
   if (productDatePicker) {
     productDatePicker.addEventListener("change", (event) => {
-      const value = event.target.value.replaceAll("-", "");
+      const value = normalizeUrlDate(event.target.value);
       if (state.productData?.availableDates?.includes(value)) {
         state.productSelectedDate = value;
         syncUrl(state);
@@ -4818,6 +4983,32 @@ function bindEvents(state) {
 
 function paint(state, viewState = null) {
   clearVisuals();
+  if (state.page === "people" && !state.sellerDataLoaded && !state.sellerDataLoading) {
+    ensureSellerData(state)
+      .then(() => {
+        if (state.page === "people") {
+          repaintPreservingViewport(state);
+        }
+      })
+      .catch(() => {
+        if (state.page === "people") {
+          repaintPreservingViewport(state);
+        }
+      });
+  }
+  if (state.page === "stock" && !state.stockDataLoaded && !state.stockDataLoading) {
+    ensureStockData(state)
+      .then(() => {
+        if (state.page === "stock") {
+          repaintPreservingViewport(state);
+        }
+      })
+      .catch(() => {
+        if (state.page === "stock") {
+          repaintPreservingViewport(state);
+        }
+      });
+  }
   if (state.page === "products" && !state.productData && !state.productDataLoading) {
     ensureProductData(state)
       .then(() => {
@@ -4871,14 +5062,7 @@ async function render() {
   }
 
   try {
-    const [dayData, monthData, sellerData, stockRows, updatedAt] = await Promise.all([
-      loadDayData(),
-      loadMonthData(),
-      loadSellerData(),
-      loadStockData(),
-      loadUpdatedAt(),
-    ]);
-    const productData = await loadProductData().catch(() => null);
+    const [dayData, updatedAt] = await Promise.all([loadDayData(), loadUpdatedAt()]);
 
     const { canonicalMonths, monthOptions } = buildCanonicalMonths(dayData);
     const { canonicalYears, yearOptions } = buildCanonicalYears(dayData);
@@ -4906,7 +5090,8 @@ async function render() {
       )
     ).sort();
 
-    const requestedProductDate = params.get("productDate")?.replaceAll("-", "") || null;
+    const requestedSellerDate = normalizeUrlDate(params.get("sellerDate"));
+    const requestedProductDate = normalizeUrlDate(params.get("productDate")) || null;
     const state = {
       page: params.get("page") === "week"
         ? "week"
@@ -4940,7 +5125,7 @@ async function render() {
       weekCutoffOptions,
       weekCutoffIsoDay: weekCutoffOptions[weekCutoffOptions.length - 1]?.isoDay || 5,
       monthCanonical: canonicalMonths,
-      monthCompareData: monthData.compareRows,
+      monthCompareData: [],
       monthOptions,
       latestAvailableCutoffDay,
       monthCutoffDay: latestAvailableCutoffDay,
@@ -4960,14 +5145,18 @@ async function render() {
       yearCutoffOptions,
       latestAvailableCutoffMonthDay,
       yearCutoffMonthDay: latestAvailableCutoffMonthDay,
-      sellerRawRows: sellerData.rawRows,
-      sellerDayRows: sellerData.dayRows,
-      sellerMonthRows: sellerData.monthRows,
-      sellerYearRows: sellerData.yearRows,
-      sellerLatestDay: sellerData.latestDay,
-      sellerLatestMonthKey: sellerData.latestMonthKey,
-      sellerLatestYear: sellerData.latestYear,
-      sellerSelectedDate: params.get("sellerDate") && dayData.grouped.has(params.get("sellerDate")) ? params.get("sellerDate") : sellerData.latestDay,
+      sellerRawRows: [],
+      sellerDayRows: [],
+      sellerMonthRows: [],
+      sellerYearRows: [],
+      sellerLatestDay: dayData.dates[0],
+      sellerLatestMonthKey: selectedMonthKey,
+      sellerLatestYear: selectedYear,
+      sellerSelectedDate: requestedSellerDate && dayData.grouped.has(requestedSellerDate) ? requestedSellerDate : dayData.dates[0],
+      sellerDataLoaded: false,
+      sellerDataLoading: false,
+      sellerDataPromise: null,
+      sellerDataError: null,
       sellerMetric: "umomsValue",
       sellerQuery: "",
       productData: null,
@@ -4977,11 +5166,21 @@ async function render() {
       productSelectedDate: requestedProductDate,
       productPeriod: ["day", "week", "month", "year"].includes(params.get("productPeriod")) ? params.get("productPeriod") : "day",
       productMetric: ["antall", "umoms", "db"].includes(params.get("productMetric")) ? params.get("productMetric") : "umoms",
-      stockRows,
+      stockRows: [],
+      stockDataLoaded: false,
+      stockDataLoading: false,
+      stockDataPromise: null,
+      stockDataError: null,
       stockFilter: "all",
       stockQuery: "",
     };
 
+    if (state.page === "people") {
+      await ensureSellerData(state).catch(() => null);
+    }
+    if (state.page === "stock") {
+      await ensureStockData(state).catch(() => null);
+    }
     if (state.page === "products") {
       await ensureProductData(state);
     }
