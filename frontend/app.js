@@ -896,14 +896,16 @@ function renderProductSummaryCard(state, periodLabel, periodData) {
   const metric = state.productMetric || "umoms";
   const totals = periodData.totals || { antall: 0, umoms: 0, db: 0, dg: 0 };
   const metricRows = Array.isArray(periodData.metrics?.[metric]) ? periodData.metrics[metric] : [];
+  const overviewValue = metric === "umoms" ? (totals.umoms || 0) * 1.25 : totals[metric] || 0;
+  const overviewLabel = metric === "umoms" ? "u/mva" : getProductMetricLabel(metric).toLowerCase();
 
   return `
     <article class="summary-card product-summary-card summary-emphasis">
       <p class="summary-label">Produktoversikt</p>
       <div class="summary-topline">
         <div class="summary-topline-main">
-          <h3>${formatProductMetricValue(totals[metric] || 0, metric)}</h3>
-          <p class="chart-caption">${periodLabel} · sortert på ${getProductMetricLabel(metric).toLowerCase()}</p>
+          <h3>${metric === "umoms" ? formatCurrency(overviewValue) : formatProductMetricValue(overviewValue, metric)}</h3>
+          <p class="chart-caption">${periodLabel} · sortert på ${overviewLabel}</p>
         </div>
         <div class="summary-side summary-side-stack">
           <div class="summary-side-item">
@@ -1087,11 +1089,11 @@ function renderProductsPageCompact(state) {
         ${renderProductMetricToggle(state)}
       </section>
 
-      ${renderProductDevelopmentNote()}
-
       <section class="summary-band product-summary-band">
         ${renderProductSummaryCard(state, periodLabel, periodData)}
       </section>
+
+      ${renderProductDevelopmentNote()}
 
       <section class="content-main product-layout">
         <section class="month-block product-period-card">
