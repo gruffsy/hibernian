@@ -148,15 +148,6 @@ def _run_refresh_r2_cycle(config) -> dict[str, object]:
         }
     )
 
-    nav_product_rows = run_extract_nav_product_day(config)
-    result["steps"].append(
-        {
-            "name": "extract-nav-product-day",
-            "rows": len(nav_product_rows),
-            "output_file": str(config.nav_product_day_raw),
-        }
-    )
-
     stock_result = run_extract_stock(config)
     result["steps"].append({"name": "extract-stock", "result": stock_result})
 
