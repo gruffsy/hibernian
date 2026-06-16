@@ -1744,12 +1744,12 @@
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
-                "Antall": 184.32
-            },
-            {
                 "Ukenr": "28/2026",
                 "Antall": 138.24
+            },
+            {
+                "Ukenr": "32/2026",
+                "Antall": 184.32
             }
         ]
     },
@@ -1866,12 +1866,12 @@
         "Paller på vei": 20,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
-                "Antall": 691.2
-            },
-            {
                 "Ukenr": "28/2026",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "32/2026",
+                "Antall": 691.2
             }
         ]
     },
@@ -1884,16 +1884,16 @@
         "Paller på vei": 13,
         "Bestilling på vei": [
             {
+                "Ukenr": "28/2026",
+                "Antall": 46.08
+            },
+            {
                 "Ukenr": "32/2026",
                 "Antall": 276.48
             },
             {
                 "Ukenr": "34/2026",
                 "Antall": 276.48
-            },
-            {
-                "Ukenr": "28/2026",
-                "Antall": 46.08
             }
         ]
     },
@@ -1978,16 +1978,16 @@
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
+                "Ukenr": "28/2026",
+                "Antall": 92.16
+            },
+            {
                 "Ukenr": "32/2026",
                 "Antall": 184.32
             },
             {
                 "Ukenr": "34/2026",
                 "Antall": 184.32
-            },
-            {
-                "Ukenr": "28/2026",
-                "Antall": 92.16
             }
         ]
     },
@@ -2072,58 +2072,34 @@
     {
         "Prodno": "410356020",
         "Beskrivelse": "NSM STONE WALL LOFOTEN SØMLØS 60X20CM",
-        "antall på lager": 0.0,
+        "antall på lager": 141.1,
         "antall pr pall": 11.8,
-        "Paller på lager": 0,
-        "Paller på vei": 12,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "28/2026",
-                "Antall": 141.12
-            }
-        ]
+        "Paller på lager": 12,
+        "Paller på vei": 0
     },
     {
         "Prodno": "410354010",
         "Beskrivelse": "NSM STONE WALL LOFOTEN SØMLØS UTVENDIG HJØRNE 36+7,5X20CM",
-        "antall på lager": 0.0,
+        "antall på lager": 240.0,
         "antall pr pall": 80.0,
-        "Paller på lager": 0,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "28/2026",
-                "Antall": 240.0
-            }
-        ]
+        "Paller på lager": 3,
+        "Paller på vei": 0
     },
     {
         "Prodno": "410526020",
         "Beskrivelse": "NSM STONE WALL VALDRES SØMLØS 60X20CM",
-        "antall på lager": 0.0,
+        "antall på lager": 129.4,
         "antall pr pall": 11.8,
-        "Paller på lager": 0,
-        "Paller på vei": 11,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "28/2026",
-                "Antall": 129.36
-            }
-        ]
+        "Paller på lager": 11,
+        "Paller på vei": 0
     },
     {
         "Prodno": "410524010",
         "Beskrivelse": "NSM STONE WALL VALDRES SØMLØS UTVENDIG HJØRNE 36+7,5X20CM",
-        "antall på lager": 0.0,
+        "antall på lager": 240.0,
         "antall pr pall": 80.0,
-        "Paller på lager": 0,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "28/2026",
-                "Antall": 240.0
-            }
-        ]
+        "Paller på lager": 3,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PGIBE001",
