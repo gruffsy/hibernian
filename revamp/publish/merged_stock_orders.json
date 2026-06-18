@@ -1498,12 +1498,12 @@
         "Paller på vei": 28,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
-                "Antall": 737.28
-            },
-            {
                 "Ukenr": "32/2026",
                 "Antall": 552.96
+            },
+            {
+                "Ukenr": "34/2026",
+                "Antall": 737.28
             }
         ]
     },
@@ -1574,30 +1574,18 @@
     {
         "Prodno": "LTG-LX-5PD-M-612",
         "Beskrivelse": "LTG LOIS XIV 60X120 12,5MM",
-        "antall på lager": 43.2,
+        "antall på lager": 129.6,
         "antall pr pall": 43.2,
-        "Paller på lager": 1,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "28/2026",
-                "Antall": 86.4
-            }
-        ]
+        "Paller på lager": 3,
+        "Paller på vei": 0
     },
     {
         "Prodno": "LTG-LX--5PD-M-66",
         "Beskrivelse": "LTG LOIS XIV 60X60 12,5MM",
-        "antall på lager": 0.0,
+        "antall på lager": 368.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 8,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "28/2026",
-                "Antall": 368.64
-            }
-        ]
+        "Paller på lager": 8,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PN612061",
@@ -1654,18 +1642,14 @@
     {
         "Prodno": "LTG2900-YH001-36",
         "Beskrivelse": "LTG PROGETTO BIANCO 30X60",
-        "antall på lager": 0.0,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 7,
+        "Paller på lager": 3,
+        "Paller på vei": 4,
         "Bestilling på vei": [
             {
                 "Ukenr": "32/2026",
                 "Antall": 184.32
-            },
-            {
-                "Ukenr": "28/2026",
-                "Antall": 138.24
             }
         ]
     },
@@ -1688,16 +1672,10 @@
     {
         "Prodno": "LTG2900-YH010-36",
         "Beskrivelse": "LTG PROGETTO GRAFITE 30X60",
-        "antall på lager": 0.0,
+        "antall på lager": 276.5,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 6,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "28/2026",
-                "Antall": 276.48
-            }
-        ]
+        "Paller på lager": 6,
+        "Paller på vei": 0
     },
     {
         "Prodno": "LTG2900-YH008-36",
@@ -1776,40 +1754,32 @@
     {
         "Prodno": "LTG2100-661",
         "Beskrivelse": "LTG TERRA ANTRACITE 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 230.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 20,
+        "Paller på lager": 5,
+        "Paller på vei": 15,
         "Bestilling på vei": [
             {
                 "Ukenr": "32/2026",
                 "Antall": 691.2
-            },
-            {
-                "Ukenr": "28/2026",
-                "Antall": 230.4
             }
         ]
     },
     {
         "Prodno": "LTG2100-363",
         "Beskrivelse": "LTG TERRA BEIGE 30X60",
-        "antall på lager": 0.0,
+        "antall på lager": 46.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 13,
+        "Paller på lager": 1,
+        "Paller på vei": 12,
         "Bestilling på vei": [
-            {
-                "Ukenr": "34/2026",
-                "Antall": 276.48
-            },
             {
                 "Ukenr": "32/2026",
                 "Antall": 276.48
             },
             {
-                "Ukenr": "28/2026",
-                "Antall": 46.08
+                "Ukenr": "34/2026",
+                "Antall": 276.48
             }
         ]
     },
@@ -1888,22 +1858,18 @@
     {
         "Prodno": "LTG2100-664",
         "Beskrivelse": "LTG TERRA CHIARO 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 10,
+        "Paller på lager": 2,
+        "Paller på vei": 8,
         "Bestilling på vei": [
-            {
-                "Ukenr": "34/2026",
-                "Antall": 184.32
-            },
             {
                 "Ukenr": "32/2026",
                 "Antall": 184.32
             },
             {
-                "Ukenr": "28/2026",
-                "Antall": 92.16
+                "Ukenr": "34/2026",
+                "Antall": 184.32
             }
         ]
     },
