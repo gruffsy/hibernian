@@ -995,15 +995,11 @@
         "antall på lager": 83.5,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 4,
+        "Paller på vei": 2,
         "Bestilling på vei": [
             {
                 "Ukenr": "26/2026",
                 "Antall": 92.16
-            },
-            {
-                "Ukenr": "27/2026",
-                "Antall": 86.4
             }
         ]
     },
@@ -1049,15 +1045,11 @@
         "antall på lager": 11.5,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 2,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
                 "Ukenr": "26/2026",
                 "Antall": 46.08
-            },
-            {
-                "Ukenr": "27/2026",
-                "Antall": 43.2
             }
         ]
     },
@@ -1067,7 +1059,13 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "27/2026",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "CKO60R1",
@@ -1153,14 +1151,10 @@
         "antall på lager": 64.0,
         "antall pr pall": 64.0,
         "Paller på lager": 1,
-        "Paller på vei": 30,
+        "Paller på vei": 15,
         "Bestilling på vei": [
             {
                 "Ukenr": "26/2026",
-                "Antall": 960.0
-            },
-            {
-                "Ukenr": "27/2026",
                 "Antall": 960.0
             }
         ]
@@ -1199,11 +1193,11 @@
         "antall på lager": 0.0,
         "antall pr pall": 64.0,
         "Paller på lager": 0,
-        "Paller på vei": 10,
+        "Paller på vei": 23,
         "Bestilling på vei": [
             {
                 "Ukenr": "27/2026",
-                "Antall": 640.0
+                "Antall": 1472.0
             }
         ]
     },
