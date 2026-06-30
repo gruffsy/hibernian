@@ -298,9 +298,9 @@
     {
         "Prodno": "710024",
         "Beskrivelse": "CAS GRANITO - ONTARIO 30X30 8MM",
-        "antall på lager": 224.6,
+        "antall på lager": 280.8,
         "antall pr pall": 56.2,
-        "Paller på lager": 4,
+        "Paller på lager": 5,
         "Paller på vei": 0
     },
     {
@@ -640,9 +640,9 @@
     {
         "Prodno": "300000000000046869",
         "Beskrivelse": "CIF NEBRASKA ELM 30X120 - XS",
-        "antall på lager": 155.5,
+        "antall på lager": 259.2,
         "antall pr pall": 51.8,
-        "Paller på lager": 3,
+        "Paller på lager": 5,
         "Paller på vei": 0
     },
     {
@@ -678,9 +678,9 @@
     {
         "Prodno": "300000000000044976",
         "Beskrivelse": "CIF NEBRASKA OAK 30X120 - XS",
-        "antall på lager": 155.5,
+        "antall på lager": 51.8,
         "antall pr pall": 51.8,
-        "Paller på lager": 3,
+        "Paller på lager": 1,
         "Paller på vei": 0
     },
     {
@@ -804,9 +804,9 @@
     {
         "Prodno": "300000000000038781",
         "Beskrivelse": "CIF NEXUS PEARL  60x120 - XS",
-        "antall på lager": 259.2,
+        "antall på lager": 311.0,
         "antall pr pall": 51.8,
-        "Paller på lager": 5,
+        "Paller på lager": 6,
         "Paller på vei": 0
     },
     {
@@ -958,7 +958,7 @@
     {
         "Prodno": "02CEV60R4",
         "Beskrivelse": "CTV EVOLUTION GREY 60X60 9,5MM",
-        "antall på lager": 175.7,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
         "Paller på lager": 4,
         "Paller på vei": 0
@@ -982,15 +982,15 @@
     {
         "Prodno": "02CEV62R1",
         "Beskrivelse": "CTV EVOLUTION WHITE 60X120 9,5MM",
-        "antall på lager": 138.2,
+        "antall på lager": 230.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 5,
         "Paller på vei": 0
     },
     {
         "Prodno": "02CEV60R1",
         "Beskrivelse": "CTV EVOLUTION WHITE 60X60 9,5MM",
-        "antall på lager": 11.5,
+        "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
         "Paller på vei": 0
@@ -1009,15 +1009,27 @@
         "antall på lager": 388.8,
         "antall pr pall": 43.2,
         "Paller på lager": 9,
-        "Paller på vei": 0
+        "Paller på vei": 7,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "28/2026",
+                "Antall": 322.56
+            }
+        ]
     },
     {
         "Prodno": "XKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60 20MM",
-        "antall på lager": 192.0,
+        "antall på lager": 64.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på lager": 1,
+        "Paller på vei": 10,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "28/2026",
+                "Antall": 640.0
+            }
+        ]
     },
     {
         "Prodno": "CKO62R44",
@@ -1030,17 +1042,17 @@
     {
         "Prodno": "CKO60R44",
         "Beskrivelse": "CTV KONKRETE CENERE 60X60",
-        "antall på lager": 129.6,
+        "antall på lager": 172.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 3,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
         "Prodno": "XKO60R44",
         "Beskrivelse": "CTV KONKRETE CENERE 60X60 20MM",
-        "antall på lager": 384.0,
+        "antall på lager": 320.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 6,
+        "Paller på lager": 5,
         "Paller på vei": 0
     },
     {
@@ -1054,7 +1066,7 @@
     {
         "Prodno": "CKO60R4",
         "Beskrivelse": "CTV KONKRETE GRIGIO 60X60",
-        "antall på lager": 426.2,
+        "antall på lager": 432.0,
         "antall pr pall": 43.2,
         "Paller på lager": 10,
         "Paller på vei": 0
@@ -1089,7 +1101,13 @@
         "antall på lager": 448.0,
         "antall pr pall": 64.0,
         "Paller på lager": 7,
-        "Paller på vei": 0
+        "Paller på vei": 10,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "28/2026",
+                "Antall": 640.0
+            }
+        ]
     },
     {
         "Prodno": "XSL60R4",
@@ -1378,9 +1396,9 @@
     {
         "Prodno": "IL6003",
         "Beskrivelse": "LTG INNOVATION LIME BEIGE 60X60",
-        "antall på lager": 46.1,
+        "antall på lager": 0.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 16,
         "Bestilling på vei": [
             {
@@ -1398,12 +1416,12 @@
         "Paller på vei": 28,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
-                "Antall": 552.96
-            },
-            {
                 "Ukenr": "34/2026",
                 "Antall": 737.28
+            },
+            {
+                "Ukenr": "32/2026",
+                "Antall": 552.96
             }
         ]
     },
@@ -1638,9 +1656,9 @@
     {
         "Prodno": "LTG2100-361",
         "Beskrivelse": "LTG TERRA ANTRACITE 30X60",
-        "antall på lager": 276.5,
+        "antall på lager": 230.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 6,
+        "Paller på lager": 5,
         "Paller på vei": 0
     },
     {
@@ -1654,9 +1672,9 @@
     {
         "Prodno": "LTG2100-661",
         "Beskrivelse": "LTG TERRA ANTRACITE 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 46.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
+        "Paller på lager": 1,
         "Paller på vei": 15,
         "Bestilling på vei": [
             {
@@ -1674,11 +1692,11 @@
         "Paller på vei": 12,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
+                "Ukenr": "34/2026",
                 "Antall": 276.48
             },
             {
-                "Ukenr": "34/2026",
+                "Ukenr": "32/2026",
                 "Antall": 276.48
             }
         ]
@@ -1764,11 +1782,11 @@
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
+                "Ukenr": "34/2026",
                 "Antall": 184.32
             },
             {
-                "Ukenr": "34/2026",
+                "Ukenr": "32/2026",
                 "Antall": 184.32
             }
         ]
@@ -1894,16 +1912,10 @@
     {
         "Prodno": "PGWBE50",
         "Beskrivelse": "PAN ABISKO QUADRATO 60X60",
-        "antall på lager": 92.2,
+        "antall på lager": 230.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "25/2026",
-                "Antall": 138.24
-            }
-        ]
+        "Paller på lager": 5,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PG-BK15",
@@ -1916,16 +1928,10 @@
     {
         "Prodno": "PG-P900",
         "Beskrivelse": "PAN COTTAGE DARK 30X60",
-        "antall på lager": 0.0,
+        "antall på lager": 51.8,
         "antall pr pall": 51.8,
-        "Paller på lager": 0,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "25/2026",
-                "Antall": 51.84
-            }
-        ]
+        "Paller på lager": 1,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PGXP900",
@@ -1938,16 +1944,10 @@
     {
         "Prodno": "PGWP900",
         "Beskrivelse": "PAN COTTAGE DARK 60X60",
-        "antall på lager": 184.3,
+        "antall på lager": 276.5,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "25/2026",
-                "Antall": 92.16
-            }
-        ]
+        "Paller på lager": 6,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PGIBE201",
@@ -1984,30 +1984,18 @@
     {
         "Prodno": "PGEME00",
         "Beskrivelse": "PAN MEMORY MOOD COPPER 20x20",
-        "antall på lager": 0.0,
+        "antall på lager": 108.0,
         "antall pr pall": 54.0,
-        "Paller på lager": 0,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "25/2026",
-                "Antall": 108.0
-            }
-        ]
+        "Paller på lager": 2,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PGEME20",
         "Beskrivelse": "PAN MEMORY MOOD DIM 20X20",
-        "antall på lager": 0.0,
+        "antall på lager": 108.0,
         "antall pr pall": 54.0,
-        "Paller på lager": 0,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "25/2026",
-                "Antall": 108.0
-            }
-        ]
+        "Paller på lager": 2,
+        "Paller på vei": 0
     },
     {
         "Prodno": "PGEME50",
@@ -2036,16 +2024,10 @@
     {
         "Prodno": "PGWP940",
         "Beskrivelse": "PAN MIDTOWN WHITE 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 3,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "25/2026",
-                "Antall": 138.24
-            }
-        ]
+        "Paller på lager": 3,
+        "Paller på vei": 0
     },
     {
         "Prodno": "APGXSD10",
@@ -2058,16 +2040,10 @@
     {
         "Prodno": "APGWSD10",
         "Beskrivelse": "PAN SURROUND DRAFT 60X60 9MM",
-        "antall på lager": 506.9,
+        "antall på lager": 691.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 11,
-        "Paller på vei": 4,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "25/2026",
-                "Antall": 184.32
-            }
-        ]
+        "Paller på lager": 15,
+        "Paller på vei": 0
     },
     {
         "Prodno": "APGXSD40",
@@ -2080,16 +2056,10 @@
     {
         "Prodno": "APGWSD40",
         "Beskrivelse": "PAN SURROUND ROW 60X60 9MM",
-        "antall på lager": 230.4,
+        "antall på lager": 322.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "25/2026",
-                "Antall": 92.16
-            }
-        ]
+        "Paller på lager": 7,
+        "Paller på vei": 0
     },
     {
         "Prodno": "APGXSD30",
@@ -2102,16 +2072,10 @@
     {
         "Prodno": "APGWSD30",
         "Beskrivelse": "PAN SURROUND SKETCH 60X60 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 368.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 8,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "25/2026",
-                "Antall": 368.64
-            }
-        ]
+        "Paller på lager": 8,
+        "Paller på vei": 0
     },
     {
         "Prodno": "SIS-820-PORTUGAL",
@@ -2148,17 +2112,17 @@
     {
         "Prodno": "SPGH20",
         "Beskrivelse": "SIS STENPANEL HALLINGSKARVET HJØRNE 20X45",
-        "antall på lager": 0.0,
+        "antall på lager": 400.0,
         "antall pr pall": 80.0,
-        "Paller på lager": 0,
+        "Paller på lager": 5,
         "Paller på vei": 0
     },
     {
         "Prodno": "SPRH20",
         "Beskrivelse": "SIS STENPANEL SKOGSHORN HJØRNE 20X45",
-        "antall på lager": 0.0,
+        "antall på lager": 480.0,
         "antall pr pall": 80.0,
-        "Paller på lager": 0,
+        "Paller på lager": 6,
         "Paller på vei": 0
     },
     {
