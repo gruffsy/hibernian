@@ -400,6 +400,14 @@
         "Paller på vei": 0
     },
     {
+        "Prodno": "013950048",
+        "Beskrivelse": "CAS METRO WHITE 60X60 9 MM",
+        "antall på lager": 0.0,
+        "antall pr pall": 43.2,
+        "Paller på lager": 0,
+        "Paller på vei": 0
+    },
+    {
         "Prodno": "1700104",
         "Beskrivelse": "CAS PIETRE DI PARAGONE GRE BIANCO 30X30 9MM",
         "antall på lager": 155.5,
@@ -624,9 +632,9 @@
     {
         "Prodno": "CIF2050",
         "Beskrivelse": "CIF INTENSITY WHITE 20X50",
-        "antall på lager": 57.6,
+        "antall på lager": 0.0,
         "antall pr pall": 57.6,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -770,9 +778,9 @@
     {
         "Prodno": "300000000000026444",
         "Beskrivelse": "CIF NEUTRA TAUPE 60X60 9MM",
-        "antall på lager": 92.2,
+        "antall på lager": 46.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
+        "Paller på lager": 1,
         "Paller på vei": 0
     },
     {
@@ -830,9 +838,9 @@
     {
         "Prodno": "300000000000067511",
         "Beskrivelse": "CIF ORION MARFIL PULIDO 60X120 9MM",
-        "antall på lager": 230.4,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
@@ -993,7 +1001,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 15,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "28/2026",
+                "Antall": 691.2
+            }
+        ]
     },
     {
         "Prodno": "CKO62R1",
@@ -1009,20 +1023,24 @@
         "antall på lager": 388.8,
         "antall pr pall": 43.2,
         "Paller på lager": 9,
-        "Paller på vei": 7,
+        "Paller på vei": 11,
         "Bestilling på vei": [
             {
                 "Ukenr": "28/2026",
                 "Antall": 322.56
+            },
+            {
+                "Ukenr": "28/2026",
+                "Antall": 138.24
             }
         ]
     },
     {
         "Prodno": "XKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60 20MM",
-        "antall på lager": 64.0,
+        "antall på lager": 0.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
@@ -1058,9 +1076,9 @@
     {
         "Prodno": "CKO62R4",
         "Beskrivelse": "CTV KONKRETE GRIGIO 60X120",
-        "antall på lager": 138.2,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 0
     },
     {
@@ -1093,14 +1111,20 @@
         "antall på lager": 1024.0,
         "antall pr pall": 64.0,
         "Paller på lager": 16,
-        "Paller på vei": 0
+        "Paller på vei": 10,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "28/2026",
+                "Antall": 640.0
+            }
+        ]
     },
     {
         "Prodno": "XSL60R7",
         "Beskrivelse": "CTV SLATE ANTRACITE 60X60 20MM",
-        "antall på lager": 448.0,
+        "antall på lager": 384.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 7,
+        "Paller på lager": 6,
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
@@ -1112,9 +1136,9 @@
     {
         "Prodno": "XSL60R4",
         "Beskrivelse": "CTV SLATE GRIGIO 60X60 20MM",
-        "antall på lager": 384.0,
+        "antall på lager": 320.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 6,
+        "Paller på lager": 5,
         "Paller på vei": 0
     },
     {
@@ -1196,81 +1220,81 @@
     {
         "Prodno": "0178400036938",
         "Beskrivelse": "GEO STRATOS CROSS BONE MATT 60X60 9MM",
-        "antall på lager": 216.0,
-        "antall pr pall": 43.2,
-        "Paller på lager": 5,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "0172500032648",
-        "Beskrivelse": "GEO STRATOS VEIN BONE MATT 60X120 9MM",
-        "antall på lager": 362.9,
-        "antall pr pall": 51.8,
-        "Paller på lager": 7,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "0178400036909",
-        "Beskrivelse": "GEO STRATOS VEIN BONE MATT 60X60 9MM",
-        "antall på lager": 216.0,
-        "antall pr pall": 43.2,
-        "Paller på lager": 5,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "0048690036855",
-        "Beskrivelse": "GEO TAJMAHAL TAN POLISHED 60X120 9,5MM",
-        "antall på lager": 276.5,
-        "antall pr pall": 46.1,
-        "Paller på lager": 6,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "0048400036865",
-        "Beskrivelse": "GEO TAJMAHAL TAN POLISHED 60X60 9,5MM",
         "antall på lager": 172.8,
         "antall pr pall": 43.2,
         "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
+        "Prodno": "0172500032648",
+        "Beskrivelse": "GEO STRATOS VEIN BONE MATT 60X120 9MM",
+        "antall på lager": 311.0,
+        "antall pr pall": 51.8,
+        "Paller på lager": 6,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "0178400036909",
+        "Beskrivelse": "GEO STRATOS VEIN BONE MATT 60X60 9MM",
+        "antall på lager": 172.8,
+        "antall pr pall": 43.2,
+        "Paller på lager": 4,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "0048690036855",
+        "Beskrivelse": "GEO TAJMAHAL TAN POLISHED 60X120 9,5MM",
+        "antall på lager": 230.4,
+        "antall pr pall": 46.1,
+        "Paller på lager": 5,
+        "Paller på vei": 0
+    },
+    {
+        "Prodno": "0048400036865",
+        "Beskrivelse": "GEO TAJMAHAL TAN POLISHED 60X60 9,5MM",
+        "antall på lager": 129.6,
+        "antall pr pall": 43.2,
+        "Paller på lager": 3,
+        "Paller på vei": 0
+    },
+    {
         "Prodno": "20044550",
         "Beskrivelse": "KER ALBORA CREMA 120X20 9MM",
-        "antall på lager": 207.4,
+        "antall på lager": 155.5,
         "antall pr pall": 51.8,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
         "Prodno": "20044551",
         "Beskrivelse": "KER ALBORA ROBLE 120X20 9MM",
-        "antall på lager": 207.4,
+        "antall på lager": 155.5,
         "antall pr pall": 51.8,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
         "Prodno": "20044552",
         "Beskrivelse": "KER ALBORA TITANIUM 120X20 9MM",
-        "antall på lager": 207.4,
+        "antall på lager": 155.5,
         "antall pr pall": 51.8,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
         "Prodno": "20044393",
         "Beskrivelse": "KER AMBROSIA SAND 60X120 9MM",
-        "antall på lager": 43.2,
+        "antall på lager": 0.0,
         "antall pr pall": 43.2,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
         "Prodno": "20044396",
         "Beskrivelse": "KER AMBROSIA SAND 60X60 9MM",
-        "antall på lager": 216.0,
+        "antall på lager": 172.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
@@ -1284,9 +1308,9 @@
     {
         "Prodno": "G434200K",
         "Beskrivelse": "KER NATURE BONE 60X60",
-        "antall på lager": 86.4,
+        "antall på lager": 43.2,
         "antall pr pall": 43.2,
-        "Paller på lager": 2,
+        "Paller på lager": 1,
         "Paller på vei": 0
     },
     {
@@ -1402,7 +1426,7 @@
         "Paller på vei": 16,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
+                "Ukenr": "34/2026",
                 "Antall": 737.28
             }
         ]
@@ -1420,7 +1444,7 @@
                 "Antall": 737.28
             },
             {
-                "Ukenr": "32/2026",
+                "Ukenr": "31/2026",
                 "Antall": 552.96
             }
         ]
@@ -1446,14 +1470,18 @@
     {
         "Prodno": "IL6002",
         "Beskrivelse": "LTG INNOVATION LIME GRIGIO 60X60",
-        "antall på lager": 691.2,
+        "antall på lager": 645.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 15,
+        "Paller på lager": 14,
         "Paller på vei": 3,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
-                "Antall": 138.24
+                "Ukenr": "34/2026",
+                "Antall": 46.08
+            },
+            {
+                "Ukenr": "31/2026",
+                "Antall": 92.16
             }
         ]
     },
@@ -1468,9 +1496,9 @@
     {
         "Prodno": "LTG3000-664-MR11",
         "Beskrivelse": "LTG LAVAGNA CHIARO 60X60 R11 9,5MM",
-        "antall på lager": 414.7,
+        "antall på lager": 368.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 9,
+        "Paller på lager": 8,
         "Paller på vei": 0
     },
     {
@@ -1484,9 +1512,9 @@
     {
         "Prodno": "LTG3000-662-MR11",
         "Beskrivelse": "LTG LAVAGNA GRIGIO 60X60 R11 9,5MM",
-        "antall på lager": 322.6,
+        "antall på lager": 276.5,
         "antall pr pall": 46.1,
-        "Paller på lager": 7,
+        "Paller på lager": 6,
         "Paller på vei": 0
     },
     {
@@ -1519,11 +1547,15 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 15,
+        "Paller på vei": 25,
         "Bestilling på vei": [
             {
                 "Ukenr": "35/2026",
                 "Antall": 691.2
+            },
+            {
+                "Ukenr": "34/2026",
+                "Antall": 460.8
             }
         ]
     },
@@ -1544,8 +1576,12 @@
         "Paller på vei": 9,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
-                "Antall": 414.72
+                "Ukenr": "31/2026",
+                "Antall": 230.4
+            },
+            {
+                "Ukenr": "31/2026",
+                "Antall": 184.32
             }
         ]
     },
@@ -1566,7 +1602,7 @@
         "Paller på vei": 4,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
+                "Ukenr": "31/2026",
                 "Antall": 184.32
             }
         ]
@@ -1590,9 +1626,9 @@
     {
         "Prodno": "LTG2900-YH010-36",
         "Beskrivelse": "LTG PROGETTO GRAFITE 30X60",
-        "antall på lager": 46.1,
+        "antall på lager": 0.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -1678,7 +1714,7 @@
         "Paller på vei": 15,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
+                "Ukenr": "31/2026",
                 "Antall": 691.2
             }
         ]
@@ -1689,14 +1725,10 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 12,
+        "Paller på vei": 6,
         "Bestilling på vei": [
             {
                 "Ukenr": "34/2026",
-                "Antall": 276.48
-            },
-            {
-                "Ukenr": "32/2026",
                 "Antall": 276.48
             }
         ]
@@ -1710,7 +1742,7 @@
         "Paller på vei": 2,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
+                "Ukenr": "31/2026",
                 "Antall": 77.76
             }
         ]
@@ -1718,18 +1750,18 @@
     {
         "Prodno": "LTG2100-663",
         "Beskrivelse": "LTG TERRA BEIGE 60X60",
-        "antall på lager": 184.3,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 12,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
-                "Antall": 230.4
-            },
-            {
                 "Ukenr": "35/2026",
                 "Antall": 322.56
+            },
+            {
+                "Ukenr": "31/2026",
+                "Antall": 230.4
             }
         ]
     },
@@ -1779,14 +1811,10 @@
         "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
-        "Paller på vei": 8,
+        "Paller på vei": 4,
         "Bestilling på vei": [
             {
                 "Ukenr": "34/2026",
-                "Antall": 184.32
-            },
-            {
-                "Ukenr": "32/2026",
                 "Antall": 184.32
             }
         ]
@@ -1794,9 +1822,9 @@
     {
         "Prodno": "612TR08R-M",
         "Beskrivelse": "LTG TERRAZZO ANTICO 60X120",
-        "antall på lager": 311.0,
+        "antall på lager": 272.2,
         "antall pr pall": 38.9,
-        "Paller på lager": 8,
+        "Paller på lager": 7,
         "Paller på vei": 0
     },
     {
@@ -1808,7 +1836,7 @@
         "Paller på vei": 5,
         "Bestilling på vei": [
             {
-                "Ukenr": "32/2026",
+                "Ukenr": "31/2026",
                 "Antall": 230.4
             }
         ]
@@ -2024,9 +2052,9 @@
     {
         "Prodno": "PGWP940",
         "Beskrivelse": "PAN MIDTOWN WHITE 60X60",
-        "antall på lager": 138.2,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 0
     },
     {
