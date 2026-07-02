@@ -891,11 +891,11 @@
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
-        "Paller på vei": 43,
+        "Paller på vei": 47,
         "Bestilling på vei": [
             {
                 "Ukenr": "27/2026",
-                "Antall": 691.2
+                "Antall": 875.52
             },
             {
                 "Ukenr": "31/2026",
@@ -1287,7 +1287,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2026",
+                "Antall": 172.8
+            }
+        ]
     },
     {
         "Prodno": "20044396",
@@ -1295,7 +1301,13 @@
         "antall på lager": 172.8,
         "antall pr pall": 43.2,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2026",
+                "Antall": 259.2
+            }
+        ]
     },
     {
         "Prodno": "G43AC00K",
@@ -1311,7 +1323,17 @@
         "antall på lager": 43.2,
         "antall pr pall": 43.2,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 12,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2026",
+                "Antall": 345.6
+            },
+            {
+                "Ukenr": "31/2026",
+                "Antall": 172.8
+            }
+        ]
     },
     {
         "Prodno": "G43AC002",
@@ -1319,7 +1341,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 54.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2026",
+                "Antall": 343.52
+            }
+        ]
     },
     {
         "Prodno": "GUX42001",
@@ -1335,7 +1363,13 @@
         "antall på lager": 53.7,
         "antall pr pall": 53.7,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2026",
+                "Antall": 107.36
+            }
+        ]
     },
     {
         "Prodno": "GUX6N011-N",
@@ -1359,7 +1393,13 @@
         "antall på lager": 86.4,
         "antall pr pall": 43.2,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2026",
+                "Antall": 129.6
+            }
+        ]
     },
     {
         "Prodno": "GUX6P010-N",
@@ -1375,7 +1415,13 @@
         "antall på lager": 107.4,
         "antall pr pall": 53.7,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 8,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2026",
+                "Antall": 429.44
+            }
+        ]
     },
     {
         "Prodno": "GUX6N01M-N",
@@ -1383,7 +1429,13 @@
         "antall på lager": 43.7,
         "antall pr pall": 43.7,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "31/2026",
+                "Antall": 262.44
+            }
+        ]
     },
     {
         "Prodno": "1000-202G",
@@ -1458,12 +1510,12 @@
         "Paller på vei": 14,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
-                "Antall": 414.72
-            },
-            {
                 "Ukenr": "35/2026",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "34/2026",
+                "Antall": 414.72
             }
         ]
     },
