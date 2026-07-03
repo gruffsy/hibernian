@@ -1,5 +1,629 @@
 [
     {
+        "ukedag": "Fredag",
+        "navn": "Milla F. Moen",
+        "umoms": "59 659 kr",
+        "db": "15 799 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Kemuel Lillestø",
+        "umoms": "56 499 kr",
+        "db": "13 387 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Jonathan Kaaby",
+        "umoms": "55 447 kr",
+        "db": "9 240 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Oscar Gjølme",
+        "umoms": "53 577 kr",
+        "db": "5 765 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Mathias Oseid Hagen",
+        "umoms": "48 518 kr",
+        "db": "13 078 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Stine Marie Hofsrud",
+        "umoms": "45 516 kr",
+        "db": "8 082 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Marcus Hidle Brustad",
+        "umoms": "45 229 kr",
+        "db": "8 980 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Tommy Fodsung-Noen Kristensen",
+        "umoms": "42 963 kr",
+        "db": "6 287 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Martin Høyer Halvorsen",
+        "umoms": "42 860 kr",
+        "db": "8 697 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Linn Christina Johannessen",
+        "umoms": "39 332 kr",
+        "db": "12 245 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Jonas Skog",
+        "umoms": "37 774 kr",
+        "db": "9 415 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Thomas Melfald Maabø",
+        "umoms": "36 346 kr",
+        "db": "6 616 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Bertil Tangen",
+        "umoms": "36 096 kr",
+        "db": "8 267 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Niels Soest",
+        "umoms": "34 314 kr",
+        "db": "10 514 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Liubov Jonassen",
+        "umoms": "32 749 kr",
+        "db": "6 581 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Mikkel Kihle Lindvig",
+        "umoms": "29 859 kr",
+        "db": "5 016 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Aksel Lindstrøm",
+        "umoms": "28 923 kr",
+        "db": "5 042 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Marthine Hansen",
+        "umoms": "28 796 kr",
+        "db": "6 969 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "James Michael McGurty",
+        "umoms": "28 333 kr",
+        "db": "2 884 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Aksel Ervik",
+        "umoms": "26 905 kr",
+        "db": "6 674 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Alexander Bergflødt Ellefsen",
+        "umoms": "26 550 kr",
+        "db": "6 993 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Tuva Sofie Risdal",
+        "umoms": "26 162 kr",
+        "db": "4 718 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Aleksander Bang",
+        "umoms": "26 157 kr",
+        "db": "1 994 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Laila Skripeland",
+        "umoms": "26 018 kr",
+        "db": "6 194 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Pål Magnus Andersen",
+        "umoms": "22 146 kr",
+        "db": "4 720 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Kine Thi Huynh",
+        "umoms": "21 377 kr",
+        "db": "6 187 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Sol Emilie Risdal",
+        "umoms": "20 789 kr",
+        "db": "5 316 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Heidi Kristensen Voje",
+        "umoms": "20 551 kr",
+        "db": "2 669 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Jonas Tjernshaugen",
+        "umoms": "20 098 kr",
+        "db": "4 901 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Emma Frøbom",
+        "umoms": "17 920 kr",
+        "db": "3 586 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Torstein Sandve",
+        "umoms": "17 404 kr",
+        "db": "3 341 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Øyvind K. Solfjeld",
+        "umoms": "16 320 kr",
+        "db": "3 838 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Marius Hoem Skovly",
+        "umoms": "15 982 kr",
+        "db": "2 709 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Ove Larsen",
+        "umoms": "15 867 kr",
+        "db": "4 697 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Menglei Chen Ottem",
+        "umoms": "15 566 kr",
+        "db": "4 463 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Sander Larsen",
+        "umoms": "15 290 kr",
+        "db": "3 029 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Tom Richard Ekeberg",
+        "umoms": "13 480 kr",
+        "db": "2 984 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Fredrik Mølmen",
+        "umoms": "12 762 kr",
+        "db": "6 108 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Tobias Eide",
+        "umoms": "12 020 kr",
+        "db": "2 045 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Ida Pernille Iversen",
+        "umoms": "10 473 kr",
+        "db": "2 585 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Tonje W  Madsen",
+        "umoms": "10 472 kr",
+        "db": "1 872 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Filip Söderlund",
+        "umoms": "10 038 kr",
+        "db": "3 557 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Valeria Salinas",
+        "umoms": "9 595 kr",
+        "db": "2 151 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Preben Holset",
+        "umoms": "9 560 kr",
+        "db": "2 160 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Petter Sandvik",
+        "umoms": "9 319 kr",
+        "db": "1 270 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Patrick Jensen",
+        "umoms": "8 740 kr",
+        "db": "353 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Herman Larsen  Helland",
+        "umoms": "8 256 kr",
+        "db": "2 130 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Øystein Kamfjord",
+        "umoms": "8 152 kr",
+        "db": "-5 883 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Fredrik Frost Pettersen",
+        "umoms": "7 937 kr",
+        "db": "771 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Arne Thomas Aaltvedt",
+        "umoms": "6 619 kr",
+        "db": "2 336 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Tony K. Fagermo",
+        "umoms": "6 151 kr",
+        "db": "1 126 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Trond Andreas Frøitland",
+        "umoms": "4 621 kr",
+        "db": "-1 843 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Sjur Eivind Andersen",
+        "umoms": "3 674 kr",
+        "db": "428 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Jesper Petterson",
+        "umoms": "3 093 kr",
+        "db": "151 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Kristoffer Gård",
+        "umoms": "3 033 kr",
+        "db": "270 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Henrik Holmesland",
+        "umoms": "2 411 kr",
+        "db": "502 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Alex Arntzen",
+        "umoms": "1 018 kr",
+        "db": "-26 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Linn Kristine Terjesen",
+        "umoms": "968 kr",
+        "db": "-102 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Adrian Nygaard",
+        "umoms": "528 kr",
+        "db": "-51 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Alf Brynjar Flø",
+        "umoms": "343 kr",
+        "db": "48 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Theodor Kristiansen",
+        "umoms": "273 kr",
+        "db": "572 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Pål Linden Anthonisen",
+        "umoms": "-103 kr",
+        "db": "-33 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Celine Rød",
+        "umoms": "-199 kr",
+        "db": "-71 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Niyas Ali",
+        "umoms": "-351 kr",
+        "db": "-168 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Elias Saubrekka",
+        "umoms": "-359 kr",
+        "db": "-128 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Kristine Martinsen",
+        "umoms": "-422 kr",
+        "db": "41 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Amanda Krumsvik",
+        "umoms": "-532 kr",
+        "db": "-228 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Daniel Hotvedt Aashildrød",
+        "umoms": "-631 kr",
+        "db": "-315 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Solveig Jørgensen",
+        "umoms": "-847 kr",
+        "db": "-246 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Patrick Johansen",
+        "umoms": "-880 kr",
+        "db": "-63 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Martin Hjalmarsson",
+        "umoms": "-1 045 kr",
+        "db": "47 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Julie Nilsen Bjølseth",
+        "umoms": "-1 546 kr",
+        "db": "-226 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Steffen Johannes Forup Hansen",
+        "umoms": "-1 599 kr",
+        "db": "-344 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Frode  Olsen",
+        "umoms": "-1 660 kr",
+        "db": "-356 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Preben Jacobsen",
+        "umoms": "-1 733 kr",
+        "db": "-219 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Christopher Øglænd",
+        "umoms": "-2 001 kr",
+        "db": "-1 387 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Thor Aksel Thoresen",
+        "umoms": "-3 240 kr",
+        "db": "2 247 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260703
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Helen Roungø",
+        "umoms": "-4 546 kr",
+        "db": "-760 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260703
+    },
+    {
         "ukedag": "Torsdag",
         "navn": "Niels Soest",
         "umoms": "79 783 kr",
@@ -281,7 +905,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "20 755 kr",
         "db": "5 448 kr",
         "butikk": "Larvik",
@@ -793,7 +1417,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "14 560 kr",
         "db": "3 797 kr",
         "butikk": "Larvik",
@@ -1641,18 +2265,18 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Valeria Salinas",
-        "umoms": "-175 kr",
-        "db": "-85 kr",
-        "butikk": "Kristiansand",
-        "fakturadato": 20260630
-    },
-    {
-        "ukedag": "Tirsdag",
         "navn": "Marthine Hansen",
         "umoms": "-175 kr",
         "db": "-66 kr",
         "butikk": "Sandefjord",
+        "fakturadato": 20260630
+    },
+    {
+        "ukedag": "Tirsdag",
+        "navn": "Valeria Salinas",
+        "umoms": "-175 kr",
+        "db": "-85 kr",
+        "butikk": "Kristiansand",
         "fakturadato": 20260630
     },
     {
@@ -1673,7 +2297,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-334 kr",
         "db": "-136 kr",
         "butikk": "Larvik",
@@ -1865,7 +2489,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "36 708 kr",
         "db": "8 044 kr",
         "butikk": "Larvik",
@@ -2569,7 +3193,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "24 733 kr",
         "db": "4 525 kr",
         "butikk": "Larvik",
@@ -3137,7 +3761,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 843 kr",
         "db": "2 361 kr",
         "butikk": "Larvik",
@@ -3633,7 +4257,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "19 005 kr",
         "db": "2 315 kr",
         "butikk": "Larvik",
@@ -4241,7 +4865,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "33 667 kr",
         "db": "9 285 kr",
         "butikk": "Larvik",
@@ -5185,7 +5809,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "172 kr",
         "db": "-43 kr",
         "butikk": "Larvik",
@@ -5545,7 +6169,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "19 949 kr",
         "db": "4 963 kr",
         "butikk": "Larvik",
@@ -6001,7 +6625,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "32 950 kr",
         "db": "5 473 kr",
         "butikk": "Larvik",
@@ -6641,7 +7265,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "25 025 kr",
         "db": "5 248 kr",
         "butikk": "Larvik",
@@ -7601,7 +8225,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 709 kr",
         "db": "-123 kr",
         "butikk": "Larvik",
@@ -7857,7 +8481,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "19 314 kr",
         "db": "2 424 kr",
         "butikk": "Larvik",
@@ -8577,7 +9201,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "14 330 kr",
         "db": "2 944 kr",
         "butikk": "Larvik",
@@ -9129,7 +9753,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "34 683 kr",
         "db": "6 408 kr",
         "butikk": "Larvik",
@@ -9761,7 +10385,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "31 613 kr",
         "db": "8 076 kr",
         "butikk": "Larvik",
@@ -10345,7 +10969,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "29 393 kr",
         "db": "7 429 kr",
         "butikk": "Larvik",
@@ -11401,7 +12025,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-965 kr",
         "db": "-256 kr",
         "butikk": "Larvik",
@@ -11593,7 +12217,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "24 741 kr",
         "db": "5 273 kr",
         "butikk": "Larvik",
@@ -12185,7 +12809,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "30 390 kr",
         "db": "8 672 kr",
         "butikk": "Larvik",
@@ -12889,7 +13513,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "20 553 kr",
         "db": "4 851 kr",
         "butikk": "Larvik",
@@ -13809,7 +14433,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-784 kr",
         "db": "-26 kr",
         "butikk": "Larvik",
@@ -13905,7 +14529,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "60 195 kr",
         "db": "8 654 kr",
         "butikk": "Larvik",
@@ -14785,7 +15409,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 732 kr",
         "db": "2 076 kr",
         "butikk": "Larvik",
@@ -15793,7 +16417,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-9 751 kr",
         "db": "-1 863 kr",
         "butikk": "Larvik",
@@ -15961,7 +16585,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "30 062 kr",
         "db": "4 514 kr",
         "butikk": "Larvik",
@@ -16497,7 +17121,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "41 793 kr",
         "db": "8 722 kr",
         "butikk": "Larvik",
@@ -17201,7 +17825,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "27 821 kr",
         "db": "6 694 kr",
         "butikk": "Larvik",
@@ -17649,7 +18273,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "40 318 kr",
         "db": "7 110 kr",
         "butikk": "Larvik",
@@ -18369,7 +18993,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "26 046 kr",
         "db": "3 025 kr",
         "butikk": "Larvik",
@@ -18857,7 +19481,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "46 091 kr",
         "db": "14 771 kr",
         "butikk": "Larvik",
@@ -19793,7 +20417,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "4 515 kr",
         "db": "1 337 kr",
         "butikk": "Larvik",
@@ -20049,7 +20673,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "113 211 kr",
         "db": "27 634 kr",
         "butikk": "Larvik",
@@ -20705,7 +21329,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "28 881 kr",
         "db": "7 968 kr",
         "butikk": "Larvik",
@@ -21625,7 +22249,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-604 kr",
         "db": "-308 kr",
         "butikk": "Larvik",
@@ -22161,7 +22785,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-244 kr",
         "db": "-135 kr",
         "butikk": "Larvik",
@@ -22665,7 +23289,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "1 869 kr",
         "db": "661 kr",
         "butikk": "Larvik",
@@ -22921,7 +23545,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "25 756 kr",
         "db": "4 514 kr",
         "butikk": "Larvik",
@@ -23457,7 +24081,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "67 900 kr",
         "db": "13 857 kr",
         "butikk": "Larvik",
@@ -24129,7 +24753,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "49 948 kr",
         "db": "7 081 kr",
         "butikk": "Larvik",
@@ -24809,7 +25433,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "26 956 kr",
         "db": "4 971 kr",
         "butikk": "Larvik",
@@ -25281,7 +25905,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "55 203 kr",
         "db": "16 255 kr",
         "butikk": "Larvik",
@@ -26065,7 +26689,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "21 839 kr",
         "db": "4 870 kr",
         "butikk": "Larvik",
@@ -26969,7 +27593,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 469 kr",
         "db": "-539 kr",
         "butikk": "Larvik",
@@ -27265,7 +27889,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "14 327 kr",
         "db": "2 079 kr",
         "butikk": "Larvik",
@@ -28193,7 +28817,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-3 908 kr",
         "db": "-1 405 kr",
         "butikk": "Larvik",
@@ -28521,7 +29145,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "7 656 kr",
         "db": "1 940 kr",
         "butikk": "Larvik",
@@ -29313,7 +29937,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-133 kr",
         "db": "-58 kr",
         "butikk": "Larvik",
@@ -29545,7 +30169,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "43 447 kr",
         "db": "6 616 kr",
         "butikk": "Larvik",
@@ -30225,7 +30849,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "37 433 kr",
         "db": "9 229 kr",
         "butikk": "Larvik",
@@ -30657,7 +31281,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "67 808 kr",
         "db": "1 555 kr",
         "butikk": "Larvik",
@@ -31385,7 +32009,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "31 572 kr",
         "db": "7 660 kr",
         "butikk": "Larvik",
@@ -32065,7 +32689,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "30 347 kr",
         "db": "8 858 kr",
         "butikk": "Larvik",
@@ -32721,7 +33345,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "36 961 kr",
         "db": "8 450 kr",
         "butikk": "Larvik",
@@ -33105,6 +33729,14 @@
     },
     {
         "ukedag": "Mandag",
+        "navn": "Mads Kaasa Jacobsen",
+        "umoms": "-159 kr",
+        "db": "-67 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260427
+    },
+    {
+        "ukedag": "Mandag",
         "navn": "Solveig Jørgensen",
         "umoms": "-159 kr",
         "db": "-98 kr",
@@ -33117,14 +33749,6 @@
         "umoms": "-159 kr",
         "db": "-98 kr",
         "butikk": "Bamble",
-        "fakturadato": 20260427
-    },
-    {
-        "ukedag": "Mandag",
-        "navn": "Mads Kaasa Jacobsen",
-        "umoms": "-159 kr",
-        "db": "-67 kr",
-        "butikk": "Sandefjord",
         "fakturadato": 20260427
     },
     {
@@ -33625,7 +34249,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-285 kr",
         "db": "-77 kr",
         "butikk": "Larvik",
@@ -34097,7 +34721,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "19 489 kr",
         "db": "3 342 kr",
         "butikk": "Larvik",
@@ -36521,7 +37145,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "17 476 kr",
         "db": "2 364 kr",
         "butikk": "Larvik",
@@ -36817,17 +37441,17 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Oliwia Leonarda Sobaniec ",
+        "navn": "Niels Soest",
         "umoms": "-159 kr",
-        "db": "-75 kr",
+        "db": "-78 kr",
         "butikk": "Kristiansand",
         "fakturadato": 20260420
     },
     {
         "ukedag": "Mandag",
-        "navn": "Niels Soest",
+        "navn": "Oliwia Leonarda Sobaniec ",
         "umoms": "-159 kr",
-        "db": "-78 kr",
+        "db": "-75 kr",
         "butikk": "Kristiansand",
         "fakturadato": 20260420
     },
@@ -37145,7 +37769,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 106 kr",
         "db": "3 445 kr",
         "butikk": "Larvik",
@@ -37633,7 +38257,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "19 895 kr",
         "db": "3 091 kr",
         "butikk": "Larvik",
@@ -39681,7 +40305,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-88 kr",
         "db": "-2 kr",
         "butikk": "Larvik",
@@ -39721,17 +40345,17 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Solveig Jørgensen",
+        "navn": "Andreas Olsen",
         "umoms": "-215 kr",
-        "db": "-42 kr",
+        "db": "-53 kr",
         "butikk": "Arendal",
         "fakturadato": 20260414
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Andreas Olsen",
+        "navn": "Solveig Jørgensen",
         "umoms": "-215 kr",
-        "db": "-53 kr",
+        "db": "-42 kr",
         "butikk": "Arendal",
         "fakturadato": 20260414
     },
@@ -40361,7 +40985,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-319 kr",
         "db": "-126 kr",
         "butikk": "Larvik",
@@ -40609,7 +41233,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "32 612 kr",
         "db": "6 897 kr",
         "butikk": "Larvik",
@@ -42593,7 +43217,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "12 400 kr",
         "db": "2 590 kr",
         "butikk": "Larvik",
@@ -44801,18 +45425,18 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Kristoffer Johnsen",
-        "umoms": "-436 kr",
-        "db": "21 kr",
-        "butikk": "Arendal",
-        "fakturadato": 20260401
-    },
-    {
-        "ukedag": "Onsdag",
         "navn": "Johan Nunez",
         "umoms": "-436 kr",
         "db": "21 kr",
         "butikk": "Skien",
+        "fakturadato": 20260401
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Kristoffer Johnsen",
+        "umoms": "-436 kr",
+        "db": "21 kr",
+        "butikk": "Arendal",
         "fakturadato": 20260401
     },
     {
@@ -44841,7 +45465,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 911 kr",
         "db": "103 kr",
         "butikk": "Larvik",
@@ -45689,7 +46313,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "39 081 kr",
         "db": "4 613 kr",
         "butikk": "Larvik",
@@ -46433,7 +47057,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "24 157 kr",
         "db": "3 717 kr",
         "butikk": "Larvik",
@@ -48313,7 +48937,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "6 156 kr",
         "db": "1 637 kr",
         "butikk": "Larvik",
@@ -49049,7 +49673,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "1 600 kr",
         "db": "150 kr",
         "butikk": "Larvik",
@@ -49465,7 +50089,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 935 kr",
         "db": "1 697 kr",
         "butikk": "Larvik",
@@ -49945,7 +50569,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "34 509 kr",
         "db": "6 225 kr",
         "butikk": "Larvik",
@@ -50881,7 +51505,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-285 kr",
         "db": "-53 kr",
         "butikk": "Larvik",
@@ -53321,18 +53945,18 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Herman Larsen  Helland",
-        "umoms": "-159 kr",
-        "db": "-98 kr",
-        "butikk": "Bamble",
-        "fakturadato": 20260316
-    },
-    {
-        "ukedag": "Mandag",
         "navn": "Valeria Salinas",
         "umoms": "-159 kr",
         "db": "-59 kr",
         "butikk": "Kristiansand",
+        "fakturadato": 20260316
+    },
+    {
+        "ukedag": "Mandag",
+        "navn": "Herman Larsen  Helland",
+        "umoms": "-159 kr",
+        "db": "-98 kr",
+        "butikk": "Bamble",
         "fakturadato": 20260316
     },
     {
@@ -53809,17 +54433,17 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Marius Olsen",
+        "navn": "Torstein Sandve",
         "umoms": "-158 kr",
-        "db": "-80 kr",
+        "db": "-77 kr",
         "butikk": "Arendal",
         "fakturadato": 20260314
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Torstein Sandve",
+        "navn": "Marius Olsen",
         "umoms": "-158 kr",
-        "db": "-77 kr",
+        "db": "-80 kr",
         "butikk": "Arendal",
         "fakturadato": 20260314
     },
@@ -54545,7 +55169,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-896 kr",
         "db": "-15 kr",
         "butikk": "Larvik",
@@ -55001,7 +55625,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Øyvind K. Solfjeld",
+        "navn": "Theodor Kristiansen",
         "umoms": "526 kr",
         "db": "305 kr",
         "butikk": "Arendal",
@@ -55009,7 +55633,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Theodor Kristiansen",
+        "navn": "Øyvind K. Solfjeld",
         "umoms": "526 kr",
         "db": "305 kr",
         "butikk": "Arendal",
@@ -55633,7 +56257,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "5 175 kr",
         "db": "1 342 kr",
         "butikk": "Larvik",
@@ -57281,7 +57905,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "49 916 kr",
         "db": "7 690 kr",
         "butikk": "Larvik",
@@ -62281,7 +62905,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-356 kr",
         "db": "-205 kr",
         "butikk": "Larvik",
@@ -63465,18 +64089,18 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Stine Marie Hofsrud",
-        "umoms": "-135 kr",
-        "db": "-87 kr",
-        "butikk": "Tønsberg",
-        "fakturadato": 20260224
-    },
-    {
-        "ukedag": "Tirsdag",
         "navn": "Christina Larsen",
         "umoms": "-135 kr",
         "db": "-44 kr",
         "butikk": "Kristiansand",
+        "fakturadato": 20260224
+    },
+    {
+        "ukedag": "Tirsdag",
+        "navn": "Stine Marie Hofsrud",
+        "umoms": "-135 kr",
+        "db": "-87 kr",
+        "butikk": "Tønsberg",
         "fakturadato": 20260224
     },
     {
@@ -63537,7 +64161,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-569 kr",
         "db": "41 kr",
         "butikk": "Larvik",
@@ -64265,7 +64889,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 380 kr",
         "db": "-532 kr",
         "butikk": "Larvik",
@@ -64441,7 +65065,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "20 166 kr",
         "db": "5 351 kr",
         "butikk": "Larvik",
@@ -66377,18 +67001,18 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Sjur Eivind Andersen",
-        "umoms": "1 800 kr",
-        "db": "174 kr",
-        "butikk": "Arendal",
-        "fakturadato": 20260218
-    },
-    {
-        "ukedag": "Onsdag",
         "navn": "Ida Pernille Iversen",
         "umoms": "1 800 kr",
         "db": "294 kr",
         "butikk": "Skien",
+        "fakturadato": 20260218
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Sjur Eivind Andersen",
+        "umoms": "1 800 kr",
+        "db": "174 kr",
+        "butikk": "Arendal",
         "fakturadato": 20260218
     },
     {
@@ -67833,7 +68457,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "47 041 kr",
         "db": "14 230 kr",
         "butikk": "Larvik",
@@ -69441,18 +70065,18 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Tommy Fodsung-Noen Kristensen",
-        "umoms": "-2 399 kr",
-        "db": "-989 kr",
-        "butikk": "Kristiansand",
-        "fakturadato": 20260212
-    },
-    {
-        "ukedag": "Torsdag",
         "navn": "Sahand Saraydari",
         "umoms": "-2 399 kr",
         "db": "83 kr",
         "butikk": "Bamble",
+        "fakturadato": 20260212
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Tommy Fodsung-Noen Kristensen",
+        "umoms": "-2 399 kr",
+        "db": "-989 kr",
+        "butikk": "Kristiansand",
         "fakturadato": 20260212
     },
     {
@@ -69937,7 +70561,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-288 kr",
         "db": "-11 kr",
         "butikk": "Larvik",
@@ -77985,7 +78609,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "57 367 kr",
         "db": "10 350 kr",
         "butikk": "Larvik",
@@ -78281,18 +78905,18 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Daniel Hotvedt Aashildrød",
-        "umoms": "-159 kr",
-        "db": "-97 kr",
-        "butikk": "Sandefjord",
-        "fakturadato": 20260124
-    },
-    {
-        "ukedag": "Lørdag",
         "navn": "Filip Söderlund",
         "umoms": "-159 kr",
         "db": "-98 kr",
         "butikk": "Tønsberg",
+        "fakturadato": 20260124
+    },
+    {
+        "ukedag": "Lørdag",
+        "navn": "Daniel Hotvedt Aashildrød",
+        "umoms": "-159 kr",
+        "db": "-97 kr",
+        "butikk": "Sandefjord",
         "fakturadato": 20260124
     },
     {
@@ -79457,18 +80081,18 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Amanda Krumsvik",
-        "umoms": "479 kr",
-        "db": "12 kr",
-        "butikk": "Kristiansand",
-        "fakturadato": 20260122
-    },
-    {
-        "ukedag": "Torsdag",
         "navn": "Tony K. Fagermo",
         "umoms": "479 kr",
         "db": "228 kr",
         "butikk": "Bamble",
+        "fakturadato": 20260122
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Amanda Krumsvik",
+        "umoms": "479 kr",
+        "db": "12 kr",
+        "butikk": "Kristiansand",
         "fakturadato": 20260122
     },
     {
@@ -80089,7 +80713,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-103 kr",
         "db": "-63 kr",
         "butikk": "Larvik",
@@ -80145,18 +80769,18 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Celine Rød",
-        "umoms": "-302 kr",
-        "db": "-106 kr",
-        "butikk": "Larvik",
-        "fakturadato": 20260121
-    },
-    {
-        "ukedag": "Onsdag",
         "navn": "Susanne Engmann",
         "umoms": "-302 kr",
         "db": "-59 kr",
         "butikk": "Tønsberg",
+        "fakturadato": 20260121
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Celine Rød",
+        "umoms": "-302 kr",
+        "db": "-106 kr",
+        "butikk": "Larvik",
         "fakturadato": 20260121
     },
     {
@@ -80425,7 +81049,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "16 435 kr",
         "db": "3 133 kr",
         "butikk": "Larvik",
@@ -85033,7 +85657,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-143 kr",
         "db": "-93 kr",
         "butikk": "Larvik",
@@ -85129,18 +85753,18 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Torstein Sandve",
-        "umoms": "-854 kr",
-        "db": "-248 kr",
-        "butikk": "Arendal",
-        "fakturadato": 20260110
-    },
-    {
-        "ukedag": "Lørdag",
         "navn": "Mathias Oseid Hagen",
         "umoms": "-854 kr",
         "db": "-148 kr",
         "butikk": "Kristiansand",
+        "fakturadato": 20260110
+    },
+    {
+        "ukedag": "Lørdag",
+        "navn": "Torstein Sandve",
+        "umoms": "-854 kr",
+        "db": "-248 kr",
+        "butikk": "Arendal",
         "fakturadato": 20260110
     },
     {
@@ -88553,7 +89177,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-925 kr",
         "db": "65 kr",
         "butikk": "Larvik",
@@ -94585,7 +95209,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-623 kr",
         "db": "-196 kr",
         "butikk": "Larvik",
@@ -95249,7 +95873,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 386 kr",
         "db": "17 kr",
         "butikk": "Larvik",
@@ -95417,7 +96041,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "33 509 kr",
         "db": "7 919 kr",
         "butikk": "Larvik",
@@ -95969,7 +96593,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "39 145 kr",
         "db": "8 257 kr",
         "butikk": "Larvik",
@@ -96929,7 +97553,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-215 kr",
         "db": "-35 kr",
         "butikk": "Larvik",
@@ -98721,7 +99345,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-479 kr",
         "db": "-237 kr",
         "butikk": "Larvik",
@@ -99097,7 +99721,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 018 kr",
         "db": "3 552 kr",
         "butikk": "Larvik",
@@ -99785,18 +100409,18 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Marcus Hidle Brustad",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-431 kr",
-        "db": "-155 kr",
-        "butikk": "Sandefjord",
+        "db": "105 kr",
+        "butikk": "Larvik",
         "fakturadato": 20251206
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Marcus Hidle Brustad",
         "umoms": "-431 kr",
-        "db": "105 kr",
-        "butikk": "Larvik",
+        "db": "-155 kr",
+        "butikk": "Sandefjord",
         "fakturadato": 20251206
     },
     {
@@ -100385,7 +101009,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-350 kr",
         "db": "-208 kr",
         "butikk": "Larvik",
@@ -101009,7 +101633,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-158 kr",
         "db": "-47 kr",
         "butikk": "Larvik",
@@ -102561,7 +103185,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 347 kr",
         "db": "4 959 kr",
         "butikk": "Larvik",
@@ -104905,7 +105529,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-261 kr",
         "db": "-88 kr",
         "butikk": "Larvik",
@@ -105081,7 +105705,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "56 033 kr",
         "db": "596 kr",
         "butikk": "Larvik",
@@ -106289,7 +106913,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-684 kr",
         "db": "-263 kr",
         "butikk": "Larvik",
@@ -106649,7 +107273,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "23 535 kr",
         "db": "4 348 kr",
         "butikk": "Larvik",
@@ -107249,7 +107873,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "30 722 kr",
         "db": "4 627 kr",
         "butikk": "Larvik",
@@ -108161,7 +108785,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "3 388 kr",
         "db": "-624 kr",
         "butikk": "Larvik",
@@ -108785,7 +109409,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 102 kr",
         "db": "2 636 kr",
         "butikk": "Larvik",
@@ -111073,7 +111697,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "31 099 kr",
         "db": "8 043 kr",
         "butikk": "Larvik",
@@ -111985,7 +112609,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-478 kr",
         "db": "-147 kr",
         "butikk": "Larvik",
@@ -116905,7 +117529,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-399 kr",
         "db": "-138 kr",
         "butikk": "Larvik",
@@ -117481,7 +118105,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-479 kr",
         "db": "-136 kr",
         "butikk": "Larvik",
@@ -118297,7 +118921,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "49 817 kr",
         "db": "10 915 kr",
         "butikk": "Larvik",
@@ -119337,7 +119961,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-644 kr",
         "db": "-392 kr",
         "butikk": "Larvik",
@@ -121745,7 +122369,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-367 kr",
         "db": "-105 kr",
         "butikk": "Larvik",
@@ -122313,7 +122937,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-591 kr",
         "db": "-168 kr",
         "butikk": "Larvik",
@@ -123033,7 +123657,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-2 860 kr",
         "db": "-1 455 kr",
         "butikk": "Larvik",
@@ -123169,7 +123793,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "32 969 kr",
         "db": "8 780 kr",
         "butikk": "Larvik",
@@ -124993,7 +125617,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "23 867 kr",
         "db": "5 568 kr",
         "butikk": "Larvik",
@@ -128009,7 +128633,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 400 kr",
         "db": "1 933 kr",
         "butikk": "Larvik",
@@ -129017,7 +129641,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "56 120 kr",
         "db": "13 104 kr",
         "butikk": "Larvik",
@@ -129769,7 +130393,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 219 kr",
         "db": "2 406 kr",
         "butikk": "Larvik",
@@ -130537,18 +131161,18 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Rasmus Helle",
-        "umoms": "-55 kr",
-        "db": "-28 kr",
-        "butikk": "Kristiansand",
-        "fakturadato": 20251009
-    },
-    {
-        "ukedag": "Torsdag",
         "navn": "Fredrik Jacobsen",
         "umoms": "-55 kr",
         "db": "-28 kr",
         "butikk": "Arendal",
+        "fakturadato": 20251009
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Rasmus Helle",
+        "umoms": "-55 kr",
+        "db": "-28 kr",
+        "butikk": "Kristiansand",
         "fakturadato": 20251009
     },
     {
@@ -134777,7 +135401,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 869 kr",
         "db": "-558 kr",
         "butikk": "Larvik",
@@ -135985,7 +136609,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-255 kr",
         "db": "-80 kr",
         "butikk": "Larvik",
@@ -136217,7 +136841,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "36 484 kr",
         "db": "10 097 kr",
         "butikk": "Larvik",
@@ -137145,7 +137769,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-191 kr",
         "db": "-84 kr",
         "butikk": "Larvik",
@@ -137689,7 +138313,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-95 kr",
         "db": "-43 kr",
         "butikk": "Larvik",
@@ -138353,7 +138977,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-462 kr",
         "db": "-117 kr",
         "butikk": "Larvik",
@@ -138697,7 +139321,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 932 kr",
         "db": "1 633 kr",
         "butikk": "Larvik",
@@ -139545,7 +140169,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-64 kr",
         "db": "-17 kr",
         "butikk": "Larvik",
@@ -139833,7 +140457,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "20 269 kr",
         "db": "7 137 kr",
         "butikk": "Larvik",
@@ -140417,7 +141041,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "16 154 kr",
         "db": "-12 463 kr",
         "butikk": "Larvik",
@@ -141497,7 +142121,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-2 709 kr",
         "db": "-9 kr",
         "butikk": "Larvik",
@@ -142201,7 +142825,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "22 388 kr",
         "db": "4 106 kr",
         "butikk": "Larvik",
@@ -143721,7 +144345,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 655 kr",
         "db": "-584 kr",
         "butikk": "Larvik",
@@ -145593,7 +146217,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-369 kr",
         "db": "99 kr",
         "butikk": "Larvik",
@@ -146777,7 +147401,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-287 kr",
         "db": "-210 kr",
         "butikk": "Larvik",
@@ -147273,18 +147897,18 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Marcus Hidle Brustad",
-        "umoms": "-359 kr",
-        "db": "-22 kr",
-        "butikk": "Sandefjord",
-        "fakturadato": 20250906
-    },
-    {
-        "ukedag": "Lørdag",
         "navn": "James Michael McGurty",
         "umoms": "-359 kr",
         "db": "-134 kr",
         "butikk": "Skien",
+        "fakturadato": 20250906
+    },
+    {
+        "ukedag": "Lørdag",
+        "navn": "Marcus Hidle Brustad",
+        "umoms": "-359 kr",
+        "db": "-22 kr",
+        "butikk": "Sandefjord",
         "fakturadato": 20250906
     },
     {
@@ -147905,7 +148529,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-119 kr",
         "db": "-54 kr",
         "butikk": "Larvik",
@@ -149121,7 +149745,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-356 kr",
         "db": "25 kr",
         "butikk": "Larvik",
@@ -149441,7 +150065,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "20 972 kr",
         "db": "5 610 kr",
         "butikk": "Larvik",
@@ -149777,17 +150401,17 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Solveig Jørgensen",
+        "navn": "Jonathan Kaaby",
         "umoms": "-479 kr",
-        "db": "-131 kr",
+        "db": "-63 kr",
         "butikk": "Arendal",
         "fakturadato": 20250902
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Jonathan Kaaby",
+        "navn": "Solveig Jørgensen",
         "umoms": "-479 kr",
-        "db": "-63 kr",
+        "db": "-131 kr",
         "butikk": "Arendal",
         "fakturadato": 20250902
     },
@@ -150169,7 +150793,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 588 kr",
         "db": "2 645 kr",
         "butikk": "Larvik",
@@ -150673,7 +151297,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "24 042 kr",
         "db": "8 129 kr",
         "butikk": "Larvik",
@@ -152993,7 +153617,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "14 163 kr",
         "db": "4 548 kr",
         "butikk": "Larvik",
@@ -154865,7 +155489,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 173 kr",
         "db": "2 729 kr",
         "butikk": "Larvik",
@@ -156177,7 +156801,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-156 kr",
         "db": "-49 kr",
         "butikk": "Larvik",
@@ -156633,7 +157257,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "7 379 kr",
         "db": "1 539 kr",
         "butikk": "Larvik",
@@ -157361,7 +157985,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-159 kr",
         "db": "-98 kr",
         "butikk": "Larvik",
@@ -157609,7 +158233,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "26 328 kr",
         "db": "7 580 kr",
         "butikk": "Larvik",
@@ -158297,7 +158921,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "8 556 kr",
         "db": "2 165 kr",
         "butikk": "Larvik",
@@ -158905,7 +159529,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "5 982 kr",
         "db": "1 760 kr",
         "butikk": "Larvik",
@@ -159313,7 +159937,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "21 935 kr",
         "db": "3 893 kr",
         "butikk": "Larvik",
@@ -159969,7 +160593,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "12 082 kr",
         "db": "4 106 kr",
         "butikk": "Larvik",
@@ -161057,7 +161681,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "38 812 kr",
         "db": "11 035 kr",
         "butikk": "Larvik",
@@ -161817,7 +162441,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "6 023 kr",
         "db": "2 775 kr",
         "butikk": "Larvik",
@@ -162673,7 +163297,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-8 023 kr",
         "db": "-1 392 kr",
         "butikk": "Larvik",
@@ -163241,7 +163865,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-3 759 kr",
         "db": "-468 kr",
         "butikk": "Larvik",
@@ -163769,7 +164393,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-252 kr",
         "db": "-137 kr",
         "butikk": "Larvik",
@@ -164033,7 +164657,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "28 985 kr",
         "db": "5 079 kr",
         "butikk": "Larvik",
@@ -164825,7 +165449,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-234 kr",
         "db": "-74 kr",
         "butikk": "Larvik",
@@ -165209,7 +165833,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 894 kr",
         "db": "2 557 kr",
         "butikk": "Larvik",
@@ -166633,7 +167257,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-508 kr",
         "db": "-143 kr",
         "butikk": "Larvik",
@@ -166777,7 +167401,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "49 180 kr",
         "db": "9 649 kr",
         "butikk": "Larvik",
@@ -167129,18 +167753,18 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Øyvind K. Solfjeld",
-        "umoms": "519 kr",
-        "db": "226 kr",
-        "butikk": "Arendal",
-        "fakturadato": 20250729
-    },
-    {
-        "ukedag": "Tirsdag",
         "navn": "Jesper Petterson",
         "umoms": "519 kr",
         "db": "226 kr",
         "butikk": "Kristiansand",
+        "fakturadato": 20250729
+    },
+    {
+        "ukedag": "Tirsdag",
+        "navn": "Øyvind K. Solfjeld",
+        "umoms": "519 kr",
+        "db": "226 kr",
+        "butikk": "Arendal",
         "fakturadato": 20250729
     },
     {
@@ -167513,7 +168137,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "16 549 kr",
         "db": "3 869 kr",
         "butikk": "Larvik",
@@ -167945,7 +168569,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "53 477 kr",
         "db": "8 339 kr",
         "butikk": "Larvik",
@@ -168521,7 +169145,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 453 kr",
         "db": "4 630 kr",
         "butikk": "Larvik",
@@ -169089,7 +169713,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 653 kr",
         "db": "3 319 kr",
         "butikk": "Larvik",
@@ -169673,7 +170297,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "16 799 kr",
         "db": "3 013 kr",
         "butikk": "Larvik",
@@ -170073,7 +170697,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "27 022 kr",
         "db": "5 950 kr",
         "butikk": "Larvik",
@@ -170745,7 +171369,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "19 773 kr",
         "db": "5 724 kr",
         "butikk": "Larvik",
@@ -171153,7 +171777,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "44 769 kr",
         "db": "7 459 kr",
         "butikk": "Larvik",
@@ -171313,18 +171937,18 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Kamilla Fedje Vedå",
-        "umoms": "6 736 kr",
-        "db": "1 412 kr",
-        "butikk": "Tønsberg",
-        "fakturadato": 20250719
-    },
-    {
-        "ukedag": "Lørdag",
         "navn": "Mathias Oseid Hagen",
         "umoms": "6 736 kr",
         "db": "2 266 kr",
         "butikk": "Kristiansand",
+        "fakturadato": 20250719
+    },
+    {
+        "ukedag": "Lørdag",
+        "navn": "Kamilla Fedje Vedå",
+        "umoms": "6 736 kr",
+        "db": "1 412 kr",
+        "butikk": "Tønsberg",
         "fakturadato": 20250719
     },
     {
@@ -172657,7 +173281,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "33 345 kr",
         "db": "8 723 kr",
         "butikk": "Larvik",
@@ -173545,7 +174169,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-142 kr",
         "db": "-77 kr",
         "butikk": "Larvik",
@@ -173777,7 +174401,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "37 696 kr",
         "db": "8 807 kr",
         "butikk": "Larvik",
@@ -174889,7 +175513,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "12 765 kr",
         "db": "3 376 kr",
         "butikk": "Larvik",
@@ -175089,18 +175713,18 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "James Michael McGurty",
-        "umoms": "-159 kr",
-        "db": "-98 kr",
-        "butikk": "Skien",
-        "fakturadato": 20250711
-    },
-    {
-        "ukedag": "Fredag",
         "navn": "Amanda Krumsvik",
         "umoms": "-159 kr",
         "db": "-102 kr",
         "butikk": "Kristiansand",
+        "fakturadato": 20250711
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "James Michael McGurty",
+        "umoms": "-159 kr",
+        "db": "-98 kr",
+        "butikk": "Skien",
         "fakturadato": 20250711
     },
     {
@@ -175369,7 +175993,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "19 059 kr",
         "db": "4 265 kr",
         "butikk": "Larvik",
@@ -176017,7 +176641,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "15 152 kr",
         "db": "3 286 kr",
         "butikk": "Larvik",
@@ -176537,7 +177161,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "20 973 kr",
         "db": "5 015 kr",
         "butikk": "Larvik",
@@ -177401,7 +178025,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-183 kr",
         "db": "-103 kr",
         "butikk": "Larvik",
@@ -177817,7 +178441,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 873 kr",
         "db": "3 275 kr",
         "butikk": "Larvik",
@@ -178361,7 +178985,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "17 205 kr",
         "db": "4 585 kr",
         "butikk": "Larvik",
@@ -179033,7 +179657,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "12 601 kr",
         "db": "2 115 kr",
         "butikk": "Larvik",
@@ -179497,7 +180121,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "22 020 kr",
         "db": "7 370 kr",
         "butikk": "Larvik",
@@ -180425,7 +181049,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-210 kr",
         "db": "-93 kr",
         "butikk": "Larvik",
@@ -181065,7 +181689,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-837 kr",
         "db": "-545 kr",
         "butikk": "Larvik",
@@ -181193,7 +181817,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "50 188 kr",
         "db": "10 771 kr",
         "butikk": "Larvik",
@@ -181889,7 +182513,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "13 894 kr",
         "db": "4 568 kr",
         "butikk": "Larvik",
@@ -182481,7 +183105,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "17 438 kr",
         "db": "6 529 kr",
         "butikk": "Larvik",
@@ -183161,7 +183785,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 216 kr",
         "db": "3 546 kr",
         "butikk": "Larvik",
@@ -183785,7 +184409,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 714 kr",
         "db": "2 851 kr",
         "butikk": "Larvik",
@@ -184601,7 +185225,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-156 kr",
         "db": "1 kr",
         "butikk": "Larvik",
@@ -186353,7 +186977,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-296 kr",
         "db": "-215 kr",
         "butikk": "Larvik",
@@ -186545,7 +187169,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "29 568 kr",
         "db": "4 517 kr",
         "butikk": "Larvik",
@@ -187313,7 +187937,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "17 988 kr",
         "db": "4 658 kr",
         "butikk": "Larvik",
@@ -188193,7 +188817,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Johan Nunez",
+        "navn": "Alf Brynjar Flø",
         "umoms": "71 kr",
         "db": "-5 kr",
         "butikk": "Skien",
@@ -188201,7 +188825,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Alf Brynjar Flø",
+        "navn": "Johan Nunez",
         "umoms": "71 kr",
         "db": "-5 kr",
         "butikk": "Skien",
@@ -188241,7 +188865,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-701 kr",
         "db": "-395 kr",
         "butikk": "Larvik",
@@ -188457,7 +189081,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "34 552 kr",
         "db": "9 507 kr",
         "butikk": "Larvik",
@@ -189305,7 +189929,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-94 kr",
         "db": "-33 kr",
         "butikk": "Larvik",
@@ -189697,7 +190321,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "16 656 kr",
         "db": "4 876 kr",
         "butikk": "Larvik",
@@ -190273,7 +190897,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 163 kr",
         "db": "2 273 kr",
         "butikk": "Larvik",
@@ -191241,7 +191865,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 369 kr",
         "db": "174 kr",
         "butikk": "Larvik",
@@ -191385,7 +192009,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "50 159 kr",
         "db": "10 836 kr",
         "butikk": "Larvik",
@@ -191961,7 +192585,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "32 805 kr",
         "db": "5 139 kr",
         "butikk": "Larvik",
@@ -192921,7 +193545,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-172 kr",
         "db": "-64 kr",
         "butikk": "Larvik",
@@ -193921,7 +194545,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "7 000 kr",
         "db": "897 kr",
         "butikk": "Larvik",
@@ -194473,7 +195097,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "19 476 kr",
         "db": "995 kr",
         "butikk": "Larvik",
@@ -194993,7 +195617,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "26 865 kr",
         "db": "7 323 kr",
         "butikk": "Larvik",
@@ -196017,7 +196641,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-501 kr",
         "db": "-255 kr",
         "butikk": "Larvik",
@@ -196249,7 +196873,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "27 903 kr",
         "db": "5 569 kr",
         "butikk": "Larvik",
@@ -196881,7 +197505,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "19 569 kr",
         "db": "1 644 kr",
         "butikk": "Larvik",
@@ -197833,7 +198457,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-719 kr",
         "db": "-226 kr",
         "butikk": "Larvik",
@@ -198961,7 +199585,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-63 kr",
         "db": "-22 kr",
         "butikk": "Larvik",
@@ -199873,7 +200497,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "15 512 kr",
         "db": "5 035 kr",
         "butikk": "Larvik",
@@ -200537,7 +201161,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "13 221 kr",
         "db": "4 348 kr",
         "butikk": "Larvik",
@@ -201785,7 +202409,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "7 796 kr",
         "db": "1 764 kr",
         "butikk": "Larvik",
@@ -202377,7 +203001,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "12 837 kr",
         "db": "2 967 kr",
         "butikk": "Larvik",
@@ -202913,7 +203537,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "14 806 kr",
         "db": "2 662 kr",
         "butikk": "Larvik",
@@ -203169,18 +203793,18 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Daniel Jørgensen",
-        "umoms": "-143 kr",
-        "db": "-100 kr",
-        "butikk": "Larvik",
-        "fakturadato": 20250514
-    },
-    {
-        "ukedag": "Onsdag",
         "navn": "Amritpal Nagra Singh",
         "umoms": "-143 kr",
         "db": "-65 kr",
         "butikk": "Tønsberg",
+        "fakturadato": 20250514
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Daniel Jørgensen",
+        "umoms": "-143 kr",
+        "db": "-100 kr",
+        "butikk": "Larvik",
         "fakturadato": 20250514
     },
     {
@@ -203513,7 +204137,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "17 017 kr",
         "db": "817 kr",
         "butikk": "Larvik",
@@ -205921,7 +206545,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "16 740 kr",
         "db": "6 148 kr",
         "butikk": "Larvik",
@@ -206929,7 +207553,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "50 852 kr",
         "db": "8 001 kr",
         "butikk": "Larvik",
@@ -208793,7 +209417,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "57 832 kr",
         "db": "19 417 kr",
         "butikk": "Larvik",
@@ -210049,7 +210673,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-4 478 kr",
         "db": "110 kr",
         "butikk": "Larvik",
@@ -210417,7 +211041,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "8 051 kr",
         "db": "1 584 kr",
         "butikk": "Larvik",
@@ -211241,7 +211865,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-676 kr",
         "db": "-342 kr",
         "butikk": "Larvik",
@@ -211521,7 +212145,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "29 600 kr",
         "db": "8 453 kr",
         "butikk": "Larvik",
@@ -211985,7 +212609,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "43 185 kr",
         "db": "6 534 kr",
         "butikk": "Larvik",
@@ -213049,7 +213673,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-220 kr",
         "db": "-107 kr",
         "butikk": "Larvik",
@@ -213737,7 +214361,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-678 kr",
         "db": "-425 kr",
         "butikk": "Larvik",
@@ -214473,7 +215097,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-6 687 kr",
         "db": "-1 998 kr",
         "butikk": "Larvik",
@@ -214849,7 +215473,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-31 kr",
         "db": "-11 kr",
         "butikk": "Larvik",
@@ -214993,17 +215617,17 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Ida Pernille Iversen",
+        "navn": "Elias Saubrekka",
         "umoms": "-799 kr",
-        "db": "-314 kr",
+        "db": "126 kr",
         "butikk": "Skien",
         "fakturadato": 20250419
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Elias Saubrekka",
+        "navn": "Ida Pernille Iversen",
         "umoms": "-799 kr",
-        "db": "126 kr",
+        "db": "-314 kr",
         "butikk": "Skien",
         "fakturadato": 20250419
     },
@@ -215185,7 +215809,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "34 762 kr",
         "db": "9 476 kr",
         "butikk": "Larvik",
@@ -216017,7 +216641,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 171 kr",
         "db": "3 487 kr",
         "butikk": "Larvik",
@@ -217121,7 +217745,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-2 079 kr",
         "db": "-1 401 kr",
         "butikk": "Larvik",
@@ -217265,7 +217889,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "31 972 kr",
         "db": "5 929 kr",
         "butikk": "Larvik",
@@ -219473,7 +220097,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-710 kr",
         "db": "-305 kr",
         "butikk": "Larvik",
@@ -219793,7 +220417,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 122 kr",
         "db": "3 630 kr",
         "butikk": "Larvik",
@@ -220849,7 +221473,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "32 005 kr",
         "db": "6 599 kr",
         "butikk": "Larvik",
@@ -221473,7 +222097,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "23 304 kr",
         "db": "5 743 kr",
         "butikk": "Larvik",
@@ -222465,7 +223089,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "66 373 kr",
         "db": "3 476 kr",
         "butikk": "Larvik",
@@ -223609,7 +224233,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-2 228 kr",
         "db": "-1 106 kr",
         "butikk": "Larvik",
@@ -224209,7 +224833,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 533 kr",
         "db": "-502 kr",
         "butikk": "Larvik",
@@ -224313,7 +224937,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "72 163 kr",
         "db": "15 672 kr",
         "butikk": "Larvik",
@@ -224985,7 +225609,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "29 885 kr",
         "db": "5 037 kr",
         "butikk": "Larvik",
@@ -225945,7 +226569,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-3 774 kr",
         "db": "-872 kr",
         "butikk": "Larvik",
@@ -226313,7 +226937,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 538 kr",
         "db": "1 738 kr",
         "butikk": "Larvik",
@@ -226673,7 +227297,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "34 124 kr",
         "db": "6 592 kr",
         "butikk": "Larvik",
@@ -227289,7 +227913,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "34 758 kr",
         "db": "10 965 kr",
         "butikk": "Larvik",
@@ -228353,7 +228977,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-2 015 kr",
         "db": "-104 kr",
         "butikk": "Larvik",
@@ -228513,7 +229137,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "36 101 kr",
         "db": "3 735 kr",
         "butikk": "Larvik",
@@ -229233,7 +229857,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "29 122 kr",
         "db": "-2 107 kr",
         "butikk": "Larvik",
@@ -230161,7 +230785,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-453 kr",
         "db": "-230 kr",
         "butikk": "Larvik",
@@ -230561,7 +231185,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "4 405 kr",
         "db": "1 539 kr",
         "butikk": "Larvik",
@@ -230713,18 +231337,18 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Mikkel Kihle Lindvig",
-        "umoms": "-198 kr",
-        "db": "-106 kr",
-        "butikk": "Kristiansand",
-        "fakturadato": 20250318
-    },
-    {
-        "ukedag": "Tirsdag",
         "navn": "Kasper Helgesen Hansen",
         "umoms": "-198 kr",
         "db": "-154 kr",
         "butikk": "Skien",
+        "fakturadato": 20250318
+    },
+    {
+        "ukedag": "Tirsdag",
+        "navn": "Mikkel Kihle Lindvig",
+        "umoms": "-198 kr",
+        "db": "-106 kr",
+        "butikk": "Kristiansand",
         "fakturadato": 20250318
     },
     {
@@ -231905,7 +232529,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-559 kr",
         "db": "-75 kr",
         "butikk": "Larvik",
@@ -232249,7 +232873,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "25 284 kr",
         "db": "6 827 kr",
         "butikk": "Larvik",
@@ -233281,7 +233905,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 519 kr",
         "db": "-695 kr",
         "butikk": "Larvik",
@@ -234073,7 +234697,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 372 kr",
         "db": "859 kr",
         "butikk": "Larvik",
@@ -234953,7 +235577,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-372 kr",
         "db": "-160 kr",
         "butikk": "Larvik",
@@ -235489,7 +236113,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-2 613 kr",
         "db": "-76 kr",
         "butikk": "Larvik",
@@ -236033,7 +236657,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-151 kr",
         "db": "-73 kr",
         "butikk": "Larvik",
@@ -236313,7 +236937,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "17 364 kr",
         "db": "1 919 kr",
         "butikk": "Larvik",
@@ -237257,7 +237881,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 599 kr",
         "db": "612 kr",
         "butikk": "Larvik",
@@ -237569,7 +238193,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 150 kr",
         "db": "4 054 kr",
         "butikk": "Larvik",
@@ -238313,7 +238937,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-55 kr",
         "db": "-28 kr",
         "butikk": "Larvik",
@@ -238785,18 +239409,18 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Anders Eide",
-        "umoms": "-239 kr",
-        "db": "-108 kr",
-        "butikk": "Tønsberg",
-        "fakturadato": 20250301
-    },
-    {
-        "ukedag": "Lørdag",
         "navn": "Elias Saubrekka",
         "umoms": "-239 kr",
         "db": "-147 kr",
         "butikk": "Skien",
+        "fakturadato": 20250301
+    },
+    {
+        "ukedag": "Lørdag",
+        "navn": "Anders Eide",
+        "umoms": "-239 kr",
+        "db": "-108 kr",
+        "butikk": "Tønsberg",
         "fakturadato": 20250301
     },
     {
@@ -239337,7 +239961,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "3 396 kr",
         "db": "1 251 kr",
         "butikk": "Larvik",
@@ -239857,7 +240481,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "12 247 kr",
         "db": "3 335 kr",
         "butikk": "Larvik",
@@ -240489,7 +241113,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "1 116 kr",
         "db": "449 kr",
         "butikk": "Larvik",
@@ -240793,7 +241417,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "16 309 kr",
         "db": "2 911 kr",
         "butikk": "Larvik",
@@ -241353,7 +241977,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "29 368 kr",
         "db": "10 720 kr",
         "butikk": "Larvik",
@@ -242033,7 +242657,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "5 298 kr",
         "db": "980 kr",
         "butikk": "Larvik",
@@ -242441,7 +243065,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "30 857 kr",
         "db": "7 174 kr",
         "butikk": "Larvik",
@@ -243313,7 +243937,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-459 kr",
         "db": "-77 kr",
         "butikk": "Larvik",
@@ -243809,7 +244433,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-119 kr",
         "db": "-13 kr",
         "butikk": "Larvik",
@@ -244001,7 +244625,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "43 175 kr",
         "db": "5 292 kr",
         "butikk": "Larvik",
@@ -244385,18 +245009,18 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Tuva Sofie Risdal",
-        "umoms": "-410 kr",
-        "db": "-182 kr",
-        "butikk": "Larvik",
-        "fakturadato": 20250218
-    },
-    {
-        "ukedag": "Tirsdag",
         "navn": "Sander Larsen",
         "umoms": "-410 kr",
         "db": "0 kr",
         "butikk": "Bamble",
+        "fakturadato": 20250218
+    },
+    {
+        "ukedag": "Tirsdag",
+        "navn": "Tuva Sofie Risdal",
+        "umoms": "-410 kr",
+        "db": "-182 kr",
+        "butikk": "Larvik",
         "fakturadato": 20250218
     },
     {
@@ -244617,7 +245241,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "22 424 kr",
         "db": "4 424 kr",
         "butikk": "Larvik",
@@ -245049,7 +245673,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "49 833 kr",
         "db": "10 572 kr",
         "butikk": "Larvik",
@@ -245817,7 +246441,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "8 684 kr",
         "db": "2 225 kr",
         "butikk": "Larvik",
@@ -246513,7 +247137,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-401 kr",
         "db": "-149 kr",
         "butikk": "Larvik",
@@ -247057,7 +247681,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-492 kr",
         "db": "-253 kr",
         "butikk": "Larvik",
@@ -247377,7 +248001,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "21 505 kr",
         "db": "5 571 kr",
         "butikk": "Larvik",
@@ -248489,7 +249113,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "21 849 kr",
         "db": "6 737 kr",
         "butikk": "Larvik",
@@ -249169,7 +249793,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "13 565 kr",
         "db": "4 963 kr",
         "butikk": "Larvik",
@@ -250233,7 +250857,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "13 882 kr",
         "db": "4 285 kr",
         "butikk": "Larvik",
@@ -250521,18 +251145,18 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Fredrik Mølmen",
-        "umoms": "-559 kr",
-        "db": "-77 kr",
-        "butikk": "Bamble",
-        "fakturadato": 20250205
-    },
-    {
-        "ukedag": "Onsdag",
         "navn": "Helge Johansen",
         "umoms": "-559 kr",
         "db": "-269 kr",
         "butikk": "Tønsberg",
+        "fakturadato": 20250205
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Fredrik Mølmen",
+        "umoms": "-559 kr",
+        "db": "-77 kr",
+        "butikk": "Bamble",
         "fakturadato": 20250205
     },
     {
@@ -250729,7 +251353,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 407 kr",
         "db": "6 232 kr",
         "butikk": "Larvik",
@@ -251593,7 +252217,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-79 kr",
         "db": "29 kr",
         "butikk": "Larvik",
@@ -252121,7 +252745,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-377 kr",
         "db": "-238 kr",
         "butikk": "Larvik",
@@ -252801,7 +253425,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-183 kr",
         "db": "-70 kr",
         "butikk": "Larvik",
@@ -253185,7 +253809,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "6 512 kr",
         "db": "2 481 kr",
         "butikk": "Larvik",
@@ -253745,7 +254369,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "7 694 kr",
         "db": "2 740 kr",
         "butikk": "Larvik",
@@ -254129,7 +254753,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "29 384 kr",
         "db": "5 965 kr",
         "butikk": "Larvik",
@@ -255177,7 +255801,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-4 730 kr",
         "db": "-381 kr",
         "butikk": "Larvik",
@@ -255265,7 +255889,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "49 012 kr",
         "db": "9 896 kr",
         "butikk": "Larvik",
@@ -256233,7 +256857,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-396 kr",
         "db": "-135 kr",
         "butikk": "Larvik",
@@ -256385,7 +257009,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "24 974 kr",
         "db": "8 158 kr",
         "butikk": "Larvik",
@@ -257241,7 +257865,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "4 947 kr",
         "db": "1 992 kr",
         "butikk": "Larvik",
@@ -257697,7 +258321,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "8 521 kr",
         "db": "723 kr",
         "butikk": "Larvik",
@@ -258489,7 +259113,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-328 kr",
         "db": "-200 kr",
         "butikk": "Larvik",
@@ -258961,7 +259585,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-94 kr",
         "db": "-63 kr",
         "butikk": "Larvik",
@@ -259345,7 +259969,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "17 878 kr",
         "db": "5 585 kr",
         "butikk": "Larvik",
@@ -260193,7 +260817,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-269 kr",
         "db": "-67 kr",
         "butikk": "Larvik",
@@ -260481,7 +261105,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "14 959 kr",
         "db": "3 073 kr",
         "butikk": "Larvik",
@@ -261065,7 +261689,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "12 398 kr",
         "db": "4 498 kr",
         "butikk": "Larvik",
@@ -262497,7 +263121,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-972 kr",
         "db": "-176 kr",
         "butikk": "Larvik",
@@ -263121,7 +263745,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "0 kr",
         "db": "68 kr",
         "butikk": "Larvik",
@@ -263377,7 +264001,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "22 976 kr",
         "db": "3 040 kr",
         "butikk": "Larvik",
@@ -264089,7 +264713,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "13 506 kr",
         "db": "5 482 kr",
         "butikk": "Larvik",
@@ -264713,7 +265337,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "5 455 kr",
         "db": "1 022 kr",
         "butikk": "Larvik",
@@ -265385,7 +266009,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-9 807 kr",
         "db": "-1 913 kr",
         "butikk": "Larvik",
@@ -265545,7 +266169,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "35 343 kr",
         "db": "6 715 kr",
         "butikk": "Larvik",
@@ -265737,18 +266361,18 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Menglei Chen Ottem",
-        "umoms": "-78 kr",
-        "db": "-34 kr",
-        "butikk": "Larvik",
-        "fakturadato": 20250104
-    },
-    {
-        "ukedag": "Lørdag",
         "navn": "Joakim Johnsen",
         "umoms": "-78 kr",
         "db": "-34 kr",
         "butikk": "Skien",
+        "fakturadato": 20250104
+    },
+    {
+        "ukedag": "Lørdag",
+        "navn": "Menglei Chen Ottem",
+        "umoms": "-78 kr",
+        "db": "-34 kr",
+        "butikk": "Larvik",
         "fakturadato": 20250104
     },
     {
@@ -266713,7 +267337,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "19 240 kr",
         "db": "4 448 kr",
         "butikk": "Larvik",
@@ -267377,7 +268001,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 352 kr",
         "db": "-324 kr",
         "butikk": "Larvik",
@@ -267657,7 +268281,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 616 kr",
         "db": "2 851 kr",
         "butikk": "Larvik",
@@ -268289,18 +268913,18 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Patrick Johansen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-239 kr",
-        "db": "-28 kr",
-        "butikk": "Arendal",
+        "db": "-46 kr",
+        "butikk": "Larvik",
         "fakturadato": 20241228
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Patrick Johansen",
         "umoms": "-239 kr",
-        "db": "-46 kr",
-        "butikk": "Larvik",
+        "db": "-28 kr",
+        "butikk": "Arendal",
         "fakturadato": 20241228
     },
     {
@@ -268353,18 +268977,18 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Anette Omland Brubakken",
-        "umoms": "-559 kr",
-        "db": "-315 kr",
-        "butikk": "Bamble",
-        "fakturadato": 20241228
-    },
-    {
-        "ukedag": "Lørdag",
         "navn": "Mathias Oseid Hagen",
         "umoms": "-559 kr",
         "db": "90 kr",
         "butikk": "Kristiansand",
+        "fakturadato": 20241228
+    },
+    {
+        "ukedag": "Lørdag",
+        "navn": "Anette Omland Brubakken",
+        "umoms": "-559 kr",
+        "db": "-315 kr",
+        "butikk": "Bamble",
         "fakturadato": 20241228
     },
     {
@@ -268761,7 +269385,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 170 kr",
         "db": "2 530 kr",
         "butikk": "Larvik",
@@ -269225,7 +269849,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 936 kr",
         "db": "5 619 kr",
         "butikk": "Larvik",
@@ -270289,7 +270913,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "17 753 kr",
         "db": "4 392 kr",
         "butikk": "Larvik",
@@ -271185,7 +271809,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 141 kr",
         "db": "-575 kr",
         "butikk": "Larvik",
@@ -271369,7 +271993,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "21 888 kr",
         "db": "4 446 kr",
         "butikk": "Larvik",
@@ -272137,7 +272761,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 678 kr",
         "db": "2 861 kr",
         "butikk": "Larvik",
@@ -274721,7 +275345,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-382 kr",
         "db": "-170 kr",
         "butikk": "Larvik",
@@ -274961,7 +275585,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "26 763 kr",
         "db": "6 327 kr",
         "butikk": "Larvik",
@@ -275713,7 +276337,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 859 kr",
         "db": "2 470 kr",
         "butikk": "Larvik",
@@ -276305,7 +276929,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 328 kr",
         "db": "2 665 kr",
         "butikk": "Larvik",
@@ -276625,7 +277249,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "57 149 kr",
         "db": "13 963 kr",
         "butikk": "Larvik",
@@ -277313,7 +277937,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "16 189 kr",
         "db": "4 257 kr",
         "butikk": "Larvik",
@@ -277841,7 +278465,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "20 862 kr",
         "db": "2 926 kr",
         "butikk": "Larvik",
@@ -278337,7 +278961,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "33 894 kr",
         "db": "9 135 kr",
         "butikk": "Larvik",
@@ -279641,7 +280265,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "40 551 kr",
         "db": "8 594 kr",
         "butikk": "Larvik",
@@ -280721,7 +281345,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-2 138 kr",
         "db": "-408 kr",
         "butikk": "Larvik",
@@ -281129,7 +281753,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "23 325 kr",
         "db": "1 144 kr",
         "butikk": "Larvik",
@@ -281609,7 +282233,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "33 874 kr",
         "db": "2 531 kr",
         "butikk": "Larvik",
@@ -283025,7 +283649,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "23 463 kr",
         "db": "-20 kr",
         "butikk": "Larvik",
@@ -283905,7 +284529,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-78 kr",
         "db": "-11 kr",
         "butikk": "Larvik",
@@ -284225,7 +284849,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "38 492 kr",
         "db": "6 400 kr",
         "butikk": "Larvik",
@@ -284593,18 +285217,18 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Adrian Nygaard",
-        "umoms": "-2 399 kr",
-        "db": "-392 kr",
-        "butikk": "Bamble",
-        "fakturadato": 20241123
-    },
-    {
-        "ukedag": "Lørdag",
         "navn": "Thor Aksel Thoresen",
         "umoms": "-2 399 kr",
         "db": "-678 kr",
         "butikk": "Kristiansand",
+        "fakturadato": 20241123
+    },
+    {
+        "ukedag": "Lørdag",
+        "navn": "Adrian Nygaard",
+        "umoms": "-2 399 kr",
+        "db": "-392 kr",
+        "butikk": "Bamble",
         "fakturadato": 20241123
     },
     {
@@ -285105,7 +285729,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "2 842 kr",
         "db": "240 kr",
         "butikk": "Larvik",
@@ -285665,7 +286289,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "22 925 kr",
         "db": "3 093 kr",
         "butikk": "Larvik",
@@ -286473,7 +287097,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-335 kr",
         "db": "-105 kr",
         "butikk": "Larvik",
@@ -286713,7 +287337,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "20 479 kr",
         "db": "3 197 kr",
         "butikk": "Larvik",
@@ -287809,7 +288433,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "49 747 kr",
         "db": "11 829 kr",
         "butikk": "Larvik",
@@ -289273,7 +289897,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "5 325 kr",
         "db": "2 144 kr",
         "butikk": "Larvik",
@@ -290425,7 +291049,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 689 kr",
         "db": "2 549 kr",
         "butikk": "Larvik",
@@ -291065,7 +291689,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "8 376 kr",
         "db": "4 195 kr",
         "butikk": "Larvik",
@@ -291609,7 +292233,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "17 271 kr",
         "db": "3 975 kr",
         "butikk": "Larvik",
@@ -292977,7 +293601,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "7 777 kr",
         "db": "1 638 kr",
         "butikk": "Larvik",
@@ -293585,7 +294209,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "7 199 kr",
         "db": "1 258 kr",
         "butikk": "Larvik",
@@ -294065,7 +294689,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "16 460 kr",
         "db": "4 896 kr",
         "butikk": "Larvik",
@@ -294969,7 +295593,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-230 kr",
         "db": "-59 kr",
         "butikk": "Larvik",
@@ -295137,7 +295761,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "65 135 kr",
         "db": "8 771 kr",
         "butikk": "Larvik",
@@ -296249,7 +296873,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-17 130 kr",
         "db": "-4 303 kr",
         "butikk": "Larvik",
@@ -296657,7 +297281,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "3 403 kr",
         "db": "1 093 kr",
         "butikk": "Larvik",
@@ -296745,18 +297369,18 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Anette Omland Brubakken",
-        "umoms": "-95 kr",
-        "db": "-66 kr",
-        "butikk": "Bamble",
-        "fakturadato": 20241031
-    },
-    {
-        "ukedag": "Torsdag",
         "navn": "Andrea Isabell Samuelsen",
         "umoms": "-95 kr",
         "db": "-54 kr",
         "butikk": "Arendal",
+        "fakturadato": 20241031
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Anette Omland Brubakken",
+        "umoms": "-95 kr",
+        "db": "-66 kr",
+        "butikk": "Bamble",
         "fakturadato": 20241031
     },
     {
@@ -297353,7 +297977,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-231 kr",
         "db": "-15 kr",
         "butikk": "Larvik",
@@ -297809,7 +298433,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "4 467 kr",
         "db": "1 150 kr",
         "butikk": "Larvik",
@@ -298625,7 +299249,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 999 kr",
         "db": "-354 kr",
         "butikk": "Larvik",
@@ -298809,7 +299433,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "36 725 kr",
         "db": "8 594 kr",
         "butikk": "Larvik",
@@ -299553,7 +300177,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "3 165 kr",
         "db": "764 kr",
         "butikk": "Larvik",
@@ -300305,7 +300929,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-111 kr",
         "db": "-52 kr",
         "butikk": "Larvik",
@@ -301401,7 +302025,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 874 kr",
         "db": "2 207 kr",
         "butikk": "Larvik",
@@ -302217,7 +302841,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-399 kr",
         "db": "-143 kr",
         "butikk": "Larvik",
@@ -302377,7 +303001,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "60 745 kr",
         "db": "9 186 kr",
         "butikk": "Larvik",
@@ -303465,7 +304089,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-861 kr",
         "db": "-408 kr",
         "butikk": "Larvik",
@@ -303601,7 +304225,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "34 742 kr",
         "db": "4 241 kr",
         "butikk": "Larvik",
@@ -304441,7 +305065,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "6 117 kr",
         "db": "1 324 kr",
         "butikk": "Larvik",
@@ -305009,7 +305633,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 463 kr",
         "db": "1 507 kr",
         "butikk": "Larvik",
@@ -305977,7 +306601,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "38 192 kr",
         "db": "8 940 kr",
         "butikk": "Larvik",
@@ -306929,7 +307553,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-879 kr",
         "db": "-129 kr",
         "butikk": "Larvik",
@@ -307201,7 +307825,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "20 217 kr",
         "db": "5 680 kr",
         "butikk": "Larvik",
@@ -308025,7 +308649,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-214 kr",
         "db": "-72 kr",
         "butikk": "Larvik",
@@ -308305,7 +308929,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "22 926 kr",
         "db": "6 646 kr",
         "butikk": "Larvik",
@@ -308921,7 +309545,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "17 762 kr",
         "db": "2 262 kr",
         "butikk": "Larvik",
@@ -309825,7 +310449,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 074 kr",
         "db": "-184 kr",
         "butikk": "Larvik",
@@ -310297,7 +310921,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "6 480 kr",
         "db": "-75 kr",
         "butikk": "Larvik",
@@ -310865,7 +311489,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "13 963 kr",
         "db": "851 kr",
         "butikk": "Larvik",
@@ -311681,7 +312305,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-270 kr",
         "db": "-149 kr",
         "butikk": "Larvik",
@@ -312105,7 +312729,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 031 kr",
         "db": "3 612 kr",
         "butikk": "Larvik",
@@ -312769,17 +313393,17 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Mattis René Andersen",
+        "navn": "EIVIND HØGETVEIT",
         "umoms": "-119 kr",
-        "db": "-6 kr",
+        "db": "-37 kr",
         "butikk": "Skien",
         "fakturadato": 20240930
     },
     {
         "ukedag": "Mandag",
-        "navn": "EIVIND HØGETVEIT",
+        "navn": "Mattis René Andersen",
         "umoms": "-119 kr",
-        "db": "-37 kr",
+        "db": "-6 kr",
         "butikk": "Skien",
         "fakturadato": 20240930
     },
@@ -312857,7 +313481,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 188 kr",
         "db": "-749 kr",
         "butikk": "Larvik",
@@ -313105,7 +313729,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "32 607 kr",
         "db": "7 011 kr",
         "butikk": "Larvik",
@@ -314489,7 +315113,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "7 620 kr",
         "db": "1 829 kr",
         "butikk": "Larvik",
@@ -314937,7 +315561,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "20 256 kr",
         "db": "4 066 kr",
         "butikk": "Larvik",
@@ -315513,7 +316137,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "16 888 kr",
         "db": "4 086 kr",
         "butikk": "Larvik",
@@ -316329,7 +316953,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-265 kr",
         "db": "-140 kr",
         "butikk": "Larvik",
@@ -317817,7 +318441,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "31 526 kr",
         "db": "2 576 kr",
         "butikk": "Larvik",
@@ -318697,7 +319321,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "1 350 kr",
         "db": "677 kr",
         "butikk": "Larvik",
@@ -319289,7 +319913,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "3 576 kr",
         "db": "675 kr",
         "butikk": "Larvik",
@@ -320057,7 +320681,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-2 644 kr",
         "db": "-614 kr",
         "butikk": "Larvik",
@@ -320209,7 +320833,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "33 510 kr",
         "db": "9 263 kr",
         "butikk": "Larvik",
@@ -321785,7 +322409,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-484 kr",
         "db": "-201 kr",
         "butikk": "Larvik",
@@ -322273,7 +322897,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "6 153 kr",
         "db": "1 493 kr",
         "butikk": "Larvik",
@@ -322881,7 +323505,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "606 kr",
         "db": "81 kr",
         "butikk": "Larvik",
@@ -323289,7 +323913,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 584 kr",
         "db": "5 307 kr",
         "butikk": "Larvik",
@@ -323801,7 +324425,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "21 712 kr",
         "db": "7 325 kr",
         "butikk": "Larvik",
@@ -324305,7 +324929,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "22 578 kr",
         "db": "3 923 kr",
         "butikk": "Larvik",
@@ -325201,17 +325825,17 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Oliwia Leonarda Sobaniec ",
+        "navn": "Petter Myhre",
         "umoms": "-799 kr",
-        "db": "-269 kr",
+        "db": "-312 kr",
         "butikk": "Kristiansand",
         "fakturadato": 20240905
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Petter Myhre",
+        "navn": "Oliwia Leonarda Sobaniec ",
         "umoms": "-799 kr",
-        "db": "-312 kr",
+        "db": "-269 kr",
         "butikk": "Kristiansand",
         "fakturadato": 20240905
     },
@@ -326081,7 +326705,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 461 kr",
         "db": "3 315 kr",
         "butikk": "Larvik",
@@ -327121,7 +327745,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "28 476 kr",
         "db": "7 876 kr",
         "butikk": "Larvik",
@@ -328009,7 +328633,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-455 kr",
         "db": "-115 kr",
         "butikk": "Larvik",
@@ -328401,7 +329025,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "15 688 kr",
         "db": "86 kr",
         "butikk": "Larvik",
@@ -328993,7 +329617,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "1 212 kr",
         "db": "319 kr",
         "butikk": "Larvik",
@@ -329273,7 +329897,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "45 087 kr",
         "db": "8 136 kr",
         "butikk": "Larvik",
@@ -330225,7 +330849,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-159 kr",
         "db": "-96 kr",
         "butikk": "Larvik",
@@ -331145,7 +331769,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "12 194 kr",
         "db": "2 810 kr",
         "butikk": "Larvik",
@@ -332889,7 +333513,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "5 516 kr",
         "db": "1 930 kr",
         "butikk": "Larvik",
@@ -333577,7 +334201,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-159 kr",
         "db": "-19 kr",
         "butikk": "Larvik",
@@ -333977,7 +334601,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "12 782 kr",
         "db": "2 593 kr",
         "butikk": "Larvik",
@@ -334609,18 +335233,18 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Henrik Holmesland",
-        "umoms": "4 155 kr",
-        "db": "543 kr",
-        "butikk": "Kristiansand",
-        "fakturadato": 20240816
-    },
-    {
-        "ukedag": "Fredag",
         "navn": "Sindre Heldal",
         "umoms": "4 155 kr",
         "db": "669 kr",
         "butikk": "Bamble",
+        "fakturadato": 20240816
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Henrik Holmesland",
+        "umoms": "4 155 kr",
+        "db": "543 kr",
+        "butikk": "Kristiansand",
         "fakturadato": 20240816
     },
     {
@@ -334745,7 +335369,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-158 kr",
         "db": "-54 kr",
         "butikk": "Larvik",
@@ -334969,7 +335593,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "24 101 kr",
         "db": "1 380 kr",
         "butikk": "Larvik",
@@ -335889,7 +336513,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-414 kr",
         "db": "-179 kr",
         "butikk": "Larvik",
@@ -336185,7 +336809,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 409 kr",
         "db": "3 943 kr",
         "butikk": "Larvik",
@@ -337025,7 +337649,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-556 kr",
         "db": "-309 kr",
         "butikk": "Larvik",
@@ -337201,7 +337825,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "28 139 kr",
         "db": "5 913 kr",
         "butikk": "Larvik",
@@ -337777,7 +338401,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "14 847 kr",
         "db": "3 173 kr",
         "butikk": "Larvik",
@@ -338441,7 +339065,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "5 454 kr",
         "db": "1 345 kr",
         "butikk": "Larvik",
@@ -339041,7 +339665,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "6 712 kr",
         "db": "736 kr",
         "butikk": "Larvik",
@@ -339649,18 +340273,18 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Cathrine Eppeland  Hansen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-279 kr",
-        "db": "-120 kr",
-        "butikk": "Arendal",
+        "db": "-108 kr",
+        "butikk": "Larvik",
         "fakturadato": 20240806
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Cathrine Eppeland  Hansen",
         "umoms": "-279 kr",
-        "db": "-108 kr",
-        "butikk": "Larvik",
+        "db": "-120 kr",
+        "butikk": "Arendal",
         "fakturadato": 20240806
     },
     {
@@ -339985,7 +340609,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "22 135 kr",
         "db": "5 591 kr",
         "butikk": "Larvik",
@@ -340457,7 +341081,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "15 075 kr",
         "db": "3 884 kr",
         "butikk": "Larvik",
@@ -341721,7 +342345,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-536 kr",
         "db": "-157 kr",
         "butikk": "Larvik",
@@ -341889,7 +342513,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "25 055 kr",
         "db": "7 391 kr",
         "butikk": "Larvik",
@@ -342785,7 +343409,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-309 kr",
         "db": "-170 kr",
         "butikk": "Larvik",
@@ -342977,7 +343601,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "27 883 kr",
         "db": "7 732 kr",
         "butikk": "Larvik",
@@ -344089,7 +344713,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "24 624 kr",
         "db": "4 788 kr",
         "butikk": "Larvik",
@@ -346217,7 +346841,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-3 530 kr",
         "db": "-1 440 kr",
         "butikk": "Larvik",
@@ -346457,7 +347081,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "26 323 kr",
         "db": "7 392 kr",
         "butikk": "Larvik",
@@ -346977,7 +347601,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "19 468 kr",
         "db": "4 668 kr",
         "butikk": "Larvik",
@@ -347665,7 +348289,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-41 kr",
         "db": "-4 kr",
         "butikk": "Larvik",
@@ -347881,7 +348505,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "32 968 kr",
         "db": "-538 kr",
         "butikk": "Larvik",
@@ -348409,7 +349033,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "44 653 kr",
         "db": "10 718 kr",
         "butikk": "Larvik",
@@ -350113,7 +350737,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-6 991 kr",
         "db": "-1 747 kr",
         "butikk": "Larvik",
@@ -350297,7 +350921,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "20 123 kr",
         "db": "8 392 kr",
         "butikk": "Larvik",
@@ -350681,7 +351305,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "47 248 kr",
         "db": "8 885 kr",
         "butikk": "Larvik",
@@ -351665,7 +352289,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-238 kr",
         "db": "-52 kr",
         "butikk": "Larvik",
@@ -352385,7 +353009,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-3 586 kr",
         "db": "-1 067 kr",
         "butikk": "Larvik",
@@ -352649,7 +353273,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 321 kr",
         "db": "3 116 kr",
         "butikk": "Larvik",
@@ -353481,7 +354105,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-124 kr",
         "db": "-71 kr",
         "butikk": "Larvik",
@@ -353729,7 +354353,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "30 381 kr",
         "db": "8 220 kr",
         "butikk": "Larvik",
@@ -355289,7 +355913,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-639 kr",
         "db": "-161 kr",
         "butikk": "Larvik",
@@ -355721,7 +356345,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "2 635 kr",
         "db": "102 kr",
         "butikk": "Larvik",
@@ -356065,7 +356689,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "27 595 kr",
         "db": "9 423 kr",
         "butikk": "Larvik",
@@ -356649,7 +357273,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "35 259 kr",
         "db": "10 614 kr",
         "butikk": "Larvik",
@@ -357257,7 +357881,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "52 968 kr",
         "db": "219 kr",
         "butikk": "Larvik",
@@ -358609,7 +359233,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "1 814 kr",
         "db": "383 kr",
         "butikk": "Larvik",
@@ -359369,7 +359993,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 622 kr",
         "db": "-108 kr",
         "butikk": "Larvik",
@@ -359465,7 +360089,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "56 261 kr",
         "db": "4 278 kr",
         "butikk": "Larvik",
@@ -360465,18 +361089,18 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Jostein Larsen",
-        "umoms": "-159 kr",
-        "db": "-78 kr",
-        "butikk": "Bamble",
-        "fakturadato": 20240624
-    },
-    {
-        "ukedag": "Mandag",
         "navn": "Albin Heshag",
         "umoms": "-159 kr",
         "db": "-75 kr",
         "butikk": "Arendal",
+        "fakturadato": 20240624
+    },
+    {
+        "ukedag": "Mandag",
+        "navn": "Jostein Larsen",
+        "umoms": "-159 kr",
+        "db": "-78 kr",
+        "butikk": "Bamble",
         "fakturadato": 20240624
     },
     {
@@ -360585,7 +361209,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-2 054 kr",
         "db": "336 kr",
         "butikk": "Larvik",
@@ -360817,7 +361441,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "38 724 kr",
         "db": "8 149 kr",
         "butikk": "Larvik",
@@ -361809,7 +362433,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 409 kr",
         "db": "-176 kr",
         "butikk": "Larvik",
@@ -362265,7 +362889,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "4 059 kr",
         "db": "457 kr",
         "butikk": "Larvik",
@@ -362649,7 +363273,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 842 kr",
         "db": "-799 kr",
         "butikk": "Larvik",
@@ -363297,7 +363921,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "22 484 kr",
         "db": "2 870 kr",
         "butikk": "Larvik",
@@ -364153,7 +364777,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Alf Marius Olsen",
+        "navn": "Henrik Holmesland",
         "umoms": "159 kr",
         "db": "85 kr",
         "butikk": "Kristiansand",
@@ -364161,7 +364785,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Henrik Holmesland",
+        "navn": "Alf Marius Olsen",
         "umoms": "159 kr",
         "db": "85 kr",
         "butikk": "Kristiansand",
@@ -364241,7 +364865,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-2 384 kr",
         "db": "-491 kr",
         "butikk": "Larvik",
@@ -364521,7 +365145,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "21 469 kr",
         "db": "5 476 kr",
         "butikk": "Larvik",
@@ -365817,7 +366441,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 588 kr",
         "db": "1 524 kr",
         "butikk": "Larvik",
@@ -366849,7 +367473,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "18 648 kr",
         "db": "6 436 kr",
         "butikk": "Larvik",
@@ -367681,7 +368305,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-34 kr",
         "db": "15 kr",
         "butikk": "Larvik",
@@ -367961,7 +368585,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "33 698 kr",
         "db": "9 477 kr",
         "butikk": "Larvik",
@@ -370441,7 +371065,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 201 kr",
         "db": "2 372 kr",
         "butikk": "Larvik",
@@ -372993,7 +373617,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-94 kr",
         "db": "-109 kr",
         "butikk": "Larvik",
@@ -373969,7 +374593,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "13 299 kr",
         "db": "1 904 kr",
         "butikk": "Larvik",
@@ -374785,7 +375409,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-199 kr",
         "db": "-145 kr",
         "butikk": "Larvik",
@@ -375033,7 +375657,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "36 687 kr",
         "db": "5 522 kr",
         "butikk": "Larvik",
@@ -377185,7 +377809,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 054 kr",
         "db": "-221 kr",
         "butikk": "Larvik",
@@ -377569,7 +378193,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "13 448 kr",
         "db": "3 156 kr",
         "butikk": "Larvik",
@@ -378361,7 +378985,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-14 134 kr",
         "db": "-3 954 kr",
         "butikk": "Larvik",
@@ -378625,7 +379249,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "14 968 kr",
         "db": "1 249 kr",
         "butikk": "Larvik",
@@ -379449,7 +380073,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-103 kr",
         "db": "-40 kr",
         "butikk": "Larvik",
@@ -379721,7 +380345,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "19 541 kr",
         "db": "5 094 kr",
         "butikk": "Larvik",
@@ -381849,7 +382473,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 037 kr",
         "db": "-375 kr",
         "butikk": "Larvik",
@@ -382849,7 +383473,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "6 623 kr",
         "db": "1 496 kr",
         "butikk": "Larvik",
@@ -383849,7 +384473,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "28 600 kr",
         "db": "4 900 kr",
         "butikk": "Larvik",
@@ -385249,7 +385873,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-342 kr",
         "db": "-95 kr",
         "butikk": "Larvik",
@@ -385625,7 +386249,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "16 333 kr",
         "db": "2 446 kr",
         "butikk": "Larvik",
@@ -386737,7 +387361,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "22 568 kr",
         "db": "3 814 kr",
         "butikk": "Larvik",
@@ -387513,7 +388137,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 598 kr",
         "db": "-590 kr",
         "butikk": "Larvik",
@@ -388041,7 +388665,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-319 kr",
         "db": "-98 kr",
         "butikk": "Larvik",
@@ -388065,18 +388689,18 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Veronica Skaug Bolt Hansen",
-        "umoms": "-468 kr",
-        "db": "-194 kr",
-        "butikk": "Sandefjord",
-        "fakturadato": 20240425
-    },
-    {
-        "ukedag": "Torsdag",
         "navn": "Amritpal Nagra Singh",
         "umoms": "-468 kr",
         "db": "-265 kr",
         "butikk": "Tønsberg",
+        "fakturadato": 20240425
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Veronica Skaug Bolt Hansen",
+        "umoms": "-468 kr",
+        "db": "-194 kr",
+        "butikk": "Sandefjord",
         "fakturadato": 20240425
     },
     {
@@ -388889,7 +389513,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 996 kr",
         "db": "3 222 kr",
         "butikk": "Larvik",
@@ -389785,7 +390409,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-798 kr",
         "db": "-221 kr",
         "butikk": "Larvik",
@@ -389993,7 +390617,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "27 918 kr",
         "db": "9 332 kr",
         "butikk": "Larvik",
@@ -390457,18 +391081,18 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Julie Nilsen Bjølseth",
-        "umoms": "28 288 kr",
-        "db": "3 521 kr",
-        "butikk": "Sandefjord",
-        "fakturadato": 20240419
-    },
-    {
-        "ukedag": "Fredag",
         "navn": "Jelle Soest",
         "umoms": "28 288 kr",
         "db": "6 315 kr",
         "butikk": "Kristiansand",
+        "fakturadato": 20240419
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Julie Nilsen Bjølseth",
+        "umoms": "28 288 kr",
+        "db": "3 521 kr",
+        "butikk": "Sandefjord",
         "fakturadato": 20240419
     },
     {
@@ -391361,7 +391985,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-55 kr",
         "db": "-40 kr",
         "butikk": "Larvik",
@@ -392337,7 +392961,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "7 540 kr",
         "db": "1 414 kr",
         "butikk": "Larvik",
@@ -393113,7 +393737,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-578 kr",
         "db": "-312 kr",
         "butikk": "Larvik",
@@ -393385,7 +394009,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "28 501 kr",
         "db": "9 975 kr",
         "butikk": "Larvik",
@@ -394017,7 +394641,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "20 802 kr",
         "db": "4 239 kr",
         "butikk": "Larvik",
@@ -395425,7 +396049,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "718 kr",
         "db": "328 kr",
         "butikk": "Larvik",
@@ -395849,7 +396473,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "8 945 kr",
         "db": "2 726 kr",
         "butikk": "Larvik",
@@ -396713,7 +397337,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-1 597 kr",
         "db": "69 kr",
         "butikk": "Larvik",
@@ -396921,7 +397545,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "28 426 kr",
         "db": "5 436 kr",
         "butikk": "Larvik",
@@ -397817,7 +398441,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-2 376 kr",
         "db": "17 kr",
         "butikk": "Larvik",
@@ -399241,7 +399865,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 324 kr",
         "db": "2 267 kr",
         "butikk": "Larvik",
@@ -400905,7 +401529,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "34 392 kr",
         "db": "4 611 kr",
         "butikk": "Larvik",
@@ -401801,7 +402425,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-158 kr",
         "db": "1 kr",
         "butikk": "Larvik",
@@ -402913,7 +403537,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-237 kr",
         "db": "1 kr",
         "butikk": "Larvik",
@@ -403945,7 +404569,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "8 989 kr",
         "db": "1 010 kr",
         "butikk": "Larvik",
@@ -404617,7 +405241,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "2 565 kr",
         "db": "520 kr",
         "butikk": "Larvik",
@@ -405257,7 +405881,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-788 kr",
         "db": "-335 kr",
         "butikk": "Larvik",
@@ -405657,7 +406281,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 321 kr",
         "db": "956 kr",
         "butikk": "Larvik",
@@ -406065,7 +406689,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "22 389 kr",
         "db": "1 085 kr",
         "butikk": "Larvik",
@@ -406833,7 +407457,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 844 kr",
         "db": "3 452 kr",
         "butikk": "Larvik",
@@ -407489,7 +408113,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-143 kr",
         "db": "-66 kr",
         "butikk": "Larvik",
@@ -407817,7 +408441,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "7 351 kr",
         "db": "2 023 kr",
         "butikk": "Larvik",
@@ -408929,17 +409553,17 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Jelle Soest",
+        "navn": "Amanda Krumsvik",
         "umoms": "-159 kr",
-        "db": "-41 kr",
+        "db": "-37 kr",
         "butikk": "Kristiansand",
         "fakturadato": 20240309
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Amanda Krumsvik",
+        "navn": "Jelle Soest",
         "umoms": "-159 kr",
-        "db": "-37 kr",
+        "db": "-41 kr",
         "butikk": "Kristiansand",
         "fakturadato": 20240309
     },
@@ -409513,7 +410137,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-23 kr",
         "db": "-13 kr",
         "butikk": "Larvik",
@@ -409937,7 +410561,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "5 689 kr",
         "db": "1 133 kr",
         "butikk": "Larvik",
@@ -410497,7 +411121,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-311 kr",
         "db": "-121 kr",
         "butikk": "Larvik",
@@ -410817,7 +411441,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "13 092 kr",
         "db": "2 323 kr",
         "butikk": "Larvik",
@@ -411969,7 +412593,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 532 kr",
         "db": "1 735 kr",
         "butikk": "Larvik",
@@ -412305,17 +412929,17 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Andrea Isabell Samuelsen",
+        "navn": "Preben Jacobsen",
         "umoms": "27 465 kr",
-        "db": "1 664 kr",
+        "db": "9 722 kr",
         "butikk": "Arendal",
         "fakturadato": 20240301
     },
     {
         "ukedag": "Fredag",
-        "navn": "Preben Jacobsen",
+        "navn": "Andrea Isabell Samuelsen",
         "umoms": "27 465 kr",
-        "db": "9 722 kr",
+        "db": "1 664 kr",
         "butikk": "Arendal",
         "fakturadato": 20240301
     },
@@ -412681,7 +413305,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-693 kr",
         "db": "-456 kr",
         "butikk": "Larvik",
@@ -414177,7 +414801,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "3 326 kr",
         "db": "941 kr",
         "butikk": "Larvik",
@@ -415617,7 +416241,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 941 kr",
         "db": "4 428 kr",
         "butikk": "Larvik",
@@ -416073,7 +416697,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "12 528 kr",
         "db": "3 809 kr",
         "butikk": "Larvik",
@@ -416849,7 +417473,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-511 kr",
         "db": "-292 kr",
         "butikk": "Larvik",
@@ -417153,7 +417777,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "12 185 kr",
         "db": "3 765 kr",
         "butikk": "Larvik",
@@ -418105,7 +418729,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "24 067 kr",
         "db": "6 040 kr",
         "butikk": "Larvik",
@@ -419817,7 +420441,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "1 275 kr",
         "db": "339 kr",
         "butikk": "Larvik",
@@ -420113,7 +420737,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 254 kr",
         "db": "1 532 kr",
         "butikk": "Larvik",
@@ -422153,7 +422777,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "8 269 kr",
         "db": "1 572 kr",
         "butikk": "Larvik",
@@ -422569,7 +423193,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 747 kr",
         "db": "2 677 kr",
         "butikk": "Larvik",
@@ -423073,7 +423697,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "14 935 kr",
         "db": "3 666 kr",
         "butikk": "Larvik",
@@ -424081,7 +424705,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "24 005 kr",
         "db": "7 081 kr",
         "butikk": "Larvik",
@@ -424681,7 +425305,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "11 254 kr",
         "db": "3 806 kr",
         "butikk": "Larvik",
@@ -425289,7 +425913,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "7 920 kr",
         "db": "2 064 kr",
         "butikk": "Larvik",
@@ -426241,7 +426865,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 449 kr",
         "db": "422 kr",
         "butikk": "Larvik",
@@ -428081,7 +428705,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-47 kr",
         "db": "-17 kr",
         "butikk": "Larvik",
@@ -428561,7 +429185,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "13 594 kr",
         "db": "2 785 kr",
         "butikk": "Larvik",
@@ -429241,7 +429865,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-275 kr",
         "db": "-160 kr",
         "butikk": "Larvik",
@@ -429641,7 +430265,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "10 205 kr",
         "db": "1 860 kr",
         "butikk": "Larvik",
@@ -431497,7 +432121,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "17 056 kr",
         "db": "1 058 kr",
         "butikk": "Larvik",
@@ -432489,7 +433113,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "12 051 kr",
         "db": "3 350 kr",
         "butikk": "Larvik",
@@ -433241,7 +433865,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-199 kr",
         "db": "-46 kr",
         "butikk": "Larvik",
@@ -433641,7 +434265,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-152 kr",
         "db": "-116 kr",
         "butikk": "Larvik",
@@ -434489,7 +435113,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "15 233 kr",
         "db": "542 kr",
         "butikk": "Larvik",
@@ -435601,7 +436225,7 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "13 845 kr",
         "db": "3 108 kr",
         "butikk": "Larvik",
@@ -436377,7 +437001,7 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "-280 kr",
         "db": "-72 kr",
         "butikk": "Larvik",
@@ -436721,7 +437345,7 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "9 878 kr",
         "db": "3 832 kr",
         "butikk": "Larvik",
@@ -437785,7 +438409,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "5 952 kr",
         "db": "764 kr",
         "butikk": "Larvik",
@@ -439921,7 +440545,7 @@
     },
     {
         "ukedag": "Torsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "130 kr",
         "db": "-39 kr",
         "butikk": "Larvik",
@@ -440353,7 +440977,7 @@
     },
     {
         "ukedag": "Onsdag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "63 kr",
         "db": "14 kr",
         "butikk": "Larvik",
@@ -440945,7 +441569,7 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Linn Christina Larssen",
+        "navn": "Linn Christina Johannessen",
         "umoms": "13 638 kr",
         "db": "2 690 kr",
         "butikk": "Larvik",
@@ -450529,18 +451153,18 @@
     },
     {
         "ukedag": "Fredag",
-        "navn": "Ingeborg Kristine  Isaksen",
-        "umoms": "-159 kr",
-        "db": "-77 kr",
-        "butikk": "Bamble",
-        "fakturadato": 20231201
-    },
-    {
-        "ukedag": "Fredag",
         "navn": "Mathias Oseid Hagen",
         "umoms": "-159 kr",
         "db": "-92 kr",
         "butikk": "Kristiansand",
+        "fakturadato": 20231201
+    },
+    {
+        "ukedag": "Fredag",
+        "navn": "Ingeborg Kristine  Isaksen",
+        "umoms": "-159 kr",
+        "db": "-77 kr",
+        "butikk": "Bamble",
         "fakturadato": 20231201
     },
     {

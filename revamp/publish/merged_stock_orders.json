@@ -202,9 +202,9 @@
     {
         "Prodno": "3720062",
         "Beskrivelse": "CAS CEMENTO RASATO ANTRACITE 60X120 9MM",
-        "antall på lager": 51.8,
+        "antall på lager": 0.0,
         "antall pr pall": 51.8,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -234,9 +234,9 @@
     {
         "Prodno": "3740064",
         "Beskrivelse": "CAS CEMENTO RASATO BIANCO 60X60 9MM",
-        "antall på lager": 345.6,
+        "antall på lager": 302.4,
         "antall pr pall": 43.2,
-        "Paller på lager": 8,
+        "Paller på lager": 7,
         "Paller på vei": 0
     },
     {
@@ -740,9 +740,9 @@
     {
         "Prodno": "300000000000023927",
         "Beskrivelse": "CIF NEUTRA CREAM 60X60 9MM",
-        "antall på lager": 46.1,
+        "antall på lager": 0.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 3,
         "Bestilling på vei": [
             {
@@ -888,9 +888,9 @@
     {
         "Prodno": "300000000000035668",
         "Beskrivelse": "CIF OVERLAND SAND 60X60 9MM",
-        "antall på lager": 230.4,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
+        "Paller på lager": 3,
         "Paller på vei": 47,
         "Bestilling på vei": [
             {
@@ -1510,12 +1510,12 @@
         "Paller på vei": 14,
         "Bestilling på vei": [
             {
-                "Ukenr": "35/2026",
-                "Antall": 230.4
-            },
-            {
                 "Ukenr": "34/2026",
                 "Antall": 414.72
+            },
+            {
+                "Ukenr": "35/2026",
+                "Antall": 230.4
             }
         ]
     },
