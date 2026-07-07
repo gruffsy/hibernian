@@ -998,16 +998,10 @@
     {
         "Prodno": "02CEV60R1",
         "Beskrivelse": "CTV EVOLUTION WHITE 60X60 9,5MM",
-        "antall på lager": 0.0,
+        "antall på lager": 691.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 15,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "28/2026",
-                "Antall": 691.2
-            }
-        ]
+        "Paller på lager": 15,
+        "Paller på vei": 0
     },
     {
         "Prodno": "CKO62R1",
@@ -1020,34 +1014,18 @@
     {
         "Prodno": "CKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60",
-        "antall på lager": 388.8,
+        "antall på lager": 849.6,
         "antall pr pall": 43.2,
-        "Paller på lager": 9,
-        "Paller på vei": 11,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "28/2026",
-                "Antall": 322.56
-            },
-            {
-                "Ukenr": "28/2026",
-                "Antall": 138.24
-            }
-        ]
+        "Paller på lager": 20,
+        "Paller på vei": 0
     },
     {
         "Prodno": "XKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60 20MM",
-        "antall på lager": 0.0,
+        "antall på lager": 640.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 0,
-        "Paller på vei": 10,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "28/2026",
-                "Antall": 640.0
-            }
-        ]
+        "Paller på lager": 10,
+        "Paller på vei": 0
     },
     {
         "Prodno": "CKO62R44",
@@ -1108,30 +1086,18 @@
     {
         "Prodno": "02XPA60R1",
         "Beskrivelse": "CTV PIETRE ANTICA WHITE 60X60 20MM",
-        "antall på lager": 1024.0,
+        "antall på lager": 1664.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 16,
-        "Paller på vei": 10,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "28/2026",
-                "Antall": 640.0
-            }
-        ]
+        "Paller på lager": 26,
+        "Paller på vei": 0
     },
     {
         "Prodno": "XSL60R7",
         "Beskrivelse": "CTV SLATE ANTRACITE 60X60 20MM",
-        "antall på lager": 320.0,
+        "antall på lager": 960.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 5,
-        "Paller på vei": 10,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "28/2026",
-                "Antall": 640.0
-            }
-        ]
+        "Paller på lager": 15,
+        "Paller på vei": 0
     },
     {
         "Prodno": "XSL60R4",
@@ -1510,12 +1476,12 @@
         "Paller på vei": 14,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
-                "Antall": 414.72
-            },
-            {
                 "Ukenr": "35/2026",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "34/2026",
+                "Antall": 414.72
             }
         ]
     },
