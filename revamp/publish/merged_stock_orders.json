@@ -306,9 +306,9 @@
     {
         "Prodno": "002844",
         "Beskrivelse": "CAS GRANITO - ONTARIO ROCCIA 30X30",
-        "antall på lager": 56.2,
+        "antall på lager": 0.0,
         "antall pr pall": 56.2,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -426,9 +426,9 @@
     {
         "Prodno": "1740004",
         "Beskrivelse": "CAS PIETRE DI PARAGONE GRE BIANCO 60X60 9MM",
-        "antall på lager": 604.8,
+        "antall på lager": 561.6,
         "antall pr pall": 43.2,
-        "Paller på lager": 14,
+        "Paller på lager": 13,
         "Paller på vei": 0
     },
     {
@@ -570,15 +570,11 @@
     {
         "Prodno": "042449",
         "Beskrivelse": "CIF DIAMOND GOLD PULIDO 60X60",
-        "antall på lager": 129.6,
+        "antall på lager": 267.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 3,
-        "Paller på vei": 4,
+        "Paller på lager": 6,
+        "Paller på vei": 1,
         "Bestilling på vei": [
-            {
-                "Ukenr": "27/2026",
-                "Antall": 138.24
-            },
             {
                 "Ukenr": "31/2026",
                 "Antall": 43.2
@@ -588,9 +584,9 @@
     {
         "Prodno": "300000000000045391",
         "Beskrivelse": "CIF INDUSTRIAL BLACK 60X120 - XS",
-        "antall på lager": 207.4,
+        "antall på lager": 155.5,
         "antall pr pall": 51.8,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
@@ -794,15 +790,11 @@
     {
         "Prodno": "300000000000026446",
         "Beskrivelse": "CIF NEUTRA WHITE 60X60 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 5,
+        "Paller på lager": 3,
+        "Paller på vei": 2,
         "Bestilling på vei": [
-            {
-                "Ukenr": "27/2026",
-                "Antall": 138.24
-            },
             {
                 "Ukenr": "31/2026",
                 "Antall": 92.16
@@ -820,15 +812,11 @@
     {
         "Prodno": "300000000000044556",
         "Beskrivelse": "CIF NEXUS PEARL 60x60",
-        "antall på lager": 92.2,
+        "antall på lager": 230.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
-        "Paller på vei": 5,
+        "Paller på lager": 5,
+        "Paller på vei": 2,
         "Bestilling på vei": [
-            {
-                "Ukenr": "27/2026",
-                "Antall": 138.24
-            },
             {
                 "Ukenr": "31/2026",
                 "Antall": 92.16
@@ -862,15 +850,11 @@
     {
         "Prodno": "300000000000037842",
         "Beskrivelse": "CIF OVERLAND PEARL 60X60",
-        "antall på lager": 276.5,
+        "antall på lager": 1198.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 6,
-        "Paller på vei": 34,
+        "Paller på lager": 26,
+        "Paller på vei": 14,
         "Bestilling på vei": [
-            {
-                "Ukenr": "27/2026",
-                "Antall": 921.6
-            },
             {
                 "Ukenr": "31/2026",
                 "Antall": 645.12
@@ -888,15 +872,11 @@
     {
         "Prodno": "300000000000035668",
         "Beskrivelse": "CIF OVERLAND SAND 60X60 9MM",
-        "antall på lager": 92.2,
+        "antall på lager": 875.5,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
-        "Paller på vei": 47,
+        "Paller på lager": 19,
+        "Paller på vei": 28,
         "Bestilling på vei": [
-            {
-                "Ukenr": "27/2026",
-                "Antall": 875.52
-            },
             {
                 "Ukenr": "31/2026",
                 "Antall": 1290.24
@@ -930,30 +910,18 @@
     {
         "Prodno": "042451",
         "Beskrivelse": "CIF STATUARIO LUXE PULIDO 60X60",
-        "antall på lager": 86.4,
+        "antall på lager": 172.8,
         "antall pr pall": 43.2,
-        "Paller på lager": 2,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "27/2026",
-                "Antall": 86.4
-            }
-        ]
+        "Paller på lager": 4,
+        "Paller på vei": 0
     },
     {
         "Prodno": "042452",
         "Beskrivelse": "CIF STATUARIO MATE 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 4,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "27/2026",
-                "Antall": 184.32
-            }
-        ]
+        "Paller på lager": 4,
+        "Paller på vei": 0
     },
     {
         "Prodno": "02CEV62R4",
@@ -974,9 +942,9 @@
     {
         "Prodno": "02CEV62R44",
         "Beskrivelse": "CTV EVOLUTION SUGAR 60X120 9,5MM",
-        "antall på lager": 322.6,
+        "antall på lager": 276.5,
         "antall pr pall": 46.1,
-        "Paller på lager": 7,
+        "Paller på lager": 6,
         "Paller på vei": 0
     },
     {
@@ -998,9 +966,9 @@
     {
         "Prodno": "02CEV60R1",
         "Beskrivelse": "CTV EVOLUTION WHITE 60X60 9,5MM",
-        "antall på lager": 691.2,
+        "antall på lager": 553.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 15,
+        "Paller på lager": 12,
         "Paller på vei": 0
     },
     {
@@ -1170,17 +1138,17 @@
     {
         "Prodno": "0177850025365",
         "Beskrivelse": "GEO ARDESIA BONE 60X60 20MM",
-        "antall på lager": 1140.0,
+        "antall på lager": 840.0,
         "antall pr pall": 60.0,
-        "Paller på lager": 19,
+        "Paller på lager": 14,
         "Paller på vei": 0
     },
     {
         "Prodno": "0177850025364",
         "Beskrivelse": "GEO ARDESIA GREY 60X60 20MM",
-        "antall på lager": 1020.0,
+        "antall på lager": 900.0,
         "antall pr pall": 60.0,
-        "Paller på lager": 17,
+        "Paller på lager": 15,
         "Paller på vei": 0
     },
     {
@@ -1470,18 +1438,18 @@
     {
         "Prodno": "IL6001",
         "Beskrivelse": "LTG INNOVATION LIME DARK 60X60",
-        "antall på lager": 184.3,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 14,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
-                "Antall": 414.72
-            },
-            {
                 "Ukenr": "35/2026",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "34/2026",
+                "Antall": 414.72
             }
         ]
     },
@@ -1514,9 +1482,9 @@
     {
         "Prodno": "LTG3000-664-MR11",
         "Beskrivelse": "LTG LAVAGNA CHIARO 60X60 R11 9,5MM",
-        "antall på lager": 368.6,
+        "antall på lager": 322.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 8,
+        "Paller på lager": 7,
         "Paller på vei": 0
     },
     {
@@ -1530,9 +1498,9 @@
     {
         "Prodno": "LTG3000-662-MR11",
         "Beskrivelse": "LTG LAVAGNA GRIGIO 60X60 R11 9,5MM",
-        "antall på lager": 276.5,
+        "antall på lager": 230.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 6,
+        "Paller på lager": 5,
         "Paller på vei": 0
     },
     {
@@ -1636,9 +1604,9 @@
     {
         "Prodno": "LTG2900-YH003-36",
         "Beskrivelse": "LTG PROGETTO CHIARO 30X60",
-        "antall på lager": 184.3,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
@@ -1726,9 +1694,9 @@
     {
         "Prodno": "LTG2100-661",
         "Beskrivelse": "LTG TERRA ANTRACITE 60X60",
-        "antall på lager": 46.1,
+        "antall på lager": 0.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 15,
         "Bestilling på vei": [
             {
@@ -1768,9 +1736,9 @@
     {
         "Prodno": "LTG2100-663",
         "Beskrivelse": "LTG TERRA BEIGE 60X60",
-        "antall på lager": 138.2,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 12,
         "Bestilling på vei": [
             {
@@ -1966,17 +1934,17 @@
     {
         "Prodno": "PG-BK15",
         "Beskrivelse": "PAN BARGE GRIGIA 30X60",
-        "antall på lager": 260.5,
+        "antall på lager": 208.4,
         "antall pr pall": 52.1,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
         "Prodno": "PG-P900",
         "Beskrivelse": "PAN COTTAGE DARK 30X60",
-        "antall på lager": 51.8,
+        "antall på lager": 0.0,
         "antall pr pall": 51.8,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -2118,9 +2086,9 @@
     {
         "Prodno": "APGWSD30",
         "Beskrivelse": "PAN SURROUND SKETCH 60X60 9MM",
-        "antall på lager": 368.6,
+        "antall på lager": 322.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 8,
+        "Paller på lager": 7,
         "Paller på vei": 0
     },
     {
