@@ -138,9 +138,9 @@
     {
         "Prodno": "9700103",
         "Beskrivelse": "CAS ARDESIA - NERO 30X30 8 MM",
-        "antall på lager": 56.2,
+        "antall på lager": 0.0,
         "antall pr pall": 56.2,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -712,9 +712,9 @@
     {
         "Prodno": "300000000000025363",
         "Beskrivelse": "CIF NEUTRA ANTHRACITE 30X60 9MM",
-        "antall på lager": 57.6,
+        "antall på lager": 0.0,
         "antall pr pall": 57.6,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -790,9 +790,9 @@
     {
         "Prodno": "300000000000026446",
         "Beskrivelse": "CIF NEUTRA WHITE 60X60 9MM",
-        "antall på lager": 138.2,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 2,
         "Bestilling på vei": [
             {
@@ -872,9 +872,9 @@
     {
         "Prodno": "300000000000035668",
         "Beskrivelse": "CIF OVERLAND SAND 60X60 9MM",
-        "antall på lager": 875.5,
+        "antall på lager": 691.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 19,
+        "Paller på lager": 15,
         "Paller på vei": 28,
         "Bestilling på vei": [
             {
@@ -993,7 +993,13 @@
         "antall på lager": 320.0,
         "antall pr pall": 64.0,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 9,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 576.0
+            }
+        ]
     },
     {
         "Prodno": "CKO62R44",
@@ -1001,7 +1007,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "CKO60R44",
@@ -1033,7 +1045,13 @@
         "antall på lager": 432.0,
         "antall pr pall": 43.2,
         "Paller på lager": 10,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 230.4
+            }
+        ]
     },
     {
         "Prodno": "XKO60R4",
@@ -1041,7 +1059,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 64.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 10,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 640.0
+            }
+        ]
     },
     {
         "Prodno": "02XPA60R4",
@@ -1054,9 +1078,9 @@
     {
         "Prodno": "02XPA60R1",
         "Beskrivelse": "CTV PIETRE ANTICA WHITE 60X60 20MM",
-        "antall på lager": 1664.0,
+        "antall på lager": 1600.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 26,
+        "Paller på lager": 25,
         "Paller på vei": 0
     },
     {
@@ -1146,9 +1170,9 @@
     {
         "Prodno": "0177850025364",
         "Beskrivelse": "GEO ARDESIA GREY 60X60 20MM",
-        "antall på lager": 900.0,
+        "antall på lager": 840.0,
         "antall pr pall": 60.0,
-        "Paller på lager": 15,
+        "Paller på lager": 14,
         "Paller på vei": 0
     },
     {
@@ -1246,9 +1270,9 @@
     {
         "Prodno": "G43AC00K",
         "Beskrivelse": "KER NATURE BLACK 37X75",
-        "antall på lager": 54.2,
+        "antall på lager": 0.0,
         "antall pr pall": 54.2,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -1444,12 +1468,12 @@
         "Paller på vei": 14,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
-                "Antall": 414.72
-            },
-            {
                 "Ukenr": "35/2026",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "34/2026",
+                "Antall": 414.72
             }
         ]
     },
@@ -1886,9 +1910,9 @@
     {
         "Prodno": "410356020",
         "Beskrivelse": "NSM STONE WALL LOFOTEN SØMLØS 60X20CM",
-        "antall på lager": 129.4,
+        "antall på lager": 117.6,
         "antall pr pall": 11.8,
-        "Paller på lager": 11,
+        "Paller på lager": 10,
         "Paller på vei": 0
     },
     {
@@ -1902,9 +1926,9 @@
     {
         "Prodno": "410526020",
         "Beskrivelse": "NSM STONE WALL VALDRES SØMLØS 60X20CM",
-        "antall på lager": 117.6,
+        "antall på lager": 105.8,
         "antall pr pall": 11.8,
-        "Paller på lager": 10,
+        "Paller på lager": 9,
         "Paller på vei": 0
     },
     {
