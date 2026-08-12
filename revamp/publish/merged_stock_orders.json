@@ -274,9 +274,9 @@
     {
         "Prodno": "3720064",
         "Beskrivelse": "CAS CEMENTO RASATO BIANCO 60X120 9MM",
-        "antall på lager": 51.8,
+        "antall på lager": 0.0,
         "antall pr pall": 51.8,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -994,9 +994,9 @@
     {
         "Prodno": "300000000000035668",
         "Beskrivelse": "CIF OVERLAND SAND 60X60 9MM",
-        "antall på lager": 230.4,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 39,
         "Bestilling på vei": [
             {
@@ -1114,7 +1114,7 @@
         "Paller på vei": 9,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
+                "Ukenr": "35/2026",
                 "Antall": 388.8
             }
         ]
@@ -1128,7 +1128,7 @@
         "Paller på vei": 5,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
+                "Ukenr": "35/2026",
                 "Antall": 320.0
             }
         ]
@@ -1158,7 +1158,7 @@
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
-                "Ukenr": "ukjent",
+                "Ukenr": "35/2026",
                 "Antall": 512.0
             }
         ]
@@ -1188,7 +1188,7 @@
         "Paller på vei": 5,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
+                "Ukenr": "35/2026",
                 "Antall": 320.0
             }
         ]
@@ -1202,7 +1202,7 @@
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
-                "Ukenr": "ukjent",
+                "Ukenr": "35/2026",
                 "Antall": 640.0
             }
         ]
@@ -1224,7 +1224,7 @@
         "Paller på vei": 9,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
+                "Ukenr": "35/2026",
                 "Antall": 576.0
             }
         ]
@@ -1238,7 +1238,7 @@
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
-                "Ukenr": "ukjent",
+                "Ukenr": "35/2026",
                 "Antall": 640.0
             }
         ]
@@ -1536,9 +1536,9 @@
     {
         "Prodno": "IL6004",
         "Beskrivelse": "LTG INNOVATION LIME BIANCO 60X60",
-        "antall på lager": 506.9,
+        "antall på lager": 460.8,
         "antall pr pall": 46.1,
-        "Paller på lager": 11,
+        "Paller på lager": 10,
         "Paller på vei": 12,
         "Bestilling på vei": [
             {
@@ -1666,12 +1666,12 @@
         "Paller på vei": 25,
         "Bestilling på vei": [
             {
-                "Ukenr": "35/2026",
-                "Antall": 691.2
-            },
-            {
                 "Ukenr": "33/2026",
                 "Antall": 460.8
+            },
+            {
+                "Ukenr": "35/2026",
+                "Antall": 691.2
             }
         ]
     },
@@ -1686,9 +1686,9 @@
     {
         "Prodno": "PN6062",
         "Beskrivelse": "LTG NUVOLA SILVER 60X60",
-        "antall på lager": 138.2,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 9,
         "Bestilling på vei": [
             {
@@ -1794,9 +1794,9 @@
     {
         "Prodno": "LTG-SE-2-M-66",
         "Beskrivelse": "LTG SAULO GRIGIO 60X60",
-        "antall på lager": 1244.2,
+        "antall på lager": 1198.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 27,
+        "Paller på lager": 26,
         "Paller på vei": 0
     },
     {
@@ -1860,12 +1860,12 @@
         "Paller på vei": 12,
         "Bestilling på vei": [
             {
-                "Ukenr": "35/2026",
-                "Antall": 322.56
-            },
-            {
                 "Ukenr": "33/2026",
                 "Antall": 230.4
+            },
+            {
+                "Ukenr": "35/2026",
+                "Antall": 322.56
             }
         ]
     },
@@ -1948,66 +1948,114 @@
     {
         "Prodno": "410130001",
         "Beskrivelse": "NSM GRÅ SKIFER PANEL 60X15CM",
-        "antall på lager": 302.4,
+        "antall på lager": 283.5,
         "antall pr pall": 18.9,
-        "Paller på lager": 16,
-        "Paller på vei": 0
+        "Paller på lager": 15,
+        "Paller på vei": 16,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "47/2026",
+                "Antall": 302.4
+            }
+        ]
     },
     {
         "Prodno": "410130002",
         "Beskrivelse": "NSM GRÅ SKIFER PANEL UTVENDIG HJØRNE 40,5+10,5X15CM",
-        "antall på lager": 720.0,
+        "antall på lager": 540.0,
         "antall pr pall": 180.0,
-        "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på lager": 3,
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "47/2026",
+                "Antall": 720.0
+            }
+        ]
     },
     {
         "Prodno": "410180001",
         "Beskrivelse": "NSM SORT SKIFER PANEL 60X15CM",
-        "antall på lager": 233.3,
+        "antall på lager": 213.8,
         "antall pr pall": 19.4,
-        "Paller på lager": 12,
-        "Paller på vei": 0
+        "Paller på lager": 11,
+        "Paller på vei": 12,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "47/2026",
+                "Antall": 233.28
+            }
+        ]
     },
     {
         "Prodno": "410180002",
         "Beskrivelse": "NSM SORT SKIFER PANEL UTVENDIG HJØRNE 40,5+10,5X15CM",
-        "antall på lager": 720.0,
+        "antall på lager": 540.0,
         "antall pr pall": 180.0,
-        "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på lager": 3,
+        "Paller på vei": 4,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "47/2026",
+                "Antall": 720.0
+            }
+        ]
     },
     {
         "Prodno": "410356020",
         "Beskrivelse": "NSM STONE WALL LOFOTEN SØMLØS 60X20CM",
-        "antall på lager": 117.6,
+        "antall på lager": 105.8,
         "antall pr pall": 11.8,
-        "Paller på lager": 10,
-        "Paller på vei": 0
+        "Paller på lager": 9,
+        "Paller på vei": 12,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "47/2026",
+                "Antall": 141.12
+            }
+        ]
     },
     {
         "Prodno": "410354010",
         "Beskrivelse": "NSM STONE WALL LOFOTEN SØMLØS UTVENDIG HJØRNE 36+7,5X20CM",
-        "antall på lager": 160.0,
+        "antall på lager": 80.0,
         "antall pr pall": 80.0,
-        "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på lager": 1,
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "47/2026",
+                "Antall": 240.0
+            }
+        ]
     },
     {
         "Prodno": "410526020",
         "Beskrivelse": "NSM STONE WALL VALDRES SØMLØS 60X20CM",
-        "antall på lager": 105.8,
+        "antall på lager": 94.1,
         "antall pr pall": 11.8,
-        "Paller på lager": 9,
-        "Paller på vei": 0
+        "Paller på lager": 8,
+        "Paller på vei": 11,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "47/2026",
+                "Antall": 129.36
+            }
+        ]
     },
     {
         "Prodno": "410524010",
         "Beskrivelse": "NSM STONE WALL VALDRES SØMLØS UTVENDIG HJØRNE 36+7,5X20CM",
-        "antall på lager": 160.0,
+        "antall på lager": 80.0,
         "antall pr pall": 80.0,
-        "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på lager": 1,
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "47/2026",
+                "Antall": 240.0
+            }
+        ]
     },
     {
         "Prodno": "PGIBE001",
