@@ -277,7 +277,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 103.68
+            }
+        ]
     },
     {
         "Prodno": "3740064",
@@ -285,7 +291,13 @@
         "antall på lager": 216.0,
         "antall pr pall": 43.2,
         "Paller på lager": 5,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 216.0
+            }
+        ]
     },
     {
         "Prodno": "3700033",
@@ -309,7 +321,13 @@
         "antall på lager": 86.4,
         "antall pr pall": 43.2,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 129.6
+            }
+        ]
     },
     {
         "Prodno": "9700127",
@@ -328,9 +346,9 @@
     {
         "Prodno": "400037",
         "Beskrivelse": "CAS GRANITO - DAKOTA 20X20 8MM",
-        "antall på lager": 81.6,
+        "antall på lager": 0.0,
         "antall pr pall": 81.6,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
@@ -358,9 +376,9 @@
     {
         "Prodno": "710024",
         "Beskrivelse": "CAS GRANITO - ONTARIO 30X30 8MM",
-        "antall på lager": 280.8,
+        "antall på lager": 224.6,
         "antall pr pall": 56.2,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
@@ -417,10 +435,18 @@
         "antall på lager": 43.2,
         "antall pr pall": 43.2,
         "Paller på lager": 1,
-        "Paller på vei": 1,
+        "Paller på vei": 5,
         "Bestilling på vei": [
             {
-                "Ukenr": "34/2026",
+                "Ukenr": "ukjent",
+                "Antall": 129.6
+            },
+            {
+                "Ukenr": "ukjent",
+                "Antall": 43.2
+            },
+            {
+                "Ukenr": "36/2026",
                 "Antall": 43.2
             }
         ]
@@ -455,7 +481,13 @@
         "antall på lager": 172.8,
         "antall pr pall": 43.2,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 8,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 345.6
+            }
+        ]
     },
     {
         "Prodno": "MWPL30",
@@ -471,7 +503,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 7,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 302.4
+            }
+        ]
     },
     {
         "Prodno": "1700104",
@@ -557,7 +595,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "ukjent",
+                "Antall": 43.2
+            }
+        ]
     },
     {
         "Prodno": "12950029",
@@ -1000,44 +1044,44 @@
     {
         "Prodno": "300000000000037842",
         "Beskrivelse": "CIF OVERLAND PEARL 60X60",
-        "antall på lager": 829.4,
+        "antall på lager": 783.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 18,
+        "Paller på lager": 17,
         "Paller på vei": 16,
         "Bestilling på vei": [
             {
-                "Ukenr": "ukjent",
-                "Antall": 92.16
-            },
-            {
                 "Ukenr": "35/2026",
                 "Antall": 645.12
+            },
+            {
+                "Ukenr": "ukjent",
+                "Antall": 92.16
             }
         ]
     },
     {
         "Prodno": "300000000000040065",
         "Beskrivelse": "CIF OVERLAND SAND 60X120 9MM",
-        "antall på lager": 673.9,
+        "antall på lager": 622.1,
         "antall pr pall": 51.8,
-        "Paller på lager": 13,
+        "Paller på lager": 12,
         "Paller på vei": 0
     },
     {
         "Prodno": "300000000000035668",
         "Beskrivelse": "CIF OVERLAND SAND 60X60 9MM",
-        "antall på lager": 46.1,
+        "antall på lager": 0.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 53,
         "Bestilling på vei": [
             {
-                "Ukenr": "ukjent",
-                "Antall": 645.12
-            },
-            {
                 "Ukenr": "35/2026",
                 "Antall": 1290.24
+            },
+            {
+                "Ukenr": "ukjent",
+                "Antall": 645.12
             },
             {
                 "Ukenr": "37/2026",
@@ -1384,17 +1428,17 @@
     {
         "Prodno": "20044551",
         "Beskrivelse": "KER ALBORA ROBLE 120X20 9MM",
-        "antall på lager": 103.7,
+        "antall på lager": 51.8,
         "antall pr pall": 51.8,
-        "Paller på lager": 2,
+        "Paller på lager": 1,
         "Paller på vei": 0
     },
     {
         "Prodno": "20044552",
         "Beskrivelse": "KER ALBORA TITANIUM 120X20 9MM",
-        "antall på lager": 103.7,
+        "antall på lager": 51.8,
         "antall pr pall": 51.8,
-        "Paller på lager": 2,
+        "Paller på lager": 1,
         "Paller på vei": 0
     },
     {
@@ -1544,9 +1588,9 @@
     {
         "Prodno": "IL6004",
         "Beskrivelse": "LTG INNOVATION LIME BIANCO 60X60",
-        "antall på lager": 967.7,
+        "antall på lager": 921.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 21,
+        "Paller på lager": 20,
         "Paller på vei": 0
     },
     {
@@ -2012,9 +2056,9 @@
     {
         "Prodno": "PGIBE001",
         "Beskrivelse": "PAN ABISKO LUNGO 30X180",
-        "antall på lager": 155.5,
+        "antall på lager": 116.6,
         "antall pr pall": 38.9,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
@@ -2060,9 +2104,9 @@
     {
         "Prodno": "PGIBE201",
         "Beskrivelse": "PAN DONEGAL LUNGO 30X180",
-        "antall på lager": 116.6,
+        "antall på lager": 77.8,
         "antall pr pall": 38.9,
-        "Paller på lager": 3,
+        "Paller på lager": 2,
         "Paller på vei": 0
     },
     {
@@ -2260,9 +2304,9 @@
     {
         "Prodno": "AB9FBLANXDAA",
         "Beskrivelse": "STN BLANCO MATE 25X75",
-        "antall på lager": 649.7,
+        "antall på lager": 531.5,
         "antall pr pall": 59.1,
-        "Paller på lager": 11,
+        "Paller på lager": 9,
         "Paller på vei": 0
     }
 ]
