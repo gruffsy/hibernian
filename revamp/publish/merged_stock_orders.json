@@ -375,17 +375,7 @@
         "antall på lager": 43.2,
         "antall pr pall": 43.2,
         "Paller på lager": 1,
-        "Paller på vei": 4,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "ukjent",
-                "Antall": 129.6
-            },
-            {
-                "Ukenr": "ukjent",
-                "Antall": 43.2
-            }
-        ]
+        "Paller på vei": 0
     },
     {
         "Prodno": "018720030",
@@ -968,12 +958,12 @@
         "Paller på vei": 16,
         "Bestilling på vei": [
             {
-                "Ukenr": "36/2026",
-                "Antall": 645.12
-            },
-            {
                 "Ukenr": "40/2026",
                 "Antall": 92.16
+            },
+            {
+                "Ukenr": "36/2026",
+                "Antall": 645.12
             }
         ]
     },
@@ -994,12 +984,12 @@
         "Paller på vei": 53,
         "Bestilling på vei": [
             {
-                "Ukenr": "36/2026",
-                "Antall": 1290.24
-            },
-            {
                 "Ukenr": "40/2026",
                 "Antall": 645.12
+            },
+            {
+                "Ukenr": "36/2026",
+                "Antall": 1290.24
             },
             {
                 "Ukenr": "39/2026",
