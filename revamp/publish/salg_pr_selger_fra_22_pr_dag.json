@@ -1,5 +1,613 @@
 [
     {
+        "ukedag": "Torsdag",
+        "navn": "Fredrik Mølmen",
+        "umoms": "113 097 kr",
+        "db": "26 305 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Ida Pernille Iversen",
+        "umoms": "75 590 kr",
+        "db": "11 954 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Martin Høyer Halvorsen",
+        "umoms": "49 763 kr",
+        "db": "9 970 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Aksel Ervik",
+        "umoms": "44 099 kr",
+        "db": "19 127 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Solveig Jørgensen",
+        "umoms": "42 617 kr",
+        "db": "9 574 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Amanda Krumsvik",
+        "umoms": "42 281 kr",
+        "db": "9 169 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Heidi Kristensen Voje",
+        "umoms": "38 901 kr",
+        "db": "10 091 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Menglei Chen Ottem",
+        "umoms": "38 730 kr",
+        "db": "4 506 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Liubov Jonassen",
+        "umoms": "36 338 kr",
+        "db": "5 635 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Bertil Tangen",
+        "umoms": "35 021 kr",
+        "db": "6 050 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Linn Christina Johannessen",
+        "umoms": "33 736 kr",
+        "db": "765 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Joakim Johnsen",
+        "umoms": "30 767 kr",
+        "db": "10 173 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Tuva Sofie Risdal",
+        "umoms": "29 219 kr",
+        "db": "4 599 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Mattis René Andersen",
+        "umoms": "27 709 kr",
+        "db": "7 900 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Pernille Dall",
+        "umoms": "27 554 kr",
+        "db": "4 775 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Tom Richard Ekeberg",
+        "umoms": "27 411 kr",
+        "db": "1 791 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Preben Holset",
+        "umoms": "24 236 kr",
+        "db": "6 099 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Tonje Iren Lilløy-Øygarden",
+        "umoms": "24 200 kr",
+        "db": "6 641 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Petter Sandvik",
+        "umoms": "23 453 kr",
+        "db": "7 538 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Marcus Hidle Brustad",
+        "umoms": "23 256 kr",
+        "db": "2 930 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Valeria Salinas",
+        "umoms": "23 225 kr",
+        "db": "5 955 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Kine Thi Huynh",
+        "umoms": "22 992 kr",
+        "db": "5 886 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Sander Homleid",
+        "umoms": "22 964 kr",
+        "db": "1 331 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Tobias Eide",
+        "umoms": "22 215 kr",
+        "db": "2 983 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Linn Kristine Terjesen",
+        "umoms": "22 212 kr",
+        "db": "4 022 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Preben Jacobsen",
+        "umoms": "20 685 kr",
+        "db": "1 782 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Kristoffer Gård",
+        "umoms": "20 360 kr",
+        "db": "4 745 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "David  Wilhelmsen",
+        "umoms": "20 055 kr",
+        "db": "4 127 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Camilla Orsteen",
+        "umoms": "17 947 kr",
+        "db": "3 105 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Aleksander Bang",
+        "umoms": "17 902 kr",
+        "db": "-1 274 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Veronica Skaug Bolt Hansen",
+        "umoms": "17 363 kr",
+        "db": "1 547 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "James Michael McGurty",
+        "umoms": "15 872 kr",
+        "db": "1 950 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Elin Eilefsen",
+        "umoms": "15 396 kr",
+        "db": "-460 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Hans Kristian Nenset",
+        "umoms": "15 257 kr",
+        "db": "-523 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Stine Marie Hofsrud",
+        "umoms": "14 586 kr",
+        "db": "2 878 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Laila Skripeland",
+        "umoms": "14 557 kr",
+        "db": "3 232 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Sjur Eivind Andersen",
+        "umoms": "13 616 kr",
+        "db": "2 200 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Christina Larsen",
+        "umoms": "12 445 kr",
+        "db": "67 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Frode  Olsen",
+        "umoms": "11 933 kr",
+        "db": "2 860 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Pål Magnus Andersen",
+        "umoms": "9 832 kr",
+        "db": "988 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Alexander Bergflødt Ellefsen",
+        "umoms": "9 577 kr",
+        "db": "539 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Pål Linden Anthonisen",
+        "umoms": "9 375 kr",
+        "db": "1 727 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Fredrik Smetan Løken",
+        "umoms": "9 255 kr",
+        "db": "2 938 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Jesper Petterson",
+        "umoms": "8 564 kr",
+        "db": "2 098 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Thomas Langheden Kamfjord",
+        "umoms": "7 766 kr",
+        "db": "2 640 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Thor Aksel Thoresen",
+        "umoms": "7 579 kr",
+        "db": "1 108 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Marthine Hansen",
+        "umoms": "7 409 kr",
+        "db": "1 558 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Fredrik Frost Pettersen",
+        "umoms": "6 711 kr",
+        "db": "511 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Emma Frøbom",
+        "umoms": "6 592 kr",
+        "db": "1 978 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Kristoffer Johnsen",
+        "umoms": "5 355 kr",
+        "db": "248 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Oscar Gjølme",
+        "umoms": "4 667 kr",
+        "db": "718 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Niyas Ali",
+        "umoms": "3 799 kr",
+        "db": "1 233 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Torstein Sandve",
+        "umoms": "3 628 kr",
+        "db": "300 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Sindre Heldal",
+        "umoms": "3 612 kr",
+        "db": "659 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Lisa Marie Jemtland",
+        "umoms": "3 233 kr",
+        "db": "409 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Anette Omland Brubakken",
+        "umoms": "3 020 kr",
+        "db": "914 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Patrick Jensen",
+        "umoms": "2 513 kr",
+        "db": "-119 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Jonas Skog",
+        "umoms": "1 277 kr",
+        "db": "345 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Alex Arntzen",
+        "umoms": "976 kr",
+        "db": "324 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Christopher Øglænd",
+        "umoms": "574 kr",
+        "db": "188 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Øystein Kamfjord",
+        "umoms": "171 kr",
+        "db": "-108 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Johan Nunez",
+        "umoms": "73 kr",
+        "db": "-185 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Henrik Holmesland",
+        "umoms": "0 kr",
+        "db": "-2 542 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Milla F. Moen",
+        "umoms": "-135 kr",
+        "db": "-79 kr",
+        "butikk": "Skien",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Celine Rød",
+        "umoms": "-148 kr",
+        "db": "-84 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Aksel Lindstrøm",
+        "umoms": "-159 kr",
+        "db": "-51 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Tommy Fodsung-Noen Kristensen",
+        "umoms": "-167 kr",
+        "db": "-15 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Sol Emilie Risdal",
+        "umoms": "-175 kr",
+        "db": "-76 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Filip Söderlund",
+        "umoms": "-240 kr",
+        "db": "-239 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Jonas Tjernshaugen",
+        "umoms": "-451 kr",
+        "db": "-44 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Jonathan Kaaby",
+        "umoms": "-480 kr",
+        "db": "-110 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Lilian Margi Frøitland",
+        "umoms": "-922 kr",
+        "db": "-2 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Julie Nilsen Bjølseth",
+        "umoms": "-3 824 kr",
+        "db": "-1 056 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Steffen Johannes Forup Hansen",
+        "umoms": "-4 575 kr",
+        "db": "-2 175 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Marius Olsen",
+        "umoms": "-12 978 kr",
+        "db": "2 871 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20260903
+    },
+    {
+        "ukedag": "Torsdag",
+        "navn": "Jelle Soest",
+        "umoms": "-14 232 kr",
+        "db": "1 820 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20260903
+    },
+    {
         "ukedag": "Onsdag",
         "navn": "Hans Kristian Nenset",
         "umoms": "48 357 kr",
@@ -5612,7 +6220,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-167 kr",
         "db": "-73 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260822
     },
     {
@@ -8708,7 +9316,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-119 kr",
         "db": "-39 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260817
     },
     {
@@ -9268,7 +9876,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-3 519 kr",
         "db": "-1 224 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260815
     },
     {
@@ -10396,7 +11004,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 647 kr",
         "db": "-40 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260813
     },
     {
@@ -11476,7 +12084,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-45 kr",
         "db": "-3 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260811
     },
     {
@@ -12692,7 +13300,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 279 kr",
         "db": "-275 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260808
     },
     {
@@ -13276,7 +13884,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-344 kr",
         "db": "-210 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260807
     },
     {
@@ -14404,7 +15012,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-228 kr",
         "db": "-30 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260805
     },
     {
@@ -15428,7 +16036,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 182 kr",
         "db": "3 977 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260803
     },
     {
@@ -15956,7 +16564,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 376 kr",
         "db": "1 620 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260801
     },
     {
@@ -16244,7 +16852,7 @@
         "navn": "Aksel Ervik",
         "umoms": "61 593 kr",
         "db": "14 123 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260731
     },
     {
@@ -17364,7 +17972,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 757 kr",
         "db": "-548 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260730
     },
     {
@@ -18988,7 +19596,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-284 kr",
         "db": "-134 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260727
     },
     {
@@ -19180,7 +19788,7 @@
         "navn": "Aksel Ervik",
         "umoms": "71 968 kr",
         "db": "10 592 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260725
     },
     {
@@ -19740,7 +20348,7 @@
         "navn": "Aksel Ervik",
         "umoms": "36 419 kr",
         "db": "7 066 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260724
     },
     {
@@ -20404,7 +21012,7 @@
         "navn": "Aksel Ervik",
         "umoms": "22 735 kr",
         "db": "5 635 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260723
     },
     {
@@ -20820,7 +21428,7 @@
         "navn": "Aksel Ervik",
         "umoms": "34 719 kr",
         "db": "9 985 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260722
     },
     {
@@ -21476,7 +22084,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 918 kr",
         "db": "4 073 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260721
     },
     {
@@ -22036,7 +22644,7 @@
         "navn": "Aksel Ervik",
         "umoms": "23 169 kr",
         "db": "5 910 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260720
     },
     {
@@ -22484,7 +23092,7 @@
         "navn": "Aksel Ervik",
         "umoms": "69 351 kr",
         "db": "12 849 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260718
     },
     {
@@ -23068,7 +23676,7 @@
         "navn": "Aksel Ervik",
         "umoms": "33 995 kr",
         "db": "4 865 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260717
     },
     {
@@ -23996,7 +24604,7 @@
         "navn": "Aksel Ervik",
         "umoms": "611 kr",
         "db": "78 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260716
     },
     {
@@ -24460,7 +25068,7 @@
         "navn": "Aksel Ervik",
         "umoms": "6 784 kr",
         "db": "2 179 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260715
     },
     {
@@ -25348,7 +25956,7 @@
         "navn": "Aksel Ervik",
         "umoms": "58 731 kr",
         "db": "5 429 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260713
     },
     {
@@ -26084,7 +26692,7 @@
         "navn": "Aksel Ervik",
         "umoms": "17 710 kr",
         "db": "3 491 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260711
     },
     {
@@ -26508,7 +27116,7 @@
         "navn": "Aksel Ervik",
         "umoms": "27 741 kr",
         "db": "6 889 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260710
     },
     {
@@ -27532,7 +28140,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-8 108 kr",
         "db": "-1 825 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260709
     },
     {
@@ -27604,7 +28212,7 @@
         "navn": "Aksel Ervik",
         "umoms": "44 555 kr",
         "db": "11 428 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260708
     },
     {
@@ -28292,7 +28900,7 @@
         "navn": "Aksel Ervik",
         "umoms": "27 675 kr",
         "db": "4 841 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260707
     },
     {
@@ -28772,7 +29380,7 @@
         "navn": "Aksel Ervik",
         "umoms": "72 924 kr",
         "db": "18 338 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260706
     },
     {
@@ -29356,7 +29964,7 @@
         "navn": "Aksel Ervik",
         "umoms": "75 919 kr",
         "db": "20 907 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260704
     },
     {
@@ -29940,7 +30548,7 @@
         "navn": "Aksel Ervik",
         "umoms": "26 905 kr",
         "db": "6 674 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260703
     },
     {
@@ -30444,7 +31052,7 @@
         "navn": "Aksel Ervik",
         "umoms": "67 465 kr",
         "db": "15 738 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260702
     },
     {
@@ -31252,7 +31860,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 627 kr",
         "db": "2 744 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260701
     },
     {
@@ -31916,7 +32524,7 @@
         "navn": "Aksel Ervik",
         "umoms": "6 336 kr",
         "db": "2 828 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260630
     },
     {
@@ -32380,7 +32988,7 @@
         "navn": "Aksel Ervik",
         "umoms": "19 856 kr",
         "db": "5 841 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260629
     },
     {
@@ -33356,7 +33964,7 @@
         "navn": "Aksel Ervik",
         "umoms": "27 414 kr",
         "db": "6 158 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260626
     },
     {
@@ -34020,7 +34628,7 @@
         "navn": "Aksel Ervik",
         "umoms": "23 202 kr",
         "db": "4 645 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260625
     },
     {
@@ -34932,7 +35540,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 884 kr",
         "db": "1 430 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260624
     },
     {
@@ -35356,7 +35964,7 @@
         "navn": "Aksel Ervik",
         "umoms": "20 711 kr",
         "db": "-249 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260623
     },
     {
@@ -35924,7 +36532,7 @@
         "navn": "Aksel Ervik",
         "umoms": "22 914 kr",
         "db": "5 574 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260622
     },
     {
@@ -36380,7 +36988,7 @@
         "navn": "Aksel Ervik",
         "umoms": "47 335 kr",
         "db": "7 059 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260620
     },
     {
@@ -36948,7 +37556,7 @@
         "navn": "Aksel Ervik",
         "umoms": "48 391 kr",
         "db": "11 495 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260619
     },
     {
@@ -41756,7 +42364,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-330 kr",
         "db": "-35 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260611
     },
     {
@@ -42860,7 +43468,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 657 kr",
         "db": "1 008 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260609
     },
     {
@@ -43276,7 +43884,7 @@
         "navn": "Aksel Ervik",
         "umoms": "22 620 kr",
         "db": "4 338 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260608
     },
     {
@@ -44588,7 +45196,7 @@
         "navn": "Aksel Ervik",
         "umoms": "15 240 kr",
         "db": "4 043 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260605
     },
     {
@@ -44964,7 +45572,7 @@
         "navn": "Aksel Ervik",
         "umoms": "39 029 kr",
         "db": "5 956 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260604
     },
     {
@@ -45844,7 +46452,7 @@
         "navn": "Aksel Ervik",
         "umoms": "12 721 kr",
         "db": "2 721 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20260603
     },
     {
@@ -194812,7 +195420,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-294 kr",
         "db": "-143 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250804
     },
     {
@@ -195052,7 +195660,7 @@
         "navn": "Aksel Ervik",
         "umoms": "24 494 kr",
         "db": "5 456 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250802
     },
     {
@@ -195796,7 +196404,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-71 kr",
         "db": "-37 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250801
     },
     {
@@ -196916,7 +197524,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 906 kr",
         "db": "1 512 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250730
     },
     {
@@ -197204,7 +197812,7 @@
         "navn": "Aksel Ervik",
         "umoms": "42 029 kr",
         "db": "13 419 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250729
     },
     {
@@ -197948,7 +198556,7 @@
         "navn": "Aksel Ervik",
         "umoms": "15 374 kr",
         "db": "5 213 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250728
     },
     {
@@ -200276,7 +200884,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-518 kr",
         "db": "-244 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250723
     },
     {
@@ -202100,7 +202708,7 @@
         "navn": "Aksel Ervik",
         "umoms": "13 985 kr",
         "db": "4 473 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250718
     },
     {
@@ -203436,7 +204044,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-247 kr",
         "db": "-170 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250716
     },
     {
@@ -204956,7 +205564,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-100 kr",
         "db": "-10 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250712
     },
     {
@@ -205140,7 +205748,7 @@
         "navn": "Aksel Ervik",
         "umoms": "48 332 kr",
         "db": "4 763 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250711
     },
     {
@@ -205660,7 +206268,7 @@
         "navn": "Aksel Ervik",
         "umoms": "37 431 kr",
         "db": "9 051 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250710
     },
     {
@@ -207596,7 +208204,7 @@
         "navn": "Aksel Ervik",
         "umoms": "17 028 kr",
         "db": "5 574 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250707
     },
     {
@@ -211220,7 +211828,7 @@
         "navn": "Aksel Ervik",
         "umoms": "13 835 kr",
         "db": "3 593 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250630
     },
     {
@@ -212500,7 +213108,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-131 kr",
         "db": "-96 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250627
     },
     {
@@ -213804,7 +214412,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-140 kr",
         "db": "-52 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250625
     },
     {
@@ -214044,7 +214652,7 @@
         "navn": "Aksel Ervik",
         "umoms": "33 770 kr",
         "db": "7 140 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250624
     },
     {
@@ -214668,7 +215276,7 @@
         "navn": "Aksel Ervik",
         "umoms": "32 267 kr",
         "db": "6 544 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250623
     },
     {
@@ -216788,7 +217396,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-399 kr",
         "db": "-185 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250619
     },
     {
@@ -217204,7 +217812,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 556 kr",
         "db": "2 342 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250618
     },
     {
@@ -218996,7 +219604,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 716 kr",
         "db": "2 374 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250614
     },
     {
@@ -220332,7 +220940,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-158 kr",
         "db": "-76 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250612
     },
     {
@@ -221564,7 +222172,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-117 kr",
         "db": "-63 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250610
     },
     {
@@ -223188,7 +223796,7 @@
         "navn": "Aksel Ervik",
         "umoms": "6 659 kr",
         "db": "2 656 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250605
     },
     {
@@ -225340,7 +225948,7 @@
         "navn": "Aksel Ervik",
         "umoms": "39 689 kr",
         "db": "11 878 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250531
     },
     {
@@ -226036,7 +226644,7 @@
         "navn": "Aksel Ervik",
         "umoms": "38 475 kr",
         "db": "3 383 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250530
     },
     {
@@ -228508,7 +229116,7 @@
         "navn": "Aksel Ervik",
         "umoms": "17 139 kr",
         "db": "3 763 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250524
     },
     {
@@ -233572,7 +234180,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-63 kr",
         "db": "-45 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250514
     },
     {
@@ -239772,7 +240380,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 912 kr",
         "db": "605 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250502
     },
     {
@@ -243444,7 +244052,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-158 kr",
         "db": "-109 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250424
     },
     {
@@ -247140,7 +247748,7 @@
         "navn": "Aksel Ervik",
         "umoms": "18 191 kr",
         "db": "4 976 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250414
     },
     {
@@ -251452,7 +252060,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 763 kr",
         "db": "-293 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250405
     },
     {
@@ -252812,7 +253420,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-455 kr",
         "db": "-116 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250403
     },
     {
@@ -260580,7 +261188,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-478 kr",
         "db": "-67 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250319
     },
     {
@@ -261180,7 +261788,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-521 kr",
         "db": "-91 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250318
     },
     {
@@ -262012,7 +262620,7 @@
         "navn": "Aksel Ervik",
         "umoms": "37 681 kr",
         "db": "11 024 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250315
     },
     {
@@ -265348,7 +265956,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-127 kr",
         "db": "-4 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250310
     },
     {
@@ -271596,7 +272204,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 270 kr",
         "db": "-388 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250225
     },
     {
@@ -271916,7 +272524,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 890 kr",
         "db": "2 529 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250224
     },
     {
@@ -272564,7 +273172,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-382 kr",
         "db": "-188 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250222
     },
     {
@@ -272980,7 +273588,7 @@
         "navn": "Aksel Ervik",
         "umoms": "15 040 kr",
         "db": "2 540 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250221
     },
     {
@@ -278540,7 +279148,7 @@
         "navn": "Aksel Ervik",
         "umoms": "4 994 kr",
         "db": "381 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250210
     },
     {
@@ -278908,7 +279516,7 @@
         "navn": "Aksel Ervik",
         "umoms": "21 786 kr",
         "db": "5 137 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250208
     },
     {
@@ -279612,7 +280220,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 671 kr",
         "db": "3 727 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250207
     },
     {
@@ -281908,7 +282516,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 684 kr",
         "db": "1 599 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250203
     },
     {
@@ -282612,7 +283220,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-694 kr",
         "db": "-300 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250201
     },
     {
@@ -285852,7 +286460,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 182 kr",
         "db": "2 918 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250125
     },
     {
@@ -287140,7 +287748,7 @@
         "navn": "Aksel Ervik",
         "umoms": "47 kr",
         "db": "23 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250123
     },
     {
@@ -288684,7 +289292,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 782 kr",
         "db": "1 825 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250120
     },
     {
@@ -290620,7 +291228,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-381 kr",
         "db": "-12 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250116
     },
     {
@@ -291084,7 +291692,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 484 kr",
         "db": "534 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250115
     },
     {
@@ -294732,7 +295340,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-405 kr",
         "db": "-196 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250108
     },
     {
@@ -297428,7 +298036,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 583 kr",
         "db": "-319 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20250102
     },
     {
@@ -297708,7 +298316,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-159 kr",
         "db": "-66 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241231
     },
     {
@@ -298020,7 +298628,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 779 kr",
         "db": "4 088 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241230
     },
     {
@@ -300812,7 +301420,7 @@
         "navn": "Aksel Ervik",
         "umoms": "7 470 kr",
         "db": "1 687 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241220
     },
     {
@@ -301548,7 +302156,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-215 kr",
         "db": "-22 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241219
     },
     {
@@ -303060,7 +303668,7 @@
         "navn": "Aksel Ervik",
         "umoms": "24 742 kr",
         "db": "4 282 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241216
     },
     {
@@ -306084,7 +306692,7 @@
         "navn": "Aksel Ervik",
         "umoms": "15 944 kr",
         "db": "5 049 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241210
     },
     {
@@ -306700,7 +307308,7 @@
         "navn": "Aksel Ervik",
         "umoms": "13 184 kr",
         "db": "2 131 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241209
     },
     {
@@ -309148,7 +309756,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-127 kr",
         "db": "-59 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241204
     },
     {
@@ -309836,7 +310444,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-688 kr",
         "db": "-305 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241203
     },
     {
@@ -310260,7 +310868,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 731 kr",
         "db": "191 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241202
     },
     {
@@ -311484,7 +312092,7 @@
         "navn": "Aksel Ervik",
         "umoms": "32 286 kr",
         "db": "-4 882 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241129
     },
     {
@@ -314196,7 +314804,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 732 kr",
         "db": "1 279 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241125
     },
     {
@@ -314468,7 +315076,7 @@
         "navn": "Aksel Ervik",
         "umoms": "92 845 kr",
         "db": "4 293 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241123
     },
     {
@@ -315348,7 +315956,7 @@
         "navn": "Aksel Ervik",
         "umoms": "26 562 kr",
         "db": "-2 660 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241122
     },
     {
@@ -316292,7 +316900,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-206 kr",
         "db": "-90 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241121
     },
     {
@@ -318084,7 +318692,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 075 kr",
         "db": "-254 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241118
     },
     {
@@ -318676,7 +319284,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-3 311 kr",
         "db": "23 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241116
     },
     {
@@ -319676,7 +320284,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 774 kr",
         "db": "1 378 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241114
     },
     {
@@ -321108,7 +321716,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 020 kr",
         "db": "-607 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241112
     },
     {
@@ -321372,7 +321980,7 @@
         "navn": "Aksel Ervik",
         "umoms": "19 994 kr",
         "db": "4 537 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241111
     },
     {
@@ -323844,7 +324452,7 @@
         "navn": "Aksel Ervik",
         "umoms": "22 261 kr",
         "db": "4 276 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241106
     },
     {
@@ -325164,7 +325772,7 @@
         "navn": "Aksel Ervik",
         "umoms": "13 549 kr",
         "db": "1 797 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241104
     },
     {
@@ -326844,7 +327452,7 @@
         "navn": "Aksel Ervik",
         "umoms": "23 259 kr",
         "db": "4 332 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241031
     },
     {
@@ -328420,7 +329028,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-681 kr",
         "db": "-209 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241029
     },
     {
@@ -328772,7 +329380,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 025 kr",
         "db": "2 866 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241028
     },
     {
@@ -329484,7 +330092,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-319 kr",
         "db": "-119 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241026
     },
     {
@@ -330004,7 +330612,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 133 kr",
         "db": "423 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241025
     },
     {
@@ -330708,7 +331316,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-100 kr",
         "db": "-38 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241024
     },
     {
@@ -332076,7 +332684,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 599 kr",
         "db": "-161 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241022
     },
     {
@@ -332420,7 +333028,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 408 kr",
         "db": "2 402 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241021
     },
     {
@@ -332964,7 +333572,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 206 kr",
         "db": "1 093 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241019
     },
     {
@@ -334996,7 +335604,7 @@
         "navn": "Aksel Ervik",
         "umoms": "525 kr",
         "db": "72 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241016
     },
     {
@@ -335988,7 +336596,7 @@
         "navn": "Aksel Ervik",
         "umoms": "14 264 kr",
         "db": "4 093 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241014
     },
     {
@@ -339308,7 +339916,7 @@
         "navn": "Aksel Ervik",
         "umoms": "19 058 kr",
         "db": "9 307 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241007
     },
     {
@@ -340796,7 +341404,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 039 kr",
         "db": "412 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241004
     },
     {
@@ -342668,7 +343276,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-708 kr",
         "db": "-105 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20241001
     },
     {
@@ -342996,7 +343604,7 @@
         "navn": "Aksel Ervik",
         "umoms": "18 574 kr",
         "db": "2 210 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240930
     },
     {
@@ -345572,7 +346180,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 350 kr",
         "db": "644 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240925
     },
     {
@@ -346820,7 +347428,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 022 kr",
         "db": "-613 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240923
     },
     {
@@ -347212,7 +347820,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 911 kr",
         "db": "-864 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240921
     },
     {
@@ -347852,7 +348460,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 798 kr",
         "db": "1 256 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240920
     },
     {
@@ -348620,7 +349228,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-236 kr",
         "db": "-27 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240919
     },
     {
@@ -349724,7 +350332,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 132 kr",
         "db": "506 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240917
     },
     {
@@ -350116,7 +350724,7 @@
         "navn": "Aksel Ervik",
         "umoms": "12 680 kr",
         "db": "4 240 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240916
     },
     {
@@ -350844,7 +351452,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-48 kr",
         "db": "0 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240914
     },
     {
@@ -353716,7 +354324,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 302 kr",
         "db": "3 814 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240909
     },
     {
@@ -356644,7 +357252,7 @@
         "navn": "Aksel Ervik",
         "umoms": "656 kr",
         "db": "410 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240903
     },
     {
@@ -357084,7 +357692,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 652 kr",
         "db": "1 881 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240902
     },
     {
@@ -358940,7 +359548,7 @@
         "navn": "Aksel Ervik",
         "umoms": "382 kr",
         "db": "175 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240829
     },
     {
@@ -359364,7 +359972,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 767 kr",
         "db": "775 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240828
     },
     {
@@ -359700,7 +360308,7 @@
         "navn": "Aksel Ervik",
         "umoms": "40 945 kr",
         "db": "10 031 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240827
     },
     {
@@ -360476,7 +361084,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 377 kr",
         "db": "2 333 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240826
     },
     {
@@ -361020,7 +361628,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 873 kr",
         "db": "863 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240824
     },
     {
@@ -362148,7 +362756,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 071 kr",
         "db": "596 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240822
     },
     {
@@ -362548,7 +363156,7 @@
         "navn": "Aksel Ervik",
         "umoms": "26 544 kr",
         "db": "6 500 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240821
     },
     {
@@ -363348,7 +363956,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 316 kr",
         "db": "418 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240820
     },
     {
@@ -365740,7 +366348,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-596 kr",
         "db": "81 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240815
     },
     {
@@ -366756,7 +367364,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 028 kr",
         "db": "215 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240813
     },
     {
@@ -367020,7 +367628,7 @@
         "navn": "Aksel Ervik",
         "umoms": "29 871 kr",
         "db": "6 399 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240812
     },
     {
@@ -369900,7 +370508,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 472 kr",
         "db": "887 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240806
     },
     {
@@ -370532,7 +371140,7 @@
         "navn": "Aksel Ervik",
         "umoms": "3 315 kr",
         "db": "1 534 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240805
     },
     {
@@ -372004,7 +372612,7 @@
         "navn": "Aksel Ervik",
         "umoms": "3 212 kr",
         "db": "853 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240801
     },
     {
@@ -372996,7 +373604,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 954 kr",
         "db": "3 168 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240730
     },
     {
@@ -374428,7 +375036,7 @@
         "navn": "Aksel Ervik",
         "umoms": "34 145 kr",
         "db": "9 009 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240726
     },
     {
@@ -375052,7 +375660,7 @@
         "navn": "Aksel Ervik",
         "umoms": "24 485 kr",
         "db": "5 443 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240725
     },
     {
@@ -375884,7 +376492,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 020 kr",
         "db": "519 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240724
     },
     {
@@ -376404,7 +377012,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 329 kr",
         "db": "332 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240723
     },
     {
@@ -376908,7 +377516,7 @@
         "navn": "Aksel Ervik",
         "umoms": "20 862 kr",
         "db": "3 778 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240722
     },
     {
@@ -377996,7 +378604,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 451 kr",
         "db": "1 223 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240719
     },
     {
@@ -378716,7 +379324,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-604 kr",
         "db": "-142 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240718
     },
     {
@@ -379028,7 +379636,7 @@
         "navn": "Aksel Ervik",
         "umoms": "12 208 kr",
         "db": "4 261 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240717
     },
     {
@@ -379588,7 +380196,7 @@
         "navn": "Aksel Ervik",
         "umoms": "17 495 kr",
         "db": "2 213 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240716
     },
     {
@@ -380100,7 +380708,7 @@
         "navn": "Aksel Ervik",
         "umoms": "29 940 kr",
         "db": "6 305 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240715
     },
     {
@@ -380788,7 +381396,7 @@
         "navn": "Aksel Ervik",
         "umoms": "3 802 kr",
         "db": "951 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240713
     },
     {
@@ -381268,7 +381876,7 @@
         "navn": "Aksel Ervik",
         "umoms": "15 774 kr",
         "db": "3 475 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240712
     },
     {
@@ -381996,7 +382604,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 370 kr",
         "db": "484 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240711
     },
     {
@@ -382772,7 +383380,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-2 016 kr",
         "db": "-4 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240710
     },
     {
@@ -382980,7 +383588,7 @@
         "navn": "Aksel Ervik",
         "umoms": "17 297 kr",
         "db": "3 457 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240709
     },
     {
@@ -383652,7 +384260,7 @@
         "navn": "Aksel Ervik",
         "umoms": "14 984 kr",
         "db": "2 053 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240708
     },
     {
@@ -384508,7 +385116,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 719 kr",
         "db": "-709 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240706
     },
     {
@@ -384668,7 +385276,7 @@
         "navn": "Aksel Ervik",
         "umoms": "33 383 kr",
         "db": "7 950 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240705
     },
     {
@@ -385388,7 +385996,7 @@
         "navn": "Aksel Ervik",
         "umoms": "20 878 kr",
         "db": "-5 592 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240704
     },
     {
@@ -386076,7 +386684,7 @@
         "navn": "Aksel Ervik",
         "umoms": "4 754 kr",
         "db": "279 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240703
     },
     {
@@ -386596,7 +387204,7 @@
         "navn": "Aksel Ervik",
         "umoms": "13 842 kr",
         "db": "3 754 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240702
     },
     {
@@ -386972,7 +387580,7 @@
         "navn": "Aksel Ervik",
         "umoms": "49 303 kr",
         "db": "5 475 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240701
     },
     {
@@ -388364,7 +388972,7 @@
         "navn": "Aksel Ervik",
         "umoms": "15 087 kr",
         "db": "1 713 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240628
     },
     {
@@ -388724,7 +389332,7 @@
         "navn": "Aksel Ervik",
         "umoms": "36 684 kr",
         "db": "6 623 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240627
     },
     {
@@ -389244,7 +389852,7 @@
         "navn": "Aksel Ervik",
         "umoms": "41 526 kr",
         "db": "5 832 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240626
     },
     {
@@ -389996,7 +390604,7 @@
         "navn": "Aksel Ervik",
         "umoms": "35 620 kr",
         "db": "4 844 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240625
     },
     {
@@ -390572,7 +391180,7 @@
         "navn": "Aksel Ervik",
         "umoms": "33 140 kr",
         "db": "7 893 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240624
     },
     {
@@ -391340,7 +391948,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 470 kr",
         "db": "1 717 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240622
     },
     {
@@ -391740,7 +392348,7 @@
         "navn": "Aksel Ervik",
         "umoms": "31 501 kr",
         "db": "7 648 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240621
     },
     {
@@ -392492,7 +393100,7 @@
         "navn": "Aksel Ervik",
         "umoms": "24 058 kr",
         "db": "1 303 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240620
     },
     {
@@ -393028,7 +393636,7 @@
         "navn": "Aksel Ervik",
         "umoms": "22 655 kr",
         "db": "5 850 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240619
     },
     {
@@ -393780,7 +394388,7 @@
         "navn": "Aksel Ervik",
         "umoms": "14 102 kr",
         "db": "2 446 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240618
     },
     {
@@ -394356,7 +394964,7 @@
         "navn": "Aksel Ervik",
         "umoms": "24 626 kr",
         "db": "4 063 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240617
     },
     {
@@ -397604,7 +398212,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 114 kr",
         "db": "-309 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240611
     },
     {
@@ -397932,7 +398540,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 117 kr",
         "db": "2 696 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240610
     },
     {
@@ -404060,7 +404668,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-2 482 kr",
         "db": "48 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240529
     },
     {
@@ -414900,7 +415508,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 190 kr",
         "db": "2 628 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240503
     },
     {
@@ -416916,7 +417524,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-3 205 kr",
         "db": "940 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240429
     },
     {
@@ -418444,7 +419052,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-263 kr",
         "db": "-137 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240425
     },
     {
@@ -419004,7 +419612,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-139 kr",
         "db": "-16 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240424
     },
     {
@@ -419636,7 +420244,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-2 459 kr",
         "db": "-552 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240423
     },
     {
@@ -420516,7 +421124,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 934 kr",
         "db": "2 013 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240420
     },
     {
@@ -422236,7 +422844,7 @@
         "navn": "Aksel Ervik",
         "umoms": "6 912 kr",
         "db": "1 581 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240417
     },
     {
@@ -423380,7 +423988,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 338 kr",
         "db": "2 249 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240415
     },
     {
@@ -423892,7 +424500,7 @@
         "navn": "Aksel Ervik",
         "umoms": "14 385 kr",
         "db": "3 262 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240413
     },
     {
@@ -424492,7 +425100,7 @@
         "navn": "Aksel Ervik",
         "umoms": "15 694 kr",
         "db": "4 175 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240412
     },
     {
@@ -425124,7 +425732,7 @@
         "navn": "Aksel Ervik",
         "umoms": "13 418 kr",
         "db": "-294 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240411
     },
     {
@@ -425948,7 +426556,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-783 kr",
         "db": "94 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240410
     },
     {
@@ -426476,7 +427084,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-286 kr",
         "db": "-37 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240409
     },
     {
@@ -426724,7 +427332,7 @@
         "navn": "Aksel Ervik",
         "umoms": "24 806 kr",
         "db": "3 604 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240408
     },
     {
@@ -427548,7 +428156,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-412 kr",
         "db": "29 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240406
     },
     {
@@ -428684,7 +429292,7 @@
         "navn": "Aksel Ervik",
         "umoms": "429 kr",
         "db": "162 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240404
     },
     {
@@ -429076,7 +429684,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 890 kr",
         "db": "3 898 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240403
     },
     {
@@ -430324,7 +430932,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 843 kr",
         "db": "573 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240330
     },
     {
@@ -431468,7 +432076,7 @@
         "navn": "Aksel Ervik",
         "umoms": "7 336 kr",
         "db": "511 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240326
     },
     {
@@ -433956,7 +434564,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-718 kr",
         "db": "-164 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240321
     },
     {
@@ -434428,7 +435036,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 660 kr",
         "db": "242 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240320
     },
     {
@@ -434820,7 +435428,7 @@
         "navn": "Aksel Ervik",
         "umoms": "18 056 kr",
         "db": "-1 294 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240319
     },
     {
@@ -435628,7 +436236,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-287 kr",
         "db": "-34 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240318
     },
     {
@@ -436020,7 +436628,7 @@
         "navn": "Aksel Ervik",
         "umoms": "17 538 kr",
         "db": "5 123 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240316
     },
     {
@@ -436444,7 +437052,7 @@
         "navn": "Aksel Ervik",
         "umoms": "24 764 kr",
         "db": "-4 336 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240315
     },
     {
@@ -437412,7 +438020,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-3 852 kr",
         "db": "-3 675 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240314
     },
     {
@@ -438028,7 +438636,7 @@
         "navn": "Aksel Ervik",
         "umoms": "32 430 kr",
         "db": "7 784 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240312
     },
     {
@@ -438716,7 +439324,7 @@
         "navn": "Aksel Ervik",
         "umoms": "13 960 kr",
         "db": "2 737 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240311
     },
     {
@@ -439964,7 +440572,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-453 kr",
         "db": "-154 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240308
     },
     {
@@ -442580,7 +443188,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 447 kr",
         "db": "-404 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240302
     },
     {
@@ -442972,7 +443580,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 533 kr",
         "db": "1 892 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240301
     },
     {
@@ -444164,7 +444772,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-63 kr",
         "db": "-32 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240228
     },
     {
@@ -444516,7 +445124,7 @@
         "navn": "Aksel Ervik",
         "umoms": "7 085 kr",
         "db": "1 333 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240227
     },
     {
@@ -445604,7 +446212,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-62 kr",
         "db": "-41 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240224
     },
     {
@@ -446092,7 +446700,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 471 kr",
         "db": "2 099 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240223
     },
     {
@@ -448276,7 +448884,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-340 kr",
         "db": "-79 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240219
     },
     {
@@ -448900,7 +449508,7 @@
         "navn": "Aksel Ervik",
         "umoms": "35 613 kr",
         "db": "8 919 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240216
     },
     {
@@ -450564,7 +451172,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 834 kr",
         "db": "3 237 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240213
     },
     {
@@ -451948,7 +452556,7 @@
         "navn": "Aksel Ervik",
         "umoms": "15 732 kr",
         "db": "4 017 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240209
     },
     {
@@ -452700,7 +453308,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-94 kr",
         "db": "-52 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240208
     },
     {
@@ -453788,7 +454396,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-652 kr",
         "db": "-91 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240206
     },
     {
@@ -454380,7 +454988,7 @@
         "navn": "Aksel Ervik",
         "umoms": "88 140 kr",
         "db": "16 980 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240203
     },
     {
@@ -455076,7 +455684,7 @@
         "navn": "Aksel Ervik",
         "umoms": "12 489 kr",
         "db": "2 851 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240202
     },
     {
@@ -455868,7 +456476,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 910 kr",
         "db": "-488 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240201
     },
     {
@@ -456172,7 +456780,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 191 kr",
         "db": "2 317 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240131
     },
     {
@@ -456748,7 +457356,7 @@
         "navn": "Aksel Ervik",
         "umoms": "4 081 kr",
         "db": "1 371 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240130
     },
     {
@@ -457780,7 +458388,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 196 kr",
         "db": "2 272 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240127
     },
     {
@@ -459124,7 +459732,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-796 kr",
         "db": "-247 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240125
     },
     {
@@ -459388,7 +459996,7 @@
         "navn": "Aksel Ervik",
         "umoms": "23 647 kr",
         "db": "1 483 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240124
     },
     {
@@ -459964,7 +460572,7 @@
         "navn": "Aksel Ervik",
         "umoms": "15 974 kr",
         "db": "4 673 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240123
     },
     {
@@ -460340,7 +460948,7 @@
         "navn": "Aksel Ervik",
         "umoms": "37 841 kr",
         "db": "6 916 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240122
     },
     {
@@ -460948,7 +461556,7 @@
         "navn": "Aksel Ervik",
         "umoms": "22 007 kr",
         "db": "5 167 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240120
     },
     {
@@ -461692,7 +462300,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-159 kr",
         "db": "35 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240119
     },
     {
@@ -462028,7 +462636,7 @@
         "navn": "Aksel Ervik",
         "umoms": "6 411 kr",
         "db": "1 454 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240118
     },
     {
@@ -463964,7 +464572,7 @@
         "navn": "Aksel Ervik",
         "umoms": "13 376 kr",
         "db": "2 502 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240113
     },
     {
@@ -464652,7 +465260,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-798 kr",
         "db": "-131 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240112
     },
     {
@@ -465444,7 +466052,7 @@
         "navn": "Aksel Ervik",
         "umoms": "17 847 kr",
         "db": "1 567 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240110
     },
     {
@@ -466036,7 +466644,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 108 kr",
         "db": "3 855 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240109
     },
     {
@@ -467060,7 +467668,7 @@
         "navn": "Aksel Ervik",
         "umoms": "24 573 kr",
         "db": "5 357 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240106
     },
     {
@@ -468108,7 +468716,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 238 kr",
         "db": "-108 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240104
     },
     {
@@ -469060,7 +469668,7 @@
         "navn": "Aksel Ervik",
         "umoms": "6 056 kr",
         "db": "-721 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20240102
     },
     {
@@ -471636,7 +472244,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-608 kr",
         "db": "-453 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231222
     },
     {
@@ -472012,7 +472620,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 472 kr",
         "db": "689 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231221
     },
     {
@@ -472964,7 +473572,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 442 kr",
         "db": "2 162 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231219
     },
     {
@@ -474020,7 +474628,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 089 kr",
         "db": "2 960 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231216
     },
     {
@@ -474700,7 +475308,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-159 kr",
         "db": "-61 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231215
     },
     {
@@ -476332,7 +476940,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-247 kr",
         "db": "-63 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231212
     },
     {
@@ -477084,7 +477692,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 655 kr",
         "db": "3 532 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231209
     },
     {
@@ -478860,7 +479468,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-3 578 kr",
         "db": "-1 047 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231206
     },
     {
@@ -479508,7 +480116,7 @@
         "navn": "Aksel Ervik",
         "umoms": "42 802 kr",
         "db": "9 290 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231204
     },
     {
@@ -480124,7 +480732,7 @@
         "navn": "Aksel Ervik",
         "umoms": "21 814 kr",
         "db": "7 229 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231202
     },
     {
@@ -480804,7 +481412,7 @@
         "navn": "Aksel Ervik",
         "umoms": "3 952 kr",
         "db": "573 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231201
     },
     {
@@ -481356,7 +481964,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 027 kr",
         "db": "1 447 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231130
     },
     {
@@ -482444,7 +483052,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 605 kr",
         "db": "1 278 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231128
     },
     {
@@ -482772,7 +483380,7 @@
         "navn": "Aksel Ervik",
         "umoms": "23 048 kr",
         "db": "7 209 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231127
     },
     {
@@ -483492,7 +484100,7 @@
         "navn": "Aksel Ervik",
         "umoms": "21 009 kr",
         "db": "-348 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231125
     },
     {
@@ -484324,7 +484932,7 @@
         "navn": "Aksel Ervik",
         "umoms": "3 605 kr",
         "db": "2 316 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231124
     },
     {
@@ -485452,7 +486060,7 @@
         "navn": "Aksel Ervik",
         "umoms": "7 027 kr",
         "db": "1 727 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231122
     },
     {
@@ -486036,7 +486644,7 @@
         "navn": "Aksel Ervik",
         "umoms": "6 093 kr",
         "db": "2 048 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231121
     },
     {
@@ -486332,7 +486940,7 @@
         "navn": "Aksel Ervik",
         "umoms": "53 144 kr",
         "db": "6 026 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231120
     },
     {
@@ -486956,7 +487564,7 @@
         "navn": "Aksel Ervik",
         "umoms": "34 964 kr",
         "db": "3 342 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231118
     },
     {
@@ -487716,7 +488324,7 @@
         "navn": "Aksel Ervik",
         "umoms": "13 020 kr",
         "db": "-1 906 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231117
     },
     {
@@ -488356,7 +488964,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 804 kr",
         "db": "537 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231116
     },
     {
@@ -489484,7 +490092,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-525 kr",
         "db": "-303 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231114
     },
     {
@@ -489916,7 +490524,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 323 kr",
         "db": "1 976 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231113
     },
     {
@@ -490148,7 +490756,7 @@
         "navn": "Aksel Ervik",
         "umoms": "37 498 kr",
         "db": "11 954 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231111
     },
     {
@@ -491036,7 +491644,7 @@
         "navn": "Aksel Ervik",
         "umoms": "40 225 kr",
         "db": "4 447 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231109
     },
     {
@@ -491700,7 +492308,7 @@
         "navn": "Aksel Ervik",
         "umoms": "19 289 kr",
         "db": "5 825 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231108
     },
     {
@@ -492700,7 +493308,7 @@
         "navn": "Aksel Ervik",
         "umoms": "26 380 kr",
         "db": "5 764 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231106
     },
     {
@@ -493460,7 +494068,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-436 kr",
         "db": "-140 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231104
     },
     {
@@ -493932,7 +494540,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 574 kr",
         "db": "534 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231103
     },
     {
@@ -494116,7 +494724,7 @@
         "navn": "Aksel Ervik",
         "umoms": "34 285 kr",
         "db": "8 027 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231102
     },
     {
@@ -494908,7 +495516,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 215 kr",
         "db": "-212 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231101
     },
     {
@@ -495204,7 +495812,7 @@
         "navn": "Aksel Ervik",
         "umoms": "30 367 kr",
         "db": "6 553 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231031
     },
     {
@@ -496964,7 +497572,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 400 kr",
         "db": "-193 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231027
     },
     {
@@ -500948,7 +501556,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 119 kr",
         "db": "-169 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231018
     },
     {
@@ -501356,7 +501964,7 @@
         "navn": "Aksel Ervik",
         "umoms": "3 685 kr",
         "db": "776 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231017
     },
     {
@@ -501780,7 +502388,7 @@
         "navn": "Aksel Ervik",
         "umoms": "14 820 kr",
         "db": "2 786 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231016
     },
     {
@@ -504404,7 +505012,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-142 kr",
         "db": "-43 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231010
     },
     {
@@ -504740,7 +505348,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 299 kr",
         "db": "2 514 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231009
     },
     {
@@ -505148,7 +505756,7 @@
         "navn": "Aksel Ervik",
         "umoms": "15 546 kr",
         "db": "4 224 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231007
     },
     {
@@ -506876,7 +507484,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-5 439 kr",
         "db": "256 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231004
     },
     {
@@ -507868,7 +508476,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 139 kr",
         "db": "218 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20231002
     },
     {
@@ -508172,7 +508780,7 @@
         "navn": "Aksel Ervik",
         "umoms": "14 729 kr",
         "db": "-586 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230930
     },
     {
@@ -508644,7 +509252,7 @@
         "navn": "Aksel Ervik",
         "umoms": "26 347 kr",
         "db": "-459 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230929
     },
     {
@@ -509316,7 +509924,7 @@
         "navn": "Aksel Ervik",
         "umoms": "15 345 kr",
         "db": "79 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230928
     },
     {
@@ -509972,7 +510580,7 @@
         "navn": "Aksel Ervik",
         "umoms": "4 974 kr",
         "db": "2 237 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230927
     },
     {
@@ -510492,7 +511100,7 @@
         "navn": "Aksel Ervik",
         "umoms": "4 726 kr",
         "db": "759 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230926
     },
     {
@@ -511164,7 +511772,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-2 566 kr",
         "db": "-341 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230925
     },
     {
@@ -511388,7 +511996,7 @@
         "navn": "Aksel Ervik",
         "umoms": "27 426 kr",
         "db": "-5 946 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230923
     },
     {
@@ -512132,7 +512740,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 997 kr",
         "db": "864 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230922
     },
     {
@@ -512588,7 +513196,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 339 kr",
         "db": "2 443 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230921
     },
     {
@@ -513220,7 +513828,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 701 kr",
         "db": "489 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230920
     },
     {
@@ -513580,7 +514188,7 @@
         "navn": "Aksel Ervik",
         "umoms": "12 040 kr",
         "db": "1 882 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230919
     },
     {
@@ -513948,7 +514556,7 @@
         "navn": "Aksel Ervik",
         "umoms": "27 908 kr",
         "db": "5 315 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230918
     },
     {
@@ -514476,7 +515084,7 @@
         "navn": "Aksel Ervik",
         "umoms": "23 000 kr",
         "db": "5 282 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230916
     },
     {
@@ -515636,7 +516244,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-324 kr",
         "db": "-159 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230914
     },
     {
@@ -516236,7 +516844,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-799 kr",
         "db": "-303 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230913
     },
     {
@@ -516604,7 +517212,7 @@
         "navn": "Aksel Ervik",
         "umoms": "4 012 kr",
         "db": "1 676 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230912
     },
     {
@@ -517108,7 +517716,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 910 kr",
         "db": "3 544 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230911
     },
     {
@@ -518428,7 +519036,7 @@
         "navn": "Aksel Ervik",
         "umoms": "7 919 kr",
         "db": "2 264 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230907
     },
     {
@@ -519452,7 +520060,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 171 kr",
         "db": "1 470 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230905
     },
     {
@@ -520124,7 +520732,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-495 kr",
         "db": "-185 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230904
     },
     {
@@ -521524,7 +522132,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 286 kr",
         "db": "973 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230831
     },
     {
@@ -523004,7 +523612,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 819 kr",
         "db": "1 707 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230828
     },
     {
@@ -523300,7 +523908,7 @@
         "navn": "Aksel Ervik",
         "umoms": "31 463 kr",
         "db": "6 988 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230826
     },
     {
@@ -523828,7 +524436,7 @@
         "navn": "Aksel Ervik",
         "umoms": "24 864 kr",
         "db": "7 759 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230825
     },
     {
@@ -524540,7 +525148,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 516 kr",
         "db": "654 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230824
     },
     {
@@ -525460,7 +526068,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 437 kr",
         "db": "690 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230822
     },
     {
@@ -526036,7 +526644,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-4 368 kr",
         "db": "-580 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230821
     },
     {
@@ -526316,7 +526924,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 096 kr",
         "db": "-35 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230819
     },
     {
@@ -526812,7 +527420,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 949 kr",
         "db": "363 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230818
     },
     {
@@ -527356,7 +527964,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-461 kr",
         "db": "629 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230817
     },
     {
@@ -527908,7 +528516,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-2 624 kr",
         "db": "-1 309 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230816
     },
     {
@@ -527940,7 +528548,7 @@
         "navn": "Aksel Ervik",
         "umoms": "52 335 kr",
         "db": "16 438 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230815
     },
     {
@@ -528548,7 +529156,7 @@
         "navn": "Aksel Ervik",
         "umoms": "23 518 kr",
         "db": "4 379 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230814
     },
     {
@@ -529052,7 +529660,7 @@
         "navn": "Aksel Ervik",
         "umoms": "23 042 kr",
         "db": "6 245 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230812
     },
     {
@@ -529548,7 +530156,7 @@
         "navn": "Aksel Ervik",
         "umoms": "13 170 kr",
         "db": "1 768 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230811
     },
     {
@@ -530180,7 +530788,7 @@
         "navn": "Aksel Ervik",
         "umoms": "478 kr",
         "db": "164 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230810
     },
     {
@@ -530932,7 +531540,7 @@
         "navn": "Aksel Ervik",
         "umoms": "18 942 kr",
         "db": "3 207 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230808
     },
     {
@@ -531292,7 +531900,7 @@
         "navn": "Aksel Ervik",
         "umoms": "45 126 kr",
         "db": "8 444 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230807
     },
     {
@@ -531820,7 +532428,7 @@
         "navn": "Aksel Ervik",
         "umoms": "31 220 kr",
         "db": "-1 520 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230805
     },
     {
@@ -532460,7 +533068,7 @@
         "navn": "Aksel Ervik",
         "umoms": "88 kr",
         "db": "37 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230804
     },
     {
@@ -532700,7 +533308,7 @@
         "navn": "Aksel Ervik",
         "umoms": "22 137 kr",
         "db": "1 399 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230803
     },
     {
@@ -533452,7 +534060,7 @@
         "navn": "Aksel Ervik",
         "umoms": "820 kr",
         "db": "329 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230802
     },
     {
@@ -533652,7 +534260,7 @@
         "navn": "Aksel Ervik",
         "umoms": "22 523 kr",
         "db": "5 789 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230801
     },
     {
@@ -534316,7 +534924,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 850 kr",
         "db": "3 373 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230731
     },
     {
@@ -534756,7 +535364,7 @@
         "navn": "Aksel Ervik",
         "umoms": "6 321 kr",
         "db": "131 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230729
     },
     {
@@ -534908,7 +535516,7 @@
         "navn": "Aksel Ervik",
         "umoms": "44 936 kr",
         "db": "6 692 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230728
     },
     {
@@ -535508,7 +536116,7 @@
         "navn": "Aksel Ervik",
         "umoms": "25 456 kr",
         "db": "7 363 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230727
     },
     {
@@ -536244,7 +536852,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 436 kr",
         "db": "-433 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230726
     },
     {
@@ -536420,7 +537028,7 @@
         "navn": "Aksel Ervik",
         "umoms": "18 885 kr",
         "db": "3 555 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230725
     },
     {
@@ -536780,7 +537388,7 @@
         "navn": "Aksel Ervik",
         "umoms": "52 210 kr",
         "db": "11 151 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230724
     },
     {
@@ -537908,7 +538516,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 198 kr",
         "db": "3 873 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230721
     },
     {
@@ -538500,7 +539108,7 @@
         "navn": "Aksel Ervik",
         "umoms": "3 336 kr",
         "db": "571 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230720
     },
     {
@@ -538812,7 +539420,7 @@
         "navn": "Aksel Ervik",
         "umoms": "18 027 kr",
         "db": "5 279 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230719
     },
     {
@@ -539236,7 +539844,7 @@
         "navn": "Aksel Ervik",
         "umoms": "20 463 kr",
         "db": "5 740 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230718
     },
     {
@@ -539964,7 +540572,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 468 kr",
         "db": "302 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230717
     },
     {
@@ -540340,7 +540948,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 895 kr",
         "db": "76 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230715
     },
     {
@@ -540836,7 +541444,7 @@
         "navn": "Aksel Ervik",
         "umoms": "7 592 kr",
         "db": "-583 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230714
     },
     {
@@ -541380,7 +541988,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 523 kr",
         "db": "2 873 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230713
     },
     {
@@ -541724,7 +542332,7 @@
         "navn": "Aksel Ervik",
         "umoms": "21 613 kr",
         "db": "6 941 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230712
     },
     {
@@ -542388,7 +542996,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 319 kr",
         "db": "643 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230711
     },
     {
@@ -542868,7 +543476,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 486 kr",
         "db": "3 235 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230710
     },
     {
@@ -543324,7 +543932,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 816 kr",
         "db": "1 923 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230708
     },
     {
@@ -543596,7 +544204,7 @@
         "navn": "Aksel Ervik",
         "umoms": "26 872 kr",
         "db": "6 802 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230707
     },
     {
@@ -544076,7 +544684,7 @@
         "navn": "Aksel Ervik",
         "umoms": "30 188 kr",
         "db": "235 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230706
     },
     {
@@ -544708,7 +545316,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 931 kr",
         "db": "3 095 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230705
     },
     {
@@ -545348,7 +545956,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 450 kr",
         "db": "539 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230704
     },
     {
@@ -545708,7 +546316,7 @@
         "navn": "Aksel Ervik",
         "umoms": "20 672 kr",
         "db": "6 026 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230703
     },
     {
@@ -546132,7 +546740,7 @@
         "navn": "Aksel Ervik",
         "umoms": "32 709 kr",
         "db": "3 900 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230701
     },
     {
@@ -546700,7 +547308,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 892 kr",
         "db": "2 625 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230630
     },
     {
@@ -547404,7 +548012,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-549 kr",
         "db": "-68 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230629
     },
     {
@@ -547788,7 +548396,7 @@
         "navn": "Aksel Ervik",
         "umoms": "7 153 kr",
         "db": "1 265 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230628
     },
     {
@@ -548284,7 +548892,7 @@
         "navn": "Aksel Ervik",
         "umoms": "7 474 kr",
         "db": "2 323 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230627
     },
     {
@@ -548764,7 +549372,7 @@
         "navn": "Aksel Ervik",
         "umoms": "24 701 kr",
         "db": "7 424 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230626
     },
     {
@@ -549244,7 +549852,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 015 kr",
         "db": "959 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230624
     },
     {
@@ -550140,7 +550748,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 945 kr",
         "db": "728 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230622
     },
     {
@@ -551908,7 +552516,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-741 kr",
         "db": "-57 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230619
     },
     {
@@ -552236,7 +552844,7 @@
         "navn": "Aksel Ervik",
         "umoms": "3 978 kr",
         "db": "753 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230617
     },
     {
@@ -552684,7 +553292,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 905 kr",
         "db": "3 297 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230616
     },
     {
@@ -554436,7 +555044,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-430 kr",
         "db": "-252 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230613
     },
     {
@@ -554956,7 +555564,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 171 kr",
         "db": "475 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230612
     },
     {
@@ -555252,7 +555860,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 483 kr",
         "db": "997 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230610
     },
     {
@@ -555772,7 +556380,7 @@
         "navn": "Aksel Ervik",
         "umoms": "19 858 kr",
         "db": "1 750 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230609
     },
     {
@@ -556356,7 +556964,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 291 kr",
         "db": "1 703 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230608
     },
     {
@@ -556780,7 +557388,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 403 kr",
         "db": "4 142 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230607
     },
     {
@@ -557484,7 +558092,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-502 kr",
         "db": "-197 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230606
     },
     {
@@ -557780,7 +558388,7 @@
         "navn": "Aksel Ervik",
         "umoms": "22 633 kr",
         "db": "2 215 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230605
     },
     {
@@ -558148,7 +558756,7 @@
         "navn": "Aksel Ervik",
         "umoms": "41 418 kr",
         "db": "5 799 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230603
     },
     {
@@ -558884,7 +559492,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 738 kr",
         "db": "356 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230602
     },
     {
@@ -559588,7 +560196,7 @@
         "navn": "Aksel Ervik",
         "umoms": "565 kr",
         "db": "452 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230601
     },
     {
@@ -559748,7 +560356,7 @@
         "navn": "Aksel Ervik",
         "umoms": "27 076 kr",
         "db": "5 396 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230531
     },
     {
@@ -560348,7 +560956,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 830 kr",
         "db": "3 349 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230530
     },
     {
@@ -560612,7 +561220,7 @@
         "navn": "Aksel Ervik",
         "umoms": "50 128 kr",
         "db": "8 448 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230527
     },
     {
@@ -561276,7 +561884,7 @@
         "navn": "Aksel Ervik",
         "umoms": "193 kr",
         "db": "82 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230526
     },
     {
@@ -561532,7 +562140,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 743 kr",
         "db": "2 333 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230525
     },
     {
@@ -562532,7 +563140,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 477 kr",
         "db": "-794 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230523
     },
     {
@@ -563820,7 +564428,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-337 kr",
         "db": "-161 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230519
     },
     {
@@ -564148,7 +564756,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 782 kr",
         "db": "3 055 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230516
     },
     {
@@ -564892,7 +565500,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 941 kr",
         "db": "2 365 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230513
     },
     {
@@ -565380,7 +565988,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 823 kr",
         "db": "1 841 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230512
     },
     {
@@ -565732,7 +566340,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 492 kr",
         "db": "2 315 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230511
     },
     {
@@ -566108,7 +566716,7 @@
         "navn": "Aksel Ervik",
         "umoms": "34 893 kr",
         "db": "4 871 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230510
     },
     {
@@ -566620,7 +567228,7 @@
         "navn": "Aksel Ervik",
         "umoms": "20 953 kr",
         "db": "1 728 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230509
     },
     {
@@ -567548,7 +568156,7 @@
         "navn": "Aksel Ervik",
         "umoms": "32 359 kr",
         "db": "3 663 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230506
     },
     {
@@ -568476,7 +569084,7 @@
         "navn": "Aksel Ervik",
         "umoms": "22 644 kr",
         "db": "1 669 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230504
     },
     {
@@ -569004,7 +569612,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 081 kr",
         "db": "3 266 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230503
     },
     {
@@ -569612,7 +570220,7 @@
         "navn": "Aksel Ervik",
         "umoms": "4 566 kr",
         "db": "-532 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230502
     },
     {
@@ -570212,7 +570820,7 @@
         "navn": "Aksel Ervik",
         "umoms": "31 442 kr",
         "db": "7 351 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230428
     },
     {
@@ -571260,7 +571868,7 @@
         "navn": "Aksel Ervik",
         "umoms": "18 877 kr",
         "db": "2 659 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230426
     },
     {
@@ -572244,7 +572852,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 645 kr",
         "db": "5 225 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230424
     },
     {
@@ -572724,7 +573332,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 124 kr",
         "db": "2 693 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230422
     },
     {
@@ -573900,7 +574508,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-4 637 kr",
         "db": "-2 290 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230420
     },
     {
@@ -574732,7 +575340,7 @@
         "navn": "Aksel Ervik",
         "umoms": "6 431 kr",
         "db": "1 846 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230418
     },
     {
@@ -575580,7 +576188,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 504 kr",
         "db": "3 025 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230415
     },
     {
@@ -576116,7 +576724,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 486 kr",
         "db": "859 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230414
     },
     {
@@ -576556,7 +577164,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 375 kr",
         "db": "1 302 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230413
     },
     {
@@ -577012,7 +577620,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 848 kr",
         "db": "2 393 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230412
     },
     {
@@ -577628,7 +578236,7 @@
         "navn": "Aksel Ervik",
         "umoms": "725 kr",
         "db": "143 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230411
     },
     {
@@ -577836,7 +578444,7 @@
         "navn": "Aksel Ervik",
         "umoms": "8 992 kr",
         "db": "2 058 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230408
     },
     {
@@ -578300,7 +578908,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 179 kr",
         "db": "2 330 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230405
     },
     {
@@ -578628,7 +579236,7 @@
         "navn": "Aksel Ervik",
         "umoms": "18 100 kr",
         "db": "2 885 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230404
     },
     {
@@ -579228,7 +579836,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 161 kr",
         "db": "2 412 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230403
     },
     {
@@ -579652,7 +580260,7 @@
         "navn": "Aksel Ervik",
         "umoms": "14 866 kr",
         "db": "4 189 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230401
     },
     {
@@ -580084,7 +580692,7 @@
         "navn": "Aksel Ervik",
         "umoms": "19 242 kr",
         "db": "7 150 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230331
     },
     {
@@ -580652,7 +581260,7 @@
         "navn": "Aksel Ervik",
         "umoms": "3 808 kr",
         "db": "489 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230330
     },
     {
@@ -581092,7 +581700,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 794 kr",
         "db": "1 048 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230329
     },
     {
@@ -581372,7 +581980,7 @@
         "navn": "Aksel Ervik",
         "umoms": "12 669 kr",
         "db": "4 432 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230328
     },
     {
@@ -581908,7 +582516,7 @@
         "navn": "Aksel Ervik",
         "umoms": "12 809 kr",
         "db": "2 272 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230327
     },
     {
@@ -582500,7 +583108,7 @@
         "navn": "Aksel Ervik",
         "umoms": "9 318 kr",
         "db": "362 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230325
     },
     {
@@ -582708,7 +583316,7 @@
         "navn": "Aksel Ervik",
         "umoms": "43 607 kr",
         "db": "13 511 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230324
     },
     {
@@ -583836,7 +584444,7 @@
         "navn": "Aksel Ervik",
         "umoms": "20 651 kr",
         "db": "6 924 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230322
     },
     {
@@ -584316,7 +584924,7 @@
         "navn": "Aksel Ervik",
         "umoms": "18 456 kr",
         "db": "4 295 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230321
     },
     {
@@ -586276,7 +586884,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-668 kr",
         "db": "186 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230316
     },
     {
@@ -586444,7 +587052,7 @@
         "navn": "Aksel Ervik",
         "umoms": "25 156 kr",
         "db": "3 446 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230315
     },
     {
@@ -587484,7 +588092,7 @@
         "navn": "Aksel Ervik",
         "umoms": "18 801 kr",
         "db": "3 183 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230313
     },
     {
@@ -587924,7 +588532,7 @@
         "navn": "Aksel Ervik",
         "umoms": "19 738 kr",
         "db": "4 862 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230311
     },
     {
@@ -588332,7 +588940,7 @@
         "navn": "Aksel Ervik",
         "umoms": "30 212 kr",
         "db": "885 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230310
     },
     {
@@ -589092,7 +589700,7 @@
         "navn": "Aksel Ervik",
         "umoms": "7 787 kr",
         "db": "2 218 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230309
     },
     {
@@ -589860,7 +590468,7 @@
         "navn": "Aksel Ervik",
         "umoms": "12 004 kr",
         "db": "2 695 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230307
     },
     {
@@ -590196,7 +590804,7 @@
         "navn": "Aksel Ervik",
         "umoms": "29 984 kr",
         "db": "7 921 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230306
     },
     {
@@ -590692,7 +591300,7 @@
         "navn": "Aksel Ervik",
         "umoms": "23 059 kr",
         "db": "4 716 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230304
     },
     {
@@ -591260,7 +591868,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 202 kr",
         "db": "1 044 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230303
     },
     {
@@ -592252,7 +592860,7 @@
         "navn": "Aksel Ervik",
         "umoms": "574 kr",
         "db": "8 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230301
     },
     {
@@ -592652,7 +593260,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 372 kr",
         "db": "834 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230228
     },
     {
@@ -593436,7 +594044,7 @@
         "navn": "Aksel Ervik",
         "umoms": "13 060 kr",
         "db": "4 047 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230225
     },
     {
@@ -594532,7 +595140,7 @@
         "navn": "Aksel Ervik",
         "umoms": "1 603 kr",
         "db": "523 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230223
     },
     {
@@ -594996,7 +595604,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 142 kr",
         "db": "270 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230222
     },
     {
@@ -595260,7 +595868,7 @@
         "navn": "Aksel Ervik",
         "umoms": "16 480 kr",
         "db": "4 866 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230221
     },
     {
@@ -595964,7 +596572,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-1 432 kr",
         "db": "-406 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230220
     },
     {
@@ -596636,7 +597244,7 @@
         "navn": "Aksel Ervik",
         "umoms": "436 kr",
         "db": "174 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230217
     },
     {
@@ -597108,7 +597716,7 @@
         "navn": "Aksel Ervik",
         "umoms": "135 kr",
         "db": "60 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230216
     },
     {
@@ -597860,7 +598468,7 @@
         "navn": "Aksel Ervik",
         "umoms": "7 691 kr",
         "db": "2 671 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230214
     },
     {
@@ -598516,7 +599124,7 @@
         "navn": "Aksel Ervik",
         "umoms": "-427 kr",
         "db": "-81 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230213
     },
     {
@@ -598684,7 +599292,7 @@
         "navn": "Aksel Ervik",
         "umoms": "24 528 kr",
         "db": "7 387 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230211
     },
     {
@@ -599244,7 +599852,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 803 kr",
         "db": "3 541 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230210
     },
     {
@@ -600252,7 +600860,7 @@
         "navn": "Aksel Ervik",
         "umoms": "961 kr",
         "db": "479 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230208
     },
     {
@@ -600924,7 +601532,7 @@
         "navn": "Aksel Ervik",
         "umoms": "20 583 kr",
         "db": "685 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230206
     },
     {
@@ -601404,7 +602012,7 @@
         "navn": "Aksel Ervik",
         "umoms": "20 796 kr",
         "db": "5 347 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230204
     },
     {
@@ -601828,7 +602436,7 @@
         "navn": "Aksel Ervik",
         "umoms": "10 610 kr",
         "db": "2 808 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230203
     },
     {
@@ -602372,7 +602980,7 @@
         "navn": "Aksel Ervik",
         "umoms": "2 819 kr",
         "db": "805 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230202
     },
     {
@@ -605340,7 +605948,7 @@
         "navn": "Aksel Ervik",
         "umoms": "6 940 kr",
         "db": "2 252 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230125
     },
     {
@@ -606276,7 +606884,7 @@
         "navn": "Aksel Ervik",
         "umoms": "11 576 kr",
         "db": "4 670 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230123
     },
     {
@@ -607228,7 +607836,7 @@
         "navn": "Aksel Ervik",
         "umoms": "5 064 kr",
         "db": "911 kr",
-        "butikk": "Bamble",
+        "butikk": "Kristiansand",
         "fakturadato": 20230120
     },
     {
