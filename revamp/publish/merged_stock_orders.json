@@ -702,12 +702,12 @@
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
-                "Ukenr": "39/2026",
-                "Antall": 322.56
-            },
-            {
                 "Ukenr": "40/2026",
                 "Antall": 43.2
+            },
+            {
+                "Ukenr": "39/2026",
+                "Antall": 322.56
             }
         ]
     },
@@ -1020,12 +1020,12 @@
         "Paller på vei": 29,
         "Bestilling på vei": [
             {
-                "Ukenr": "39/2026",
-                "Antall": 506.88
-            },
-            {
                 "Ukenr": "40/2026",
                 "Antall": 829.44
+            },
+            {
+                "Ukenr": "39/2026",
+                "Antall": 506.88
             }
         ]
     },
@@ -1160,16 +1160,10 @@
     {
         "Prodno": "XKO60R44",
         "Beskrivelse": "CTV KONKRETE CENERE 60X60 20MM",
-        "antall på lager": 0.0,
+        "antall på lager": 384.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 0,
-        "Paller på vei": 6,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "38/2026",
-                "Antall": 384.0
-            }
-        ]
+        "Paller på lager": 6,
+        "Paller på vei": 0
     },
     {
         "Prodno": "CKO62R4",
@@ -1198,16 +1192,10 @@
     {
         "Prodno": "02XPA60R4",
         "Beskrivelse": "CTV PIETRE ANTICA GREY 60X60 20MM",
-        "antall på lager": 320.0,
+        "antall på lager": 960.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 5,
-        "Paller på vei": 10,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "38/2026",
-                "Antall": 640.0
-            }
-        ]
+        "Paller på lager": 15,
+        "Paller på vei": 0
     },
     {
         "Prodno": "02XPA60R1",
@@ -1228,16 +1216,10 @@
     {
         "Prodno": "XSL60R4",
         "Beskrivelse": "CTV SLATE GRIGIO 60X60 20MM",
-        "antall på lager": 0.0,
+        "antall på lager": 640.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 0,
-        "Paller på vei": 10,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "38/2026",
-                "Antall": 640.0
-            }
-        ]
+        "Paller på lager": 10,
+        "Paller på vei": 0
     },
     {
         "Prodno": "XSL60R44",
@@ -1296,12 +1278,12 @@
         "Paller på vei": 18,
         "Bestilling på vei": [
             {
-                "Ukenr": "39/2026",
-                "Antall": 780.0
+                "Ukenr": "40/2026",
+                "Antall": 300.0
             },
             {
-                "Ukenr": "41/2026",
-                "Antall": 300.0
+                "Ukenr": "39/2026",
+                "Antall": 780.0
             }
         ]
     },
@@ -1314,12 +1296,12 @@
         "Paller på vei": 24,
         "Bestilling på vei": [
             {
-                "Ukenr": "39/2026",
-                "Antall": 960.0
+                "Ukenr": "40/2026",
+                "Antall": 480.0
             },
             {
-                "Ukenr": "41/2026",
-                "Antall": 480.0
+                "Ukenr": "39/2026",
+                "Antall": 960.0
             }
         ]
     },
@@ -1356,7 +1338,7 @@
         "Paller på vei": 2,
         "Bestilling på vei": [
             {
-                "Ukenr": "41/2026",
+                "Ukenr": "40/2026",
                 "Antall": 92.16
             }
         ]
@@ -1370,7 +1352,7 @@
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
-                "Ukenr": "41/2026",
+                "Ukenr": "40/2026",
                 "Antall": 432.0
             }
         ]
