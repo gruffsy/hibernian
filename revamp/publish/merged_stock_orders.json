@@ -696,18 +696,14 @@
     {
         "Prodno": "300000000000038906",
         "Beskrivelse": "CIF DIAMOND GOLD PULIDO 60X60",
-        "antall på lager": 2.9,
+        "antall på lager": 325.4,
         "antall pr pall": 43.2,
-        "Paller på lager": 0,
-        "Paller på vei": 8,
+        "Paller på lager": 8,
+        "Paller på vei": 1,
         "Bestilling på vei": [
             {
                 "Ukenr": "40/2026",
                 "Antall": 43.2
-            },
-            {
-                "Ukenr": "39/2026",
-                "Antall": 322.56
             }
         ]
     },
@@ -752,16 +748,10 @@
     {
         "Prodno": "300000000000003029",
         "Beskrivelse": "CIF INTENSITY WHITE 20X50",
-        "antall på lager": 0.0,
+        "antall på lager": 115.2,
         "antall pr pall": 57.6,
-        "Paller på lager": 0,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "39/2026",
-                "Antall": 115.2
-            }
-        ]
+        "Paller på lager": 2,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000062409",
@@ -812,16 +802,10 @@
     {
         "Prodno": "300000000000044976",
         "Beskrivelse": "CIF NEBRASKA OAK 30X120 - XS",
-        "antall på lager": 51.8,
+        "antall på lager": 103.7,
         "antall pr pall": 51.8,
-        "Paller på lager": 1,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "39/2026",
-                "Antall": 51.84
-            }
-        ]
+        "Paller på lager": 2,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000053160",
@@ -848,16 +832,10 @@
     {
         "Prodno": "300000000000025363",
         "Beskrivelse": "CIF NEUTRA ANTHRACITE 30X60 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 115.2,
         "antall pr pall": 57.6,
-        "Paller på lager": 0,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "39/2026",
-                "Antall": 115.2
-            }
-        ]
+        "Paller på lager": 2,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000026799",
@@ -918,30 +896,18 @@
     {
         "Prodno": "300000000000028647",
         "Beskrivelse": "CIF NEUTRA WHITE 30X60 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 57.6,
         "antall pr pall": 57.6,
-        "Paller på lager": 0,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "39/2026",
-                "Antall": 57.6
-            }
-        ]
+        "Paller på lager": 1,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000026446",
         "Beskrivelse": "CIF NEUTRA WHITE 60X60 9MM",
-        "antall på lager": 92.2,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
-        "Paller på vei": 2,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "39/2026",
-                "Antall": 92.16
-            }
-        ]
+        "Paller på lager": 4,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000038781",
@@ -962,16 +928,10 @@
     {
         "Prodno": "300000000000067511",
         "Beskrivelse": "CIF ORION MARFIL PULIDO 60X120 9MM",
-        "antall på lager": 138.2,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 3,
-        "Paller på vei": 1,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "39/2026",
-                "Antall": 46.08
-            }
-        ]
+        "Paller på lager": 4,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000072945",
@@ -1014,18 +974,14 @@
     {
         "Prodno": "300000000000035668",
         "Beskrivelse": "CIF OVERLAND SAND 60X60 9MM",
-        "antall på lager": 184.3,
+        "antall på lager": 691.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
-        "Paller på vei": 29,
+        "Paller på lager": 15,
+        "Paller på vei": 18,
         "Bestilling på vei": [
             {
                 "Ukenr": "40/2026",
                 "Antall": 829.44
-            },
-            {
-                "Ukenr": "39/2026",
-                "Antall": 506.88
             }
         ]
     },
@@ -1256,9 +1212,9 @@
     {
         "Prodno": "FAB1020BIS",
         "Beskrivelse": "FAB BISELADO BLANCO 10X20",
-        "antall på lager": 384.0,
+        "antall på lager": 288.0,
         "antall pr pall": 96.0,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
@@ -1748,9 +1704,9 @@
     {
         "Prodno": "LTG2100-361",
         "Beskrivelse": "LTG TERRA ANTRACITE 30X60",
-        "antall på lager": 46.1,
+        "antall på lager": 0.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
