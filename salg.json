@@ -1,15 +1,5 @@
 [
     {
-        "butikk": "Wednesday",
-        "Klient": 7,
-        "mmoms": "1 796 686 kr",
-        "umoms": "1 437 349 kr",
-        "db": " 287 656 kr",
-        "dg": "20.0%",
-        "antord": 1445,
-        "prord": " 1 243 kr"
-    },
-    {
         "butikk": "Thursday",
         "Klient": 7,
         "mmoms": "1 924 496 kr",
@@ -58,5 +48,15 @@
         "dg": "24.6%",
         "antord": 1313,
         "prord": " 1 099 kr"
+    },
+    {
+        "butikk": "Wednesday",
+        "Klient": 7,
+        "mmoms": "1 439 230 kr",
+        "umoms": "1 151 388 kr",
+        "db": " 262 349 kr",
+        "dg": "22.8%",
+        "antord": 1339,
+        "prord": " 1 075 kr"
     }
 ]

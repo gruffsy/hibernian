@@ -1234,12 +1234,12 @@
         "Paller på vei": 18,
         "Bestilling på vei": [
             {
-                "Ukenr": "40/2026",
-                "Antall": 300.0
-            },
-            {
                 "Ukenr": "39/2026",
                 "Antall": 780.0
+            },
+            {
+                "Ukenr": "40/2026",
+                "Antall": 300.0
             }
         ]
     },
@@ -1252,12 +1252,12 @@
         "Paller på vei": 24,
         "Bestilling på vei": [
             {
-                "Ukenr": "40/2026",
-                "Antall": 480.0
-            },
-            {
                 "Ukenr": "39/2026",
                 "Antall": 960.0
+            },
+            {
+                "Ukenr": "40/2026",
+                "Antall": 480.0
             }
         ]
     },
@@ -2102,9 +2102,9 @@
     {
         "Prodno": "APGWSD30",
         "Beskrivelse": "PAN SURROUND SKETCH 60X60 9MM",
-        "antall på lager": 276.5,
+        "antall på lager": 230.4,
         "antall pr pall": 46.1,
-        "Paller på lager": 6,
+        "Paller på lager": 5,
         "Paller på vei": 0
     },
     {
