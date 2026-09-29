@@ -1102,15 +1102,11 @@
     {
         "Prodno": "CKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60",
-        "antall på lager": 2.9,
+        "antall på lager": 417.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 28,
+        "Paller på lager": 9,
+        "Paller på vei": 19,
         "Bestilling på vei": [
-            {
-                "Ukenr": "40/2026",
-                "Antall": 414.72
-            },
             {
                 "Ukenr": "42/2026",
                 "Antall": 864.0
@@ -1120,15 +1116,11 @@
     {
         "Prodno": "XKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60 20MM",
-        "antall på lager": 256.0,
+        "antall på lager": 576.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 4,
-        "Paller på vei": 13,
+        "Paller på lager": 9,
+        "Paller på vei": 8,
         "Bestilling på vei": [
-            {
-                "Ukenr": "40/2026",
-                "Antall": 320.0
-            },
             {
                 "Ukenr": "42/2026",
                 "Antall": 512.0
@@ -1202,15 +1194,11 @@
     {
         "Prodno": "XKO60R4",
         "Beskrivelse": "CTV KONKRETE GRIGIO 60X60 20MM",
-        "antall på lager": 0.0,
+        "antall på lager": 320.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 0,
-        "Paller på vei": 10,
+        "Paller på lager": 5,
+        "Paller på vei": 5,
         "Bestilling på vei": [
-            {
-                "Ukenr": "40/2026",
-                "Antall": 320.0
-            },
             {
                 "Ukenr": "42/2026",
                 "Antall": 320.0
@@ -1236,15 +1224,11 @@
     {
         "Prodno": "XSL60R7",
         "Beskrivelse": "CTV SLATE ANTRACITE 60X60 20MM",
-        "antall på lager": 0.0,
+        "antall på lager": 576.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 0,
-        "Paller på vei": 18,
+        "Paller på lager": 9,
+        "Paller på vei": 9,
         "Bestilling på vei": [
-            {
-                "Ukenr": "40/2026",
-                "Antall": 576.0
-            },
             {
                 "Ukenr": "42/2026",
                 "Antall": 576.0
@@ -2133,7 +2117,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "42/2026",
+                "Antall": 276.48
+            }
+        ]
     },
     {
         "Prodno": "PG-BK15",
@@ -2141,7 +2131,13 @@
         "antall på lager": 104.2,
         "antall pr pall": 52.1,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "42/2026",
+                "Antall": 156.297
+            }
+        ]
     },
     {
         "Prodno": "PG-P900",
@@ -2149,7 +2145,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "42/2026",
+                "Antall": 103.68
+            }
+        ]
     },
     {
         "Prodno": "PGXP900",
@@ -2197,7 +2199,13 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "42/2026",
+                "Antall": 46.08
+            }
+        ]
     },
     {
         "Prodno": "PGEME00",
@@ -2205,7 +2213,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 54.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "42/2026",
+                "Antall": 108.0
+            }
+        ]
     },
     {
         "Prodno": "PGEME20",
@@ -2213,7 +2227,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 54.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "42/2026",
+                "Antall": 108.0
+            }
+        ]
     },
     {
         "Prodno": "PGEME50",
@@ -2221,7 +2241,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 54.0,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "42/2026",
+                "Antall": 108.0
+            }
+        ]
     },
     {
         "Prodno": "PG-P940",
@@ -2229,7 +2255,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 51.8,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "42/2026",
+                "Antall": 103.68
+            }
+        ]
     },
     {
         "Prodno": "PGXP940",
@@ -2245,7 +2277,13 @@
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "42/2026",
+                "Antall": 230.4
+            }
+        ]
     },
     {
         "Prodno": "APGXSD10",
@@ -2277,7 +2315,13 @@
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "42/2026",
+                "Antall": 138.24
+            }
+        ]
     },
     {
         "Prodno": "APGXSD30",
