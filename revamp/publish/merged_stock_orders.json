@@ -146,9 +146,9 @@
     {
         "Prodno": "03700063",
         "Beskrivelse": "CAS CEMENTO CASSERO ANTRACITE 30X30 9MM",
-        "antall på lager": 0.0,
+        "antall på lager": 51.8,
         "antall pr pall": 51.8,
-        "Paller på lager": 0,
+        "Paller på lager": 1,
         "Paller på vei": 2,
         "Bestilling på vei": [
             {
@@ -176,9 +176,9 @@
     {
         "Prodno": "3790065",
         "Beskrivelse": "CAS CEMENTO CASSERO BIANCO 30X60 9MM",
-        "antall på lager": 103.7,
+        "antall på lager": 155.5,
         "antall pr pall": 51.8,
-        "Paller på lager": 2,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
@@ -216,9 +216,9 @@
     {
         "Prodno": "3740062",
         "Beskrivelse": "CAS CEMENTO RASATO ANTRACITE 60X60 9MM",
-        "antall på lager": 86.4,
+        "antall på lager": 129.6,
         "antall pr pall": 43.2,
-        "Paller på lager": 2,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
@@ -630,9 +630,9 @@
     {
         "Prodno": "300000000000038906",
         "Beskrivelse": "CIF DIAMOND GOLD PULIDO 60X60",
-        "antall på lager": 325.4,
+        "antall på lager": 302.4,
         "antall pr pall": 43.2,
-        "Paller på lager": 8,
+        "Paller på lager": 7,
         "Paller på vei": 2,
         "Bestilling på vei": [
             {
@@ -952,9 +952,9 @@
     {
         "Prodno": "300000000000037842",
         "Beskrivelse": "CIF OVERLAND PEARL 60X60",
-        "antall på lager": 645.1,
+        "antall på lager": 599.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 14,
+        "Paller på lager": 13,
         "Paller på vei": 27,
         "Bestilling på vei": [
             {
@@ -966,9 +966,9 @@
     {
         "Prodno": "300000000000040065",
         "Beskrivelse": "CIF OVERLAND SAND 60X120 9MM",
-        "antall på lager": 362.9,
+        "antall på lager": 414.7,
         "antall pr pall": 51.8,
-        "Paller på lager": 7,
+        "Paller på lager": 8,
         "Paller på vei": 3,
         "Bestilling på vei": [
             {
@@ -980,9 +980,9 @@
     {
         "Prodno": "300000000000035668",
         "Beskrivelse": "CIF OVERLAND SAND 60X60 9MM",
-        "antall på lager": 1382.4,
+        "antall på lager": 1336.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 30,
+        "Paller på lager": 29,
         "Paller på vei": 41,
         "Bestilling på vei": [
             {
@@ -1034,9 +1034,9 @@
     {
         "Prodno": "02CEV62R4",
         "Beskrivelse": "CTV EVOLUTION GREY 60X120 9,5MM",
-        "antall på lager": 230.4,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
@@ -1066,9 +1066,9 @@
     {
         "Prodno": "02CEV62R1",
         "Beskrivelse": "CTV EVOLUTION WHITE 60X120 9,5MM",
-        "antall på lager": 230.4,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
@@ -1090,7 +1090,7 @@
     {
         "Prodno": "CKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60",
-        "antall på lager": 371.5,
+        "antall på lager": 368.6,
         "antall pr pall": 46.1,
         "Paller på lager": 8,
         "Paller på vei": 0
@@ -1120,7 +1120,7 @@
     {
         "Prodno": "CKO60R44",
         "Beskrivelse": "CTV KONKRETE CENERE 60X60",
-        "antall på lager": 83.5,
+        "antall på lager": 92.2,
         "antall pr pall": 46.1,
         "Paller på lager": 2,
         "Paller på vei": 1,
@@ -1156,7 +1156,7 @@
     {
         "Prodno": "CKO60R4",
         "Beskrivelse": "CTV KONKRETE GRIGIO 60X60",
-        "antall på lager": 403.2,
+        "antall på lager": 414.7,
         "antall pr pall": 46.1,
         "Paller på lager": 9,
         "Paller på vei": 3,
@@ -1270,30 +1270,18 @@
     {
         "Prodno": "0177850025365",
         "Beskrivelse": "GEO ARDESIA BONE 60X60 20MM",
-        "antall på lager": 660.0,
+        "antall på lager": 1440.0,
         "antall pr pall": 60.0,
-        "Paller på lager": 11,
-        "Paller på vei": 13,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "39/2026",
-                "Antall": 780.0
-            }
-        ]
+        "Paller på lager": 24,
+        "Paller på vei": 0
     },
     {
         "Prodno": "0177850025364",
         "Beskrivelse": "GEO ARDESIA GREY 60X60 20MM",
-        "antall på lager": 240.0,
+        "antall på lager": 1200.0,
         "antall pr pall": 60.0,
-        "Paller på lager": 4,
-        "Paller på vei": 16,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "39/2026",
-                "Antall": 960.0
-            }
-        ]
+        "Paller på lager": 20,
+        "Paller på vei": 0
     },
     {
         "Prodno": "0178400036938",
@@ -1322,9 +1310,9 @@
     {
         "Prodno": "0048690036855",
         "Beskrivelse": "GEO TAJMAHAL TAN POLISHED 60X120 9,5MM",
-        "antall på lager": 230.4,
+        "antall på lager": 184.3,
         "antall pr pall": 46.1,
-        "Paller på lager": 5,
+        "Paller på lager": 4,
         "Paller på vei": 0
     },
     {
@@ -1394,7 +1382,7 @@
     {
         "Prodno": "G43AC002",
         "Beskrivelse": "KER NATURE GREY 37X75",
-        "antall på lager": 343.5,
+        "antall på lager": 325.4,
         "antall pr pall": 54.2,
         "Paller på lager": 6,
         "Paller på vei": 0
@@ -1590,9 +1578,9 @@
     {
         "Prodno": "LTG3000-662-20MR11",
         "Beskrivelse": "LTG LAVAGNA GRIGIO 60X60 R11 20MM",
-        "antall på lager": 1792.0,
+        "antall på lager": 1728.0,
         "antall pr pall": 64.0,
-        "Paller på lager": 28,
+        "Paller på lager": 27,
         "Paller på vei": 25,
         "Bestilling på vei": [
             {
@@ -1604,9 +1592,9 @@
     {
         "Prodno": "LTG3000-662-MR11",
         "Beskrivelse": "LTG LAVAGNA GRIGIO 60X60 R11 9,5MM",
-        "antall på lager": 92.2,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
+        "Paller på lager": 3,
         "Paller på vei": 7,
         "Bestilling på vei": [
             {
@@ -1944,9 +1932,9 @@
     {
         "Prodno": "60TR08R-M",
         "Beskrivelse": "LTG TERRAZZO ANTICO 60X60",
-        "antall på lager": 184.3,
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 3,
         "Bestilling på vei": [
             {
@@ -2028,7 +2016,7 @@
     {
         "Prodno": "410354010",
         "Beskrivelse": "NSM STONE WALL LOFOTEN SØMLØS UTVENDIG HJØRNE 36+7,5X20CM",
-        "antall på lager": 76.0,
+        "antall på lager": 80.0,
         "antall pr pall": 80.0,
         "Paller på lager": 1,
         "Paller på vei": 3,
