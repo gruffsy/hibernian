@@ -9,7 +9,7 @@
     },
     {
         "Prodno": "LC60029",
-        "Beskrivelse": "AET MILESTONE BLACK GRIP 60X60 20MM",
+        "Beskrivelse": "AET MILESTONE BLACK GRIP 60X60",
         "antall på lager": 3072.0,
         "antall pr pall": 64.0,
         "Paller på lager": 48,
@@ -17,7 +17,7 @@
     },
     {
         "Prodno": "LN22034",
-        "Beskrivelse": "AET STONECRETE ALMOND 60X120 9,5MM",
+        "Beskrivelse": "AET STONECRETE ALMOND 60X120",
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
@@ -25,7 +25,7 @@
     },
     {
         "Prodno": "LN66034",
-        "Beskrivelse": "AET STONECRETE ALMOND ALMOND 60X60 9,5MM",
+        "Beskrivelse": "AET STONECRETE ALMOND ALMOND 60X60",
         "antall på lager": 172.8,
         "antall pr pall": 43.2,
         "Paller på lager": 4,
@@ -33,7 +33,7 @@
     },
     {
         "Prodno": "LN22035",
-        "Beskrivelse": "AET STONECRETE BEIGE 60X120 9,5MM",
+        "Beskrivelse": "AET STONECRETE BEIGE 60X120",
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
@@ -41,7 +41,7 @@
     },
     {
         "Prodno": "LN66035",
-        "Beskrivelse": "AET STONECRETE BEIGE 60X60 9,5MM",
+        "Beskrivelse": "AET STONECRETE BEIGE 60X60",
         "antall på lager": 216.0,
         "antall pr pall": 43.2,
         "Paller på lager": 5,
@@ -129,23 +129,35 @@
     },
     {
         "Prodno": "9700102",
-        "Beskrivelse": "CAS ARDESIA - GRIGIO 30X30 8 MM",
+        "Beskrivelse": "CAS ARDESIA - GRIGIO 30X30",
         "antall på lager": 56.2,
         "antall pr pall": 56.2,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 56.16
+            }
+        ]
     },
     {
         "Prodno": "9700103",
-        "Beskrivelse": "CAS ARDESIA - NERO 30X30 8 MM",
+        "Beskrivelse": "CAS ARDESIA - NERO 30X30",
         "antall på lager": 112.3,
         "antall pr pall": 56.2,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 56.16
+            }
+        ]
     },
     {
         "Prodno": "03700063",
-        "Beskrivelse": "CAS CEMENTO CASSERO ANTRACITE 30X30 9MM",
+        "Beskrivelse": "CAS CEMENTO CASSERO ANTRACITE 30X30",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -153,7 +165,7 @@
     },
     {
         "Prodno": "3790063",
-        "Beskrivelse": "CAS CEMENTO CASSERO ANTRACITE 30X60 9MM",
+        "Beskrivelse": "CAS CEMENTO CASSERO ANTRACITE 30X60",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -161,7 +173,7 @@
     },
     {
         "Prodno": "3700065",
-        "Beskrivelse": "CAS CEMENTO CASSERO BIANCO 30X30 9MM",
+        "Beskrivelse": "CAS CEMENTO CASSERO BIANCO 30X30",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -169,23 +181,35 @@
     },
     {
         "Prodno": "3790065",
-        "Beskrivelse": "CAS CEMENTO CASSERO BIANCO 30X60 9MM",
+        "Beskrivelse": "CAS CEMENTO CASSERO BIANCO 30X60",
         "antall på lager": 51.8,
         "antall pr pall": 51.8,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 51.84
+            }
+        ]
     },
     {
         "Prodno": "3700034",
-        "Beskrivelse": "CAS CEMENTO CASSERO GRIGIO 30X30 9MM",
+        "Beskrivelse": "CAS CEMENTO CASSERO GRIGIO 30X30",
         "antall på lager": 51.8,
         "antall pr pall": 51.8,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 51.84
+            }
+        ]
     },
     {
         "Prodno": "3790034",
-        "Beskrivelse": "CAS CEMENTO CASSERO GRIGIO 30X60 9MM",
+        "Beskrivelse": "CAS CEMENTO CASSERO GRIGIO 30X60",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -193,7 +217,7 @@
     },
     {
         "Prodno": "3700062",
-        "Beskrivelse": "CAS CEMENTO RASATO ANTRACITE 30X30 9MM",
+        "Beskrivelse": "CAS CEMENTO RASATO ANTRACITE 30X30",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -201,7 +225,7 @@
     },
     {
         "Prodno": "3720062",
-        "Beskrivelse": "CAS CEMENTO RASATO ANTRACITE 60X120 9MM",
+        "Beskrivelse": "CAS CEMENTO RASATO ANTRACITE 60X120",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -209,7 +233,7 @@
     },
     {
         "Prodno": "3740062",
-        "Beskrivelse": "CAS CEMENTO RASATO ANTRACITE 60X60 9MM",
+        "Beskrivelse": "CAS CEMENTO RASATO ANTRACITE 60X60",
         "antall på lager": 129.6,
         "antall pr pall": 43.2,
         "Paller på lager": 3,
@@ -217,31 +241,49 @@
     },
     {
         "Prodno": "03700064",
-        "Beskrivelse": "CAS CEMENTO RASATO BIANCO 30X30 9MM",
-        "antall på lager": 103.7,
-        "antall pr pall": 51.8,
-        "Paller på lager": 2,
-        "Paller på vei": 0
-    },
-    {
-        "Prodno": "3720064",
-        "Beskrivelse": "CAS CEMENTO RASATO BIANCO 60X120 9MM",
+        "Beskrivelse": "CAS CEMENTO RASATO BIANCO 30X30",
         "antall på lager": 51.8,
         "antall pr pall": 51.8,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 51.84
+            }
+        ]
+    },
+    {
+        "Prodno": "3720064",
+        "Beskrivelse": "CAS CEMENTO RASATO BIANCO 60X120",
+        "antall på lager": 51.8,
+        "antall pr pall": 51.8,
+        "Paller på lager": 1,
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 51.84
+            }
+        ]
     },
     {
         "Prodno": "3740064",
-        "Beskrivelse": "CAS CEMENTO RASATO BIANCO 60X60 9MM",
+        "Beskrivelse": "CAS CEMENTO RASATO BIANCO 60X60",
         "antall på lager": 259.2,
         "antall pr pall": 43.2,
         "Paller på lager": 6,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 129.6
+            }
+        ]
     },
     {
         "Prodno": "3700033",
-        "Beskrivelse": "CAS CEMENTO RASATO GRIGIO 30X30 9MM",
+        "Beskrivelse": "CAS CEMENTO RASATO GRIGIO 30X30",
         "antall på lager": 155.5,
         "antall pr pall": 51.8,
         "Paller på lager": 3,
@@ -249,7 +291,7 @@
     },
     {
         "Prodno": "3720033",
-        "Beskrivelse": "CAS CEMENTO RASATO GRIGIO 60X120 9MM",
+        "Beskrivelse": "CAS CEMENTO RASATO GRIGIO 60X120",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -257,7 +299,7 @@
     },
     {
         "Prodno": "3740133",
-        "Beskrivelse": "CAS CEMENTO RASATO GRIGIO 60X60 9MM",
+        "Beskrivelse": "CAS CEMENTO RASATO GRIGIO 60X60",
         "antall på lager": 172.8,
         "antall pr pall": 43.2,
         "Paller på lager": 4,
@@ -265,7 +307,7 @@
     },
     {
         "Prodno": "09700127",
-        "Beskrivelse": "CAS GRANITO - ARKANSAS 30X30 8MM",
+        "Beskrivelse": "CAS GRANITO - ARKANSAS 30X30",
         "antall på lager": 337.0,
         "antall pr pall": 56.2,
         "Paller på lager": 6,
@@ -273,15 +315,21 @@
     },
     {
         "Prodno": "0400037",
-        "Beskrivelse": "CAS GRANITO - DAKOTA 20X20 8MM",
+        "Beskrivelse": "CAS GRANITO - DAKOTA 20X20",
         "antall på lager": 81.6,
         "antall pr pall": 81.6,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 81.6
+            }
+        ]
     },
     {
         "Prodno": "0710037",
-        "Beskrivelse": "CAS GRANITO - DAKOTA 30X30 8MM",
+        "Beskrivelse": "CAS GRANITO - DAKOTA 30X30",
         "antall på lager": 337.0,
         "antall pr pall": 56.2,
         "Paller på lager": 6,
@@ -289,15 +337,21 @@
     },
     {
         "Prodno": "400024",
-        "Beskrivelse": "CAS GRANITO - ONTARIO 20X20 8MM",
+        "Beskrivelse": "CAS GRANITO - ONTARIO 20X20",
         "antall på lager": 81.6,
         "antall pr pall": 81.6,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 81.6
+            }
+        ]
     },
     {
         "Prodno": "0710024",
-        "Beskrivelse": "CAS GRANITO - ONTARIO 30X30 8MM",
+        "Beskrivelse": "CAS GRANITO - ONTARIO 30X30",
         "antall på lager": 337.0,
         "antall pr pall": 56.2,
         "Paller på lager": 6,
@@ -309,7 +363,13 @@
         "antall på lager": 0.0,
         "antall pr pall": 56.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 2,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 112.32
+            }
+        ]
     },
     {
         "Prodno": "1730004",
@@ -329,7 +389,7 @@
     },
     {
         "Prodno": "018720027",
-        "Beskrivelse": "CAS LITHOS BIANCO 60X120 9MM",
+        "Beskrivelse": "CAS LITHOS BIANCO 60X120",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -337,15 +397,21 @@
     },
     {
         "Prodno": "018740127",
-        "Beskrivelse": "CAS LITHOS BIANCO 60X60 9MM",
+        "Beskrivelse": "CAS LITHOS BIANCO 60X60",
         "antall på lager": 86.4,
         "antall pr pall": 43.2,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 43.2
+            }
+        ]
     },
     {
         "Prodno": "018720031",
-        "Beskrivelse": "CAS LITHOS TAUPE 60X120 9MM",
+        "Beskrivelse": "CAS LITHOS TAUPE 60X120",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -353,31 +419,49 @@
     },
     {
         "Prodno": "018740131",
-        "Beskrivelse": "CAS LITHOS TAUPE 60X60 9MM",
+        "Beskrivelse": "CAS LITHOS TAUPE 60X60",
         "antall på lager": 388.8,
         "antall pr pall": 43.2,
         "Paller på lager": 9,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 43.2
+            }
+        ]
     },
     {
         "Prodno": "018720030",
-        "Beskrivelse": "CAS LITHOS TORTORA 60X120 9MM",
-        "antall på lager": 103.7,
+        "Beskrivelse": "CAS LITHOS TORTORA 60X120",
+        "antall på lager": 51.8,
         "antall pr pall": 51.8,
-        "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på lager": 1,
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 155.52
+            }
+        ]
     },
     {
         "Prodno": "018740030",
-        "Beskrivelse": "CAS LITHOS TORTORA 60X60 9MM",
-        "antall på lager": 172.8,
+        "Beskrivelse": "CAS LITHOS TORTORA 60X60",
+        "antall på lager": 129.6,
         "antall pr pall": 43.2,
-        "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på lager": 3,
+        "Paller på vei": 8,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 345.6
+            }
+        ]
     },
     {
         "Prodno": "11720292",
-        "Beskrivelse": "CAS MACRO BIANCO LUCIDO 60X120 9MM",
+        "Beskrivelse": "CAS MACRO BIANCO LUCIDO 60X120",
         "antall på lager": 51.8,
         "antall pr pall": 51.8,
         "Paller på lager": 1,
@@ -401,7 +485,7 @@
     },
     {
         "Prodno": "013950048",
-        "Beskrivelse": "CAS METRO WHITE 60X60 9 MM",
+        "Beskrivelse": "CAS METRO WHITE 60X60",
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
@@ -409,7 +493,7 @@
     },
     {
         "Prodno": "1700104",
-        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE BIANCO 30X30 9MM",
+        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE BIANCO 30X30",
         "antall på lager": 155.5,
         "antall pr pall": 51.8,
         "Paller på lager": 3,
@@ -417,7 +501,7 @@
     },
     {
         "Prodno": "1720004",
-        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE BIANCO 60X120 9MM",
+        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE BIANCO 60X120",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -425,7 +509,7 @@
     },
     {
         "Prodno": "1740004",
-        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE BIANCO 60X60 9MM",
+        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE BIANCO 60X60",
         "antall på lager": 302.4,
         "antall pr pall": 43.2,
         "Paller på lager": 7,
@@ -433,7 +517,7 @@
     },
     {
         "Prodno": "1700008",
-        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE GRIGIO 30X30 9MM",
+        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE GRIGIO 30X30",
         "antall på lager": 155.5,
         "antall pr pall": 51.8,
         "Paller på lager": 3,
@@ -441,7 +525,7 @@
     },
     {
         "Prodno": "1720008",
-        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE GRIGIO 60X120 9MM",
+        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE GRIGIO 60X120",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -449,7 +533,7 @@
     },
     {
         "Prodno": "1740008",
-        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE GRIGIO 60X60 9MM",
+        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE GRIGIO 60X60",
         "antall på lager": 216.0,
         "antall pr pall": 43.2,
         "Paller på lager": 5,
@@ -457,7 +541,7 @@
     },
     {
         "Prodno": "1700086",
-        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE NERO 30X30 9MM",
+        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE NERO 30X30",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -465,15 +549,21 @@
     },
     {
         "Prodno": "01720086",
-        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE NERO 60X120 9MM",
+        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE NERO 60X120",
         "antall på lager": 51.8,
         "antall pr pall": 51.8,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 51.84
+            }
+        ]
     },
     {
         "Prodno": "1740086",
-        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE NERO 60X60 9MM",
+        "Beskrivelse": "CAS PIETRE DI PARAGONE GRE NERO 60X60",
         "antall på lager": 86.4,
         "antall pr pall": 43.2,
         "Paller på lager": 2,
@@ -481,15 +571,21 @@
     },
     {
         "Prodno": "12950031",
-        "Beskrivelse": "CAS TERRAZZO BEIGE 60X60 9MM",
+        "Beskrivelse": "CAS TERRAZZO BEIGE 60X60",
         "antall på lager": 86.4,
         "antall pr pall": 43.2,
         "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på vei": 1,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 43.2
+            }
+        ]
     },
     {
         "Prodno": "12950029",
-        "Beskrivelse": "CAS TERRAZZO GREY 60X60 9MM",
+        "Beskrivelse": "CAS TERRAZZO GREY 60X60",
         "antall på lager": 86.4,
         "antall pr pall": 43.2,
         "Paller på lager": 2,
@@ -497,7 +593,7 @@
     },
     {
         "Prodno": "12950030",
-        "Beskrivelse": "CAS TERRAZZO PEARL 60X60 9MM",
+        "Beskrivelse": "CAS TERRAZZO PEARL 60X60",
         "antall på lager": 129.6,
         "antall pr pall": 43.2,
         "Paller på lager": 3,
@@ -505,7 +601,7 @@
     },
     {
         "Prodno": "11950041",
-        "Beskrivelse": "CAS TERRAZZO WHITE 60X60 9MM",
+        "Beskrivelse": "CAS TERRAZZO WHITE 60X60",
         "antall på lager": 172.8,
         "antall pr pall": 43.2,
         "Paller på lager": 4,
@@ -653,7 +749,7 @@
     },
     {
         "Prodno": "300000000000062409",
-        "Beskrivelse": "CIF NEBRASKA CHERRY N-PLUS 30X60 9MM",
+        "Beskrivelse": "CIF NEBRASKA CHERRY N-PLUS 30X60",
         "antall på lager": 0.0,
         "antall pr pall": 57.6,
         "Paller på lager": 0,
@@ -669,7 +765,7 @@
     },
     {
         "Prodno": "300000000000053158",
-        "Beskrivelse": "CIF NEBRASKA ELM N-PLUS 30X60 9MM",
+        "Beskrivelse": "CIF NEBRASKA ELM N-PLUS 30X60",
         "antall på lager": 57.6,
         "antall pr pall": 57.6,
         "Paller på lager": 1,
@@ -685,7 +781,7 @@
     },
     {
         "Prodno": "300000000000053162",
-        "Beskrivelse": "CIF NEBRASKA MAPLE N-PLUS 30X60 9MM",
+        "Beskrivelse": "CIF NEBRASKA MAPLE N-PLUS 30X60",
         "antall på lager": 57.6,
         "antall pr pall": 57.6,
         "Paller på lager": 1,
@@ -707,7 +803,7 @@
     },
     {
         "Prodno": "300000000000053160",
-        "Beskrivelse": "CIF NEBRASKA OAK N-PLUS 30X60 9MM",
+        "Beskrivelse": "CIF NEBRASKA OAK N-PLUS 30X60",
         "antall på lager": 0.0,
         "antall pr pall": 57.6,
         "Paller på lager": 0,
@@ -721,7 +817,7 @@
     },
     {
         "Prodno": "300000000000062411",
-        "Beskrivelse": "CIF NEBRASKA WHITE N-PLUS 30X60 9MM",
+        "Beskrivelse": "CIF NEBRASKA WHITE N-PLUS 30X60",
         "antall på lager": 0.0,
         "antall pr pall": 57.6,
         "Paller på lager": 0,
@@ -735,15 +831,15 @@
     },
     {
         "Prodno": "300000000000025363",
-        "Beskrivelse": "CIF NEUTRA ANTHRACITE 30X60 9MM",
-        "antall på lager": 115.2,
+        "Beskrivelse": "CIF NEUTRA ANTHRACITE 30X60",
+        "antall på lager": 57.6,
         "antall pr pall": 57.6,
-        "Paller på lager": 2,
+        "Paller på lager": 1,
         "Paller på vei": 0
     },
     {
         "Prodno": "300000000000026799",
-        "Beskrivelse": "CIF NEUTRA ANTHRACITE 60X60 9MM",
+        "Beskrivelse": "CIF NEUTRA ANTHRACITE 60X60",
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
@@ -751,7 +847,7 @@
     },
     {
         "Prodno": "300000000000028643",
-        "Beskrivelse": "CIF NEUTRA CREAM 30X60 9MM",
+        "Beskrivelse": "CIF NEUTRA CREAM 30X60",
         "antall på lager": 57.6,
         "antall pr pall": 57.6,
         "Paller på lager": 1,
@@ -765,7 +861,7 @@
     },
     {
         "Prodno": "300000000000023927",
-        "Beskrivelse": "CIF NEUTRA CREAM 60X60 9MM",
+        "Beskrivelse": "CIF NEUTRA CREAM 60X60",
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
@@ -779,7 +875,7 @@
     },
     {
         "Prodno": "300000000000028649",
-        "Beskrivelse": "CIF NEUTRA PEARL 30X60 9MM",
+        "Beskrivelse": "CIF NEUTRA PEARL 30X60",
         "antall på lager": 57.6,
         "antall pr pall": 57.6,
         "Paller på lager": 1,
@@ -787,7 +883,7 @@
     },
     {
         "Prodno": "300000000000024867",
-        "Beskrivelse": "CIF NEUTRA PEARL 60X60 9MM",
+        "Beskrivelse": "CIF NEUTRA PEARL 60X60",
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
@@ -795,7 +891,7 @@
     },
     {
         "Prodno": "300000000000045053",
-        "Beskrivelse": "CIF NEUTRA TAUPE 30X60 9MM",
+        "Beskrivelse": "CIF NEUTRA TAUPE 30X60",
         "antall på lager": 57.6,
         "antall pr pall": 57.6,
         "Paller på lager": 1,
@@ -809,7 +905,7 @@
     },
     {
         "Prodno": "300000000000026444",
-        "Beskrivelse": "CIF NEUTRA TAUPE 60X60 9MM",
+        "Beskrivelse": "CIF NEUTRA TAUPE 60X60",
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
@@ -823,7 +919,7 @@
     },
     {
         "Prodno": "300000000000028647",
-        "Beskrivelse": "CIF NEUTRA WHITE 30X60 9MM",
+        "Beskrivelse": "CIF NEUTRA WHITE 30X60",
         "antall på lager": 57.6,
         "antall pr pall": 57.6,
         "Paller på lager": 1,
@@ -837,7 +933,7 @@
     },
     {
         "Prodno": "300000000000026446",
-        "Beskrivelse": "CIF NEUTRA WHITE 60X60 9MM",
+        "Beskrivelse": "CIF NEUTRA WHITE 60X60",
         "antall på lager": 184.3,
         "antall pr pall": 46.1,
         "Paller på lager": 4,
@@ -867,7 +963,7 @@
     },
     {
         "Prodno": "300000000000067511",
-        "Beskrivelse": "CIF ORION MARFIL PULIDO 60X120 9MM",
+        "Beskrivelse": "CIF ORION MARFIL PULIDO 60X120",
         "antall på lager": 184.3,
         "antall pr pall": 46.1,
         "Paller på lager": 4,
@@ -881,7 +977,7 @@
     },
     {
         "Prodno": "300000000000072945",
-        "Beskrivelse": "CIF ORION MARFIL PULIDO 60X60 9MM",
+        "Beskrivelse": "CIF ORION MARFIL PULIDO 60X60",
         "antall på lager": 302.4,
         "antall pr pall": 43.2,
         "Paller på lager": 7,
@@ -917,7 +1013,7 @@
     },
     {
         "Prodno": "300000000000040065",
-        "Beskrivelse": "CIF OVERLAND SAND 60X120 9MM",
+        "Beskrivelse": "CIF OVERLAND SAND 60X120",
         "antall på lager": 362.9,
         "antall pr pall": 51.8,
         "Paller på lager": 7,
@@ -931,7 +1027,7 @@
     },
     {
         "Prodno": "300000000000035668",
-        "Beskrivelse": "CIF OVERLAND SAND 60X60 9MM",
+        "Beskrivelse": "CIF OVERLAND SAND 60X60",
         "antall på lager": 1105.9,
         "antall pr pall": 46.1,
         "Paller på lager": 24,
@@ -985,7 +1081,7 @@
     },
     {
         "Prodno": "02CEV62R4",
-        "Beskrivelse": "CTV EVOLUTION GREY 60X120 9,5MM",
+        "Beskrivelse": "CTV EVOLUTION GREY 60X120",
         "antall på lager": 184.3,
         "antall pr pall": 46.1,
         "Paller på lager": 4,
@@ -993,7 +1089,7 @@
     },
     {
         "Prodno": "02CEV60R4",
-        "Beskrivelse": "CTV EVOLUTION GREY 60X60 9,5MM",
+        "Beskrivelse": "CTV EVOLUTION GREY 60X60",
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
@@ -1001,7 +1097,7 @@
     },
     {
         "Prodno": "02CEV62R44",
-        "Beskrivelse": "CTV EVOLUTION SUGAR 60X120 9,5MM",
+        "Beskrivelse": "CTV EVOLUTION SUGAR 60X120",
         "antall på lager": 276.5,
         "antall pr pall": 46.1,
         "Paller på lager": 6,
@@ -1009,15 +1105,21 @@
     },
     {
         "Prodno": "02CEV60R44",
-        "Beskrivelse": "CTV EVOLUTION SUGAR 60X60 9,5MM",
+        "Beskrivelse": "CTV EVOLUTION SUGAR 60X60",
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 10,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 460.8
+            }
+        ]
     },
     {
         "Prodno": "02CEV62R1",
-        "Beskrivelse": "CTV EVOLUTION WHITE 60X120 9,5MM",
+        "Beskrivelse": "CTV EVOLUTION WHITE 60X120",
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
@@ -1025,11 +1127,17 @@
     },
     {
         "Prodno": "02CEV60R1",
-        "Beskrivelse": "CTV EVOLUTION WHITE 60X60 9,5MM",
+        "Beskrivelse": "CTV EVOLUTION WHITE 60X60",
         "antall på lager": 0.0,
         "antall pr pall": 46.1,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 15,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 691.2
+            }
+        ]
     },
     {
         "Prodno": "CKO62R1",
@@ -1042,10 +1150,16 @@
     {
         "Prodno": "CKO60R1",
         "Beskrivelse": "CTV KONKRETE BIANCO 60X60",
-        "antall på lager": 92.2,
+        "antall på lager": 46.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på lager": 1,
+        "Paller på vei": 20,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 921.6
+            }
+        ]
     },
     {
         "Prodno": "XKO60R1",
@@ -1077,7 +1191,13 @@
         "antall på lager": 256.0,
         "antall pr pall": 64.0,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 6,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 384.0
+            }
+        ]
     },
     {
         "Prodno": "CKO62R4",
@@ -1133,7 +1253,13 @@
         "antall på lager": 256.0,
         "antall pr pall": 64.0,
         "Paller på lager": 4,
-        "Paller på vei": 0
+        "Paller på vei": 12,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 768.0
+            }
+        ]
     },
     {
         "Prodno": "XSL60R44",
@@ -1141,7 +1267,13 @@
         "antall på lager": 448.0,
         "antall pr pall": 64.0,
         "Paller på lager": 7,
-        "Paller på vei": 0
+        "Paller på vei": 8,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "44/2026",
+                "Antall": 512.0
+            }
+        ]
     },
     {
         "Prodno": "079D50Z",
@@ -1201,15 +1333,21 @@
     },
     {
         "Prodno": "0178400036938",
-        "Beskrivelse": "GEO STRATOS CROSS BONE MATT 60X60 9MM",
+        "Beskrivelse": "GEO STRATOS CROSS BONE MATT 60X60",
         "antall på lager": 0.0,
         "antall pr pall": 43.2,
         "Paller på lager": 0,
-        "Paller på vei": 0
+        "Paller på vei": 5,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "46/2026",
+                "Antall": 216.0
+            }
+        ]
     },
     {
         "Prodno": "0172500032648",
-        "Beskrivelse": "GEO STRATOS VEIN BONE MATT 60X120 9MM",
+        "Beskrivelse": "GEO STRATOS VEIN BONE MATT 60X120",
         "antall på lager": 259.2,
         "antall pr pall": 51.8,
         "Paller på lager": 5,
@@ -1217,55 +1355,67 @@
     },
     {
         "Prodno": "0178400036909",
-        "Beskrivelse": "GEO STRATOS VEIN BONE MATT 60X60 9MM",
+        "Beskrivelse": "GEO STRATOS VEIN BONE MATT 60X60",
         "antall på lager": 43.2,
         "antall pr pall": 43.2,
         "Paller på lager": 1,
-        "Paller på vei": 0
+        "Paller på vei": 3,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "46/2026",
+                "Antall": 129.6
+            }
+        ]
     },
     {
         "Prodno": "0048690036855",
-        "Beskrivelse": "GEO TAJMAHAL TAN POLISHED 60X120 9,5MM",
-        "antall på lager": 184.3,
+        "Beskrivelse": "GEO TAJMAHAL TAN POLISHED 60X120",
+        "antall på lager": 138.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 4,
+        "Paller på lager": 3,
         "Paller på vei": 0
     },
     {
         "Prodno": "0048400036865",
-        "Beskrivelse": "GEO TAJMAHAL TAN POLISHED 60X60 9,5MM",
-        "antall på lager": 86.4,
+        "Beskrivelse": "GEO TAJMAHAL TAN POLISHED 60X60",
+        "antall på lager": 43.2,
         "antall pr pall": 43.2,
-        "Paller på lager": 2,
-        "Paller på vei": 0
+        "Paller på lager": 1,
+        "Paller på vei": 17,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "46/2026",
+                "Antall": 734.4
+            }
+        ]
     },
     {
         "Prodno": "20044550",
-        "Beskrivelse": "KER ALBORA CREMA 120X20 9MM",
-        "antall på lager": 51.8,
+        "Beskrivelse": "KER ALBORA CREMA 120X20",
+        "antall på lager": 0.0,
         "antall pr pall": 51.8,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
         "Prodno": "20044551",
-        "Beskrivelse": "KER ALBORA ROBLE 120X20 9MM",
-        "antall på lager": 51.8,
+        "Beskrivelse": "KER ALBORA ROBLE 120X20",
+        "antall på lager": 0.0,
         "antall pr pall": 51.8,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
         "Prodno": "20044552",
-        "Beskrivelse": "KER ALBORA TITANIUM 120X20 9MM",
-        "antall på lager": 51.8,
+        "Beskrivelse": "KER ALBORA TITANIUM 120X20",
+        "antall på lager": 0.0,
         "antall pr pall": 51.8,
-        "Paller på lager": 1,
+        "Paller på lager": 0,
         "Paller på vei": 0
     },
     {
         "Prodno": "20044393",
-        "Beskrivelse": "KER AMBROSIA SAND 60X120 9MM",
+        "Beskrivelse": "KER AMBROSIA SAND 60X120",
         "antall på lager": 172.8,
         "antall pr pall": 43.2,
         "Paller på lager": 4,
@@ -1273,7 +1423,7 @@
     },
     {
         "Prodno": "20044396",
-        "Beskrivelse": "KER AMBROSIA SAND 60X60 9MM",
+        "Beskrivelse": "KER AMBROSIA SAND 60X60",
         "antall på lager": 345.6,
         "antall pr pall": 43.2,
         "Paller på lager": 8,
@@ -1402,9 +1552,9 @@
     {
         "Prodno": "IL6003",
         "Beskrivelse": "LTG INNOVATION LIME BEIGE 60X60",
-        "antall på lager": 506.9,
+        "antall på lager": 414.7,
         "antall pr pall": 46.1,
-        "Paller på lager": 11,
+        "Paller på lager": 9,
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
@@ -1430,9 +1580,9 @@
     {
         "Prodno": "IL6001",
         "Beskrivelse": "LTG INNOVATION LIME DARK 60X60",
-        "antall på lager": 368.6,
+        "antall på lager": 322.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 8,
+        "Paller på lager": 7,
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
@@ -1479,7 +1629,7 @@
     },
     {
         "Prodno": "LTG3000-664-MR11",
-        "Beskrivelse": "LTG LAVAGNA CHIARO 60X60 R11 9,5MM",
+        "Beskrivelse": "LTG LAVAGNA CHIARO 60X60 R11",
         "antall på lager": 230.4,
         "antall pr pall": 46.1,
         "Paller på lager": 5,
@@ -1488,6 +1638,20 @@
             {
                 "Ukenr": "53/2026",
                 "Antall": 230.4
+            }
+        ]
+    },
+    {
+        "Prodno": "LTG3000-662-MR11",
+        "Beskrivelse": "LTG LAVAGNA GRIGIO 60X60 R11",
+        "antall på lager": 138.2,
+        "antall pr pall": 46.1,
+        "Paller på lager": 3,
+        "Paller på vei": 7,
+        "Bestilling på vei": [
+            {
+                "Ukenr": "53/2026",
+                "Antall": 322.56
             }
         ]
     },
@@ -1506,22 +1670,8 @@
         ]
     },
     {
-        "Prodno": "LTG3000-662-MR11",
-        "Beskrivelse": "LTG LAVAGNA GRIGIO 60X60 R11 9,5MM",
-        "antall på lager": 138.2,
-        "antall pr pall": 46.1,
-        "Paller på lager": 3,
-        "Paller på vei": 7,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "53/2026",
-                "Antall": 322.56
-            }
-        ]
-    },
-    {
         "Prodno": "LTG-LX-5PD-M-612",
-        "Beskrivelse": "LTG LOIS XIV 60X120 12,5MM",
+        "Beskrivelse": "LTG LOIS XIV 60X120",
         "antall på lager": 43.2,
         "antall pr pall": 43.2,
         "Paller på lager": 1,
@@ -1539,7 +1689,7 @@
     },
     {
         "Prodno": "LTG-LX--5PD-M-66",
-        "Beskrivelse": "LTG LOIS XIV 60X60 12,5MM",
+        "Beskrivelse": "LTG LOIS XIV 60X60",
         "antall på lager": 46.1,
         "antall pr pall": 46.1,
         "Paller på lager": 1,
@@ -1668,9 +1818,9 @@
     {
         "Prodno": "LTG-SE-1-M-66",
         "Beskrivelse": "LTG SAULO BIANCO 60X60",
-        "antall på lager": 599.0,
+        "antall på lager": 553.0,
         "antall pr pall": 46.1,
-        "Paller på lager": 13,
+        "Paller på lager": 12,
         "Paller på vei": 0
     },
     {
@@ -1742,9 +1892,9 @@
     {
         "Prodno": "LTG2100-6123",
         "Beskrivelse": "LTG TERRA BEIGE 60X120",
-        "antall på lager": 77.8,
+        "antall på lager": 38.9,
         "antall pr pall": 38.9,
-        "Paller på lager": 2,
+        "Paller på lager": 1,
         "Paller på vei": 2,
         "Bestilling på vei": [
             {
@@ -1756,9 +1906,9 @@
     {
         "Prodno": "LTG2100-663",
         "Beskrivelse": "LTG TERRA BEIGE 60X60",
-        "antall på lager": 368.6,
+        "antall på lager": 322.6,
         "antall pr pall": 46.1,
-        "Paller på lager": 8,
+        "Paller på lager": 7,
         "Paller på vei": 10,
         "Bestilling på vei": [
             {
@@ -1778,9 +1928,9 @@
     {
         "Prodno": "LTG2100-6122",
         "Beskrivelse": "LTG TERRA CENERE 60X120",
-        "antall på lager": 272.2,
+        "antall på lager": 233.3,
         "antall pr pall": 38.9,
-        "Paller på lager": 7,
+        "Paller på lager": 6,
         "Paller på vei": 0
     },
     {
@@ -1848,9 +1998,9 @@
     {
         "Prodno": "60TR08R-M",
         "Beskrivelse": "LTG TERRAZZO ANTICO 60X60",
-        "antall på lager": 92.2,
+        "antall på lager": 46.1,
         "antall pr pall": 46.1,
-        "Paller på lager": 2,
+        "Paller på lager": 1,
         "Paller på vei": 3,
         "Bestilling på vei": [
             {
@@ -1862,9 +2012,9 @@
     {
         "Prodno": "410130001",
         "Beskrivelse": "NSM GRÅ SKIFER PANEL 60X15CM",
-        "antall på lager": 245.7,
+        "antall på lager": 226.8,
         "antall pr pall": 18.9,
-        "Paller på lager": 13,
+        "Paller på lager": 12,
         "Paller på vei": 16,
         "Bestilling på vei": [
             {
@@ -1876,9 +2026,9 @@
     {
         "Prodno": "410130002-PAKKE",
         "Beskrivelse": "NSM GRÅ SKIFER PANEL UTVENDIG HJØRNE 40,5+10,5X15CM",
-        "antall på lager": 354.0,
+        "antall på lager": 342.0,
         "antall pr pall": 6.0,
-        "Paller på lager": 59,
+        "Paller på lager": 57,
         "Paller på vei": 120,
         "Bestilling på vei": [
             {
@@ -1890,9 +2040,9 @@
     {
         "Prodno": "410180001",
         "Beskrivelse": "NSM SORT SKIFER PANEL 60X15CM",
-        "antall på lager": 175.0,
+        "antall på lager": 155.5,
         "antall pr pall": 19.4,
-        "Paller på lager": 9,
+        "Paller på lager": 8,
         "Paller på vei": 12,
         "Bestilling på vei": [
             {
@@ -1904,9 +2054,9 @@
     {
         "Prodno": "410180002-PAKKE",
         "Beskrivelse": "NSM SORT SKIFER PANEL UTVENDIG HJØRNE 40,5+10,5X15CM",
-        "antall på lager": 354.0,
+        "antall på lager": 342.0,
         "antall pr pall": 6.0,
-        "Paller på lager": 59,
+        "Paller på lager": 57,
         "Paller på vei": 120,
         "Bestilling på vei": [
             {
@@ -1932,9 +2082,9 @@
     {
         "Prodno": "410354010-PAKKE",
         "Beskrivelse": "NSM STONE WALL LOFOTEN SØMLØS UTVENDIG HJØRNE 36+7,5X20CM",
-        "antall på lager": 78.0,
+        "antall på lager": 68.0,
         "antall pr pall": 2.0,
-        "Paller på lager": 39,
+        "Paller på lager": 34,
         "Paller på vei": 120,
         "Bestilling på vei": [
             {
@@ -1946,9 +2096,9 @@
     {
         "Prodno": "410526020",
         "Beskrivelse": "NSM STONE WALL VALDRES SØMLØS 60X20CM",
-        "antall på lager": 82.3,
+        "antall på lager": 70.6,
         "antall pr pall": 11.8,
-        "Paller på lager": 7,
+        "Paller på lager": 6,
         "Paller på vei": 11,
         "Bestilling på vei": [
             {
@@ -1960,9 +2110,9 @@
     {
         "Prodno": "410524010-PAKKE",
         "Beskrivelse": "NSM STONE WALL VALDRES SØMLØS UTVENDIG HJØRNE 36+7,5X20CM",
-        "antall på lager": 78.0,
+        "antall på lager": 68.0,
         "antall pr pall": 2.0,
-        "Paller på lager": 39,
+        "Paller på lager": 34,
         "Paller på vei": 120,
         "Bestilling på vei": [
             {
@@ -2155,7 +2305,7 @@
     },
     {
         "Prodno": "APGXSD10",
-        "Beskrivelse": "PAN SURROUND DRAFT 60X120 9MM",
+        "Beskrivelse": "PAN SURROUND DRAFT 60X120",
         "antall på lager": 207.4,
         "antall pr pall": 51.8,
         "Paller på lager": 4,
@@ -2163,7 +2313,7 @@
     },
     {
         "Prodno": "APGWSD10",
-        "Beskrivelse": "PAN SURROUND DRAFT 60X60 9MM",
+        "Beskrivelse": "PAN SURROUND DRAFT 60X60",
         "antall på lager": 506.9,
         "antall pr pall": 46.1,
         "Paller på lager": 11,
@@ -2171,7 +2321,7 @@
     },
     {
         "Prodno": "APGXSD40",
-        "Beskrivelse": "PAN SURROUND ROW 60X120 9MM",
+        "Beskrivelse": "PAN SURROUND ROW 60X120",
         "antall på lager": 155.5,
         "antall pr pall": 51.8,
         "Paller på lager": 3,
@@ -2179,7 +2329,7 @@
     },
     {
         "Prodno": "APGWSD40",
-        "Beskrivelse": "PAN SURROUND ROW 60X60 9MM",
+        "Beskrivelse": "PAN SURROUND ROW 60X60",
         "antall på lager": 138.2,
         "antall pr pall": 46.1,
         "Paller på lager": 3,
@@ -2193,7 +2343,7 @@
     },
     {
         "Prodno": "APGXSD30",
-        "Beskrivelse": "PAN SURROUND SKETCH 60X120 9MM",
+        "Beskrivelse": "PAN SURROUND SKETCH 60X120",
         "antall på lager": 103.7,
         "antall pr pall": 51.8,
         "Paller på lager": 2,
@@ -2201,7 +2351,7 @@
     },
     {
         "Prodno": "APGWSD30",
-        "Beskrivelse": "PAN SURROUND SKETCH 60X60 9MM",
+        "Beskrivelse": "PAN SURROUND SKETCH 60X60",
         "antall på lager": 184.3,
         "antall pr pall": 46.1,
         "Paller på lager": 4,
