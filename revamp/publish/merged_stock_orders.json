@@ -1031,11 +1031,19 @@
         "antall på lager": 1105.9,
         "antall pr pall": 46.1,
         "Paller på lager": 24,
-        "Paller på vei": 41,
+        "Paller på vei": 44,
         "Bestilling på vei": [
             {
                 "Ukenr": "45/2026",
-                "Antall": 1889.28
+                "Antall": 645.12
+            },
+            {
+                "Ukenr": "45/2026",
+                "Antall": 138.24
+            },
+            {
+                "Ukenr": "45/2026",
+                "Antall": 1244.16
             }
         ]
     },
