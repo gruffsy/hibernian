@@ -1,5 +1,573 @@
 [
     {
+        "ukedag": "Onsdag",
+        "navn": "Filip Söderlund",
+        "umoms": "66 353 kr",
+        "db": "174 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Preben Jacobsen",
+        "umoms": "53 430 kr",
+        "db": "13 005 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Kemuel Lillestø",
+        "umoms": "52 211 kr",
+        "db": "10 569 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Preben Holset",
+        "umoms": "51 435 kr",
+        "db": "2 464 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Sjur Eivind Andersen",
+        "umoms": "50 077 kr",
+        "db": "16 535 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Ove Larsen",
+        "umoms": "48 739 kr",
+        "db": "6 933 kr",
+        "butikk": "Skien",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Menglei Chen Ottem",
+        "umoms": "47 822 kr",
+        "db": "9 980 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Veronica Skaug Bolt Hansen",
+        "umoms": "47 747 kr",
+        "db": "7 337 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "David  Wilhelmsen",
+        "umoms": "44 916 kr",
+        "db": "10 268 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Joakim Johnsen",
+        "umoms": "43 075 kr",
+        "db": "4 115 kr",
+        "butikk": "Skien",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Andreas Møllbach",
+        "umoms": "40 037 kr",
+        "db": "9 706 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Lisa Marie Jemtland",
+        "umoms": "36 040 kr",
+        "db": "8 105 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Christina Larsen",
+        "umoms": "35 911 kr",
+        "db": "7 197 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Kine Thi Huynh",
+        "umoms": "35 812 kr",
+        "db": "3 391 kr",
+        "butikk": "Skien",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Jonas Skog",
+        "umoms": "35 609 kr",
+        "db": "-526 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Mikkel Kihle Lindvig",
+        "umoms": "33 953 kr",
+        "db": "4 278 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "James Michael McGurty",
+        "umoms": "33 912 kr",
+        "db": "8 940 kr",
+        "butikk": "Skien",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Liubov Jonassen",
+        "umoms": "31 497 kr",
+        "db": "9 083 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Camilla Orsteen",
+        "umoms": "27 051 kr",
+        "db": "1 104 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Tommy Fodsung-Noen Kristensen",
+        "umoms": "25 808 kr",
+        "db": "4 742 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Steffen Johannes Forup Hansen",
+        "umoms": "24 329 kr",
+        "db": "3 455 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Julie Nilsen Bjølseth",
+        "umoms": "23 880 kr",
+        "db": "2 355 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Sol Emilie Risdal",
+        "umoms": "23 585 kr",
+        "db": "6 069 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Hans Kristian Nenset",
+        "umoms": "22 602 kr",
+        "db": "6 717 kr",
+        "butikk": "Skien",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Frode  Olsen",
+        "umoms": "21 007 kr",
+        "db": "1 797 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Fredrik Mølmen",
+        "umoms": "20 387 kr",
+        "db": "4 236 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Alexander Bergflødt Ellefsen",
+        "umoms": "17 109 kr",
+        "db": "2 136 kr",
+        "butikk": "Skien",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Sander Homleid",
+        "umoms": "16 842 kr",
+        "db": "-3 592 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Mathias Oseid Hagen",
+        "umoms": "15 404 kr",
+        "db": "3 262 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Jelle Soest",
+        "umoms": "14 996 kr",
+        "db": "1 959 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Aleksander Bang",
+        "umoms": "14 313 kr",
+        "db": "2 437 kr",
+        "butikk": "Skien",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Bertil Tangen",
+        "umoms": "13 610 kr",
+        "db": "2 441 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Kristoffer Gård",
+        "umoms": "13 090 kr",
+        "db": "1 308 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Martin Høyer Halvorsen",
+        "umoms": "13 059 kr",
+        "db": "2 125 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Jan Erik Kristiansen",
+        "umoms": "12 382 kr",
+        "db": "1 304 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Tom Richard Ekeberg",
+        "umoms": "12 144 kr",
+        "db": "2 102 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Fredrik Frost Pettersen",
+        "umoms": "11 808 kr",
+        "db": "2 802 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Tonje Iren Lilløy-Øygarden",
+        "umoms": "11 658 kr",
+        "db": "2 030 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Laila Skripeland",
+        "umoms": "9 819 kr",
+        "db": "1 305 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Aksel Lindstrøm",
+        "umoms": "8 432 kr",
+        "db": "1 806 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Alf Brynjar Flø",
+        "umoms": "8 347 kr",
+        "db": "714 kr",
+        "butikk": "Skien",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Thor Aksel Thoresen",
+        "umoms": "8 254 kr",
+        "db": "1 654 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Pål Magnus Andersen",
+        "umoms": "8 243 kr",
+        "db": "3 474 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Christopher Øglænd",
+        "umoms": "7 820 kr",
+        "db": "1 955 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Linn Christina Johannessen",
+        "umoms": "7 583 kr",
+        "db": "3 230 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Anette Omland Brubakken",
+        "umoms": "4 998 kr",
+        "db": "2 008 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Øyvind K. Solfjeld",
+        "umoms": "4 901 kr",
+        "db": "1 563 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Elin Eilefsen",
+        "umoms": "3 686 kr",
+        "db": "1 624 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Trond Andreas Frøitland",
+        "umoms": "3 416 kr",
+        "db": "564 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Heidi Kihle Lindvig",
+        "umoms": "3 083 kr",
+        "db": "365 kr",
+        "butikk": "Skien",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Qusai Alshabe",
+        "umoms": "2 990 kr",
+        "db": "50 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Martin Hjalmarsson",
+        "umoms": "1 837 kr",
+        "db": "611 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Kristine Martinsen",
+        "umoms": "1 699 kr",
+        "db": "220 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Linn Kristine Terjesen",
+        "umoms": "1 147 kr",
+        "db": "128 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Sindre Heldal",
+        "umoms": "808 kr",
+        "db": "639 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Tobias Eide",
+        "umoms": "700 kr",
+        "db": "297 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Øystein Kamfjord",
+        "umoms": "633 kr",
+        "db": "-12 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Theodor Kristiansen",
+        "umoms": "478 kr",
+        "db": "291 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Thor Øyvind Follaug",
+        "umoms": "190 kr",
+        "db": "40 kr",
+        "butikk": "Skien",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Torstein Sandve",
+        "umoms": "35 kr",
+        "db": "-37 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Johan Nunez",
+        "umoms": "32 kr",
+        "db": "-113 kr",
+        "butikk": "Skien",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Patrick Jensen",
+        "umoms": "0 kr",
+        "db": "-25 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Heidi Kristensen Voje",
+        "umoms": "-105 kr",
+        "db": "-17 kr",
+        "butikk": "Bamble",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Stine Marie Hofsrud",
+        "umoms": "-243 kr",
+        "db": "-27 kr",
+        "butikk": "Tønsberg",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Claes  Lennartson",
+        "umoms": "-402 kr",
+        "db": "-144 kr",
+        "butikk": "Larvik",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Marcus Hidle Brustad",
+        "umoms": "-406 kr",
+        "db": "-24 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Amanda Krumsvik",
+        "umoms": "-1 438 kr",
+        "db": "-227 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Fredrik Smetan Løken",
+        "umoms": "-1 600 kr",
+        "db": "-302 kr",
+        "butikk": "Arendal",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Pernille Dall",
+        "umoms": "-2 324 kr",
+        "db": "-552 kr",
+        "butikk": "Kristiansand",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Mads Kaasa Jacobsen",
+        "umoms": "-3 929 kr",
+        "db": "556 kr",
+        "butikk": "Sandefjord",
+        "fakturadato": 20261021
+    },
+    {
+        "ukedag": "Onsdag",
+        "navn": "Tuva Sofie Risdal",
+        "umoms": "-17 625 kr",
+        "db": "-4 260 kr",
+        "butikk": "Skien",
+        "fakturadato": 20261021
+    },
+    {
         "ukedag": "Tirsdag",
         "navn": "Martin Høyer Halvorsen",
         "umoms": "79 670 kr",
@@ -140137,18 +140705,18 @@
     },
     {
         "ukedag": "Mandag",
-        "navn": "Filip Söderlund",
-        "umoms": "-719 kr",
-        "db": "11 kr",
-        "butikk": "Tønsberg",
-        "fakturadato": 20260112
-    },
-    {
-        "ukedag": "Mandag",
         "navn": "Pål Linden Anthonisen",
         "umoms": "-719 kr",
         "db": "-14 kr",
         "butikk": "Larvik",
+        "fakturadato": 20260112
+    },
+    {
+        "ukedag": "Mandag",
+        "navn": "Filip Söderlund",
+        "umoms": "-719 kr",
+        "db": "11 kr",
+        "butikk": "Tønsberg",
         "fakturadato": 20260112
     },
     {
@@ -143945,18 +144513,18 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Veronica Skaug Bolt Hansen",
-        "umoms": "-239 kr",
-        "db": "-60 kr",
-        "butikk": "Sandefjord",
-        "fakturadato": 20260103
-    },
-    {
-        "ukedag": "Lørdag",
         "navn": "Sjur Eivind Andersen",
         "umoms": "-239 kr",
         "db": "-145 kr",
         "butikk": "Arendal",
+        "fakturadato": 20260103
+    },
+    {
+        "ukedag": "Lørdag",
+        "navn": "Veronica Skaug Bolt Hansen",
+        "umoms": "-239 kr",
+        "db": "-60 kr",
+        "butikk": "Sandefjord",
         "fakturadato": 20260103
     },
     {
@@ -294273,17 +294841,17 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Lilian Margi Frøitland",
+        "navn": "Tonje W  Madsen",
         "umoms": "-319 kr",
-        "db": "-18 kr",
+        "db": "-130 kr",
         "butikk": "Kristiansand",
         "fakturadato": 20250301
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Tonje W  Madsen",
+        "navn": "Lilian Margi Frøitland",
         "umoms": "-319 kr",
-        "db": "-130 kr",
+        "db": "-18 kr",
         "butikk": "Kristiansand",
         "fakturadato": 20250301
     },
@@ -342505,18 +343073,18 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Vetle Spieler Nilsen",
-        "umoms": "-397 kr",
-        "db": "-124 kr",
-        "butikk": "Kristiansand",
-        "fakturadato": 20241119
-    },
-    {
-        "ukedag": "Tirsdag",
         "navn": "Kristine Martinsen",
         "umoms": "-397 kr",
         "db": "-84 kr",
         "butikk": "Bamble",
+        "fakturadato": 20241119
+    },
+    {
+        "ukedag": "Tirsdag",
+        "navn": "Vetle Spieler Nilsen",
+        "umoms": "-397 kr",
+        "db": "-124 kr",
+        "butikk": "Kristiansand",
         "fakturadato": 20241119
     },
     {
@@ -402673,17 +403241,17 @@
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Anders Eide",
+        "navn": "Linn Bjørnholt-Kristensen",
         "umoms": "-1 279 kr",
-        "db": "-257 kr",
+        "db": "235 kr",
         "butikk": "Tønsberg",
         "fakturadato": 20240720
     },
     {
         "ukedag": "Lørdag",
-        "navn": "Linn Bjørnholt-Kristensen",
+        "navn": "Anders Eide",
         "umoms": "-1 279 kr",
-        "db": "235 kr",
+        "db": "-257 kr",
         "butikk": "Tønsberg",
         "fakturadato": 20240720
     },
@@ -419057,18 +419625,18 @@
     },
     {
         "ukedag": "Tirsdag",
-        "navn": "Helen Roungø",
-        "umoms": "-719 kr",
-        "db": "-127 kr",
-        "butikk": "Tønsberg",
-        "fakturadato": 20240618
-    },
-    {
-        "ukedag": "Tirsdag",
         "navn": "Celina Martine Ims",
         "umoms": "-719 kr",
         "db": "95 kr",
         "butikk": "Sandefjord",
+        "fakturadato": 20240618
+    },
+    {
+        "ukedag": "Tirsdag",
+        "navn": "Helen Roungø",
+        "umoms": "-719 kr",
+        "db": "-127 kr",
+        "butikk": "Tønsberg",
         "fakturadato": 20240618
     },
     {
