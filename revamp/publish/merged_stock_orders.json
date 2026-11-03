@@ -994,16 +994,10 @@
     {
         "Prodno": "300000000000037842",
         "Beskrivelse": "CIF OVERLAND PEARL 60X60",
-        "antall på lager": 322.6,
+        "antall på lager": 1566.7,
         "antall pr pall": 46.1,
-        "Paller på lager": 7,
-        "Paller på vei": 27,
-        "Bestilling på vei": [
-            {
-                "Ukenr": "45/2026",
-                "Antall": 1244.16
-            }
-        ]
+        "Paller på lager": 34,
+        "Paller på vei": 0
     },
     {
         "Prodno": "300000000000040065",
@@ -1022,10 +1016,10 @@
     {
         "Prodno": "300000000000035668",
         "Beskrivelse": "CIF OVERLAND SAND 60X60",
-        "antall på lager": 0.0,
+        "antall på lager": 1244.2,
         "antall pr pall": 46.1,
-        "Paller på lager": 0,
-        "Paller på vei": 44,
+        "Paller på lager": 27,
+        "Paller på vei": 17,
         "Bestilling på vei": [
             {
                 "Ukenr": "45/2026",
@@ -1034,10 +1028,6 @@
             {
                 "Ukenr": "45/2026",
                 "Antall": 138.24
-            },
-            {
-                "Ukenr": "45/2026",
-                "Antall": 1244.16
             }
         ]
     },
@@ -1566,12 +1556,12 @@
         "Paller på vei": 20,
         "Bestilling på vei": [
             {
-                "Ukenr": "44/2026",
-                "Antall": 230.4
-            },
-            {
                 "Ukenr": "53/2026",
                 "Antall": 691.2
+            },
+            {
+                "Ukenr": "44/2026",
+                "Antall": 230.4
             }
         ]
     },
@@ -1584,12 +1574,12 @@
         "Paller på vei": 39,
         "Bestilling på vei": [
             {
-                "Ukenr": "44/2026",
-                "Antall": 256.0
-            },
-            {
                 "Ukenr": "53/2026",
                 "Antall": 2240.0
+            },
+            {
+                "Ukenr": "44/2026",
+                "Antall": 256.0
             }
         ]
     },
@@ -1644,12 +1634,12 @@
         "Paller på vei": 4,
         "Bestilling på vei": [
             {
-                "Ukenr": "44/2026",
-                "Antall": 43.2
-            },
-            {
                 "Ukenr": "53/2026",
                 "Antall": 129.6
+            },
+            {
+                "Ukenr": "44/2026",
+                "Antall": 43.2
             }
         ]
     },
@@ -1662,12 +1652,12 @@
         "Paller på vei": 8,
         "Bestilling på vei": [
             {
-                "Ukenr": "44/2026",
-                "Antall": 92.16
-            },
-            {
                 "Ukenr": "53/2026",
                 "Antall": 276.48
+            },
+            {
+                "Ukenr": "44/2026",
+                "Antall": 92.16
             }
         ]
     },
@@ -1772,12 +1762,12 @@
         "Paller på vei": 4,
         "Bestilling på vei": [
             {
-                "Ukenr": "44/2026",
-                "Antall": 46.08
-            },
-            {
                 "Ukenr": "53/2026",
                 "Antall": 138.24
+            },
+            {
+                "Ukenr": "44/2026",
+                "Antall": 46.08
             }
         ]
     },
@@ -1908,12 +1898,12 @@
         "Paller på vei": 6,
         "Bestilling på vei": [
             {
-                "Ukenr": "44/2026",
-                "Antall": 184.32
-            },
-            {
                 "Ukenr": "53/2026",
                 "Antall": 92.16
+            },
+            {
+                "Ukenr": "44/2026",
+                "Antall": 184.32
             }
         ]
     },
